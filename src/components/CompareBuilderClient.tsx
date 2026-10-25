@@ -2,30 +2,37 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Product, ComparisonEntry } from '@/lib/types';
-import { AffiliateDisclosureNote, PriceNote, EditorScore, AffiliateButton } from '@/components/ui/Badges';
-import { Scale, Check, ArrowRight } from 'lucide-react';
+import { Check } from 'lucide-react';
+import type { Product } from '@/lib/types';
+import { AffiliateDisclosureNote, EditorScore, AffiliateButton } from '@/components/ui/Badges';
 
-export function CompareBuilderClient({
-  products,
-  editorialComparisons,
-}: {
-  products: Product[];
-  editorialComparisons: ComparisonEntry[];
-}) {
-  const [selectedIds, setSelectedIds] = useState<string[]>([
-    'prod-bissell-little-green',
-    'prod-hoover-cleanslate',
-    'prod-shark-stainstriker',
-  ]);
+const MAX_SELECTED = 4;
+const MIN_SELECTED = 2;
+const DEFAULT_IDS = ['prod-bissell-little-green', 'prod-hoover-cleanslate', 'prod-shark-stainstriker'];
+
+// Interactive side-by-side matrix: pick 2 to 4 products, read their specs in one table.
+export function CompareBuilderClient({ products }: { products: Product[] }) {
+  const [selectedIds, setSelectedIds] = useState<string[]>(() => {
+    const valid = DEFAULT_IDS.filter((id) => products.some((p) => p.id === id));
+    return valid.length >= MIN_SELECTED ? valid : products.slice(0, MIN_SELECTED).map((p) => p.id);
+  });
   const [onlyDifferences, setOnlyDifferences] = useState(false);
+  const [notice, setNotice] = useState('');
 
   const toggleProduct = (id: string) => {
     if (selectedIds.includes(id)) {
-      if (selectedIds.length <= 2) return; // keep at least 2
+      if (selectedIds.length <= MIN_SELECTED) {
+        setNotice(`Keep at least ${MIN_SELECTED} products to compare. Add another before removing this one.`);
+        return;
+      }
+      setNotice('');
       setSelectedIds(selectedIds.filter((item) => item !== id));
     } else {
-      if (selectedIds.length >= 4) return; // max 4 per Spec Section 10.3
+      if (selectedIds.length >= MAX_SELECTED) {
+        setNotice(`You can compare up to ${MAX_SELECTED} products. Remove one to add another.`);
+        return;
+      }
+      setNotice('');
       setSelectedIds([...selectedIds, id]);
     }
   };
@@ -34,168 +41,179 @@ export function CompareBuilderClient({
     .map((id) => products.find((p) => p.id === id))
     .filter((p): p is Product => Boolean(p));
 
-  const allSpecKeys = Array.from(
-    new Set(comparedProducts.flatMap((p) => Object.keys(p.specs)))
-  );
+  const allSpecKeys = Array.from(new Set(comparedProducts.flatMap((p) => Object.keys(p.specs))));
+  const differs = (key: string) => new Set(comparedProducts.map((p) => p.specs[key] || '—')).size > 1;
+  const displayedSpecKeys = onlyDifferences ? allSpecKeys.filter(differs) : allSpecKeys;
 
-  const displayedSpecKeys = onlyDifferences
-    ? allSpecKeys.filter((key) => {
-        const values = new Set(comparedProducts.map((p) => p.specs[key] || '—'));
-        return values.size > 1;
-      })
-    : allSpecKeys;
+  const stickyTh = 'sticky left-0 z-10 w-36 min-w-[9rem] border-r border-rule px-4 py-3 text-left align-top sm:w-48 sm:min-w-[12rem]';
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-[#F5F0E6] to-[#E8DEC8] rounded-2xl p-6 sm:p-10 border border-paper-border shadow-soft">
-        <span className="text-xs font-extrabold uppercase tracking-widest text-coral">
-          Spec 10.3 · Interactive Side-by-Side Matrix
-        </span>
-        <h1 className="font-editorial text-3xl sm:text-4xl font-bold text-ink mt-1">
-          Product Comparison Builder
-        </h1>
-        <p className="text-sm sm:text-base text-ink-secondary mt-2 max-w-2xl">
-          Select 2 to 4 tested appliances or tools below to compare specifications, lab scores, noise levels, and surface compatibility side by side.
-        <AffiliateDisclosureNote className="mt-2" />
-        </p>
-      </div>
-
-      {/* Product Selector Chips */}
-      <div className="bg-white rounded-2xl border border-paper-border p-5 shadow-card space-y-3">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-forest">
-            Select 2 to 4 Products ({selectedIds.length}/4 active):
+    <div className="space-y-10">
+      {/* Picker */}
+      <fieldset className="border-t border-rule-strong pt-4">
+        <legend className="flex w-full flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+          <span className="font-serif text-2xl font-semibold text-ink">Choose 2 to 4 products</span>
+          <span className="kicker text-ink" aria-live="polite">
+            {selectedIds.length} of {MAX_SELECTED} selected
           </span>
-          <label className="inline-flex items-center gap-2 text-xs font-semibold text-ink cursor-pointer">
+        </legend>
+        <ul className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {products.map((p) => {
+            const active = selectedIds.includes(p.id);
+            return (
+              <li key={p.id}>
+                <button
+                  type="button"
+                  onClick={() => toggleProduct(p.id)}
+                  aria-pressed={active}
+                  className={`flex min-h-[56px] w-full items-center gap-3 rounded-sm border px-3 py-2 text-left transition-colors duration-150 ${
+                    active
+                      ? 'border-ink bg-ink text-paper-light'
+                      : 'border-rule-strong/70 bg-paper-card text-ink hover:border-ink'
+                  }`}
+                >
+                  <span
+                    className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-sm border ${
+                      active ? 'border-honey bg-honey text-ink' : 'border-rule-strong bg-paper'
+                    }`}
+                    aria-hidden="true"
+                  >
+                    {active && <Check className="h-3.5 w-3.5" />}
+                  </span>
+                  <span className="h-10 w-10 shrink-0 bg-paper-card p-0.5">
+                    <img src={p.image} alt="" loading="lazy" decoding="async" className="h-full w-full object-contain" />
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block text-[14px] font-semibold leading-snug">{p.shortName}</span>
+                    <span className={`block text-[12px] leading-snug ${active ? 'text-paper-light/70' : 'text-ink-muted'}`}>
+                      Best for: {p.bestFor}
+                    </span>
+                  </span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+        <p className="mt-3 min-h-[1.25rem] text-[13px] text-terracotta-deep" role="status">
+          {notice}
+        </p>
+      </fieldset>
+
+      {/* Matrix */}
+      <section aria-labelledby="matrix-heading">
+        <div className="flex flex-wrap items-end justify-between gap-4 border-t border-rule-strong pt-4">
+          <h2 id="matrix-heading" className="font-serif text-2xl font-semibold text-ink">
+            Side by side
+          </h2>
+          <label className="inline-flex min-h-[44px] cursor-pointer items-center gap-2.5 text-[14px] font-medium text-ink">
             <input
               type="checkbox"
               checked={onlyDifferences}
               onChange={(e) => setOnlyDifferences(e.target.checked)}
-              className="rounded accent-forest"
+              className="h-5 w-5 accent-ink"
             />
-            <span>Show Only Differing Specifications</span>
+            <span>Only show specs that differ</span>
           </label>
         </div>
+        <AffiliateDisclosureNote className="mt-2" />
 
-        <div className="flex flex-wrap gap-2">
-          {products.map((p) => {
-            const active = selectedIds.includes(p.id);
-            return (
-              <button
-                key={p.id}
-                type="button"
-                onClick={() => toggleProduct(p.id)}
-                className={`px-3.5 py-2 rounded-xl text-xs font-semibold border transition flex items-center gap-1.5 ${
-                  active
-                    ? 'bg-forest text-white border-forest shadow-sm'
-                    : 'bg-paper-light text-ink-secondary border-paper-border hover:border-forest'
-                }`}
-              >
-                {active && <Check className="w-3.5 h-3.5" />}
-                <span>{p.shortName}</span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Comparison Matrix Table */}
-      <div className="bg-white rounded-2xl border border-paper-border shadow-elevated overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse">
+        <div className="table-scroll mt-4 border border-rule">
+          <table className="w-full border-collapse text-left text-[14px]">
+            <caption className="sr-only">Specifications of the selected products, side by side</caption>
             <thead>
-              <tr className="border-b border-paper-border bg-paper-light/60">
-                <th className="p-4 w-44 text-xs font-bold uppercase tracking-wider text-ink-muted align-top">
-                  Model Overview
+              <tr className="border-b border-rule-strong">
+                <th scope="col" className={`${stickyTh} kicker bg-paper-card text-ink-muted`}>
+                  Product
                 </th>
                 {comparedProducts.map((prod) => (
-                  <th key={prod.id} className="p-4 min-w-[220px] align-top">
-                    <div className="space-y-2">
-                      <span className="inline-block bg-forest text-white text-[10px] font-bold px-2 py-0.5 rounded">
-                        {prod.badge || prod.bestFor}
-                      </span>
-                      <img
-                        src={prod.image}
-                        loading="lazy"
-                        decoding="async"
-                        alt={prod.name}
-                        className="w-24 h-24 rounded-xl object-cover border border-paper-border"
-                      />
-                      <Link
-                        href={`/products/${prod.slug}`}
-                        className="font-editorial font-bold text-base text-ink hover:text-forest block"
-                      >
-                        {prod.shortName}
-                      </Link>
-                      <EditorScore score={prod.scores.overall}
-                        size="xs" />
-                      <div className="pt-1 flex items-baseline gap-1">
-                        <PriceNote />
-                      </div>
-                      <AffiliateButton
-                        productId={prod.id}
-                        productName={prod.name}
-                        asin={prod.asin}
-                        amazonUrl={prod.amazonUrl}
-                        contentSlug="compare-builder"
-                        placement="matrix_header"
-                        variant="forest"
-                        label="Check price on Amazon"
-                        className="w-full mt-2"
-                      />
+                  <th key={prod.id} scope="col" className="min-w-[200px] bg-paper-card px-4 py-4 align-top font-normal">
+                    <div className="aspect-square w-24 bg-paper p-1">
+                      <img src={prod.image} alt="" loading="lazy" decoding="async" className="h-full w-full object-contain" />
                     </div>
+                    <Link
+                      href={`/products/${prod.slug}`}
+                      className="mt-2 flex min-h-[44px] items-center font-serif text-lg font-semibold leading-snug text-ink hover:text-terracotta-deep"
+                    >
+                      {prod.shortName}
+                    </Link>
+                    <AffiliateButton
+                      productId={prod.id}
+                      productName={prod.name}
+                      asin={prod.asin}
+                      amazonUrl={prod.amazonUrl}
+                      contentSlug="compare-builder"
+                      placement="matrix_header"
+                      variant="compact"
+                      label="Check price on Amazon"
+                      className="mt-3 min-h-[44px] w-full"
+                    />
                   </th>
                 ))}
               </tr>
             </thead>
-            <tbody className="divide-y divide-paper-border text-xs sm:text-sm">
-              <tr className="bg-paper-warm/40">
-                <td className="p-4 font-bold text-ink">Overall Lab Score</td>
+            <tbody className="divide-y divide-rule">
+              <tr>
+                <th scope="row" className={`${stickyTh} bg-paper font-semibold text-ink`}>
+                  Our rating{' '}
+                  <Link href="/methodology" className="block text-[12px] font-normal text-ink-muted underline underline-offset-2 hover:text-terracotta-deep">
+                    research-based
+                  </Link>
+                </th>
                 {comparedProducts.map((p) => (
-                  <td key={p.id} className="p-4 font-editorial text-lg font-bold text-forest">
-                    {p.scores.overall} / 10
+                  <td key={p.id} className="bg-paper px-4 py-3 align-top">
+                    <EditorScore score={p.scores.overall} size="xs" />
                   </td>
                 ))}
               </tr>
               <tr>
-                <td className="p-4 font-bold text-ink">Best For</td>
+                <th scope="row" className={`${stickyTh} bg-paper font-semibold text-ink`}>
+                  Best for
+                </th>
                 {comparedProducts.map((p) => (
-                  <td key={p.id} className="p-4 font-semibold text-ink">
+                  <td key={p.id} className="bg-paper px-4 py-3 align-top font-medium text-ink">
                     {p.bestFor}
                   </td>
                 ))}
               </tr>
-              <tr>
-                <td className="p-4 font-bold text-ink">Cleaning Power</td>
-                {comparedProducts.map((p) => (
-                  <td key={p.id} className="p-4 text-ink-secondary">
-                    {p.scores.cleaningPower} / 10
-                  </td>
-                ))}
-              </tr>
-              <tr>
-                <td className="p-4 font-bold text-ink">Ease of Use</td>
-                {comparedProducts.map((p) => (
-                  <td key={p.id} className="p-4 text-ink-secondary">
-                    {p.scores.easeOfUse} / 10
-                  </td>
-                ))}
-              </tr>
-              {displayedSpecKeys.map((specKey) => (
-                <tr key={specKey}>
-                  <td className="p-4 font-bold text-ink">{specKey}</td>
+              {(
+                [
+                  ['Cleaning power', 'cleaningPower'],
+                  ['Ease of use', 'easeOfUse'],
+                ] as const
+              ).map(([label, key]) => (
+                <tr key={key}>
+                  <th scope="row" className={`${stickyTh} bg-paper font-semibold text-ink`}>
+                    {label}
+                    <span className="block text-[12px] font-normal text-ink-muted">Research assessment</span>
+                  </th>
                   {comparedProducts.map((p) => (
-                    <td key={p.id} className="p-4 text-ink-secondary">
-                      {p.specs[specKey] || '—'}
+                    <td key={p.id} className="bg-paper px-4 py-3 align-top font-mono text-[13px] tabular-nums text-ink-secondary">
+                      {p.scores[key].toFixed(1)} / 10
                     </td>
                   ))}
                 </tr>
               ))}
+              {displayedSpecKeys.map((specKey) => {
+                const shade = differs(specKey) ? 'bg-honey-soft/40' : 'bg-paper';
+                return (
+                  <tr key={specKey}>
+                    <th scope="row" className={`${stickyTh} bg-paper font-semibold text-ink`}>
+                      {specKey}
+                    </th>
+                    {comparedProducts.map((p) => (
+                      <td key={p.id} className={`${shade} px-4 py-3 align-top text-ink-secondary`}>
+                        {p.specs[specKey] || '—'}
+                      </td>
+                    ))}
+                  </tr>
+                );
+              })}
               <tr>
-                <td className="p-4 font-bold text-ink">Compatible Surfaces</td>
+                <th scope="row" className={`${stickyTh} bg-paper font-semibold text-ink`}>
+                  Suited surfaces
+                </th>
                 {comparedProducts.map((p) => (
-                  <td key={p.id} className="p-4 text-ink-secondary">
+                  <td key={p.id} className="bg-paper px-4 py-3 align-top text-ink-secondary">
                     {p.surfaces.join(', ')}
                   </td>
                 ))}
@@ -203,38 +221,13 @@ export function CompareBuilderClient({
             </tbody>
           </table>
         </div>
-      </div>
-
-      {/* Editorial Head-to-Head Comparisons */}
-      <section>
-        <h2 className="font-editorial text-2xl font-bold text-ink mb-4">
-          Editorial Head-to-Head Showdowns
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {editorialComparisons.map((comp) => (
-            <Link
-              key={comp.slug}
-              href={`/compare/${comp.slug}`}
-              className="group bg-white rounded-2xl border border-paper-border p-6 shadow-card hover:shadow-elevated transition flex flex-col justify-between"
-            >
-              <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-coral">
-                  {comp.category}
-                </span>
-                <h3 className="font-editorial text-xl font-bold text-ink group-hover:text-forest mt-1">
-                  {comp.title}
-                </h3>
-                <p className="text-xs sm:text-sm text-ink-secondary mt-2 leading-relaxed">
-                  {comp.verdict}
-                </p>
-              </div>
-              <div className="mt-4 pt-3 border-t border-paper-border flex items-center justify-between text-xs font-bold text-forest">
-                <span>Read Head-to-Head Verdict</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
-          ))}
-        </div>
+        <p className="mt-3 text-[13px] text-ink-muted">
+          Specs come from manufacturer listings and manuals; shaded cells differ between the selected products. Ratings are our
+          editorial judgment, not measurements.{' '}
+          <Link href="/methodology" className="underline underline-offset-2 hover:text-terracotta-deep">
+            How we evaluate
+          </Link>
+        </p>
       </section>
     </div>
   );

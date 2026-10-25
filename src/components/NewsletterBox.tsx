@@ -1,9 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
-import { Mail, CheckCircle2, Sparkles } from 'lucide-react';
+import React, { useId, useState } from 'react';
+import { Check } from 'lucide-react';
+import { Container, buttonClasses } from '@/components/field';
 
 export function NewsletterBox() {
+  const inputId = useId();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [message, setMessage] = useState('');
@@ -21,7 +23,7 @@ export function NewsletterBox() {
       const data = await res.json();
       if (res.ok) {
         setStatus('success');
-        setMessage(data.message || 'You are subscribed! Check your inbox for our weekly field notes.');
+        setMessage(data.message || "Thanks, you're on the list.");
         setEmail('');
       } else {
         setStatus('error');
@@ -34,52 +36,53 @@ export function NewsletterBox() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
-      <div className="rounded-2xl bg-forest text-white p-8 md:p-10 shadow-elevated relative overflow-hidden">
-        <div className="max-w-2xl relative z-10">
-          <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-emerald-300 mb-2">
-            <Sparkles className="w-3.5 h-3.5" />
-            Weekly Home Care Field Notes
-          </span>
-          <h2 className="font-editorial text-2xl md:text-3xl font-bold text-white">
-            Seasonal maintenance checklists & tested stain fixes, once a week.
+    <section aria-labelledby={`${inputId}-heading`}>
+      <Container>
+      <div className="grid gap-6 rounded-3xl bg-honey-soft px-5 py-8 text-ink sm:px-10 sm:py-10 lg:grid-cols-12 lg:items-end">
+        <div className="lg:col-span-6">
+          <p className="kicker text-terracotta-deep">New guides by email</p>
+          <h2 id={`${inputId}-heading`} className="mt-2 font-serif text-3xl font-semibold leading-tight">
+            Get new guides when we publish them.
           </h2>
-          <p className="text-sm text-paper-light/85 mt-2">
-            No spam or raw promotional blasts—just practical 5-minute routines and verified lab findings. Unsubscribe anytime with one click (CAN-SPAM compliant).
+          <p className="mt-2 max-w-md text-base leading-relaxed text-ink-secondary">
+            Occasional emails when we publish new guides. Unsubscribe anytime.
           </p>
+        </div>
 
+        <div className="lg:col-span-6">
           {status === 'success' ? (
-            <div className="mt-5 inline-flex items-center gap-2 bg-emerald-900/70 border border-emerald-400/40 text-emerald-100 px-4 py-3 rounded-xl text-sm">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>{message}</span>
-            </div>
+            <p role="status" className="inline-flex items-center gap-2 rounded-lg border-l-4 border-leaf bg-paper-card px-4 py-3 text-[15px]">
+              <Check className="h-4 w-4 shrink-0 text-leaf-deep" aria-hidden="true" />
+              {message}
+            </p>
           ) : (
-            <form onSubmit={handleSubmit} className="mt-5 flex flex-col sm:flex-row gap-2.5 max-w-lg">
-              <div className="relative flex-1">
-                <Mail className="w-4 h-4 text-ink-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
-                <input
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email address..."
-                  className="w-full pl-10 pr-4 py-3 rounded-xl text-ink text-sm bg-white focus:outline-none"
-                />
-              </div>
-              <button
-                type="submit"
-                disabled={status === 'loading'}
-                className="bg-coral hover:bg-coral-hover text-white font-semibold text-sm px-6 py-3 rounded-xl transition shrink-0"
-              >
-                {status === 'loading' ? 'Subscribing...' : 'Get Free Checklists'}
+            <form onSubmit={handleSubmit} className="grid gap-3 sm:grid-cols-[1fr_auto]">
+              <label htmlFor={inputId} className="block text-[15px] font-semibold text-ink sm:col-span-2">
+                Email address
+              </label>
+              <input
+                id={inputId}
+                type="email"
+                required
+                autoComplete="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="you@example.com"
+                className="h-12 w-full rounded-full border border-rule-field bg-paper-card px-4 text-base text-ink placeholder:text-ink-muted focus:border-ink focus:outline-none"
+              />
+              <button type="submit" disabled={status === 'loading'} className={`${buttonClasses('primary')} h-12`}>
+                {status === 'loading' ? 'Subscribing…' : 'Subscribe'}
               </button>
             </form>
           )}
           {status === 'error' && (
-            <p className="text-xs text-amber-300 mt-2">{message}</p>
+            <p role="alert" className="mt-2 text-sm font-semibold text-terracotta-deep">
+              {message}
+            </p>
           )}
         </div>
       </div>
+      </Container>
     </section>
   );
 }

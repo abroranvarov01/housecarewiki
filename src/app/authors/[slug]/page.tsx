@@ -2,11 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { CheckCircle2, Award } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { readStore } from '@/lib/store';
 import { buildMetadata, fitDescription } from '@/lib/seo';
+import { SITE } from '@/lib/site';
 import { JsonLd } from '@/components/JsonLd';
-import { breadcrumbSchema, graph, personSchema, webPageSchema } from '@/lib/schema';
+import { breadcrumbSchema, graph, isoDate, personSchema, webPageSchema } from '@/lib/schema';
+import { Breadcrumbs, Container, Kicker, SectionHead, articleHref, articleMeta, formatDate } from '@/components/field';
 
 // ISR: pre-rendered, refreshed hourly and on every CMS publish via revalidatePath.
 export const revalidate = 3600;
@@ -43,9 +45,11 @@ export default function AuthorProfilePage({
     notFound();
   }
 
-  const authoredArticles = store.articles.filter(
-    (art) => art.authorSlug === author.slug
-  );
+  const authored = store.articles.filter((art) => art.authorSlug === author.slug && art.status === 'Published');
+  const groups = [
+    { title: 'Fix it guides', items: authored.filter((a) => a.routeType !== 'best') },
+    { title: 'Buying guides', items: authored.filter((a) => a.routeType === 'best') },
+  ].filter((g) => g.items.length > 0);
 
   const schema = graph(
     breadcrumbSchema([
@@ -59,105 +63,113 @@ export default function AuthorProfilePage({
   );
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+    <div className="pb-16">
       <JsonLd data={schema} />
-      <nav aria-label="Breadcrumb" className="-mt-4 text-xs text-ink-muted">
-        <Link href="/" className="hover:text-forest">
-          Home
-        </Link>{' '}
-        › <span className="text-ink font-medium">{author.name}</span>
-      </nav>
-      {/* Author Switcher */}
-      <div className="flex flex-wrap gap-2">
-        {store.authors.map((a) => (
-          <Link
-            key={a.slug}
-            href={`/authors/${a.slug}`}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition ${
-              a.slug === author.slug
-                ? 'bg-forest text-white border-forest'
-                : 'bg-white text-ink-secondary border-paper-border hover:border-forest'
-            }`}
-          >
-            {a.name}
-          </Link>
-        ))}
-      </div>
 
-      {/* Author Bio Card */}
-      <div className="bg-white rounded-2xl border border-paper-border p-6 sm:p-8 shadow-card flex flex-col sm:flex-row items-start gap-6">
-        <img
-          src={author.avatar}
-          loading="lazy"
-          decoding="async"
-          alt={author.name}
-          className="w-24 h-24 rounded-full object-cover border-2 border-forest shadow-sm shrink-0"
-        />
-        <div className="space-y-3">
-          <div>
-            <span className="text-xs font-extrabold uppercase tracking-wider text-coral">
-              Editorial Team & Lab Reviewer
-            </span>
-            <h1 className="font-editorial text-3xl font-bold text-ink">
-              {author.name}
-            </h1>
-            <p className="text-sm font-semibold text-forest">{author.role}</p>
+      <header className="border-b border-rule">
+        <Container className="py-8 sm:py-12">
+          <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: author.name }]} />
+          <div className="mt-8 grid gap-8 lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <Kicker tone="accent">{author.kind === 'team' ? 'The byline' : 'Author'}</Kicker>
+              <h1 className="mt-3 font-serif text-[2.5rem] font-medium leading-[1.04] tracking-[-0.025em] text-ink sm:text-[3.5rem]">
+                {author.name}
+              </h1>
+              <p className="kicker mt-3 text-ink-muted">{author.role}</p>
+              <p className="mt-5 max-w-prose text-[1.0625rem] leading-relaxed text-ink-secondary">{author.bio}</p>
+            </div>
+
+            {author.credentials.length > 0 && (
+              <aside className="lg:col-span-5" aria-labelledby="how-heading">
+                <div className="border-t border-rule-strong pt-3">
+                  <h2 id="how-heading" className="font-serif text-2xl font-semibold text-ink">
+                    How we work
+                  </h2>
+                  <ol className="mt-3 border-t border-rule">
+                    {author.credentials.map((c, i) => (
+                      <li key={c} className="grid grid-cols-[2rem_1fr] gap-2 border-b border-rule py-3 text-[15px] leading-relaxed text-ink-secondary">
+                        <span className="kicker pt-1 text-terracotta-deep">{String(i + 1).padStart(2, '0')}</span>
+                        <span>{c}</span>
+                      </li>
+                    ))}
+                  </ol>
+                  <ul className="mt-4 flex flex-wrap gap-x-6 text-sm font-semibold">
+                    <li>
+                      <Link href="/methodology" className="link inline-flex min-h-[44px] items-center">
+                        How we evaluate products
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/editorial-policy" className="link inline-flex min-h-[44px] items-center">
+                        Editorial policy
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            )}
           </div>
-          <p className="text-sm text-ink-secondary leading-relaxed">{author.bio}</p>
+        </Container>
+      </header>
 
-          <div className="pt-2 space-y-1.5">
-            <h2 className="text-xs font-bold uppercase tracking-wider text-ink-muted flex items-center gap-1.5">
-              <Award className="w-4 h-4 text-forest" />
-              Verified Credentials & Background
-            </h2>
-            <div className="flex flex-wrap gap-2">
-              {author.credentials.map((cred) => (
-                <span
-                  key={cred}
-                  className="inline-flex items-center gap-1.5 bg-paper-light border border-paper-border px-3 py-1 rounded-full text-xs font-medium text-ink"
-                >
-                  <CheckCircle2 className="w-3.5 h-3.5 text-forest" />
-                  {cred}
-                </span>
+      <section className="pt-12 sm:pt-14" aria-labelledby="articles-heading">
+        <Container>
+          <SectionHead
+            id="articles-heading"
+            index="01"
+            title={`Published by ${author.name}`}
+            description={`${authored.length} ${authored.length === 1 ? 'article' : 'articles'} carry this byline.`}
+          />
+          {groups.length === 0 ? (
+            <p className="mt-6 text-[15px] text-ink-muted">Nothing published under this byline yet.</p>
+          ) : (
+            <div className={`mt-6 grid gap-10 lg:gap-12 ${groups.length > 1 ? 'lg:grid-cols-2' : 'max-w-3xl'}`}>
+              {groups.map((g) => (
+                <div key={g.title}>
+                  <h3 className="border-b border-rule-strong pb-2 font-serif text-xl font-semibold text-ink">{g.title}</h3>
+                  <ul className="divide-y divide-rule border-b border-rule">
+                    {g.items.map((a) => (
+                      <li key={a.id}>
+                        <Link href={articleHref(a)} className="group grid grid-cols-[1fr_auto] items-center gap-4 py-4">
+                          <span className="min-w-0">
+                            <span className="kicker text-ink-muted">{articleMeta(a)}</span>
+                            <span className="mt-1 block font-serif text-lg font-semibold leading-snug text-ink">
+                              <span className="hover-title">{a.title}</span>
+                            </span>
+                            <span className="mt-1 block text-[13px] text-ink-muted">
+                              Updated <time dateTime={isoDate(a.updatedAt)}>{formatDate(a.updatedAt)}</time>
+                            </span>
+                          </span>
+                          <ArrowRight className="h-4 w-4 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-terracotta-deep" aria-hidden="true" />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
             </div>
-          </div>
-        </div>
-      </div>
+          )}
+        </Container>
+      </section>
 
-      {/* Articles by this Author */}
-      <section>
-        <h2 className="font-editorial text-2xl font-bold text-ink mb-4">
-          Published Guides & Reviews by {author.name}
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {authoredArticles.map((art) => {
-            const href =
-              art.routeType === 'best' ? `/best/${art.slug}` : `/guides/${art.slug}`;
-            return (
-              <Link
-                key={art.id}
-                href={href}
-                className="group bg-white rounded-xl border border-paper-border p-5 shadow-card hover:shadow-elevated transition flex flex-col justify-between"
-              >
-                <div>
-                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-coral">
-                    {art.categoryLabel} · {art.evidenceStatus}
-                  </span>
-                  <h3 className="font-editorial text-xl font-bold text-ink group-hover:text-forest mt-1">
-                    {art.title}
-                  </h3>
-                  <p className="text-xs text-ink-secondary mt-2 line-clamp-2">
-                    {art.subtitle}
-                  </p>
-                </div>
-                <p className="text-[11px] text-ink-muted mt-4 pt-3 border-t border-paper-border">
-                  Updated {art.updatedAt} · {art.readingTime}
-                </p>
+      <section className="pt-12 sm:pt-14" aria-labelledby="corrections-heading">
+        <Container>
+          <div className="max-w-prose border-l-4 border-leaf bg-leaf-soft/60 px-5 py-5">
+            <h2 id="corrections-heading" className="font-serif text-xl font-semibold text-ink">
+              Spotted a mistake?
+            </h2>
+            <p className="mt-2 text-[0.9375rem] leading-relaxed text-ink-secondary">
+              Email corrections to{' '}
+              <a href={`mailto:${SITE.email}`} className="link">
+                {SITE.email}
+              </a>
+              . We fix verified errors and update the page date when the change is substantive.{' '}
+              <Link href="/about" className="link">
+                About HouseCareWiki
               </Link>
-            );
-          })}
-        </div>
+            </p>
+          </div>
+        </Container>
       </section>
     </div>
   );

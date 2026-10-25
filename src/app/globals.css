@@ -2,41 +2,162 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font CSS variables (--font-serif, --font-sans, --font-hand) are set by next/font in app/layout.tsx. */
+/* Font CSS variables (--font-serif, --font-sans, --font-mono) are set by next/font in app/layout.tsx. */
 
-html {
-  scroll-behavior: smooth;
-  background-color: #F7F4EE;
-  color: #1F2924;
-  font-family: var(--font-sans);
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #f8f4eb;
+    color: #29322c;
+    font-family: var(--font-sans);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #f8f4eb;
+    color: #29322c;
+    overflow-x: hidden;
+    font-feature-settings: 'ss01' on;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: #efcb77;
+    color: #29322c;
+  }
+
+  /* Visible, consistent keyboard focus (WCAG 2.2 AA: 2.4.7 / 2.4.11). */
+  :focus-visible {
+    outline: 2px solid #9a4e30;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Sticky header must not hide focused or anchored content (WCAG 2.4.11). */
+  [id] {
+    scroll-margin-top: 6rem;
+  }
 }
 
-body {
-  background-color: #F7F4EE;
-  color: #1F2924;
-  overflow-x: hidden;
-}
+@layer components {
+  /* Legacy helpers kept for older markup; new code uses font-serif / font-mono directly. */
+  .font-editorial {
+    font-family: var(--font-serif);
+  }
 
-/* Custom utility classes for editorial polish */
-.font-editorial {
-  font-family: var(--font-serif);
-}
+  .font-handwritten {
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
 
-.font-handwritten {
-  font-family: var(--font-hand);
-}
+  .bg-paper-grain {
+    background-color: #f8f4eb;
+  }
 
-/* Subtle paper grain texture overlay */
-.bg-paper-grain {
-  background-color: #F7F4EE;
-  background-image: radial-gradient(rgba(30, 58, 47, 0.03) 1px, transparent 0);
-  background-size: 24px 24px;
-}
+  /* Kicker: small sentence-case label for section kickers, metadata and table headers. */
+  .kicker {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.005em;
+  }
 
-/* Focus ring for WCAG 2.2 AA keyboard accessibility */
-*:focus-visible {
-  outline: 2px solid #1E3A2F;
-  outline-offset: 2px;
+  /* Field-note label: the one place mono caps survive ("Field note 01"). A few per page at most. */
+  .kicker-field {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* Honey highlight: the signature way we point at "the answer". */
+  .mark {
+    background-image: linear-gradient(transparent 56%, #efcb77 56%, #efcb77 90%, transparent 90%);
+    background-repeat: no-repeat;
+    padding: 0 0.08em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  /* Editorial text link: underline that thickens on hover. */
+  .link {
+    color: #9a4e30;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(154, 78, 48, 0.45);
+    transition: text-decoration-color 150ms, text-decoration-thickness 150ms;
+  }
+  .link:hover {
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 2px;
+  }
+
+  /* Card-level link: the title gets an underline when any part of the card is hovered. */
+  .hover-title {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 220ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .group:hover .hover-title,
+  .group:focus-visible .hover-title {
+    background-size: 100% 1px;
+  }
+
+  /* Long-form reading text. */
+  .prose-field {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: #414a43;
+  }
+  .prose-field p + p {
+    margin-top: 1em;
+  }
+  .prose-field strong {
+    color: #29322c;
+    font-weight: 600;
+  }
+
+  /* Horizontally scrollable tables keep their columns on small screens. */
+  .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
+  /* Hide scrollbars on chip rails while keeping them scrollable. */
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Native disclosure widgets (FAQ, mobile menu sections). */
+  details > summary {
+    list-style: none;
+    cursor: pointer;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  details[open] .details-icon {
+    transform: rotate(45deg);
+  }
 }
 
 /* Respect the OS "reduce motion" setting */

@@ -1,0 +1,385 @@
+{
+  "voice": "af_heart",
+  "lines": {
+    "hook": {
+      "duration": 2.697,
+      "words": [
+        {
+          "w": "Spilled",
+          "start": 0.0,
+          "end": 0.382
+        },
+        {
+          "w": "coffee",
+          "start": 0.382,
+          "end": 0.722
+        },
+        {
+          "w": "on",
+          "start": 0.722,
+          "end": 0.891
+        },
+        {
+          "w": "the",
+          "start": 0.891,
+          "end": 1.104
+        },
+        {
+          "w": "couch?",
+          "start": 1.104,
+          "end": 1.401
+        },
+        {
+          "w": "Don’t",
+          "start": 1.701,
+          "end": 1.972
+        },
+        {
+          "w": "scrub",
+          "start": 1.972,
+          "end": 2.29
+        },
+        {
+          "w": "it",
+          "start": 2.29,
+          "end": 2.471
+        },
+        {
+          "w": "yet.",
+          "start": 2.471,
+          "end": 2.697
+        }
+      ]
+    },
+    "title": {
+      "duration": 1.317,
+      "words": [
+        {
+          "w": "Do",
+          "start": 0.0,
+          "end": 0.16
+        },
+        {
+          "w": "these",
+          "start": 0.16,
+          "end": 0.439
+        },
+        {
+          "w": "three",
+          "start": 0.439,
+          "end": 0.718
+        },
+        {
+          "w": "things",
+          "start": 0.718,
+          "end": 1.038
+        },
+        {
+          "w": "first.",
+          "start": 1.038,
+          "end": 1.317
+        }
+      ]
+    },
+    "tip1": {
+      "duration": 5.019,
+      "words": [
+        {
+          "w": "Blot,",
+          "start": 0.731,
+          "end": 1.253
+        },
+        {
+          "w": "don’t",
+          "start": 1.393,
+          "end": 1.741
+        },
+        {
+          "w": "rub.",
+          "start": 1.741,
+          "end": 2.03
+        },
+        {
+          "w": "Press",
+          "start": 2.33,
+          "end": 2.608
+        },
+        {
+          "w": "a",
+          "start": 2.608,
+          "end": 2.727
+        },
+        {
+          "w": "clean",
+          "start": 2.727,
+          "end": 3.004
+        },
+        {
+          "w": "white",
+          "start": 3.004,
+          "end": 3.282
+        },
+        {
+          "w": "cloth",
+          "start": 3.282,
+          "end": 3.559
+        },
+        {
+          "w": "onto",
+          "start": 3.559,
+          "end": 3.797
+        },
+        {
+          "w": "the",
+          "start": 3.797,
+          "end": 3.995
+        },
+        {
+          "w": "spill,",
+          "start": 3.995,
+          "end": 4.273
+        },
+        {
+          "w": "and",
+          "start": 4.413,
+          "end": 4.689
+        },
+        {
+          "w": "lift.",
+          "start": 4.689,
+          "end": 5.019
+        }
+      ]
+    },
+    "tip2": {
+      "duration": 4.613,
+      "words": [
+        {
+          "w": "Check",
+          "start": 0.757,
+          "end": 1.003
+        },
+        {
+          "w": "the",
+          "start": 1.003,
+          "end": 1.178
+        },
+        {
+          "w": "care",
+          "start": 1.178,
+          "end": 1.389
+        },
+        {
+          "w": "tag",
+          "start": 1.389,
+          "end": 1.564
+        },
+        {
+          "w": "under",
+          "start": 1.564,
+          "end": 1.81
+        },
+        {
+          "w": "the",
+          "start": 1.81,
+          "end": 1.986
+        },
+        {
+          "w": "cushion.",
+          "start": 1.986,
+          "end": 2.301
+        },
+        {
+          "w": "If",
+          "start": 2.601,
+          "end": 2.791
+        },
+        {
+          "w": "the",
+          "start": 2.791,
+          "end": 3.028
+        },
+        {
+          "w": "code",
+          "start": 3.028,
+          "end": 3.313
+        },
+        {
+          "w": "is",
+          "start": 3.313,
+          "end": 3.503
+        },
+        {
+          "w": "S,",
+          "start": 3.503,
+          "end": 3.645
+        },
+        {
+          "w": "skip",
+          "start": 3.785,
+          "end": 4.061
+        },
+        {
+          "w": "the",
+          "start": 4.061,
+          "end": 4.291
+        },
+        {
+          "w": "water.",
+          "start": 4.291,
+          "end": 4.613
+        }
+      ]
+    },
+    "tip3": {
+      "duration": 4.786,
+      "words": [
+        {
+          "w": "Spot-test",
+          "start": 0.792,
+          "end": 1.221
+        },
+        {
+          "w": "any",
+          "start": 1.221,
+          "end": 1.435
+        },
+        {
+          "w": "cleaner",
+          "start": 1.435,
+          "end": 1.821
+        },
+        {
+          "w": "on",
+          "start": 1.821,
+          "end": 1.992
+        },
+        {
+          "w": "a",
+          "start": 1.992,
+          "end": 2.121
+        },
+        {
+          "w": "hidden",
+          "start": 2.121,
+          "end": 2.464
+        },
+        {
+          "w": "area,",
+          "start": 2.464,
+          "end": 2.721
+        },
+        {
+          "w": "and",
+          "start": 2.861,
+          "end": 3.05
+        },
+        {
+          "w": "let",
+          "start": 3.05,
+          "end": 3.238
+        },
+        {
+          "w": "it",
+          "start": 3.238,
+          "end": 3.389
+        },
+        {
+          "w": "dry",
+          "start": 3.389,
+          "end": 3.578
+        },
+        {
+          "w": "before",
+          "start": 3.578,
+          "end": 3.88
+        },
+        {
+          "w": "you",
+          "start": 3.88,
+          "end": 4.069
+        },
+        {
+          "w": "treat",
+          "start": 4.069,
+          "end": 4.333
+        },
+        {
+          "w": "the",
+          "start": 4.333,
+          "end": 4.522
+        },
+        {
+          "w": "stain.",
+          "start": 4.522,
+          "end": 4.786
+        }
+      ]
+    },
+    "cta": {
+      "duration": 4.023,
+      "words": [
+        {
+          "w": "The",
+          "start": 0.0,
+          "end": 0.216
+        },
+        {
+          "w": "full",
+          "start": 0.216,
+          "end": 0.474
+        },
+        {
+          "w": "guide",
+          "start": 0.474,
+          "end": 0.776
+        },
+        {
+          "w": "is",
+          "start": 0.776,
+          "end": 0.948
+        },
+        {
+          "w": "on",
+          "start": 0.948,
+          "end": 1.121
+        },
+        {
+          "w": "HouseCareWiki.com.",
+          "start": 1.121,
+          "end": 2.371
+        },
+        {
+          "w": "Save",
+          "start": 2.671,
+          "end": 2.902
+        },
+        {
+          "w": "this",
+          "start": 2.902,
+          "end": 3.134
+        },
+        {
+          "w": "for",
+          "start": 3.134,
+          "end": 3.328
+        },
+        {
+          "w": "the",
+          "start": 3.328,
+          "end": 3.521
+        },
+        {
+          "w": "next",
+          "start": 3.521,
+          "end": 3.753
+        },
+        {
+          "w": "spill.",
+          "start": 3.753,
+          "end": 4.023
+        }
+      ]
+    }
+  }
+}

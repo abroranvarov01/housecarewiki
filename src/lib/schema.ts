@@ -50,6 +50,16 @@ export function personId(author: Author): string {
 }
 
 export function personSchema(author: Author): Json {
+  if (author.kind === 'team') {
+    return {
+      '@type': 'Organization',
+      '@id': personId(author),
+      name: author.name,
+      description: author.bio,
+      url: absoluteUrl(`/authors/${author.slug}`),
+      parentOrganization: { '@id': ORG_ID },
+    };
+  }
   return {
     '@type': 'Person',
     '@id': personId(author),
@@ -167,7 +177,7 @@ export function productReviewSchema(product: Product, author: Author): Json {
     review: {
       '@type': 'Review',
       reviewRating: { '@type': 'Rating', ratingValue: product.scores.overall, bestRating: 10, worstRating: 0 },
-      author: { '@id': personId(author), '@type': 'Person', name: author.name },
+      author: { '@id': personId(author), '@type': author.kind === 'team' ? 'Organization' : 'Person', name: author.name },
       publisher: { '@id': ORG_ID },
       datePublished: isoDate(product.updatedAt),
       positiveNotes: {

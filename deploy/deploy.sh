@@ -42,3 +42,10 @@ for url in "http://${VPS_HOST}/" "https://${DOMAIN}/" "https://${DOMAIN}/sitemap
   code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 -H "Host: ${DOMAIN}" "$url" || true)
   echo "  ${url} -> HTTP ${code}"
 done
+
+# Tell IndexNow search engines (Bing, Yandex, ...) about the current URLs. Never fails the deploy.
+if [ "${INDEXNOW:-1}" != "0" ]; then
+  echo
+  echo "==> IndexNow ping"
+  DOMAIN="$DOMAIN" node scripts/indexnow.cjs || echo "  (IndexNow ping failed; the site is deployed anyway)"
+fi

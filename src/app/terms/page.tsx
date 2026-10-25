@@ -1,32 +1,76 @@
 import React from 'react';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
+import { SITE } from '@/lib/site';
+import { DocPage, DocSection } from '@/components/DocPage';
+
+const DESCRIPTION =
+  'The terms that apply when you use HouseCareWiki guides, smart tools and product reviews, including safety disclaimers and affiliate link information.';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Terms of Use',
-  description: 'The terms that apply when you use HouseCareWiki guides, smart tools and product reviews, including safety disclaimers and affiliate link information.',
+  title: 'Terms of Use & Safety Disclaimers',
+  description: DESCRIPTION,
   path: '/terms',
 });
 
 export default function TermsPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="bg-white rounded-2xl border border-paper-border p-8 shadow-card space-y-5">
-        <h1 className="font-editorial text-3xl sm:text-4xl font-bold text-ink">
-          Terms of Use
-        </h1>
-        <div className="space-y-4 text-sm sm:text-base text-ink-secondary leading-relaxed">
-          <p>
-            <strong>1. Informational & Reference Nature:</strong> HouseCareWiki.com provides general household cleaning, stain removal, and organization information for educational purposes. Always consult your appliance or furniture manufacturer&apos;s care manual and test cleaning solutions on a hidden area before full application.
-          </p>
-          <p>
-            <strong>2. Independent Publisher Boundary:</strong> HouseCareWiki does not sell physical products directly, process payments, or handle shipping or returns. All retail transactions occur on Amazon.com or the respective merchant&apos;s website.
-          </p>
-          <p>
-            <strong>3. Chemical Safety:</strong> Users must follow all manufacturer label precautions, ensure adequate ventilation, and never combine bleach with acids, vinegar, or ammonia.
-          </p>
-        </div>
-      </div>
-    </div>
+    <DocPage
+      path="/terms"
+      description={DESCRIPTION}
+      kicker="The fine print"
+      breadcrumb="Terms of use"
+      title="Terms of use"
+      lede={<p>The plain terms that apply when you use HouseCareWiki&apos;s guides, tools and product reviews.</p>}
+      related={[
+        { href: '/privacy', label: 'Privacy policy' },
+        { href: '/affiliate-disclosure', label: 'Affiliate disclosure' },
+        { href: '/editorial-policy', label: 'Editorial policy' },
+      ]}
+    >
+      <DocSection id="information" index="01" title="General information, not professional advice">
+        <p>
+          HouseCareWiki publishes general information about household cleaning, stain removal and organization. Always read the
+          care manual for your appliance, furniture or flooring, and test any cleaning solution somewhere hidden before using it
+          on a whole surface. For valuable, antique or &ldquo;X&rdquo; care-code items, consult a professional.
+        </p>
+      </DocSection>
+
+      <DocSection id="safety" index="02" title="Chemical safety">
+        <p>
+          Follow every precaution on product labels, keep the room ventilated, and never mix bleach with acids (including
+          vinegar) or ammonia. You are responsible for how you apply the methods described on this site.
+        </p>
+      </DocSection>
+
+      <DocSection id="retail" index="03" title="We don’t sell products">
+        <p>
+          HouseCareWiki doesn&apos;t sell products, take payments, or handle shipping or returns. Purchases happen on Amazon.com
+          or the retailer&apos;s own site, under their terms. Some links earn us a commission; see our{' '}
+          <Link href="/affiliate-disclosure" className="link">
+            affiliate disclosure
+          </Link>
+          .
+        </p>
+      </DocSection>
+
+      <DocSection id="reviews" index="04" title="Reviews and ratings">
+        <p>
+          Our product reviews and ratings are editorial opinions based on the evidence each review declares. Specifications and
+          availability can change after publication; check the manufacturer&apos;s current information before you buy.
+        </p>
+      </DocSection>
+
+      <DocSection id="contact" index="05" title="Contact">
+        <p>
+          Questions about these terms:{' '}
+          <a href={`mailto:${SITE.email}`} className="link">
+            {SITE.email}
+          </a>
+          .
+        </p>
+      </DocSection>
+    </DocPage>
   );
 }

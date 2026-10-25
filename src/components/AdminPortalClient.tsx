@@ -18,8 +18,8 @@ import {
   TrendingUp,
   MousePointerClick,
 } from 'lucide-react';
-import { DatabaseState } from '@/lib/store';
-import { EditorialStatus } from '@/lib/types';
+import type { DatabaseState } from '@/lib/store';
+import type { EditorialStatus } from '@/lib/types';
 
 const WORKFLOW_STAGES: EditorialStatus[] = [
   'Idea',
@@ -44,7 +44,7 @@ export function AdminPortalClient({
   const [activeTab, setActiveTab] = useState<
     'dashboard' | 'cms' | 'products' | 'seo' | 'ai' | 'jobs'
   >('dashboard');
-  const [toast, setToast] = useState<string>('');
+  const [toast, setToast] = useState<{ msg: string; tone: 'ok' | 'error' } | null>(null);
 
   // New Article Draft Form State
   const [newTitle, setNewTitle] = useState('');
@@ -73,105 +73,100 @@ export function AdminPortalClient({
   const [partnerTag, setPartnerTag] = useState(store.config.amazonPartnerTag);
   const [heroTitle, setHeroTitle] = useState(store.config.heroTitle);
 
-  const showNotice = (msg: string) => {
-    setToast(msg);
-    setTimeout(() => setToast(''), 4000);
+  const showNotice = (msg: string, tone: 'ok' | 'error' = 'ok') => {
+    setToast({ msg, tone });
+    setTimeout(() => setToast(null), 6000);
+  };
+
+  // All CMS writes go through one POST endpoint. Error responses may be JSON ({ error }) or plain text
+  // (401/503 from the auth gate), so parse defensively and always surface a readable message.
+  const postAction = async (
+    action: string,
+    payload: Record<string, unknown>
+  ): Promise<{ ok: true; store: DatabaseState } | { ok: false; error: string }> => {
+    try {
+      const res = await fetch('/api/admin/state', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action, payload }),
+      });
+      const text = await res.text();
+      let data: { store?: DatabaseState; error?: string } = {};
+      try {
+        data = text ? JSON.parse(text) : {};
+      } catch {
+        data = { error: text.slice(0, 200) };
+      }
+      if (res.ok && data.store) return { ok: true, store: data.store };
+      if (res.status === 401) return { ok: false, error: 'Your admin session has expired. Reload the page and sign in again.' };
+      return { ok: false, error: data.error || `Request failed (HTTP ${res.status}).` };
+    } catch {
+      return { ok: false, error: 'Network error: the change was not saved.' };
+    }
   };
 
   const handleStatusChange = async (articleId: string, nextStatus: EditorialStatus) => {
-    const res = await fetch('/api/admin/state', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        action: 'UPDATE_ARTICLE_STATUS',
-        payload: { articleId, nextStatus },
-      }),
-    });
-    const data = await res.json();
-    if (res.ok && data.store) {
-      setStore(data.store);
-      showNotice(`Updated workflow status to "${nextStatus}" (logged to Audit Trail).`);
+    const result = await postAction('UPDATE_ARTICLE_STATUS', { articleId, nextStatus });
+    if (result.ok) {
+      setStore(result.store);
+      showNotice(`Status changed to "${nextStatus}". The change is recorded in the audit log.`);
     } else {
-      showNotice(data.error || 'Could not update status.');
+      showNotice(result.error, 'error');
     }
   };
 
   const handleCreateArticle = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newTitle.trim() || !newQuickAnswer.trim()) return;
-    const res = await fetch('/api/admin/state', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        action: 'CREATE_ARTICLE',
-        payload: {
-          title: newTitle.trim(),
-          roomSlug: newRoom,
-          quickAnswer: newQuickAnswer.trim(),
-          safetyWarning: newSafetyWarning.trim(),
-        },
-      }),
+    const result = await postAction('CREATE_ARTICLE', {
+      title: newTitle.trim(),
+      roomSlug: newRoom,
+      quickAnswer: newQuickAnswer.trim(),
+      safetyWarning: newSafetyWarning.trim(),
     });
-    const data = await res.json();
-    if (res.ok && data.store) {
-      setStore(data.store);
+    if (result.ok) {
+      setStore(result.store);
       setNewTitle('');
       setNewQuickAnswer('');
       setNewSafetyWarning('');
-      showNotice('Created new structured article draft in CMS!');
+      showNotice('Draft created. Find it in the workflow list below.');
+    } else {
+      showNotice(result.error, 'error');
     }
   };
 
   const handleAddRedirect = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!fromPath.trim() || !toPath.trim()) return;
-    const res = await fetch('/api/admin/state', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        action: 'ADD_REDIRECT',
-        payload: { fromPath, toPath },
-      }),
-    });
-    const data = await res.json();
-    if (res.ok && data.store) {
-      setStore(data.store);
+    const result = await postAction('ADD_REDIRECT', { fromPath, toPath });
+    if (result.ok) {
+      setStore(result.store);
       setFromPath('');
       setToPath('');
-      showNotice('Added permanent 301 redirect rule.');
+      showNotice('Added a permanent (301) redirect.');
+    } else {
+      showNotice(result.error, 'error');
     }
   };
 
   const handleTriggerJob = async (jobId: string) => {
-    const res = await fetch('/api/admin/state', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        action: 'RUN_AUTOMATION_JOB',
-        payload: { jobId },
-      }),
-    });
-    const data = await res.json();
-    if (res.ok && data.store) {
-      setStore(data.store);
-      showNotice('Background worker job executed and verified.');
+    const result = await postAction('RUN_AUTOMATION_JOB', { jobId });
+    if (result.ok) {
+      setStore(result.store);
+      showNotice('Not run: no background job runner is connected. The request was recorded in the audit log.', 'error');
+    } else {
+      showNotice(result.error, 'error');
     }
   };
 
   const handleSaveConfig = async (e: React.FormEvent) => {
     e.preventDefault();
-    const res = await fetch('/api/admin/state', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        action: 'UPDATE_SITE_CONFIG',
-        payload: { amazonPartnerTag: partnerTag, heroTitle },
-      }),
-    });
-    const data = await res.json();
-    if (res.ok && data.store) {
-      setStore(data.store);
-      showNotice('Saved Homepage & Amazon Affiliate configuration.');
+    const result = await postAction('UPDATE_SITE_CONFIG', { amazonPartnerTag: partnerTag, heroTitle });
+    if (result.ok) {
+      setStore(result.store);
+      showNotice('Saved homepage and affiliate settings.');
+    } else {
+      showNotice(result.error, 'error');
     }
   };
 
@@ -181,12 +176,14 @@ export function AdminPortalClient({
 
     if (lower.includes('bleach') && (lower.includes('vinegar') || lower.includes('ammonia'))) {
       warnings.push(
-        'CRITICAL CHEMICAL HAZARD BLOCKED: Text mentions both bleach and vinegar/ammonia. Mixing releases toxic chlorine/chloramine gas.'
+        'Chemical hazard: the text mentions bleach together with vinegar or ammonia. Mixing them releases toxic chlorine or chloramine gas.'
       );
     }
-    if (lower.includes('we tested 500') || lower.includes('guaranteed cure')) {
+    const claimPhrases = ['we tested', 'lab-tested', 'lab tested', 'hands-on', 'verified buyer', 'guaranteed cure', 'real homes'];
+    const foundClaims = claimPhrases.filter((phrase) => lower.includes(phrase));
+    if (foundClaims.length > 0) {
       warnings.push(
-        'AI SAFETY VIOLATION (Spec 14.4): Unverified testing claim or medical guarantee detected.'
+        `Unsupported claim: "${foundClaims.join('", "')}". Our reviews are research-based; remove testing claims and guarantees.`
       );
     }
 
@@ -196,50 +193,56 @@ export function AdminPortalClient({
         warnings.length > 0
           ? warnings
           : [
-              'Passed Chemical Safety Check (No hazardous bleach/acid combinations found).',
-              'Passed Editorial Honesty Check (No fabricated testing claims or fake buyer reviews).',
-              'Suggested internal links: /rooms/bathroom-cleaning, /surfaces/glass, /products/steam-cleaner-for-bathroom-multipurpose.',
+              'No bleach + acid/ammonia combinations found.',
+              'No testing claims or guarantees found from the flagged-phrase list.',
+              'This is a simple keyword check. An editor still needs to fact-check the method against sources.',
             ],
       outline: [
         `H1: ${aiTopic}`,
-        'Quick Answer Box (60-Second Solution)',
-        'Surface Safety Check: Tempered Glass vs. Unsealed Stone Thresholds',
-        'Step 1: Apply Warm 50/50 Distilled White Vinegar + Surfactant Mist',
-        'Step 2: 5-Minute Dwell Time & Non-Scratch Agitation',
-        'Step 3: Squeegee Blade Pull & Microfiber Edge Buffing',
-        'When to Use Pressurized Steam Instead of Acid Descalers',
+        'Short answer (2–3 sentences)',
+        'Surface safety: what this method can damage',
+        'Supplies',
+        'Step-by-step method',
+        'If it didn’t work',
+        'FAQ and sources',
       ],
     });
   };
 
+  const totalClicks = store.affiliateClicks.length;
+  const publishedCount = store.articles.filter((a) => a.status === 'Published').length;
+  const draftCount = store.articles.length - publishedCount;
+  const activeSubscribers = store.subscribers.filter((s) => s.status !== 'unsubscribed').length;
+
+  const card = 'rounded-sm border border-rule bg-paper-card p-5 sm:p-6';
+  const input = 'w-full min-h-[44px] rounded-sm border border-rule-strong/70 bg-paper px-3.5 py-2 text-sm text-ink focus:border-ink focus:outline-none';
+  const labelCls = 'block text-xs font-semibold text-ink-secondary mb-1';
+  const primaryBtn = 'inline-flex min-h-[44px] items-center justify-center gap-1.5 rounded bg-ink px-5 text-sm font-semibold text-white transition-colors hover:bg-ink-deep';
+  const h2 = 'font-serif text-xl font-semibold text-ink';
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
-      {/* Top Admin Header */}
-      <div className="bg-forest-dark text-white rounded-2xl p-6 shadow-elevated flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+      {/* Admin header + tabs */}
+      <div className="bg-ink text-paper-light rounded-sm p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-300">
-            <ShieldCheck className="w-4 h-4" />
-            <span>SYS-08 to SYS-14 · Editorial CMS, SEO & Operations Control Center</span>
+          <div className="kicker flex items-center gap-2 text-honey">
+            <ShieldCheck className="w-4 h-4" aria-hidden="true" />
+            <span>Editorial CMS, SEO and site settings</span>
           </div>
-          <h1 className="font-editorial text-2xl sm:text-3xl font-bold mt-1">
-            HouseCareWiki.com Admin Portal
-          </h1>
+          <h1 className="font-serif text-2xl sm:text-3xl font-semibold mt-1">HouseCareWiki admin</h1>
           <p className="text-xs text-paper-light/80 mt-0.5">
-            Active Role: <strong>Owner / Managing Editor</strong> · Amazon Partner Tag:{' '}
-            <code className="bg-white/10 px-1.5 py-0.5 rounded">
-              {store.config.amazonPartnerTag}
-            </code>
+            Role: <strong>Owner / Managing Editor</strong> · Amazon partner tag:{' '}
+            <code className="bg-paper-light/10 px-1.5 py-0.5 rounded-sm">{store.config.amazonPartnerTag}</code>
           </p>
         </div>
 
-        {/* Navigation Tabs */}
-        <div className="flex flex-wrap gap-1.5">
+        <div className="flex flex-wrap gap-1.5" role="tablist" aria-label="Admin sections">
           {[
             { id: 'dashboard', label: 'Overview', icon: BarChart3 },
             { id: 'cms', label: 'Editorial CMS', icon: FileText },
             { id: 'products', label: 'Catalog & Amazon', icon: Package },
             { id: 'seo', label: 'SEO & Redirects', icon: Globe },
-            { id: 'ai', label: 'AI Assistant', icon: Bot },
+            { id: 'ai', label: 'Draft checker', icon: Bot },
             { id: 'jobs', label: 'Jobs & Settings', icon: Settings },
           ].map((tab) => {
             const Icon = tab.icon;
@@ -248,14 +251,14 @@ export function AdminPortalClient({
               <button
                 key={tab.id}
                 type="button"
+                role="tab"
+                aria-selected={active}
                 onClick={() => setActiveTab(tab.id as typeof activeTab)}
-                className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold transition ${
-                  active
-                    ? 'bg-coral text-white shadow-sm'
-                    : 'bg-white/10 text-paper-light hover:bg-white/20'
+                className={`inline-flex min-h-[44px] items-center gap-1.5 px-3.5 rounded-sm text-xs font-semibold transition-colors ${
+                  active ? 'bg-honey text-ink' : 'bg-paper-light/10 text-paper-light hover:bg-paper-light/20'
                 }`}
               >
-                <Icon className="w-3.5 h-3.5" />
+                <Icon className="w-3.5 h-3.5" aria-hidden="true" />
                 <span>{tab.label}</span>
               </button>
             );
@@ -264,167 +267,147 @@ export function AdminPortalClient({
       </div>
 
       {toast && (
-        <div className="bg-emerald-50 border border-emerald-300 text-forest px-4 py-3 rounded-xl text-xs font-bold flex items-center justify-between">
-          <span>{toast}</span>
-          <button type="button" onClick={() => setToast('')}>
+        <div
+          role={toast.tone === 'error' ? 'alert' : 'status'}
+          className={`px-4 py-3 rounded-sm text-sm font-semibold flex items-center justify-between gap-4 border ${
+            toast.tone === 'error' ? 'bg-terracotta-soft border-terracotta/40 text-terracotta-deep' : 'bg-leaf-soft border-leaf-deep/40 text-leaf-deep'
+          }`}
+        >
+          <span>{toast.msg}</span>
+          <button type="button" onClick={() => setToast(null)} aria-label="Dismiss message" className="min-h-[44px] min-w-[44px]">
             ✕
           </button>
         </div>
       )}
 
-      {/* TAB 1: EXECUTIVE DASHBOARD (Spec Section 13.1 & 16.4) */}
+      {/* TAB 1: OVERVIEW — only numbers the site actually records. */}
       {activeTab === 'dashboard' && (
         <div className="space-y-6">
-          {/* KPI Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-white rounded-2xl border border-paper-border p-5 shadow-card">
-              <div className="flex items-center justify-between text-xs font-bold text-ink-muted uppercase">
-                <span>US Organic Impressions (30d)</span>
-                <TrendingUp className="w-4 h-4 text-forest" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px border border-rule bg-rule">
+            <div className="bg-paper-card p-5">
+              <div className="kicker flex items-center justify-between text-ink-muted">
+                <span>Affiliate clicks recorded</span>
+                <MousePointerClick className="w-4 h-4 text-terracotta-deep" aria-hidden="true" />
               </div>
-              <p className="font-editorial text-3xl font-bold text-ink mt-2">
-                48,920
-              </p>
-              <p className="text-xs text-forest font-semibold mt-1">
-                3,410 Organic Clicks · 6.97% CTR
+              <p className="font-serif text-3xl font-semibold text-ink mt-2">{totalClicks}</p>
+              <p className="text-xs text-ink-muted mt-1">Outbound clicks to Amazon. A click is not a sale.</p>
+            </div>
+            <div className="bg-paper-card p-5">
+              <div className="kicker flex items-center justify-between text-ink-muted">
+                <span>Newsletter subscribers</span>
+                <TrendingUp className="w-4 h-4 text-terracotta-deep" aria-hidden="true" />
+              </div>
+              <p className="font-serif text-3xl font-semibold text-ink mt-2">{activeSubscribers}</p>
+              <p className="text-xs text-ink-muted mt-1">
+                {activeSubscribers === 0 ? 'No sign-ups yet.' : 'Stored sign-ups from the site form.'}
               </p>
             </div>
-
-            <div className="bg-white rounded-2xl border border-paper-border p-5 shadow-card">
-              <div className="flex items-center justify-between text-xs font-bold text-ink-muted uppercase">
-                <span>Avg Search Position (GSC)</span>
-                <Globe className="w-4 h-4 text-forest" />
+            <div className="bg-paper-card p-5">
+              <div className="kicker flex items-center justify-between text-ink-muted">
+                <span>Published pages</span>
+                <FileText className="w-4 h-4 text-terracotta-deep" aria-hidden="true" />
               </div>
-              <p className="font-editorial text-3xl font-bold text-ink mt-2">
-                6.4
-              </p>
-              <p className="text-xs text-ink-secondary mt-1">
-                100% Canonical URLs Indexed
+              <p className="font-serif text-3xl font-semibold text-ink mt-2">{publishedCount}</p>
+              <p className="text-xs text-ink-muted mt-1">
+                {draftCount} in other workflow stages · {store.products.length} products
               </p>
             </div>
-
-            <div className="bg-white rounded-2xl border border-paper-border p-5 shadow-card">
-              <div className="flex items-center justify-between text-xs font-bold text-ink-muted uppercase">
-                <span>Recorded Affiliate Clicks</span>
-                <MousePointerClick className="w-4 h-4 text-coral" />
+            <div className="bg-paper-card p-5">
+              <div className="kicker flex items-center justify-between text-ink-muted">
+                <span>Search Console</span>
+                <Globe className="w-4 h-4 text-ink-muted" aria-hidden="true" />
               </div>
-              <p className="font-editorial text-3xl font-bold text-ink mt-2">
-                {store.affiliateClicks.length}
+              <p className="mt-3">
+                <NotConnectedBadge />
               </p>
-              <p className="text-xs text-ink-secondary mt-1">
-                Outbound CTR: 14.2% (Click ≠ Confirmed Sale)
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl border border-paper-border p-5 shadow-card">
-              <div className="flex items-center justify-between text-xs font-bold text-ink-muted uppercase">
-                <span>Core Web Vitals (p75)</span>
-                <CheckCircle2 className="w-4 h-4 text-forest" />
-              </div>
-              <p className="font-editorial text-2xl font-bold text-forest mt-2">
-                LCP 1.6s · INP 68ms
-              </p>
-              <p className="text-xs text-ink-secondary mt-1">
-                CLS 0.02 · Passes WCAG 2.2 AA
+              <p className="text-xs text-ink-muted mt-2">
+                Impressions, clicks and rankings appear here once a Search Console import is set up.
               </p>
             </div>
           </div>
 
-          {/* Recent Affiliate Click Attribution Log + Audit Trail */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div className="bg-white rounded-2xl border border-paper-border p-6 shadow-card">
-              <h2 className="font-editorial text-xl font-bold text-ink mb-1">
-                Live Amazon Associates Click Attribution
-              </h2>
+            <div className={card}>
+              <h2 className={`${h2} mb-1`}>Amazon click log</h2>
               <p className="text-xs text-ink-muted mb-4">
-                Per Spec Section 13.1 & 16.3: Records anonymous placement clicks without conflating clicks with confirmed Amazon sales.
+                Anonymous clicks by page and placement. Clicks are recorded separately from Amazon sales, which we don&apos;t see here.
               </p>
-              <div className="space-y-2.5 max-h-72 overflow-y-auto">
-                {store.affiliateClicks.map((clk) => (
-                  <div
-                    key={clk.id}
-                    className="p-3 rounded-xl bg-paper-light border border-paper-border flex items-center justify-between text-xs"
-                  >
-                    <div>
-                      <p className="font-bold text-ink">{clk.productName}</p>
-                      <p className="text-ink-muted">
-                        Page: <code>{clk.contentSlug}</code> · Slot:{' '}
-                        <code>{clk.placement}</code> ({clk.device})
-                      </p>
+              {totalClicks === 0 ? (
+                <p className="border border-dashed border-rule-strong/60 p-4 text-sm text-ink-muted">
+                  No clicks recorded yet. They appear here when a reader follows a &ldquo;Check price on Amazon&rdquo; link.
+                </p>
+              ) : (
+                <div className="divide-y divide-rule border-y border-rule max-h-72 overflow-y-auto">
+                  {store.affiliateClicks.map((clk) => (
+                    <div key={clk.id} className="py-3 flex items-center justify-between gap-3 text-xs">
+                      <div>
+                        <p className="font-semibold text-ink">{clk.productName}</p>
+                        <p className="text-ink-muted">
+                          Page: <code>{clk.contentSlug}</code> · Placement: <code>{clk.placement}</code> ({clk.device})
+                        </p>
+                      </div>
+                      <span className="font-mono text-[11px] text-ink-secondary shrink-0">ASIN {clk.asin}</span>
                     </div>
-                    <span className="text-[11px] font-semibold text-forest shrink-0">
-                      ASIN: {clk.asin}
-                    </span>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
             </div>
 
-            <div className="bg-white rounded-2xl border border-paper-border p-6 shadow-card">
-              <h2 className="font-editorial text-xl font-bold text-ink mb-1">
-                Admin Audit Trail (Spec Section 19.2)
-              </h2>
-              <p className="text-xs text-ink-muted mb-4">
-                Immutable log of editorial status changes, redirect creation, and system updates.
-              </p>
-              <div className="space-y-2.5 max-h-72 overflow-y-auto">
-                {store.auditLogs.map((log) => (
-                  <div
-                    key={log.id}
-                    className="p-3 rounded-xl bg-paper-light border border-paper-border text-xs space-y-1"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold text-forest">
-                        {log.action} · {log.actor} ({log.role})
-                      </span>
-                      <span className="text-[11px] text-ink-muted">
-                        {log.timestamp.slice(0, 19).replace('T', ' ')}
-                      </span>
+            <div className={card}>
+              <h2 className={`${h2} mb-1`}>Audit log</h2>
+              <p className="text-xs text-ink-muted mb-4">Status changes, new drafts, redirects and settings changes.</p>
+              {store.auditLogs.length === 0 ? (
+                <p className="border border-dashed border-rule-strong/60 p-4 text-sm text-ink-muted">No changes logged yet.</p>
+              ) : (
+                <div className="divide-y divide-rule border-y border-rule max-h-72 overflow-y-auto">
+                  {store.auditLogs.map((log) => (
+                    <div key={log.id} className="py-3 text-xs space-y-1">
+                      <div className="flex items-center justify-between gap-3">
+                        <span className="font-semibold text-terracotta-deep">
+                          {log.action} · {log.actor} ({log.role})
+                        </span>
+                        <span className="text-[11px] text-ink-muted shrink-0">
+                          {log.timestamp.slice(0, 19).replace('T', ' ')}
+                        </span>
+                      </div>
+                      <p className="text-ink-secondary">{log.details}</p>
                     </div>
-                    <p className="text-ink-secondary">{log.details}</p>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
       )}
 
-      {/* TAB 2: EDITORIAL CMS & 11-STAGE WORKFLOW (Spec Section 13.2 & 13.3) */}
+      {/* TAB 2: EDITORIAL CMS and workflow */}
       {activeTab === 'cms' && (
         <div className="space-y-8">
-          {/* Create Structured Guide Form */}
-          <form
-            onSubmit={handleCreateArticle}
-            className="bg-white rounded-2xl border border-paper-border p-6 shadow-card space-y-4"
-          >
-            <h2 className="font-editorial text-xl font-bold text-ink flex items-center gap-2">
-              <Plus className="w-5 h-5 text-coral" />
-              <span>Create New Structured Guide / Article Draft</span>
+          <form onSubmit={handleCreateArticle} className={`${card} space-y-4`}>
+            <h2 className={`${h2} flex items-center gap-2`}>
+              <Plus className="w-5 h-5 text-terracotta-deep" aria-hidden="true" />
+              <span>New guide draft</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="md:col-span-2">
-                <label className="block text-xs font-bold text-ink-secondary mb-1">
-                  Article Headline (H1)
+                <label htmlFor="new-title" className={labelCls}>
+                  Headline (H1)
                 </label>
                 <input
+                  id="new-title"
                   type="text"
                   required
                   value={newTitle}
                   onChange={(e) => setNewTitle(e.target.value)}
                   placeholder="e.g., How to Clean Burnt Grease Off Stainless Steel Pans"
-                  className="w-full rounded-xl border border-paper-border bg-paper-light px-3.5 py-2 text-sm"
+                  className={input}
                 />
               </div>
               <div>
-                <label className="block text-xs font-bold text-ink-secondary mb-1">
-                  Target Room Cluster
+                <label htmlFor="new-room" className={labelCls}>
+                  Room
                 </label>
-                <select
-                  value={newRoom}
-                  onChange={(e) => setNewRoom(e.target.value)}
-                  className="w-full rounded-xl border border-paper-border bg-paper-light px-3.5 py-2 text-sm font-semibold"
-                >
+                <select id="new-room" value={newRoom} onChange={(e) => setNewRoom(e.target.value)} className={`${input} font-semibold`}>
                   {store.rooms.map((r) => (
                     <option key={r.slug} value={r.slug}>
                       {r.name}
@@ -436,93 +419,80 @@ export function AdminPortalClient({
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold text-ink-secondary mb-1">
-                  Quick Answer Summary (Required for Publication)
+                <label htmlFor="new-answer" className={labelCls}>
+                  Short answer (required to publish)
                 </label>
                 <textarea
+                  id="new-answer"
                   rows={2}
                   required
                   value={newQuickAnswer}
                   onChange={(e) => setNewQuickAnswer(e.target.value)}
-                  placeholder="Provide the immediate step-by-step solution..."
-                  className="w-full rounded-xl border border-paper-border bg-paper-light p-3 text-sm"
+                  placeholder="The fix in two or three sentences..."
+                  className={input}
                 />
               </div>
               <div>
-                <label className="block text-xs font-bold text-ink-secondary mb-1">
-                  Mandatory Surface / Chemical Safety Warning
+                <label htmlFor="new-safety" className={labelCls}>
+                  Surface or chemical safety warning (required)
                 </label>
                 <textarea
+                  id="new-safety"
                   rows={2}
                   required
                   value={newSafetyWarning}
                   onChange={(e) => setNewSafetyWarning(e.target.value)}
                   placeholder="e.g., Never use steel wool or chlorine bleach on brushed stainless steel..."
-                  className="w-full rounded-xl border border-paper-border bg-paper-light p-3 text-sm"
+                  className={input}
                 />
               </div>
             </div>
 
-            <button
-              type="submit"
-              className="bg-forest hover:bg-forest-light text-white text-xs font-bold px-5 py-2.5 rounded-xl transition"
-            >
-              Create Structured Draft
+            <button type="submit" className={primaryBtn}>
+              Create draft
             </button>
           </form>
 
-          {/* Editorial Workflow Table */}
-          <div className="bg-white rounded-2xl border border-paper-border p-6 shadow-card space-y-4">
+          <div className={`${card} space-y-4`}>
             <div>
-              <h2 className="font-editorial text-xl font-bold text-ink">
-                11-Stage Editorial Workflow Manager (Spec Section 13.3)
-              </h2>
+              <h2 className={h2}>Editorial workflow</h2>
               <p className="text-xs text-ink-muted mt-0.5">
-                Pipeline: Idea → Research → Draft → Fact Check → Editorial Review → SEO Review → Approved → Scheduled → Published → Update Required → Archived
+                Idea → Research → Draft → Fact Check → Editorial Review → SEO Review → Approved → Scheduled → Published → Update
+                Required → Archived. Publishing needs an SEO title, a short answer and at least one safety warning.
               </p>
             </div>
 
-            <div className="divide-y divide-paper-border">
+            <div className="divide-y divide-rule">
               {store.articles.map((art) => {
-                const publicUrl =
-                  art.routeType === 'best' ? `/best/${art.slug}` : `/guides/${art.slug}`;
+                const publicUrl = art.routeType === 'best' ? `/best/${art.slug}` : `/guides/${art.slug}`;
                 return (
-                  <div
-                    key={art.id}
-                    className="py-4 flex flex-col lg:flex-row lg:items-center justify-between gap-4"
-                  >
+                  <div key={art.id} className="py-4 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                     <div className="space-y-1">
                       <div className="flex items-center gap-2">
-                        <span className="text-[10px] font-extrabold uppercase tracking-wider bg-paper-warm text-forest px-2 py-0.5 rounded">
-                          {art.categoryLabel}
-                        </span>
-                        <span className="text-xs font-semibold text-ink-muted">
-                          {art.evidenceStatus}
-                        </span>
+                        <span className="kicker bg-paper-warm text-ink-secondary px-2 py-0.5 rounded-sm">{art.categoryLabel}</span>
+                        <span className="text-xs font-semibold text-ink-muted">{art.evidenceStatus}</span>
                       </div>
                       <Link
                         href={publicUrl}
-                        className="font-editorial font-bold text-lg text-ink hover:text-forest inline-flex items-center gap-1.5"
+                        className="font-serif font-semibold text-lg text-ink hover:text-terracotta-deep inline-flex items-center gap-1.5"
                       >
                         <span>{art.title}</span>
-                        <ExternalLink className="w-3.5 h-3.5 text-ink-muted" />
+                        <ExternalLink className="w-3.5 h-3.5 text-ink-muted" aria-hidden="true" />
                       </Link>
                       <p className="text-xs text-ink-muted">
-                        Canonical: <code>{art.seo.canonical}</code> · Safety warnings:{' '}
-                        {art.safetyWarnings.length}
+                        Canonical: <code>{art.seo.canonical}</code> · Safety warnings: {art.safetyWarnings.length}
                       </p>
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <label className="text-xs font-semibold text-ink-muted">
-                        Status:
+                      <label htmlFor={`status-${art.id}`} className="text-xs font-semibold text-ink-muted">
+                        Status
                       </label>
                       <select
+                        id={`status-${art.id}`}
                         value={art.status}
-                        onChange={(e) =>
-                          handleStatusChange(art.id, e.target.value as EditorialStatus)
-                        }
-                        className="rounded-xl border border-paper-border bg-paper-light px-3 py-2 text-xs font-bold text-forest"
+                        onChange={(e) => handleStatusChange(art.id, e.target.value as EditorialStatus)}
+                        className="min-h-[44px] rounded-sm border border-rule-strong/70 bg-paper px-3 text-xs font-semibold text-terracotta-deep"
                       >
                         {WORKFLOW_STAGES.map((st) => (
                           <option key={st} value={st}>
@@ -539,220 +509,212 @@ export function AdminPortalClient({
         </div>
       )}
 
-      {/* TAB 3: PRODUCT CATALOG & AMAZON ASSOCIATES ADAPTER (Spec Section 8, 9, 13.5) */}
+      {/* TAB 3: PRODUCT CATALOG and Amazon links */}
       {activeTab === 'products' && (
         <div className="space-y-6">
-          <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="border border-rule bg-paper-card rounded-sm p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="space-y-1">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-forest">
-                SYS-11 · Amazon Creators API Adapter Status
-              </span>
-              <h2 className="font-editorial text-xl font-bold text-ink">
-                Standalone Catalog Mode Active (Zero External API Dependency)
+              <span className="kicker text-ink-muted">Amazon Creators API</span>
+              <h2 className={h2}>
+                {store.config.creatorsApiConnected ? 'Connected' : 'Static catalog (API not connected)'}
               </h2>
               <p className="text-xs text-ink-secondary">
-                Per Spec Section 9.3: Catalog operates independently before Creators API qualification (10 qualifying sales/30d) and seamlessly syncs once credentials are enabled.
+                Product data is maintained by hand. Prices and availability are never shown on the site; readers check them on
+                Amazon. The API can be connected after the account qualifies (10 qualifying sales in 30 days).
               </p>
             </div>
-            <span className="bg-forest text-white text-xs font-bold px-3.5 py-1.5 rounded-full shrink-0">
-              Partner Tag: {store.config.amazonPartnerTag}
-            </span>
+            {store.config.creatorsApiConnected ? (
+              <span className="kicker bg-leaf-soft text-leaf-deep px-3 py-1.5 rounded-full shrink-0">Connected</span>
+            ) : (
+              <NotConnectedBadge />
+            )}
           </div>
 
-          <div className="bg-white rounded-2xl border border-paper-border shadow-card overflow-hidden">
+          <div className="border border-rule bg-paper-card rounded-sm overflow-x-auto">
             <table className="w-full text-left border-collapse text-xs sm:text-sm">
+              <caption className="sr-only">Products in the catalog</caption>
               <thead>
-                <tr className="bg-paper-warm/70 border-b border-paper-border text-ink-secondary font-bold">
-                  <th className="p-4">Product</th>
-                  <th className="p-4">ASIN</th>
-                  <th className="p-4">Evidence Status</th>
-                  <th className="p-4">Price</th>
-                  <th className="p-4">Link Validation</th>
+                <tr className="border-b-2 border-ink text-ink-secondary">
+                  <th scope="col" className="kicker p-4">Product</th>
+                  <th scope="col" className="kicker p-4">ASIN</th>
+                  <th scope="col" className="kicker p-4">Evidence status</th>
+                  <th scope="col" className="kicker p-4">Our rating</th>
+                  <th scope="col" className="kicker p-4">Partner tag in link</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-paper-border">
-                {store.products.map((prod) => (
-                  <tr key={prod.id}>
-                    <td className="p-4 font-bold text-ink">
-                      <Link
-                        href={`/products/${prod.slug}`}
-                        className="hover:text-forest"
-                      >
-                        {prod.name}
-                      </Link>
-                    </td>
-                    <td className="p-4 font-mono text-xs">{prod.asin}</td>
-                    <td className="p-4">
-                      <span className="bg-paper-light border border-paper-border px-2.5 py-0.5 rounded text-xs font-semibold">
-                        {prod.evidenceStatus}
-                      </span>
-                    </td>
-                    <td className="p-4 font-bold">{prod.price}</td>
-                    <td className="p-4">
-                      <span className="inline-flex items-center gap-1 text-xs font-bold text-forest">
-                        <CheckCircle2 className="w-3.5 h-3.5" />
-                        Valid (rel=&quot;sponsored&quot;)
-                      </span>
-                    </td>
-                  </tr>
-                ))}
+              <tbody className="divide-y divide-rule">
+                {store.products.map((prod) => {
+                  const tagOk = prod.amazonUrl.includes(`tag=${store.config.amazonPartnerTag}`);
+                  return (
+                    <tr key={prod.id}>
+                      <th scope="row" className="p-4 font-semibold text-ink">
+                        <Link href={`/products/${prod.slug}`} className="hover:text-terracotta-deep">
+                          {prod.name}
+                        </Link>
+                      </th>
+                      <td className="p-4 font-mono text-xs">{prod.asin}</td>
+                      <td className="p-4">
+                        <span className="bg-paper border border-rule px-2.5 py-0.5 rounded-sm text-xs font-semibold">
+                          {prod.evidenceStatus}
+                        </span>
+                      </td>
+                      <td className="p-4 font-mono text-xs tabular-nums">{prod.scores.overall.toFixed(1)} / 10</td>
+                      <td className="p-4">
+                        {tagOk ? (
+                          <span className="inline-flex items-center gap-1 text-xs font-semibold text-leaf-deep">
+                            <CheckCircle2 className="w-3.5 h-3.5" aria-hidden="true" />
+                            Matches {store.config.amazonPartnerTag}
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center gap-1 text-xs font-semibold text-terracotta-deep">
+                            <AlertTriangle className="w-3.5 h-3.5" aria-hidden="true" />
+                            Missing or different tag
+                          </span>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-ink-muted">
+            The tag column compares each stored Amazon URL with the current partner tag. It does not check that the link resolves.
+          </p>
         </div>
       )}
 
-      {/* TAB 4: SEO DASHBOARD, 12-POINT AUDIT & 301 REDIRECTS (Spec Section 13.4 & 15) */}
+      {/* TAB 4: SEO checklist and 301 redirects */}
       {activeTab === 'seo' && (
         <div className="space-y-6">
-          <div className="bg-white rounded-2xl border border-paper-border p-6 shadow-card">
-            <h2 className="font-editorial text-xl font-bold text-ink mb-4">
-              Automated 12-Point Technical SEO Audit Engine (Spec Section 15.8)
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
-              {[
-                'Empty Title Check: 0 issues',
-                'Duplicate Title Check: 0 issues',
-                'Missing H1 Check: 0 issues',
-                'Canonical URL Integrity: 100% valid',
-                'Accidental Noindex Check: Passed',
-                'Orphan Page Detector: 0 orphan pages',
-                'Broken Internal Links: 0 broken',
-                'Duplicate Search Intent: 0 conflicts',
-                'XML Sitemap Sync (/sitemap.xml): Active',
-                'JSON-LD Schema Validation: Valid',
-                'Robots.txt vs Noindex Rule: Compliant',
-                'Server-Rendered HTML Content: 100% SSR',
-              ].map((check) => (
-                <div
-                  key={check}
-                  className="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200 flex items-center gap-2 font-semibold text-forest"
-                >
-                  <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  <span>{check}</span>
-                </div>
-              ))}
+          <div className={card}>
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-1">
+              <h2 className={h2}>Technical SEO checklist</h2>
+              <NotConnectedBadge label="Automated audit not connected" />
             </div>
+            <p className="text-xs text-ink-muted mb-4">
+              No automated crawler runs in this deployment, so these are checks to review by hand, not results.
+            </p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px border border-rule bg-rule text-xs">
+              {[
+                'No empty or duplicate titles',
+                'Exactly one H1 per page',
+                'Canonical URL on every page',
+                'No accidental noindex on public pages',
+                'No orphan pages (every page linked from somewhere)',
+                'No broken internal links',
+                'No two pages targeting the same search intent',
+                'Sitemap (/sitemap.xml) lists every published page',
+                'JSON-LD passes the Rich Results Test',
+                'robots.txt and noindex rules agree',
+                'Main content is in the server-rendered HTML',
+                'Affiliate links use rel="sponsored"',
+              ].map((check) => (
+                <li key={check} className="bg-paper p-3 flex items-center gap-2 text-ink-secondary">
+                  <span className="h-3.5 w-3.5 shrink-0 rounded-sm border border-rule-strong" aria-hidden="true" />
+                  <span>{check}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* 301 Redirect Manager */}
-          <div className="bg-white rounded-2xl border border-paper-border p-6 shadow-card space-y-4">
-            <h2 className="font-editorial text-xl font-bold text-ink">
-              301 Redirect Manager (Spec Section 3.2 & 13.4)
-            </h2>
-            <form
-              onSubmit={handleAddRedirect}
-              className="flex flex-col sm:flex-row gap-3"
-            >
-              <input
-                type="text"
-                required
-                value={fromPath}
-                onChange={(e) => setFromPath(e.target.value)}
-                placeholder="Old path (e.g., /old-grout-guide)"
-                className="flex-1 rounded-xl border border-paper-border bg-paper-light px-3.5 py-2 text-xs"
-              />
-              <input
-                type="text"
-                required
-                value={toPath}
-                onChange={(e) => setToPath(e.target.value)}
-                placeholder="Destination canonical path (e.g., /guides/how-to-clean-grout-in-bathroom-tiles)"
-                className="flex-1 rounded-xl border border-paper-border bg-paper-light px-3.5 py-2 text-xs"
-              />
-              <button
-                type="submit"
-                className="bg-forest text-white text-xs font-bold px-5 py-2 rounded-xl"
-              >
-                Add 301 Redirect
+          <div className={`${card} space-y-4`}>
+            <h2 className={h2}>301 redirects</h2>
+            <form onSubmit={handleAddRedirect} className="flex flex-col sm:flex-row gap-3">
+              <label className="flex-1">
+                <span className="sr-only">Old path</span>
+                <input
+                  type="text"
+                  required
+                  value={fromPath}
+                  onChange={(e) => setFromPath(e.target.value)}
+                  placeholder="Old path (e.g., /old-grout-guide)"
+                  className={input}
+                />
+              </label>
+              <label className="flex-1">
+                <span className="sr-only">New path</span>
+                <input
+                  type="text"
+                  required
+                  value={toPath}
+                  onChange={(e) => setToPath(e.target.value)}
+                  placeholder="New path (e.g., /guides/how-to-clean-grout-in-bathroom-tiles)"
+                  className={input}
+                />
+              </label>
+              <button type="submit" className={primaryBtn}>
+                Add redirect
               </button>
             </form>
 
-            <div className="divide-y divide-paper-border text-xs">
-              {store.redirects.map((r) => (
-                <div
-                  key={r.id}
-                  className="py-2.5 flex items-center justify-between"
-                >
-                  <div>
-                    <code className="font-bold text-ink">{r.fromPath}</code> →{' '}
-                    <code className="text-forest font-bold">{r.toPath}</code>
+            {store.redirects.length === 0 ? (
+              <p className="text-sm text-ink-muted">No redirects yet.</p>
+            ) : (
+              <div className="divide-y divide-rule text-xs">
+                {store.redirects.map((r) => (
+                  <div key={r.id} className="py-2.5 flex flex-wrap items-center justify-between gap-2">
+                    <div>
+                      <code className="font-semibold text-ink">{r.fromPath}</code> →{' '}
+                      <code className="text-terracotta-deep font-semibold">{r.toPath}</code>
+                    </div>
+                    <span className="text-ink-muted">
+                      HTTP {r.statusCode} · added {r.createdAt}
+                    </span>
                   </div>
-                  <span className="text-ink-muted">
-                    HTTP {r.statusCode} · {r.hits} hits
-                  </span>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       )}
 
-      {/* TAB 5: AI EDITORIAL ASSISTANT & SAFETY VALIDATOR (Spec Section 14) */}
+      {/* TAB 5: DRAFT CHECKER (local keyword rules, no AI service connected) */}
       {activeTab === 'ai' && (
-        <div className="bg-white rounded-2xl border border-paper-border p-6 sm:p-8 shadow-card space-y-6">
+        <div className={`${card} space-y-6`}>
           <div>
-            <span className="text-xs font-extrabold uppercase tracking-wider text-coral">
-              SYS-09 · Human-in-the-Loop Editorial AI
-            </span>
-            <h2 className="font-editorial text-2xl font-bold text-ink mt-1">
-              AI Research Pipeline & Chemical Safety Guardrails
-            </h2>
+            <span className="kicker text-terracotta-deep">Before an editor reviews it</span>
+            <h2 className="font-serif text-2xl font-semibold text-ink mt-1">Draft safety and claims check</h2>
             <p className="text-xs sm:text-sm text-ink-secondary mt-1">
-              Per Spec Section 14.4: AI assists with outlines and claim verification but is strictly blocked from inventing test data, buyer reviews, or hazardous chemical mixtures.
+              Flags dangerous chemical combinations and testing claims we can&apos;t support, and gives a starter outline. It runs
+              simple keyword rules in your browser; no AI service is connected, and it doesn&apos;t replace fact-checking.
             </p>
           </div>
 
           <div className="space-y-4">
             <div>
-              <label className="block text-xs font-bold text-ink-secondary mb-1">
-                Target Topic / Search Intent
+              <label htmlFor="ai-topic" className={labelCls}>
+                Topic or search intent
               </label>
-              <input
-                type="text"
-                value={aiTopic}
-                onChange={(e) => setAiTopic(e.target.value)}
-                className="w-full rounded-xl border border-paper-border bg-paper-light px-3.5 py-2.5 text-sm font-semibold"
-              />
+              <input id="ai-topic" type="text" value={aiTopic} onChange={(e) => setAiTopic(e.target.value)} className={`${input} font-semibold`} />
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-ink-secondary mb-1">
-                Draft Paragraph to Validate (Try typing &quot;bleach and vinegar&quot; to test safety blocker)
+              <label htmlFor="ai-draft" className={labelCls}>
+                Draft paragraph to check (try &quot;bleach and vinegar&quot; to see a warning)
               </label>
-              <textarea
-                rows={3}
-                value={aiDraftText}
-                onChange={(e) => setAiDraftText(e.target.value)}
-                className="w-full rounded-xl border border-paper-border bg-paper-light p-3 text-sm"
-              />
+              <textarea id="ai-draft" rows={3} value={aiDraftText} onChange={(e) => setAiDraftText(e.target.value)} className={input} />
             </div>
 
-            <button
-              type="button"
-              onClick={runAiResearchAndSafetyCheck}
-              className="bg-forest hover:bg-forest-light text-white text-xs font-bold px-5 py-3 rounded-xl transition"
-            >
-              Run Fact-Check, Safety Validation & Outline Builder
+            <button type="button" onClick={runAiResearchAndSafetyCheck} className={primaryBtn}>
+              Check draft and build outline
             </button>
           </div>
 
           {aiSafetyReport && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-paper-border">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-rule">
               <div
-                className={`rounded-xl p-5 border ${
-                  aiSafetyReport.passed
-                    ? 'bg-emerald-50 border-emerald-200'
-                    : 'bg-rose-50 border-rose-300'
+                className={`rounded-sm p-5 border ${
+                  aiSafetyReport.passed ? 'bg-leaf-soft border-leaf-deep/30' : 'bg-terracotta-soft border-terracotta/40'
                 }`}
               >
-                <h3 className="font-bold text-sm text-ink flex items-center gap-2 mb-3">
+                <h3 className="font-semibold text-sm text-ink flex items-center gap-2 mb-3">
                   {aiSafetyReport.passed ? (
-                    <CheckCircle2 className="w-4 h-4 text-forest" />
+                    <CheckCircle2 className="w-4 h-4 text-leaf-deep" aria-hidden="true" />
                   ) : (
-                    <AlertTriangle className="w-4 h-4 text-rose-700" />
+                    <AlertTriangle className="w-4 h-4 text-terracotta-deep" aria-hidden="true" />
                   )}
-                  <span>Safety & Fact-Check Validation Result</span>
+                  <span>{aiSafetyReport.passed ? 'Nothing flagged' : 'Needs changes'}</span>
                 </h3>
                 <ul className="space-y-2 text-xs text-ink-secondary">
                   {aiSafetyReport.warnings.map((w) => (
@@ -761,10 +723,8 @@ export function AdminPortalClient({
                 </ul>
               </div>
 
-              <div className="bg-paper-light rounded-xl p-5 border border-paper-border">
-                <h3 className="font-bold text-sm text-ink mb-3">
-                  Generated Structured Outline
-                </h3>
+              <div className="bg-paper rounded-sm p-5 border border-rule">
+                <h3 className="font-semibold text-sm text-ink mb-3">Starter outline (standard guide structure)</h3>
                 <ol className="space-y-1.5 text-xs text-ink-secondary list-decimal list-inside">
                   {aiSafetyReport.outline.map((item) => (
                     <li key={item}>{item}</li>
@@ -776,45 +736,39 @@ export function AdminPortalClient({
         </div>
       )}
 
-      {/* TAB 6: SCHEDULED AUTOMATIONS & SITE SETTINGS (Spec Section 13.7 & 26) */}
+      {/* TAB 6: SCHEDULED JOBS and site settings */}
       {activeTab === 'jobs' && (
         <div className="space-y-6">
-          <div className="bg-white rounded-2xl border border-paper-border p-6 shadow-card space-y-4">
-            <h2 className="font-editorial text-xl font-bold text-ink">
-              Background Worker Jobs & Automations (Spec Section 26)
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className={`${card} space-y-4`}>
+            <div>
+              <h2 className={h2}>Scheduled jobs</h2>
+              <p className="text-xs text-ink-muted mt-0.5">
+                These jobs are planned but no background job runner is connected yet, so none of them run.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-px border border-rule bg-rule">
               {store.automations.map((job) => (
-                <div
-                  key={job.id}
-                  className="p-4 rounded-xl bg-paper-light border border-paper-border flex flex-col justify-between space-y-3"
-                >
+                <div key={job.id} className="p-4 bg-paper flex flex-col justify-between space-y-3">
                   <div>
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold text-sm text-ink">{job.name}</span>
-                      <span className="text-[10px] font-extrabold bg-emerald-100 text-forest px-2 py-0.5 rounded">
-                        {job.status}
-                      </span>
+                    <div className="flex items-start justify-between gap-3">
+                      <span className="font-semibold text-sm text-ink">{job.name}</span>
+                      <JobStatusBadge status={job.status} />
                     </div>
-                    <p className="text-xs text-ink-secondary mt-1">
-                      {job.description}
-                    </p>
+                    <p className="text-xs text-ink-secondary mt-1">{job.description}</p>
                     <p className="text-[11px] text-ink-muted mt-2">
-                      Schedule: <code>{job.schedule}</code> · Last run: {job.lastRun}
+                      Planned schedule: <code>{job.schedule}</code> · Last run: {job.lastRun || 'Never'}
                     </p>
-                    <p className="text-[11px] text-forest font-medium mt-1">
-                      Result: {job.lastSummary}
-                    </p>
+                    {job.lastSummary && <p className="text-[11px] text-ink-muted mt-1">{job.lastSummary}</p>}
                   </div>
 
-                  <div className="pt-2 border-t border-paper-border flex justify-end">
+                  <div className="pt-2 border-t border-rule flex justify-end">
                     <button
                       type="button"
                       onClick={() => handleTriggerJob(job.id)}
-                      className="inline-flex items-center gap-1.5 bg-forest text-white text-xs font-semibold px-3 py-1.5 rounded-lg hover:bg-forest-light"
+                      className="inline-flex min-h-[44px] items-center gap-1.5 border border-rule-strong text-ink text-xs font-semibold px-3 rounded-sm hover:border-ink"
                     >
-                      <Play className="w-3 h-3" />
-                      <span>Trigger Now</span>
+                      <Play className="w-3 h-3" aria-hidden="true" />
+                      <span>Request a run</span>
                     </button>
                   </div>
                 </div>
@@ -822,47 +776,55 @@ export function AdminPortalClient({
             </div>
           </div>
 
-          {/* Site & Homepage Configuration */}
-          <form
-            onSubmit={handleSaveConfig}
-            className="bg-white rounded-2xl border border-paper-border p-6 shadow-card space-y-4"
-          >
-            <h2 className="font-editorial text-xl font-bold text-ink">
-              Homepage & Affiliate Settings (No-Code Editor — Spec Section 5.3)
-            </h2>
+          <form onSubmit={handleSaveConfig} className={`${card} space-y-4`}>
+            <h2 className={h2}>Homepage and affiliate settings</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold text-ink-secondary mb-1">
-                  Homepage Hero Headline
+                <label htmlFor="cfg-hero" className={labelCls}>
+                  Homepage hero headline
                 </label>
-                <input
-                  type="text"
-                  value={heroTitle}
-                  onChange={(e) => setHeroTitle(e.target.value)}
-                  className="w-full rounded-xl border border-paper-border bg-paper-light px-3.5 py-2 text-sm"
-                />
+                <input id="cfg-hero" type="text" value={heroTitle} onChange={(e) => setHeroTitle(e.target.value)} className={input} />
               </div>
               <div>
-                <label className="block text-xs font-bold text-ink-secondary mb-1">
-                  Amazon US Partner Tracking Tag
+                <label htmlFor="cfg-tag" className={labelCls}>
+                  Amazon US partner tag
                 </label>
                 <input
+                  id="cfg-tag"
                   type="text"
                   value={partnerTag}
                   onChange={(e) => setPartnerTag(e.target.value)}
-                  className="w-full rounded-xl border border-paper-border bg-paper-light px-3.5 py-2 text-sm font-mono"
+                  className={`${input} font-mono`}
                 />
               </div>
             </div>
-            <button
-              type="submit"
-              className="bg-coral hover:bg-coral-hover text-white text-xs font-bold px-5 py-2.5 rounded-xl"
-            >
-              Save Site Configuration
+            <button type="submit" className={primaryBtn}>
+              Save settings
             </button>
           </form>
         </div>
       )}
     </div>
   );
+}
+
+function NotConnectedBadge({ label = 'Not connected' }: { label?: string }) {
+  return (
+    <span className="kicker inline-flex items-center gap-1.5 rounded-full border border-rule-strong/60 bg-paper-warm px-2.5 py-1 text-ink-muted shrink-0">
+      <span className="h-1.5 w-1.5 rounded-full bg-rule-strong" aria-hidden="true" />
+      {label}
+    </span>
+  );
+}
+
+function JobStatusBadge({ status }: { status: string }) {
+  if (status === 'NOT_CONFIGURED') return <NotConnectedBadge />;
+  const tone =
+    status === 'SUCCESS'
+      ? 'border-leaf-deep/40 bg-leaf-soft text-leaf-deep'
+      : status === 'WARNING'
+      ? 'border-terracotta/40 bg-terracotta-soft text-terracotta-deep'
+      : 'border-terracotta/40 bg-leaf-soft text-terracotta-deep';
+  const label = status === 'SUCCESS' ? 'Last run OK' : status === 'WARNING' ? 'Warning' : 'Running';
+  return <span className={`kicker inline-flex rounded-full border px-2.5 py-1 shrink-0 ${tone}`}>{label}</span>;
 }

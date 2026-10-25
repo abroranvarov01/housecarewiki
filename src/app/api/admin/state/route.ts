@@ -2,25 +2,41 @@ import { NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
 import { readStore, writeStore } from '@/lib/store';
 import { EditorialStatus } from '@/lib/types';
+import { adminDeniedResponse, checkAdminAuth } from '@/lib/admin-auth';
 
-export async function GET() {
+export const dynamic = 'force-dynamic';
+
+const EDITORIAL_STATUSES: EditorialStatus[] = [
+  'Idea', 'Research', 'Draft', 'Fact Check', 'Editorial Review', 'SEO Review',
+  'Approved', 'Scheduled', 'Published', 'Update Required', 'Archived',
+];
+const CONFIG_KEYS = ['amazonPartnerTag', 'heroBadge', 'heroTitle', 'heroSubtitle', 'heroHandwritten', 'featuredGuideSlug'] as const;
+
+export async function GET(request: Request) {
+  const auth = checkAdminAuth(request.headers.get('authorization'));
+  if (auth !== 'ok') return adminDeniedResponse(auth);
   const store = readStore();
   return NextResponse.json(store);
 }
 
 export async function POST(request: Request) {
+  const auth = checkAdminAuth(request.headers.get('authorization'));
+  if (auth !== 'ok') return adminDeniedResponse(auth);
   try {
     const body = await request.json();
     const { action, payload } = body;
     const store = readStore();
 
     if (action === 'UPDATE_ARTICLE_STATUS') {
-      const { articleId, nextStatus, actor = 'Emily Carter' } = payload;
+      const { articleId, nextStatus, actor = 'Admin' } = payload;
+      if (!EDITORIAL_STATUSES.includes(nextStatus)) {
+        return NextResponse.json({ error: 'Unknown editorial status' }, { status: 400 });
+      }
       const art = store.articles.find((a) => a.id === articleId);
       if (!art) {
         return NextResponse.json({ error: 'Article not found' }, { status: 404 });
       }
-      // Validate critical safety & SEO fields before allowing Published status (Spec Section 13.3)
+      // Block publishing without the fields every public guide needs.
       if (
         nextStatus === 'Published' &&
         (!art.seo.title || !art.quickAnswer || art.safetyWarnings.length === 0)
@@ -60,6 +76,9 @@ export async function POST(request: Request) {
         quickAnswer,
         safetyWarning,
       } = payload;
+      if (typeof title !== 'string' || !title.trim() || typeof quickAnswer !== 'string' || !quickAnswer.trim()) {
+        return NextResponse.json({ error: 'Title and quick answer are required.' }, { status: 400 });
+      }
 
       const cleanSlug = String(slug || title)
         .toLowerCase()
@@ -78,14 +97,13 @@ export async function POST(request: Request) {
         roomSlug,
         subCategory: 'all',
         surfaceSlugs: ['ceramic-tile'],
-        authorSlug: 'emily-carter',
-        updatedAt: 'Oct 23, 2026',
-        publishedAt: 'Oct 23, 2026',
+        authorSlug: 'housecarewiki-editors',
+        updatedAt: new Date().toISOString().slice(0, 10),
+        publishedAt: new Date().toISOString().slice(0, 10),
         readingTime: '6 min read',
         status: 'Draft' as EditorialStatus,
-        evidenceStatus: 'Hands-on Tested' as const,
-        heroImage:
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80',
+        evidenceStatus: 'Research-Based Review' as const,
+        heroImage: '/images/cat-bathroom.webp',
         heroImageAlt: title,
         safetyWarnings: [
           safetyWarning ||
@@ -114,7 +132,7 @@ export async function POST(request: Request) {
       store.articles.unshift(newArt);
       store.auditLogs.unshift({
         id: `aud-${Date.now()}`,
-        actor: 'Emily Carter',
+        actor: 'Admin',
         role: 'EDITOR',
         action: 'CREATE_ARTICLE_DRAFT',
         resource: cleanSlug,
@@ -129,6 +147,9 @@ export async function POST(request: Request) {
 
     if (action === 'ADD_REDIRECT') {
       const { fromPath, toPath } = payload;
+      if (typeof fromPath !== 'string' || !fromPath.startsWith('/') || typeof toPath !== 'string' || !toPath.startsWith('/')) {
+        return NextResponse.json({ error: 'Redirect paths must start with "/".' }, { status: 400 });
+      }
       store.redirects.unshift({
         id: `red-${Date.now()}`,
         fromPath: String(fromPath).trim(),
@@ -156,15 +177,15 @@ export async function POST(request: Request) {
       const { jobId } = payload;
       const job = store.automations.find((j) => j.id === jobId);
       if (job) {
-        job.lastRun = new Date().toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
-        job.status = 'SUCCESS';
+        // There is no job runner in this deployment: record the request instead of reporting a fake success.
+        job.status = 'NOT_CONFIGURED';
         store.auditLogs.unshift({
           id: `aud-${Date.now()}`,
           actor: 'Owner',
           role: 'OWNER',
           action: 'MANUAL_JOB_TRIGGER',
           resource: job.key,
-          details: `Triggered background worker job "${job.name}". Completed with status SUCCESS.`,
+          details: `Requested job "${job.name}". Not run: no background job runner is configured.`,
           timestamp: new Date().toISOString(),
         });
         writeStore(store);
@@ -175,7 +196,11 @@ export async function POST(request: Request) {
     }
 
     if (action === 'UPDATE_SITE_CONFIG') {
-      store.config = { ...store.config, ...payload };
+      const updates: Record<string, string> = {};
+      for (const key of CONFIG_KEYS) {
+        if (typeof payload?.[key] === 'string') updates[key] = payload[key].slice(0, 300);
+      }
+      store.config = { ...store.config, ...updates };
       store.auditLogs.unshift({
         id: `aud-${Date.now()}`,
         actor: 'Owner',

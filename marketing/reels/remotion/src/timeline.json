@@ -1,0 +1,20 @@
+{
+  "fps": 30,
+  "transition": 14,
+  "scenes": {
+    "hook": 96,
+    "title": 60,
+    "tip1": 165,
+    "tip2": 153,
+    "tip3": 158,
+    "cta": 151
+  },
+  "voLead": {
+    "hook": 3,
+    "title": 2,
+    "tip1": 2,
+    "tip2": 2,
+    "tip3": 2,
+    "cta": 2
+  }
+}

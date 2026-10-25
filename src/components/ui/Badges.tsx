@@ -1,22 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Check, Bookmark, Star } from 'lucide-react';
+import { ArrowUpRight, Bookmark } from 'lucide-react';
 
-export function PrimeBadge() {
-  return (
-    <span
-      className="inline-flex items-center font-sans text-[11px] font-extrabold tracking-tight select-none ml-1"
-      title="Amazon Prime"
-    >
-      <Check className="w-3 h-3 text-[#FF9900] stroke-[3.5] -mr-0.5" />
-      <span className="text-[#00A8E1] font-bold">prime</span>
-    </span>
-  );
-}
-
-// Our own editorial score (out of 10). Amazon star ratings and review counts may only be
-// shown when fetched live via the Creators API, so we never display them from static data.
+// Our own editorial rating (out of 10). It is a research-based judgment, not a lab measurement, and it is
+// labeled that way. Amazon star ratings and review counts are never displayed from static data.
 export function EditorScore({
   score,
   size = 'sm',
@@ -25,17 +13,21 @@ export function EditorScore({
   size?: 'xs' | 'sm' | 'md';
 }) {
   return (
-    <div className="inline-flex items-center gap-1.5" aria-label={`HouseCareWiki score ${score.toFixed(1)} out of 10`}>
+    <span
+      className="inline-flex items-center gap-2"
+      title="HouseCareWiki rating: an editorial judgment from specs, manuals and published standards, not a lab measurement."
+    >
       <span
-        className={`inline-flex items-baseline rounded-md bg-[#E2ECE5] text-[#1F4D3A] font-extrabold ${
-          size === 'md' ? 'px-2 py-0.5 text-sm' : 'px-1.5 py-0.5 text-xs'
+        className={`inline-flex items-baseline gap-0.5 rounded-full bg-honey-soft font-semibold tabular-nums text-ink ring-1 ring-inset ring-honey-deep/60 ${
+          size === 'md' ? 'px-3 py-1 text-base' : 'px-2.5 py-0.5 text-[13px]'
         }`}
       >
         {score.toFixed(1)}
-        <span className="text-[10px] font-semibold opacity-70">/10</span>
+        <span className="text-[11px] font-medium text-ink-muted">/10</span>
       </span>
-      {size !== 'xs' && <span className="text-[11px] text-[#6E756F]">Our score</span>}
-    </div>
+      {size !== 'xs' && <span className="text-[13px] text-ink-muted">Our rating</span>}
+      <span className="sr-only">HouseCareWiki rating {score.toFixed(1)} out of 10, research-based</span>
+    </span>
   );
 }
 
@@ -43,8 +35,8 @@ export function EditorScore({
 // so price slots point readers to Amazon for the current price instead.
 export function PriceNote({ className = '' }: { className?: string }) {
   return (
-    <span className={`text-xs font-semibold text-[#5C645E] ${className}`}>
-      See today&apos;s price on Amazon
+    <span className={`text-[12px] text-ink-muted ${className}`}>
+      Price varies; check it on Amazon
     </span>
   );
 }
@@ -52,159 +44,19 @@ export function PriceNote({ className = '' }: { className?: string }) {
 // Inline FTC / Amazon Associates disclosure shown next to product links.
 export function AffiliateDisclosureNote({ className = '' }: { className?: string }) {
   return (
-    <p className={`text-[11.5px] leading-snug text-[#6E756F] ${className}`}>
-      As an Amazon Associate, HouseCareWiki earns from qualifying purchases. Buying through our links
-      costs you nothing extra.{' '}
-      <a href="/affiliate-disclosure" className="underline hover:text-[#1F4D3A]">
-        Learn more
+    <p className={`text-[12px] leading-snug text-ink-muted ${className}`}>
+      As an Amazon Associate, HouseCareWiki earns from qualifying purchases. It costs you nothing extra.{' '}
+      <a href="/affiliate-disclosure" className="underline underline-offset-2 hover:text-terracotta-deep">
+        How we make money
       </a>
     </p>
   );
 }
 
-export function StarRating({
-  rating,
-  reviewCount,
-  size = 'sm',
-}: {
-  rating: number;
-  reviewCount?: number;
-  size?: 'xs' | 'sm' | 'md';
-}) {
-  const fullStars = Math.floor(rating);
-  const starSize = size === 'xs' ? 'w-3.5 h-3.5' : size === 'md' ? 'w-4 h-4' : 'w-3.5 h-3.5';
-
-  return (
-    <div className="inline-flex items-center gap-1">
-      <div className="flex items-center text-[#F59E0B]" aria-label={`Rated ${rating} out of 5 stars`}>
-        {[...Array(5)].map((_, i) => (
-          <Star
-            key={i}
-            className={`${starSize} ${
-              i < fullStars ? 'fill-[#F59E0B] text-[#F59E0B]' : 'fill-[#F59E0B]/35 text-[#F59E0B]'
-            }`}
-          />
-        ))}
-      </div>
-      <span className="text-xs font-semibold text-[#3F4641] ml-0.5">{rating.toFixed(1)}</span>
-      {typeof reviewCount === 'number' && (
-        <span className="text-[11px] text-[#6E756F]">
-          ({reviewCount.toLocaleString()}{size === 'md' ? ' reviews' : ''})
-        </span>
-      )}
-    </div>
-  );
-}
-
-export function HandwrittenNote({
-  text,
-  className = '',
-  arrowDirection = 'down-right',
-}: {
-  text: string;
-  className?: string;
-  arrowDirection?: 'down-right' | 'down-left' | 'right' | 'down';
-}) {
-  return (
-    <div className={`inline-flex flex-col items-center select-none pointer-events-none ${className}`}>
-      <div className="flex items-center gap-1">
-        <span className="font-handwritten text-[22px] sm:text-[25px] font-bold text-[#252A27] leading-[1.05] -rotate-6 text-center whitespace-pre-line drop-shadow-[0_1px_2px_rgba(255,255,255,0.85)]">
-          {text}
-        </span>
-        {arrowDirection === 'right' && (
-          <svg
-            width="44"
-            height="28"
-            viewBox="0 0 44 28"
-            fill="none"
-            className="text-[#252A27] mt-1"
-          >
-            <path
-              d="M2 20C14 22 26 16 39 7M39 7L30 6M39 7L35 15"
-              stroke="currentColor"
-              strokeWidth="1.7"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        )}
-      </div>
-
-      {arrowDirection === 'down-right' && (
-        <svg
-          width="48"
-          height="34"
-          viewBox="0 0 48 34"
-          fill="none"
-          className="text-[#252A27] mt-0.5 ml-6"
-        >
-          <path
-            d="M6 3C10 18 22 26 41 27M41 27L34 21M41 27L35 32"
-            stroke="currentColor"
-            strokeWidth="1.7"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      )}
-
-      {arrowDirection === 'down-left' && (
-        <svg
-          width="46"
-          height="34"
-          viewBox="0 0 46 34"
-          fill="none"
-          className="text-[#252A27] mt-0.5 mr-4"
-        >
-          <path
-            d="M38 3C36 16 25 24 8 27M8 27L15 21M8 27L14 32"
-            stroke="currentColor"
-            strokeWidth="1.7"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      )}
-
-      {arrowDirection === 'down' && (
-        <svg
-          width="28"
-          height="36"
-          viewBox="0 0 28 36"
-          fill="none"
-          className="text-[#252A27] mt-0.5"
-        >
-          <path
-            d="M16 2C12 12 12 22 15 32M15 32L9 26M15 32L20 26"
-            stroke="currentColor"
-            strokeWidth="1.7"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      )}
-    </div>
-  );
-}
-
-export function TestedInRealHomesSeal({ className = '' }: { className?: string }) {
-  return (
-    <div
-      className={`w-[86px] h-[86px] sm:w-[96px] sm:h-[96px] rounded-full bg-white/95 shadow-elevated border border-[#E2DACB] flex items-center justify-center p-1.5 select-none ${className}`}
-    >
-      <div className="w-full h-full rounded-full border border-dashed border-[#C7BFA9] flex flex-col items-center justify-center text-center px-1">
-        <span className="text-[9px] sm:text-[10px] font-extrabold tracking-[0.14em] uppercase text-[#1F2421] leading-tight">
-          TESTED
-        </span>
-        <span className="text-[8.5px] sm:text-[9.5px] font-bold tracking-[0.1em] uppercase text-[#3F4641] my-0.5">
-          IN REAL
-        </span>
-        <span className="text-[9px] sm:text-[10px] font-extrabold tracking-[0.14em] uppercase text-[#1F2421] leading-tight">
-          HOMES
-        </span>
-      </div>
-    </div>
-  );
+// Retired: the handwritten "notes" read as decoration rather than information. Kept as a no-op so stray
+// imports render nothing; remove remaining usages when touching those pages.
+export function HandwrittenNote(_props: { text: string; className?: string; arrowDirection?: string }) {
+  return null;
 }
 
 export function AffiliateButton({
@@ -247,12 +99,14 @@ export function AffiliateButton({
     }
   };
 
+  // forest = primary (charcoal), coral = high-emphasis (honey), compact = small outline for tables and lists.
+  // Variant names are kept for older call sites.
   const styles =
     variant === 'coral'
-      ? 'bg-[#E07A4B] hover:bg-[#CC6738] text-white px-5 py-2.5 text-sm font-semibold rounded-lg shadow-sm'
+      ? 'min-h-[48px] bg-honey hover:bg-honey-deep text-ink px-6 text-[15px] font-semibold rounded-full'
       : variant === 'compact'
-      ? 'bg-[#1F4D3A] hover:bg-[#173B2C] text-white px-4 py-1.5 text-xs font-semibold rounded-md'
-      : 'bg-[#1F4D3A] hover:bg-[#173B2C] text-white px-4 py-2 text-xs sm:text-[13px] font-semibold rounded-lg';
+      ? 'min-h-[44px] border border-ink/70 bg-paper-card text-ink hover:border-ink hover:bg-paper-warm px-4 text-[14px] font-semibold rounded-full'
+      : 'min-h-[48px] bg-ink hover:bg-ink-deep text-paper-light px-5 text-[15px] font-semibold rounded-full';
 
   return (
     <a
@@ -260,10 +114,11 @@ export function AffiliateButton({
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
       onClick={handleTrackClick}
-      className={`inline-flex items-center justify-center gap-1.5 transition-all duration-150 ${styles} ${className}`}
+      className={`group inline-flex items-center justify-center gap-1.5 transition-colors duration-150 active:translate-y-px ${styles} ${className}`}
     >
       <span>{label}</span>
-      {variant !== 'compact' && <span aria-hidden="true">→</span>}
+      <ArrowUpRight className="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+      <span className="sr-only">(opens Amazon in a new tab, affiliate link)</span>
     </a>
   );
 }
@@ -308,11 +163,12 @@ export function SaveItemButton({
     <button
       type="button"
       onClick={toggleSave}
-      className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium border transition ${
+      className={`inline-flex min-h-[44px] items-center gap-1.5 px-4 rounded-full text-[13px] font-medium border transition-colors ${
         saved
-          ? 'bg-[#1F4D3A] text-white border-[#1F4D3A]'
-          : 'bg-white text-[#5C645E] border-[#E2DACB] hover:border-[#1F4D3A]'
+          ? 'bg-ink text-paper-light border-ink'
+          : 'bg-transparent text-ink-secondary border-rule-strong hover:border-ink hover:text-ink'
       }`}
+      aria-pressed={saved}
       title={saved ? 'Remove from saved items' : 'Save for later'}
     >
       <Bookmark className={`w-3.5 h-3.5 ${saved ? 'fill-current' : ''}`} />

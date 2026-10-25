@@ -62,7 +62,11 @@ export interface DatabaseState {
 
 const DATA_DIR = path.join(process.cwd(), '.data');
 const STORE_PATH = path.join(DATA_DIR, 'store.json');
-const STORE_VERSION = '2.6-seo-content';
+const STORE_VERSION = '3.1-editorial';
+
+// Seed demo records shipped by earlier versions; they are dropped on migration so admin only shows real data.
+const DEMO_IDS = new Set(['clk-1', 'clk-2', 'clk-3', 'aud-1', 'aud-2']);
+const DEMO_EMAILS = new Set(['sarah.k@example.com', 'mike.r@example.com']);
 
 function getInitialState(): DatabaseState & { version: string } {
   return {
@@ -72,11 +76,11 @@ function getInitialState(): DatabaseState & { version: string } {
       domain: 'housecarewiki.com',
       amazonPartnerTag: 'housecarewiki-20',
       creatorsApiConnected: false,
-      heroBadge: 'A CLEANER HOME. A CALMER YOU.',
-      heroTitle: 'Real solutions for everyday messy moments.',
+      heroBadge: 'The home field guide',
+      heroTitle: 'What needs fixing today?',
       heroSubtitle:
-        'Practical guides, honest reviews and expert tips to help you keep your home fresh, organized and comfortable.',
-      heroHandwritten: 'Life happens. We help.',
+        'Step-by-step fixes for stains, grime and clutter, with honest notes on which tools are worth buying.',
+      heroHandwritten: '',
       featuredGuideSlug: 'how-to-remove-coffee-stains-from-fabric-sofa',
     },
     authors: AUTHORS,
@@ -88,30 +92,27 @@ function getInitialState(): DatabaseState & { version: string } {
     automations: SCHEDULED_AUTOMATIONS,
     redirects: INITIAL_REDIRECTS,
     affiliateClicks: INITIAL_AFFILIATE_CLICKS,
-    subscribers: [
-      { email: 'sarah.k@example.com', subscribedAt: '2026-10-18T10:15:00Z', status: 'CONFIRMED' },
-      { email: 'mike.r@example.com', subscribedAt: '2026-10-20T16:40:00Z', status: 'CONFIRMED' },
-    ],
-    auditLogs: [
-      {
-        id: 'aud-1',
-        actor: 'Emily Carter',
-        role: 'EDITOR',
-        action: 'PUBLISH_ARTICLE',
-        resource: 'best-portable-carpet-cleaners-home-use-2026',
-        details: 'Passed 12-point SEO & Fact Check validation.',
-        timestamp: '2026-10-20T14:20:00Z',
-      },
-      {
-        id: 'aud-2',
-        actor: 'Marcus Vance',
-        role: 'AUTHOR',
-        action: 'UPDATE_SAFETY_WARNING',
-        resource: 'best-grout-cleaners-bathroom-tiles-2026',
-        details: 'Added chloramine gas warning for bleach + acid mixing.',
-        timestamp: '2026-10-19T11:05:00Z',
-      },
-    ],
+    subscribers: [],
+    auditLogs: [],
+  };
+}
+
+// New content versions replace seeded content, but data collected at runtime (subscribers, affiliate clicks,
+// redirects and audit history added through the CMS) is carried over instead of being wiped.
+function migrateStore(old: Partial<DatabaseState>): DatabaseState & { version: string } {
+  const fresh = getInitialState();
+  const seededRedirects = new Set(fresh.redirects.map((r) => r.fromPath));
+  return {
+    ...fresh,
+    config: {
+      ...fresh.config,
+      amazonPartnerTag: old.config?.amazonPartnerTag || fresh.config.amazonPartnerTag,
+      creatorsApiConnected: Boolean(old.config?.creatorsApiConnected),
+    },
+    subscribers: (old.subscribers || []).filter((s) => !DEMO_EMAILS.has(s.email)),
+    affiliateClicks: (old.affiliateClicks || []).filter((c) => !DEMO_IDS.has(c.id)),
+    auditLogs: (old.auditLogs || []).filter((a) => !DEMO_IDS.has(a.id)),
+    redirects: [...fresh.redirects, ...(old.redirects || []).filter((r) => !seededRedirects.has(r.fromPath))],
   };
 }
 
@@ -128,9 +129,9 @@ export function readStore(): DatabaseState {
     const raw = fs.readFileSync(STORE_PATH, 'utf-8');
     const parsed = JSON.parse(raw) as DatabaseState & { version?: string };
     if (parsed.version !== STORE_VERSION) {
-      const fresh = getInitialState();
-      fs.writeFileSync(STORE_PATH, JSON.stringify(fresh, null, 2), 'utf-8');
-      return fresh;
+      const migrated = migrateStore(parsed);
+      fs.writeFileSync(STORE_PATH, JSON.stringify(migrated, null, 2), 'utf-8');
+      return migrated;
     }
     return parsed;
   } catch {
@@ -183,7 +184,6 @@ export function searchEverything(query: string, categoryFilter?: string) {
   const store = readStore();
   const q = query.trim().toLowerCase();
 
-  // Synonym dictionary per Spec Section 11.2
   const synonyms: Record<string, string[]> = {
     couch: ['sofa', 'upholstery', 'cushion', 'furniture'],
     sofa: ['couch', 'upholstery', 'furniture'],

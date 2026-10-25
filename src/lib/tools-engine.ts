@@ -1,4 +1,6 @@
-// Deterministic Rule Engines for HouseCareWiki's 6 Interactive Smart Tools (Spec Section 10)
+// Rule-based logic behind HouseCareWiki's interactive tools (stain finder, equipment finder, surface checker).
+// Plain if/then rules written from manufacturer care instructions, upholstery cleaning codes and published
+// cleaning guidance. The output is general guidance, not a guarantee: always spot-test first.
 import { PRODUCTS } from './seed-data';
 import { Product } from './types';
 
@@ -27,29 +29,30 @@ export function solveStain(input: StainSolverInput): StainSolverOutput {
     return {
       safeToDIY: false,
       difficulty: 'Advanced / Extraction Needed',
-      chemicalHazardWarning: 'NEVER apply water, vinegar, or liquid dish soap to Code "S" (Solvent-Only) upholstery—water dissolves fabric sizing and leaves permanent brown rings.',
-      surfaceWarning: 'Your furniture is labeled Code "S" (Dry-Clean Solvent Only).',
+      chemicalHazardWarning: 'Do not use water, vinegar or dish soap on code S (solvent-only) upholstery. Water can leave rings and shrink or discolor the fabric, often for good.',
+      surfaceWarning: 'Your fabric is labeled code S: clean with a dry-cleaning solvent only. Solvents are flammable, so open a window and keep them away from flames and heat.',
       suppliesNeeded: [
         'White absorbent microfiber cloths',
-        'IICRC-approved dry-cleaning upholstery solvent',
+        'Dry-cleaning solvent made for upholstery (follow the label)',
         'Soft white horsehair upholstery brush',
       ],
       steps: [
         {
-          title: '1. Blot Excess Liquid Dry',
-          detail: 'Press a dry white microfiber towel onto the stain without rubbing.',
+          title: 'Blot up what you can',
+          detail: 'Press a dry white cloth onto the stain without rubbing. Rubbing spreads it and roughs up the fabric.',
         },
         {
-          title: '2. Apply Dry-Cleaning Solvent Only in a Ventilated Room',
-          detail: 'Dampen a clean white cloth with mineral-spirit upholstery solvent and dab from the outside edge inward.',
+          title: 'Test the solvent, then dab it on',
+          detail: 'In a ventilated room, try the solvent on a hidden spot first. If the color and texture hold, dampen a clean white cloth and dab from the outside edge inward.',
         },
         {
-          title: '3. Feather-Dry and Brush Pile',
-          detail: 'Allow solvent to evaporate completely with windows open, then brush the nap gently.',
+          title: 'Let it air out, then brush',
+          detail: 'Let the solvent evaporate completely with a window open, then brush the nap gently with a soft brush.',
         },
       ],
-      whenToCallPro: 'If the stain covers more than a 4-inch circle on silk, velvet, or Code S linen, contact an IICRC-certified upholstery cleaner.',
-      recommendedProducts: PRODUCTS.filter((p) => p.id === 'prod-chomchom-pet-hair-roller'),
+      whenToCallPro: 'If the stain is larger than your palm, or the fabric is silk, velvet or linen, a professional upholstery cleaner (look for IICRC certification) is the safer call.',
+      // Water-based spot cleaners are the wrong tool for code S fabric, so this result recommends no products.
+      recommendedProducts: [],
       relatedGuideSlug: 'how-to-remove-coffee-stains-from-fabric-sofa',
     };
   }
@@ -58,32 +61,32 @@ export function solveStain(input: StainSolverInput): StainSolverOutput {
     return {
       safeToDIY: true,
       difficulty: input.stainAge === 'fresh' ? 'Easy (10 mins)' : 'Moderate (25 mins)',
-      chemicalHazardWarning: 'Do not mix household ammonia with chlorine bleach. Avoid boiling water, which permanently sets milk/creamer proteins.',
-      surfaceWarning: 'Test your solution on an inconspicuous inner seam or skirt hem for 2 minutes first.',
+      chemicalHazardWarning: 'Never mix bleach with ammonia or vinegar. Skip hot water: heat can set the milk proteins in coffee with creamer.',
+      surfaceWarning: 'Test the solution on a hidden seam or skirt hem first and wait a few minutes for any color change.',
       suppliesNeeded: [
-        '3 Clean white microfiber cloths',
+        'Three clean white cloths',
         '1 cup cool water + 1/2 tsp clear dish soap + 1 tbsp distilled white vinegar',
-        input.stainAge !== 'fresh' ? 'Oxygenated stain remover or portable spot extractor' : 'Spray bottle with plain cool rinse water',
+        input.stainAge !== 'fresh' ? 'Oxygen-based stain remover or a portable spot cleaner' : 'Spray bottle of plain cool water for rinsing',
       ],
       steps: [
         {
-          title: '1. Blot Up to 80% of the Liquid Immediately',
-          detail: 'Press firmly with a folded white microfiber towel for 10 seconds at a time. Never scrub back and forth.',
+          title: 'Blot as much as you can, right away',
+          detail: 'Press firmly with a folded white cloth, a few seconds at a time. Don\'t scrub back and forth.',
         },
         {
-          title: '2. Apply Cool Dish Soap + Vinegar Tannin Solution',
-          detail: 'Dab the mildly acidic surfactant mixture onto the brown coffee ring and let dwell for 5 minutes to break down coffee tannins.',
+          title: 'Dab on the cool soap-and-vinegar mix',
+          detail: 'Dab the mixture onto the stain and leave it about 5 minutes. The mild acid helps loosen the brown tannins in coffee.',
         },
         {
-          title: '3. Extract or Blot-Rinse with Plain Water',
-          detail: 'Use a portable carpet/upholstery extractor (2 wet passes, 3 dry suction passes) or blot with a water-dampened cloth until no soap remains.',
+          title: 'Rinse out the soap',
+          detail: 'Blot with a cloth dampened in plain water, or use a portable spot cleaner (a couple of wet passes, then several dry suction passes), until no soap remains.',
         },
         {
-          title: '4. Speed-Dry with Airflow',
-          detail: 'Point a room fan across the damp area for 45 minutes to prevent water rings.',
+          title: 'Dry it quickly',
+          detail: 'Point a fan at the damp area until it is fully dry. Fast drying helps prevent water rings.',
         },
       ],
-      whenToCallPro: 'If coffee soaked deep into polyurethane sofa foam core and smells sour after 48 hours.',
+      whenToCallPro: 'If the coffee soaked into the cushion foam and still smells sour after a couple of days, or a ring keeps coming back.',
       recommendedProducts: PRODUCTS.filter((p) =>
         ['prod-bissell-little-green', 'prod-hoover-cleanslate', 'prod-shark-stainstriker'].includes(p.id)
       ),
@@ -95,28 +98,28 @@ export function solveStain(input: StainSolverInput): StainSolverOutput {
     return {
       safeToDIY: true,
       difficulty: 'Moderate (25 mins)',
-      chemicalHazardWarning: 'NEVER use ammonia-based cleaners on pet urine (urine already contains ammonia, which encourages pets to re-mark the spot). Never use steam cleaners on urine—heat bonds uric acid crystals permanently into synthetic fibers.',
-      surfaceWarning: 'Enzyme cleaners require 10–15 minutes of wet dwell time to digest uric acid crystals.',
+      chemicalHazardWarning: 'Skip ammonia-based cleaners: urine smells like ammonia, which can draw pets back to the same spot. Don\'t steam-clean urine; heat can set the stain and odor.',
+      surfaceWarning: 'Enzyme cleaners need time to work. Leave the spot wet for as long as the label says (often 10–15 minutes), and spot-test on a hidden area first.',
       suppliesNeeded: [
-        'Bio-enzymatic pet stain & odor destroyer',
-        'Portable carpet/upholstery spot extractor',
-        'White microfiber towels',
+        'Enzyme cleaner made for pet stains and odors',
+        'Portable carpet and upholstery spot cleaner (optional)',
+        'White cloths or paper towels',
       ],
       steps: [
         {
-          title: '1. Extract Fresh Liquid Before It Reaches the Pad',
-          detail: 'Stand on a folded towel over the spot or use your portable spot cleaner on dry-suction mode first.',
+          title: 'Soak up as much as you can first',
+          detail: 'Stand on a folded towel over the spot, or run a spot cleaner on suction only, before the urine reaches the pad below.',
         },
         {
-          title: '2. Saturate with Bio-Enzymatic Formula (15-Min Dwell)',
-          detail: 'Apply enzyme cleaner generously so it reaches the same depth as the urine. Cover with a damp towel for 15 minutes.',
+          title: 'Apply enzyme cleaner and let it sit',
+          detail: 'Apply enough enzyme cleaner to reach as deep as the urine did. Cover with a damp towel and wait as long as the label says.',
         },
         {
-          title: '3. Rinse-Extract with Cool Water',
-          detail: 'Flush and suction out the dissolved residue using a portable spot cleaner with cool water.',
+          title: 'Rinse with cool water and dry',
+          detail: 'Blot or extract with cool water to lift the residue, then let the area dry fully.',
         },
       ],
-      whenToCallPro: 'If multiple old accidents have penetrated the subfloor beneath wall-to-wall carpeting.',
+      whenToCallPro: 'If the smell keeps coming back or many old accidents have soaked through to the pad or subfloor under wall-to-wall carpet.',
       recommendedProducts: PRODUCTS.filter((p) =>
         ['prod-hoover-cleanslate', 'prod-bissell-little-green', 'prod-shark-stainstriker'].includes(p.id)
       ),
@@ -128,28 +131,28 @@ export function solveStain(input: StainSolverInput): StainSolverOutput {
     return {
       safeToDIY: true,
       difficulty: 'Moderate (25 mins)',
-      chemicalHazardWarning: 'CRITICAL SAFETY RULE: Never mix chlorine bleach with vinegar, acidic tub descalers, or ammonia. Mixing bleach and acid releases toxic chlorine gas.',
-      surfaceWarning: 'Do not use acidic vinegar or lime removers on natural marble, travertine, or limestone.',
+      chemicalHazardWarning: 'Never mix bleach with vinegar, acidic descalers or ammonia: the fumes are toxic. Don\'t mix hydrogen peroxide and vinegar in the same container either. Run the fan or open a window, and wear gloves.',
+      surfaceWarning: 'Don\'t use vinegar or other acids on marble, travertine or limestone. Peroxide can lighten colored grout, so test a small spot first.',
       suppliesNeeded: [
-        'Baking soda + 3% Hydrogen peroxide (oxygen paste)',
-        'Stiff V-trimmed nylon grout brush or 400 RPM Electric Spin Scrubber',
-        'Microfiber drying cloths',
+        'Baking soda and 3% hydrogen peroxide (mixed into a paste)',
+        'Stiff nylon grout brush or an electric spin scrubber',
+        'Gloves and microfiber cloths for drying',
       ],
       steps: [
         {
-          title: '1. Ventilate the Room & Pre-Wet Grout',
-          detail: 'Turn on the bathroom exhaust fan and mist tile joints with warm water.',
+          title: 'Ventilate and wet the grout',
+          detail: 'Turn on the exhaust fan or open a window, then mist the grout lines with warm water.',
         },
         {
-          title: '2. Apply Baking Soda + Peroxide Paste (10 Mins)',
-          detail: 'Spread paste along grout lines and let oxygenated bubbles loosen soap scum and mildew biofilm.',
+          title: 'Spread the paste and wait about 10 minutes',
+          detail: 'Spread the paste along the grout lines and let it fizz. It helps loosen soap scum and mildew.',
         },
         {
-          title: '3. Agitate with Nylon Bristles & Rinse Dry',
-          detail: 'Scrub with a V-shaped nylon grout brush or electric spin scrubber, rinse with warm water, and towel dry.',
+          title: 'Scrub, rinse and dry',
+          detail: 'Scrub with a nylon grout brush or spin scrubber, rinse with warm water and towel dry.',
         },
       ],
-      whenToCallPro: 'If mold covers more than 10 sq ft (EPA threshold) or tiles feel soft/hollow due to wet drywall behind them.',
+      whenToCallPro: 'If mold covers more than about 10 square feet (the EPA\'s rule of thumb for calling a professional), keeps coming back, or tiles feel soft or hollow, which can mean water behind the wall.',
       recommendedProducts: PRODUCTS.filter((p) =>
         ['prod-electric-spin-scrubber', 'prod-grout-brush-set', 'prod-steam-cleaner-bathroom'].includes(p.id)
       ),
@@ -161,28 +164,28 @@ export function solveStain(input: StainSolverInput): StainSolverOutput {
   return {
     safeToDIY: true,
     difficulty: 'Easy (10 mins)',
-    chemicalHazardWarning: 'Never mix different household chemical sprays. Always blot rather than scrubbing.',
-    surfaceWarning: 'Spot-test in a hidden corner before treating the center of the surface.',
+    chemicalHazardWarning: 'Never mix cleaning products, especially bleach with ammonia or vinegar. Blot rather than scrub.',
+    surfaceWarning: 'Spot-test in a hidden corner before treating the stain itself.',
     suppliesNeeded: [
-      'Clean white microfiber cloths',
-      'pH-neutral surfactant solution (1/2 tsp clear dish soap in 1 cup warm water)',
-      'Portable spot cleaner or damp rinse towel',
+      'Clean white cloths',
+      'Mild soap solution: 1/2 tsp clear dish soap in 1 cup of water (cool for wine, juice and ink; warm for grease)',
+      'A damp cloth for rinsing, or a portable spot cleaner',
     ],
     steps: [
       {
-        title: '1. Lift Solid Debris & Blot Excess Liquid',
-        detail: 'Scrape solids gently with a dull spoon and blot liquid from the outer edge inward.',
+        title: 'Lift solids and blot',
+        detail: 'Scrape up solids gently with a dull spoon, then blot liquid from the outer edge inward.',
       },
       {
-        title: '2. Apply Mild Surfactant Solution',
-        detail: 'Dab with a damp microfiber cloth, allow 5 minutes to loosen soil, and blot with clean water.',
+        title: 'Dab on the soap solution',
+        detail: 'Dab it on with a cloth, wait about 5 minutes, then blot with clean water.',
       },
       {
-        title: '3. Extract & Air Dry',
-        detail: 'Remove moisture completely with dry towels or a portable spot cleaner.',
+        title: 'Blot dry and air out',
+        detail: 'Press out as much moisture as you can with dry towels or a spot cleaner, then let it air dry.',
       },
     ],
-    whenToCallPro: 'If stain involves permanent dye, oil paint, or delicate antique textiles.',
+    whenToCallPro: 'If the stain is permanent dye or paint, the item is antique or delicate, or two careful attempts haven\'t moved it.',
     recommendedProducts: PRODUCTS.slice(0, 3),
     relatedGuideSlug: 'best-portable-carpet-cleaners-home-use-2026',
   };
@@ -202,59 +205,48 @@ export function findEquipment(input: EquipmentFinderInput) {
 
     if (input.space === 'bathroom' && product.roomSlugs.includes('bathroom-cleaning')) {
       score += 25;
-      reasons.push('Engineered specifically for high-moisture bathroom tile, tubs, and fixtures');
+      reasons.push('Made for bathroom tile, tubs and fixtures');
     }
     if (input.space === 'carpet-upholstery' && product.category === 'carpet-cleaners') {
       score += 30;
-      reasons.push('Dedicated deep-extraction suction for carpets, area rugs, and fabric sofas');
+      reasons.push('A carpet and upholstery cleaner: the right type of tool for carpets, rugs and fabric sofas');
     }
     if (input.space === 'pet-areas' && product.roomSlugs.includes('pet-hair-removal')) {
       score += 25;
-      reasons.push('Top-rated in our pet hair and pet accident lab tests');
+      reasons.push('Listed by the maker for pet hair or pet messes');
     }
     if (input.space === 'kitchen' && product.roomSlugs.includes('kitchen-cleaning')) {
       score += 25;
-      reasons.push('Fits standard kitchen cabinets, sinks, and hard surfaces');
+      reasons.push('Suited to kitchen sinks, cabinets and hard surfaces');
     }
 
     if (input.need === 'deep-stains' && product.category === 'carpet-cleaners') {
       score += 25;
-      reasons.push('Pressurized spray + vacuum extraction lifts stains out of cushion padding');
+      reasons.push('Spray-and-suction design can pull spills out of padding, not just the surface');
     }
     if (input.need === 'scrub-tile-grout' && ['Bathroom-scrubbers', 'brushes-tools'].includes(product.category)) {
       score += 25;
-      reasons.push('High-density nylon bristles target recessed mortar joints and soap scum');
+      reasons.push('Nylon bristles reach into grout lines and soap scum');
     }
     if (input.need === 'pet-hair' && product.id === 'prod-chomchom-pet-hair-roller') {
       score += 40;
-      reasons.push('Reusable electrostatic weave removes embedded fur without sticky tape');
+      reasons.push('Reusable roller lifts fur from fabric without sticky tape');
     }
     if (input.need === 'steam-sanitize' && product.category === 'steam-cleaners') {
       score += 35;
-      reasons.push('212°F+ pressurized steam sanitizes without chemical sprays');
+      reasons.push('Hot steam loosens grime without chemical sprays (not for wood, unsealed stone or urine stains)');
     }
     if (input.need === 'organize-storage' && product.category === 'organizers') {
       score += 40;
-      reasons.push('L-shaped sliding tiers maximize under-sink cabinet storage around pipes');
+      reasons.push('Sliding tiers fit around under-sink pipes');
     }
 
-    if (input.budget === 'under-40' && product.priceNumeric <= 40) {
-      score += 15;
-      reasons.push('Typically sells in the under-$40 range (check today’s price on Amazon)');
-    } else if (input.budget === 'under-100' && product.priceNumeric <= 100) {
-      score += 15;
-      reasons.push('Typically sells under $100 (check today’s price on Amazon)');
-    } else if (input.budget === 'under-160' && product.priceNumeric <= 160) {
-      score += 15;
-      reasons.push('Typically sells under $160 (check today’s price on Amazon)');
-    } else if (input.budget === 'under-40' && product.priceNumeric > 40) {
-      score -= 20;
-    }
+    // Budget is not scored: we hold no verified prices, so price can't influence a match.
 
     return {
       product,
       matchScore: Math.min(99, Math.max(60, score)),
-      reasons: reasons.length > 0 ? reasons : ['Proven high-reliability pick across US households'],
+      reasons: reasons.length > 0 ? reasons : ['A general-purpose pick; it isn\'t a close match for your answers'],
     };
   });
 
@@ -275,48 +267,93 @@ export const SURFACE_COMPATIBILITY_MATRIX: SurfaceCompatibilityEntry[] = [
     surface: 'Natural Marble & Travertine',
     agent: 'White Vinegar / Lemon Juice',
     status: 'UNSAFE',
-    headline: 'DO NOT USE: Acid Etches Calcium Carbonate Instantly',
-    explanation: 'Vinegar (acetic acid) reacts chemically with calcium carbonate in marble, travertine, and limestone, leaving permanent dull white etch marks within 30 seconds.',
-    recommendedAlternative: 'pH-neutral stone cleaner or warm water with 2 drops of mild dish soap.',
+    headline: 'Don\'t use it: acid etches the stone',
+    explanation: 'Vinegar and lemon juice are acids. They react with the calcium carbonate in marble, travertine and limestone and can leave dull etch marks quickly, even on sealed stone.',
+    recommendedAlternative: 'A pH-neutral stone cleaner, or warm water with a couple of drops of mild dish soap.',
   },
   {
     surface: 'Cement Tile Grout',
     agent: 'Oxygen Bleach / Baking Soda + Peroxide',
     status: 'SAFE',
-    headline: 'SAFE & RECOMMENDED: Brightens Without Eroding Mortar',
-    explanation: 'Alkaline oxygen-release solutions lift organic soap scum and mildew stains out of porous grout lines without dissolving cement binders.',
-    recommendedAlternative: 'Pair with a stiff V-trimmed nylon grout brush and reseal annually.',
+    headline: 'Generally safe: lifts grime without eating the grout',
+    explanation: 'Oxygen-based cleaners loosen soap scum and mildew stains in porous grout without the acid that wears cement grout down. Peroxide can lighten colored grout, so test a small spot.',
+    recommendedAlternative: 'Use a stiff nylon grout brush, rinse well, and reseal grout as the sealer\'s label recommends.',
   },
   {
     surface: 'Fabric Sofa (Code W / WS)',
     agent: 'Low-Moisture Portable Spot Extractor',
     status: 'SAFE',
-    headline: 'SAFE: Best Method for Deep Spill Extraction',
-    explanation: 'Water-safe synthetic and blended fabrics respond best to warm water (<110°F) + low-foam extraction formula followed by slow dry-suction passes.',
-    recommendedAlternative: 'Bissell Little Green or Hoover CleanSlate with fan drying.',
+    headline: 'Generally safe: a good way to lift spills',
+    explanation: 'Fabrics labeled W or WS can take water. Use warm (not hot) water with a low-foam formula, then several slow suction-only passes so the cushion doesn\'t stay wet. Test a hidden spot first.',
+    recommendedAlternative: 'A portable spot cleaner such as the Bissell Little Green or Hoover CleanSlate, then a fan to speed drying.',
   },
   {
     surface: 'Carpet & Upholstery (Pet Urine)',
     agent: 'High-Heat Steam Cleaner',
     status: 'UNSAFE',
-    headline: 'AVOID: High Heat Bonds Uric Acid Odor Permanently',
-    explanation: 'Applying 212°F steam to protein or pet urine stains cooks the organic proteins into synthetic carpet fibers, making the odor nearly impossible to remove later.',
-    recommendedAlternative: 'Cool water extraction + bio-enzymatic cleaner with a 15-minute dwell time.',
+    headline: 'Avoid: heat can set the stain and smell',
+    explanation: 'Steam heat can set protein stains like urine into the fibers, which can make the odor much harder to remove later.',
+    recommendedAlternative: 'An enzyme cleaner left on as long as its label says, then a cool-water rinse.',
   },
   {
     surface: 'Hardwood Floors',
     agent: 'Pressurized Steam Mop',
     status: 'UNSAFE',
-    headline: 'UNSAFE: Forces Moisture Between Planks & Warps Wood',
-    explanation: 'High-pressure steam penetrates micro-seams between hardwood boards, causing cupping, finish clouding, and voided flooring warranties.',
-    recommendedAlternative: 'Slightly dampened flat microfiber pad with pH-neutral hardwood spray.',
+    headline: 'Avoid: steam pushes moisture between boards',
+    explanation: 'Heat and moisture can get into the seams between boards and cause cupping or a cloudy finish. Many flooring makers say not to steam-clean, which can affect the warranty.',
+    recommendedAlternative: 'A barely damp microfiber mop with a cleaner your floor maker approves.',
   },
   {
     surface: 'Glazed Ceramic Shower Tile',
-    agent: '400 RPM Electric Spin Scrubber (Nylon)',
+    agent: 'Electric Spin Scrubber (Nylon Brush)',
     status: 'SAFE',
-    headline: 'SAFE: Removes Soap Scum Without Scratching Glaze',
-    explanation: 'Soft-to-medium nylon bristles score 2.5 on the Mohs hardness scale—far softer than glazed porcelain or ceramic tile (Mohs 6–7).',
-    recommendedAlternative: 'Use with warm water and neutral bathroom cleaner.',
+    headline: 'Generally safe: nylon won\'t scratch the glaze',
+    explanation: 'Nylon bristles are much softer than glazed ceramic or porcelain, so they scrub off soap scum without scratching. Skip stiff wire or abrasive pads.',
+    recommendedAlternative: 'Use with warm water and a neutral bathroom cleaner.',
   },
 ];
+
+// ---- Shared option lists and labels (used by the tool UI and to validate ?stain= / ?surface= links) ----
+
+export const STAIN_OPTIONS: { value: StainSolverInput['stainType']; label: string }[] = [
+  { value: 'coffee', label: 'Coffee or tea' },
+  { value: 'pet-urine', label: 'Pet accident' },
+  { value: 'red-wine', label: 'Red wine or juice' },
+  { value: 'grease-oil', label: 'Grease or oil' },
+  { value: 'mud-dirt', label: 'Mud or dirt' },
+  { value: 'ink', label: 'Ink' },
+  { value: 'mold-mildew', label: 'Mold or mildew' },
+];
+
+export const SURFACE_OPTIONS: { value: StainSolverInput['surface']; label: string }[] = [
+  { value: 'fabric-sofa', label: 'Fabric sofa' },
+  { value: 'carpet-rug', label: 'Carpet or rug' },
+  { value: 'mattress', label: 'Mattress' },
+  { value: 'cotton-laundry', label: 'Clothes or laundry' },
+  { value: 'tile-grout', label: 'Tile and grout' },
+  { value: 'hardwood', label: 'Hardwood floor' },
+];
+
+export function isStainType(value: unknown): value is StainSolverInput['stainType'] {
+  return typeof value === 'string' && STAIN_OPTIONS.some((o) => o.value === value);
+}
+
+export function isSurface(value: unknown): value is StainSolverInput['surface'] {
+  return typeof value === 'string' && SURFACE_OPTIONS.some((o) => o.value === value);
+}
+
+const RELATED_GUIDE_TITLES: Record<string, string> = {
+  'how-to-remove-coffee-stains-from-fabric-sofa': 'How to remove coffee stains from a fabric sofa',
+  'how-to-clean-grout-in-bathroom-tiles': 'How to clean grout in bathroom tiles',
+  'best-portable-carpet-cleaners-home-use-2026': 'Best portable carpet cleaners for home use',
+};
+
+/** Guide slugs starting with "best-" are buying guides served under /best, the rest under /guides. */
+export function relatedGuide(slug: string): { href: string; title: string; isBuyingGuide: boolean } {
+  const isBuyingGuide = slug.startsWith('best-');
+  return {
+    href: `/${isBuyingGuide ? 'best' : 'guides'}/${slug}`,
+    title: RELATED_GUIDE_TITLES[slug] || 'Read the full guide',
+    isBuyingGuide,
+  };
+}

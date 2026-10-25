@@ -13,7 +13,8 @@ interface Entry {
 }
 
 const TOOL_SLUGS = ['stain-finder', 'equipment-finder', 'routine-planner', 'cost-calculator', 'surface-checker'];
-const STATIC_PAGES = ['/products', '/tools', '/methodology', '/editorial-policy', '/affiliate-disclosure', '/privacy', '/terms'];
+const STATIC_PAGES = ['/products', '/tools', '/about',
+  '/methodology', '/editorial-policy', '/affiliate-disclosure', '/privacy', '/terms'];
 
 function newest(dates: (string | undefined)[]): string | undefined {
   const iso = dates.filter(Boolean).map((d) => isoDate(d as string)).sort();

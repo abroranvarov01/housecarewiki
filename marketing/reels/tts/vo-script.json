@@ -1,0 +1,30 @@
+{
+  "voice": "af_heart",
+  "speed": 1.1,
+  "lines": {
+    "hook": {
+      "say": "Spilled coffee on the couch? Don't scrub it yet.",
+      "show": "Spilled coffee on the couch? Don’t scrub it yet."
+    },
+    "title": {
+      "say": "Do these three things first.",
+      "show": "Do these three things first."
+    },
+    "tip1": {
+      "say": "One. Blot, don't rub. Press a clean white cloth onto the spill, and lift.",
+      "show": "Blot, don’t rub. Press a clean white cloth onto the spill, and lift."
+    },
+    "tip2": {
+      "say": "Two. Check the care tag under the cushion. If the code is S, skip the water.",
+      "show": "Check the care tag under the cushion. If the code is S, skip the water."
+    },
+    "tip3": {
+      "say": "Three. Spot-test any cleaner on a hidden area, and let it dry before you treat the stain.",
+      "show": "Spot-test any cleaner on a hidden area, and let it dry before you treat the stain."
+    },
+    "cta": {
+      "say": "The full guide is on House Care Wiki dot com. Save this for the next spill.",
+      "show": "The full guide is on HouseCareWiki.com. Save this for the next spill."
+    }
+  }
+}

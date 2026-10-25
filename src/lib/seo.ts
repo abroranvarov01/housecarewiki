@@ -24,6 +24,7 @@ const TITLE_MAX = 60;
 
 // Brand suffix only when it still fits in ~60 chars, so Google doesn't cut the main part.
 export function seoTitle(title: string): Metadata['title'] {
+  if (title.includes(SITE.name)) return { absolute: title };
   const branded = `${title} | ${SITE.name}`;
   return branded.length <= TITLE_MAX ? { absolute: branded } : { absolute: title };
 }
@@ -75,6 +76,7 @@ export function buildMetadata(seo: PageSeo): Metadata {
     alternates: {
       canonical: url,
       languages: { [SITE.lang]: url, 'x-default': url },
+      types: { 'application/rss+xml': [{ url: absoluteUrl('/feed.xml'), title: `${SITE.name} — latest guides` }] },
     },
     robots: seo.noindex ? NOINDEX_ROBOTS : INDEX_ROBOTS,
     openGraph:

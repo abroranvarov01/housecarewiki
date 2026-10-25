@@ -10,6 +10,9 @@ const securityHeaders = [
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // Production always sits behind nginx, which compresses with brotli/gzip; compressing here too would
+  // hand nginx pre-gzipped bodies and block brotli.
+  compress: false,
   productionBrowserSourceMaps: false,
   images: {
     remotePatterns: [
@@ -24,6 +27,19 @@ const nextConfig = {
     ],
     // Images are pre-optimized to WebP by scripts/optimize-images.cjs.
     unoptimized: true,
+  },
+  async redirects() {
+    return [
+      // Placeholder author personas were retired in favor of the real editorial team page.
+      ...['emily-carter', 'marcus-vance', 'claire-bennett'].map((slug) => ({
+        source: `/authors/${slug}`,
+        destination: '/authors/housecarewiki-editors',
+        statusCode: 301,
+      })),
+      // Legacy URLs listed in the CMS redirect manager.
+      { source: '/reviews/best-portable-carpet-cleaners', destination: '/best/best-portable-carpet-cleaners-home-use-2026', statusCode: 301 },
+      { source: '/guides/coffee-stain-couch', destination: '/guides/how-to-remove-coffee-stains-from-fabric-sofa', statusCode: 301 },
+    ];
   },
   async headers() {
     return [

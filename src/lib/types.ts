@@ -27,6 +27,8 @@ export type ContentCategory =
 export interface Author {
   id: string;
   slug: string;
+  // 'team' bylines are emitted as an Organization in structured data, never as a fictional person.
+  kind?: 'person' | 'team';
   name: string;
   role: string;
   bio: string;
@@ -41,7 +43,7 @@ export interface SourceCitation {
   title: string;
   publisher: string;
   url: string;
-  type: 'Lab Test' | 'Manufacturer Manual' | 'Government Standard' | 'Textile Institute';
+  type: 'Industry Standard' | 'Manufacturer Manual' | 'Government Standard' | 'Textile Institute';
   accessedDate: string;
   verifiedClaim: string;
 }
@@ -66,11 +68,7 @@ export interface Product {
   roomSlugs: string[];
   badge?: string;
   bestFor: string;
-  rating: number;
-  reviewCount: number;
-  price: string;
-  priceNumeric: number;
-  isPrime: boolean;
+  // No price, Amazon rating, review count or Prime status is stored: none of it can be shown without the live API.
   amazonUrl: string;
   trackingTag: string;
   image: string;
@@ -221,7 +219,7 @@ export interface ScheduledAutomation {
   enabled: boolean;
   lastRun: string;
   nextRun: string;
-  status: 'SUCCESS' | 'RUNNING' | 'WARNING';
+  status: 'SUCCESS' | 'RUNNING' | 'WARNING' | 'NOT_CONFIGURED';
   lastSummary: string;
 }
 

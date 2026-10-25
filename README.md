@@ -1,6 +1,8 @@
 # HouseCareWiki.com — Full Product Implementation (v2.0)
 
-Independent English (US) home care encyclopedia, step-by-step cleaning guides, hands-on appliance reviews, interactive smart tools, editorial CMS, and Amazon Associates commerce platform.
+Independent English (US) home care guide: step-by-step cleaning guides, research-based product reviews (clearly labeled; no hands-on testing claims), interactive tools, editorial CMS and Amazon Associates links.
+
+Design system: [docs/design-system.md](docs/design-system.md). Latest overhaul and audit: [docs/redesign-report.md](docs/redesign-report.md).
 
 **Core Philosophy:** *Solve the problem first. Recommend the product second.*
 
@@ -9,11 +11,11 @@ Independent English (US) home care encyclopedia, step-by-step cleaning guides, h
 ## 1. Implemented Subsystems (Spec v2.0 SYS-01 to SYS-14)
 
 - **SYS-01 Public Website (`src/app/page.tsx`, `src/app/rooms/[slug]`, `src/app/best/[slug]`, `src/app/guides/[slug]`)**:
-  - Visual design matching the 3-screen editorial UI specification (Warm Paper `#F7F4EE`, Forest Green `#1E3A2F`, Terracotta Coral `#E26D42`, Serif Display + Handwritten annotations).
+  - "Modern Home Field Guide" design system (paper, ink, denim, marker yellow, brick; Newsreader + Schibsted Grotesk + IBM Plex Mono). See docs/design-system.md.
 - **SYS-02 Content Engine (`src/lib/seed-data.ts`, `src/lib/store.ts`)**:
   - Structured guides, safety warnings, step-by-step instructions, pro tips, FAQs, and primary source citations (IICRC, EPA, TCNA, AHFA).
 - **SYS-03 & SYS-04 Product Catalog & Review Engine (`/products`, `/products/[slug]`, `/best/[slug]`, `/compare`)**:
-  - Verified specifications, lab sub-scores, `Hands-on Tested` vs `Research-Based Review` badges, and side-by-side comparisons.
+  - Manufacturer specifications, research-based ratings, evidence labels (`Research-Based Review` until a product is actually tested), and side-by-side comparisons.
 - **SYS-05 Six Interactive Smart Tools (`/tools/*`, `/compare`)**:
   1. **Stain Solution Finder** (`/tools/stain-finder`)
   2. **Cleaning Equipment Finder** (`/tools/equipment-finder`)
@@ -33,7 +35,7 @@ Independent English (US) home care encyclopedia, step-by-step cleaning guides, h
 ## 2. Quick Local Start
 
 ```bash
-cd /Users/akbarkhonavazkhonov/.gemini/antigravity/scratch/housecarewiki
+npm install
 npm run dev
 ```
 
@@ -80,5 +82,5 @@ sudo certbot --nginx --redirect -d housecarewiki.com -d www.housecarewiki.com
 - **Site config:** `src/lib/site.ts` is the single source for URL, name, locale and contacts. Metadata (`src/lib/seo.ts` → `buildMetadata`) and JSON-LD (`src/lib/schema.ts`) read only from it.
 - **Content validation:** `npm run validate:content` runs automatically before every build and fails it on missing fields, duplicate titles/intents, broken product references or missing images.
 - **Images:** put new photos in `public/images` and run `npm run optimize:images` (needs `sharp`) to create compressed WebP files and app icons.
-- **Admin:** `/admin` uses HTTP Basic auth (`ADMIN_USER`, default `admin`, and `ADMIN_PASSWORD` from `/opt/housecarewiki/.env`). `deploy/remote-setup.sh` generates a password on first deploy if none is set; without it the admin area stays closed.
+- **Admin:** `/admin` uses HTTP Basic auth, checked in the middleware and again by the page and API (`src/lib/admin-auth.ts`) (`ADMIN_USER`, default `admin`, and `ADMIN_PASSWORD` from `/opt/housecarewiki/.env`). `deploy/remote-setup.sh` generates a password on first deploy if none is set; without it the admin area stays closed.
 - **Sitemap:** `/sitemap.xml` (with image entries) is generated from content data; lastmod is the newest content date behind each URL.

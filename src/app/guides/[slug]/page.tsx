@@ -2,26 +2,27 @@ import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import {
-  CheckCircle2,
-  AlertTriangle,
-  Sparkles,
-  BookOpen,
-  ChevronRight,
-  Wrench,
-  HelpCircle,
-} from 'lucide-react';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 import { readStore } from '@/lib/store';
 import { buildMetadata } from '@/lib/seo';
 import { absoluteUrl } from '@/lib/site';
 import { JsonLd } from '@/components/JsonLd';
 import { articleSchema, breadcrumbSchema, faqSchema, graph, howToSchema, isoDate } from '@/lib/schema';
-import { PriceNote,
-  EditorScore,
-  HandwrittenNote,
-  AffiliateButton,
-  SaveItemButton,
-} from '@/components/ui/Badges';
+import { AffiliateButton, AffiliateDisclosureNote, EditorScore, SaveItemButton } from '@/components/ui/Badges';
+import {
+  Breadcrumbs,
+  Byline,
+  Callout,
+  Container,
+  EvidenceLabel,
+  FaqList,
+  Figure,
+  Kicker,
+  SectionHead,
+  SourceList,
+  articleHref,
+  articleMeta,
+} from '@/components/field';
 
 // ISR: pages are pre-rendered and refreshed hourly (and on every CMS publish via revalidatePath).
 export const revalidate = 3600;
@@ -62,6 +63,60 @@ export async function generateMetadata({
   });
 }
 
+const pad = (n: number) => String(n).padStart(2, '0');
+
+/** Step index shared by the sticky desktop rail and the collapsible mobile version. */
+function StepIndex({
+  steps,
+  hasSupplies,
+  hasFixes,
+  hasFaq,
+}: {
+  steps: { stepNumber: number; title: string }[];
+  hasSupplies: boolean;
+  hasFixes: boolean;
+  hasFaq: boolean;
+}) {
+  const linkClass =
+    'group flex min-h-[44px] items-baseline gap-3 border-b border-rule py-2.5 text-[15px] leading-snug text-ink hover:text-terracotta-deep';
+  return (
+    <ol className="border-t border-rule">
+      {hasSupplies && (
+        <li>
+          <a href="#supplies" className={linkClass}>
+            <span className="kicker w-6 shrink-0 text-ink-muted">—</span>
+            <span className="hover-title">What you&apos;ll need</span>
+          </a>
+        </li>
+      )}
+      {steps.map((step) => (
+        <li key={step.stepNumber}>
+          <a href={`#step-${step.stepNumber}`} className={linkClass}>
+            <span className="kicker w-6 shrink-0 text-terracotta-deep">{pad(step.stepNumber)}</span>
+            <span className="hover-title">{step.title}</span>
+          </a>
+        </li>
+      ))}
+      {hasFixes && (
+        <li>
+          <a href="#if-it-did-not-work" className={linkClass}>
+            <span className="kicker w-6 shrink-0 text-ink-muted">—</span>
+            <span className="hover-title">If that didn&apos;t work</span>
+          </a>
+        </li>
+      )}
+      {hasFaq && (
+        <li>
+          <a href="#faq" className={linkClass}>
+            <span className="kicker w-6 shrink-0 text-ink-muted">—</span>
+            <span className="hover-title">Common questions</span>
+          </a>
+        </li>
+      )}
+    </ol>
+  );
+}
+
 export default function StepByStepGuidePage({
   params,
 }: {
@@ -93,321 +148,294 @@ export default function StepByStepGuidePage({
     faqSchema(article.faqs),
   );
 
+  const steps = article.steps || [];
+  const supplies = article.materialsNeeded || [];
+  const fixes = article.ifMethodFails || [];
+  const related = store.articles.filter(
+    (a) =>
+      a.routeType === 'guides' && a.status === 'Published' && a.roomSlug === article.roomSlug && a.slug !== article.slug,
+  );
+  const hasIndex = steps.length > 0;
+
   return (
-    <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <article className="pb-16">
       <JsonLd data={schema} />
-      {/* Breadcrumbs */}
-      <nav
-        aria-label="Breadcrumb"
-        className="py-4 flex items-center justify-between flex-wrap gap-2 text-xs text-ink-muted"
-      >
-        <ol className="flex items-center gap-1.5">
-          <li>
-            <Link href="/" className="hover:text-forest">
-              Home
-            </Link>
-          </li>
-          <li>
-            <ChevronRight className="w-3.5 h-3.5" />
-          </li>
-          <li>
-            <Link href={`/rooms/${article.roomSlug}`} className="hover:text-forest capitalize">
-              {roomName}
-            </Link>
-          </li>
-          <li>
-            <ChevronRight className="w-3.5 h-3.5" />
-          </li>
-          <li className="text-ink font-medium truncate max-w-xs sm:max-w-md">
-            {article.title}
-          </li>
-        </ol>
-        <SaveItemButton
-          itemSlug={article.slug}
-          itemType="article"
-          title={article.title}
-        />
-      </nav>
 
-      {/* Hero Section */}
-      <header className="bg-gradient-to-br from-[#FBF9F5] via-[#F4EFE4] to-[#EAE1D0] rounded-2xl border border-paper-border p-6 sm:p-10 shadow-soft">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-7 space-y-4">
-            <div className="inline-flex items-center gap-2">
-              <span className="text-[11px] font-extrabold uppercase tracking-wider text-coral">
-                {article.categoryLabel}
-              </span>
-              <span className="text-xs text-ink-muted">·</span>
-              <span className="text-xs font-semibold text-forest">
-                {article.evidenceStatus}
-              </span>
-            </div>
+      <Container>
+        {/* Breadcrumbs + save */}
+        <div className="flex flex-wrap items-center justify-between gap-3 py-4">
+          <Breadcrumbs
+            items={[
+              { name: 'Home', href: '/' },
+              { name: roomName, href: `/rooms/${article.roomSlug}` },
+              { name: article.title },
+            ]}
+          />
+          <SaveItemButton itemSlug={article.slug} itemType="article" title={article.title} />
+        </div>
 
-            <h1 className="font-editorial text-3xl sm:text-4xl lg:text-[42px] font-bold text-ink leading-tight">
+        {/* Header: title block + hero plate */}
+        <header className="grid gap-8 border-b border-rule pb-10 pt-4 lg:grid-cols-12 lg:gap-12 lg:pt-6">
+          <div className="lg:col-span-7">
+            <Kicker tone="accent">{articleMeta(article)}</Kicker>
+            <h1 className="mt-4 font-serif text-[2.25rem] font-medium leading-[1.05] tracking-[-0.02em] text-ink sm:text-5xl lg:text-[3.5rem]">
               {article.title}
             </h1>
-
-            <p className="text-sm sm:text-base text-ink-secondary leading-relaxed">
-              {article.subtitle}
-            </p>
-
-            <div className="pt-2 flex items-center gap-3">
-              <img
-                src={author.avatar}
-                loading="lazy"
-                decoding="async"
-                alt={author.name}
-                className="w-10 h-10 rounded-full object-cover border border-white shadow-sm"
-              />
-              <div>
-                <Link
-                  href={`/authors/${author.slug}`}
-                  className="text-xs sm:text-sm font-bold text-ink hover:text-forest"
-                >
-                  By {author.name}
-                </Link>
-                <p className="text-xs text-ink-muted">
-                  Updated <time dateTime={isoDate(article.updatedAt)}>{article.updatedAt}</time> · Published{' '}
-                  <time dateTime={isoDate(article.publishedAt)}>{article.publishedAt}</time> · {article.readingTime}
-                </p>
-              </div>
+            <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-secondary">{article.subtitle}</p>
+            <div className="mt-6 space-y-3">
+              <Byline author={author} updatedAt={article.updatedAt} publishedAt={article.publishedAt} />
+              <EvidenceLabel status={article.evidenceStatus} />
             </div>
           </div>
-
-          <div className="lg:col-span-5 relative">
-            <div className="rounded-xl overflow-hidden shadow-elevated border border-white/70 aspect-[4/3] relative">
-              <img
-                src={article.heroImage}
-                fetchPriority="high"
-                alt={article.heroImageAlt}
-                className="w-full h-full object-cover"
-              />
-              {article.handwrittenBadge && (
-                <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-xl shadow-soft">
-                  <HandwrittenNote
-                    text={article.handwrittenBadge.replace(' with ', '\nwith ')}
-                    arrowDirection="down-right"
-                  />
-                </div>
-              )}
-            </div>
+          <div className="lg:col-span-5">
+            <Figure
+              src={article.heroImage}
+              alt={article.heroImageAlt}
+              ratio="4/3"
+              priority
+              sizes="(min-width: 1024px) 40vw, 100vw"
+            />
           </div>
-        </div>
-      </header>
+        </header>
 
-      {/* Quick Answer Box (Solve the problem first philosophy — Spec Section 6.1 A) */}
-      <section className="mt-8 bg-white rounded-2xl border-l-4 border-l-forest border border-paper-border p-6 shadow-card">
-        <div className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-forest mb-2">
-          <Sparkles className="w-4 h-4 text-coral" />
-          <span>The Quick Answer (Solve It in 60 Seconds)</span>
-        </div>
-        <p className="text-sm sm:text-base text-ink leading-relaxed font-medium">
-          {article.quickAnswer}
-        </p>
-      </section>
+        {/* The answer first, then what could go wrong */}
+        <div className="mx-auto mt-8 max-w-3xl space-y-4 lg:mx-0">
+          <Callout tone="answer" title="The short answer">
+            <p className="text-base leading-relaxed text-ink sm:text-[17px]">{article.quickAnswer}</p>
+          </Callout>
 
-      {/* Surface & Chemical Safety Warnings */}
-      {article.safetyWarnings.length > 0 && (
-        <section className="mt-6 bg-amber-50/90 border border-amber-300 rounded-2xl p-5 sm:p-6">
-          <div className="flex items-start gap-3">
-            <AlertTriangle className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
-            <div>
-              <h2 className="text-xs font-extrabold uppercase tracking-wider text-amber-950">
-                Before You Start: Surface & Safety Check
-              </h2>
-              <ul className="mt-2 space-y-1.5 text-xs sm:text-sm text-amber-900">
+          {article.safetyWarnings.length > 0 && (
+            <Callout tone="safety" title="Before you start">
+              <ul className="space-y-2">
                 {article.safetyWarnings.map((w) => (
-                  <li key={w} className="flex items-start gap-2">
-                    <span className="font-bold">•</span>
+                  <li key={w} className="grid grid-cols-[0.875rem_1fr] gap-2">
+                    <span className="mt-[0.6em] h-1.5 w-1.5 bg-terracotta" aria-hidden="true" />
                     <span>{w}</span>
                   </li>
                 ))}
               </ul>
-            </div>
-          </div>
-        </section>
-      )}
+            </Callout>
+          )}
+        </div>
 
-      {/* Materials Needed */}
-      {article.materialsNeeded && article.materialsNeeded.length > 0 && (
-        <section className="mt-8 bg-white rounded-2xl border border-paper-border p-6 shadow-card">
-          <h2 className="font-editorial text-xl sm:text-2xl font-bold text-ink flex items-center gap-2 mb-4">
-            <Wrench className="w-5 h-5 text-forest" />
-            <span>What You&apos;ll Need</span>
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {article.materialsNeeded.map((mat) => (
-              <div
-                key={mat}
-                className="flex items-center gap-2.5 bg-paper-light p-3 rounded-xl border border-paper-border text-xs sm:text-sm text-ink"
-              >
-                <CheckCircle2 className="w-4 h-4 text-forest shrink-0" />
-                <span>{mat}</span>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+        {/* Mobile: collapsible step index */}
+        {hasIndex && (
+          <details className="group mt-8 border-y border-rule-strong lg:hidden">
+            <summary className="flex min-h-[48px] items-center justify-between gap-4 py-3">
+              <span className="kicker text-ink">Jump to a step</span>
+              <ChevronDown className="details-icon h-5 w-5 text-ink-muted transition-transform duration-200" aria-hidden="true" />
+            </summary>
+            <nav aria-label="Guide steps" className="pb-3">
+              <StepIndex
+                steps={steps}
+                hasSupplies={supplies.length > 0}
+                hasFixes={fixes.length > 0}
+                hasFaq={article.faqs.length > 0}
+              />
+            </nav>
+          </details>
+        )}
 
-      {/* Step-by-Step Instructions */}
-      {article.steps && article.steps.length > 0 && (
-        <section className="mt-8 space-y-4">
-          <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-ink">
-            Step-by-Step Instructions
-          </h2>
-
-          {article.steps.map((step) => (
-            <div
-              key={step.stepNumber}
-              id={`step-${step.stepNumber}`}
-              className="scroll-mt-24 bg-white rounded-2xl border border-paper-border p-6 shadow-card flex flex-col sm:flex-row gap-4"
-            >
-              <div className="w-10 h-10 rounded-full bg-forest text-white font-editorial font-bold text-lg flex items-center justify-center shrink-0">
-                {step.stepNumber}
-              </div>
-              <div className="space-y-2 flex-1">
-                <h3 className="font-editorial text-xl font-bold text-ink">
-                  {step.title}
-                </h3>
-                <p className="text-sm sm:text-base text-ink-secondary leading-relaxed">
-                  {step.instruction}
+        <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:gap-12">
+          {/* Desktop: sticky step index */}
+          {hasIndex && (
+            <aside className="hidden lg:col-span-3 lg:block">
+              <nav aria-labelledby="on-this-page" className="sticky top-24">
+                <p id="on-this-page" className="kicker mb-3 text-ink">
+                  On this page
                 </p>
-                {step.proTip && (
-                  <div className="mt-3 bg-forest-pale/60 border border-forest/20 rounded-xl p-3.5 text-xs sm:text-sm text-forest-dark">
-                    <strong>Field Tester Pro Tip:</strong> {step.proTip}
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
-        </section>
-      )}
+                <StepIndex
+                  steps={steps}
+                  hasSupplies={supplies.length > 0}
+                  hasFixes={fixes.length > 0}
+                  hasFaq={article.faqs.length > 0}
+                />
+              </nav>
+            </aside>
+          )}
 
-      {/* What to Do If the Method Fails */}
-      {article.ifMethodFails && article.ifMethodFails.length > 0 && (
-        <section className="mt-8 bg-paper-warm rounded-2xl border border-paper-border p-6">
-          <h2 className="font-editorial text-xl font-bold text-ink flex items-center gap-2 mb-3">
-            <HelpCircle className="w-5 h-5 text-coral" />
-            <span>What to Do for Set-In or Stubborn Stains</span>
-          </h2>
-          <ul className="space-y-2 text-xs sm:text-sm text-ink-secondary">
-            {article.ifMethodFails.map((tip) => (
-              <li key={tip} className="flex items-start gap-2">
-                <span className="font-bold text-coral">→</span>
-                <span>{tip}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+          <div className={`min-w-0 ${hasIndex ? 'lg:col-span-9' : 'lg:col-span-12'}`}>
+            <div className="max-w-3xl space-y-14">
+              {/* Supplies checklist */}
+              {supplies.length > 0 && (
+                <section aria-labelledby="supplies-heading" id="supplies" className="scroll-mt-24">
+                  <SectionHead id="supplies-heading" title="What you’ll need" />
+                  <ul className="mt-5 grid border-t border-rule sm:grid-cols-2 sm:gap-x-8">
+                    {supplies.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-3 border-b border-rule py-3 text-base leading-snug text-ink sm:text-[17px]"
+                      >
+                        <span className="mt-0.5 h-[1.125rem] w-[1.125rem] shrink-0 border-2 border-ink" aria-hidden="true" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
 
-      {/* Recommended Tools & Products */}
-      {recommendedProducts.length > 0 && (
-        <section className="mt-12">
-          <div className="flex items-center justify-between mb-4">
-            <div>
-              <h2 className="font-editorial text-2xl font-bold text-ink">
-                Recommended Tools for This Job
-              </h2>
-              <p className="text-xs text-ink-muted mt-0.5">
-                Tools that speed up this task. As an Amazon Associate, HouseCareWiki earns from qualifying purchases.
-              </p>
-            </div>
-          </div>
+              {/* Steps */}
+              {steps.length > 0 && (
+                <section aria-labelledby="steps-heading">
+                  <SectionHead id="steps-heading" title="Step by step" />
+                  <ol className="mt-2">
+                    {steps.map((step) => (
+                      <li
+                        key={step.stepNumber}
+                        id={`step-${step.stepNumber}`}
+                        className="grid scroll-mt-24 grid-cols-[3rem_1fr] gap-x-4 border-b border-rule py-7 sm:grid-cols-[4.5rem_1fr] sm:gap-x-6"
+                      >
+                        <span
+                          className="font-serif text-[2.5rem] font-medium leading-none tracking-[-0.02em] text-terracotta-deep sm:text-[3.25rem]"
+                          aria-hidden="true"
+                        >
+                          {pad(step.stepNumber)}
+                        </span>
+                        <div className="min-w-0">
+                          <Kicker className="mb-1">
+                            Step {step.stepNumber} of {steps.length}
+                          </Kicker>
+                          <h3 className="font-serif text-2xl font-semibold leading-snug text-ink">{step.title}</h3>
+                          <p className="mt-3 max-w-prose text-base leading-relaxed text-ink-secondary sm:text-[17px]">
+                            {step.instruction}
+                          </p>
+                          {step.image && (
+                            <Figure
+                              src={step.image}
+                              alt={`Step ${step.stepNumber}: ${step.title}`}
+                              ratio="16/10"
+                              className="mt-5"
+                              sizes="(min-width: 1024px) 45vw, 100vw"
+                            />
+                          )}
+                          {step.proTip && (
+                            <Callout tone="note" title="Field note" className="mt-5">
+                              {step.proTip}
+                            </Callout>
+                          )}
+                        </div>
+                      </li>
+                    ))}
+                  </ol>
+                </section>
+              )}
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {recommendedProducts.map((prod) => (
-              <div
-                key={prod.id}
-                className="bg-white rounded-xl border border-paper-border p-4 shadow-card flex flex-col justify-between"
-              >
-                <div>
-                  <span className="inline-block bg-forest text-white text-[11px] font-bold px-2.5 py-0.5 rounded mb-2.5">
-                    {prod.badge || `Best for ${prod.bestFor}`}
-                  </span>
-                  <Link
-                    href={`/products/${prod.slug}`}
-                    className="block aspect-[4/3] rounded-lg overflow-hidden bg-paper-light mb-3"
-                  >
-                    <img
-                      src={prod.image}
-                      loading="lazy"
-                      decoding="async"
-                      alt={prod.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </Link>
-                  <Link
-                    href={`/products/${prod.slug}`}
-                    className="font-bold text-sm text-ink hover:text-forest line-clamp-2"
-                  >
-                    {prod.name}
-                  </Link>
-                  <div className="mt-1.5">
-                    <EditorScore score={prod.scores.overall}
-                      size="xs" />
-                  </div>
-                </div>
-
-                <div className="mt-4 pt-3 border-t border-paper-border">
-                  <div className="flex items-baseline gap-1 mb-2.5">
-                    <PriceNote />
-                  </div>
-                  <AffiliateButton
-                    productId={prod.id}
-                    productName={prod.name}
-                    asin={prod.asin}
-                    amazonUrl={prod.amazonUrl}
-                    contentSlug={article.slug}
-                    placement="guide_recommended_tool"
-                    variant="forest"
-                    label="Check price on Amazon"
-                    className="w-full"
+              {/* If that didn't work */}
+              {fixes.length > 0 && (
+                <section aria-labelledby="fails-heading" id="if-it-did-not-work" className="scroll-mt-24">
+                  <SectionHead
+                    id="fails-heading"
+                    title="If that didn’t work"
+                    description="Stubborn or set-in? Try these next, in order."
                   />
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+                  <ol className="mt-5 border-t border-rule">
+                    {fixes.map((tip, i) => (
+                      <li
+                        key={tip}
+                        className="grid grid-cols-[2rem_1fr] gap-3 border-b border-rule py-3.5 text-base leading-relaxed text-ink-secondary sm:text-[17px]"
+                      >
+                        <span className="kicker pt-1 text-terracotta-deep">{String.fromCharCode(65 + i)}</span>
+                        <span>{tip}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </section>
+              )}
 
-      {/* FAQs */}
-      {article.faqs.length > 0 && (
-        <section className="mt-10 bg-white rounded-2xl border border-paper-border p-6 shadow-card">
-          <h2 className="font-editorial text-2xl font-bold text-ink mb-4">
-            Common Questions
-          </h2>
-          <div className="space-y-4 divide-y divide-paper-border">
-            {article.faqs.map((faq, i) => (
-              <div key={faq.question} className={i > 0 ? 'pt-4' : ''}>
-                <h3 className="font-editorial font-bold text-base text-ink">
-                  {faq.question}
-                </h3>
-                <p className="text-xs sm:text-sm text-ink-secondary mt-1.5 leading-relaxed">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+              {/* Tools, only after the method */}
+              {recommendedProducts.length > 0 && (
+                <section aria-labelledby="tools-heading">
+                  <SectionHead
+                    id="tools-heading"
+                    title="Tools that help"
+                    description="You can do this with cloths and a spray bottle. These make it faster:"
+                  />
+                  <AffiliateDisclosureNote className="mt-3" />
+                  <ul className="mt-4 border-t border-rule">
+                    {recommendedProducts.map((prod) => (
+                      <li
+                        key={prod.id}
+                        className="grid grid-cols-[4.5rem_1fr] items-center gap-x-4 gap-y-3 border-b border-rule py-4 sm:grid-cols-[4.5rem_1fr_auto]"
+                      >
+                        <Link href={`/products/${prod.slug}`} tabIndex={-1} aria-hidden="true">
+                          <Figure src={prod.image} alt="" ratio="1/1" />
+                        </Link>
+                        <div className="min-w-0">
+                          <Link href={`/products/${prod.slug}`} className="group flex min-h-[44px] items-center">
+                            <span className="font-serif text-lg font-semibold leading-snug text-ink">
+                              <span className="hover-title">{prod.shortName}</span>
+                            </span>
+                          </Link>
+                          <p className="mt-0.5 text-sm leading-snug text-ink-muted">Best for {prod.bestFor}</p>
+                          <div className="mt-1.5">
+                            <EditorScore score={prod.scores.overall} size="xs" />
+                          </div>
+                        </div>
+                        <AffiliateButton
+                          productId={prod.id}
+                          productName={prod.name}
+                          asin={prod.asin}
+                          amazonUrl={prod.amazonUrl}
+                          contentSlug={article.slug}
+                          placement="guide_recommended_tool"
+                          variant="compact"
+                          label="Check price on Amazon"
+                          className="col-span-2 min-h-[44px] sm:col-span-1"
+                        />
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
 
-      {/* Sources */}
-      {article.sources.length > 0 && (
-        <section className="mt-8 bg-paper-warm/60 rounded-xl border border-paper-border p-5">
-          <h3 className="text-xs font-bold uppercase tracking-wider text-forest flex items-center gap-1.5 mb-2">
-            <BookOpen className="w-4 h-4" />
-            Sources & Standards Cited
-          </h3>
-          <ul className="space-y-1.5 text-xs text-ink-secondary">
-            {article.sources.map((s) => (
-              <li key={s.id}>
-                <strong>{s.title}</strong> ({s.publisher}) — {s.verifiedClaim}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+              {/* FAQ */}
+              {article.faqs.length > 0 && (
+                <section aria-labelledby="faq-heading" id="faq" className="scroll-mt-24">
+                  <SectionHead id="faq-heading" title="Common questions" />
+                  <FaqList faqs={article.faqs} className="mt-5" />
+                </section>
+              )}
+
+              {article.sources.length > 0 && <SourceList sources={article.sources} className="border-t border-rule pt-6" />}
+
+              {/* Related */}
+              <section aria-labelledby="related-heading">
+                <SectionHead
+                  id="related-heading"
+                  title={`More in ${roomName}`}
+                  href={`/rooms/${article.roomSlug}`}
+                  linkLabel={`All ${roomName} guides`}
+                />
+                {related.length > 0 ? (
+                  <ul className="mt-4 border-t border-rule">
+                    {related.map((g) => (
+                      <li key={g.id}>
+                        <Link href={articleHref(g)} className="group grid grid-cols-[4.5rem_1fr] gap-4 border-b border-rule py-4">
+                          <Figure src={g.heroImage} alt="" ratio="1/1" />
+                          <span className="min-w-0">
+                            <span className="kicker text-ink-muted">{articleMeta(g)}</span>
+                            <span className="mt-1 block font-serif text-lg font-semibold leading-snug text-ink">
+                              <span className="hover-title">{g.title}</span>
+                            </span>
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <Link
+                    href={`/rooms/${article.roomSlug}`}
+                    className="group mt-4 inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-terracotta-deep"
+                  >
+                    <span className="hover-title">Browse the {roomName} hub</span>
+                    <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
+                  </Link>
+                )}
+              </section>
+            </div>
+          </div>
+        </div>
+      </Container>
     </article>
   );
 }

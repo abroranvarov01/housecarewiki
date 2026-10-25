@@ -12,6 +12,9 @@ export DEBIAN_FRONTEND=noninteractive
 echo "==> [1/6] Base packages"
 apt-get update -qq
 apt-get install -y -qq ca-certificates curl gnupg nginx certbot python3-certbot-nginx >/dev/null
+# Brotli compression module (Ubuntu universe). Optional: the vhost works without it.
+apt-get install -y -qq libnginx-mod-http-brotli-filter libnginx-mod-http-brotli-static >/dev/null 2>&1 \
+  || echo "    brotli module not available, gzip only"
 
 echo "==> [2/6] Docker"
 if ! command -v docker >/dev/null 2>&1; then
@@ -79,12 +82,43 @@ mkdir -p /etc/letsencrypt/renewal-hooks/deploy
 printf '#!/bin/sh\nsystemctl reload nginx\n' > /etc/letsencrypt/renewal-hooks/deploy/reload-nginx.sh
 chmod +x /etc/letsencrypt/renewal-hooks/deploy/reload-nginx.sh
 
-echo "==> [6/6] Nginx (HTTPS, 301 redirects, gzip, HTTP/2)"
+echo "==> [6/6] Nginx (HTTPS, 301 redirects, gzip/brotli, HTTP/2, static cache)"
+# Brotli snippet: real directives only when the module is loaded, otherwise an empty file.
+mkdir -p /etc/nginx/snippets /var/cache/nginx/housecarewiki
+if ls /etc/nginx/modules-enabled/ 2>/dev/null | grep -q brotli; then
+  cat > /etc/nginx/snippets/housecarewiki-brotli.conf <<'NGINX'
+brotli on;
+brotli_comp_level 5;
+brotli_min_length 1024;
+brotli_types text/plain text/css text/xml text/javascript text/markdown application/xml application/json
+             application/ld+json application/javascript application/rss+xml application/atom+xml
+             application/manifest+json image/svg+xml font/ttf font/otf;
+NGINX
+else
+  : > /etc/nginx/snippets/housecarewiki-brotli.conf
+fi
+
+# Requests to the bare IP over HTTPS (or an unknown Host) must not serve a copy of the site.
+# Added only when no other site already claims the 443 default_server.
+if ! grep -rqsE 'listen[^;]*443[^;]*default_server' /etc/nginx/sites-enabled/ /etc/nginx/conf.d/; then
+  cat > /etc/nginx/sites-available/00-reject-unknown-https.conf <<'NGINX'
+server {
+    listen 443 ssl http2 default_server;
+    listen [::]:443 ssl http2 default_server;
+    server_name _;
+    ssl_reject_handshake on;
+}
+NGINX
+  ln -sf /etc/nginx/sites-available/00-reject-unknown-https.conf /etc/nginx/sites-enabled/00-reject-unknown-https.conf
+fi
+
 # Only our own vhost is touched; other sites in sites-enabled/ (incl. "default") are left as they are.
-sed "s#proxy_pass http://127.0.0.1:3000;#proxy_pass http://127.0.0.1:${APP_PORT};#" \
+sed "s#server 127.0.0.1:3000;#server 127.0.0.1:${APP_PORT};#" \
   "$APP_DIR/deploy/nginx/housecarewiki.com.conf" > "/etc/nginx/sites-available/${DOMAIN}.conf"
 ln -sf "/etc/nginx/sites-available/${DOMAIN}.conf" "/etc/nginx/sites-enabled/${DOMAIN}.conf"
 nginx -t
+# Images are not content-hashed, so drop cached copies from the previous release.
+find /var/cache/nginx/housecarewiki -mindepth 1 -delete 2>/dev/null || true
 systemctl enable --now nginx >/dev/null 2>&1 || true
 systemctl reload nginx
 

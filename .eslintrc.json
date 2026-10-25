@@ -1,0 +1,7 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    // Images are pre-optimized to WebP (scripts/optimize-images.cjs) and next/image runs unoptimized.
+    "@next/next/no-img-element": "off"
+  }
+}

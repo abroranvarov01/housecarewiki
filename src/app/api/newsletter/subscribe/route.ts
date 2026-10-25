@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 import { readStore, writeStore } from '@/lib/store';
 
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const MAX_SUBSCRIBERS = 20000;
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -8,7 +11,7 @@ export async function POST(request: Request) {
       .trim()
       .toLowerCase();
 
-    if (!email || !email.includes('@')) {
+    if (!email || email.length > 254 || !EMAIL_RE.test(email)) {
       return NextResponse.json(
         { error: 'Please provide a valid email address.' },
         { status: 400 }
@@ -17,18 +20,19 @@ export async function POST(request: Request) {
 
     const store = readStore();
     const exists = store.subscribers.some((s) => s.email === email);
-    if (!exists) {
+    if (!exists && store.subscribers.length < MAX_SUBSCRIBERS) {
       store.subscribers.unshift({
         email,
         subscribedAt: new Date().toISOString(),
-        status: 'CONFIRMED',
+        // No confirmation email is sent yet, so the address is stored as unconfirmed.
+        status: 'UNCONFIRMED',
       });
       writeStore(store);
     }
 
     return NextResponse.json({
       ok: true,
-      message: 'Subscribed to HouseCareWiki Weekly Field Notes!',
+      message: "Thanks, you're on the list.",
     });
   } catch {
     return NextResponse.json(

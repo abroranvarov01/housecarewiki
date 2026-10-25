@@ -1,38 +1,82 @@
 import React from 'react';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
+import { SITE } from '@/lib/site';
+import { DocPage, DocSection } from '@/components/DocPage';
+
+const DESCRIPTION =
+  'How HouseCareWiki earns money: we are an Amazon Associate and earn from qualifying purchases at no extra cost to you. Brands cannot pay for placement or scores.';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Affiliate Disclosure — Amazon Associates Program',
-  description: 'How HouseCareWiki earns money: we are an Amazon Associate and earn from qualifying purchases at no extra cost to you. Brands cannot pay for placement or scores.',
+  description: DESCRIPTION,
   path: '/affiliate-disclosure',
 });
 
 export default function AffiliateDisclosurePage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="bg-white rounded-2xl border border-paper-border p-8 shadow-card space-y-5">
-        <span className="text-xs font-extrabold uppercase tracking-wider text-forest">
-          FTC & Amazon Operating Agreement Compliance · Spec Section 9.5
-        </span>
-        <h1 className="font-editorial text-3xl sm:text-4xl font-bold text-ink">
-          Affiliate Disclosure
-        </h1>
-        <div className="p-4 rounded-xl bg-forest-pale border border-forest/20 text-sm font-bold text-forest-dark">
+    <DocPage
+      path="/affiliate-disclosure"
+      description={DESCRIPTION}
+      kicker="How we make money"
+      breadcrumb="Affiliate disclosure"
+      title="Affiliate disclosure"
+      lede={
+        <p className="border-l-4 border-honey-deep bg-honey-soft px-4 py-3 text-lg font-semibold text-ink">
           As an Amazon Associate I earn from qualifying purchases.
-        </div>
-        <div className="space-y-4 text-sm sm:text-base text-ink-secondary leading-relaxed">
-          <p>
-            HouseCareWiki.com is an independent digital publication dedicated to practical home care, stain removal, and appliance testing. To fund our testing supplies, editorial research, and free interactive tools without placing intrusive banner ads across our guides, we participate in affiliate marketing programs.
-          </p>
-          <p>
-            HouseCareWiki.com is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
-          </p>
-          <p>
-            When you click a &ldquo;View on Amazon&rdquo; button (marked with <code>rel=&quot;sponsored nofollow&quot;</code>) and make a qualifying purchase within Amazon&apos;s attribution window, we may receive a small commission at zero additional cost to you. Manufacturers and brands cannot pay to be featured or to alter our editorial scores.
-          </p>
-        </div>
-      </div>
-    </div>
+        </p>
+      }
+      related={[
+        { href: '/methodology', label: 'How we evaluate', note: 'What our rating means' },
+        { href: '/editorial-policy', label: 'Editorial policy' },
+        { href: '/privacy', label: 'Privacy policy', note: 'What an affiliate click records' },
+      ]}
+    >
+      <DocSection id="program" index="01" title="The Amazon Associates program">
+        <p>
+          HouseCareWiki is an independent publication about practical home care and stain removal. HouseCareWiki is a
+          participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a
+          means for sites to earn advertising fees by advertising and linking to Amazon.com.
+        </p>
+        <p>
+          Commissions pay for our editorial research, writing and the free tools on the site, so we don&apos;t have to fill
+          guides with banner ads.
+        </p>
+      </DocSection>
+
+      <DocSection id="links" index="02" title="How affiliate links work">
+        <p>
+          Product links on HouseCareWiki are labeled &ldquo;Check price on Amazon&rdquo; and marked as sponsored links in the
+          page code. If you follow one and make a qualifying purchase, Amazon may pay us a small commission. The price you pay
+          is the same.
+        </p>
+        <p>
+          We don&apos;t show prices, star ratings or review counts on our pages, because they change constantly. Amazon shows
+          the current price when you click through.
+        </p>
+      </DocSection>
+
+      <DocSection id="independence" index="03" title="What money can’t buy">
+        <p>
+          Manufacturers and brands can&apos;t pay to be featured, to be ranked higher or to change our rating or verdict.
+          Commission rates don&apos;t decide what we recommend. Our reviews are research-based, and{' '}
+          <Link href="/methodology" className="link">
+            our methodology
+          </Link>{' '}
+          explains what that means.
+        </p>
+      </DocSection>
+
+      <DocSection id="questions" index="04" title="Questions">
+        <p>
+          Email{' '}
+          <a href={`mailto:${SITE.email}`} className="link">
+            {SITE.email}
+          </a>{' '}
+          with any question about how we make money.
+        </p>
+      </DocSection>
+    </DocPage>
   );
 }
