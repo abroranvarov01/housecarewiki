@@ -10,14 +10,21 @@ import {
   Scale,
 } from 'lucide-react';
 import { readStore } from '@/lib/store';
-import {
-  PrimeBadge,
-  StarRating,
+import { buildMetadata } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
+import { breadcrumbSchema, graph, productReviewSchema } from '@/lib/schema';
+import { AffiliateDisclosureNote, PriceNote,
+  EditorScore,
   AffiliateButton,
   SaveItemButton,
 } from '@/components/ui/Badges';
 
-export const dynamic = 'force-dynamic';
+// ISR: pre-rendered, refreshed hourly and on every CMS publish via revalidatePath.
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return readStore().products.map((x) => ({ slug: x.slug }));
+}
 
 export async function generateMetadata({
   params,
@@ -28,13 +35,12 @@ export async function generateMetadata({
   const product = store.products.find((p) => p.slug === params.slug);
   if (!product) return { title: 'Product Not Found' };
 
-  return {
-    title: `${product.name} Review, Specs & Lab Score (2026)`,
+  return buildMetadata({
+    title: `${product.shortName} Review: Specs, Pros & Cons`,
     description: product.summary,
-    alternates: {
-      canonical: `https://housecarewiki.com/products/${product.slug}`,
-    },
-  };
+    path: `/products/${product.slug}`,
+    ogKicker: `${product.brand} review`,
+  });
 }
 
 export default function ProductProfilePage({
@@ -52,41 +58,22 @@ export default function ProductProfilePage({
     .filter((p) => p.category === product.category && p.id !== product.id)
     .slice(0, 3);
 
-  const productSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: product.name,
-    brand: {
-      '@type': 'Brand',
-      name: product.brand,
-    },
-    sku: product.model,
-    mpn: product.asin,
-    description: product.summary,
-    image: product.image,
-    review: {
-      '@type': 'Review',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: product.scores.overall,
-        bestRating: '10',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'Emily Carter',
-      },
-    },
-  };
+  const reviewer = store.authors[0];
+  const schema = graph(
+    breadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Products', path: '/products' },
+      { name: product.shortName, path: `/products/${product.slug}` },
+    ]),
+    productReviewSchema(product, reviewer),
+  );
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
+      <JsonLd data={schema} />
 
       {/* Breadcrumbs */}
-      <nav className="py-4 flex items-center justify-between text-xs text-ink-muted">
+      <nav aria-label="Breadcrumb" className="py-4 flex items-center justify-between text-xs text-ink-muted">
         <ol className="flex items-center gap-1.5">
           <li>
             <Link href="/" className="hover:text-forest">
@@ -114,6 +101,7 @@ export default function ProductProfilePage({
           title={product.name}
         />
       </nav>
+      <AffiliateDisclosureNote className="mb-4" />
 
       {/* Main Product Profile Card */}
       <div className="bg-white rounded-2xl border border-paper-border p-6 sm:p-10 shadow-elevated">
@@ -123,6 +111,7 @@ export default function ProductProfilePage({
             <div className="aspect-square rounded-2xl overflow-hidden bg-paper-light border border-paper-border p-4">
               <img
                 src={product.image}
+                fetchPriority="high"
                 alt={product.name}
                 className="w-full h-full object-cover rounded-xl"
               />
@@ -150,11 +139,8 @@ export default function ProductProfilePage({
               {product.name}
             </h1>
 
-            <StarRating
-              rating={product.rating}
-              reviewCount={product.reviewCount}
-              size="md"
-            />
+            <EditorScore score={product.scores.overall}
+              size="md" />
 
             <p className="text-sm sm:text-base text-ink-secondary leading-relaxed">
               {product.summary}
@@ -192,13 +178,10 @@ export default function ProductProfilePage({
             <div className="pt-4 border-t border-paper-border flex flex-wrap items-center justify-between gap-4">
               <div>
                 <div className="flex items-baseline gap-1.5">
-                  <span className="text-3xl font-extrabold text-ink">
-                    {product.price}
-                  </span>
-                  {product.isPrime && <PrimeBadge />}
+                  <PriceNote />
                 </div>
                 <p className="text-[11px] text-ink-muted mt-0.5">
-                  We earn a commission at no extra cost to you.
+                  As an Amazon Associate we earn from qualifying purchases.
                 </p>
               </div>
 
@@ -218,7 +201,7 @@ export default function ProductProfilePage({
                   contentSlug={product.slug}
                   placement="product_profile_hero"
                   variant="coral"
-                  label="View on Amazon"
+                  label="Check price on Amazon"
                 />
               </div>
             </div>
@@ -309,8 +292,7 @@ export default function ProductProfilePage({
                 </div>
                 <div className="mt-4 pt-3 border-t border-paper-border flex items-center justify-between">
                   <div>
-                    <span className="font-extrabold text-ink">{alt.price}</span>
-                    {alt.isPrime && <PrimeBadge />}
+                    <PriceNote />
                   </div>
                   <Link
                     href={`/products/${alt.slug}`}

@@ -2,6 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
+import { absoluteUrl } from '@/lib/site';
+import { JsonLd } from '@/components/JsonLd';
+import { ORG_ID, breadcrumbSchema, graph } from '@/lib/schema';
 import { ChevronRight } from 'lucide-react';
 import {
   StainFinderTool,
@@ -19,31 +23,31 @@ const TOOL_META: Record<
     title: 'Interactive Stain Solution Finder',
     subtitle:
       'Select your stain type, surface material, and fabric care code to get a verified step-by-step removal method with chemical safety warnings.',
-    badge: 'Spec 10.1 · Deterministic Stain Protocol',
+    badge: 'Free tool · Deterministic Stain Protocol',
   },
   'equipment-finder': {
     title: 'Find the Right Cleaning Products for Your Home',
     subtitle:
       'Answer a few questions about your space, cleaning task, and budget to receive personalized, lab-tested equipment recommendations.',
-    badge: 'Spec 10.2 · Personalized Product Finder',
+    badge: 'Free tool · Personalized Product Finder',
   },
   'routine-planner': {
     title: 'Personal Home Cleaning Routine Planner',
     subtitle:
       'Build a realistic daily, weekly, and monthly cleaning checklist customized to your home size and pets.',
-    badge: 'Spec 10.4 · Printable Schedule Builder',
+    badge: 'Free tool · Printable Schedule Builder',
   },
   'cost-calculator': {
     title: 'Home Cleaning Cost & ROI Calculator',
     subtitle:
       'Compare the true per-use cost of owning a portable carpet or steam cleaner versus supermarket rentals and professional visits.',
-    badge: 'Spec 10.5 · Transparent Cost Math',
+    badge: 'Free tool · Transparent Cost Math',
   },
   'surface-checker': {
     title: 'Surface & Cleaner Compatibility Checker',
     subtitle:
       'Verify whether household cleaners, acids, oxygen bleach, or high-heat steam are safe for your specific countertop, tile, or fabric.',
-    badge: 'Spec 10.6 · Surface Safety Matrix',
+    badge: 'Free tool · Surface Safety Matrix',
   },
 };
 
@@ -54,10 +58,18 @@ export function generateMetadata({
 }): Metadata {
   const meta = TOOL_META[params.slug];
   if (!meta) return { title: 'Tool Not Found' };
-  return {
+  return buildMetadata({
     title: meta.title,
     description: meta.subtitle,
-  };
+    path: `/tools/${params.slug}`,
+    ogKicker: 'Free interactive tool',
+  });
+}
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return Object.keys(TOOL_META).map((slug) => ({ slug }));
 }
 
 export default function InteractiveToolPage({
@@ -70,9 +82,31 @@ export default function InteractiveToolPage({
     notFound();
   }
 
+  const path = `/tools/${params.slug}`;
+  const schema = graph(
+    breadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Smart Tools', path: '/tools' },
+      { name: meta.title, path },
+    ]),
+    {
+      '@type': 'WebApplication',
+      '@id': `${absoluteUrl(path)}#app`,
+      name: meta.title,
+      description: meta.subtitle,
+      url: absoluteUrl(path),
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Any',
+      isAccessibleForFree: true,
+      offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
+      publisher: { '@id': ORG_ID },
+    },
+  );
+
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-      <nav className="py-4 flex items-center gap-1.5 text-xs text-ink-muted">
+      <JsonLd data={schema} />
+      <nav aria-label="Breadcrumb" className="py-4 flex items-center gap-1.5 text-xs text-ink-muted">
         <Link href="/" className="hover:text-forest">
           Home
         </Link>

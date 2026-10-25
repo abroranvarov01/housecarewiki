@@ -20,7 +20,7 @@ import {
   StainSolverInput,
   EquipmentFinderInput,
 } from '@/lib/tools-engine';
-import { PrimeBadge, StarRating, AffiliateButton } from '@/components/ui/Badges';
+import { AffiliateDisclosureNote, PriceNote, EditorScore, AffiliateButton } from '@/components/ui/Badges';
 
 export function StainFinderTool() {
   const [stainType, setStainType] = useState<StainSolverInput['stainType']>('coffee');
@@ -192,6 +192,7 @@ export function StainFinderTool() {
         <h3 className="font-editorial text-xl font-bold text-ink mb-4">
           Compatible Tested Tools for This Stain
         </h3>
+          <AffiliateDisclosureNote className="-mt-2 mb-4" />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {result.recommendedProducts.map((prod) => (
             <div
@@ -209,13 +210,12 @@ export function StainFinderTool() {
                   {prod.name}
                 </Link>
                 <div className="mt-1">
-                  <StarRating rating={prod.rating} reviewCount={prod.reviewCount} size="xs" />
+                  <EditorScore score={prod.scores.overall} size="xs" />
                 </div>
               </div>
               <div className="mt-4 pt-3 border-t border-paper-border flex items-center justify-between">
                 <div>
-                  <span className="font-extrabold text-ink">{prod.price}</span>
-                  {prod.isPrime && <PrimeBadge />}
+                  <PriceNote />
                 </div>
                 <AffiliateButton
                   productId={prod.id}
@@ -325,6 +325,7 @@ export function EquipmentFinderTool() {
         <h3 className="font-editorial text-2xl font-bold text-ink">
           Top Compatible Equipment for Your Home
         </h3>
+          <AffiliateDisclosureNote className="" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {matches.map(({ product, matchScore, reasons }, index) => (
@@ -345,6 +346,8 @@ export function EquipmentFinderTool() {
                 <div className="flex gap-4 items-center">
                   <img
                     src={product.image}
+                    loading="lazy"
+                    decoding="async"
                     alt={product.name}
                     className="w-20 h-20 rounded-xl object-cover border border-paper-border shrink-0"
                   />
@@ -356,11 +359,8 @@ export function EquipmentFinderTool() {
                       {product.name}
                     </Link>
                     <div className="mt-1">
-                      <StarRating
-                        rating={product.rating}
-                        reviewCount={product.reviewCount}
-                        size="xs"
-                      />
+                      <EditorScore score={product.scores.overall}
+                        size="xs" />
                     </div>
                   </div>
                 </div>
@@ -382,10 +382,7 @@ export function EquipmentFinderTool() {
 
               <div className="pt-3 border-t border-paper-border flex items-center justify-between">
                 <div>
-                  <span className="text-xl font-extrabold text-ink">
-                    {product.price}
-                  </span>
-                  {product.isPrime && <PrimeBadge />}
+                  <PriceNote />
                 </div>
                 <div className="flex items-center gap-2">
                   <Link
@@ -402,7 +399,7 @@ export function EquipmentFinderTool() {
                     contentSlug="equipment-finder"
                     placement={`match_${index + 1}`}
                     variant="coral"
-                    label="View on Amazon"
+                    label="Check price on Amazon"
                   />
                 </div>
               </div>

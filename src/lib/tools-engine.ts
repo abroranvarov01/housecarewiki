@@ -240,13 +240,13 @@ export function findEquipment(input: EquipmentFinderInput) {
 
     if (input.budget === 'under-40' && product.priceNumeric <= 40) {
       score += 15;
-      reasons.push(`Fits comfortably within your under-$40 budget (${product.price})`);
+      reasons.push('Typically sells in the under-$40 range (check today’s price on Amazon)');
     } else if (input.budget === 'under-100' && product.priceNumeric <= 100) {
       score += 15;
-      reasons.push(`Under your $100 budget cap (${product.price})`);
+      reasons.push('Typically sells under $100 (check today’s price on Amazon)');
     } else if (input.budget === 'under-160' && product.priceNumeric <= 160) {
       score += 15;
-      reasons.push(`Within your $160 budget range (${product.price})`);
+      reasons.push('Typically sells under $160 (check today’s price on Amazon)');
     } else if (input.budget === 'under-40' && product.priceNumeric > 40) {
       score -= 20;
     }

@@ -12,32 +12,54 @@ import {
   HelpCircle,
 } from 'lucide-react';
 import { readStore } from '@/lib/store';
-import {
-  PrimeBadge,
-  StarRating,
+import { buildMetadata } from '@/lib/seo';
+import { absoluteUrl } from '@/lib/site';
+import { JsonLd } from '@/components/JsonLd';
+import { articleSchema, breadcrumbSchema, faqSchema, graph, howToSchema, isoDate } from '@/lib/schema';
+import { PriceNote,
+  EditorScore,
   HandwrittenNote,
   AffiliateButton,
   SaveItemButton,
 } from '@/components/ui/Badges';
 
-export const dynamic = 'force-dynamic';
+// ISR: pages are pre-rendered and refreshed hourly (and on every CMS publish via revalidatePath).
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return readStore()
+    .articles.filter((a) => a.routeType === 'guides')
+    .map((a) => ({ slug: a.slug }));
+}
+
+function findGuide(slug: string) {
+  return readStore().articles.find((a) => a.slug === slug && a.routeType === 'guides');
+}
 
 export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const store = readStore();
-  const article = store.articles.find((a) => a.slug === params.slug);
+  const article = findGuide(params.slug);
   if (!article) return { title: 'Guide Not Found' };
+  const author = readStore().authors.find((au) => au.slug === article.authorSlug);
 
-  return {
+  return buildMetadata({
     title: article.seo.title,
     description: article.seo.description,
-    alternates: {
-      canonical: article.seo.canonical,
+    path: `/guides/${article.slug}`,
+    type: 'article',
+    ogKicker: 'Step-by-step guide',
+    noindex: !article.seo.indexable || article.status !== 'Published',
+    article: {
+      publishedTime: isoDate(article.publishedAt),
+      modifiedTime: isoDate(article.updatedAt),
+      section: article.categoryLabel,
+      tags: [article.seo.focusKeyword],
+      authors: author ? [absoluteUrl(`/authors/${author.slug}`)] : undefined,
     },
-  };
+  });
 }
 
 export default function StepByStepGuidePage({
@@ -46,7 +68,7 @@ export default function StepByStepGuidePage({
   params: { slug: string };
 }) {
   const store = readStore();
-  const article = store.articles.find((a) => a.slug === params.slug);
+  const article = findGuide(params.slug);
   if (!article) {
     notFound();
   }
@@ -58,8 +80,22 @@ export default function StepByStepGuidePage({
     .map((id) => store.products.find((p) => p.id === id))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
+  const path = `/guides/${article.slug}`;
+  const roomName = store.rooms.find((r) => r.slug === article.roomSlug)?.name || article.roomSlug.replace(/-/g, ' ');
+  const schema = graph(
+    breadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: roomName, path: `/rooms/${article.roomSlug}` },
+      { name: article.title, path },
+    ]),
+    articleSchema(article, author, path),
+    howToSchema(article, path),
+    faqSchema(article.faqs),
+  );
+
   return (
     <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <JsonLd data={schema} />
       {/* Breadcrumbs */}
       <nav
         aria-label="Breadcrumb"
@@ -76,7 +112,7 @@ export default function StepByStepGuidePage({
           </li>
           <li>
             <Link href={`/rooms/${article.roomSlug}`} className="hover:text-forest capitalize">
-              {article.roomSlug.replace(/-/g, ' ')}
+              {roomName}
             </Link>
           </li>
           <li>
@@ -118,6 +154,8 @@ export default function StepByStepGuidePage({
             <div className="pt-2 flex items-center gap-3">
               <img
                 src={author.avatar}
+                loading="lazy"
+                decoding="async"
                 alt={author.name}
                 className="w-10 h-10 rounded-full object-cover border border-white shadow-sm"
               />
@@ -129,7 +167,8 @@ export default function StepByStepGuidePage({
                   By {author.name}
                 </Link>
                 <p className="text-xs text-ink-muted">
-                  Updated {article.updatedAt} · {article.readingTime}
+                  Updated <time dateTime={isoDate(article.updatedAt)}>{article.updatedAt}</time> · Published{' '}
+                  <time dateTime={isoDate(article.publishedAt)}>{article.publishedAt}</time> · {article.readingTime}
                 </p>
               </div>
             </div>
@@ -139,6 +178,7 @@ export default function StepByStepGuidePage({
             <div className="rounded-xl overflow-hidden shadow-elevated border border-white/70 aspect-[4/3] relative">
               <img
                 src={article.heroImage}
+                fetchPriority="high"
                 alt={article.heroImageAlt}
                 className="w-full h-full object-cover"
               />
@@ -219,7 +259,8 @@ export default function StepByStepGuidePage({
           {article.steps.map((step) => (
             <div
               key={step.stepNumber}
-              className="bg-white rounded-2xl border border-paper-border p-6 shadow-card flex flex-col sm:flex-row gap-4"
+              id={`step-${step.stepNumber}`}
+              className="scroll-mt-24 bg-white rounded-2xl border border-paper-border p-6 shadow-card flex flex-col sm:flex-row gap-4"
             >
               <div className="w-10 h-10 rounded-full bg-forest text-white font-editorial font-bold text-lg flex items-center justify-center shrink-0">
                 {step.stepNumber}
@@ -269,7 +310,7 @@ export default function StepByStepGuidePage({
                 Recommended Tools for This Job
               </h2>
               <p className="text-xs text-ink-muted mt-0.5">
-                Independently tested tools that speed up this task. We earn a commission on qualifying purchases.
+                Tools that speed up this task. As an Amazon Associate, HouseCareWiki earns from qualifying purchases.
               </p>
             </div>
           </div>
@@ -290,6 +331,8 @@ export default function StepByStepGuidePage({
                   >
                     <img
                       src={prod.image}
+                      loading="lazy"
+                      decoding="async"
                       alt={prod.name}
                       className="w-full h-full object-cover"
                     />
@@ -301,20 +344,14 @@ export default function StepByStepGuidePage({
                     {prod.name}
                   </Link>
                   <div className="mt-1.5">
-                    <StarRating
-                      rating={prod.rating}
-                      reviewCount={prod.reviewCount}
-                      size="xs"
-                    />
+                    <EditorScore score={prod.scores.overall}
+                      size="xs" />
                   </div>
                 </div>
 
                 <div className="mt-4 pt-3 border-t border-paper-border">
                   <div className="flex items-baseline gap-1 mb-2.5">
-                    <span className="text-lg font-extrabold text-ink">
-                      {prod.price}
-                    </span>
-                    {prod.isPrime && <PrimeBadge />}
+                    <PriceNote />
                   </div>
                   <AffiliateButton
                     productId={prod.id}
@@ -324,7 +361,7 @@ export default function StepByStepGuidePage({
                     contentSlug={article.slug}
                     placement="guide_recommended_tool"
                     variant="forest"
-                    label="View on Amazon"
+                    label="Check price on Amazon"
                     className="w-full"
                   />
                 </div>

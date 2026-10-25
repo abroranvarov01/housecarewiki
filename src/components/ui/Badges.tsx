@@ -15,6 +15,53 @@ export function PrimeBadge() {
   );
 }
 
+// Our own editorial score (out of 10). Amazon star ratings and review counts may only be
+// shown when fetched live via the Creators API, so we never display them from static data.
+export function EditorScore({
+  score,
+  size = 'sm',
+}: {
+  score: number;
+  size?: 'xs' | 'sm' | 'md';
+}) {
+  return (
+    <div className="inline-flex items-center gap-1.5" aria-label={`HouseCareWiki score ${score.toFixed(1)} out of 10`}>
+      <span
+        className={`inline-flex items-baseline rounded-md bg-[#E2ECE5] text-[#1F4D3A] font-extrabold ${
+          size === 'md' ? 'px-2 py-0.5 text-sm' : 'px-1.5 py-0.5 text-xs'
+        }`}
+      >
+        {score.toFixed(1)}
+        <span className="text-[10px] font-semibold opacity-70">/10</span>
+      </span>
+      {size !== 'xs' && <span className="text-[11px] text-[#6E756F]">Our score</span>}
+    </div>
+  );
+}
+
+// Static prices break Amazon's pricing policy (live API data only, timestamped, max 24h old),
+// so price slots point readers to Amazon for the current price instead.
+export function PriceNote({ className = '' }: { className?: string }) {
+  return (
+    <span className={`text-xs font-semibold text-[#5C645E] ${className}`}>
+      See today&apos;s price on Amazon
+    </span>
+  );
+}
+
+// Inline FTC / Amazon Associates disclosure shown next to product links.
+export function AffiliateDisclosureNote({ className = '' }: { className?: string }) {
+  return (
+    <p className={`text-[11.5px] leading-snug text-[#6E756F] ${className}`}>
+      As an Amazon Associate, HouseCareWiki earns from qualifying purchases. Buying through our links
+      costs you nothing extra.{' '}
+      <a href="/affiliate-disclosure" className="underline hover:text-[#1F4D3A]">
+        Learn more
+      </a>
+    </p>
+  );
+}
+
 export function StarRating({
   rating,
   reviewCount,
@@ -168,7 +215,7 @@ export function AffiliateButton({
   contentSlug = 'site',
   placement = 'card',
   variant = 'forest',
-  label = 'View on Amazon',
+  label = 'Check price on Amazon',
   className = '',
 }: {
   productId: string;

@@ -14,6 +14,9 @@ services:
       - REDIS_URL=redis://redis:6379
       - NEXT_PUBLIC_SITE_URL=https://housecarewiki.com
       - AMAZON_PARTNER_TAG=housecarewiki-20
+      # Admin CMS login (/admin). Set ADMIN_PASSWORD in /opt/housecarewiki/.env on the server.
+      - ADMIN_USER=${ADMIN_USER:-admin}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-}
     volumes:
       - app_data:/app/.data
     depends_on:

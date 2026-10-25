@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Product } from '@/lib/types';
-import { PrimeBadge, StarRating, AffiliateButton, SaveItemButton } from '@/components/ui/Badges';
+import { AffiliateDisclosureNote, PriceNote, EditorScore, AffiliateButton, SaveItemButton } from '@/components/ui/Badges';
 import { SlidersHorizontal, Scale } from 'lucide-react';
 
 export function ProductCatalogClient({ products }: { products: Product[] }) {
@@ -24,7 +24,7 @@ export function ProductCatalogClient({ products }: { products: Product[] }) {
     .sort((a, b) => {
       if (sortBy === 'price-asc') return a.priceNumeric - b.priceNumeric;
       if (sortBy === 'price-desc') return b.priceNumeric - a.priceNumeric;
-      return b.rating - a.rating;
+      return b.scores.overall - a.scores.overall;
     });
 
   return (
@@ -40,6 +40,7 @@ export function ProductCatalogClient({ products }: { products: Product[] }) {
           </h1>
           <p className="text-sm sm:text-base text-ink-secondary mt-2">
             Every machine and tool in our catalog includes verified specifications, surface compatibility lists, and transparent lab scores.
+          <AffiliateDisclosureNote className="mt-2" />
           </p>
         </div>
 
@@ -79,9 +80,9 @@ export function ProductCatalogClient({ products }: { products: Product[] }) {
             onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
             className="bg-paper-light border border-paper-border rounded-lg px-3 py-1.5 font-semibold text-ink focus:outline-none"
           >
-            <option value="rating">Highest Rated</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Highest Score</option>
+            <option value="price-asc">Budget First</option>
+            <option value="price-desc">Premium First</option>
           </select>
         </div>
       </div>
@@ -111,6 +112,8 @@ export function ProductCatalogClient({ products }: { products: Product[] }) {
               >
                 <img
                   src={prod.image}
+                  loading="lazy"
+                  decoding="async"
                   alt={prod.name}
                   className="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform"
                 />
@@ -128,11 +131,8 @@ export function ProductCatalogClient({ products }: { products: Product[] }) {
               </Link>
 
               <div className="mt-2">
-                <StarRating
-                  rating={prod.rating}
-                  reviewCount={prod.reviewCount}
-                  size="xs"
-                />
+                <EditorScore score={prod.scores.overall}
+                  size="xs" />
               </div>
 
               <p className="text-xs text-ink-secondary mt-2.5 line-clamp-2 leading-relaxed">
@@ -142,13 +142,7 @@ export function ProductCatalogClient({ products }: { products: Product[] }) {
 
             <div className="mt-5 pt-3.5 border-t border-paper-border space-y-2.5">
               <div className="flex items-center justify-between">
-                <div className="flex items-baseline gap-1">
-                  <span className="text-xl font-extrabold text-ink">{prod.price}</span>
-                  {prod.isPrime && <PrimeBadge />}
-                </div>
-                <span className="text-xs font-bold text-forest bg-forest-pale px-2 py-0.5 rounded">
-                  Score: {prod.scores.overall}/10
-                </span>
+                <PriceNote />
               </div>
 
               <div className="grid grid-cols-2 gap-2">

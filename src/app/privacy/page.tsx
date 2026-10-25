@@ -1,9 +1,12 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy & Cookie Preferences | HouseCareWiki',
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'Privacy Policy & Cookie Preferences',
+  description: 'What HouseCareWiki collects, how affiliate click attribution works, which cookies Amazon sets, and how to export or delete your saved data at any time.',
+  path: '/privacy',
+});
 
 export default function PrivacyPage() {
   return (

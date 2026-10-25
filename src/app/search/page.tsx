@@ -1,20 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 import { Search, Sparkles } from 'lucide-react';
 import { searchEverything } from '@/lib/store';
-import { PrimeBadge, StarRating, AffiliateButton } from '@/components/ui/Badges';
+import { AffiliateDisclosureNote, PriceNote, EditorScore, AffiliateButton } from '@/components/ui/Badges';
 
 export const dynamic = 'force-dynamic';
 
 // Per Spec Section 15.5: Search Results are noindex by default
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: 'Search Home Care Guides, Stain Fixes & Reviews',
-  robots: {
-    index: false,
-    follow: true,
-  },
-};
+  description: 'Search HouseCareWiki guides, surface safety charts and product reviews.',
+  path: '/search',
+  noindex: true,
+});
 
 export default function SearchPage({
   searchParams,
@@ -43,6 +43,7 @@ export default function SearchPage({
         </h1>
         <p className="text-xs sm:text-sm text-ink-secondary mt-1">
           Full-text search with synonym matching across guides, surface safety charts, and hands-on product reviews.
+        <AffiliateDisclosureNote className="mt-2" />
         </p>
 
         <form action="/search" method="GET" className="mt-5 flex flex-col sm:flex-row gap-3">
@@ -119,6 +120,8 @@ export default function SearchPage({
                   <div className="aspect-[16/10] w-full overflow-hidden bg-paper-warm">
                     <img
                       src={art.heroImage}
+                      loading="lazy"
+                      decoding="async"
                       alt={art.heroImageAlt}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                     />
@@ -163,17 +166,13 @@ export default function SearchPage({
                   {prod.name}
                 </Link>
                 <div className="mt-1">
-                  <StarRating
-                    rating={prod.rating}
-                    reviewCount={prod.reviewCount}
-                    size="xs"
-                  />
+                  <EditorScore score={prod.scores.overall}
+                    size="xs" />
                 </div>
               </div>
               <div className="mt-4 pt-3 border-t border-paper-border flex items-center justify-between">
                 <div>
-                  <span className="font-extrabold text-ink">{prod.price}</span>
-                  {prod.isPrime && <PrimeBadge />}
+                  <PriceNote />
                 </div>
                 <AffiliateButton
                   productId={prod.id}

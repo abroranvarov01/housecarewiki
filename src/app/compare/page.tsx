@@ -1,19 +1,18 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 import { readStore } from '@/lib/store';
 import { CompareBuilderClient } from '@/components/CompareBuilderClient';
 
-export const dynamic = 'force-dynamic';
+// ISR: refreshed hourly and on every CMS publish via revalidatePath.
+export const revalidate = 3600;
 
-export const metadata: Metadata = {
-  title: 'Interactive Product Comparison Builder | HouseCareWiki',
-  description:
-    'Compare portable carpet cleaners, electric spin scrubbers, and steam cleaners side by side on tank capacity, weight, suction, and lab test scores.',
-  robots: {
-    index: false,
-    follow: true,
-  },
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'Product Comparison Builder',
+  description: 'Compare portable carpet cleaners, electric spin scrubbers, and steam cleaners side by side on tank capacity, weight, suction, and our test scores.',
+  path: '/compare',
+  noindex: true,
+});
 
 export default function ComparePage() {
   const store = readStore();

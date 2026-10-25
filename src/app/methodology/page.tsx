@@ -1,12 +1,13 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 import { CheckCircle2, ShieldAlert, Scale, FlaskConical } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Our Testing Methodology & Review Standards',
-  description:
-    'Learn how HouseCareWiki tests portable carpet cleaners, bathroom scrubbers, steam cleaners, and stain removal protocols.',
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'How We Test & Review Cleaning Products',
+  description: 'Learn how HouseCareWiki evaluates portable carpet cleaners, bathroom scrubbers, steam cleaners and stain removal methods, and how we score them out of 10.',
+  path: '/methodology',
+});
 
 export default function MethodologyPage() {
   return (

@@ -4,9 +4,17 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { Trophy, CheckCircle2, ChevronRight } from 'lucide-react';
 import { readStore } from '@/lib/store';
-import { PrimeBadge, StarRating, AffiliateButton } from '@/components/ui/Badges';
+import { buildMetadata, fitDescription } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
+import { breadcrumbSchema, graph, itemListSchema, webPageSchema } from '@/lib/schema';
+import { AffiliateDisclosureNote, PriceNote, EditorScore, AffiliateButton } from '@/components/ui/Badges';
 
-export const dynamic = 'force-dynamic';
+// ISR: pre-rendered, refreshed hourly and on every CMS publish via revalidatePath.
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return readStore().comparisons.map((x) => ({ slug: x.slug }));
+}
 
 export function generateMetadata({
   params,
@@ -16,10 +24,14 @@ export function generateMetadata({
   const store = readStore();
   const comp = store.comparisons.find((c) => c.slug === params.slug);
   if (!comp) return { title: 'Comparison Not Found' };
-  return {
-    title: comp.title,
-    description: comp.subtitle,
-  };
+  const a = store.products.find((p) => p.id === comp.productAId);
+  const b = store.products.find((p) => p.id === comp.productBId);
+  return buildMetadata({
+    title: a && b ? `${a.shortName} vs ${b.shortName}: Which to Buy?` : comp.title,
+    description: fitDescription(comp.subtitle, 'Our verdict, the key differences and the better pick for each situation.'),
+    path: `/compare/${comp.slug}`,
+    ogKicker: 'Head-to-head comparison',
+  });
 }
 
 export default function EditorialComparisonPage({
@@ -41,9 +53,20 @@ export default function EditorialComparisonPage({
     notFound();
   }
 
+  const schema = graph(
+    breadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Comparisons', path: '/compare' },
+      { name: comp.title, path: `/compare/${comp.slug}` },
+    ]),
+    webPageSchema({ path: `/compare/${comp.slug}`, name: comp.title, description: comp.subtitle, about: comp.category }),
+    itemListSchema(comp.title, [productA, productB].map((p) => ({ name: p.name, path: `/products/${p.slug}` }))),
+  );
+
   return (
     <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-      <nav className="py-4 flex items-center gap-1.5 text-xs text-ink-muted">
+      <JsonLd data={schema} />
+      <nav aria-label="Breadcrumb" className="py-4 flex items-center gap-1.5 text-xs text-ink-muted">
         <Link href="/" className="hover:text-forest">
           Home
         </Link>
@@ -54,6 +77,7 @@ export default function EditorialComparisonPage({
         <ChevronRight className="w-3.5 h-3.5" />
         <span className="text-ink font-medium truncate">{comp.title}</span>
       </nav>
+      <AffiliateDisclosureNote className="mb-4" />
 
       <header className="bg-gradient-to-br from-[#FBF9F5] to-[#EAE1D0] rounded-2xl border border-paper-border p-6 sm:p-10 shadow-soft space-y-4">
         <span className="text-xs font-extrabold uppercase tracking-wider text-coral">
@@ -98,6 +122,7 @@ export default function EditorialComparisonPage({
                 <div className="flex items-center gap-4 my-4">
                   <img
                     src={prod.image}
+                    fetchPriority="high"
                     alt={prod.name}
                     className="w-24 h-24 rounded-xl object-cover border border-paper-border"
                   />
@@ -109,11 +134,8 @@ export default function EditorialComparisonPage({
                       {prod.name}
                     </Link>
                     <div className="mt-1">
-                      <StarRating
-                        rating={prod.rating}
-                        reviewCount={prod.reviewCount}
-                        size="xs"
-                      />
+                      <EditorScore score={prod.scores.overall}
+                        size="xs" />
                     </div>
                   </div>
                 </div>
@@ -125,10 +147,7 @@ export default function EditorialComparisonPage({
 
               <div className="mt-6 pt-4 border-t border-paper-border flex items-center justify-between">
                 <div>
-                  <span className="text-2xl font-extrabold text-ink">
-                    {prod.price}
-                  </span>
-                  {prod.isPrime && <PrimeBadge />}
+                  <PriceNote />
                 </div>
                 <AffiliateButton
                   productId={prod.id}
@@ -138,7 +157,7 @@ export default function EditorialComparisonPage({
                   contentSlug={comp.slug}
                   placement="comparison_contender_card"
                   variant={isWinner ? 'coral' : 'forest'}
-                  label="View on Amazon"
+                  label="Check price on Amazon"
                 />
               </div>
             </div>

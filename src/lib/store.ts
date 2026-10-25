@@ -62,7 +62,7 @@ export interface DatabaseState {
 
 const DATA_DIR = path.join(process.cwd(), '.data');
 const STORE_PATH = path.join(DATA_DIR, 'store.json');
-const STORE_VERSION = '2.4-photo-exact';
+const STORE_VERSION = '2.6-seo-content';
 
 function getInitialState(): DatabaseState & { version: string } {
   return {

@@ -1,9 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
 import { Search, ArrowRight } from 'lucide-react';
+import type { Metadata } from 'next';
 import { HandwrittenNote } from '@/components/ui/Badges';
+import { buildMetadata } from '@/lib/seo';
 
-export const dynamic = 'force-dynamic';
+export const metadata: Metadata = buildMetadata({
+  title: 'HouseCareWiki: Home Cleaning Guides & Honest Reviews',
+  description:
+    'Practical home cleaning guides, stain fixes and honest reviews of carpet cleaners, scrubbers and organizers. Solve the mess first, then pick the right tool.',
+  path: '/',
+});
 
 const POPULAR_SEARCH_TAGS = [
   { label: 'coffee stain', href: '/guides/how-to-remove-coffee-stains-from-fabric-sofa' },
@@ -17,32 +24,32 @@ const HOME_ROOM_CARDS = [
   {
     name: 'Bathroom\nCleaning',
     slug: 'bathroom-cleaning',
-    image: '/images/cat-bathroom.jpg',
+    image: '/images/cat-bathroom.webp',
   },
   {
     name: 'Kitchen\nCleaning',
     slug: 'kitchen-cleaning',
-    image: '/images/cat-kitchen.jpg',
+    image: '/images/cat-kitchen.webp',
   },
   {
     name: 'Floor & Carpet\nCare',
     slug: 'floor-carpet-care',
-    image: '/images/cat-floor-carpet.jpg',
+    image: '/images/cat-floor-carpet.webp',
   },
   {
     name: 'Laundry\nCare',
     slug: 'laundry-care',
-    image: '/images/cat-laundry.jpg',
+    image: '/images/cat-laundry.webp',
   },
   {
     name: 'Pet Hair\nRemoval',
     slug: 'pet-hair-removal',
-    image: '/images/cat-pet-hair.jpg',
+    image: '/images/cat-pet-hair.webp',
   },
   {
     name: 'Home\nOrganization',
     slug: 'home-organization',
-    image: '/images/cat-organization.jpg',
+    image: '/images/cat-organization.webp',
   },
 ];
 
@@ -53,7 +60,7 @@ const POPULAR_RIGHT_NOW_CARDS = [
     title: 'The best grout cleaners for bathroom tiles in 2026',
     excerpt: 'Tested methods, top products and how to use them.',
     href: '/best/best-grout-cleaners-bathroom-tiles-2026',
-    image: '/images/guide-grout-brush.jpg',
+    image: '/images/guide-grout-brush.webp',
   },
   {
     categoryLabel: 'BUYING GUIDE',
@@ -61,7 +68,7 @@ const POPULAR_RIGHT_NOW_CARDS = [
     title: 'Best portable carpet cleaners for home use',
     excerpt: 'Compare top models, key features and what to look for.',
     href: '/best/best-portable-carpet-cleaners-home-use-2026',
-    image: '/images/hero-carpet-cleaner.jpg',
+    image: '/images/hero-carpet-cleaner.webp',
   },
   {
     categoryLabel: 'PRACTICAL TIPS',
@@ -69,7 +76,7 @@ const POPULAR_RIGHT_NOW_CARDS = [
     title: 'How to keep your kitchen organized',
     excerpt: 'Simple storage solutions that actually work.',
     href: '/guides/how-to-keep-your-kitchen-organized',
-    image: '/images/guide-kitchen-org.jpg',
+    image: '/images/guide-kitchen-org.webp',
   },
   {
     categoryLabel: 'CLEANING GUIDE',
@@ -77,7 +84,7 @@ const POPULAR_RIGHT_NOW_CARDS = [
     title: 'How to remove pet hair from furniture',
     excerpt: 'The most effective tools and techniques.',
     href: '/guides/how-to-remove-pet-hair-from-furniture',
-    image: '/images/guide-pet-roller.jpg',
+    image: '/images/guide-pet-roller.webp',
   },
 ];
 
@@ -90,7 +97,8 @@ export default function HomePage() {
           {/* Right-side Seamless Background Image */}
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-[64%] h-72 sm:h-96 lg:h-full relative overflow-hidden">
             <img
-              src="/images/hero-dog-coffee.jpg"
+              src="/images/hero-dog-coffee.webp"
+              fetchPriority="high"
               alt="Golden retriever lying on a cozy living room rug next to an overturned coffee mug and spilled coffee"
               className="w-full h-full object-cover object-right"
             />
@@ -176,6 +184,8 @@ export default function HomePage() {
               <div className="aspect-[4/3] w-full overflow-hidden bg-[#EFE9DC]">
                 <img
                   src={room.image}
+                  loading="lazy"
+                  decoding="async"
                   alt={room.name.replace('\n', ' ')}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -222,7 +232,9 @@ export default function HomePage() {
             {/* Right Seamless Sofa Stain Image + Handwritten "Step-by-step with real photos" */}
             <div className="lg:col-span-6 relative h-64 sm:h-72 lg:h-[290px]">
               <img
-                src="/images/featured-coffee-sofa.jpg"
+                src="/images/featured-coffee-sofa.webp"
+                loading="lazy"
+                decoding="async"
                 alt="Hand blotting a coffee stain from a beige fabric sofa with a white cloth"
                 className="w-full h-full object-cover object-right"
               />
@@ -266,6 +278,8 @@ export default function HomePage() {
               <div className="aspect-[16/10] w-full overflow-hidden bg-[#EFE9DC]">
                 <img
                   src={card.image}
+                  loading="lazy"
+                  decoding="async"
                   alt={card.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />

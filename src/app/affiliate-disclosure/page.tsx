@@ -1,9 +1,12 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: 'Affiliate Disclosure — Amazon Associates Program',
-};
+  description: 'How HouseCareWiki earns money: we are an Amazon Associate and earn from qualifying purchases at no extra cost to you. Brands cannot pay for placement or scores.',
+  path: '/affiliate-disclosure',
+});
 
 export default function AffiliateDisclosurePage() {
   return (

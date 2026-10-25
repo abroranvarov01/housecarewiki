@@ -1,9 +1,12 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Editorial Policy & Safety Standards | HouseCareWiki',
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'Editorial Policy & Safety Standards',
+  description: 'How HouseCareWiki researches, fact-checks and updates its home care guides, how we keep reviews independent, and the chemical safety rules we follow.',
+  path: '/editorial-policy',
+});
 
 export default function EditorialPolicyPage() {
   return (

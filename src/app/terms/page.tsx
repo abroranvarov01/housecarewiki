@@ -1,9 +1,12 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Terms of Use | HouseCareWiki',
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'Terms of Use',
+  description: 'The terms that apply when you use HouseCareWiki guides, smart tools and product reviews, including safety disclaimers and affiliate link information.',
+  path: '/terms',
+});
 
 export default function TermsPage() {
   return (

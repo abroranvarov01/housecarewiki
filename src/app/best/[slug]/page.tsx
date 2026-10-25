@@ -17,15 +17,38 @@ import {
   ChevronRight,
 } from 'lucide-react';
 import { readStore } from '@/lib/store';
+import { buildMetadata } from '@/lib/seo';
+import { absoluteUrl } from '@/lib/site';
+import { JsonLd } from '@/components/JsonLd';
 import {
-  PrimeBadge,
-  StarRating,
+  articleSchema,
+  breadcrumbSchema,
+  faqSchema,
+  graph,
+  isoDate,
+  itemListSchema,
+} from '@/lib/schema';
+import {
+  EditorScore,
+  PriceNote,
+  AffiliateDisclosureNote,
   HandwrittenNote,
   TestedInRealHomesSeal,
   AffiliateButton,
 } from '@/components/ui/Badges';
 
-export const dynamic = 'force-dynamic';
+// ISR: pages are pre-rendered and refreshed hourly (and on every CMS publish via revalidatePath).
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return readStore()
+    .articles.filter((a) => a.routeType === 'best')
+    .map((a) => ({ slug: a.slug }));
+}
+
+function findBestArticle(slug: string) {
+  return readStore().articles.find((a) => a.slug === slug && a.routeType === 'best');
+}
 
 const CRITERIA_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Droplets,
@@ -40,17 +63,25 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const store = readStore();
-  const article = store.articles.find((a) => a.slug === params.slug);
+  const article = findBestArticle(params.slug);
   if (!article) return { title: 'Guide Not Found' };
+  const author = readStore().authors.find((au) => au.slug === article.authorSlug);
 
-  return {
+  return buildMetadata({
     title: article.seo.title,
     description: article.seo.description,
-    alternates: {
-      canonical: article.seo.canonical,
+    path: `/best/${article.slug}`,
+    type: 'article',
+    ogKicker: 'Buying guide',
+    noindex: !article.seo.indexable || article.status !== 'Published',
+    article: {
+      publishedTime: isoDate(article.publishedAt),
+      modifiedTime: isoDate(article.updatedAt),
+      section: article.categoryLabel,
+      tags: [article.seo.focusKeyword],
+      authors: author ? [absoluteUrl(`/authors/${author.slug}`)] : undefined,
     },
-  };
+  });
 }
 
 export default function BestProductsPage({
@@ -59,7 +90,7 @@ export default function BestProductsPage({
   params: { slug: string };
 }) {
   const store = readStore();
-  const article = store.articles.find((a) => a.slug === params.slug);
+  const article = findBestArticle(params.slug);
   if (!article) {
     notFound();
   }
@@ -75,59 +106,24 @@ export default function BestProductsPage({
     store.products.find((p) => p.id === article.topPickProductId) ||
     recommendedProducts[0];
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: 'https://housecarewiki.com',
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Reviews',
-        item: 'https://housecarewiki.com/products',
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: article.title,
-        item: article.seo.canonical,
-      },
-    ],
-  };
-
-  const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: article.title,
-    description: article.subtitle,
-    datePublished: article.publishedAt,
-    dateModified: article.updatedAt,
-    author: {
-      '@type': 'Person',
-      name: author.name,
-      url: `https://housecarewiki.com/authors/${author.slug}`,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'HouseCareWiki',
-    },
-  };
+  const path = `/best/${article.slug}`;
+  const schema = graph(
+    breadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Reviews', path: '/products' },
+      { name: article.title, path },
+    ]),
+    articleSchema(article, author, path),
+    itemListSchema(
+      article.title,
+      recommendedProducts.map((p) => ({ name: p.name, path: `/products/${p.slug}` })),
+    ),
+    faqSchema(article.faqs),
+  );
 
   return (
     <div className="bg-[#F7F4EC] pb-14">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
+      <JsonLd data={schema} />
 
       {/* 1. SEAMLESS HERO SECTION WITH BREADCRUMBS — Matches Screen 3 of Photo */}
       <header className="relative overflow-hidden bg-[#F6F1E7] border-b border-[#E6DFD3]">
@@ -136,6 +132,7 @@ export default function BestProductsPage({
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-[54%] h-72 sm:h-80 lg:h-full relative overflow-hidden">
             <img
               src={article.heroImage}
+              fetchPriority="high"
               alt={article.heroImageAlt}
               className="w-full h-full object-cover object-right"
             />
@@ -198,6 +195,8 @@ export default function BestProductsPage({
             <div className="mt-5 flex items-center gap-3">
               <img
                 src={author.avatar}
+                loading="lazy"
+                decoding="async"
                 alt={author.name}
                 className="w-10 h-10 rounded-full object-cover border border-[#D8CFC0] shadow-sm"
               />
@@ -212,7 +211,8 @@ export default function BestProductsPage({
                   </Link>
                 </p>
                 <p className="text-[11.5px] text-[#6E756F]">
-                  Updated {article.updatedAt} · {article.readingTime}
+                  Updated <time dateTime={isoDate(article.updatedAt)}>{article.updatedAt}</time> · Published{' '}
+                  <time dateTime={isoDate(article.publishedAt)}>{article.publishedAt}</time> · {article.readingTime}
                 </p>
               </div>
             </div>
@@ -264,8 +264,17 @@ export default function BestProductsPage({
 
       <article className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* 3. OUR TOP PICK SPOTLIGHT CARD (Matches Screen 3 "Bissell Little Green Portable Carpet Cleaner") */}
+        <section aria-label="Short answer" className="mt-6 bg-white rounded-xl border-l-4 border-l-[#1F4D3A] border border-[#E4DDD0] p-4 sm:p-5">
+          <p className="text-sm sm:text-[15px] text-[#1F2421] leading-relaxed">
+            <strong>Short answer: </strong>
+            {article.quickAnswer}
+          </p>
+        </section>
+
+        <AffiliateDisclosureNote className="mt-4" />
+
         {topPick && (
-          <section id="top-picks" className="mt-7 scroll-mt-28">
+          <section id="top-picks" className="mt-4 scroll-mt-28">
             <div className="flex items-center gap-4 mb-4">
               <h2 className="font-editorial text-2xl sm:text-[26px] font-bold text-[#1F2421] shrink-0">
                 Our Top Pick
@@ -290,6 +299,8 @@ export default function BestProductsPage({
                   >
                     <img
                       src={topPick.image}
+                      loading="lazy"
+                      decoding="async"
                       alt={topPick.name}
                       className="w-full h-full object-contain hover:scale-105 transition-transform duration-200"
                     />
@@ -312,11 +323,8 @@ export default function BestProductsPage({
                     </Link>
                   </h3>
 
-                  <StarRating
-                    rating={topPick.rating}
-                    reviewCount={topPick.reviewCount}
-                    size="md"
-                  />
+                  <EditorScore score={topPick.scores.overall}
+                    size="md" />
 
                   <ul className="space-y-1.5 pt-1">
                     {topPick.highlights.map((bullet) => (
@@ -333,12 +341,7 @@ export default function BestProductsPage({
 
                 {/* Right Price & Orange CTA Box */}
                 <div className="lg:col-span-3 lg:border-l lg:border-[#E6DFD3] lg:pl-6 flex flex-col items-start lg:items-center justify-center space-y-3">
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-2xl sm:text-[26px] font-extrabold text-[#1F2421]">
-                      {topPick.price}
-                    </span>
-                    {topPick.isPrime && <PrimeBadge />}
-                  </div>
+                  <PriceNote />
 
                   <AffiliateButton
                     productId={topPick.id}
@@ -348,12 +351,12 @@ export default function BestProductsPage({
                     contentSlug={article.slug}
                     placement="our_top_pick_box"
                     variant="coral"
-                    label="View on Amazon"
+                    label="Check price on Amazon"
                     className="w-full"
                   />
 
                   <p className="text-[11px] text-[#7A756C] text-left lg:text-center leading-tight">
-                    We earn a commission at no extra cost to you.
+                    As an Amazon Associate we earn from qualifying purchases.
                   </p>
                 </div>
               </div>
@@ -380,8 +383,7 @@ export default function BestProductsPage({
                     <th className="py-3 px-4 w-10">#</th>
                     <th className="py-3 px-4">Product</th>
                     <th className="py-3 px-4">Best For</th>
-                    <th className="py-3 px-4">Rating</th>
-                    <th className="py-3 px-4">Price</th>
+                    <th className="py-3 px-4">Our Score</th>
                     <th className="py-3 px-4 text-right"></th>
                   </tr>
                 </thead>
@@ -402,6 +404,8 @@ export default function BestProductsPage({
                           <div className="w-11 h-11 rounded-lg bg-white border border-[#EAE4D7] p-1 flex items-center justify-center shrink-0">
                             <img
                               src={prod.image}
+                              loading="lazy"
+                              decoding="async"
                               alt={prod.shortName}
                               className="w-full h-full object-contain"
                             />
@@ -415,11 +419,7 @@ export default function BestProductsPage({
                         {prod.bestFor}
                       </td>
                       <td className="py-3 px-4">
-                        <StarRating rating={prod.rating} size="xs" />
-                      </td>
-                      <td className="py-3 px-4 whitespace-nowrap">
-                        <span className="font-extrabold text-[14px] text-[#1F2421]">{prod.price}</span>
-                        {prod.isPrime && <PrimeBadge />}
+                        <EditorScore score={prod.scores.overall} size="xs" />
                       </td>
                       <td className="py-3 px-4 text-right">
                         <AffiliateButton
@@ -430,7 +430,8 @@ export default function BestProductsPage({
                           contentSlug={article.slug}
                           placement={`table_row_${index + 1}`}
                           variant="compact"
-                          label="View"
+                          label="Check price"
+                          className="whitespace-nowrap"
                         />
                       </td>
                     </tr>
@@ -497,15 +498,13 @@ export default function BestProductsPage({
                     <span className="bg-[#1F4D3A] text-white text-[11px] font-bold px-2.5 py-0.5 rounded">
                       #{idx + 1} · {prod.badge || `Best for ${prod.bestFor}`}
                     </span>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-base font-extrabold text-[#1F2421]">{prod.price}</span>
-                      {prod.isPrime && <PrimeBadge />}
-                    </div>
                   </div>
 
                   <div className="flex items-center gap-4 mb-3">
                     <img
                       src={prod.image}
+                      loading="lazy"
+                      decoding="async"
                       alt={prod.shortName}
                       className="w-16 h-16 object-contain bg-white rounded-lg border border-[#EAE4D7] p-1 shrink-0"
                     />
@@ -515,7 +514,7 @@ export default function BestProductsPage({
                           {prod.name}
                         </Link>
                       </h3>
-                      <StarRating rating={prod.rating} reviewCount={prod.reviewCount} size="xs" />
+                      <EditorScore score={prod.scores.overall} size="xs" />
                     </div>
                   </div>
 
@@ -544,6 +543,18 @@ export default function BestProductsPage({
                     </ul>
                   </div>
                 </div>
+
+                <AffiliateButton
+                  productId={prod.id}
+                  productName={prod.name}
+                  asin={prod.asin}
+                  amazonUrl={prod.amazonUrl}
+                  contentSlug={article.slug}
+                  placement={`review_card_${idx + 1}`}
+                  variant="forest"
+                  label="Check price on Amazon"
+                  className="w-full"
+                />
               </div>
             ))}
           </div>

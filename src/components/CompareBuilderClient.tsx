@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Product, ComparisonEntry } from '@/lib/types';
-import { PrimeBadge, StarRating, AffiliateButton } from '@/components/ui/Badges';
+import { AffiliateDisclosureNote, PriceNote, EditorScore, AffiliateButton } from '@/components/ui/Badges';
 import { Scale, Check, ArrowRight } from 'lucide-react';
 
 export function CompareBuilderClient({
@@ -57,6 +57,7 @@ export function CompareBuilderClient({
         </h1>
         <p className="text-sm sm:text-base text-ink-secondary mt-2 max-w-2xl">
           Select 2 to 4 tested appliances or tools below to compare specifications, lab scores, noise levels, and surface compatibility side by side.
+        <AffiliateDisclosureNote className="mt-2" />
         </p>
       </div>
 
@@ -93,7 +94,6 @@ export function CompareBuilderClient({
               >
                 {active && <Check className="w-3.5 h-3.5" />}
                 <span>{p.shortName}</span>
-                <span className="opacity-75">({p.price})</span>
               </button>
             );
           })}
@@ -117,6 +117,8 @@ export function CompareBuilderClient({
                       </span>
                       <img
                         src={prod.image}
+                        loading="lazy"
+                        decoding="async"
                         alt={prod.name}
                         className="w-24 h-24 rounded-xl object-cover border border-paper-border"
                       />
@@ -126,16 +128,10 @@ export function CompareBuilderClient({
                       >
                         {prod.shortName}
                       </Link>
-                      <StarRating
-                        rating={prod.rating}
-                        reviewCount={prod.reviewCount}
-                        size="xs"
-                      />
+                      <EditorScore score={prod.scores.overall}
+                        size="xs" />
                       <div className="pt-1 flex items-baseline gap-1">
-                        <span className="text-lg font-extrabold text-ink">
-                          {prod.price}
-                        </span>
-                        {prod.isPrime && <PrimeBadge />}
+                        <PriceNote />
                       </div>
                       <AffiliateButton
                         productId={prod.id}
@@ -145,7 +141,7 @@ export function CompareBuilderClient({
                         contentSlug="compare-builder"
                         placement="matrix_header"
                         variant="forest"
-                        label="View on Amazon"
+                        label="Check price on Amazon"
                         className="w-full mt-2"
                       />
                     </div>

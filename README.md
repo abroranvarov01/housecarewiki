@@ -72,3 +72,13 @@ sudo nginx -t && sudo systemctl reload nginx
 sudo certbot --nginx --redirect -d housecarewiki.com -d www.housecarewiki.com
 ```
 # housecarewiki
+
+---
+
+## 4. SEO & Operations Notes
+
+- **Site config:** `src/lib/site.ts` is the single source for URL, name, locale and contacts. Metadata (`src/lib/seo.ts` → `buildMetadata`) and JSON-LD (`src/lib/schema.ts`) read only from it.
+- **Content validation:** `npm run validate:content` runs automatically before every build and fails it on missing fields, duplicate titles/intents, broken product references or missing images.
+- **Images:** put new photos in `public/images` and run `npm run optimize:images` (needs `sharp`) to create compressed WebP files and app icons.
+- **Admin:** `/admin` uses HTTP Basic auth (`ADMIN_USER`, default `admin`, and `ADMIN_PASSWORD` from `/opt/housecarewiki/.env`). `deploy/remote-setup.sh` generates a password on first deploy if none is set; without it the admin area stays closed.
+- **Sitemap:** `/sitemap.xml` (with image entries) is generated from content data; lastmod is the newest content date behind each URL.

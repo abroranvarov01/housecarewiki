@@ -1,13 +1,16 @@
 import { MetadataRoute } from 'next';
+import { SITE } from '@/lib/site';
 
-// Per Spec Section 15.5: Do not block /search or /compare in robots.txt so crawlers can read the meta robots="noindex" tag.
+// Only service areas are blocked. Pages that are noindex (/search, /compare builder, /account) stay
+// crawlable so search engines can actually read their noindex tag.
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/admin/', '/api/admin/'],
+      disallow: ['/admin', '/api/'],
     },
-    sitemap: 'https://housecarewiki.com/sitemap.xml',
+    sitemap: `${SITE.url}/sitemap.xml`,
+    host: SITE.url,
   };
 }

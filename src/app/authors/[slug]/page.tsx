@@ -4,8 +4,16 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { CheckCircle2, Award } from 'lucide-react';
 import { readStore } from '@/lib/store';
+import { buildMetadata, fitDescription } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
+import { breadcrumbSchema, graph, personSchema, webPageSchema } from '@/lib/schema';
 
-export const dynamic = 'force-dynamic';
+// ISR: pre-rendered, refreshed hourly and on every CMS publish via revalidatePath.
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return readStore().authors.map((x) => ({ slug: x.slug }));
+}
 
 export function generateMetadata({
   params,
@@ -15,10 +23,13 @@ export function generateMetadata({
   const store = readStore();
   const author = store.authors.find((a) => a.slug === params.slug);
   if (!author) return { title: 'Author Not Found' };
-  return {
-    title: `${author.name} — ${author.role}`,
-    description: author.bio,
-  };
+  return buildMetadata({
+    title: `${author.name}, ${author.role}`,
+    description: fitDescription(author.bio),
+    path: `/authors/${author.slug}`,
+    type: 'profile',
+    ogKicker: 'Author',
+  });
 }
 
 export default function AuthorProfilePage({
@@ -36,8 +47,26 @@ export default function AuthorProfilePage({
     (art) => art.authorSlug === author.slug
   );
 
+  const schema = graph(
+    breadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: author.name, path: `/authors/${author.slug}` },
+    ]),
+    {
+      ...webPageSchema({ path: `/authors/${author.slug}`, name: author.name, description: author.bio, type: 'ProfilePage' }),
+      mainEntity: personSchema(author),
+    },
+  );
+
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+      <JsonLd data={schema} />
+      <nav aria-label="Breadcrumb" className="-mt-4 text-xs text-ink-muted">
+        <Link href="/" className="hover:text-forest">
+          Home
+        </Link>{' '}
+        › <span className="text-ink font-medium">{author.name}</span>
+      </nav>
       {/* Author Switcher */}
       <div className="flex flex-wrap gap-2">
         {store.authors.map((a) => (
@@ -59,6 +88,8 @@ export default function AuthorProfilePage({
       <div className="bg-white rounded-2xl border border-paper-border p-6 sm:p-8 shadow-card flex flex-col sm:flex-row items-start gap-6">
         <img
           src={author.avatar}
+          loading="lazy"
+          decoding="async"
           alt={author.name}
           className="w-24 h-24 rounded-full object-cover border-2 border-forest shadow-sm shrink-0"
         />

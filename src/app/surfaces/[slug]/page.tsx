@@ -4,9 +4,17 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { CheckCircle2, AlertTriangle, ChevronRight } from 'lucide-react';
 import { readStore } from '@/lib/store';
-import { PrimeBadge, StarRating, AffiliateButton } from '@/components/ui/Badges';
+import { buildMetadata, fitDescription } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
+import { breadcrumbSchema, graph, webPageSchema } from '@/lib/schema';
+import { AffiliateDisclosureNote, PriceNote, EditorScore, AffiliateButton } from '@/components/ui/Badges';
 
-export const dynamic = 'force-dynamic';
+// ISR: pre-rendered, refreshed hourly and on every CMS publish via revalidatePath.
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return readStore().surfaces.map((x) => ({ slug: x.slug }));
+}
 
 export function generateMetadata({
   params,
@@ -16,10 +24,12 @@ export function generateMetadata({
   const store = readStore();
   const surface = store.surfaces.find((s) => s.slug === params.slug);
   if (!surface) return { title: 'Surface Guide Not Found' };
-  return {
+  return buildMetadata({
     title: `${surface.name} Cleaning & Safety Guide`,
-    description: surface.summary,
-  };
+    description: fitDescription(surface.summary, 'Safe cleaners, what to avoid, routine care and deep-clean steps.'),
+    path: `/surfaces/${surface.slug}`,
+    ogKicker: 'Surface safety guide',
+  });
 }
 
 export default function SurfaceGuidePage({
@@ -37,9 +47,24 @@ export default function SurfaceGuidePage({
     .map((id) => store.products.find((p) => p.id === id))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
+  const schema = graph(
+    breadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Surfaces', path: '/tools/surface-checker' },
+      { name: surface.name, path: `/surfaces/${surface.slug}` },
+    ]),
+    webPageSchema({
+      path: `/surfaces/${surface.slug}`,
+      name: `${surface.name} Cleaning & Safety Guide`,
+      description: surface.summary,
+      about: surface.name,
+    }),
+  );
+
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-      <nav className="py-4 flex items-center gap-1.5 text-xs text-ink-muted">
+      <JsonLd data={schema} />
+      <nav aria-label="Breadcrumb" className="py-4 flex items-center gap-1.5 text-xs text-ink-muted">
         <Link href="/" className="hover:text-forest">
           Home
         </Link>
@@ -50,6 +75,7 @@ export default function SurfaceGuidePage({
         <ChevronRight className="w-3.5 h-3.5" />
         <span className="text-ink font-medium">{surface.name}</span>
       </nav>
+      <AffiliateDisclosureNote className="mb-4" />
 
       {/* Surface Switcher Pills */}
       <div className="flex flex-wrap gap-2 mb-6">
@@ -84,6 +110,8 @@ export default function SurfaceGuidePage({
         <div className="md:col-span-5">
           <img
             src={surface.image}
+            loading="lazy"
+            decoding="async"
             alt={surface.name}
             className="w-full h-52 object-cover rounded-xl border border-paper-border"
           />
@@ -170,17 +198,13 @@ export default function SurfaceGuidePage({
                     {prod.name}
                   </Link>
                   <div className="mt-1">
-                    <StarRating
-                      rating={prod.rating}
-                      reviewCount={prod.reviewCount}
-                      size="xs"
-                    />
+                    <EditorScore score={prod.scores.overall}
+                      size="xs" />
                   </div>
                 </div>
                 <div className="mt-4 pt-3 border-t border-paper-border flex items-center justify-between">
                   <div>
-                    <span className="font-extrabold text-ink">{prod.price}</span>
-                    {prod.isPrime && <PrimeBadge />}
+                    <PriceNote />
                   </div>
                   <AffiliateButton
                     productId={prod.id}

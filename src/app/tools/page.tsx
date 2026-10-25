@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 import {
   FlaskConical,
   Sparkles,
@@ -11,11 +12,11 @@ import {
   ArrowRight,
 } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: '6 Interactive Home Care Smart Tools & Calculators',
-  description:
-    'Deterministic, safety-verified interactive tools for stain removal, appliance matching, product comparisons, routine planning, and surface compatibility.',
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'Interactive Home Care Tools & Calculators',
+  description: 'Free interactive tools for stain removal, cleaning equipment matching, product comparisons, routine planning, cleaning costs and surface compatibility checks.',
+  path: '/tools',
+});
 
 const TOOLS_LIST = [
   {

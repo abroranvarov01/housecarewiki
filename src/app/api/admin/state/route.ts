@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { revalidatePath } from 'next/cache';
 import { readStore, writeStore } from '@/lib/store';
 import { EditorialStatus } from '@/lib/types';
 
@@ -44,6 +45,8 @@ export async function POST(request: Request) {
         timestamp: new Date().toISOString(),
       });
       writeStore(store);
+      // Refresh ISR pages and the sitemap right after a CMS change.
+      revalidatePath('/', 'layout');
       return NextResponse.json({ ok: true, store });
     }
 
@@ -119,6 +122,8 @@ export async function POST(request: Request) {
         timestamp: new Date().toISOString(),
       });
       writeStore(store);
+      // Refresh ISR pages and the sitemap right after a CMS change.
+      revalidatePath('/', 'layout');
       return NextResponse.json({ ok: true, store });
     }
 
@@ -142,6 +147,8 @@ export async function POST(request: Request) {
         timestamp: new Date().toISOString(),
       });
       writeStore(store);
+      // Refresh ISR pages and the sitemap right after a CMS change.
+      revalidatePath('/', 'layout');
       return NextResponse.json({ ok: true, store });
     }
 
@@ -161,6 +168,8 @@ export async function POST(request: Request) {
           timestamp: new Date().toISOString(),
         });
         writeStore(store);
+        // Refresh ISR pages and the sitemap right after a CMS change.
+        revalidatePath('/', 'layout');
       }
       return NextResponse.json({ ok: true, store });
     }
@@ -177,6 +186,8 @@ export async function POST(request: Request) {
         timestamp: new Date().toISOString(),
       });
       writeStore(store);
+      // Refresh ISR pages and the sitemap right after a CMS change.
+      revalidatePath('/', 'layout');
       return NextResponse.json({ ok: true, store });
     }
 

@@ -15,9 +15,8 @@ import {
   Cpu,
 } from 'lucide-react';
 import { Article, Product, RoomCategory } from '@/lib/types';
-import {
-  PrimeBadge,
-  StarRating,
+import { AffiliateDisclosureNote, PriceNote,
+  EditorScore,
   HandwrittenNote,
   AffiliateButton,
 } from '@/components/ui/Badges';
@@ -60,10 +59,18 @@ export function RoomPageClient({
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+      <nav aria-label="Breadcrumb" className="pt-4 text-xs text-[#6E756F]">
+        <Link href="/" className="hover:text-[#1F4D3A]">
+          Home
+        </Link>{' '}
+        › <span className="text-[#1F2421] font-medium">{room.name}</span>
+      </nav>
+
       {/* 1. HERO BANNER (Matches Screen 2 "Bathroom Cleaning") */}
-      <div className="mt-5 rounded-2xl overflow-hidden relative shadow-card border border-[#E2DACB] h-52 sm:h-60 md:h-64">
+      <div className="mt-3 rounded-2xl overflow-hidden relative shadow-card border border-[#E2DACB] h-52 sm:h-60 md:h-64">
         <img
           src={room.heroImage}
+          fetchPriority="high"
           alt={room.name}
           className="w-full h-full object-cover"
         />
@@ -138,6 +145,8 @@ export function RoomPageClient({
                 <div className="aspect-[16/10] w-full overflow-hidden bg-[#EFE9DC]">
                   <img
                     src={art.heroImage}
+                    loading="lazy"
+                    decoding="async"
                     alt={art.heroImageAlt}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -170,6 +179,7 @@ export function RoomPageClient({
       </section>
 
       {/* 4. TOP RECOMMENDED PRODUCTS (Matches Screen 2 4-product Amazon grid on pure white studio cards) */}
+        <AffiliateDisclosureNote className="mb-4" />
       <section className="mt-9">
         <div className="flex items-center justify-between mb-4">
           <h2 className="font-editorial text-2xl sm:text-[26px] font-bold text-[#1F2421]">
@@ -213,6 +223,8 @@ export function RoomPageClient({
                   >
                     <img
                       src={prod.image}
+                      loading="lazy"
+                      decoding="async"
                       alt={prod.name}
                       className="w-full h-full object-contain hover:scale-105 transition-transform duration-200"
                     />
@@ -228,19 +240,15 @@ export function RoomPageClient({
 
                   {/* Star Rating */}
                   <div className="mt-1.5">
-                    <StarRating
-                      rating={prod.rating}
-                      reviewCount={prod.reviewCount}
-                      size="xs"
-                    />
+                    <EditorScore score={prod.scores.overall}
+                      size="xs" />
                   </div>
                 </div>
 
                 {/* Price + Prime Badge + View on Amazon Button */}
                 <div className="mt-3 pt-2.5">
                   <div className="flex items-baseline gap-1 mb-3">
-                    <span className="text-[17px] font-extrabold text-[#1F2421]">{prod.price}</span>
-                    {prod.isPrime && <PrimeBadge />}
+                    <PriceNote />
                   </div>
 
                   <AffiliateButton
@@ -251,7 +259,7 @@ export function RoomPageClient({
                     contentSlug={room.slug}
                     placement={`room_card_${idx + 1}`}
                     variant="forest"
-                    label="View on Amazon"
+                    label="Check price on Amazon"
                     className="w-full"
                   />
                 </div>
@@ -303,6 +311,8 @@ export function RoomPageClient({
                   <div className="aspect-[16/10] relative overflow-hidden bg-[#EFE9DC]">
                     <img
                       src={item.beforeImage}
+                      loading="lazy"
+                      decoding="async"
                       alt={`Before and after cleaning ${item.surfaceLabel}`}
                       className="w-full h-full object-cover"
                     />
@@ -319,6 +329,8 @@ export function RoomPageClient({
                     <div className="relative h-full overflow-hidden">
                       <img
                         src={item.beforeImage}
+                        loading="lazy"
+                        decoding="async"
                         alt={`Before cleaning ${item.surfaceLabel}`}
                         className="w-full h-full object-cover"
                       />
@@ -329,6 +341,8 @@ export function RoomPageClient({
                     <div className="relative h-full overflow-hidden">
                       <img
                         src={item.afterImage}
+                        loading="lazy"
+                        decoding="async"
                         alt={`After cleaning ${item.surfaceLabel}`}
                         className="w-full h-full object-cover"
                       />
@@ -347,6 +361,8 @@ export function RoomPageClient({
                   <div className="flex items-center gap-2.5">
                     <img
                       src={item.avatar}
+                      loading="lazy"
+                      decoding="async"
                       alt={item.authorName}
                       className="w-8 h-8 rounded-full object-cover border border-[#E2DACB]"
                     />
