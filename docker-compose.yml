@@ -1,0 +1,50 @@
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: housecarewiki-web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${APP_PORT:-3000}:3000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://housecare:housecare_secret@postgres:5432/housecarewiki?schema=public
+      - REDIS_URL=redis://redis:6379
+      - NEXT_PUBLIC_SITE_URL=https://housecarewiki.com
+      - AMAZON_PARTNER_TAG=housecarewiki-20
+    volumes:
+      - app_data:/app/.data
+    depends_on:
+      - postgres
+      - redis
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: housecarewiki-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: housecare
+      POSTGRES_PASSWORD: housecare_secret
+      POSTGRES_DB: housecarewiki
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U housecare -d housecarewiki"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: housecarewiki-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+
+volumes:
+  app_data:
+  pg_data:
+  redis_data:

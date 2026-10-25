@@ -1,0 +1,491 @@
+// HouseCareWiki.com — Full Product PostgreSQL Schema (Spec v2.0 Section 19)
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum EditorialStatus {
+  IDEA
+  RESEARCH
+  DRAFT
+  FACT_CHECK
+  EDITORIAL_REVIEW
+  SEO_REVIEW
+  APPROVED
+  SCHEDULED
+  PUBLISHED
+  UPDATE_REQUIRED
+  ARCHIVED
+}
+
+enum ContentType {
+  PROBLEM_GUIDE
+  BUYING_GUIDE
+  PRODUCT_REVIEW
+  BEST_PRODUCTS
+  PRODUCT_COMPARISON
+  ROOM_GUIDE
+  SURFACE_GUIDE
+  TOPIC_HUB
+  GLOSSARY
+}
+
+enum EvidenceStatus {
+  HANDS_ON_TESTED
+  RESEARCH_BASED
+  MANUFACTURER_VERIFIED
+  SPECS_OVERVIEW
+}
+
+enum RoleName {
+  OWNER
+  ADMINISTRATOR
+  EDITOR
+  AUTHOR
+  SEO_MANAGER
+  ANALYST
+  VIEWER
+}
+
+model User {
+  id               String         @id @default(uuid()) @db.Uuid
+  email            String         @unique
+  name             String?
+  avatarUrl        String?
+  emailPreferences Json           @default("{\"weeklyDigest\":true,\"productAlerts\":false}")
+  createdAt        DateTime       @default(now()) @db.Timestamptz(6)
+  updatedAt        DateTime       @updatedAt @db.Timestamptz(6)
+  savedItems       SavedItem[]
+  cleaningPlans    CleaningPlan[]
+  sessions         Session[]
+
+  @@index([email])
+}
+
+model AdminUser {
+  id           String     @id @default(uuid()) @db.Uuid
+  email        String     @unique
+  name         String
+  passwordHash String
+  mfaEnabled   Boolean    @default(true)
+  roleId       String     @db.Uuid
+  role         Role       @relation(fields: [roleId], references: [id])
+  isActive     Boolean    @default(true)
+  lastLoginAt  DateTime?  @db.Timestamptz(6)
+  createdAt    DateTime   @default(now()) @db.Timestamptz(6)
+  updatedAt    DateTime   @updatedAt @db.Timestamptz(6)
+  auditLogs    AuditLog[]
+}
+
+model Role {
+  id          String       @id @default(uuid()) @db.Uuid
+  name        RoleName     @unique
+  description String
+  permissions Permission[]
+  adminUsers  AdminUser[]
+}
+
+model Permission {
+  id       String @id @default(uuid()) @db.Uuid
+  action   String
+  resource String
+  roles    Role[]
+
+  @@unique([action, resource])
+}
+
+model Session {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String   @db.Uuid
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token     String   @unique
+  expiresAt DateTime @db.Timestamptz(6)
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+
+  @@index([token])
+}
+
+model AuthorProfile {
+  id          String        @id @default(uuid()) @db.Uuid
+  slug        String        @unique
+  name        String
+  roleTitle   String
+  bio         String
+  credentials String[]
+  avatarUrl   String
+  socialLinks Json?
+  createdAt   DateTime      @default(now()) @db.Timestamptz(6)
+  updatedAt   DateTime      @updatedAt @db.Timestamptz(6)
+  pages       ContentPage[]
+  reviews     Review[]
+}
+
+model Topic {
+  id               String          @id @default(uuid()) @db.Uuid
+  slug             String          @unique
+  name             String
+  clusterGroup     String
+  description      String
+  heroImageUrl     String?
+  coverageScore    Int             @default(85)
+  createdAt        DateTime        @default(now()) @db.Timestamptz(6)
+  updatedAt        DateTime        @updatedAt @db.Timestamptz(6)
+  pages            ContentPage[]
+  parentRelations  TopicRelation[] @relation("ParentTopic")
+  childRelations   TopicRelation[] @relation("ChildTopic")
+}
+
+model TopicRelation {
+  id            String @id @default(uuid()) @db.Uuid
+  parentTopicId String @db.Uuid
+  childTopicId  String @db.Uuid
+  relationType  String @default("subtopic")
+  parentTopic   Topic  @relation("ParentTopic", fields: [parentTopicId], references: [id])
+  childTopic    Topic  @relation("ChildTopic", fields: [childTopicId], references: [id])
+
+  @@unique([parentTopicId, childTopicId])
+}
+
+model TaxonomyTerm {
+  id          String   @id @default(uuid()) @db.Uuid
+  taxonomy    String   // room, surface, problem, tool_category
+  slug        String
+  name        String
+  description String
+  iconName    String?
+  imageUrl    String?
+  metadata    Json?
+  createdAt   DateTime @default(now()) @db.Timestamptz(6)
+
+  @@unique([taxonomy, slug])
+  @@index([taxonomy])
+}
+
+model ContentPage {
+  id              String            @id @default(uuid()) @db.Uuid
+  slug            String            @unique
+  routeNamespace  String            // guides, best, reviews, rooms, surfaces, problems
+  contentType     ContentType
+  status          EditorialStatus   @default(DRAFT)
+  title           String
+  subtitle        String
+  excerpt         String
+  quickAnswer     String?
+  seoTitle        String
+  seoDescription  String
+  canonicalUrl    String
+  isIndexable     Boolean           @default(true)
+  readingTimeMin  Int               @default(6)
+  heroImageUrl    String
+  heroImageAlt    String
+  handwrittenNote String?
+  evidenceStatus  EvidenceStatus    @default(HANDS_ON_TESTED)
+  safetyWarnings  String[]
+  authorId        String            @db.Uuid
+  author          AuthorProfile     @relation(fields: [authorId], references: [id])
+  topicId         String?           @db.Uuid
+  topic           Topic?            @relation(fields: [topicId], references: [id])
+  publishedAt     DateTime?         @db.Timestamptz(6)
+  updatedAt       DateTime          @updatedAt @db.Timestamptz(6)
+  createdAt       DateTime          @default(now()) @db.Timestamptz(6)
+  blocks          ContentBlock[]
+  revisions       ContentRevision[]
+  claims          ClaimEvidence[]
+  placements      AffiliatePlacement[]
+
+  @@index([routeNamespace, slug])
+  @@index([status])
+}
+
+model ContentRevision {
+  id            String      @id @default(uuid()) @db.Uuid
+  contentPageId String      @db.Uuid
+  contentPage   ContentPage @relation(fields: [contentPageId], references: [id], onDelete: Cascade)
+  versionNumber Int
+  snapshot      Json
+  changeNote    String
+  editorName    String
+  createdAt     DateTime    @default(now()) @db.Timestamptz(6)
+}
+
+model ContentBlock {
+  id            String      @id @default(uuid()) @db.Uuid
+  contentPageId String      @db.Uuid
+  contentPage   ContentPage @relation(fields: [contentPageId], references: [id], onDelete: Cascade)
+  sortOrder     Int
+  blockType     String      // paragraph, heading, steps, warning, callout, product_card, comparison, pros_cons, faq, sources
+  payload       Json
+}
+
+model SourceRecord {
+  id              String            @id @default(uuid()) @db.Uuid
+  title           String
+  publisher       String
+  url             String
+  sourceType      String            // lab_test, manufacturer_manual, government_agency, academic
+  trustScore      Int               @default(95)
+  publishedDate   String?
+  accessedAt      DateTime          @default(now()) @db.Timestamptz(6)
+  verification    String            @default("VERIFIED")
+  claims          ClaimEvidence[]
+  productEvidence ProductEvidence[]
+}
+
+model ClaimEvidence {
+  id            String       @id @default(uuid()) @db.Uuid
+  contentPageId String       @db.Uuid
+  contentPage   ContentPage  @relation(fields: [contentPageId], references: [id], onDelete: Cascade)
+  sourceId      String       @db.Uuid
+  source        SourceRecord @relation(fields: [sourceId], references: [id])
+  claimText     String
+  verifiedBy    String
+  verifiedAt    DateTime     @default(now()) @db.Timestamptz(6)
+}
+
+model MediaAsset {
+  id          String   @id @default(uuid()) @db.Uuid
+  url         String
+  altText     String
+  caption     String?
+  assetType   String   // editorial_photo, product_photo, instructional_photo, diagram, test_result
+  licenseType String
+  sourceCredit String
+  width       Int
+  height      Int
+  mimeType    String   @default("image/jpeg")
+  createdAt   DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model Product {
+  id              String                 @id @default(uuid()) @db.Uuid
+  slug            String                 @unique
+  brand           String
+  name            String
+  modelNumber     String
+  categorySlug    String
+  asin            String?                @unique
+  badge           String?                // Best Overall, Best for Pets, Best Budget, etc.
+  bestFor         String
+  editorialSummary String
+  priceDisplay    String?
+  isPrimeEligible Boolean                @default(true)
+  rating          Float
+  reviewCount     Int
+  imageUrl        String
+  features        String[]
+  pros            String[]
+  limitations     String[]
+  surfaces        String[]
+  evidenceStatus  EvidenceStatus         @default(HANDS_ON_TESTED)
+  reviewStatus    String                 @default("PUBLISHED")
+  lifecycleStatus String                 @default("ACTIVE")
+  updatedAt       DateTime               @updatedAt @db.Timestamptz(6)
+  createdAt       DateTime               @default(now()) @db.Timestamptz(6)
+  specifications  ProductSpecification[]
+  evidence        ProductEvidence[]
+  reviews         Review[]
+  affiliateLinks  AffiliateLink[]
+}
+
+model ProductSpecification {
+  id          String  @id @default(uuid()) @db.Uuid
+  productId   String  @db.Uuid
+  product     Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  specKey     String
+  specLabel   String
+  specValue   String
+  unit        String?
+  isVerified  Boolean @default(true)
+}
+
+model ProductEvidence {
+  id         String       @id @default(uuid()) @db.Uuid
+  productId  String       @db.Uuid
+  product    Product      @relation(fields: [productId], references: [id], onDelete: Cascade)
+  sourceId   String       @db.Uuid
+  source     SourceRecord @relation(fields: [sourceId], references: [id])
+  attribute  String
+  notes      String?
+}
+
+model Review {
+  id              String         @id @default(uuid()) @db.Uuid
+  slug            String         @unique
+  productId       String         @db.Uuid
+  product         Product        @relation(fields: [productId], references: [id])
+  authorId        String         @db.Uuid
+  author          AuthorProfile  @relation(fields: [authorId], references: [id])
+  verdict         String
+  whoShouldBuy    String[]
+  whoShouldSkip   String[]
+  buildQuality    Float
+  easeOfUse       Float
+  cleaningPower   Float
+  noiseLevelDb    Int?
+  valueScore      Float
+  overallScore    Float
+  evidenceStatus  EvidenceStatus @default(HANDS_ON_TESTED)
+  publishedAt     DateTime       @default(now()) @db.Timestamptz(6)
+  updatedAt       DateTime       @updatedAt @db.Timestamptz(6)
+}
+
+model Comparison {
+  id             String   @id @default(uuid()) @db.Uuid
+  slug           String   @unique
+  title          String
+  subtitle       String
+  productIds     String[]
+  winnerId       String
+  verdictSummary String
+  scenarios      Json
+  tradeoffs      String[]
+  updatedAt      DateTime @updatedAt @db.Timestamptz(6)
+}
+
+model AffiliateLink {
+  id               String               @id @default(uuid()) @db.Uuid
+  productId        String               @db.Uuid
+  product          Product              @relation(fields: [productId], references: [id], onDelete: Cascade)
+  marketplace      String               @default("US")
+  destinationUrl   String
+  trackingId       String               @default("housecarewiki-20")
+  status           String               @default("ACTIVE")
+  validationStatus String               @default("VALID")
+  lastCheckedAt    DateTime             @default(now()) @db.Timestamptz(6)
+  createdAt        DateTime             @default(now()) @db.Timestamptz(6)
+  updatedAt        DateTime             @updatedAt @db.Timestamptz(6)
+  placements       AffiliatePlacement[]
+}
+
+model AffiliatePlacement {
+  id            String        @id @default(uuid()) @db.Uuid
+  contentPageId String        @db.Uuid
+  contentPage   ContentPage   @relation(fields: [contentPageId], references: [id], onDelete: Cascade)
+  affiliateId   String        @db.Uuid
+  affiliateLink AffiliateLink @relation(fields: [affiliateId], references: [id], onDelete: Cascade)
+  placementSlot String        // top_pick, comparison_table, product_card
+  clickCount    Int           @default(0)
+}
+
+model Redirect {
+  id          String   @id @default(uuid()) @db.Uuid
+  fromPath    String   @unique
+  toPath      String
+  statusCode  Int      @default(301)
+  reason      String?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model SearchQuery {
+  id          String   @id @default(uuid()) @db.Uuid
+  queryText   String   @unique
+  searchCount Int      @default(1)
+  resultCount Int      @default(0)
+  lastSearched DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model SavedItem {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String   @db.Uuid
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  itemType  String   // article, product, comparison
+  itemSlug  String
+  title     String
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model CleaningPlan {
+  id          String   @id @default(uuid()) @db.Uuid
+  userId      String?  @db.Uuid
+  user        User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  title       String
+  homeType    String
+  roomsCount  Int
+  hasPets     Boolean
+  tasksJson   Json
+  createdAt   DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model ToolRule {
+  id          String            @id @default(uuid()) @db.Uuid
+  toolSlug    String
+  ruleCode    String            @unique
+  conditions  Json
+  output      Json
+  safetyNotes String[]
+  isActive    Boolean           @default(true)
+  updatedAt   DateTime          @updatedAt @db.Timestamptz(6)
+  versions    ToolRuleVersion[]
+}
+
+model ToolRuleVersion {
+  id         String   @id @default(uuid()) @db.Uuid
+  toolRuleId String   @db.Uuid
+  toolRule   ToolRule @relation(fields: [toolRuleId], references: [id], onDelete: Cascade)
+  version    Int
+  snapshot   Json
+  changedBy  String
+  createdAt  DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model NewsletterSubscriber {
+  id          String    @id @default(uuid()) @db.Uuid
+  email       String    @unique
+  status      String    @default("CONFIRMED") // PENDING_OPT_IN, CONFIRMED, UNSUBSCRIBED
+  topics      String[]
+  confirmedAt DateTime? @db.Timestamptz(6)
+  createdAt   DateTime  @default(now()) @db.Timestamptz(6)
+}
+
+model AnalyticsAggregate {
+  id                String   @id @default(uuid()) @db.Uuid
+  date              String
+  pagePath          String
+  impressions       Int      @default(0)
+  organicClicks     Int      @default(0)
+  ctr               Float    @default(0)
+  avgPosition       Float    @default(0)
+  affiliateClicks   Int      @default(0)
+  toolCompletions   Int      @default(0)
+  deviceCategory    String   @default("mobile")
+
+  @@index([date, pagePath])
+}
+
+model ScheduledJob {
+  id          String    @id @default(uuid()) @db.Uuid
+  jobKey      String    @unique
+  name        String
+  description String
+  schedule    String
+  isEnabled   Boolean   @default(true)
+  lastRunAt   DateTime? @db.Timestamptz(6)
+  nextRunAt   DateTime? @db.Timestamptz(6)
+  lastStatus  String    @default("SUCCESS")
+  lastResult  String?
+  errorLog    String?
+}
+
+model AuditLog {
+  id          String     @id @default(uuid()) @db.Uuid
+  adminUserId String?    @db.Uuid
+  adminUser   AdminUser? @relation(fields: [adminUserId], references: [id])
+  actorName   String
+  action      String
+  resource    String
+  resourceId  String?
+  details     Json?
+  createdAt   DateTime   @default(now()) @db.Timestamptz(6)
+}
+
+model SiteSetting {
+  id        String   @id @default(uuid()) @db.Uuid
+  key       String   @unique
+  value     Json
+  updatedAt DateTime @updatedAt @db.Timestamptz(6)
+}
