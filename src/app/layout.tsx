@@ -50,6 +50,7 @@ export const metadata: Metadata = {
   alternates: {
     types: { 'application/rss+xml': [{ url: '/feed.xml', title: `${SITE.name} — latest guides` }] },
   },
+  verification: { google: SITE.googleSiteVerification },
   formatDetection: { telephone: false, email: false, address: false },
   category: 'home & garden',
   openGraph: {

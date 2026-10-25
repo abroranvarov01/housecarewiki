@@ -17,6 +17,8 @@ export const SITE = {
   sameAs: [] as string[],
   amazonPartnerTag: 'housecarewiki-20',
   foundingDate: '2026',
+  // Google Search Console ownership token (rendered as <meta name="google-site-verification">).
+  googleSiteVerification: '3PQnuf3CefW0WTFgfdHKVSdVI2JTSu80XN0A68Zeh1s',
 } as const;
 
 export function absoluteUrl(path = '/'): string {

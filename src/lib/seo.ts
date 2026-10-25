@@ -79,6 +79,8 @@ export function buildMetadata(seo: PageSeo): Metadata {
       types: { 'application/rss+xml': [{ url: absoluteUrl('/feed.xml'), title: `${SITE.name} — latest guides` }] },
     },
     robots: seo.noindex ? NOINDEX_ROBOTS : INDEX_ROBOTS,
+    // Repeated per page: Next.js does not always carry layout-level `verification` into page metadata.
+    verification: { google: SITE.googleSiteVerification },
     openGraph:
       seo.type === 'article'
         ? {
