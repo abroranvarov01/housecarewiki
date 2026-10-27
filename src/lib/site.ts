@@ -17,6 +17,9 @@ export const SITE = {
   sameAs: [] as string[],
   // Amazon Associates tracking ID. The only place it is set: every product link is built from it.
   amazonPartnerTag: 'housecare0a-20',
+  // Google Tag Manager container, loaded only after cookie consent. GA4 (G-YCNX9GQD85) and Microsoft Clarity
+  // (z4946iuout) are configured inside the container. Empty = no analytics script and no cookie banner.
+  gtmId: 'GTM-K9GRGZQ9' as string,
   foundingDate: '2026',
 } as const;
 

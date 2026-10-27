@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Leaf } from 'lucide-react';
 import { BrandMark, Wordmark } from '@/components/BrandMark';
 import type { NavLink, NavModel } from '@/lib/navigation';
+import { CookieSettingsButton } from '@/components/CookieConsent';
 
 function FooterColumn({ title, links }: { title: string; links: NavLink[] }) {
   return (
@@ -67,6 +68,7 @@ export function Footer({ nav }: { nav: NavModel }) {
             </p>
           </div>
           <p className="flex items-center gap-2">
+            <CookieSettingsButton className="underline underline-offset-2 hover:text-ink" />
             <span className="h-1.5 w-1.5 rounded-full bg-leaf" aria-hidden="true" />© {new Date().getFullYear()} HouseCareWiki
           </p>
         </div>

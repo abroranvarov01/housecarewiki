@@ -3,6 +3,7 @@ import { Caveat, IBM_Plex_Mono, Newsreader, Schibsted_Grotesk } from 'next/font/
 import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { CookieConsent } from '@/components/CookieConsent';
 import { JsonLd } from '@/components/JsonLd';
 import { SITE } from '@/lib/site';
 import { INDEX_ROBOTS } from '@/lib/seo';
@@ -96,6 +97,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer nav={nav} />
+        <CookieConsent />
       </body>
     </html>
   );

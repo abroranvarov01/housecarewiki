@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { ArrowUpRight, Bookmark } from 'lucide-react';
+import { trackEvent } from '@/components/CookieConsent';
 
 // Our own editorial rating (out of 10). It is a research-based judgment, not a lab measurement, and it is
 // labeled that way. Amazon star ratings and review counts are never displayed from static data.
@@ -81,6 +82,7 @@ export function AffiliateButton({
   className?: string;
 }) {
   const handleTrackClick = async () => {
+    trackEvent('affiliate_click', { product_id: productId, asin, content_slug: contentSlug, placement });
     try {
       await fetch('/api/affiliate/click', {
         method: 'POST',
