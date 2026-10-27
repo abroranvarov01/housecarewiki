@@ -127,7 +127,7 @@ export function CompareBuilderClient({ products }: { products: Product[] }) {
                 </th>
                 {comparedProducts.map((prod) => (
                   <th key={prod.id} scope="col" className="min-w-[200px] bg-paper-card px-4 py-4 align-top font-normal">
-                    <div className="aspect-square w-24 bg-paper p-1">
+                    <div className="h-24 w-24 shrink-0 bg-paper p-1">
                       <img src={prod.image} alt="" loading="lazy" decoding="async" className="h-full w-full object-contain" />
                     </div>
                     <Link
