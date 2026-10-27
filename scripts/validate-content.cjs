@@ -18,6 +18,8 @@ function loadTs(file) {
   const m = new Module(file);
   m.filename = file;
   m.paths = Module._nodeModulePaths(path.dirname(file));
+  // Resolve relative imports between lib files (e.g. seed-data -> site) to their .ts sources.
+  m.require = (id) => (id.startsWith('.') ? loadTs(require.resolve(path.join(path.dirname(file), id) + '.ts')) : require(id));
   m._compile(outputText, file);
   return m.exports;
 }

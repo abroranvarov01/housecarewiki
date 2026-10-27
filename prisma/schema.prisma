@@ -352,7 +352,7 @@ model AffiliateLink {
   product          Product              @relation(fields: [productId], references: [id], onDelete: Cascade)
   marketplace      String               @default("US")
   destinationUrl   String
-  trackingId       String               @default("housecarewiki-20")
+  trackingId       String               @default("housecare0a-20")
   status           String               @default("ACTIVE")
   validationStatus String               @default("VALID")
   lastCheckedAt    DateTime             @default(now()) @db.Timestamptz(6)

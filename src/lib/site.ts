@@ -15,9 +15,14 @@ export const SITE = {
   backgroundColor: '#F8F4EB',
   // Add real profiles here once they exist; empty entries are skipped in schema.
   sameAs: [] as string[],
-  amazonPartnerTag: 'housecarewiki-20',
+  // Amazon Associates tracking ID. The only place it is set: every product link is built from it.
+  amazonPartnerTag: 'housecare0a-20',
   foundingDate: '2026',
 } as const;
+
+export function amazonProductUrl(asin: string): string {
+  return `https://www.amazon.com/dp/${asin}?tag=${SITE.amazonPartnerTag}`;
+}
 
 export function absoluteUrl(path = '/'): string {
   if (/^https?:\/\//.test(path)) return path;

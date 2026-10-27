@@ -10,7 +10,7 @@ const EDITORIAL_STATUSES: EditorialStatus[] = [
   'Idea', 'Research', 'Draft', 'Fact Check', 'Editorial Review', 'SEO Review',
   'Approved', 'Scheduled', 'Published', 'Update Required', 'Archived',
 ];
-const CONFIG_KEYS = ['amazonPartnerTag', 'heroBadge', 'heroTitle', 'heroSubtitle', 'heroHandwritten', 'featuredGuideSlug'] as const;
+const CONFIG_KEYS = ['heroBadge', 'heroTitle', 'heroSubtitle', 'heroHandwritten', 'featuredGuideSlug'] as const;
 
 export async function GET(request: Request) {
   const auth = checkAdminAuth(request.headers.get('authorization'));
@@ -207,7 +207,7 @@ export async function POST(request: Request) {
         role: 'OWNER',
         action: 'UPDATE_SITE_SETTINGS',
         resource: 'site_config',
-        details: `Updated homepage/affiliate configuration (Partner Tag: ${store.config.amazonPartnerTag}).`,
+        details: `Updated homepage configuration.`,
         timestamp: new Date().toISOString(),
       });
       writeStore(store);

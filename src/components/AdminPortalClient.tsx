@@ -70,7 +70,6 @@ export function AdminPortalClient({
   } | null>(null);
 
   // Site Config State
-  const [partnerTag, setPartnerTag] = useState(store.config.amazonPartnerTag);
   const [heroTitle, setHeroTitle] = useState(store.config.heroTitle);
 
   const showNotice = (msg: string, tone: 'ok' | 'error' = 'ok') => {
@@ -161,7 +160,7 @@ export function AdminPortalClient({
 
   const handleSaveConfig = async (e: React.FormEvent) => {
     e.preventDefault();
-    const result = await postAction('UPDATE_SITE_CONFIG', { amazonPartnerTag: partnerTag, heroTitle });
+    const result = await postAction('UPDATE_SITE_CONFIG', { heroTitle });
     if (result.ok) {
       setStore(result.store);
       showNotice('Saved homepage and affiliate settings.');
@@ -792,10 +791,14 @@ export function AdminPortalClient({
                 <input
                   id="cfg-tag"
                   type="text"
-                  value={partnerTag}
-                  onChange={(e) => setPartnerTag(e.target.value)}
+                  value={store.config.amazonPartnerTag}
+                  readOnly
+                  aria-describedby="cfg-tag-note"
                   className={`${input} font-mono`}
                 />
+                <p id="cfg-tag-note" className="text-xs text-ink-muted mt-1">
+                  Set in src/lib/site.ts (SITE.amazonPartnerTag).
+                </p>
               </div>
             </div>
             <button type="submit" className={primaryBtn}>

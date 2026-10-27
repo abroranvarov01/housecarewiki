@@ -22,6 +22,7 @@ import {
   RedirectRule,
   AffiliateClickEvent,
 } from './types';
+import { SITE, amazonProductUrl } from './site';
 
 export interface AuditLogEntry {
   id: string;
@@ -74,7 +75,7 @@ function getInitialState(): DatabaseState & { version: string } {
     config: {
       siteName: 'HouseCareWiki',
       domain: 'housecarewiki.com',
-      amazonPartnerTag: 'housecarewiki-20',
+      amazonPartnerTag: SITE.amazonPartnerTag,
       creatorsApiConnected: false,
       heroBadge: 'The home field guide',
       heroTitle: 'What needs fixing today?',
@@ -106,7 +107,6 @@ function migrateStore(old: Partial<DatabaseState>): DatabaseState & { version: s
     ...fresh,
     config: {
       ...fresh.config,
-      amazonPartnerTag: old.config?.amazonPartnerTag || fresh.config.amazonPartnerTag,
       creatorsApiConnected: Boolean(old.config?.creatorsApiConnected),
     },
     subscribers: (old.subscribers || []).filter((s) => !DEMO_EMAILS.has(s.email)),
@@ -114,6 +114,16 @@ function migrateStore(old: Partial<DatabaseState>): DatabaseState & { version: s
     auditLogs: (old.auditLogs || []).filter((a) => !DEMO_IDS.has(a.id)),
     redirects: [...fresh.redirects, ...(old.redirects || []).filter((r) => !seededRedirects.has(r.fromPath))],
   };
+}
+
+// The partner tag comes only from SITE, so a store saved with an older tag is re-tagged on read.
+function applyPartnerTag<T extends DatabaseState>(state: T): T {
+  state.config.amazonPartnerTag = SITE.amazonPartnerTag;
+  for (const p of state.products) {
+    p.amazonUrl = amazonProductUrl(p.asin);
+    p.trackingTag = SITE.amazonPartnerTag;
+  }
+  return state;
 }
 
 export function readStore(): DatabaseState {
@@ -133,7 +143,7 @@ export function readStore(): DatabaseState {
       fs.writeFileSync(STORE_PATH, JSON.stringify(migrated, null, 2), 'utf-8');
       return migrated;
     }
-    return parsed;
+    return applyPartnerTag(parsed);
   } catch {
     return getInitialState();
   }
