@@ -43,44 +43,10 @@ Open `http://localhost:3000` in your browser.
 
 ---
 
-## 3. Deploy to the VPS (housecarewiki.com)
-
-DNS is already pointed at the server (`housecarewiki.com` and `www` → `72.62.134.148`).
-
-One command from this machine (asks for the root SSH password unless a key is installed):
-
-```bash
-./deploy/deploy.sh
-```
-
-What it does:
-1. `rsync` the project to `/opt/housecarewiki` on the VPS (without `node_modules`, `.next`, `.data`).
-2. Runs `deploy/remote-setup.sh` on the server: installs Docker + Nginx + Certbot, runs `docker compose up -d --build`,
-   installs `deploy/nginx/housecarewiki.com.conf`, and issues a Let's Encrypt certificate (HTTP → HTTPS redirect).
-3. Smoke-tests `http://72.62.134.148/`, `https://housecarewiki.com/` and `/sitemap.xml`.
-
-Unattended run (password auth): `brew install sshpass` then `SSHPASS='<root password>' ./deploy/deploy.sh`.
-
-Re-deploy after changes: run the same command again (the compose build is cached; the `.data` volume with CMS edits persists).
-
-Manual equivalent on the server:
-
-```bash
-cd /opt/housecarewiki
-docker compose up -d --build
-sudo cp deploy/nginx/housecarewiki.com.conf /etc/nginx/sites-available/housecarewiki.com.conf
-sudo ln -sf /etc/nginx/sites-available/housecarewiki.com.conf /etc/nginx/sites-enabled/
-sudo nginx -t && sudo systemctl reload nginx
-sudo certbot --nginx --redirect -d housecarewiki.com -d www.housecarewiki.com
-```
-# housecarewiki
-
----
-
-## 4. SEO & Operations Notes
+## 3. SEO & Operations Notes
 
 - **Site config:** `src/lib/site.ts` is the single source for URL, name, locale and contacts. Metadata (`src/lib/seo.ts` → `buildMetadata`) and JSON-LD (`src/lib/schema.ts`) read only from it.
 - **Content validation:** `npm run validate:content` runs automatically before every build and fails it on missing fields, duplicate titles/intents, broken product references or missing images.
 - **Images:** put new photos in `public/images` and run `npm run optimize:images` (needs `sharp`) to create compressed WebP files and app icons.
-- **Admin:** `/admin` uses HTTP Basic auth, checked in the middleware and again by the page and API (`src/lib/admin-auth.ts`) (`ADMIN_USER`, default `admin`, and `ADMIN_PASSWORD` from `/opt/housecarewiki/.env`). `deploy/remote-setup.sh` generates a password on first deploy if none is set; without it the admin area stays closed.
+- **Admin:** `/admin` uses HTTP Basic auth, checked in the middleware and again by the page and API (`src/lib/admin-auth.ts`) (`ADMIN_USER`, default `admin`, and `ADMIN_PASSWORD` from `.env`). Without `ADMIN_PASSWORD` the admin area stays closed.
 - **Sitemap:** `/sitemap.xml` (with image entries) is generated from content data; lastmod is the newest content date behind each URL.
