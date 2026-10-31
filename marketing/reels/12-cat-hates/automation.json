@@ -1,0 +1,22 @@
+{
+  "video": "reel.mp4",
+  "cover": "cover.jpg",
+  "shareToFeed": true,
+  "links": [
+    { "slug": "chomchom", "asin": "B09125RRXD", "label": "ChomChom pet hair roller" },
+    { "slug": "little-green", "asin": "B0016HF5GK", "label": "Bissell Little Green spot cleaner" }
+  ],
+  "rule": {
+    "key": "cat",
+    "keyword": "CAT",
+    "matchMode": "word",
+    "publicReplies": [
+      "the traitor tools are in your DMs 😾",
+      "sent 📩 (the cat disapproves)",
+      "check your DMs 🐈"
+    ],
+    "dmText": "hey! 👋 the cat asked me not to send these. sending them anyway 😼",
+    "dmButton": "send the links",
+    "linkText": "here you go 🐈 the two things he hates most:\n\n1. pet hair roller (ChomChom) → {go:chomchom}\n2. Little Green spot cleaner (Bissell) → {go:little-green}\n\nas an Amazon Associate I earn from qualifying purchases"
+  }
+}

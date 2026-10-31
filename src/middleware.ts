@@ -9,11 +9,14 @@ export function middleware(request: NextRequest) {
   if (auth !== 'ok') return adminDeniedResponse(auth);
 
   // CSRF guard: browsers attach Basic credentials automatically, so writes must be
-  // same-origin JSON requests (cross-site forms cannot send application/json without CORS).
+  // same-origin JSON requests (cross-site forms cannot send application/json without CORS). File uploads from
+  // scripts/ig.mjs are not JSON; they carry a custom x-hcw-client header, which a cross-site page cannot set
+  // without a CORS preflight that this site never answers.
   if (request.method !== 'GET' && request.method !== 'HEAD') {
     const origin = request.headers.get('origin');
     const contentType = request.headers.get('content-type') || '';
-    if ((origin && origin !== request.nextUrl.origin) || !contentType.includes('application/json')) {
+    const trustedClient = Boolean(request.headers.get('x-hcw-client'));
+    if ((origin && origin !== request.nextUrl.origin) || (!contentType.includes('application/json') && !trustedClient)) {
       return new NextResponse('Forbidden', { status: 403, headers: ADMIN_NOINDEX });
     }
   }

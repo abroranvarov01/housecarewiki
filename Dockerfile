@@ -1,4 +1,6 @@
 FROM node:20-alpine AS base
+# Prisma's query engine on Alpine needs OpenSSL.
+RUN apk add --no-cache openssl
 
 FROM base AS deps
 RUN apk add --no-cache libc6-compat
@@ -24,6 +26,7 @@ RUN addgroup --system --gid 1001 nodejs \
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/next.config.mjs ./next.config.mjs
 COPY --from=builder /app/public ./public
+COPY --from=builder /app/prisma ./prisma
 COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 
@@ -34,4 +37,5 @@ EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
-CMD ["npm", "start"]
+# Apply pending database migrations (prisma/migrations), then start the site.
+CMD ["sh", "-c", "./node_modules/.bin/prisma migrate deploy && npm start"]

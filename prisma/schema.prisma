@@ -489,3 +489,141 @@ model SiteSetting {
   value     Json
   updatedAt DateTime @updatedAt @db.Timestamptz(6)
 }
+
+// ─── Instagram automation and /go click tracking ───────────────────────────────────────────────
+// Scheduled Reels, comment keyword rules, the comment → reply → DM log, and short links that count
+// clicks before redirecting to Amazon. See docs/instagram-automation.md.
+
+model IgCredential {
+  id           String    @id @default("main")
+  accessToken  String
+  // Hash of the IG_ACCESS_TOKEN the row was seeded from: a new token pasted into env replaces this row.
+  envTokenHash String
+  igUserId     String?
+  username     String?
+  expiresAt    DateTime? @db.Timestamptz(6)
+  issuedAt     DateTime  @default(now()) @db.Timestamptz(6)
+  refreshedAt  DateTime? @db.Timestamptz(6)
+  lastError    String?
+  updatedAt    DateTime  @updatedAt @db.Timestamptz(6)
+}
+
+model IgScheduledPost {
+  id          String    @id @default(uuid()) @db.Uuid
+  caption     String
+  videoFile   String
+  coverFile   String?
+  shareToFeed Boolean   @default(true)
+  publishAt   DateTime  @db.Timestamptz(6)
+  // SCHEDULED → PROCESSING (container created) → PUBLISHED; or FAILED, CANCELLED, DRY_RUN (dry-run stops here)
+  status      String    @default("SCHEDULED")
+  containerId String?
+  mediaId     String?
+  permalink   String?
+  attempts    Int       @default(0)
+  lastError   String?
+  publishedAt DateTime? @db.Timestamptz(6)
+  createdAt   DateTime  @default(now()) @db.Timestamptz(6)
+  updatedAt   DateTime  @updatedAt @db.Timestamptz(6)
+  rules       IgRule[]
+
+  @@index([status, publishAt])
+}
+
+model IgRule {
+  id              String           @id @default(uuid()) @db.Uuid
+  // Short code used in DM links (?s=<key>) and in the CLI, e.g. "cat".
+  key             String           @unique
+  keyword         String
+  // word: keyword as a whole word anywhere; exact: the whole comment is the keyword; contains: substring
+  matchMode       String           @default("word")
+  // Null = any post. A rule bound to a scheduled post gets the media ID when that post is published.
+  mediaId         String?
+  scheduledPostId String?          @db.Uuid
+  scheduledPost   IgScheduledPost? @relation(fields: [scheduledPostId], references: [id], onDelete: SetNull)
+  publicReplies   String[]
+  dmText          String
+  // Optional quick-reply button on the first DM. With IG_TWO_STEP_DM=1 the links follow after the user replies.
+  dmButton        String?
+  linkText        String
+  isActive        Boolean          @default(true)
+  createdAt       DateTime         @default(now()) @db.Timestamptz(6)
+  updatedAt       DateTime         @updatedAt @db.Timestamptz(6)
+  comments        IgCommentEvent[]
+
+  @@index([mediaId])
+}
+
+model IgCommentEvent {
+  id               String    @id @default(uuid()) @db.Uuid
+  commentId        String    @unique
+  mediaId          String
+  fromId           String
+  fromUsername     String
+  text             String
+  parentId         String?
+  source           String    // webhook | poll | simulate
+  // PENDING → PROCESSING → REPLIED | SKIPPED | FAILED
+  status           String    @default("PENDING")
+  skipReason       String?
+  ruleId           String?   @db.Uuid
+  rule             IgRule?   @relation(fields: [ruleId], references: [id], onDelete: SetNull)
+  dryRun           Boolean   @default(false)
+  publicReplyText  String?
+  publicReplyId    String?
+  publicReplyAt    DateTime? @db.Timestamptz(6)
+  dmSentText       String?
+  dmMessageId      String?
+  dmSentAt         DateTime? @db.Timestamptz(6)
+  recipientId      String?
+  followUpPending  Boolean   @default(false)
+  followUpSentAt   DateTime? @db.Timestamptz(6)
+  attempts         Int       @default(0)
+  lastError        String?
+  commentCreatedAt DateTime  @default(now()) @db.Timestamptz(6)
+  receivedAt       DateTime  @default(now()) @db.Timestamptz(6)
+  updatedAt        DateTime  @updatedAt @db.Timestamptz(6)
+
+  @@index([status])
+  @@index([fromId, ruleId])
+  @@index([recipientId])
+}
+
+model IgInboundMessage {
+  id         String   @id @default(uuid()) @db.Uuid
+  mid        String   @unique
+  senderId   String
+  text       String?
+  payload    String?
+  // followed_up | ignored | failed
+  outcome    String
+  receivedAt DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model ShortLink {
+  id        String      @id @default(uuid()) @db.Uuid
+  slug      String      @unique
+  label     String
+  // Amazon links store only the ASIN: the partner tag is added from src/lib/site.ts at redirect time.
+  asin      String?
+  url       String?
+  isActive  Boolean     @default(true)
+  createdAt DateTime    @default(now()) @db.Timestamptz(6)
+  clicks    LinkClick[]
+}
+
+model LinkClick {
+  id        String    @id @default(uuid()) @db.Uuid
+  linkId    String    @db.Uuid
+  link      ShortLink @relation(fields: [linkId], references: [id], onDelete: Cascade)
+  source    String?
+  ruleId    String?   @db.Uuid
+  mediaId   String?
+  referrer  String?
+  userAgent String?
+  isBot     Boolean   @default(false)
+  createdAt DateTime  @default(now()) @db.Timestamptz(6)
+
+  @@index([linkId, createdAt])
+  @@index([ruleId])
+}
