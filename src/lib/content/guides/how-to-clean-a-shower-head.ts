@@ -1,0 +1,157 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-shower-head',
+  slug: 'how-to-clean-a-shower-head',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a shower head',
+  subtitle: 'Rub the rubber nozzles, soak only if your maker allows vinegar, clean the screen washer and filter, and dry the finish. What Kohler, Moen and Delta say about vinegar, and the one part you should never remove.',
+  excerpt: 'Rub the nozzles, soak in diluted vinegar only if your care guide allows it, clean the screen washer, rinse and dry.',
+  quickAnswer: 'Start by firmly rubbing the rubber nozzles with your finger while the water runs, which loosens most mineral buildup. If spray is still weak, check your care guide: Delta and Moen allow a 50/50 mix of distilled white vinegar and water, and Delta suggests soaking the head in it for 30 minutes, then rubbing the spray face with a soft cloth or toothbrush. Rinse thoroughly, clean the screen washer and filter at the inlet, and never try to remove the flow control. Avoid abrasive cleaners, bleach and ammonia, and skip vinegar entirely if your manual rules out acids for your finish.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'showers-tubs',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-bathroom.webp',
+  heroImageAlt: 'Sunlit bathroom with a round chrome rain shower head behind a streaked glass shower door, a wooden towel ladder with white towels, and a white vessel sink with a spray bottle and grey cloth on a wooden vanity',
+  safetyWarnings: [
+    'Never use cleaners containing abrasives, ammonia, chlorine bleach or other harsh chemicals on a shower head; Moen, Delta and Kohler all warn they can damage the finish, and Delta notes this can void the warranty.',
+    'Check your care guide before using vinegar. Delta and Moen allow a 50/50 white vinegar solution, but some Kohler care guides for faucets and fittings say never to use cleaners containing acids on the finish.',
+    'Do not try to remove the flow control inside the shower head. Kohler\'s care guide says to clean only the screen washer and filter and to call customer care if that does not help.',
+    'Never mix vinegar or any other acid with chlorine bleach, which releases toxic chlorine gas. Ventilate the bathroom while you clean.',
+    'Turn the water off at the shower before removing the head, and keep the small washer and filter together so they go back in the right order.',
+  ],
+  materialsNeeded: [
+    'Mild liquid dish soap and warm water',
+    'Distilled white vinegar (only if your care guide allows it)',
+    'A container or bowl deep enough to cover the shower head',
+    'Soft cloth and a soft toothbrush or cotton swabs',
+    'Adjustable wrench (to remove a fixed head)',
+    'Thin-bladed screwdriver (to lift out the screen washer)',
+    'Thread sealant tape (for reinstalling, as Kohler\'s instructions call for)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check Your Model and Finish',
+      instruction: 'Find the care and cleaning section of your shower head\'s manual or the maker\'s support page. Chrome, nickel, brass and colored finishes are not all treated the same, and the guide tells you whether a diluted vinegar soak is allowed. For routine cleaning, all three major makers recommend mild soap and warm water, then drying with a soft cloth.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Rub the Rubber Nozzles While the Water Runs',
+      instruction: 'Turn the shower on and firmly rub your finger over each rubber nozzle on the spray face. Kohler and Delta both describe this as the way to clear mineral buildup and debris from rubber or touch-clean nozzles, so try it before taking anything apart.',
+      proTip: 'Make it a habit whenever you notice a stray or weak jet; it is the gentlest fix and needs no cleaner at all.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Remove the Shower Head',
+      instruction: 'Turn the water off. Unscrew the head from the shower arm, using a wrench if it is too tight to turn by hand. Note the gasket and screen that sit inside the connecting nut; they keep the joint watertight and stop debris entering the head.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Soak in Diluted Vinegar (Only If Your Guide Allows It)',
+      instruction: 'If your care guide permits vinegar, fill a container with equal parts distilled white vinegar and water, enough to cover the head, and soak it for 30 minutes, as Delta recommends. Some Kohler models instead say to apply vinegar just to a mesh spray face and leave it overnight. If your guide rules out acids, skip this step and wash with warm soapy water instead.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rub the Spray Face Clean',
+      instruction: 'Gently rub the spray face with a soft cloth or soft toothbrush, and use a cotton swab on mesh or hard-to-reach holes. Repeat the soak and rub until the deposits wipe away. Do not use scouring pads, abrasive sponges or stiff brushes, which can scratch or dull the finish.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Clean the Screen Washer and Filter',
+      instruction: 'If flow is still weak, use a thin-bladed screwdriver to lift out the screen washer and filter at the inlet, rinse them thoroughly, then put the filter back first and the screen washer on top. Do not try to remove the flow control behind them.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Rinse, Reinstall and Test',
+      instruction: 'Rinse the head thoroughly with clean water. Make sure the gasket and screen are seated in the nut, wrap the shower arm threads with thread sealant tape, and screw the head back on. Turn on the water and check the connection for leaks.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Dry the Finish',
+      instruction: 'Dry the outside of the head with a clean, soft cloth, dabbing rather than rubbing. Kohler notes that water left to evaporate on metal forms water deposits, so drying after cleaning helps the finish stay clear.',
+    },
+  ],
+  ifMethodFails: [
+    'If the spray is still uneven after rubbing the nozzles and soaking, repeat the soak and rub; mineral deposits often need more than one round to wipe away.',
+    'If flow stays weak after cleaning the screen washer and filter, contact the manufacturer\'s customer care line rather than removing the flow control yourself.',
+    'If you cannot use vinegar on your finish and buildup will not budge with soap and water, ask the manufacturer which cleaner is approved for that finish before trying anything stronger.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can I clean my shower head with vinegar?',
+      answer: 'Often, yes, but check your care guide first. Delta recommends a 50/50 mix of distilled white vinegar and water with a 30-minute soak, and Moen lists a 50 percent distilled white vinegar solution as an option. Some Kohler faucet and fitting guides say never to use cleaners containing acids on the finish, so follow your own model\'s instructions.',
+    },
+    {
+      question: 'How long should I soak a shower head in vinegar?',
+      answer: 'Delta\'s guide says to soak the head in a 50/50 vinegar and water mix for 30 minutes, then rub the spray face and repeat if needed. One Kohler showerhead guide instead says to apply vinegar to its mesh spray face and leave it overnight. Use the time your own care guide gives.',
+    },
+    {
+      question: 'Why is my shower head losing pressure?',
+      answer: 'Mineral buildup in the nozzles and debris caught in the screen washer and filter are common causes. Rub the nozzles while the water runs, then clean the screen washer and filter at the inlet. Kohler says not to remove the flow control; if cleaning does not help, call the manufacturer.',
+    },
+    {
+      question: 'Can I use CLR or bleach on a shower head?',
+      answer: 'Shower head makers warn against bleach, ammonia, abrasives and harsh chemicals because they can damage the finish, and Delta says this can void the warranty. Check your care guide before using any strong descaler, and never combine bleach with vinegar or another acid.',
+    },
+    {
+      question: 'How do I clean a shower head without removing it?',
+      answer: 'Start by firmly rubbing the rubber nozzles with your finger while the water runs to loosen mineral buildup, then wipe the head with mild soap and warm water and dry it with a soft cloth. A full soak or cleaning the screen washer requires taking the head off.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-showerhead-1',
+      title: 'K-15996 Showerhead Installation and Care Guide',
+      publisher: 'Kohler',
+      url: 'https://techcomm.kohler.com/techcomm/pdf/1170103-2.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean with mild detergent such as dish soap and warm water without abrasive cleaners; remove buildup from rubber nozzles by rubbing them with a finger while water runs; vinegar may be applied to the mesh spray face overnight, then rubbed with a cotton swab and rinsed; remove the head with a wrench to clean the screen washer and filter, and do not attempt to remove the flow control.',
+    },
+    {
+      id: 'src-showerhead-2',
+      title: 'How to Clean a Shower Head',
+      publisher: 'Delta Faucet',
+      url: 'https://www.deltafaucet.com/il/home-improvement-101/how-clean-shower-head',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Soak the shower head in a 50/50 mix of distilled white vinegar and water for 30 minutes, gently rub the spray face with a soft cloth or toothbrush and repeat until deposits wipe away; Touch-Clean spray holes can be cleaned by rubbing with a finger; keep the gasket and screen in the nut when reinstalling; abrasive cleaners, sponges, brushes and bleach-based or industrial cleaners could damage the finish and potentially void the warranty.',
+    },
+    {
+      id: 'src-showerhead-3',
+      title: 'How do I clean my Nebia by Moen showerhead?',
+      publisher: 'Moen',
+      url: 'https://solutions.moen.com/FAQ\'s/FAQ\'s-Nebia_Shower_System/How_do_I_clean_my_Nebia_by_Moen_showerhead%3F',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Use mild soap, rinse with warm water and dry with a clean soft cloth; a 50 percent distilled white vinegar and water solution can also be used; never use cleaners containing abrasives, ammonia, chlorine, bleach or other harsh chemicals, as they may damage the finish.',
+    },
+    {
+      id: 'src-showerhead-4',
+      title: 'Centerset Lavatory Faucets Maintenance Guide',
+      publisher: 'Kohler',
+      url: 'https://resources.kohler.com/onlinecatalog/pdf/116430_5.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean Kohler faucets and fittings with mild soap, rinse with warm water and blot dry with a soft cloth because water left to evaporate on metal forms deposits; never use cleaners containing abrasive cleansers, ammonia, bleach, acids or chemicals that can damage the finish.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Shower Head (Vinegar Rules by Maker)',
+    description: 'How to clean a shower head: rub the nozzles, soak in 50/50 vinegar only if your maker allows it, clean the screen washer and dry. Kohler, Moen and Delta rules.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-shower-head',
+    indexable: true,
+    focusKeyword: 'how to clean a shower head',
+  },
+};
+
+export default article;

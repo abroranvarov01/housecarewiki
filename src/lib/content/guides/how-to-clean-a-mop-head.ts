@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-mop-head',
+  slug: 'how-to-clean-a-mop-head',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a mop head',
+  subtitle: 'Rinse and wring after every use, machine wash per the label, skip bleach and fabric softener on microfiber, and dry it completely before storing. How cotton string heads differ, and the signs a mop head needs replacing.',
+  excerpt: 'Rinse and wring after each use, wash per the label with mild detergent, no softener or bleach on microfiber, and dry fully.',
+  quickAnswer: 'Rinse the mop head in clean water right after mopping and wring out as much water as you can. Every few uses, machine wash it per its care label: microfiber on a warm or cool gentle cycle with mild detergent, washed only with lint-free items, and never with bleach or fabric softener. Cotton string heads vary, so check the label; some go in the machine inside a mesh laundry bag. Air dry the head completely, hung or laid flat, and replace it when it smells after washing, shows mold, or no longer absorbs water.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'machines',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'Sunlit laundry nook with a front-loading washer under a wooden counter, folded green and cream towels, a stained white shirt, a detergent bottle and wicker baskets',
+  safetyWarnings: [
+    'Never use fabric softener on microfiber mop heads. O-Cedar, Libman and Bona all say to avoid it; O-Cedar says it reduces the effectiveness of microfiber.',
+    'Do not use bleach on microfiber or sponge mop heads. Bona warns it damages microfiber, and Libman says it degrades synthetic sponge material.',
+    'Never dry a microfiber mop head on high heat. Manufacturers warn heat can melt or mat the fibers; air dry it or use the lowest dryer setting if the label allows.',
+    'Do not store a damp mop head face-down in a bucket. Trapped moisture lets bacteria multiply, and mold that gets into the fibers cannot be reliably washed out.',
+    'If you disinfect a mop head with a laundry disinfectant, use only one the head\'s care label allows, follow the product label, ventilate, and never mix bleach with ammonia or acidic cleaners.',
+  ],
+  materialsNeeded: [
+    'Bucket or sink with clean water',
+    'Mild laundry detergent (no built-in fabric softener for microfiber)',
+    'Washing machine',
+    'Mesh laundry bag (for string or looped heads whose label calls for one)',
+    'Drying rack, hook or line',
+    'Spare mop head, so you can rotate while one dries',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Rinse and Wring Right After Mopping',
+      instruction: 'As soon as you finish, submerge the mop head in clean water and swirl it to release grime, then wring it out completely, removing as much moisture as possible. This daily rinse keeps dirt from drying into the fibers between machine washes.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Read the Care Label and Identify the Fiber',
+      instruction: 'Check the head\'s tag or packaging. Microfiber heads are generally machine washable. Cotton and cotton-blend string heads vary: some looped-end heads are machine washable in a mesh laundry bag, while others may not be meant for the washer at all. Follow the label for your head.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Remove the Head and Shake Out Debris',
+      instruction: 'Detach the head from the handle if it is removable. Rinse it under warm water to wash away loose dirt, hair and grit so they do not end up in your washing machine.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Machine Wash Microfiber Gently',
+      instruction: 'Wash microfiber heads after every three to five uses with a mild detergent on a gentle cycle. Bona specifies warm water; O-Cedar says up to 86 degrees Fahrenheit, so a cool or warm setting suits both. Wash only with other microfiber or lint-free items, since lint clogs the fibers, and do not add bleach or fabric softener.',
+      proTip: 'Skip detergents with built-in softener; Libman says never to use fabric softener on any of its mop heads.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Wash String or Cotton Heads Per the Label',
+      instruction: 'If the label says the head is machine washable, put it in a mesh laundry bag so the strands do not tangle, and wash with a mild detergent. If the label says not to launder it, rinse it well in clean water and wring it thoroughly instead. Use bleach or a laundry disinfectant only if the label allows it, at the dose on the product label.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Dry It Completely',
+      instruction: 'Hang the head or lay it flat to air dry, away from high heat. Bona allows tumbling on a low setting, but Libman recommends air drying only, so air drying is the safest choice. Make sure it is completely dry before reattaching it to the mop or storing it.',
+      proTip: 'Store the mop head-up or hanging, never face-down in a bucket.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Test It and Replace It When Worn',
+      instruction: 'Check the head monthly: a healthy microfiber head soaks up a drop of water within about one second, while slow absorption or beading water means it is worn out. Replace any head that still smells after washing, has visible mold, or has matted, fraying fibers. Libman estimates about every 2 to 3 months for microfiber and 1 to 2 months for cotton string heads with weekly use.',
+    },
+  ],
+  ifMethodFails: [
+    'If the mop head still smells after a full wash, replace it. Libman says lingering odor after washing means bacteria are embedded deeper than washing can reach.',
+    'If the head has black or gray mold spots, throw it out rather than rewashing. Mold penetrates the fiber structure and washing does not reliably remove it.',
+    'If floors look dull or streaky even with good technique, the head has likely lost absorbency. Wash it without softener and test it; if water still beads, replace it.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you put a mop head in the washing machine?',
+      answer: 'Most microfiber mop heads are machine washable on a gentle cool or warm cycle with mild detergent. Cotton string heads vary: some can be machine washed in a mesh laundry bag, while others may be meant for rinsing only. Check the care label.',
+    },
+    {
+      question: 'Can I use bleach to clean a mop head?',
+      answer: 'Not on microfiber or sponge heads; Bona says bleach damages microfiber and Libman says it degrades sponge. For a cotton head, use bleach only if its care label allows it, follow the bleach label, ventilate, and never mix bleach with ammonia or acids.',
+    },
+    {
+      question: 'Why does my mop smell even after washing?',
+      answer: 'Odor that survives a wash usually means bacteria are embedded in the fibers, often from storing the head damp. Libman recommends replacing a head that smells after washing. Dry future heads completely and store them hanging.',
+    },
+    {
+      question: 'How often should you wash a mop head?',
+      answer: 'Rinse and wring it after every use, and machine wash it every three to five uses, as Libman recommends. O-Cedar also suggests switching to a fresh head when you move to a new room, so you are not spreading germs between rooms.',
+    },
+    {
+      question: 'How often should you replace a mop head?',
+      answer: 'It depends on the material and how often you mop. Libman suggests every 2 to 3 months for microfiber and 1 to 2 months for cotton string heads with weekly use. Bona says its washable microfiber pads can handle up to 500 washes, so let the head\'s condition decide.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-mophead-1',
+      title: 'How Often Should You Replace a Mop Head? (And How to Know When)',
+      publisher: 'Libman',
+      url: 'https://libman.com/blog/how-often-should-you-replace-mop-head-and-how-know-when',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rinse and wring after mopping, wash every three to five uses with mild detergent on a warm cycle, never use fabric softener, never dry on high heat, do not store damp face-down in a bucket, replace heads that smell after washing or show mold, and expect 2 to 3 months for microfiber and 1 to 2 months for cotton string with weekly use.',
+    },
+    {
+      id: 'src-mophead-2',
+      title: 'How to Wash, Clean & Replace O-Cedar Mop Heads',
+      publisher: 'O-Cedar',
+      url: 'https://www.ocedar.com/blog/o-cedar-mop-heads-washing-guide',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rinse the mop head under warm water to remove loose debris, machine wash at temperatures up to 86 degrees F with similar textiles, avoid fabric softener, lay flat to dry, make sure it is completely dry before reattaching it, and switch to a fresh mop head when moving to a new room.',
+    },
+    {
+      id: 'src-mophead-3',
+      title: 'Bona Floor Cleaner FAQs',
+      publisher: 'Bona',
+      url: 'https://www.bona.com/en-us/homeowner/faq',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wash microfiber cleaning pads on a gentle cycle with warm water and mild detergent, do not use fabric softener or bleach because they damage microfiber, do not wash with lint-shedding items, air dry or tumble dry low, and pads can be machine washed up to 500 times.',
+    },
+    {
+      id: 'src-mophead-4',
+      title: '#972 Large Cotton Looped-End Wet Mop Head',
+      publisher: 'Libman',
+      url: 'https://libman.com/products/972-Large-Cotton-Looped-End-Wet-Mop-Head',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'This cotton looped-end wet mop head is machine-washable in a mesh laundry bag.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Mop Head (Microfiber and String)',
+    description: 'How to clean a mop head: rinse and wring after use, machine wash per the label, no bleach or softener on microfiber, dry fully, and know when to replace it.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-mop-head',
+    indexable: true,
+    focusKeyword: 'how to clean a mop head',
+  },
+};
+
+export default article;

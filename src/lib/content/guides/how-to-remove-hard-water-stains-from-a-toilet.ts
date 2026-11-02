@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-hard-water-stains-from-a-toilet',
+  slug: 'how-to-remove-hard-water-stains-from-a-toilet',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove hard water stains from a toilet',
+  subtitle: 'Mineral rings need an acid, not bleach. How to lower the water so the cleaner reaches the ring, which tools are safe on the glaze, how long to leave it, and why the acid cleaner must never meet bleach.',
+  excerpt: 'Empty the bowl, coat the ring with an acidic lime and rust toilet cleaner, scrub with a non-scratch brush, flush.',
+  quickAnswer: 'Hard water rings are mineral and rust deposits, so they need an acidic lime and rust toilet cleaner; bleach is alkaline and will not remove them. Turn off the water supply valve behind the toilet and flush to drain the bowl, apply the acidic cleaner to the dry ring, scrub with a toilet brush, wait only the label time (5 minutes for Clorox\'s lime and rust cleaner) and turn the water back on to flush. Use non-scratch tools, rinse well, and never use the acid cleaner in the same bowl as bleach or another cleaner.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'toilets',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-bathroom.webp',
+  heroImageAlt: 'Hand wiping a chrome bathroom faucet covered in water droplets and mineral spots with a blue microfiber cloth, above a grey granite-look countertop',
+  safetyWarnings: [
+    'Never mix an acidic toilet cleaner with bleach. Poison Control warns that an acid toilet bowl cleaner mixed with bleach forms irritating chlorine fumes that can cause serious breathing problems, and Clorox and CLR both say not to combine their acidic products with bleach. Flush the bowl clear of any bleach product before you start.',
+    'Wear protective gloves and safety glasses, as Clorox directs for its acidic stain removers, and ventilate the bathroom by opening a window or running the fan.',
+    'Do not leave acidic cleaners on the bowl longer than the label says. TOTO warns that chemical cleaners left sitting on ceramic for extended periods can damage fittings, and CLR says never to leave its Calcium, Lime and Rust Remover on an area for more than two minutes.',
+    'Skip steel wool, metal scrapers and harsh abrasive powders on the bowl. Toilet makers recommend non-abrasive cleaners for ceramic, and none of the manufacturer pages we checked approve pumice stones, so use one only if your toilet\'s own manual allows it.',
+    'If someone swallows a toilet cleaner or has trouble breathing after exposure, call Poison Control at 1-800-222-1222, available 24 hours a day.',
+  ],
+  materialsNeeded: [
+    'Acidic lime and rust or hard-water toilet bowl cleaner (check that the label says it is acidic or for lime scale)',
+    'Toilet brush with nylon bristles, ideally with an angled head',
+    'Rubber gloves',
+    'Safety glasses',
+    'Optional: CLR Calcium, Lime and Rust Remover, diluted 1 to 1 with warm water, only on a plain white glazed bowl',
+    'Optional for grey metal marks only: a ceramic polishing pad or mild abrasive cleaner, as TOTO suggests',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Confirm It Is a Mineral Ring and Pick One Cleaner',
+      instruction: 'A chalky white, brown or orange ring at the waterline that bleach does not shift is lime scale, mineral or rust buildup. Choose a single acidic lime and rust toilet cleaner and read its label for the contact time. If anything containing bleach has been in the bowl recently, flush first so nothing is left to mix.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Glove Up and Ventilate',
+      instruction: 'Put on rubber gloves and safety glasses, open a window or turn on the exhaust fan, and keep children and pets out of the bathroom while you work.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Lower the Water Below the Ring',
+      instruction: 'Turn off the water supply valve behind the toilet, then flush to drain as much water from the bowl as possible. With the ring exposed and dry, the cleaner stays concentrated on the stain instead of being diluted by the water in the bowl.',
+      proTip: 'For a light ring you can skip this step: flush, then squeeze the cleaner under and around the rim so it runs down over the waterline.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Coat the Ring with the Acidic Cleaner',
+      instruction: 'Aim the nozzle under and around the rim and onto the ring itself so the cleaner coats the whole stained band. If you use CLR instead, mix equal parts CLR and warm water, apply it only to a standard white glazed bowl and rinse within two minutes; CLR says not to use it on coated or metallic glazed surfaces and that it may etch older fixtures.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Scrub with a Non-Scratch Brush',
+      instruction: 'Scrub the ring firmly with the toilet brush, working along the waterline and up under the rim. Stick to a nylon toilet brush rather than metal or harsh abrasive tools, which can scratch the glaze and leave a rough patch that stains faster.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wait the Label Time, Then Flush',
+      instruction: 'Leave the cleaner on only for the time on its label, for example 5 minutes for Clorox Toilet Bowl Cleaner with Lime and Rust Destroyer, and no longer. Turn the water supply back on and flush to rinse the bowl thoroughly.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Repeat Instead of Escalating',
+      instruction: 'If a faint ring remains, repeat the treatment once more on the dry ring rather than reaching for a stronger chemical or a scraper. Wash your hands when you finish and store the acidic cleaner away from bleach products.',
+      proTip: 'In a hard water area, scrubbing the waterline during every routine bowl clean keeps a new ring from building up thick.',
+    },
+  ],
+  ifMethodFails: [
+    'If grey or black streaks remain after the ring is gone, they may be metal marks rather than minerals. TOTO says these can be gently rubbed off with a ceramic polishing pad or a mild commercial abrasive cleaner; check your own toilet maker\'s care guide first.',
+    'If the bowl surface has turned rough from heavy buildup, TOTO notes that vinegar or CLR mineral remover may be used, strictly as directed on the product packaging, followed by a thorough rinse.',
+    'If the ring returns within days, the water supply is likely very hard. Treat the bowl more often at the waterline, and consider asking a water treatment specialist about softening the supply.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Why won\'t bleach remove the ring in my toilet?',
+      answer: 'Clorox explains that its regular bleach is alkaline, while hard water stains, lime scale and rust need an acidic cleaner. Use an acidic lime and rust toilet bowl cleaner instead, and never combine it with bleach in the same bowl.',
+    },
+    {
+      question: 'Can I use a pumice stone on a toilet ring?',
+      answer: 'Many people do, but none of the toilet manufacturer care pages we checked approve pumice, and TOTO recommends non-abrasive cleaners for ceramic bowls. Try an acidic cleaner on a drained, dry ring first, and use pumice only if your toilet\'s manual explicitly allows it.',
+    },
+    {
+      question: 'Is CLR safe to use in a toilet bowl?',
+      answer: 'TOTO lists CLR mineral remover as an option for heavy buildup, used only as directed on the packaging. CLR says to dilute its Calcium, Lime and Rust Remover with an equal amount of warm water, leave it on no longer than two minutes, avoid coated or metallic glazed surfaces, and never mix it with bleach or other cleaners.',
+    },
+    {
+      question: 'How do I get the water out of the toilet bowl to clean a ring?',
+      answer: 'Turn off the water supply valve behind the toilet, then flush. Most of the water drains out of the bowl, so you can apply cleaner directly to the dry ring. Turn the valve back on when you are ready to rinse.',
+    },
+    {
+      question: 'What happens if you mix toilet bowl cleaner and bleach?',
+      answer: 'Poison Control warns that mixing an acid toilet bowl cleaner with bleach forms irritating chlorine fumes that can cause serious breathing problems. Leave the room, get fresh air and call Poison Control at 1-800-222-1222 if anyone has symptoms.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-toiletring-1',
+      title: 'How to Remove Hard Water Stains from Toilet',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/does-bleach-remove-hard-water-stains/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Regular bleach is alkaline and will not remove hard water stains, which need an acidic cleaner; flush, apply the lime and rust cleaner under the rim, scrub, wait 5 minutes and flush; for tough stains turn off the water and flush to drain the bowl first; wear gloves and safety glasses and never mix the cleaner with bleach.',
+    },
+    {
+      id: 'src-toiletring-2',
+      title: 'Product FAQ',
+      publisher: 'TOTO USA',
+      url: 'https://www.totousa.com/product-faq',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'TOTO recommends non-corrosive, non-abrasive gel cleaners, dish soap or cleaning vinegar for ceramic bowls, warns not to leave chemical cleaners on ceramic for extended periods, says vinegar or CLR may be used for heavy buildup as directed, and says metal marks can be rubbed off with a ceramic polishing pad or mild abrasive cleaner.',
+    },
+    {
+      id: 'src-toiletring-3',
+      title: 'CLR Calcium, Lime & Rust Remover FAQs',
+      publisher: 'CLR Brands',
+      url: 'https://www.clrbrands.com/how-to/faqs/clr-calcium-lime-rust-remover',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Mix equal amounts of Calcium, Lime and Rust Remover and warm water in a well-ventilated area, never leave it on a surface longer than two minutes, avoid painted, coated, sealed or metallic glazed surfaces, note it may etch older sinks, tubs and tiles, and never mix it with other household cleaners or bleach.',
+    },
+    {
+      id: 'src-toiletring-4',
+      title: 'Spring Cleaning',
+      publisher: 'Poison Control (National Capital Poison Center)',
+      url: 'https://www.poison.org/articles/spring-cleaning',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Toilet bowl cleaners are among strongly acidic cleaners that can injure skin, eyes and lungs; mixing an acid toilet bowl cleaner with bleach forms irritating chlorine fumes that might cause serious breathing problems; ventilate the work area and call 1-800-222-1222 for help.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Hard Water Stains From a Toilet',
+    description: 'Remove a hard water ring from a toilet: drain the bowl, apply an acidic lime cleaner, scrub with a non-scratch brush and flush. Never use it with bleach.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-hard-water-stains-from-a-toilet',
+    indexable: true,
+    focusKeyword: 'how to remove hard water stains from a toilet',
+  },
+};
+
+export default article;

@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-an-acrylic-bathtub',
+  slug: 'how-to-clean-an-acrylic-bathtub',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean an acrylic bathtub',
+  subtitle: 'Mild soap or a cleaner labeled safe for acrylic on a soft cloth, vinegar for stubborn marks, a thorough rinse and a wipe dry. Plus the solvents, abrasives and drain cleaners that dull or crack acrylic.',
+  excerpt: 'Wash with mild soap or an acrylic-safe cleaner on a soft cloth, rinse thoroughly, wipe dry, and keep acetone and abrasives away.',
+  quickAnswer: 'Wash an acrylic bathtub with a soft cloth or sponge and a mild, non-abrasive cleaner: soap and water, a cream cleanser, or any product labeled safe for acrylic. Rinse thoroughly, then wipe the tub dry to stop soap scum building up. For stubborn marks, MAAX recommends trying pure white vinegar first. Never use acetone or nail polish remover, paint removers, abrasive powders, scouring pads or metal brushes, because they can scratch, dull or crack the acrylic.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'showers-tubs',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/bathroom-hero.webp',
+  heroImageAlt: 'Wet white undermount bathroom sink in a speckled stone-look vanity top with a brushed-nickel faucet, a clear spray bottle, a blue-grey cloth, a toothbrush holder and a potted plant in front of a wood-framed mirror',
+  safetyWarnings: [
+    'Never use acetone or nail polish remover on acrylic. Bath Concepts warns they can dull the surface, cause chemical cracks and void the warranty. HYTEC also warns that paint removers and strippers contain solvents that can permanently damage the surface.',
+    'Do not use abrasive cleansers, scouring pads, scrapers or metal brushes. MAAX warns against anything that could scratch or dull acrylic, and Bath Concepts says abrasives dull the gloss over time.',
+    'Keep drain cleaner off the tub surface. Bath Concepts recommends a liquid drain cleaner poured through a funnel directly into the drain, used sparingly so it does not boil up and attack the acrylic.',
+    'Brands disagree on some everyday products: MAAX allows dishwashing soap, while Bath Concepts lists Dawn dish soap and several household cleaners among products not to use on its acrylic. Follow your own tub\'s care sheet and test any new product on a hidden spot first.',
+    'Never mix bleach with vinegar, other acids or ammonia; the fumes are toxic. Ventilate the bathroom whenever you use chemical cleaners and rinse between products.',
+  ],
+  materialsNeeded: [
+    'Soft cloths or a soft sponge',
+    'Warm water',
+    'Mild soap, a cream cleanser, or a cleaner labeled safe for acrylic',
+    'Baking soda',
+    'White vinegar',
+    'Dry towel or microfiber cloth for wiping down',
+    'Optional for dull spots: white automotive polishing compound and white automotive paste wax, or your manufacturer\'s acrylic repair kit',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check Your Tub\'s Care Sheet',
+      instruction: 'Find the care sheet that came with your tub or look up the brand\'s care page. Acrylic makers do not all approve the same cleaners, and using a banned product can void the warranty. Before using any cleaner that is not on your manufacturer\'s list, test it on a small hidden area such as a corner of the tub skirt.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Wash with a Mild Cleaner and a Soft Cloth',
+      instruction: 'Wet the tub, then wash it with a soft cloth or sponge and a mild, non-abrasive cleaner: soap and water, a non-abrasive spray, a cream-based cleanser, or any product labeled safe for acrylic. Work around the tub from top to bottom with light pressure, and follow the cleaner\'s label.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Lift Soap Scum and Mildew with Baking Soda',
+      instruction: 'For soap deposits or mildew spots, mix baking soda with cool water into a paste and spread it over the area. Leave it for a few minutes, then rinse it off with warm water and a soft sponge.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Treat Stubborn Stains and Hard Water with Vinegar',
+      instruction: 'For marks that mild cleaner will not lift, MAAX recommends trying pure white vinegar first. Apply it with a soft cloth, then rinse well. White vinegar also softens hard water scale and mineral deposits.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rinse Thoroughly',
+      instruction: 'Rinse every surface with clean water until no cleaner, paste or vinegar remains; Bath Concepts asks owners to rinse thoroughly after every cleaning. Pay extra attention to corners, the overflow and around the drain, where residue collects.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wipe the Tub Dry After Every Use',
+      instruction: 'Wipe the acrylic dry with a soft towel or cloth after each bath or shower. Kohler recommends drying after every use to prevent soap and scum building up.',
+      proTip: 'Bath oils, salts and bubble baths can damage some acrylic finishes. MAAX advises using them with caution and testing on a small area first.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Buff Out Dull Spots and Light Scratches',
+      instruction: 'For light scratches and dull areas, HYTEC recommends rubbing firmly with white automotive polishing compound on a clean rag, wiping off the residue, and finishing with white automotive paste wax, but never on areas where you stand. MAAX recommends repairing scratches and nicks promptly with its own acrylic repair kit, so use your brand\'s kit if it sells one.',
+    },
+  ],
+  ifMethodFails: [
+    'If a stain survives vinegar, MAAX suggests 99% alcohol as the next step for its acrylic tubs. Kohler\'s care page lists alcohol among products to avoid, so use it only if your own manufacturer allows it, and test a hidden spot first.',
+    'If paint has splashed on the tub, HYTEC allows mineral spirits to remove it, followed by a water wash. Ventilate well and never use paint remover, stripper or acetone.',
+    'Deep scratches, gouges, chips and cracks are damage, not dirt. Contact the manufacturer or a bathtub repair professional rather than sanding or scouring the surface yourself.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What should you not use on an acrylic bathtub?',
+      answer: 'Skip acetone and nail polish remover, paint removers and strippers, abrasive powders, scouring pads, scrapers and metal brushes. Manufacturers warn they can scratch, dull or crack acrylic and void the warranty. Also check your care sheet for brand-specific bans, which can include ammonia, aerosols and some common household cleaners.',
+    },
+    {
+      question: 'Can you use vinegar on an acrylic tub?',
+      answer: 'MAAX recommends pure white vinegar as the first thing to try on stubborn stains, and HYTEC suggests it for hard water scale. Kohler\'s general care page lists acids among things to avoid, so check your own tub\'s instructions. Always rinse vinegar off fully and never mix it with bleach.',
+    },
+    {
+      question: 'Can you use bleach on an acrylic bathtub?',
+      answer: 'Manufacturers disagree. Bath Concepts allows half a cup of bleach per gallon of water for disinfecting its acrylic, while Kohler lists bleach among products to avoid. Follow your own care sheet, ventilate, rinse thoroughly, and never combine bleach with vinegar, acids or ammonia.',
+    },
+    {
+      question: 'Is Dawn dish soap safe for acrylic tubs?',
+      answer: 'It depends on the brand. MAAX lists dishwashing soap as an approved cleaner for its acrylic tubs, but Bath Concepts names Dawn among products not to use on its acrylic. Check your tub\'s care sheet; if it is silent, test on a hidden spot and rinse thoroughly.',
+    },
+    {
+      question: 'How do you get scratches out of an acrylic tub?',
+      answer: 'For light scratches and dull spots, HYTEC recommends white automotive polishing compound followed by white automotive paste wax, kept off areas you stand on. MAAX recommends its own acrylic repair kit. Deep scratches, gouges and chips need a professional repair.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-acrylic-1',
+      title: 'Product Maintenance',
+      publisher: 'MAAX',
+      url: 'https://maax.com/services/product-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean acrylic bathtubs and showers regularly with a non-abrasive spray, cream-based cleanser or dishwashing soap, or any product labeled safe for acrylic; for stubborn stains try pure vinegar first, then 99% alcohol; never use abrasive cleansers, scrapers, metal brushes or anything that could scratch or dull the surface; repair scratches and nicks promptly with MAAX acrylic repair kits; use bath oils, salts and bubble baths with caution.',
+    },
+    {
+      id: 'src-acrylic-2',
+      title: 'Care and Maintenance Instructions',
+      publisher: 'Bath Planet / Bath Concepts',
+      url: 'https://www.bathplanet.com/pdf/BCI%20Updated%20Care-Maintenance%20Instructions.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Do not use acetone, fingernail polish remover, ammonia, aerosols, abrasive cleansers, scouring pads or certain named household cleaners including Dawn dish soap on its acrylic, as they can dull the surface, cause chemical cracks and void the warranty; rinse thoroughly, test new products on a hidden spot such as the skirt corner, allows half a cup of bleach per gallon for disinfecting, and keep drain cleaner off the acrylic.',
+    },
+    {
+      id: 'src-acrylic-3',
+      title: 'Care and Cleaning',
+      publisher: 'HYTEC (Kohler Co.)',
+      url: 'https://hytec.ca/care-and-cleaning',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For HYTEC gelcoat or acrylic bathing products, sponge with warm water and a non-abrasive cleanser, use a baking soda and cool water paste for mold, mildew and soap deposits and white vinegar for hard water scale, never use paint remover or stripper because their solvents can permanently damage the surface, and restore scratches and dull areas with white automotive polishing compound and white automotive paste wax, not on areas where you walk or stand.',
+    },
+    {
+      id: 'src-acrylic-4',
+      title: 'Cleaning and Caring for Your Products',
+      publisher: 'Kohler New Zealand',
+      url: 'https://kohler.co.nz/cleaning-and-caring-for-your-products/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean acrylic surfaces with non-abrasive soap and water and wipe the surface dry after each use to prevent soap and scum buildup; across its products, avoid abrasives, alcohol, solvents, bleach, citrus, harsh chemicals, ammonia, peroxides, and acid or alkaline cleaners, and read cleaner instructions before use.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean an Acrylic Bathtub Without Damage',
+    description: 'How to clean an acrylic bathtub the way manufacturers advise: mild soap or acrylic-safe cleaner, vinegar for stains, rinse and dry, and never acetone.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-an-acrylic-bathtub',
+    indexable: true,
+    focusKeyword: 'how to clean an acrylic bathtub',
+  },
+};
+
+export default article;

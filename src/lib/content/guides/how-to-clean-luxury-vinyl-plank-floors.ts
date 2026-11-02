@@ -1,0 +1,145 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-luxury-vinyl-plank-floors',
+  slug: 'how-to-clean-luxury-vinyl-plank-floors',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean luxury vinyl plank floors',
+  subtitle: 'Sweep or vacuum without a beater bar, then damp-mop with a pH-neutral cleaner your flooring brand approves. The steam mops, vinegar, wax, polishes and rubber-backed mats that LVP makers warn against.',
+  excerpt: 'Dry soil off first, damp-mop with a neutral pH cleaner, and skip steam, vinegar, wax, polish and rubber-backed mats.',
+  quickAnswer: 'Sweep, dust-mop or vacuum first, using a vacuum with the rotating beater bar turned off or a hard-floor head. Then damp-mop with warm water and a non-abrasive, pH-neutral floor cleaner, ideally the one your flooring manufacturer recommends. Avoid steam mops unless your manufacturer approves them, and skip vinegar, ammonia, detergents, oil soaps, wax, polishes and abrasive cleaners. Use entrance mats without rubber or latex backing, which can discolor vinyl.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'hardwood-laminate',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-floor-carpet.webp',
+  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  safetyWarnings: [
+    'Do not use a steam mop on luxury vinyl unless your flooring manufacturer\'s guidelines specifically approve it; COREtec advises against steam mops on its LVP.',
+    'Avoid vinegar, ammonia-based products, abrasive cleaners and harsh chemicals. Shaw and COREtec both warn against vinegar on their vinyl floors.',
+    'Do not use oil soaps, wax, detergents, polishes or power scrubbers; Mohawk says these should not be used to clean its vinyl flooring, and they can leave a dull residue.',
+    'Never use a vacuum with a rotating beater bar or power rotary brush head on vinyl. Turn the brush roll off or use a hard-floor attachment.',
+    'If you use rubbing alcohol on a stubborn spot, ventilate the room, keep it away from flames, and use only a small amount on a cloth, never poured on the floor.',
+  ],
+  materialsNeeded: [
+    'Soft broom or dust mop (free of fabric softener)',
+    'Vacuum with the beater bar turned off or a hard-floor head',
+    'Mop with a microfiber or terry cloth head',
+    'Warm water',
+    'Non-abrasive, pH-neutral floor cleaner approved by your flooring manufacturer',
+    'Clean white cloths for spills and spot cleaning',
+    'Isopropyl (rubbing) alcohol, for stubborn spots only',
+    'Entrance mats with non-rubber, non-latex, non-staining backing',
+    'Felt or non-staining floor protectors for furniture legs',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check Your Floor\'s Care Guide',
+      instruction: 'Look up the care and maintenance guide for your specific flooring brand and product line. Luxury vinyl warranties often depend on following it, and it names the cleaner the manufacturer recommends and any tools or products it rules out.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Sweep, Dust-Mop or Vacuum First',
+      instruction: 'Remove loose dirt and grit with a soft broom, a dust mop that has not been treated with fabric softener, or a vacuum with the rotating beater bar turned off. Always do this before any wet cleaning, so you are not dragging grit across the wear layer with a damp mop.',
+      proTip: 'If your vacuum cannot switch off its brush roll, use a hard-floor or bare-floor attachment instead.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Mix a Neutral pH Cleaner',
+      instruction: 'Use a non-abrasive, pH-neutral floor cleaner, preferably the one your flooring manufacturer recommends, diluted in warm water exactly as the label directs. Neutral means neither acidic nor alkaline, which rules out vinegar and ammonia.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Damp-Mop in Sections',
+      instruction: 'Moisten a microfiber or terry mop with the cleaning solution and wring it out well so it is damp rather than dripping. Mop the floor in sections, rinsing and wringing the mop as it gets dirty. A damp mop is enough for routine cleaning on most luxury vinyl.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rinse and Dry if Needed',
+      instruction: 'If the cleaner\'s label calls for rinsing, go over the floor with a mop dampened in clean water. Shaw suggests speeding drying with a fan or air mover after a rinse, so water does not sit on the floor or in the seams.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Handle Spills and Stubborn Spots',
+      instruction: 'Blot wet spills promptly with a clean white cloth, wipe with a damp cloth, then blot dry. For a dried spot, gently work a damp cloth or your manufacturer-approved cleaner over it. If water and cleaner fail, both Shaw and COREtec allow dampening a clean white cloth with rubbing alcohol, gently working the spot, then wiping with a damp cloth and blotting dry.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Protect the Floor Between Cleanings',
+      instruction: 'Put walk-off mats at every entrance to catch soil and moisture, choosing mats without rubber or latex backing and marked non-staining, since rubber backings can discolor vinyl. Fit felt or non-staining protectors, at least one inch across, under chair and furniture legs, and limit long stretches of direct sunlight.',
+    },
+  ],
+  ifMethodFails: [
+    'If the floor looks dull or filmy after mopping, residue from detergent, soap or too much cleaner is the usual cause. Mop again with a well-wrung mop and warm water only, then switch to a pH-neutral cleaner used at the label dilution.',
+    'If a spot will not lift with water, a neutral cleaner or a small amount of rubbing alcohol on a cloth, stop. Do not escalate to abrasive pads or harsh chemicals; contact your flooring manufacturer for the product they recommend for that stain.',
+    'Yellow or brown patches that match where a rug or mat sat are usually discoloration from a rubber or latex backing, not dirt. Replace the mat with a non-staining, non-rubber-backed one and ask the manufacturer whether the mark can be treated.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What is the best thing to clean luxury vinyl plank floors with?',
+      answer: 'A non-abrasive, pH-neutral floor cleaner diluted in warm water on a damp mop, ideally the cleaner your flooring manufacturer recommends. Sweep or vacuum first, and avoid detergents, oil soaps, wax and polishes, which can leave residue.',
+    },
+    {
+      question: 'Can you use vinegar on luxury vinyl plank floors?',
+      answer: 'Manufacturers say no. Shaw lists vinegar-based products among the things to avoid on its vinyl floors, and COREtec notes that because vinegar is slightly acidic it can harm LVP. Use a pH-neutral cleaner instead.',
+    },
+    {
+      question: 'Can you use a steam mop on vinyl plank flooring?',
+      answer: 'Generally not. COREtec advises against steam mops on luxury vinyl unless the manufacturer\'s guidelines approve them. Check your own floor\'s care guide and warranty before using steam.',
+    },
+    {
+      question: 'Can I use a mop-and-shine product on luxury vinyl plank?',
+      answer: 'Avoid any product that adds shine. Mohawk says not to use wax or polishes on its vinyl flooring, and COREtec warns against floor polish and products containing wax. A plain pH-neutral cleaner on a damp mop is the safer choice; check your manufacturer\'s guide before using any branded spray mop solution.',
+    },
+    {
+      question: 'Why is my vinyl floor turning yellow under the rug?',
+      answer: 'Rubber and latex mat or rug backings can discolor luxury vinyl. Shaw and COREtec both recommend entrance mats without rubber or latex backing, and Mohawk says mats should have a non-rubberized backing marked non-staining.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-lvp-1',
+      title: 'Vinyl Floor Care and Maintenance',
+      publisher: 'Shaw Floors',
+      url: 'https://shawfloors.com/flooring/how-to/vinyl/care-maintenance/vinyl-flooring-care-and-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Sweep or dust-mop to remove grit and vacuum or dust before wet cleaning; use a Shaw-recommended neutral pH cleaner; speed drying with a fan or air mover after rinsing; use rubbing alcohol only for spots water and cleaner cannot remove; avoid abrasive cleaners, ammonia-based products, vinegar-based products and harsh chemicals; use walk-off mats without latex or rubber backings to reduce discoloration; use felt floor protectors; avoid extended direct sunlight.',
+    },
+    {
+      id: 'src-lvp-2',
+      title: 'Floor Care and Maintenance: Vinyl',
+      publisher: 'Mohawk',
+      url: 'https://www.mohawkbuild.com/tools-and-resources/care-and-maintenance/vinyl',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Vacuums with a beater bar or power rotary brush head should never be used on vinyl; for a deeper clean, a mop moistened with warm water and a non-abrasive, neutral pH cleaner will suffice; do not use oil soaps, wax, detergents, abrasive cleaners, polishes or power scrubbers; mats should have a non-rubberized backing marked non-staining; floor protectors should be at least one inch in diameter.',
+    },
+    {
+      id: 'src-lvp-3',
+      title: 'Your Guide to Cleaning LVP Flooring',
+      publisher: 'COREtec Floors',
+      url: 'https://coretecfloors.com/en-us/blog/your-guide-to-cleaning-lvp-flooring',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Use a broom, a dust mop free of fabric softeners or a vacuum without rotating beater bars, then damp-mop with a pH-neutral cleaner; avoid products containing detergent, vinegar, wax, citrus or floor polish; do not use a steam mop unless the manufacturer approves it; avoid mats with rubber or latex backing, which can discolor LVP; blot spills promptly and use isopropyl alcohol on a white cloth for stubborn spots.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean Luxury Vinyl Plank Floors (LVP)',
+    description: 'How to clean luxury vinyl plank floors: vacuum with the beater bar off, damp-mop with a pH-neutral cleaner, and skip steam, vinegar, wax and rubber-backed mats.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-luxury-vinyl-plank-floors',
+    indexable: true,
+    focusKeyword: 'how to clean luxury vinyl plank floors',
+  },
+};
+
+export default article;

@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-mold-from-a-shower-curtain',
+  slug: 'how-to-remove-mold-from-a-shower-curtain',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove mold from a shower curtain',
+  subtitle: 'Most fabric curtains and plastic liners can go in the washing machine with detergent and bleach, if the care label allows it. How to pre-soak heavy spots, when to use color-safe bleach instead, why vinyl never goes in the dryer, and when a curtain is not worth saving.',
+  excerpt: 'Check the care label, pre-soak heavy mold in diluted bleach, machine wash hot with detergent and bleach, then hang to dry.',
+  quickAnswer: 'Check the care label, take the curtain or liner off its rings, and test bleach on a hidden corner. Pre-soak heavily moldy areas in one-fourth cup of liquid household bleach per gallon of water, then machine wash on hot with a little detergent and bleach at the amount on the bleach label; Clorox notes polyester and nylon are bleach-safe. If the fabric is not bleach-safe, use a color-safe or oxygen bleach product following its label instead. Hang the curtain back on the rod to air dry, and never put a vinyl liner in the dryer.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'mold-mildew',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  safetyWarnings: [
+    'Never mix chlorine bleach with ammonia or with cleaners that contain ammonia; the EPA warns this produces toxic fumes. Do not combine bleach with vinegar or other acids either, and do not add a second stain remover to a bleach wash.',
+    'Wear gloves when handling moldy items and bleach solutions. The EPA also recommends an N-95 respirator and goggles without ventilation holes when cleaning mold.',
+    'Work in a well-ventilated room: open a window or run the bathroom exhaust fan while soaking or spraying.',
+    'Do not use a bleach-based bathroom mold spray on the fabric curtain itself. OxiClean, for example, warns that its OxiClean + Bleach Mold and Mildew Bathroom Stain Remover is not for clothes or fabric.',
+    'Test chlorine bleach on an inconspicuous corner first; not every curtain fabric or color is bleach-safe.',
+  ],
+  materialsNeeded: [
+    'The curtain\'s care label',
+    'Liquid household chlorine bleach (for bleach-safe fabrics and liners)',
+    'Color-safe or oxygen bleach product (for fabrics that are not bleach-safe)',
+    'Laundry detergent',
+    'A bucket or tub for pre-soaking',
+    'Rubber gloves',
+    'Washing machine',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Read the Care Label and Remove the Rings',
+      instruction: 'Take the curtain and liner down and check the care label to confirm each is machine washable and whether chlorine bleach is allowed. Remove the rings or hooks before washing.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Test Bleach on a Hidden Corner',
+      instruction: 'Before using chlorine bleach, test an inconspicuous corner of the curtain to make sure it is bleach-safe. Clorox notes that polyester and nylon are both safe for bleach. If the test spot fades or discolors, skip chlorine bleach and use a color-safe bleach product instead, following its label.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Pre-Soak Heavy Mold Spots',
+      instruction: 'For heavily moldy areas on a bleach-safe curtain, pre-soak them in a solution of one-fourth cup of liquid household bleach to one gallon of water, as the University of Kentucky Cooperative Extension recommends. Wear gloves and keep the room ventilated. On a curtain that is not bleach-safe, soak in a color-safe bleach solution made according to its label.',
+      proTip: 'On a vinyl liner, the same extension guidance says heavily mildewed areas can be scrubbed with liquid bleach or a mildew remover before washing. Rinse it off thoroughly.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Machine Wash Hot with Detergent and Bleach',
+      instruction: 'Put the curtain or liner in the washer with a little detergent. For a bleach-safe curtain, Clorox says to add 1/3 cup of Clorox Disinfecting Bleach to the dispenser of a high-efficiency washer, or 1/2 cup in a standard machine, and wash on hot. For colored or non-bleach-safe fabrics, add an oxygen bleach product such as OxiClean liquid with the detergent at the dose on its label instead.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Hang the Curtain to Air Dry',
+      instruction: 'Hang the curtain and liner back on the shower rod to dry. Never put a vinyl liner in the dryer; let it drip dry on the rod, and any creases will relax after a few hot showers. Spread it fully open so it dries completely.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wipe a Non-Washable Liner Instead',
+      instruction: 'If the label says the liner is not machine washable, clean it in place with a bathroom mold and mildew remover labeled for vinyl curtains. Spray it on the moldy areas, leave it for the time on the label, wipe, and rinse thoroughly. Use it only in a well-ventilated room.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Wash It Regularly from Now On',
+      instruction: 'Curtains are especially prone to mildew, so launder them often. OxiClean suggests a deeper wash at least every three months, and more often for a liner that stays damp. Leave the curtain spread open after showers and run the exhaust fan so it dries between uses.',
+    },
+  ],
+  ifMethodFails: [
+    'If dark spots remain after one wash, repeat the pre-soak and wash cycle once more rather than scrubbing hard, which can tear thin liners.',
+    'If mold stains keep coming back or the curtain still smells musty after washing, replace it. The EPA notes that absorbent materials may have to be thrown away once they become moldy, and plastic liners are inexpensive to replace.',
+    'If mold is also growing on the wall, ceiling or caulk behind the curtain, the bathroom has a moisture problem. Clean those surfaces separately and improve ventilation, or the new curtain will mold too.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you put a moldy shower curtain in the washing machine?',
+      answer: 'Yes, if the care label says it is machine washable. Remove the rings, wash on hot with a little detergent and bleach if the fabric is bleach-safe, and hang it on the rod to dry. Clorox says this works for plastic liners too.',
+    },
+    {
+      question: 'Can I use bleach on a fabric shower curtain?',
+      answer: 'Only if the care label allows it and a hidden-corner test shows no fading. Clorox notes polyester and nylon are bleach-safe. For colored or delicate fabrics, use a color-safe or oxygen bleach product following its label.',
+    },
+    {
+      question: 'Can you put a plastic shower liner in the dryer?',
+      answer: 'No. The University of Kentucky Cooperative Extension advises against putting a vinyl curtain in the dryer. Hang it on the shower rod to drip dry; creases relax after a few hot showers.',
+    },
+    {
+      question: 'Should I just throw away a moldy shower curtain?',
+      answer: 'A curtain that comes clean in the wash can be reused. If mold stains or a musty smell remain after a second wash, replace it; the EPA notes that moldy absorbent materials may need to be thrown away.',
+    },
+    {
+      question: 'How often should you wash a shower curtain?',
+      answer: 'Often, because curtains mildew easily. OxiClean recommends a deep wash at least every three months, and liners that stay damp benefit from more frequent washing.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-curtainmold-1',
+      title: 'Preventing Mold and Mildew in the Kitchen and Bath',
+      publisher: 'University of Kentucky Cooperative Extension Service',
+      url: 'https://exclusives.mgcafe.uky.edu/sites/exclusives.ca.uky.edu/files/fcs011802.doc',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Shower curtains are susceptible to mildew and should be laundered often following the care label; most can be laundered with detergent and liquid household bleach, pre-soaking heavy mildew in one-fourth cup of bleach per gallon of water after testing a hidden corner, or with color-safe bleach if not bleach-safe; vinyl curtains should not go in the dryer but drip dry on the rod; use mildew removers in a well-ventilated area.',
+    },
+    {
+      id: 'src-curtainmold-2',
+      title: 'How to Clean Shower Curtains and Liners',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-clean-shower-curtains-liners-with-bleach',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Plastic shower curtains and liners can be machine washed on hot with a little detergent and 1/3 cup of Clorox Disinfecting Bleach in the dispenser (1/2 cup in a standard washer), then hung on the rod to air dry; polyester and nylon are safe for bleach.',
+    },
+    {
+      id: 'src-curtainmold-3',
+      title: 'How to Clean Shower Curtains',
+      publisher: 'OxiClean',
+      url: 'https://www.oxiclean.com/en/stain-solutions/how-to-clean-shower-curtains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Confirm the curtain or liner is machine washable and remove the rings, add OxiClean liquid with detergent at the dose on the cap, hang to air dry, wash about every three months, and do not use OxiClean + Bleach Mold and Mildew Bathroom Stain Remover on fabric.',
+    },
+    {
+      id: 'src-curtainmold-4',
+      title: 'A Brief Guide to Mold, Moisture and Your Home',
+      publisher: 'U.S. Environmental Protection Agency',
+      url: 'https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Never mix chlorine bleach with cleaners containing ammonia because toxic fumes can be produced; wear gloves, an N-95 respirator and non-vented goggles when cleaning mold; absorbent or porous materials may have to be thrown away if moldy; use fans or open windows to reduce bathroom moisture.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Mold From a Shower Curtain',
+    description: 'Remove mold from a shower curtain or liner: check the care label, pre-soak in diluted bleach, wash hot, hang to dry. Plus vinyl tips and when to replace it.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-mold-from-a-shower-curtain',
+    indexable: true,
+    focusKeyword: 'how to remove mold from a shower curtain',
+  },
+};
+
+export default article;

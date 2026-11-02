@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-granite-countertops',
+  slug: 'how-to-clean-granite-countertops',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean granite countertops',
+  subtitle: 'A neutral stone cleaner, warm water and a soft cloth every day. Why acids, ammonia and scouring powders are out, how to tell with hot water whether your granite needs sealing, and how a poultice pulls out stains.',
+  excerpt: 'Neutral cleaner, warm water, rinse, dry. Blot spills, test the seal with hot water, poultice stubborn stains.',
+  quickAnswer: 'Wipe granite daily with a neutral cleaner made for stone (or a stone soap) in warm water, rinse with clean water, and dry it with a soft cloth. Blot spills right away instead of wiping them around, then flush the spot with water and mild soap, rinse and dry. Avoid vinegar, lemon and other acids, scouring powders and creams, and rust removers, and keep ammonia and bleach off indoor counters. To check the seal, leave a little hot water on the stone for 10 to 20 minutes; if it darkens, the granite is absorbing liquid and should be sealed.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'countertops',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing a stainless steel stovetop surround with a yellow and green sponge beside a gas burner, next to a speckled beige stone countertop with a potted herb and a dish rack',
+  safetyWarnings: [
+    'Do not use vinegar, lemon juice or other acidic cleaners on granite. The Natural Stone Institute says acids can dull or etch many stones and does not recommend acidic cleaners even for granite and other siliceous stones.',
+    'Keep rust removers and some toilet bowl cleaners away from the counter. Many contain hydrofluoric acid, which the Natural Stone Institute says attacks all stone, including granite.',
+    'Skip scouring powders and abrasive creams, which can scratch stone. Overusing ammonia can dull some stones, and harsh cleaners can break down the sealer.',
+    'Never mix bleach and ammonia; the combination creates a toxic gas. When a stain treatment calls for chemicals such as hydrogen peroxide or acetone, ventilate the room.',
+  ],
+  materialsNeeded: [
+    'Neutral cleaner labeled safe for natural stone, or a stone soap',
+    'Warm water and a bucket or bowl',
+    'Soft cotton or microfiber cloths (one to wash, one to rinse, one to dry)',
+    'Paper towels for blotting spills',
+    'For the seal test: a small amount of hot water',
+    'For stains: a poultice powder (such as kaolin or fuller\'s earth), baking soda, plastic wrap and tape',
+    'Penetrating sealer made for stone, food-safe for kitchen counters (only if the water test shows you need it)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Blot Spills Immediately',
+      instruction: 'Blot spills with a paper towel as soon as they happen; wiping spreads them. Flush the area with water and a little mild soap, rinse several times, and dry thoroughly with a soft cloth. Acidic spills such as citrus, wine and coffee should never sit on stone.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Wash with a Neutral Stone Cleaner',
+      instruction: 'Mix a neutral stone cleaner or stone soap into warm water at the dilution on its label, and wipe the counter with a soft cloth. Using more cleaner than the label calls for leaves a film and streaks.',
+      proTip: 'Choose a daily cleaner that is labeled safe for stone and does not leave residue behind.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Rinse with Clean Water',
+      instruction: 'Wipe the surface again with a cloth wrung out in clean water to remove any cleaner residue. Change the rinse water often so you are not spreading dirty water back over the stone.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Dry Completely',
+      instruction: 'Dry the counter with a soft, clean cloth. Wipe water from around the faucet and sink every day; standing water can leave white mineral buildup that is hard to remove.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Test Whether the Seal Is Still Working',
+      instruction: 'Put a little hot water on a frequently used area and leave it for 10 to 20 minutes, then wipe it off. If the stone has darkened, it is absorbing liquid and should be sealed. If it looks unchanged, the seal is still doing its job.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Reseal Only When Needed',
+      instruction: 'If the test shows absorption, apply a penetrating stone sealer following the manufacturer\'s directions, which typically means applying it and wiping off the excess. On kitchen counters, use a sealer that is non-toxic and safe for food contact. Some granites need only one coat or none, others several.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Draw Out Set-In Stains with a Poultice',
+      instruction: 'For an oil stain, mix baking soda and water into a paste about as thick as peanut butter. Spread it 1/4 to 1/2 inch thick, about an inch past the edge of the stain, cover with plastic and tape the edges. Let it work for 24 to 48 hours, removing the plastic after about 24 hours so it can dry, then remove it and rinse the area with clean water. Repeat if the stain lightens but does not disappear.',
+    },
+  ],
+  ifMethodFails: [
+    'If a stain fades but is still visible after one poultice, repeat it; the Natural Stone Institute notes difficult stains can take up to five applications.',
+    'Rust, copper and other metal stains need a poultice, and deep rust stains may be permanent. If a poultice does not work, call a stone restoration professional rather than reaching for a rust remover.',
+    'If the counter looks dull, streaky or hazy, you may be using too much cleaner or a product with soap film. Rinse with clean water, dry, and go back to a neutral stone cleaner at the label dilution. Heavy mineral buildup or dull patches that will not wash off may need professional restoration.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What is the best thing to clean granite countertops with?',
+      answer: 'A neutral cleaner made for natural stone, or a stone soap, in warm water. Rinse with clean water and dry with a soft cloth. The Natural Stone Institute recommends this routine for stone countertops.',
+    },
+    {
+      question: 'Can I use dish soap on granite?',
+      answer: 'Sources disagree. The Natural Stone Institute lists a mild liquid dishwashing detergent and warm water as an option, while a stone care expert quoted on Use Natural Stone advises against dish soap because it can leave a greasy film that dulls or streaks the stone. A few drops with a thorough rinse is fine occasionally; a stone cleaner is the better daily choice.',
+    },
+    {
+      question: 'Is vinegar safe for granite countertops?',
+      answer: 'No. The Natural Stone Institute warns that vinegar, lemon and other acids can dull or etch stone and does not recommend acidic cleaners even for granite. Use a neutral stone cleaner instead.',
+    },
+    {
+      question: 'How do I know if my granite needs to be sealed?',
+      answer: 'Leave a small amount of hot water on the counter for 10 to 20 minutes and wipe it off. If the stone darkened, it is absorbing moisture and should be sealed. Many granites do not strictly need sealing, but a quality sealer adds resistance to water and oil stains.',
+    },
+    {
+      question: 'Can you use Clorox wipes or bleach on granite?',
+      answer: 'The Natural Stone Institute suggests mild bleach solutions only for algae or moss on outdoor stone, and warns that harsh cleaners can wear down the sealer. For indoor counters, stick to a neutral stone cleaner, and never mix bleach with ammonia.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-granite-1',
+      title: 'Learn About Cleaning Products for Natural Stone',
+      publisher: 'Natural Stone Institute',
+      url: 'https://www.naturalstoneinstitute.org/consumers/care/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean countertops with a neutral cleaner, stone soap or mild dishwashing detergent in warm water, rinse thoroughly and dry with a soft cloth; too much cleaner leaves film and streaks; lemon, vinegar and other acids may dull or etch stone and acidic cleaners are not recommended even for siliceous stone; scouring powders may scratch; ammonia overuse can dull stone; rust removers with hydrofluoric acid attack all stone including granite; blot spills rather than wipe; never mix bleach and ammonia; sealers on food-prep surfaces should be non-toxic.',
+    },
+    {
+      id: 'src-granite-2',
+      title: 'How to Care For Your Granite Countertops',
+      publisher: 'Use Natural Stone (Natural Stone Institute)',
+      url: 'https://usenaturalstone.org/caring-for-granite/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wipe granite daily with a neutral, residue-free stone cleaner; improper cleaners break down the sealer; to test the seal, leave hot water on the stone for 10 to 20 minutes and wipe it off, and if it darkens it needs sealing; reseal with a penetrating sealer per its directions, with some granites needing one coat or none and others four to six; wipe water from around faucets daily to avoid calcified buildup.',
+    },
+    {
+      id: 'src-granite-3',
+      title: 'Remove Stains from Stone Applications',
+      publisher: 'Natural Stone Institute',
+      url: 'https://www.naturalstoneinstitute.org/consumers/stains/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'A poultice is an absorbent powder mixed with a liquid cleaner to the consistency of peanut butter (baking soda and water for oil-based stains), spread 1/4 to 1/2 inch thick and about an inch past the stain, covered with plastic taped at the edges, left 24 to 48 hours with the plastic removed after about 24 hours, and repeated up to five times; metal stains require a poultice and deep rust may be permanent; do not mix bleach and ammonia.',
+    },
+    {
+      id: 'src-granite-4',
+      title: 'Sealing Natural Stone Countertops',
+      publisher: 'Natural Stone Institute',
+      url: 'https://www.naturalstoneinstitute.org/consumers/sealing-stone/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Most granite countertops do not need to be sealed, but in many cases it makes sense to seal granite with a quality sealer that resists water and oil based stains and makes the stone more resistant to everyday dirt and spills.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean Granite Countertops (and Seal Test)',
+    description: 'How to clean granite countertops: neutral stone cleaner, rinse and dry, no vinegar or harsh cleaners, a hot-water seal test, and a poultice for set-in stains.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-granite-countertops',
+    indexable: true,
+    focusKeyword: 'how to clean granite countertops',
+  },
+};
+
+export default article;

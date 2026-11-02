@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-can-you-mix-bleach-and-vinegar',
+  slug: 'can-you-mix-bleach-and-vinegar',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'Can you mix bleach and vinegar?',
+  subtitle: 'No. Vinegar is an acid, and acid plus bleach releases chlorine gas. The symptoms to watch for, what to do if it already happened, and how to use each one safely on its own.',
+  excerpt: 'No: bleach plus vinegar releases chlorine gas. Symptoms, first steps after exposure, and safe separate use.',
+  quickAnswer: 'No. Vinegar is an acid, and mixing chlorine bleach with an acid releases chlorine gas, which burns the eyes, nose and throat and can damage the lungs. If it has already happened, leave the room, get to fresh air, and call Poison Control at 1-800-222-1222; seek medical care right away for trouble breathing or chest pain. Use bleach and vinegar on separate occasions, never in the same bottle, bucket or toilet bowl, and rinse or flush away one product completely before you use the other, with windows open.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tools',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-bathroom.webp',
+  heroImageAlt: 'Sunlit bathroom with a white vessel sink on a wooden vanity, a white spray bottle and a folded grey cloth, a round wood-framed mirror, a towel ladder with white towels and a glass shower door with water marks',
+  safetyWarnings: [
+    'Never mix bleach with vinegar or any other acid. Washington State Department of Health lists vinegar, toilet bowl cleaners, some glass and window cleaners, drain cleaners, rust removers and automatic dishwasher detergents and rinses among the acidic products that release chlorine gas with bleach.',
+    'Do not mix bleach with ammonia either. Ammonia is in some glass cleaners and in urine, so take care when using bleach in toilets, diaper pails and litter boxes; bleach and ammonia form chloramine gases.',
+    'Chlorine gas can cause lung damage, with shortness of breath, wheezing, chest pain and pneumonia. If anyone has trouble breathing or serious symptoms, get medical care or call 911.',
+    'Ventilate whenever you use bleach indoors: open windows and doors or run a fan, especially in a small bathroom.',
+    'Wear gloves when using bleach, and check the label for any eye protection it calls for.',
+  ],
+  materialsNeeded: [
+    'Rubber or nitrile gloves',
+    'Regular household bleach labeled 5% to 9% sodium hypochlorite (for disinfecting only)',
+    'A bucket or container used only for bleach solution, plus a measuring cup',
+    'Household cleaner containing soap or detergent',
+    'Clean water and cloths for rinsing',
+    'Distilled white vinegar (used on its own, on a different cleaning job)',
+    'An open window, door or exhaust fan',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Pick One Product for the Job',
+      instruction: 'Decide whether this job needs bleach (to disinfect) or vinegar, and use only that one. Never pour them into the same bottle, bucket, sink or toilet bowl, and never add vinegar to a bleach solution to "boost" it. Read the label on any other cleaner you plan to use: toilet bowl cleaners, some glass cleaners, rust removers and drain cleaners are acidic too and react with bleach the same way vinegar does.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Open Windows and Turn On the Fan',
+      instruction: 'Before you open any bottle, open a window or door and run the exhaust fan. Good ventilation is required whenever bleach products are used indoors, and small rooms such as bathrooms need it most. Put on gloves.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Clean First with Soap or Detergent',
+      instruction: 'Wash visibly dirty surfaces with a household cleaner that contains soap or detergent before disinfecting. Bleach is for disinfecting a surface that is already clean, not for cutting through grime.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Mix Bleach with Water Only, Following the Label',
+      instruction: 'Use a bleach labeled 5% to 9% sodium hypochlorite and follow the directions on the bottle. If the label gives no directions, the CDC suggests 5 tablespoons (1/3 cup) of bleach per gallon of room-temperature water, or 4 teaspoons per quart. Add nothing but water. Leave the surface visibly wet for at least 1 minute, or the contact time on your label, then wipe.',
+      proTip: 'Mix a fresh batch each day you disinfect. The CDC notes diluted bleach loses effectiveness after about 24 hours.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rinse Away One Product Before Using the Other',
+      instruction: 'After disinfecting, rinse the surface with clean water; rinse food-contact surfaces with drinking water. In a toilet, flush before switching products. Poison Control describes a chlorine gas case caused by using an acid toilet bowl cleaner and then a bleach cleaner without flushing in between. Use vinegar only after the bleach has been fully rinsed away, or save it for a different day.',
+    },
+    {
+      stepNumber: 6,
+      title: 'If You Mixed Them, Get to Fresh Air Now',
+      instruction: 'Chlorine gas smells strongly of bleach. If you notice burning eyes, nose or throat, or coughing, stop, leave the room immediately and breathe fresh air. Open windows and doors only if you can do it on your way out. Poison Control suggests that, if possible, you shower for 20 minutes, breathe the steamy air to soothe your airway, and change your clothes.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Call Poison Control or Get Medical Help',
+      instruction: 'Call Poison Control at 1-800-222-1222 or use its online tool for free, confidential advice 24 hours a day. If someone has trouble breathing, chest pain or other serious symptoms, seek medical attention right away or call 911.',
+    },
+  ],
+  ifMethodFails: [
+    'If the bleach smell still lingers after cleaning, stay out of the room and keep the window open and the fan running until it clears; do not try to mask it with another cleaner.',
+    'If symptoms such as coughing, chest soreness or a runny nose continue after you are in fresh air, call Poison Control at 1-800-222-1222 for advice.',
+    'If you are unsure whether a product is acidic or contains ammonia or bleach, read its label or call the toll-free number printed on it, and do not use it on the same surface as bleach until you know.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What happens if you mix bleach and vinegar?',
+      answer: 'Vinegar is an acid, and acid reacts with the hypochlorite in bleach to release chlorine gas. It irritates the eyes, nose and throat and causes coughing; heavier exposure can cause shortness of breath, wheezing, chest pain, pneumonia and fluid in the lungs.',
+    },
+    {
+      question: 'What should I do if I accidentally mixed bleach and vinegar?',
+      answer: 'Leave the area right away and get to fresh air. If possible, shower and breathe the steamy air, and change your clothes. Call Poison Control at 1-800-222-1222, and get medical attention immediately for trouble breathing or other serious symptoms.',
+    },
+    {
+      question: 'Can you use vinegar after bleach?',
+      answer: 'Only once the bleach is completely gone. Rinse the surface with clean water, or flush the toilet, and ventilate the room before switching products. Leftover bleach meeting an acid cleaner is how many accidental chlorine gas exposures happen.',
+    },
+    {
+      question: 'What does chlorine gas smell like?',
+      answer: 'It has a noxious, intense odor that smells like bleach. People who are exposed to it repeatedly may notice the smell less, so do not rely on your nose alone; burning eyes, nose or throat and coughing are signs to leave the room.',
+    },
+    {
+      question: 'Is it safe to mix bleach with other cleaners?',
+      answer: 'No. The CDC says never to mix household bleach with any other cleaners or disinfectants because it can release vapors that are very dangerous to breathe. Use bleach diluted only with water, as the label directs.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-bleachvinegar-1',
+      title: 'Chlorine gas: Get the facts',
+      publisher: 'Poison Control (National Capital Poison Center)',
+      url: 'https://www.poison.org/articles/chlorine-gas',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Mixing bleach with an acid such as vinegar or some toilet bowl cleaners forms chlorine gas, which causes eye, nose and throat burning and coughing and, with more exposure, lung damage; leave the area and breathe fresh air, shower for 20 minutes if possible, seek medical attention for trouble breathing, and call 1-800-222-1222; work in a well-ventilated area and wear gloves.',
+    },
+    {
+      id: 'src-bleachvinegar-2',
+      title: 'Dangers of Mixing Bleach with Cleaners',
+      publisher: 'Washington State Department of Health',
+      url: 'https://doh.wa.gov/community-and-environment/contaminants/bleach-mixing-dangers',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Do not mix bleach with ammonia, acids or other cleaners; acids including vinegar, toilet bowl cleaners and drain cleaners release chlorine gas, which can cause coughing, breathing problems, chest pain, fluid in the lungs and, at very high levels, death; anyone with symptoms should contact a health care provider or 911.',
+    },
+    {
+      id: 'src-bleachvinegar-3',
+      title: 'Cleaning and Disinfecting with Bleach',
+      publisher: 'Centers for Disease Control and Prevention',
+      url: 'https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Never mix household bleach with any other cleaners or disinfectants; ensure good ventilation; clean visibly dirty surfaces with soap or detergent first; without label directions use 5 tablespoons (1/3 cup) of 5% to 9% bleach per gallon of room-temperature water and leave the surface wet for at least 1 minute; make fresh solution daily.',
+    },
+    {
+      id: 'src-bleachvinegar-4',
+      title: 'How to Clean with Bleach Safely in Your Home: The Do\'s and Don\'ts',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/dos-and-donts-for-cleaning-and-disinfecting-with-bleach/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Do not mix bleach with other cleaners, especially ammonia or vinegar; vinegar plus bleach forms chlorine gas causing eye, nose and throat irritation and breathing issues; ventilate with open windows or fans, wear gloves, and rinse surfaces with clean water after disinfecting (potable water on food-contact surfaces).',
+    },
+  ],
+  seo: {
+    title: 'Can You Mix Bleach and Vinegar? No, Here Is Why',
+    description: 'Can you mix bleach and vinegar? No. Together they release chlorine gas. Learn the symptoms, what to do after exposure, and how to use each cleaner safely.',
+    canonical: 'https://housecarewiki.com/guides/can-you-mix-bleach-and-vinegar',
+    indexable: true,
+    focusKeyword: 'can you mix bleach and vinegar',
+  },
+};
+
+export default article;

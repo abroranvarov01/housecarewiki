@@ -1,0 +1,157 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-toilet',
+  slug: 'how-to-clean-a-toilet',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a toilet',
+  subtitle: 'Flush, coat the bowl and under the rim, scrub, wait the label time, flush again, then wipe the seat, hinges, handle and base. How to shift a hard-water ring, and why bleach and acid toilet cleaners must never meet.',
+  excerpt: 'Flush, coat under the rim, scrub, let it sit, flush, then wipe the outside from top to base.',
+  quickAnswer: 'Put on gloves, open a window, and flush so only water is left in the bowl. Squeeze toilet bowl cleaner under and around the rim so it coats the bowl, scrub the whole bowl and under the rim with a toilet brush, let it sit for the time on the label (10 minutes for Clorox\'s bleach gel to disinfect), then flush. While you wait, wipe the handle, lid, seat, hinges, outside of the bowl and base. Hard-water rings need an acidic lime and rust cleaner instead of bleach, and you must never use bleach and an acid cleaner, or ammonia, together.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'toilets',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-bathroom.webp',
+  heroImageAlt: 'Sunlit bathroom with a round white vessel sink on a wooden vanity, a white spray bottle and folded grey cloth, a wooden towel ladder with white towels and a glass shower door with water spots',
+  safetyWarnings: [
+    'Never mix bleach with ammonia, vinegar, acidic toilet cleaners or any other cleaner. The CDC warns this can release vapors that are very dangerous to breathe, and Clorox notes that lime, rust and hard-water toilet cleaners are acidic, so they must not be used together with bleach. Flush between products.',
+    'Wear rubber gloves and ventilate the bathroom by opening a window or door while you clean. Clorox also recommends safety glasses with acidic toilet cleaners.',
+    'Do not put bleach, chlorine tablets, descaling agents or harsh chemicals inside the toilet tank. TOTO warns they damage the rubber seals, flappers and valves inside the tank.',
+    'Keep children and pets away from the bowl while a cleaner is sitting in it, and close the lid.',
+  ],
+  materialsNeeded: [
+    'Rubber gloves',
+    'Toilet bowl cleaner with an angled nozzle (gel cleaners cling under the rim)',
+    'Toilet brush, ideally with an angled head',
+    'Lime and rust or hard-water toilet cleaner (for mineral rings only, never with bleach)',
+    'Disinfecting wipes, or cloths with a mild neutral cleaner or dish soap',
+    'Old toothbrush or small soft brush for hinges and bolt caps',
+    'Optional: safety glasses',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Glove Up, Ventilate and Choose One Cleaner',
+      instruction: 'Put on rubber gloves and open a window or the door. Pick a single bowl cleaner for this session and read its label for the contact time. If you used a different product in the bowl recently, flush first so nothing is left to mix, and never combine bleach with ammonia, vinegar or an acidic cleaner.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Flush and Coat Under the Rim',
+      instruction: 'Flush so only water remains in the bowl. Aim the cleaner\'s nozzle up under the rim and squeeze it all the way around so it runs down and coats the inside of the bowl.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Scrub the Bowl and Under the Rim',
+      instruction: 'Scrub the whole bowl with the toilet brush, working up under the rim, where an angled brush reaches best, and down into the opening at the bottom of the bowl.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Let It Sit for the Label Time',
+      instruction: 'Leave the cleaner in the bowl for the time on its label before flushing. Clorox\'s bleach gel needs 10 minutes to disinfect, for example. Close the lid and keep kids and pets away while you wait.',
+      proTip: 'Set a timer and use the waiting time for the outside of the toilet.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Wipe the Seat, Hinges, Handle and Base',
+      instruction: 'Work from the cleanest areas to the dirtiest: the flush handle and tank lid, the top and underside of the lid and seat, the hinges, the outside of the bowl, then the base and bolt caps. Use disinfecting wipes or a cloth with a mild, neutral cleaner, and a small brush around the hinges. On the seat, avoid chlorine bleach, strongly acidic or alkaline cleaners and abrasive pads; TOTO warns these can discolor or crack some seats.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Flush to Rinse',
+      instruction: 'After the full contact time, flush once to rinse the cleaner away. Check under the rim and around the waterline for any spots you missed.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Treat a Hard-Water Ring Separately',
+      instruction: 'Bleach does not remove mineral rings, rust or limescale; these need an acidic lime and rust toilet cleaner. On a separate day, or after the bowl has been flushed clear of any bleach product, apply it under and around the rim, scrub the ring, leave it for the label time and flush. For a heavy ring, turn off the water supply valve behind the toilet and flush to empty the bowl, then apply the cleaner directly to the dry ring.',
+      proTip: 'Turn the water supply back on when you finish, and never follow an acid cleaner with bleach in the same bowl until it has been flushed.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Clean and Dry Your Toilet Brush',
+      instruction: 'Rinse the brush in the clean flush water, then soak it in hot water with a disinfecting bleach product according to the label, rinse thoroughly and let it air-dry completely before putting it back in its holder.',
+    },
+  ],
+  ifMethodFails: [
+    'If a ring is still there after an acidic toilet cleaner, empty the bowl by shutting off the water supply and flushing, then repeat with the cleaner on the dry surface. TOTO says metal marks on ceramic bowls can be gently rubbed off with a ceramic polishing pad or a mild abrasive cleaner; check your own manufacturer\'s guidance first, since some glazes call for soft brushes only.',
+    'If black or grey mold spots keep coming back in the bowl, Clorox suggests a bleach-based mold and mildew spray left for 5 minutes, scrubbed and flushed. Never use it in the same session as an acidic cleaner.',
+    'If the toilet runs or leaks after you used in-tank tablets, the tank parts may already be damaged. Stop using them and replace the flapper or valve, or call a plumber.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What is the best way to clean under the toilet rim?',
+      answer: 'Flush first, then aim an angled-nozzle bowl cleaner up under the rim so it coats the area, scrub with an angled toilet brush, leave it for the label time and flush. Gel cleaners cling to the rim longer than thin liquids.',
+    },
+    {
+      question: 'Can you mix bleach and toilet bowl cleaner?',
+      answer: 'No. Many toilet bowl cleaners for rust, lime and hard water are acidic, and Clorox warns bleach should never be mixed with acid because hazardous fumes can form. The CDC advises never mixing bleach with any other cleaner. Use one product at a time and flush between them.',
+    },
+    {
+      question: 'Are in-tank toilet cleaning tablets safe?',
+      answer: 'Toilet makers advise against them. TOTO strongly advises against bleach, descaling agents and harsh chemical cleaners inside the toilet tank because they damage the rubber seals, flappers, valves and other parts. Check your toilet\'s manual before putting anything in the tank.',
+    },
+    {
+      question: 'How do you get rid of the brown ring in a toilet?',
+      answer: 'A brown or orange ring is usually mineral or rust buildup, which bleach will not remove. Use an acidic lime and rust toilet cleaner: apply it under and around the rim, scrub, wait for the label time and flush. For a stubborn ring, empty the bowl first so the cleaner works on the dry stain.',
+    },
+    {
+      question: 'Is bleach safe for every toilet?',
+      answer: 'Clorox recommends its bleach gel for disinfecting the bowl, but toilet makers can be stricter. TOTO recommends non-corrosive, non-abrasive gel cleaners, dish soap or cleaning vinegar for ceramic bowls and warns against chlorine bleach on some seats. Follow your toilet manufacturer\'s care instructions first, and if you have a septic system, Clorox notes frequent bleach use may disrupt it.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-toilet-1',
+      title: 'How to Clean Toilet, Tank & Remove Ring Stains',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-clean-toilet-with-bleach/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Flush first, apply bleach gel under and around the rim, scrub the whole bowl including under the rim, let it stand 10 minutes, wipe the handle, base and bolts, then flush; wear gloves, ventilate, never mix bleach with vinegar, ammonia or other cleaners, and use an acidic cleaner rather than bleach for hard-water rings.',
+    },
+    {
+      id: 'src-toilet-2',
+      title: 'How to Remove Hard Water Stains from Toilet',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/does-bleach-remove-hard-water-stains/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Hard-water stains, lime scale and rust need an acidic toilet cleaner applied under the rim, scrubbed and left 5 minutes before flushing; for heavy stains, shut off the water and flush to empty the bowl first; do not mix the acidic cleaner with bleach because hazardous gases may be released.',
+    },
+    {
+      id: 'src-toilet-3',
+      title: 'Cleaning and Disinfecting with Bleach',
+      publisher: 'Centers for Disease Control and Prevention',
+      url: 'https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Never mix household bleach or any disinfectant with other cleaners or disinfectants, because it can release vapors that are very dangerous to breathe; use bleach with good ventilation and check the label for gloves or eye protection.',
+    },
+    {
+      id: 'src-toilet-4',
+      title: 'Product FAQ',
+      publisher: 'TOTO USA',
+      url: 'https://www.totousa.com/product-faq',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'TOTO strongly advises against bleach, descaling agents or harsh chemicals inside the toilet tank because they damage seals, flappers and valves; it recommends non-corrosive, non-abrasive gel cleaners, dish soap or cleaning vinegar for ceramic bowls, and warns chlorine bleach or strongly acidic or alkaline cleaners can discolor or crack some seats.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Toilet: Bowl, Rim, Seat and Base',
+    description: 'How to clean a toilet step by step: coat under the rim, scrub, wait, flush, wipe the seat and base, and shift hard-water rings without mixing bleach and acids.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-toilet',
+    indexable: true,
+    focusKeyword: 'how to clean a toilet',
+  },
+};
+
+export default article;

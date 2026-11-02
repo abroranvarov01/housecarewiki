@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-paint-out-of-carpet',
+  slug: 'how-to-get-paint-out-of-carpet',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get paint out of carpet',
+  subtitle: 'Latex paint comes out with water and a weak dish-soap solution while it is still wet. Oil-based paint needs a dry-cleaning spot remover used sparingly with ventilation. What to do with dried paint, and which solvents can wreck the backing.',
+  excerpt: 'Scoop, blot, then dish soap for wet latex or a dry-cleaning spot remover for oil-based paint. Always pretest.',
+  quickAnswer: 'Work fast and check the can first: latex (water-based) paint and oil-based paint need different treatments. Scoop up wet paint with a spoon, blot with white towels from the edge inward without rubbing, then blot with water-dampened towels and a solution of 1/4 teaspoon clear dish detergent in 1 cup of lukewarm water until no more color transfers. For oil-based or dried paint, put a non-flammable dry-cleaning spot remover on a white cloth, never directly on the carpet, open windows, and blot. Pretest every solution in a hidden spot, then rinse with water and blot dry.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'carpet-stains',
+  surfaceSlugs: ['carpet'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-floor-carpet.webp',
+  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige looped carpet, with a glass bowl of soapy water beside it and a pair of muddy hiking boots on the floor in the background',
+  safetyWarnings: [
+    'Never pour or spray a solvent or paint, oil and grease remover directly onto the carpet. Apply it to a white cloth and blot; solvent that reaches the backing can damage the latex that holds the carpet backings together.',
+    'Choose a non-flammable spot remover or dry-cleaning solvent where you can. Ventilate the room, wear protective gloves, and keep solvents and solvent-soaked cloths away from flames, pilot lights and sparks.',
+    'Pretest every solution, including dish soap, ammonia and solvents, in a hidden spot such as inside a closet. If color moves onto the cloth or the pile changes, stop and use a different solution.',
+    'Do not use ammonia on wool or wool-blend carpet, and never mix ammonia with chlorine bleach. Use only clear liquid dish detergent, never laundry or automatic dishwasher detergent, which can dye fibers or contain bleaching agents.',
+  ],
+  materialsNeeded: [
+    'A rounded spoon or blunt putty knife for scooping wet paint',
+    'Plenty of clean white cloths or plain white paper towels',
+    'Clear liquid dish detergent (1/4 teaspoon per cup of lukewarm water)',
+    'Spray bottle or mist sprayer for rinsing',
+    'For oil-based or dried paint: a non-flammable dry-cleaning spot remover labeled for paint and grease',
+    'Optional for dried latex on synthetic carpet only: household ammonia (1 tablespoon per cup of water)',
+    'Protective gloves and a fan or open window for ventilation',
+    'Vacuum for loosened dried paint flakes',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Identify the Paint and Act While It Is Wet',
+      instruction: 'Check the paint can or label. Latex and acrylic house paints are water-based and come out most easily while still wet; oil-based paints need a solvent. If the label names a specific thinner or clean-up product, note it, but on carpet use the gentlest option that works and always test it first. Do not let a fresh spill sit: delay can turn it into a permanent stain.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Scoop and Blot Up the Excess',
+      instruction: 'Lift pooled paint with a rounded spoon, scooping from the outside edge toward the center so the spot does not grow. Then press dry white towels or paper towels onto the area and lift straight up, switching to a clean section each time. Do not rub; rubbing pushes paint deeper and spreads it sideways.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Pretest Your Cleaning Solution',
+      instruction: 'Before treating the stain, dab a little of the solution you plan to use on a hidden area of the same carpet. Wait a few minutes and blot with a white cloth. If dye transfers to the cloth or the fibers change, choose a different solution.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wet Latex Paint: Blot with Water, Then Dish Soap',
+      instruction: 'Blot with white towels dampened in plain water. If color remains, mix 1/4 teaspoon of clear liquid dish detergent into 1 cup of lukewarm water, never stronger. Put a small amount on a white cloth, work gently from the edges toward the center, let it sit a few minutes, then blot. Keep repeating as long as paint transfers to the cloth.',
+      proTip: 'More soap is not better. Stronger mixes leave sticky residue in the pile that attracts dirt and makes the spot look gray later.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Oil-Based Paint: Blot with a Dry-Cleaning Spot Remover',
+      instruction: 'Open windows, run a fan and put on gloves. Apply a non-flammable spot remover or dry-cleaning solvent to a white cloth, never directly onto the carpet, and blot the paint lightly and repeatedly from the edges inward. Use only enough to dampen the yarn tips so the solvent does not reach the backing. When paint stops transferring, follow with the dish-soap solution from step 4 to lift the oily residue.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Dried Paint: Break Up, Vacuum, Then Treat',
+      instruction: 'Break up hardened paint on the yarn tips and vacuum the loose flakes. For dried latex, blot with the dish-soap solution; if that stalls on nylon or polyester carpet, try 1 tablespoon of household ammonia per cup of water after a hidden-spot test, never on wool. For dried oil-based paint, or dried latex that will not move, use the dry-cleaning spot remover on a cloth as in step 5.',
+      proTip: 'Complete removal of dried paint often takes several rounds. Keep using the same solution while paint is still coming off on the cloth, and switch only when it stops.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Rinse Out Residue and Blot Dry',
+      instruction: 'Once the paint is gone, mist the area with clean water several times, blotting with dry white towels after each rinse, until no moisture comes up. Residue from detergent or solvent left in the pile attracts soil, so do not skip the rinse. Avoid soaking the spot.',
+    },
+  ],
+  ifMethodFails: [
+    'If dried paint will not budge after several rounds, stop before you fray the pile. A professional carpet cleaner has stronger spotters and extraction equipment, especially for large spills or oil-based paint.',
+    'If the spot looks dull or gray after drying, residue was left behind. Mist with clean water, blot, and repeat until the towel stays clean.',
+    'If a solvent changed the carpet color or the backing feels loose or crinkly, stop treating it and call a professional cleaner or carpet installer; more solvent will make it worse.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you get dried paint out of carpet?',
+      answer: 'Often, but it takes longer. Break up and vacuum the hardened flakes, then blot dried latex with a weak dish-soap solution or, on synthetic carpet only, a diluted ammonia solution after a test. Dried oil-based paint usually needs a dry-cleaning spot remover applied with a cloth. Stubborn spots are a job for a professional.',
+    },
+    {
+      question: 'How do I know if the paint is latex or oil-based?',
+      answer: 'Check the can or product label. Latex and acrylic paints are water-based and clean up with soap and water while wet, while oil-based paints name a solvent or thinner for clean-up. If you cannot tell, start with the gentlest method, water and dish soap, and move to a solvent only if it fails.',
+    },
+    {
+      question: 'Is it safe to use paint thinner or mineral spirits on carpet?',
+      answer: 'Use solvents cautiously. The Carpet and Rug Institute prefers a non-flammable spot remover or dry-cleaning solvent, applied to a cloth, never poured on, because solvent can damage the latex that binds the carpet backing. Ventilate, wear gloves, pretest, and rinse afterward.',
+    },
+    {
+      question: 'Does nail polish remover get paint out of carpet?',
+      answer: 'It can, but treat it as a solvent. Acetone-based removers act like dry-cleaning solvents, and amyl acetate types can leave residue that resoils fast. Pretest it in a hidden spot, apply it with a cloth rather than pouring, keep it off the backing, and rinse thoroughly afterward.',
+    },
+    {
+      question: 'Should I use hot water on a paint stain in carpet?',
+      answer: 'No need. The Carpet and Rug Institute recommends lukewarm water for the dish-soap solution and rinsing, and cold water for the final rinse. Blotting and patience matter more than heat, and soaking the carpet can push paint and moisture into the backing.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-paint-carpet-1',
+      title: 'Paint, Latex Dried',
+      publisher: 'The Carpet and Rug Institute (CRI)',
+      url: 'https://carpet-rug.org/spot-solver/paint-latex-dried/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Act quickly, scrape semi-solids with a rounded spoon and vacuum broken-up solids, pretest in a hidden area, work from the edges toward the center without rubbing, use 1/4 teaspoon dish detergent per cup of lukewarm water (never stronger, never laundry or dishwasher detergent) or 1 tablespoon household ammonia per cup of water after testing, rinse with cold water and blot dry, and call a professional for stubborn spills.',
+    },
+    {
+      id: 'src-paint-carpet-2',
+      title: 'Oil and Paint',
+      publisher: 'The Carpet and Rug Institute (CRI)',
+      url: 'https://carpet-rug.org/spot-solver/oil-paint/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For oil and paint, a non-flammable spot remover or dry-cleaning solvent is preferred, applied with caution and never poured directly onto the carpet because it can damage the latex binding the backings; acetone nail polish remover acts as a dry-cleaning solvent and amyl acetate POG removers can leave resoiling residue; follow with the dish-detergent solution and rinse.',
+    },
+    {
+      id: 'src-paint-carpet-3',
+      title: 'Carpet, Rug and Flooring Stain Removal Guide',
+      publisher: 'Sherwin-Williams',
+      url: 'https://www.sherwin-williams.com/property-facility-managers/floorcovering/floorcovering-education/floorcovering-care/SW-ART-PRO-FLCOV-CARE-STAIN',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wet latex paint is treated by blotting with dry then water-dampened white towels and a weak dish-soap spray; dry latex paint is treated like grease with Carbona, Energine, K2R or Goof-Off applied to a white paper towel, wearing protective gloves and never pouring or spraying it on the carpet; blot, never rub; ammonia solution is not for wool or wool-blend carpet.',
+    },
+    {
+      id: 'src-paint-carpet-4',
+      title: 'Remove Stains from Paint',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-paint/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Treat latex paint while still wet because dried paint may become permanent; for oil-based paint use the thinner recommended on the label; pretest each cleaning agent in an inconspicuous area for colorfastness and provide adequate ventilation when using commercial cleaning solutions.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Paint Out of Carpet (Latex, Oil or Dried)',
+    description: 'How to get paint out of carpet: dish soap and water for wet latex, a dry-cleaning spot remover for oil-based paint, plus how to tackle dried paint safely.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-paint-out-of-carpet',
+    indexable: true,
+    focusKeyword: 'how to get paint out of carpet',
+  },
+};
+
+export default article;

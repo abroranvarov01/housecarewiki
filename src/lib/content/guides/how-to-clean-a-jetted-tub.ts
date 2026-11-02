@@ -1,0 +1,157 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-jetted-tub',
+  slug: 'how-to-clean-a-jetted-tub',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a jetted tub',
+  subtitle: 'Purge the jet system the way the manufacturer tells you to: water above the highest jets, a low-foam cleaner in the amount your manual names, a short run, then a clean-water rinse cycle. Plus how often to do it and what clogs the jets in the first place.',
+  excerpt: 'Fill above the jets, add only the low-foam cleaner your manual names, run the jets, drain, then run a clean-water rinse.',
+  quickAnswer: 'Close the jet air controls, fill the tub with warm water to at least 2 inches above the highest jets (Kohler) or at least 1 inch (Jacuzzi), and add only the cleaner your owner\'s manual specifies, such as Kohler\'s mix of 2 teaspoons of low-foam powdered dishwasher detergent and 20 ounces of household bleach, or Jacuzzi\'s two-part whirlpool system cleaner. Run the jets for 5 to 10 minutes, drain, then refill with clean warm water and run the jets again to flush out the cleaner before draining. Do this at least twice a month, and skip bath oils, bubble bath and bath bombs, which build up inside the lines.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'showers-tubs',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-bathroom.webp',
+  heroImageAlt: 'Sunlit bathroom with a white vessel sink, a spray bottle and folded grey cloth on a wooden vanity, white towels on a ladder rack and a glass shower enclosure with water streaks',
+  safetyWarnings: [
+    'Never mix bleach with ammonia, vinegar or any acid-based cleaner. If your manual calls for bleach, add it only to the tub water with the detergent it names, and do not use any other cleaner in the same fill.',
+    'Ventilate the bathroom while a bleach or chemical cleaning solution is circulating: open a window or run the exhaust fan.',
+    'Use only the cleaner and the amount your owner\'s manual specifies. Kohler and Jacuzzi give different water levels and cleaners, and Jacuzzi warns against oil-based additives and calls for only small amounts of low-foaming products.',
+    'Rinse the system and the tub surface thoroughly afterward. Kohler\'s walk-in bath care guide warns that bleach and cleaners containing bleach can erode the finish over time, so do not leave cleaning solution sitting on the tub.',
+    'Do not use metal scrapers, wire brushes, abrasive pads or aerosol cleaners on the tub surface; Jacuzzi and Kohler both warn against abrasive tools and products.',
+  ],
+  materialsNeeded: [
+    'Your tub\'s owner\'s manual (or the model number to look it up)',
+    'The jet cleaner your manual names, for example low-foam powdered automatic dishwasher detergent plus household bleach (Kohler) or a two-part whirlpool system cleaner (Jacuzzi)',
+    'Measuring spoons and a measuring cup',
+    'Warm water',
+    'Soft sponge or cloth',
+    'Nonabrasive bathroom or multipurpose cleaner for the tub surface',
+    'Rubber gloves',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check Your Manual for the Right Cleaner',
+      instruction: 'Find the owner\'s manual or look up your model on the manufacturer\'s support site before you buy anything. Kohler gives a home recipe of 2 teaspoons of low-foam powdered dish detergent with 20 ounces of household bleach. Jacuzzi\'s manual calls for its two-part plumbing system cleaner made for whirlpool baths. Use the product and amount your own manual lists, not a recipe from another brand.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Close the Jet Air Controls',
+      instruction: 'Turn the adjustable jets or air controls clockwise to stop air from being drawn in. Kohler says this keeps the solution circulating through the lines rather than bubbling at the surface. On a Jacuzzi tub the manual says to run the purge without the aerator.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Fill With Warm Water Above the Highest Jets',
+      instruction: 'Fill the tub with warm water until it is at least 2 inches above the highest jets for a Kohler tub, or at least 1 inch above the highest jet for a Jacuzzi tub. Every jet must be underwater before the pump runs, or the cleaner will not reach the full system.',
+      proTip: 'Jacuzzi suggests purging right after a bath: leave the bath water in, top it up with hot water to the right level, and add the cleaner.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Add the Cleaner and Let It Sit',
+      instruction: 'Once the water covers the jets, add the measured cleaner to the tub and let it soak for a few minutes. Ventilate the room if the cleaner contains bleach.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Run the Jets for 5 to 10 Minutes',
+      instruction: 'Turn the whirlpool on as you would for a bath so the solution circulates through the pump and piping. Kohler recommends running the jets for 5 to 10 minutes, then switching them off. If your manual gives a different run time for its cleaner, follow the manual.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Drain the Tub Completely',
+      instruction: 'Turn off the jets and drain all of the cleaning solution. You may see flecks of residue in the water; that is buildup coming out of the lines.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Run a Clean-Water Rinse Cycle',
+      instruction: 'Refill the tub with clean warm water above the jets, run the jets for a few minutes to flush out the remaining cleaner, then drain again. Wipe away any residue left on the tub walls.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Wipe the Tub Surface With a Nonabrasive Cleaner',
+      instruction: 'Clean the shell with a soft, damp sponge or cloth and a nonabrasive bathroom or multipurpose cleaner, or a mild liquid detergent, then rinse. Do not use abrasive products, aerosols, metal scrapers or wire brushes, which can scratch or dull the finish.',
+    },
+  ],
+  ifMethodFails: [
+    'If dark flecks keep appearing in the bath water, purge more often. Jacuzzi recommends purging at least twice a month and says purging after each use gives the best results.',
+    'If flecks return soon after cleaning, check what goes into the bath. Kohler says bath bombs, oils and bubble baths build up in the jets and cause black flecks, and Jacuzzi warns against oil-based additives.',
+    'If the jets are weak, noisy in a new way or will not run, stop and contact the manufacturer or a service technician rather than trying stronger chemicals. Kohler notes that normal jet noise and a short automatic purge after the bath are expected on many models.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How often should you clean a jetted tub?',
+      answer: 'Kohler and Jacuzzi both say to clean or purge the jet system at least twice a month. Kohler adds that you should clean more often with frequent use, and Jacuzzi says purging after each use gives the best results.',
+    },
+    {
+      question: 'What is the black stuff coming out of my jetted tub?',
+      answer: 'It is usually residue from bath products and body oils that has built up inside the piping. Kohler says bath bombs, oils and bubble baths can build up in the jets and cause black flecks. A purge cycle with the cleaner your manual names, followed by a clean-water rinse, flushes it out.',
+    },
+    {
+      question: 'Can I use dishwasher detergent to clean jetted tub jets?',
+      answer: 'Only if your manual allows it, and only a low-foam powdered type. Kohler\'s home recipe uses 2 teaspoons of low-foam powdered dish detergent with 20 ounces of household bleach. Jacuzzi\'s manual instead names its own two-part whirlpool system cleaner and says to use only small amounts of low-foaming powder or crystal products in the tub.',
+    },
+    {
+      question: 'How high should the water be when cleaning tub jets?',
+      answer: 'Kohler says at least 2 inches above the highest jets; Jacuzzi says at least 1 inch above the highest jet. Never run the pump with jets above the waterline, and follow the figure in your own manual.',
+    },
+    {
+      question: 'Can I use vinegar to clean jetted tub jets?',
+      answer: 'Neither Kohler nor Jacuzzi lists vinegar in the jet cleaning instructions reviewed for this guide, so stick to the cleaner your manual names. Never add vinegar to a tub fill that already contains bleach; mixing bleach with acids releases toxic chlorine gas.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-jettedtub-1',
+      title: 'Things to Consider When Cleaning Your Jetted Tub',
+      publisher: 'Kohler',
+      url: 'https://reveal.kohler.com/en/articles/things-to-consider-when-cleaning-your-jetted-tub',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Mix 2 teaspoons of low-foam powder dish detergent with 20 ounces of household bleach; turn the jets clockwise to stop air intake, fill with warm water at least 2 inches above the jets, add the solution and soak a few minutes, run the whirlpool 5 to 10 minutes, then drain; clean the jets at least twice a month; bath bombs, oils and bubble baths can build up in the jets and cause black flecks.',
+    },
+    {
+      id: 'src-jettedtub-2',
+      title: 'How to Clean Bath Jets Properly in Your Walk-In Bath',
+      publisher: 'Kohler Walk-In Bath',
+      url: 'https://www.kohlerwalkinbath.com/blog/how-to-clean-bath-jets-properly-in-your-walk-in-bath/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Close the air controls, fill with warm water at least two inches above the highest jets, add low-foam powdered dish detergent with household bleach, run the jets about 5 to 10 minutes, drain, then refill with clean warm water and run the jets a few minutes to flush out the remaining cleaner; clean about twice a month, more often with daily use.',
+    },
+    {
+      id: 'src-jettedtub-3',
+      title: 'Jacuzzi U961000G Installation and Operating Instructions',
+      publisher: 'Jacuzzi (via ManualsLib)',
+      url: 'https://www.manualslib.com/manual/78911/Jacuzzi-U961000G.html',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Purge the whirlpool system at least twice a month (after each use for best results): leave the bath water in, add hot water to at least 1 inch above the highest jet, run without the aerator and add the two-part whirlpool system cleaner, then drain and rinse; avoid oil-based additives, use only small amounts of low-foaming powder or crystal additives, clean surfaces with mild nonabrasive liquid detergent and never use metal scrapers or wire brushes.',
+    },
+    {
+      id: 'src-jettedtub-4',
+      title: 'Tub Care Guide',
+      publisher: 'Kohler Walk-In Bath',
+      url: 'https://kohlerwalkinbath.com/resources/guides/tub-care/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean bath surfaces with a nonabrasive multipurpose or bathroom cleaner and a soft damp sponge or cloth; aerosols, abrasive products, bleach and cleaners containing bleach can erode the finish over time.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Jetted Tub (Kohler and Jacuzzi Method)',
+    description: 'How to clean a jetted tub: fill above the jets, add only the low-foam cleaner your manual names, run the jets, drain and rinse. Kohler and Jacuzzi steps.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-jetted-tub',
+    indexable: true,
+    focusKeyword: 'how to clean a jetted tub',
+  },
+};
+
+export default article;

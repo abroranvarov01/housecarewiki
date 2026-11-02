@@ -1,0 +1,146 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-coffee-out-of-carpet',
+  slug: 'how-to-get-coffee-out-of-carpet',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get coffee out of carpet',
+  subtitle: 'Blot, plain water, then a weak dish-soap mist and a vinegar rinse. What changes when the coffee had milk or sugar in it, how to handle a dried stain, and when 3% hydrogen peroxide is safe for the brown shadow.',
+  excerpt: 'Blot, water, a weak dish-soap mist, a vinegar blot, then a clear rinse and a weighted dry. Seven steps.',
+  quickAnswer: 'Blot fresh coffee with a dry white cloth without rubbing, then blot with a cloth dampened in plain water. If a stain remains, mist a solution of no more than 1/4 teaspoon of clear dish soap in 1 cup of lukewarm water, wait a few minutes, and blot; repeat while coffee keeps transferring to the cloth. Follow with a blot of 1 part white vinegar to 2 parts water, rinse with clear water, and dry under a weighted stack of paper towels. On synthetic carpet only, a leftover brown shadow can be treated with 3% hydrogen peroxide after a hidden-spot test.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'carpet-stains',
+  surfaceSlugs: ['carpet'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/hero-dog-coffee.webp',
+  heroImageAlt: 'Golden retriever lying on a cream textured carpet next to a tipped-over white mug and a puddle of spilled coffee, with a beige sofa, a fiddle-leaf fig and a sunny window behind',
+  safetyWarnings: [
+    'Hydrogen peroxide can lighten carpet dye. Test fresh 3% hydrogen peroxide on a hidden spot and let it dry before using it on the stain. The IICRC does not recommend it on wool or other natural fibers without extensive testing for color loss.',
+    'Never mix cleaners. Do not combine vinegar or hydrogen peroxide with chlorine bleach, and do not use bleach on carpet. Ventilate the room while you work with any cleaning solution.',
+    'Use only clear liquid dish soap, never laundry detergent (its optical brighteners can dye the fiber) or automatic dishwasher detergent (it can contain bleach that destroys carpet dyes).',
+    'Do not rub or scrub. Rubbing spreads coffee and frays the carpet fibers; blot and work from the outside edge toward the center.',
+    'Do not soak the spot. Coffee or cleaning solution that reaches the backing or pad can wick back up as a new brown ring after the carpet dries.',
+  ],
+  materialsNeeded: [
+    '4 to 6 clean white cloths or white paper towels (microfiber is ideal)',
+    'Cool or lukewarm tap water',
+    'Clear liquid dish soap (no more than 1/4 teaspoon per cup of water)',
+    'White vinegar (5% acetic acid)',
+    'Spray bottle or mist sprayer',
+    'Rounded spoon (for coffee with milk or sugar that has thickened or dried)',
+    'Fresh 3% hydrogen peroxide (synthetic carpet only, after a hidden-spot test)',
+    'Paper towels, a plastic bag and a few heavy books for drying',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Blot Up the Coffee Right Away',
+      instruction: 'Press a dry white cloth or a stack of white paper towels onto the spill and lift straight up, switching to a clean section each time it turns brown. Work from the outer edge toward the center so the ring does not spread. Acting quickly matters: the longer coffee sits, the more likely it is to become a permanent stain.',
+      proTip: 'For a whole mug or more, a wet/dry vacuum pulls liquid out of the pile far faster than towels can. The IICRC suggests keeping a small one handy for coffee and other liquid spills.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Blot with a Cloth Dampened in Plain Water',
+      instruction: 'Wet a clean microfiber cloth with cool or lukewarm water, wring it out, and blot the stain. Keep blotting with clean sections as long as coffee is moving onto the cloth. For a dried stain, lay the damp cloth on the spot for a few minutes first to loosen it.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Pretest Your Cleaning Solution',
+      instruction: 'Before using soap, vinegar or peroxide, dab a little on a hidden area such as inside a closet or under a sofa. Blot with a white cloth and check for color transfer or fiber change. If anything changes, stop and use plain water only, or call a professional.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Mist a Weak Dish-Soap Solution and Blot',
+      instruction: 'Mix no more than 1/4 teaspoon of clear liquid dish soap into 1 cup of lukewarm water in a spray bottle. Mist the stain lightly, leave it for a few minutes, then blot with a dry white cloth. Repeat mist and blot while coffee keeps transferring to the cloth. If the coffee had milk, cream or sugar, scrape off any thickened residue with a rounded spoon first; these additives make the stain harder to lift, so expect more rounds.',
+      proTip: 'More soap is not better. A stronger mix leaves sticky residue in the pile that attracts dirt and turns the spot gray.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Blot with a Vinegar Solution',
+      instruction: 'If brown color remains, mix 1 part white vinegar with 2 parts water. Dampen a clean white cloth with it and blot the stain, then sponge with clear water and blot again. The vinegar also neutralizes any alkaline detergent residue left from the previous step.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Lift a Leftover Shadow with 3% Hydrogen Peroxide (Synthetic Carpet Only)',
+      instruction: 'If a faint brown mark remains on nylon, polyester or olefin carpet, test fresh 3% hydrogen peroxide on a hidden spot and let it dry. If the color holds, apply the peroxide to the stain and leave it in place; it can take several hours or a few applications. Skip this step on wool, wool blends and other natural fibers.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Rinse, Then Dry Under Weighted Towels',
+      instruction: 'Mist the area with clear water and blot, two or three times, so no soap or vinegar is left behind. Then cover the spot with 6 to 10 layers of white paper towel, put a plastic bag on top, and weigh it down with a few books. Leave it for 6 to 8 hours, changing the towels if they show brown, then brush the pile upright with your fingers.',
+      proTip: 'The weighted towels pull any coffee still in the backing up into the paper instead of letting it wick back to the surface.',
+    },
+  ],
+  ifMethodFails: [
+    'If a brown ring reappears a day or two later, coffee has wicked up from the backing or pad. Mist the spot with fresh 3% hydrogen peroxide (synthetic carpet, after a test) or plain water, blot gently with a microfiber towel, and dry under weighted paper towels again.',
+    'If a coffee with cream or sugar stain stays dull or sticky, try a commercial carpet spot cleaner, following its label exactly and testing it in a hidden spot first, then rinse with clear water. Some kits contain a stain-resist product that can lock in a stain if it is applied before the spill is fully removed, so read the directions.',
+    'If the carpet is wool or another natural fiber, or the stain will not shift after several rounds, call an IICRC-certified cleaner. Coffee is used to dye wool, so full removal from natural fibers may not be possible at home.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you get a dried coffee stain out of carpet?',
+      answer: 'Often, yes. Rehydrate the stain with a cloth dampened in plain water for a few minutes, then work through the dish-soap mist, vinegar blot and rinse. Old stains usually need several rounds, and on synthetic carpet a final 3% hydrogen peroxide treatment can lift the last shadow.',
+    },
+    {
+      question: 'Is coffee with milk or sugar harder to get out of carpet?',
+      answer: 'Yes. The IICRC notes that additives such as milk and sugar complicate removal. Scrape off any thickened residue first, then follow the same blot, soap, vinegar and rinse steps. A commercial carpet spot cleaner used per its label can help with the milk portion.',
+    },
+    {
+      question: 'Does vinegar remove coffee stains from carpet?',
+      answer: 'A solution of 1 part white vinegar to 2 parts water is part of the extension and industry method for coffee, used after a weak dish-soap solution. It helps lift remaining color and neutralizes detergent residue. Always rinse with clear water afterwards and blot dry.',
+    },
+    {
+      question: 'Will hydrogen peroxide bleach my carpet?',
+      answer: 'It can. Fresh 3% hydrogen peroxide is recommended by the IICRC for residual coffee color, but not on wool or other natural fibers without extensive testing. Test a hidden area and let it dry before treating the stain, and never use a stronger concentration.',
+    },
+    {
+      question: 'How much dish soap should I use on a carpet stain?',
+      answer: 'Very little. The Carpet and Rug Institute says no more than 1/4 teaspoon of liquid dish detergent per cup of lukewarm water, and never stronger. Some older guides suggest more, but extra soap leaves residue that attracts dirt, so stick to the weaker mix and rinse well.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-coffee-carpet-1',
+      title: 'Coffee - The Carpet and Rug Institute',
+      publisher: 'The Carpet and Rug Institute (CRI)',
+      url: 'https://carpet-rug.org/spot-solver/coffee/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Act quickly, blot with white cloths, pretest solutions in a hidden area, work from the edges inward without rubbing, use 1/4 teaspoon dish detergent per cup of lukewarm water (never stronger, never laundry or dishwasher detergent), use 1 cup white vinegar to 2 cups water to neutralize detergent residue, rinse thoroughly with a mist sprayer, and consult a professional for stubborn spills.',
+    },
+    {
+      id: 'src-coffee-carpet-2',
+      title: 'IICRC Consumer Floor and Furnishings Care Information (Tip Sheet: Carpet Topics)',
+      publisher: 'Institute of Inspection, Cleaning and Restoration Certification (IICRC)',
+      url: 'https://iicrc.org/wp-content/uploads/2023/01/Tip-Sheet-Carpet-Topics.pdf',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Coffee/Tea section: additives such as milk and sugar complicate removal and full removal from natural fibers may not be possible; blot, blot with water, mist a few drops of dish soap per cup of water, use 3% hydrogen peroxide for residual color (not on wool or natural fibers without extensive testing), mist peroxide for wicking, and call an IICRC Certified cleaner if needed; the wicking section adds 6 to 10 layers of weighted towels for 6 to 8 hours.',
+    },
+    {
+      id: 'src-coffee-carpet-3',
+      title: 'Remove Stains From Coffee, Tea',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-coffee-tea/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For coffee on carpet: blot with white absorbent material, work in a neutral detergent solution, blot with 1/3 cup white vinegar to 2/3 cup water, sponge with clear water, and dry under a weighted absorbent layer for several hours; for coffee with cream or sugar, first scrape away excess and use a commercial carpet cleaner per its label.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Coffee Out of Carpet (Fresh or Dried)',
+    description: 'Get coffee out of carpet: blot, plain water, a weak dish-soap mist, a vinegar blot and a weighted dry. Plus milk and sugar stains, dried spots and peroxide.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-coffee-out-of-carpet',
+    indexable: true,
+    focusKeyword: 'how to get coffee out of carpet',
+  },
+};
+
+export default article;

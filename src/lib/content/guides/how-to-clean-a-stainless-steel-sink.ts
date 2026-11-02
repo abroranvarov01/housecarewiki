@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-stainless-steel-sink',
+  slug: 'how-to-clean-a-stainless-steel-sink',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a stainless steel sink',
+  subtitle: 'Dish soap on a soft sponge, every stroke with the grain, a clean-water rinse and a microfiber dry. What sink makers Kraus, Blanco, Kohler and Franke say about water spots, Bar Keepers Friend, steel wool and the rubber mat sitting in your bowl.',
+  excerpt: 'Wash with dish soap along the grain, rinse, dry with microfiber, and keep steel wool and wet mats out of the bowl.',
+  quickAnswer: 'Wet a soft sponge, add a little dish soap and wipe the whole sink in the direction of the brushed grain, then rinse with clean water and dry it, also along the grain, with a microfiber cloth. Blanco says a stainless sink keeps its shine best when cleaned right after use, and Franke says drying after each use prevents water deposits. For hard water buildup Kraus recommends vinegar, and for minor scratches a deep cleanser such as Bar Keepers Friend. Never use steel wool, wire brushes or abrasive pads, and do not leave rubber mats or wet rags sitting in the bowl.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'sinks-drains',
+  surfaceSlugs: ['stainless-steel'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-kitchen.webp',
+  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  safetyWarnings: [
+    'Do not use steel wool, wire brushes or abrasive sponge pads. Kraus and Kohler both say to use non-scratch pads only, and Kohler warns abrasive pads let rust get into the grain of the sink.',
+    'Keep bleach and chlorine cleaners out of routine sink cleaning. Kraus says to rinse the sink immediately if they touch it; the separate guide on whether you can use bleach on a stainless steel sink covers this in detail.',
+    'Never mix vinegar or other acids with bleach, and never mix bleach with ammonia. Ventilate the kitchen whenever you use a chemical cleaner.',
+    'Do not leave rubber mats, plastic pads or wet dish rags sitting in the sink. Kohler says mats let soap and hard water deposits form in the grain, and Franke advises against leaving plastic pads in the sink for long periods.',
+    'Rinse away acidic spills and strongly colored foods promptly; Franke lists acids and foods high in pigment among household substances that attack a stainless steel surface.',
+  ],
+  materialsNeeded: [
+    'Soft sponge (use the soft side only)',
+    'Mild liquid dish soap (ammonia-free)',
+    'Two microfiber cloths',
+    'Warm water',
+    'White vinegar, for hard water deposits, if your sink maker allows it',
+    'Optional: Bar Keepers Friend or a stainless sink cleaner your sink maker recommends',
+    'Optional: a stainless steel bottom grid to protect the bowl',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Clear the Sink and Find the Grain',
+      instruction: 'Take out dishes, mats, racks and any rags, and rinse away loose food. Look closely at the bowl for the fine brushed lines in the steel. Every wipe, scrub and dry stroke in this guide goes in that direction, not in circles.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Wash with Dish Soap on a Soft Sponge',
+      instruction: 'Wet a sponge and squeeze a little dish soap onto the soft side. Wipe the bowl, walls, rim and drain area in the direction of the brushed finish. Do not use the rough scrubber side, which Franke advises against on stainless sinks.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Rinse with Clean Water',
+      instruction: 'Rinse the whole sink thoroughly with clean, lukewarm water so no soap film is left in the grain.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Dry Along the Grain with Microfiber',
+      instruction: 'Dry the sink completely with a microfiber cloth, again in the direction of the brushed finish. Franke says drying the surface after each use prevents water deposits from forming, which is what causes most of the white spots and dull patches on stainless sinks.',
+      proTip: 'A quick rinse and dry after the last dishes of the day does most of the work; Blanco says a stainless sink keeps its brilliance best when cleaned right after use.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Remove Hard Water Spots',
+      instruction: 'If white mineral deposits build up, Kraus recommends vinegar to neutralize the minerals: wipe it on with a soft cloth, then rinse well with water and dry. Some makers, including Franke, list acids among things that attack stainless if left on the surface, so check your own sink\'s care guide first and never let vinegar sit or soak.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Use Bar Keepers Friend for Stains and Light Scratches',
+      instruction: 'For marks and light scratches that soap will not lift, Kraus recommends a deep cleansing agent such as Bar Keepers Friend. Follow the product label, apply it with a soft wet sponge or cloth along the grain, rinse thoroughly and dry. Blanco and Franke sell their own sink cleaners; if your sink maker names one, use that.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Keep the Bowl Free of Mats and Rags',
+      instruction: 'Do not store a rubber mat, dish rag or plastic pad in the sink. Kohler says mats left in the sink let soap and hard water deposits form in the grain and advises not leaving dish rags in the basin, and Franke warns against leaving plastic pads in the sink for long periods. If you want to protect the bottom, use a stainless steel bottom grid instead.',
+    },
+  ],
+  ifMethodFails: [
+    'Small brown rust spots usually come from outside iron particles, not the sink itself: Franke points to particles from supply pipes, and Kohler to metallic particles oxidizing on the surface. Stop using any steel wool or abrasive pads, clean the spots with a non-scratch pad and a stainless cleaner your sink maker approves, then rinse and dry.',
+    'If white spots keep coming back, you are probably letting water air-dry in the bowl. Make drying with a microfiber cloth part of the routine after every use.',
+    'If rust keeps returning in one area, check what is stored under the sink. Kohler says fumes from chemicals stored there, and overspray from bleach-based counter cleaners, can rust stainless steel.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What is the best way to clean a stainless steel sink?',
+      answer: 'Wash it with water and mild dish soap on a soft sponge, wiping in the direction of the grain, then rinse with clean water and dry with a microfiber cloth. Kraus recommends this at least once a week, and Blanco and Franke recommend a quick clean and dry after each use.',
+    },
+    {
+      question: 'Can I use Bar Keepers Friend on my stainless steel sink?',
+      answer: 'Yes, according to Kraus, which names Bar Keepers Friend as a deep cleansing agent for stainless sinks. Follow the label, work along the grain with a soft sponge, and rinse and dry thoroughly. If your sink came with its own care guide or recommended cleaner, follow that first.',
+    },
+    {
+      question: 'How do you get water spots off a stainless steel sink?',
+      answer: 'Kraus recommends vinegar to neutralize hard water minerals, followed by a thorough rinse and dry. Because Franke lists acids among substances that can attack stainless if left on the surface, do not let vinegar sit, and check your sink maker\'s guidance. Drying the sink after each use prevents most spots in the first place.',
+    },
+    {
+      question: 'Why is my stainless steel sink rusting?',
+      answer: 'Usually it is not the steel itself. Kohler says rust on stainless products comes from metal particles that oxidize on the surface, and from chemical fumes or bleach overspray. Franke adds that iron particles from supply pipes can leave small brown spots. Kohler warns that steel wool and abrasive pads let rust get into the grain.',
+    },
+    {
+      question: 'Should you leave a rubber mat in a stainless steel sink?',
+      answer: 'No. Kohler says rubber mats left in the sink allow soap and hard water deposits to form in the grain. Take mats out after use and let the sink dry, or use a stainless steel bottom grid, which Kraus makes for protecting the bowl finish.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-sssink-1',
+      title: 'Care & Maintenance',
+      publisher: 'KRAUS',
+      url: 'https://www.kraususa.com/care-and-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean stainless steel sinks once a week with water and a mild ammonia-free liquid soap on a soft sponge, rinse and pat dry with microfiber, use vinegar for hard water deposits, a deep cleansing agent such as Bar Keepers Friend for minor scratches, never use abrasive pads, steel wool or wire brushes, avoid bleach or chlorine and rinse immediately if they contact the sink; bottom grids protect the bowl.',
+    },
+    {
+      id: 'src-sssink-2',
+      title: 'How to Clean a Stainless Steel Sink',
+      publisher: 'BLANCO',
+      url: 'https://www.blanco.com/us/sinks/cleaning-and-care/stainless-steel-sink-care',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'A stainless sink keeps its brilliance best if cleaned immediately after use: wipe with dish soap on the soft side of a sponge in the direction of the brushed finish, rinse with clean water and dry in the direction of the brushed finish with a microfiber cloth.',
+    },
+    {
+      id: 'src-sssink-3',
+      title: 'Problem with Rust on Stainless Steel Product',
+      publisher: 'Kohler',
+      url: 'https://assist.kohler.com/en/sinks/Problem-with-Rust-on-Stainless-Steel-Product',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rust is caused by metallic particles oxidizing on the surface, and by chemical fumes under the sink or bleach-based counter cleaner overspray; do not use steel wool, wire brushes or abrasive pads, do not leave dish rags in the sink, and rubber mats left in the sink allow soap and hard water deposits to form in the grain.',
+    },
+    {
+      id: 'src-sssink-4',
+      title: 'How to Clean Stainless Steel Sinks',
+      publisher: 'Franke',
+      url: 'https://www.franke.com/us/en/home-solutions/support/resources/how-to-clean/how-to-clean-stainless-steel.html',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wipe the sink after use with a damp soft cloth and detergent and rinse; drying the surface after each use prevents water deposits; do not use the rough side of sponges; household products containing bleaches and acids attack stainless steel; do not leave plastic pads in the sink for long periods.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Stainless Steel Sink (Sink Maker Tips)',
+    description: 'How to clean a stainless steel sink: dish soap along the grain, rinse, dry with microfiber. What Kraus, Blanco and Kohler say about water spots, BKF and mats.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-stainless-steel-sink',
+    indexable: true,
+    focusKeyword: 'how to clean a stainless steel sink',
+  },
+};
+
+export default article;

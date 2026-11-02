@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-coffee-stains-out-of-clothes',
+  slug: 'how-to-get-coffee-stains-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get coffee stains out of clothes',
+  subtitle: 'Blot, flush cold water through the back of the fabric, work in detergent and wash, then check before the dryer. What changes when the coffee had milk in it, and when to reach for an oxygen bleach soak.',
+  excerpt: 'Cold water through the back, detergent pretreat, warmest safe wash, oxygen bleach for what is left, no dryer until it is gone.',
+  quickAnswer: 'Blot up what you can, then run cold water through the back of the stain to push the coffee out of the fibers. Work liquid laundry detergent into the spot, let it sit a few minutes, and wash in the warmest water the care label allows without rinsing the detergent off. If the coffee had milk or cream in it, keep every step before the wash cold, because warm or hot water can set protein-based dairy stains. For a stain that survives, soak in an oxygen bleach solution and wash again, and do not put the garment in the dryer until the stain is completely gone.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  safetyWarnings: [
+    'Do not put the garment in the dryer until the coffee stain is completely gone. Dryer heat sets the stain and makes it much harder to remove.',
+    'If the coffee contained milk or cream, use only cold water until the wash. Warm or hot water can set protein-based dairy stains.',
+    'Oxygen stain removers are not for wool, wool blends, silk, silk blends, leather or dry-clean-only fabrics. On fabrics prone to color change, do not leave the pretreatment on longer than 5 minutes before washing.',
+    'Use chlorine bleach only if the care label allows it, and never mix bleach with ammonia, vinegar or other cleaners. Ventilate the room when you use bleach or commercial stain removers.',
+    'Read the care label first and test any stain remover on an inside seam or other hidden spot to check that the color does not run.',
+  ],
+  materialsNeeded: [
+    'Clean white cloth or paper towels for blotting',
+    'Cold running water',
+    'Liquid laundry detergent, ideally one with enzymes',
+    'Soft-bristled toothbrush (optional)',
+    'Oxygen bleach stain remover powder or spray',
+    'Bucket or basin for soaking',
+    'For stubborn stains: dishwashing liquid and white vinegar',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Blot and Check the Care Label',
+      instruction: 'Act as soon as you can, because fresh coffee comes out far more easily than a dried stain. Take the garment off, blot up excess coffee with a clean cloth or paper towel without rubbing, and read the care label for the water temperature and bleach the fabric can take. Dry-clean-only items should go to a cleaner.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Flush Cold Water Through the Back',
+      instruction: 'Turn the stained area inside out and hold it under cold running water so the water pushes through the back of the stain and out of the fabric, rather than driving the coffee deeper into the fibers. Keep flushing until the water runs mostly clear.',
+      proTip: 'If the coffee had milk or cream in it, stay with cold water for this step and the next. Warm or hot water can set protein-based dairy stains before the detergent has a chance to lift them.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Work In Liquid Detergent',
+      instruction: 'Cover the stain with liquid laundry detergent, preferably one containing enzymes, and work it gently into the fibers with your fingers or a soft-bristled toothbrush. Let it sit for about 5 minutes. A paste of powdered detergent and water also works.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wash Without Rinsing Off the Pretreatment',
+      instruction: 'Put the garment in the washer with the detergent still on the stain and wash it with your usual detergent dose in the warmest water the care label recommends. Add chlorine bleach only if the label allows it on that fabric; otherwise use an oxygen bleach.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Check the Stain Before Drying',
+      instruction: 'Take the garment out as soon as the cycle ends and look at the stain in good light while it is still damp. If any brown shadow remains, do not dry it. Repeat the pretreatment and wash, or move on to a soak.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Soak Old or Stubborn Coffee Stains',
+      instruction: 'For a large or set-in stain, dissolve oxygen bleach stain remover powder in water at the strength the label gives (OxiClean lists 2 to 4 scoop lines per gallon) and soak the garment for 1 to 6 hours, then wash as usual. An alternative from the University of Georgia Extension: soak the stain for 15 minutes in 1 quart of warm water with 1/2 teaspoon of dishwashing liquid and 1 tablespoon of white vinegar, rinse and launder.',
+      proTip: 'Oxygen bleach contains no chlorine, so it can be used on washable clothes of any color, but not on wool, silk or leather.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Air-Dry Only When the Stain Is Gone',
+      instruction: 'Once the stain has completely disappeared, dry the garment as the care label directs. If you are unsure whether a faint mark remains, air-dry it first; heat from the dryer will set whatever is left.',
+    },
+  ],
+  ifMethodFails: [
+    'If a light brown mark remains after washing, repeat the detergent pretreatment and wash. Manufacturers note that tough coffee stains can take more than one round, as long as the garment has not been through the dryer.',
+    'If the stain is old or was dried in, soak it in an oxygen bleach solution for the full 6 hours, then wash again in the warmest water the label allows. On white, bleach-safe cotton, chlorine bleach used as the label directs is the next step.',
+    'If the garment is wool, silk, leather or dry-clean-only, or the stain has already been through the dryer, take it to a professional dry cleaner and tell them it is coffee, and whether it had milk in it.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Do you use hot or cold water to get coffee out of clothes?',
+      answer: 'Start with cold water: blot, then flush cold water through the back of the stain and pretreat with detergent. Once the stain is pretreated, wash in the warmest water the care label allows. If the coffee had milk or cream, keep everything before the wash cold, because warm or hot water can set protein-based dairy stains.',
+    },
+    {
+      question: 'Is coffee with milk harder to get out than black coffee?',
+      answer: 'It needs a little more care. Black coffee is a tannin stain that rinses and pretreats well with detergent and oxygen bleach. Milk or cream adds a protein-based dairy stain, which warm or hot water can set, so rinse it in cold water and use an enzyme-containing detergent for the pretreatment.',
+    },
+    {
+      question: 'Can old, dried coffee stains be removed from clothes?',
+      answer: 'Often, yes, if the garment has not been through the dryer. Pretreat with liquid detergent, then soak it for several hours in an oxygen bleach solution made to the label strength before washing. Dryer heat sets coffee stains, so a stain that has been machine-dried is much harder to shift.',
+    },
+    {
+      question: 'Does vinegar remove coffee stains from clothes?',
+      answer: 'It can help as part of a soak. The University of Georgia Extension suggests soaking a stubborn coffee stain for 15 minutes in 1 quart of warm water with 1/2 teaspoon of dishwashing liquid and 1 tablespoon of white vinegar, then rinsing and laundering. Never combine vinegar with chlorine bleach.',
+    },
+    {
+      question: 'Can I use bleach on a coffee stain?',
+      answer: 'Only if the care label allows it. On white, bleach-safe fabrics chlorine bleach is an option in the wash; on colors, use an oxygen bleach instead, which contains no chlorine. Test on a hidden seam first and never mix bleach with vinegar, ammonia or other cleaners.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-coffeeclothes-1',
+      title: 'Remove Stains From Coffee, Tea',
+      publisher: 'University of Georgia Extension, Textiles, Merchandising and Interiors',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-coffee-tea/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For apparel, sponge or rinse the stain promptly in cool water, pretreat with an enzyme-containing detergent, liquid heavy-duty detergent or granular detergent paste, and launder with chlorine bleach if safe for the fabric, otherwise oxygen bleach; stubborn stains can be soaked 15 minutes in 1 quart warm water, 1/2 teaspoon dishwashing liquid and 1 tablespoon white vinegar. Read the care label, pretest for colorfastness and ventilate.',
+    },
+    {
+      id: 'src-coffeeclothes-2',
+      title: 'How to Remove Coffee and Tea Stains',
+      publisher: 'Tide',
+      url: 'https://tide.ca/en-ca/how-to-wash-clothes/how-to-remove-stains/coffee-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Blot the stain and run cold water over it, or through the back of the stain when on the go; work liquid detergent into the fibers with a soft-bristled toothbrush and let it sit a few minutes; wash per the care label; if the stain remains, repeat before drying because drying will set the stain.',
+    },
+    {
+      id: 'src-coffeeclothes-3',
+      title: 'How to Remove Milk Stains',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/milk-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Blot fresh milk and rinse with cold water, pretreat with liquid detergent for 5 minutes, load without rinsing it off, wash at the hottest temperature on the care label and check before drying; the page notes warm or hot water can easily set protein-based dairy stains.',
+    },
+    {
+      id: 'src-coffeeclothes-4',
+      title: 'How to Remove Coffee Stains',
+      publisher: 'OxiClean',
+      url: 'https://www.oxiclean.com/stain-solutions/how-to-remove-coffee-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Saturate the stain with oxygen stain remover spray and let it stand 5 minutes to a week, but no longer than 5 minutes on fabrics prone to color change; for large stains soak 1 to 6 hours in 2 to 4 scoop lines of Versatile Stain Remover per gallon; wash in the warmest water the label recommends; not for wool, silk, leather or dry-clean-only fabrics.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Coffee Stains Out of Clothes (Black or Milky)',
+    description: 'How to get coffee stains out of clothes: blot, flush cold water through the back, pretreat with detergent, wash, and use oxygen bleach before any dryer heat.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-coffee-stains-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get coffee stains out of clothes',
+  },
+};
+
+export default article;

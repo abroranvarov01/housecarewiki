@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-stove-grates',
+  slug: 'how-to-clean-stove-grates',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean stove grates',
+  subtitle: 'Cast-iron and porcelain-coated gas stove grates: when the dishwasher is allowed, when a soak is and is not, nonabrasive pads for burned-on grease, why the self-clean oven is usually off limits, and drying them fully.',
+  excerpt: 'Let them cool, check your manual for dishwasher and soaking rules, scrub with a nonabrasive pad, dry completely.',
+  quickAnswer: 'Let the grates cool, lift them off, and wash them in warm soapy water with a soft sponge or a nonabrasive plastic scrubbing pad, adding a mildly abrasive cleaner for burned-on grease. Whether they can go in the dishwasher or be soaked depends on the brand: Whirlpool and Frigidaire allow the dishwasher for some grates, Samsung says never, and Bosch warns against soaking. Do not clean grates in a self-cleaning oven unless your own manual says your grates can go in, because Whirlpool and Samsung both rule it out. Rinse, dry completely before putting them back, and follow your owner\'s manual when the makers disagree.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Black cast-iron burner grates on a stainless steel gas stovetop as a hand wipes crumbs and grease off the cooktop with a yellow and green sponge',
+  safetyWarnings: [
+    'Make sure all burners are off and the grates are completely cool before you lift them off or wash them.',
+    'Do not put grates in the oven during a self-clean cycle unless your owner\'s manual specifically allows it; Whirlpool and Samsung both say not to.',
+    'Avoid steel wool, abrasive cleansers, caustic lye (sodium hydroxide) and chlorine-based cleaners, which Samsung warns against on cooktop parts.',
+    'Do not bang grates against each other, the counter or cast-iron cookware. Whirlpool warns this can chip them.',
+    'Ventilate the kitchen if you use a degreaser, and never mix cleaning products.',
+  ],
+  materialsNeeded: [
+    'Sink or large basin with warm water',
+    'Mild dish soap',
+    'Soft sponge',
+    'Nonabrasive plastic scrubbing pad',
+    'Mildly abrasive cleaner (optional, for burned-on food)',
+    'Mild degreaser or white vinegar (optional, only for soaking if your manual allows)',
+    'Dry towels',
+    'Cooking oil (only for cast iron grates if your manual calls for it)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Let the Grates Cool and Lift Them Off',
+      instruction: 'Turn every burner off and wait until the grates are cool. Lift them straight off and set them down gently on a towel; knocking grates together or against hard surfaces can chip the coating.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Check Your Manual for Grate Type and Rules',
+      instruction: 'Look up your model before choosing a method. Grates may be cast iron or porcelain-coated cast iron, and makers give different rules: Whirlpool and Frigidaire allow the dishwasher for some grates, Samsung says not to wash any cooktop component in the dishwasher, and Bosch warns against soaking. Your owner\'s manual is the final word.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wash in Warm Soapy Water',
+      instruction: 'Wash each grate in the sink with warm water, mild dish soap and a soft sponge, working into the corners and the undersides of the fingers. Rinse with clean water.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Loosen Burned-On Grease',
+      instruction: 'For baked-on food, use a nonabrasive plastic scrubbing pad with a mildly abrasive cleaner, never steel wool. If your manual permits soaking, Samsung suggests 15 to 30 minutes in hot water, a mild degreaser or white vinegar for heavy buildup. Skip the soak if your maker, like Bosch, warns that prolonged soaking can damage the finish.',
+      proTip: 'Wipe up acidic spills such as tomato or vinegar as soon as the grates cool; Whirlpool notes acids can affect the finish.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Use the Dishwasher Only If Your Grates Are Rated for It',
+      instruction: 'If your manual says the grates are dishwasher safe, soak or scrub off burned-on food first, then run them on the most aggressive cycle, as Whirlpool advises. If the manual says no, or your brand is Samsung, wash them by hand. Burner caps never go in the dishwasher.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Dry the Grates Completely',
+      instruction: 'Towel-dry each grate and make sure it is completely dry before putting it back on the cooktop. Samsung and Bosch both call for fully dry grates and burner parts before reassembly.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Re-Oil Cast Iron If Your Maker Says To',
+      instruction: 'Frigidaire\'s instructions for cast iron grates are to wash them, apply a light film of cooking oil, and heat them in the oven at 350°F for 10 minutes; for porcelain-coated grates, lightly oil any unfinished areas after washing. Only do this if your manual calls for it, then set the grates back gently in their positions.',
+    },
+  ],
+  ifMethodFails: [
+    'If burned-on residue survives a wash, repeat with a nonabrasive pad and a mildly abrasive cleaner, or a soak if your manual allows it, rather than reaching for steel wool or oven cleaner.',
+    'If dishwasher-safe grates still come out greasy, they likely needed more pre-scrubbing. Scrub or soak the baked-on food first, then rerun them on the most aggressive cycle.',
+    'If the coating is chipped or the grates are rusting, cleaning will not fix it. Check your manual or contact the manufacturer about care for damaged grates or replacements.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you put cast iron stove grates in the dishwasher?',
+      answer: 'It depends on the brand and model. Frigidaire\'s instructions include the dishwasher for its cast iron and porcelain-coated grates, and Whirlpool says some grates are dishwasher safe on the most aggressive cycle. Samsung says not to clean any cooktop component in the dishwasher. Check your owner\'s manual before loading them.',
+    },
+    {
+      question: 'Can I clean stove grates in the self-cleaning oven?',
+      answer: 'Not unless your owner\'s manual says your grates are allowed. Whirlpool and Samsung both say not to clean grates in a self-cleaning oven. If your manual does not mention it, wash them by hand instead.',
+    },
+    {
+      question: 'Is it OK to soak stove grates overnight?',
+      answer: 'Makers disagree. Samsung suggests a 15 to 30 minute soak in hot water, a mild degreaser or white vinegar for heavy buildup, while Bosch warns that prolonged soaking can damage the finish on its grates. Follow your manual, and keep soaks short when you do use one.',
+    },
+    {
+      question: 'What is the best thing to clean stove grates with?',
+      answer: 'Warm water with mild dish soap and a soft sponge for routine cleaning, plus a nonabrasive plastic scrubbing pad and a mildly abrasive cleaner for burned-on food. Avoid steel wool, abrasive cleansers, lye and chlorine-based products.',
+    },
+    {
+      question: 'Why do my stove grates need to be completely dry?',
+      answer: 'Manufacturers including Samsung and Bosch say grates and burner parts should be fully dry before you put the cooktop back together. Water left on burner caps in particular can stop burners lighting properly, so dry everything before reassembly.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-grates-1',
+      title: 'How to Clean Burner Grates and Caps',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Cooking/Cooktops/Product_Info/Cooktop_Cleaning_and_Care/How_to_Clean_Burner_Grates_and_Caps',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean with controls off once grates and caps are cool; clean acidic spills promptly as they can affect the finish; use soap, water and a soft cloth, or a nonabrasive plastic pad with a mildly abrasive cleaner; some grates are dishwasher safe on the most aggressive cycle per the owner\'s manual after soaking or scrubbing burned-on food; never wash caps in the dishwasher or clean caps or grates in a self-clean cycle; do not bang grates against hard surfaces.',
+    },
+    {
+      id: 'src-grates-2',
+      title: 'How to clean your Samsung gas cooktop',
+      publisher: 'Samsung US Support',
+      url: 'https://www.samsung.com/us/support/answer/ANS10006924/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wash grates in warm soapy water and rinse; for heavy buildup soak 15 to 30 minutes in hot water, a mild degreaser or white vinegar; make sure grates are completely dry before replacing; do not clean any cooktop component in the dishwasher or a self-cleaning oven; avoid steel wool, abrasive cleaners, caustic lye and chlorine.',
+    },
+    {
+      id: 'src-grates-3',
+      title: 'Clean Gas Cooktop (Owner Support)',
+      publisher: 'Bosch Home Appliances US',
+      url: 'https://www.bosch-home.com/us/owner-support/get-support/clean-gas-cooktop',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'With the cooktop fully cooled, wash grates and burner caps in the sink with mild soapy water and a soft sponge, rinse and dry completely; do not soak the grates, as prolonged immersion can damage the finish; dry all parts before reassembly.',
+    },
+    {
+      id: 'src-grates-4',
+      title: 'Ranges - How can I clean my gas range/cooktop grates?',
+      publisher: 'Frigidaire Owner Support',
+      url: 'https://owner.frigidaire.com/support-articles/article/1847358-ranges-how-can-i-clean-my-gas-range-cooktop-grates-',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Cast iron grates: run through the dishwasher, apply a light film of cooking oil, and heat in the oven at 350°F for 10 minutes. Porcelain-coated grates: wash in the dishwasher, then lightly oil any unfinished areas.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean Stove Grates (Cast Iron and Porcelain)',
+    description: 'How to clean stove grates: soapy wash, nonabrasive pads, which brands allow the dishwasher or a soak, why self-clean ovens are usually out, and drying fully.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-stove-grates',
+    indexable: true,
+    focusKeyword: 'how to clean stove grates',
+  },
+};
+
+export default article;

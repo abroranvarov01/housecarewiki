@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-laminate-floors',
+  slug: 'how-to-clean-laminate-floors',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean laminate floors',
+  subtitle: 'Dry-clean often, damp-clean rarely with a well wrung out cloth and the cleaner your floor maker names, and dry the floor right away. Why wax, polish, oil soaps, abrasives and puddles ruin laminate, and how to lift tough spots.',
+  excerpt: 'Vacuum or dust mop often, damp-wipe with a well wrung out cloth and the maker-approved cleaner, then dry the floor immediately.',
+  quickAnswer: 'Vacuum or dust mop laminate regularly using a hard-floor setting or soft brush, never a beater bar, to remove the grit that scratches it. When it needs more, apply your floor maker\'s laminate cleaner (or plain water) to a microfiber cloth or mop, wring it out until it is barely damp, wipe the floor, and dry it right away so no moisture is left in the joints. Never flood or wet mop laminate, and do not use wax, polish, oil soaps, steel wool, scouring powder or abrasive cleaners. Wipe up spills as soon as they happen.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'hardwood-laminate',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-floor-carpet.webp',
+  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  safetyWarnings: [
+    'Never flood laminate or wet mop it. Mohawk calls wet maintenance entirely forbidden, and Shaw warns that washing or wet mopping with liquids can cause swelling, warping, delamination and joint-line separation and void the warranty.',
+    'Do not wax, polish, sand or lacquer laminate, and skip oil soaps and one-step clean-and-shine products. Mohawk and Mannington both list these as products never to use.',
+    'Never use steel wool, scouring powder or abrasive cleaners; laminate makers warn they scratch the surface. Avoid strong ammoniated or chlorinated cleaners unless your own floor\'s care guide names them.',
+    'Wipe up bleach, hair dye, iodine, acid-based metal cleaners and shoe polish immediately. Mohawk lists them among substances that damage laminate if left on it for more than 10 minutes.',
+    'If you use acetone or rubbing alcohol for a stubborn spot, ventilate the room, keep it away from flames and use only a little on a cloth, never poured on the floor.',
+  ],
+  materialsNeeded: [
+    'Vacuum with a hard-floor setting or soft brush head (beater bar off), or a dust mop',
+    'Microfiber mop or soft microfiber cloths',
+    'The laminate cleaner your floor maker recommends, or plain water',
+    'Clean, dry cotton or microfiber cloth for drying',
+    'Plastic or rubber scraper (for gum and candle wax)',
+    'Optional for stubborn marks: acetone (nail polish remover) or rubbing alcohol',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Find Your Floor\'s Care Guide',
+      instruction: 'Look up the care instructions for your exact laminate brand and collection. Makers disagree on details: Mohawk allows only its own cleaner or plain water and forbids soap and detergent, Pergo allows a mild detergent occasionally, and Shaw gives a recipe of rubbing alcohol, water and a squirt of dish soap. Mohawk also recommends dry maintenance only for its bevel-edged planks. Follow the guide for the floor you own.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Vacuum or Dust Mop Regularly',
+      instruction: 'Sweep, dust mop or vacuum often to remove the grit that scratches and dulls laminate. Use the hard-floor attachment or a soft bristle brush and switch off or avoid beater bars and spinning heads. Check that the vacuum wheels are clean, because grit stuck in plastic wheels can scratch the floor.',
+      proTip: 'Doormats outside every entrance keep sand, grit and driveway grime from being tracked onto the floor in the first place.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wipe Up Spills Right Away',
+      instruction: 'Remove liquid spills, including pet urine, as soon as you see them. Blot with an absorbent cloth and dry the spot completely. Liquid left standing on laminate can seep into the joints even on moisture-resistant floors.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Put the Cleaner on the Cloth, Not the Floor',
+      instruction: 'When the floor needs more than dry cleaning, apply your maker\'s laminate cleaner or plain water lightly to a microfiber cloth or mop pad. Never spray, pour or squirt liquid directly onto the floor, and do not use spray mops that do.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Damp-Wipe with a Well Wrung Out Mop',
+      instruction: 'Wring the cloth or mop until it is only slightly damp, then wipe the floor in sections. Pergo recommends a slightly damp, carefully wrung out mop instead of a wet one, especially on floors with bevelled edges where moisture can collect in the joints.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Dry the Floor Immediately',
+      instruction: 'Follow behind with a clean, dry cotton or microfiber cloth until no moisture is visible, paying attention to the joints. Mohawk says not to let laminate air-dry and to remove any excess water immediately.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Spot-Treat Stubborn Marks',
+      instruction: 'For gum or candle wax, let it harden and gently scrape it off with a plastic or rubber scraper. For ink, paint, crayon, nail polish or shoe polish, Mohawk and Mannington suggest a little acetone (nail polish remover) or rubbing alcohol on a soft cloth. Ventilate the room, then wipe the spot with a barely damp cloth and dry it.',
+    },
+  ],
+  ifMethodFails: [
+    'If the floor looks dull or streaky after cleaning, residue is usually the cause. Wipe again with a cloth barely dampened with plain water and dry it immediately, and stop using any soap, oil soap or shine product your maker does not list.',
+    'If boards have swollen, lifted or separated at the joints, the damage is from moisture and cleaning will not fix it. Contact the floor maker or installer about replacing the affected planks.',
+    'If a stain is not listed in your care guide, call the manufacturer\'s consumer services line before trying another chemical. Mannington, for example, asks owners to contact it about stains not covered in its chart.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What is the best thing to clean laminate floors with?',
+      answer: 'The cleaner your floor maker recommends, applied to a well wrung out microfiber cloth or mop. Mohawk says its laminate cleaner or plain water is the only product you need, Mannington suggests a clear, non-sudsy ammonia-based cleaner in warm water, and Shaw sells its own hard surface cleaner. Use the one that matches your brand.',
+    },
+    {
+      question: 'Can you mop laminate floors with water?',
+      answer: 'Only with a barely damp mop or cloth, never a wet one. Mohawk allows plain water on a well wrung out cloth and says to wipe the floor dry immediately. Puddles and wet mopping can make laminate swell, warp and separate at the joints.',
+    },
+    {
+      question: 'Can I use Swiffer WetJet or a spray mop on laminate?',
+      answer: 'Check your floor\'s care guide first. Mohawk tells owners not to use spray mops or any product that squirts liquid directly onto the floor, and recommends applying cleaner to a cloth instead.',
+    },
+    {
+      question: 'Can you use a steam mop on laminate floors?',
+      answer: 'Usually not. Shaw and Mohawk tell owners not to use steam mops on their laminate. Mannington, by contrast, approves residential steam cleaners for one named collection, so read the care sheet for your exact floor before using one.',
+    },
+    {
+      question: 'How do you make laminate floors shine?',
+      answer: 'Keep them free of grit and residue rather than adding a shine product. Laminate makers say never to wax or polish laminate and warn that soap-based detergents can leave a dull film. A clean, barely damp wipe followed by a dry cloth restores the factory finish.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-laminate-1',
+      title: 'Mohawk Laminate Maintenance Instructions',
+      publisher: 'Mohawk Hard Surfaces',
+      url: 'https://images.thdstatic.com/catalog/pdfImages/36/36fad8fb-7f94-42f7-bbad-7e5ec4ae7c7d.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Vacuum or dust mop without beater bars, damp clean only with Mohawk cleaner or plain water applied to a well wrung out cloth, wipe dry immediately, never use soap, detergents, wax, polish, oil soaps, spray mops, steam cleaners or abrasives, use acetone for stubborn stains, scrape hardened gum and wax, and remove spills such as bleach within 10 minutes.',
+    },
+    {
+      id: 'src-laminate-2',
+      title: 'Laminate Care and Maintenance',
+      publisher: 'Mannington',
+      url: 'https://www.mannington.com/residential/laminate/laminate-care-and-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Vacuuming or sweeping is usually enough; damp clean with a slightly damp microfiber or terrycloth mop and a clear, non-sudsy ammonia-based cleaner in warm water; never flood the floor; avoid soap-based detergents, abrasives, steel wool and scouring powder; never wax, polish, sand or lacquer; remove spills promptly; use doormats and floor protectors.',
+    },
+    {
+      id: 'src-laminate-3',
+      title: 'How do I clean my Pergo laminate floor?',
+      publisher: 'Pergo',
+      url: 'https://int.pergo.com/en/frequently-asked-questions-helpcenter/laminate/maintenance/how-do-i-clean-my-pergo-laminate-floor',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Vacuum or sweep to keep the floor clean, occasionally use a damp cloth with a mild detergent, and never wet mop a floor with bevelled edges; use a slightly damp, carefully wrung out mop and wipe dry any water left in the joints.',
+    },
+    {
+      id: 'src-laminate-4',
+      title: 'Floor Cleaning and Care',
+      publisher: 'Shaw Floors',
+      url: 'https://costco.shawfloors.com/floor-cleaning-and-care',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For laminate, sweep or vacuum with the hard floor attachment rather than the beater bar, spot clean with a gentle cleanser and dry with an absorbent cloth, do not wet mop or use steam mops, and avoid steel wool, abrasive cleaners, strong ammoniated or chlorinated cleaners and buffing or polishing machines.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean Laminate Floors (Without Damage)',
+    description: 'How to clean laminate floors: vacuum without a beater bar, damp-wipe with a wrung-out mop and maker-approved cleaner, dry right away, and skip wax and polish.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-laminate-floors',
+    indexable: true,
+    focusKeyword: 'how to clean laminate floors',
+  },
+};
+
+export default article;

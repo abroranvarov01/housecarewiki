@@ -1,0 +1,148 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-microwave',
+  slug: 'how-to-clean-a-microwave',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a microwave',
+  subtitle: 'Steam a bowl of water to soften baked-on splatters, wipe the cavity, wash the turntable, and keep the door seal clear. Plus the cleaners and habits manufacturers say damage a microwave.',
+  excerpt: 'Steam a bowl of water, wipe the softened splatters, wash the turntable, and wipe the door seal.',
+  quickAnswer: 'Put 2 cups of water, with lemon juice if you like, in a 4-cup microwave-safe bowl and heat it on High for about 5 minutes or until it boils, then leave it standing in the closed oven for 1 to 2 minutes so the steam softens dried-on food. Carefully remove the hot bowl, wipe the cavity with a soft cloth or paper towel, then take out the turntable and wash it in warm, sudsy water or the dishwasher. Wipe the door and door seal with mild soap and water so grime does not stop the door from closing properly. Never use abrasive cleaners, steel wool, bleach or oven cleaner, never spray cleaner onto the controls or into the vents, and never run the microwave empty.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-kitchen.webp',
+  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  safetyWarnings: [
+    'Never run the microwave empty, including to dry it after cleaning. Samsung warns that operating it without food can damage the magnetron tube or the glass tray.',
+    'The water bowl and the turntable can be very hot after the steam cycle. Use oven mitts, let the turntable cool, and do not put a hot glass tray straight into water, which can make it break.',
+    'Do not use abrasive cleaners, steel wool, bleach, solvents such as alcohol, ammonia or paint thinner, or commercial oven cleaner on any part of the microwave; manufacturers warn they damage the finish.',
+    'Do not spray cleaner directly onto the control panel, and keep water out of the vents and other openings to protect the operating parts.',
+    'Unplug the microwave before wiping it down, as GE Appliances advises for any cleaning or maintenance; plug it in only to run the water-bowl steam step.',
+  ],
+  materialsNeeded: [
+    'A 4-cup microwave-safe bowl or measuring glass',
+    '2 cups of water',
+    'Optional: juice of one lemon',
+    'Soft cloths, a non-abrasive sponge or paper towels',
+    'Mild dish soap and warm water',
+    'Dry dish towel',
+    'Optional for stuck-on spots: a plastic scrubber (never a metal one)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check Your Owner\'s Manual',
+      instruction: 'Glance at your owner\'s manual first: some models have a built-in Steam Clean button that uses a small bowl of water, and a few interiors have their own care rules.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Steam the Inside with a Bowl of Water',
+      instruction: 'Pour 2 cups of water into a 4-cup microwave-safe bowl or measuring glass, adding the juice of a lemon if you want a fresher smell. Heat on High for about 5 minutes, or until the water boils, then leave the bowl standing in the closed oven for 1 to 2 minutes so the steam softens dried-on food. Repeat for tough splatters.',
+      proTip: 'If your model has a Steam Clean button, use it instead: GE runs that cycle with about 1/4 cup of water in the steam bowl or a microwave-safe bowl.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Remove the Bowl, Unplug and Wipe the Cavity',
+      instruction: 'Lift the hot bowl out carefully with oven mitts, then unplug the microwave before you clean inside it. Wipe the ceiling, walls and floor of the cavity with a soft cloth, dish towel or paper towel while the splatters are still soft. For greasy or stubborn spots, use a cloth with warm water and a little mild soap, then wipe again with a damp cloth to rinse.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wash the Turntable and Roller Ring',
+      instruction: 'Once the glass tray has cooled, lift out the turntable and the roller ring or support underneath it. Wash the tray in warm, sudsy water or in the dishwasher, wipe the roller ring, and wipe the floor of the cavity under where they sat. Dry everything completely before putting it back.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Clean the Door, Window and Door Seal',
+      instruction: 'Wash the inside and outside of the door and the window with very mild soap and water on a soft cloth, which avoids scratches. Wipe the seal area around the door opening so grime and residue do not build up there, because buildup can stop the door from closing properly.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wipe the Exterior and Controls Without Spraying',
+      instruction: 'Wipe the outside with a soft cloth dampened in warm, soapy water, then rinse and dry. For the control panel, use a soft damp cloth and dry it immediately; never spray cleaner onto the controls, and keep liquid out of the vents.',
+      proTip: 'Over-the-range models also have a grease filter underneath; Samsung suggests cleaning it about monthly.',
+    },
+  ],
+  ifMethodFails: [
+    'If baked-on food is still stuck after one steam cycle, repeat the steam step and then work the spot gently with a plastic scrubber or plastic soap-filled pad. Never scrape with a knife or other sharp utensil.',
+    'If a smell lingers, steam a fresh bowl of water with lemon juice, wipe the cavity again, and wash the turntable and roller ring, where spills often collect.',
+    'If the door no longer closes firmly, or the interior shows chipped coating or burn marks, stop using the microwave and contact the manufacturer or a qualified technician rather than trying to scrub it out.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How do you clean a microwave with lemon?',
+      answer: 'Add the juice of one lemon to 2 cups of water in a 4-cup microwave-safe bowl, heat it on High for about 5 minutes or until it boils, and leave it standing in the oven for 1 to 2 minutes. The steam softens food and the lemon leaves a fresher smell. Then wipe the inside clean with a soft cloth.',
+    },
+    {
+      question: 'Can you put the microwave turntable in the dishwasher?',
+      answer: 'Samsung says its glass turntable is dishwasher safe; otherwise wash it in warm, sudsy water. Let it cool first and do not plunge a hot tray into water. Check your owner\'s manual if you are unsure about your model.',
+    },
+    {
+      question: 'Is it bad to run a microwave empty?',
+      answer: 'Yes. Samsung warns that operating a microwave with nothing inside can damage the magnetron tube or the glass tray. Always have water or food in the oven when it runs, including during a steam clean.',
+    },
+    {
+      question: 'What should you not use to clean a microwave?',
+      answer: 'Avoid abrasive cleaners and scouring powders, steel wool, bleach, commercial oven cleaner, solvents such as alcohol, ammonia or paint thinner, and sharp utensils. Do not spray cleaner directly onto the controls or let liquid run into the vents. Mild soap and water on a soft cloth is enough for most messes.',
+    },
+    {
+      question: 'How long should you steam a microwave to clean it?',
+      answer: 'Samsung recommends heating 2 cups of water on High for about 5 minutes, or until it boils, then letting it stand for 1 to 2 minutes. GE suggests a smaller version for cooked-on food: 1 cup of water for 3 minutes, then 5 minutes of standing time. Either way, repeat for very stubborn splatters.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-microwave-1',
+      title: 'How to clean a Samsung microwave',
+      publisher: 'Samsung US Support',
+      url: 'https://www.samsung.com/us/support/answer/ANS10004814/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Steam 2 cups of water (optionally with lemon juice) in a 4-cup microwave-safe bowl on High for about 5 minutes or until boiling, let it stand 1 to 2 minutes, wipe the cavity, and wash the dishwasher-safe turntable in warm sudsy water once cool. Keep door seals free of grime so the door closes properly, keep liquid out of the vents, and avoid abrasive cleaners, solvents, steel wool and bleach.',
+    },
+    {
+      id: 'src-microwave-2',
+      title: 'Care and Cleaning of the Microwave',
+      publisher: 'Samsung Support',
+      url: 'https://www.samsung.com/africa_en/support/home-appliances/care-and-cleaning-of-the-microwave/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Never operate the oven without food, as this can damage the magnetron tube or glass tray; do not put the glass tray in water right after cooking; do not spray solution onto the controls; keep water out of openings; never use commercial oven cleaners or abrasive cleaners on any part of the microwave.',
+    },
+    {
+      id: 'src-microwave-3',
+      title: 'Microwave - Stainless Steel Interior Cleaning Recommendations',
+      publisher: 'GE Appliances',
+      url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=17378',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Unplug before cleaning; use mild, non-abrasive soap on a sponge or soft cloth; for cooked-on food, heat one cup of water on full power for three minutes and let it stand five minutes before cleaning with a plastic pad; do not spray solution onto the controls; avoid abrasive cleaners, sharp utensils and commercial oven cleaner.',
+    },
+    {
+      id: 'src-microwave-4',
+      title: 'Microwave - Steam Clean',
+      publisher: 'GE Appliances',
+      url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=23964',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'On select models, the Steam Clean feature uses 1/4 cup of water in the steam bowl or a microwave-safe bowl to rehydrate dried spills; afterward remove the turntable and support and wipe the cavity with a paper towel or soft cloth.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Microwave: Steam, Wipe, Done',
+    description: 'How to clean a microwave: steam a bowl of water (with lemon), wipe the softened mess, wash the turntable and door seal, and skip the cleaners that damage it.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-microwave',
+    indexable: true,
+    focusKeyword: 'how to clean a microwave',
+  },
+};
+
+export default article;

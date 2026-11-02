@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-rust-stains-out-of-clothes',
+  slug: 'how-to-get-rust-stains-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get rust stains out of clothes',
+  subtitle: 'Rust is iron oxide, and chlorine bleach makes it worse. Use a fabric-safe rust remover exactly as the label says, rinse thoroughly, wash, and air dry. What lemon juice and salt can and cannot do, and which fabrics need a dry cleaner.',
+  excerpt: 'Skip chlorine bleach, test a fabric-safe rust remover on a hidden spot, apply it to the dampened stain, rinse well, wash and air dry.',
+  quickAnswer: 'Never use chlorine bleach on rust: it can set the stain and make it worse. Test a rust remover labeled for fabrics on a hidden spot, dampen the stain, apply the remover exactly as the label directs, and rinse thoroughly with clean water as soon as the orange is gone. Then machine wash as the care label allows and air dry. For a mild stain on white or colorfast cotton you can try salt and lemon juice dried in the sun, though Clorox notes weak acids often are not strong enough.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-laundry.webp',
+  heroImageAlt: 'Hand scrubbing a yellowed stain along the collar of a white button-down shirt with a wooden-handled brush, with a pile of clothes and a white laundry basket in the background',
+  safetyWarnings: [
+    'Do not use chlorine bleach on rust stains. University of Georgia Extension says chlorine bleach sets rust, and Clorox says bleach can make a rust stain worse.',
+    'Fabric rust removers are strong acids. Wear heavy-duty rubber gloves, ventilate the room, follow the label exactly, and rinse the fabric thoroughly as soon as the stain is gone.',
+    'Never mix a rust remover with chlorine bleach or other cleaners. Iron OUT\'s label also says not to use it with peroxide, bleach, bleach-detergents or oxi stain removers, so rinse and wash completely before trying any other product.',
+    'Rust removers can strip color and damage embroidered logos. Test on a hidden area first and use them only on white or colorfast fabrics.',
+    'Dry-clean-only garments should go to a dry cleaner rather than being treated with rust remover at home; silk and wool need specialty care, so a professional is the safer choice for them too.',
+  ],
+  materialsNeeded: [
+    'Rust stain remover labeled for fabrics or laundry (for example Iron OUT, Whink or a similar product)',
+    'Heavy-duty rubber gloves',
+    'Clean water',
+    'White cloth or cotton swab for the colorfastness test',
+    'Regular laundry detergent',
+    'Optional for white or colorfast cotton: table salt and lemon juice',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check the Care Label and Skip the Bleach',
+      instruction: 'Read the care label first. If it says dry clean only, take it to a dry cleaner. For washable clothes, set the chlorine bleach aside: it will not remove rust and can set the stain.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Test the Rust Remover on a Hidden Spot',
+      instruction: 'Put on rubber gloves. Apply a drop of the rust remover to an inside seam or hem, wait a few minutes, then rinse it off. If the color has not changed, the fabric is colorfast enough to treat.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Dampen the Stain',
+      instruction: 'Wet the rust stain with clean water. Clorox\'s method applies the remover to a dampened stain.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Apply the Remover and Stop When the Orange Is Gone',
+      instruction: 'Apply the rust remover to the stain exactly as its label directs and watch it closely. Stop as soon as the stain disappears. Contact times are short and vary by product; Iron OUT\'s spray, for example, says to leave it no more than about 30 seconds before rinsing and reapplying if needed.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rinse Thoroughly With Clean Water',
+      instruction: 'Rinse the treated area well with clean water to remove all of the acid. Do not let rust remover sit or dry in the fabric.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wash, Then Air Dry',
+      instruction: 'Machine wash the garment as the care label directs, then air dry it so you can check the spot before any heat touches it. If a faint mark remains, repeat the treatment.',
+      proTip: 'For white loads with rust discoloration from iron-rich water, Iron OUT powder can go in the washer: about half a cup in warm water as the drum fills, a 5-minute soak, then detergent. Read the full label first.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Try Salt, Lemon Juice and Sun for Light Stains',
+      instruction: 'If you would rather not use a commercial remover on a white or colorfast cotton item, sprinkle salt on the stain, add lemon juice, and let it dry in the sun. Rinse thoroughly and repeat if needed. This works best on light stains; for heavy rust, use a rust remover.',
+    },
+  ],
+  ifMethodFails: [
+    'If salt and lemon juice did nothing, switch to a commercial fabric rust remover. Rinse and wash the garment first so the lemon juice is gone before you apply a new product.',
+    'If the stain remains after two rounds of rust remover, stop. Rust removers can strip color, so rather than keep reapplying, take the garment to a dry cleaner and tell them it is rust.',
+    'If a white item has a general rusty or yellow cast rather than a spot, University of Georgia Extension suggests washing with detergent and 1 cup of oxygen bleach after a 10 to 15 minute soak. Do this only after any rust remover has been fully rinsed and washed out.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does bleach remove rust stains from clothes?',
+      answer: 'No. Clorox states that rust stains cannot be removed with chlorine bleach and that bleach, an alkaline oxidizer, can make a rust stain worse. University of Georgia Extension says chlorine bleach sets rust stains. Use a rust remover labeled for fabrics instead.',
+    },
+    {
+      question: 'Does lemon juice and salt really remove rust from fabric?',
+      answer: 'Sometimes, on light stains. University of Georgia Extension lists salt and lemon juice dried in the sun as a method for washable fabrics. Clorox notes that lemon juice and vinegar are weak acids that typically are not strong enough, so a fabric rust remover is the more reliable choice for darker stains.',
+    },
+    {
+      question: 'Is rust remover safe on colored clothes?',
+      answer: 'Only if the fabric is colorfast. Iron OUT warns its product may irreparably damage colors and embroidered logos and says to pre-test in a hidden area. Test a drop on an inside seam, wait a few minutes, rinse, and check for color change before treating the stain.',
+    },
+    {
+      question: 'Can you use vinegar to get rust out of clothes?',
+      answer: 'Vinegar is a weak acid, and Clorox says weak acids like vinegar and lemon juice typically are not strong enough to remove rust stains. A fabric rust remover works better. Never combine vinegar with chlorine bleach.',
+    },
+    {
+      question: 'Should I put a rust-stained shirt in the dryer?',
+      answer: 'Not until the stain is gone. Clorox recommends air drying after a rust remover treatment and wash, which lets you check the spot and repeat the treatment if needed before any heat is applied.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-rustclothes-1',
+      title: 'Remove Stains From Iron, Rust',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://www.fcs.uga.edu/%E2%80%8Bextension/stain-removal-iron-rust',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Do not use chlorine bleach on rust because it sets these stains; pretest products if colorfastness is uncertain; options are salt and lemon juice dried in the sun then rinsed, or a commercial rust remover used per the manufacturer\'s directions; for rust-discolored whites, wash with detergent and 1 cup of oxygen bleach after a 10 to 15 minute soak; read the care label and ventilate.',
+    },
+    {
+      id: 'src-rustclothes-2',
+      title: 'Removing Orange Rust Stains from Clothes',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/removing-orange-rust-stains-from-clothes/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Bleach is an alkaline oxidizer that can make a rust stain worse; use a hardware-store rust remover (a strong acid) with heavy-duty rubber gloves, test colorfastness with a drop on a hidden area, dampen the stain, apply, stop once it is gone, rinse with clean water, machine wash per the care label and air dry; lemon juice and vinegar are weak acids that typically are not strong enough; send dry-clean-only items to a dry cleaner.',
+    },
+    {
+      id: 'src-rustclothes-3',
+      title: 'Iron OUT Rust Stain Remover Powder',
+      publisher: 'Summit Brands',
+      url: 'https://summitbrands.com/iron-out-rust-stain-removers/powder/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For white laundry, add 1/2 cup to warm water as the washer fills, soak 5 minutes, then add detergent and wash; test colors and use only on colorfast dyes; the product may irreparably damage colors and embroidered logos; always pre-test; do not use with peroxide, bleach, bleach-detergents, oxi-stain removers or oxi-detergents.',
+    },
+    {
+      id: 'src-rustclothes-4',
+      title: 'Iron OUT Rust Stain Remover Spray',
+      publisher: 'Summit Brands',
+      url: 'https://summitbrands.com/iron-out-rust-stain-removers/spray/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'The spray can be used as a rust stain remover on white clothing and colorfast fabrics; spray on the stain, let it stand briefly (the FAQ says no more than 30 seconds), wipe with a damp cloth and rinse promptly and thoroughly, repeating if necessary; always pre-test in an inconspicuous area.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Rust Stains Out of Clothes (No Bleach)',
+    description: 'How to get rust stains out of clothes: skip chlorine bleach, test a fabric rust remover, apply to the damp stain, rinse well, wash and air dry. Lemon tips too.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-rust-stains-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get rust stains out of clothes',
+  },
+};
+
+export default article;

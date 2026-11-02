@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-lipstick-out-of-clothes',
+  slug: 'how-to-get-lipstick-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get lipstick out of clothes',
+  subtitle: 'Lipstick is oil plus strong pigment, so it smears if you rub it. Scrape off the excess, dab from the back of the fabric onto a clean cloth, break down the waxy base with a stain remover or dish detergent, wash, and check before the dryer.',
+  excerpt: 'Scrape, dab from the back onto a clean cloth, pretreat the oily base, wash hot as the label allows, and check before drying.',
+  quickAnswer: 'Scrape off the excess lipstick with a dull knife or spoon, without rubbing. Lay the stain face down on a clean, dry cloth and dab the back with dish detergent or a pre-wash stain remover so the color transfers into the cloth, moving to a clean area until no more comes off. Rub in liquid detergent, then wash at the hottest temperature the care label allows, adding a bleach product suited to the fabric if needed. Rubbing alcohol can lift the last pigment on colorfast fabric, but test it first. Do not dry the garment until the stain is completely gone.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-laundry.webp',
+  heroImageAlt: 'Hand scrubbing a yellowed stain on the collar of a white button-down shirt with a wooden-handled brush, with a pile of laundry and a white basket behind it',
+  safetyWarnings: [
+    'Always read the care label and pretest every cleaning agent, including rubbing alcohol, on a hidden area first to check for colorfastness. Persil cautions that rubbing alcohol and bleach can damage some fabrics.',
+    'Use chlorine bleach only on bleach-safe whites; use a color-safe bleach for colors and for whites that contain spandex. Never mix bleach with ammonia, vinegar or other cleaners.',
+    'Solvent-based spot cleaners and rubbing alcohol are flammable: ventilate the room, keep them away from flames, wear rubber gloves and follow the product label.',
+    'Do not put the garment in the dryer until the lipstick is gone; heat can set the stain permanently.',
+  ],
+  materialsNeeded: [
+    'Dull knife or spoon',
+    'Clean, dry white cloth or paper towels',
+    'Liquid dish detergent or a pre-wash stain remover',
+    'Liquid laundry detergent',
+    'Soft-bristled toothbrush',
+    'Optional, colorfast fabrics only: rubbing alcohol and cotton balls',
+    'Optional: chlorine bleach for bleach-safe whites, or color-safe bleach for colors',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check the Label and Test a Hidden Spot',
+      instruction: 'Read the care label first. Dab a little of whatever you plan to use, detergent, stain remover or alcohol, on an inside seam or hem and blot it with a white cloth to make sure no color comes off. Send dry-clean-only items to a cleaner.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Scrape Off the Excess',
+      instruction: 'Lipstick is oil-based, so act fast. Gently lift off any lipstick sitting on top of the fabric with a dull knife or spoon. Do not rub or wipe, which smears the pigment wider and pushes it deeper into the fibers.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Dab From the Back Onto a Clean Cloth',
+      instruction: 'Lay a clean, dry cloth on a flat surface and place the stain face down on it. Dab the back of the stain with dish detergent or a pre-wash stain remover so the lipstick is pushed out of the fabric and into the cloth. Move to a clean part of the cloth and repeat until no more color transfers.',
+      proTip: 'Dab, do not rub. Rubbing spreads the waxy base and makes the outline larger.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Lift Remaining Pigment With Alcohol (Colorfast Fabric Only)',
+      instruction: 'If a pink or red tint remains and your hidden-spot test showed no color loss, sponge the spot lightly with rubbing alcohol on a cotton ball and let it dry. A solvent-based spot cleaner used per its label is an alternative. Skip this step on delicate or non-colorfast fabrics.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Pretreat With Liquid Detergent',
+      instruction: 'Rinse the area with water, then rub liquid laundry detergent into the stain until the outline disappears, working it in with a soft-bristled toothbrush. Let it sit about five minutes and do not rinse it off before washing.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wash Hot as the Label Allows',
+      instruction: 'Wash with your regular detergent at the hottest temperature the care label recommends. For bleach-safe whites you can add chlorine bleach to the wash; for colors or whites with spandex, use a color-safe bleach instead.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Check Before Drying',
+      instruction: 'Remove the garment as soon as the cycle ends and inspect the spot in good light. If any color remains, repeat the dabbing, pretreatment and wash. Only tumble dry once the stain is gone.',
+    },
+  ],
+  ifMethodFails: [
+    'Repeat the cycle: dab with stain remover from the back, rub in light-duty liquid detergent until the outline fades, and launder again. Stubborn lipstick often needs two or three rounds.',
+    'For a stain that is still visible on colorfast, washable fabric, a laundry stain remover spray used exactly as its label directs before another wash can help; check the label for fabrics it should not be used on.',
+    'If the lipstick has been through the dryer, or the garment is silk, wool or dry-clean-only, take it to a professional cleaner and point out the stain.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does rubbing alcohol remove lipstick from clothes?',
+      answer: 'It can help lift the last traces of pigment. University of Georgia Extension includes sponging with alcohol in one of its lipstick methods, but Persil cautions that rubbing alcohol may damage some fabrics. Use it only after testing a hidden spot, and start with dish detergent or a stain remover first.',
+    },
+    {
+      question: 'Can lipstick stains be removed after drying?',
+      answer: 'A lipstick mark that has dried on the fabric but not been through the dryer usually still comes out with pretreatment and washing. Once dryer heat has set it, removal is much harder; repeated stain remover treatments or a professional cleaner are the best options.',
+    },
+    {
+      question: 'Does hairspray get lipstick out of clothes?',
+      answer: 'Clorox suggests a spritz of hairspray as a quick fix to keep a fresh lipstick mark from setting: spray, blot the excess and avoid spreading it. It is a stopgap, not a replacement for pretreating and washing.',
+    },
+    {
+      question: 'How do you get lipstick out of a white shirt?',
+      answer: 'Scrape, dab from the back with dish detergent onto a clean cloth, pretreat with liquid detergent and wash hot as the label allows. On a bleach-safe white shirt you can add chlorine bleach to the wash; if the shirt contains spandex, use a color-safe bleach instead.',
+    },
+    {
+      question: 'Will lipstick wash out in the washing machine on its own?',
+      answer: 'Not reliably. Lipstick is oily and heavily pigmented, so washing without pretreatment can leave a faded stain that then sets in the dryer. Scrape and pretreat first, and always check the spot before drying.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-lipstick-1',
+      title: 'How to Remove Lipstick Stains',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/lipstick-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Lipstick is oil-based, so act fast: scrape off excess with a dull knife or spoon without rubbing, rinse, pretreat with liquid detergent worked in with a soft toothbrush for five minutes, wash at the hottest temperature on the care label, and do not dry until the stain is gone because heat can set it permanently.',
+    },
+    {
+      id: 'src-lipstick-2',
+      title: 'How to Get Lipstick Stains Out of Clothes',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-get-lipstick-stains-out-of-clothes',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Place the stain face down on a clean, dry cloth and dab the back with dish detergent until no more lipstick transfers, wash on the hottest setting recommended for the garment with chlorine bleach for bleach-safe whites or a color-safe bleach for colors and spandex, repeat as needed and confirm the stain is gone before tumble drying.',
+    },
+    {
+      id: 'src-lipstick-3',
+      title: 'Remove Stains From Cosmetics/Makeup/Sunscreen',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-cosmetics-makeup-sunscreen/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For lipstick, apply a commercial cleaner or pre-wash stain remover and blot until the pigment is gone, rinse, rub in light-duty liquid detergent until the outline disappears and launder; an alternative method includes sponging with alcohol; always read the care label, pretest for colorfastness and ventilate when using solvents.',
+    },
+    {
+      id: 'src-lipstick-4',
+      title: 'How to Get Makeup Out of Clothes',
+      publisher: 'Persil',
+      url: 'https://www.persillaundry.com/us/en/laundry-help/laundry-tips/how-to-remove-stains/how-to-get-makeup-out-of-clothes.html',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Lipstick is oil-based and should be scraped off with a spoon without rubbing it in, pretreated with liquid detergent and washed per the care label; rubbing alcohol and bleach may damage some fabrics.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Lipstick Out of Clothes (Step by Step)',
+    description: 'How to get lipstick out of clothes: scrape, dab from the back onto a clean cloth, pretreat the oily mark, wash hot as the label allows, and check before drying.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-lipstick-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get lipstick out of clothes',
+  },
+};
+
+export default article;

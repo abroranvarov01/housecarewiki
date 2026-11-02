@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "optimize:images": "node scripts/optimize-images.cjs",
     "validate:content": "node scripts/validate-content.cjs",
-    "prebuild": "npm run validate:content"
+    "prebuild": "npm run validate:content",
+    "indexnow": "node scripts/indexnow.cjs"
   },
   "dependencies": {
     "lucide-react": "^0.454.0",

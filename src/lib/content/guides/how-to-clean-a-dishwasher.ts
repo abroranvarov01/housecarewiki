@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-dishwasher',
+  slug: 'how-to-clean-a-dishwasher',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a dishwasher',
+  subtitle: 'Rinse the filter, clear the spray arm holes, wipe the door gasket, then run a dishwasher cleaner or a vinegar cycle. How often to do it, and what to do about hard-water film and smells.',
+  excerpt: 'Clean the filter, clear the spray arms, wipe the gasket, then run a cleaner cycle about once a month.',
+  quickAnswer: 'Start with the filter: twist out the upper filter assembly, lift out the lower filter, rinse both under warm running water, and scrub stubborn soil or hard-water deposits with a soft brush, never a wire brush or scouring pad. Clear any blocked spray arm holes with a pin and rinse the arms, then wipe the tub, especially the bottom front, and the door gasket with a sponge and warm water. Finish with a dishwasher cleaner such as affresh, following the package, or with 2 cups of white vinegar in an upright glass cup on the bottom rack and a cycle run without detergent. Whirlpool suggests doing this about every 30 days.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing grease and crumbs off a stainless steel gas stovetop with a yellow and green sponge, with a dish rack of plates and a potted basil plant in the background',
+  safetyWarnings: [
+    'Never run the dishwasher without the filters properly installed and locked in place; Whirlpool warns this can damage the appliance.',
+    'Do not scrub filters with a wire brush, scouring pad or similar tool. Whirlpool says these can damage the filters; use a soft brush such as an old toothbrush.',
+    'Use vinegar only for occasional deep cleaning. Whirlpool notes that vinegar is an acid and using it too often could damage your dishwasher.',
+    'Never mix chlorine bleach with vinegar, ammonia or other cleaners, and do not combine a vinegar cycle with a commercial dishwasher cleaner in the same wash. Ventilate the kitchen while cleaning products are in use.',
+    'Do not pull on the spray arms or force them to spin by hand when cleaning them; LG warns this can break them.',
+  ],
+  materialsNeeded: [
+    'Soft sponge or cloth',
+    'Warm soapy water',
+    'Small soft brush, such as an old toothbrush',
+    'A pin, toothpick or similar fine tool for spray arm holes',
+    'Towel',
+    'Dishwasher cleaner such as affresh (follow the package), or 2 cups of plain white vinegar',
+    'Upright glass or dishwasher-safe measuring cup (for the vinegar method)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Empty the Dishwasher and Check Your Manual',
+      instruction: 'Unload all dishes and pull out the bottom rack so you can reach the floor of the tub. Check your owner\'s manual for your filter type: many newer dishwashers have a manual filter you remove and rinse, and the manual shows exactly how it comes out.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Remove and Rinse the Filters',
+      instruction: 'On Whirlpool-style filters, turn the upper filter assembly a quarter turn counterclockwise and lift it out, then grasp the lower filter through its circular opening, lift slightly and pull it forward. Rinse both parts under running water to remove most of the soil.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Scrub Off Stubborn Soil and Hard-Water Deposits',
+      instruction: 'Wash the filters in warm soapy water and scrub stubborn soil or white calcium deposits with a soft brush such as an old toothbrush. Do not use a wire brush or scouring pad. Rinse thoroughly to remove all soap and debris, then let the filters air-dry or pat them dry with a towel.',
+      proTip: 'Whirlpool suggests cleaning the filter about once a month, or every two weeks if you run the dishwasher daily or have a large household.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Clear the Spray Arm Holes',
+      instruction: 'Check that the water jet holes on the lower and upper spray arms are not blocked by food or residue. On models where the upper arm is held by a nut, turn the nut on its underside counterclockwise and pull the arm down. Clear blocked holes with a pin or similar fine tool, rinse the arm under running water, refit it, and turn the nut an eighth of a turn clockwise to lock it if your model uses one. Do not pull on the arms or spin them by hand.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Wipe the Tub and Door Gasket',
+      instruction: 'Wipe the inside of the tub with a sponge and warm water, paying extra attention to the bottom front, where soil tends to build up. Then wipe the rubber door gasket and the door edges with a soft cloth or sponge and warm water to remove trapped food and grime.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Reinstall the Filters Securely',
+      instruction: 'Set the lower filter securely in position, insert the upper filter assembly and turn it until it locks. If it spins freely, it is not locked. Make sure both parts are seated before you run the dishwasher.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Run a Cleaning Cycle',
+      instruction: 'Use a dishwasher cleaner such as affresh exactly as the package directs; severe spotting may need more than one treatment. Or place 2 cups of plain white vinegar in an upright glass or dishwasher-safe measuring cup on the bottom rack and run a complete cycle with an air-dry or energy-saving dry option, using no detergent. Choose one method per cycle, not both.',
+      proTip: 'Whirlpool recommends a monthly dishwasher cleaner treatment to help prevent filming and spotting and keep the interior free of odors.',
+    },
+  ],
+  ifMethodFails: [
+    'If a white film or spots keep coming back, your water may be very hard. Whirlpool strongly recommends a water softener when hardness is 15 grains or more, because mineral deposits can damage the dishwasher and make cleaning harder.',
+    'If a smell persists after a cleaning cycle, recheck the filter and the bottom front of the tub for trapped food, clean them again, and run a second dishwasher cleaner treatment.',
+    'If dishes still come out dirty or the spray arms will not turn freely after cleaning, the arm may be cracked or the problem may be mechanical. Contact the manufacturer or an appliance technician rather than forcing parts.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How often should you clean your dishwasher?',
+      answer: 'Whirlpool suggests cleaning the dishwasher about every 30 days. Clean the filter about once a month with normal use, or every two weeks if you run it daily or have a large household, and sooner if you notice odors, gritty dishes or visible debris.',
+    },
+    {
+      question: 'Can you clean a dishwasher with vinegar?',
+      answer: 'Yes, occasionally. Whirlpool says to put 2 cups of white vinegar in an upright glass or dishwasher-safe measuring cup on the bottom rack and run a complete cycle with no detergent. It also warns that vinegar is an acid and using it too often could damage the dishwasher, so save it for deep cleaning.',
+    },
+    {
+      question: 'Why does my dishwasher smell bad?',
+      answer: 'Odors usually come from food trapped in the filter, around the door gasket and along the bottom front of the tub. Rinse the filter, wipe the tub and gasket with warm water, and run a dishwasher cleaner such as affresh or a vinegar cycle to freshen the interior.',
+    },
+    {
+      question: 'How do I get rid of white film in my dishwasher?',
+      answer: 'White film and spots are usually mineral deposits from hard water. Scrub calcium buildup off the filter with a soft brush and run a dishwasher cleaner monthly; severe spotting may need more than one treatment. If your water is 15 grains or harder, Whirlpool strongly recommends a water softener.',
+    },
+    {
+      question: 'Where is the filter in a dishwasher?',
+      answer: 'On most dishwashers with a manual filter, it sits in the bottom of the tub, under the lower rack. Pull the bottom rack out to reach it. Many have a two-part design: an upper filter assembly that twists out and a lower filter that lifts and slides forward.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-dishwasher-1',
+      title: 'How to Clean the Dishwasher Filters',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Dishwashers/Dishwasher_Cleaning_and_Care/How_to_Clean_the_Dishwasher_Filters',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean filters about monthly, or every two weeks with daily use; turn the upper filter a quarter turn counterclockwise to remove it and lift the lower filter forward; rinse, scrub stubborn soil or calcium deposits with a soft brush, never a wire brush or scouring pad; lock the upper filter back in place; never operate the dishwasher without filters installed.',
+    },
+    {
+      id: 'src-dishwasher-2',
+      title: 'Cleaning the Dishwasher Interior',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Dishwashers/Dishwasher_Cleaning_and_Care/Cleaning_the_Dishwasher_Interior',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wipe door seals with warm water; use affresh Dishwasher Cleaner per the package, monthly, to help prevent filming, spotting and odors; or run 2 cups of white vinegar in a cup on the bottom rack with no detergent; vinegar is an acid and overuse could damage the dishwasher; clean about every 30 days; a water softener is strongly recommended at 15 grains of hardness or more.',
+    },
+    {
+      id: 'src-dishwasher-3',
+      title: 'Cleaning the Dishwasher',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Dishwashers/Dishwasher/Other/Cleaning_and_Odor/Odors/Cleaning_the_Dishwasher',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wipe the interior with a sponge and warm water, focusing on the bottom front of the tub, and wipe the door gaskets; for odors, run 2 cups of white vinegar in an upright glass measuring cup on the lower rack on a normal cycle without detergent, or use affresh cleaner.',
+    },
+    {
+      id: 'src-dishwasher-4',
+      title: 'How to clean the Lower and Upper Spray Arm',
+      publisher: 'LG Support',
+      url: 'https://www.lg.com/au/support/product-help/CT20088043-20150642651222',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Check spray arm jet holes for blockages and clear them with a pin or sharp tool; remove the upper arm by turning the nut counterclockwise, rinse it under running water, refit it and confirm both arms rotate freely; do not pull or manually rotate the spray arms, which can break them.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Dishwasher: Filter, Arms, Gasket',
+    description: 'How to clean a dishwasher: rinse the filter, clear the spray arms, wipe the door gasket, then run affresh or a vinegar cycle. Fix hard-water film and smells.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-dishwasher',
+    indexable: true,
+    focusKeyword: 'how to clean a dishwasher',
+  },
+};
+
+export default article;

@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-red-wine-out-of-clothes',
+  slug: 'how-to-get-red-wine-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get red wine out of clothes',
+  subtitle: 'Blot, flush with cold water from the back, work in liquid detergent, then an oxygen bleach soak if color remains. Why the dryer is the real enemy, and which fabrics need a professional.',
+  excerpt: 'Blot, cold rinse from the back, liquid detergent, oxygen bleach soak, and no dryer until it is gone.',
+  quickAnswer: 'Blot up as much wine as you can, then flush the stain with cold water (or club soda) running through the back of the fabric. Work liquid laundry detergent or a stain remover into the spot, let it sit about 5 minutes, rinse in cold water, and wash as the care label allows. If a pink or purple shadow remains, soak the garment in an oxygen bleach solution made and timed exactly as the product label says, then wash again. Do not put the item in the dryer until the stain is completely gone, because heat sets it.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'Folded white shirt with a tan splash stain on a stack of cream and sage towels, on a wooden counter above a front-loading washer, beside a bottle of liquid detergent, a wicker basket and trailing houseplants in a sunlit laundry room',
+  safetyWarnings: [
+    'Do not tumble dry the garment until the stain is completely gone. Tide and Clorox both warn that drying will set a wine stain.',
+    'Oxygen bleach products such as OxiClean are not for silk, silk blends, wool, wool blends, leather or fabrics labeled dry clean only. Take those to a professional cleaner.',
+    'Never heat or boil an oxygen bleach solution, and never pour full-strength chlorine bleach on a stain. Clorox says chlorine bleach must always be diluted first and used only on white, bleach-safe fabric.',
+    'Never mix chlorine bleach with ammonia, vinegar or other acids, and ventilate the room when using bleach or stain removers.',
+    'Check the care label and test any stain remover, peroxide mix or alcohol on a hidden seam first. UGA Extension warns that rubbing alcohol may remove fabric dye.',
+  ],
+  materialsNeeded: [
+    'Clean white cloth or paper towels for blotting',
+    'Cold running water or club soda',
+    'Liquid laundry detergent or a pre-wash stain remover',
+    'Soft-bristled toothbrush (optional)',
+    'Oxygen bleach powder or liquid (such as OxiClean), for washable fabrics only',
+    'Bucket or sink for soaking',
+    'For white, bleach-safe cotton only: chlorine bleach to dilute per the label',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Blot the Wine Right Away',
+      instruction: 'Press a clean white cloth or paper towel onto the spill and lift it straight off to soak up as much wine as possible. Do not rub, which spreads the color through the weave. The sooner you treat it, the easier it comes out.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Flush With Cold Water From the Back',
+      instruction: 'Turn the fabric inside out and run cold water through the back of the stain so the wine is pushed out the way it came in rather than deeper into the fibers. Club soda poured on the stain and blotted works too. Keep the water cold or cool, not hot.',
+      proTip: 'Skip the salt. UGA Extension mentions sprinkling salt on fresh wine, but OxiClean says salt is not effective on clothing and may cause the stain to set.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Pretreat With Liquid Detergent',
+      instruction: 'Apply liquid laundry detergent or a pre-wash stain remover directly to the stain. Work it into the fibers by gently rubbing the fabric against itself or with a soft-bristled toothbrush, let it stand about 5 minutes without drying out, then rinse with cold water.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wash and Check Before Drying',
+      instruction: 'Wash the garment on its usual cycle at the temperature its care label allows. Unload it right away and check the stain in good light while the fabric is still damp. If any color remains, do not dry it; repeat the pretreatment or move on to the soak.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Soak in Oxygen Bleach if Color Remains',
+      instruction: 'For washable fabrics that are not wool, silk or leather, dissolve oxygen bleach in water at the dose and temperature the product label gives, fully submerge the garment and soak for the time the label lists. OxiClean\'s wine page calls for soaking tough stains for 6 hours. Never heat or boil the solution. Rinse, then wash in the warmest water the care label allows.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Treat an Old or Set Stain',
+      instruction: 'For a stain that has already dried, Tide suggests mixing three parts hydrogen peroxide with one part stain-release liquid, testing it on a hidden area, applying it, and letting it sit for up to an hour before rinsing and washing. On white, bleach-safe cotton you can instead pretreat with chlorine bleach diluted exactly as the Clorox label directs, never full strength.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Air Dry and Inspect',
+      instruction: 'Let the garment air dry and look at the spot again before it goes anywhere near the dryer. If a faint mark remains, repeat the pretreatment and soak; it can take more than one round.',
+    },
+  ],
+  ifMethodFails: [
+    'If a shadow remains after the oxygen bleach soak, UGA Extension suggests sponging the spot with rubbing alcohol, rinsing thoroughly and laundering again. Test it on a seam first because alcohol may remove dye.',
+    'If the stain survived a trip through the dryer, treat it as set: try the peroxide and stain-release mix or a long oxygen bleach soak, following each product label, and expect to repeat.',
+    'For silk, wool, leather, dry-clean-only or valuable garments, stop after blotting and take the item to a professional cleaner, telling them it is red wine.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does red wine come out of clothes after washing?',
+      answer: 'Often, yes, as long as the garment has not been through the dryer. Pretreat with liquid detergent, then soak in oxygen bleach per the label and wash again. Tide and Clorox both say not to dry the item until the stain is gone, because drying sets it.',
+    },
+    {
+      question: 'Should you use hot or cold water on red wine stains?',
+      answer: 'Use cold or cool water for the first rinse and the pretreatment. Once the stain has been treated, the wash itself can go at the warmest temperature the care label allows, which is what OxiClean and Clorox recommend.',
+    },
+    {
+      question: 'Does salt get red wine out of clothes?',
+      answer: 'It is not a reliable fix. UGA Extension suggests sprinkling salt on fresh wine to absorb some of it, but OxiClean says salt is not effective on clothing and may cause the stain to set. Blotting and a cold-water flush are the safer first moves.',
+    },
+    {
+      question: 'Can you use bleach on red wine stains?',
+      answer: 'Only chlorine bleach on white, bleach-safe fabric, and only diluted as the label directs. For colors, Clorox points to its color-safe stain remover instead, and oxygen bleach such as OxiClean is the usual choice for washable colored clothes. Never mix bleach with ammonia or vinegar.',
+    },
+    {
+      question: 'How do you get old red wine stains out of clothes?',
+      answer: 'Tide suggests three parts hydrogen peroxide to one part stain-release liquid, tested on a hidden spot first and left on for up to an hour before washing. A long oxygen bleach soak timed to the product label also helps. Repeat as needed and air dry between attempts.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-wineclothes-1',
+      title: 'How to Remove Red Wine Stains from Clothes',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/wine-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Pour club soda or cold water on the stain, blot, pretreat by working in stain-release liquid for 5 minutes, rinse in cold water (running cold water through the back of the stain when on the go), wash per the care label, and do not dry until the stain is gone because drying sets it; for set stains use three parts hydrogen peroxide to one part stain-release liquid for up to an hour after a spot test.',
+    },
+    {
+      id: 'src-wineclothes-2',
+      title: 'How to Remove Wine Stains',
+      publisher: 'OxiClean',
+      url: 'https://www.oxiclean.com/en/stain-solutions/how-to-remove-red-wine-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Soak tough wine stains for 6 hours in a dissolved solution, do not heat or boil it, wash in the warmest water the fabric accepts, do not use on silk, wool, their blends, leather or dry-clean-only fabrics, test first, and do not use salt, which is not effective on clothing and may set the stain.',
+    },
+    {
+      id: 'src-wineclothes-3',
+      title: 'Remove Stains From Alcoholic Beverages, Beer, Wine',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-alcoholic-beverages-beer-wine/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Sponge or rinse promptly in cool water, pretreat with a pre-wash stain remover or liquid laundry detergent, launder, use oxygen bleach where chlorine is unsafe for the fabric, sponge remaining stain with rubbing alcohol (which may remove dye), and always read the care label and pretest.',
+    },
+    {
+      id: 'src-wineclothes-4',
+      title: 'How to Get Red Wine Out of Clothes',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-get-red-wine-out-of-clothes/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Blot the spill, apply club soda, use diluted chlorine bleach only on white bleach-safe clothes and never full strength, use a color-safe stain remover for colors, wash in the hottest water the care label recommends, air dry and check, and do not tumble dry until the stain is completely removed.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Red Wine Out of Clothes (Even Old Stains)',
+    description: 'How to get red wine out of clothes: blot, flush with cold water from the back, pretreat with liquid detergent, soak in oxygen bleach and skip the dryer.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-red-wine-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get red wine out of clothes',
+  },
+};
+
+export default article;

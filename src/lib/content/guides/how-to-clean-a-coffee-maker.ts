@@ -1,0 +1,158 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-coffee-maker',
+  slug: 'how-to-clean-a-coffee-maker',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a coffee maker',
+  subtitle: 'Wash the carafe and filter basket after every pot, then descale with a one-to-two vinegar and water brew and rinse it out with plain water. How Mr. Coffee, Cuisinart and Keurig instructions differ, and what never to do to the base.',
+  excerpt: 'Wash the carafe and basket daily, descale with diluted white vinegar, then run plain-water rinse brews.',
+  quickAnswer: 'Wash the carafe, lid and filter basket in warm, soapy water after each use, and wipe the base with a damp cloth. To descale a drip coffee maker, fill the reservoir with about one part white vinegar to two parts water, run it through the clean cycle or a normal brew, then run plain water through it to rinse: Cuisinart calls for one full reservoir of fresh water and Mr. Coffee for two water-only brews. Keurig pod brewers are different: their guides use Keurig Descaling Solution in Descale Mode, followed by fresh-water rinse brews until the descale light turns off. Never immerse the base in water.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-kitchen.webp',
+  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a mug of coffee, lemons and wooden utensils in a sunlit kitchen',
+  safetyWarnings: [
+    'Turn the coffee maker off and unplug it before cleaning, and let it cool. Cuisinart warns that the reservoir cover can be hot during and right after brewing.',
+    'Never immerse the base, cord or plug in water or any other liquid. Wipe the base with a clean, damp cloth instead; Mr. Coffee says this even for its dishwashable model.',
+    'Do not use scouring agents, harsh cleansers or rough, abrasive materials on any part of the coffee maker, including the warming plate.',
+    'Do not add bleach or any other cleaner to the vinegar in the reservoir. Mixing bleach with an acid such as vinegar releases toxic gas.',
+    'On a Keurig pod brewer, follow the descaling steps in its own Use and Care Guide. Keurig\'s guide calls for Keurig Descaling Solution and warns that the needles in the pod holder are sharp, so keep fingers out of it.',
+  ],
+  materialsNeeded: [
+    'Warm water and a mild, unscented dish soap',
+    'Soft sponge or non-abrasive cloth',
+    'Distilled white vinegar (drip coffee makers)',
+    'Keurig Descaling Solution (Keurig pod brewers)',
+    'Large ceramic mug (Keurig descaling)',
+    'Straightened paper clip (Keurig needles)',
+    'Fresh cold tap water for rinse brews',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Wash the Carafe and Filter Basket After Every Use',
+      instruction: 'Unplug the machine. Discard the paper filter and grounds, then wash the filter basket, carafe and carafe lid in warm, soapy water and rinse thoroughly. Many models let these parts go in the dishwasher; Cuisinart specifies the upper rack only. Wipe the area under the filter basket with a damp cloth and dry all parts.',
+      proTip: 'Use a mild, unscented soap. Mr. Coffee notes that harsh or scented soap can leave a taste in later pots.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Wipe the Base and Warming Plate',
+      instruction: 'Wipe the housing and the warming plate with a clean, damp cloth and dry them. Fingerprints on the housing can be washed off with soap and water or a non-abrasive cleaner. Do not dry the inside of the water reservoir with a cloth, because lint may stay behind.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Decide When to Descale',
+      instruction: 'Descale when the machine tells you to, or on a schedule. Cuisinart recommends cleaning whenever its CLEAN light comes on, Mr. Coffee suggests a deep clean about once a month (or after every 90 brews, and more often with hard water), and Keurig says to descale every 3 months or when the descale light turns on. Slow brewing and off flavors are also signs of mineral buildup.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Fill the Reservoir with Vinegar and Water',
+      instruction: 'Empty the carafe and remove any used filter. If your machine has a charcoal water filter in the reservoir, take it out first. Fill the reservoir to capacity with about one part white vinegar to two parts water: Cuisinart specifies one-third white vinegar and two-thirds water, and Mr. Coffee says to use about half as much vinegar as water.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Run the Clean Cycle or a Normal Brew',
+      instruction: 'If your coffee maker has a Clean button, press and hold it until the light flashes, then release it; Cuisinart models beep and shut off when the cycle ends. Without a Clean button, start a normal brew with no coffee. Mr. Coffee suggests letting the hot vinegar mixture sit for 15 to 30 minutes before you pour it out. If the clean light comes on again, repeat with a fresh vinegar mixture.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse with Plain Water Brews',
+      instruction: 'Pour out the vinegar, discard or rinse the filter, and rinse the carafe. Fill the reservoir with fresh, cold water and brew a full pot, then empty it. Cuisinart calls for one full reservoir of fresh water; Mr. Coffee recommends two water-only brews. Run another if you still smell vinegar, then put the charcoal filter back.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Descale a Keurig Pod Brewer with Its Own Procedure',
+      instruction: 'Keurig\'s guide uses Keurig Descaling Solution, not a vinegar brew. Pour the whole bottle into the empty reservoir, refill the bottle with water and add it, and place a large ceramic mug on the drip tray with no pod inserted. On models such as the K-Supreme, start Descale Mode with the brewer plugged in and off by holding the 8oz and 12oz buttons for 3 seconds, then press the flashing brew button and dump each mugful until the add-water light comes on. Rinse the reservoir, fill it to MAX with fresh water, and keep brewing and dumping until the descale light turns off.',
+      proTip: 'Foam during descaling is normal. Button combinations vary by model, so check your brewer\'s Use and Care Guide.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Clear Keurig Needles and Clean the Reservoir',
+      instruction: 'If coffee grounds show up in your cup, remove the pod holder assembly and gently insert a straightened paper clip into the exit needle, then lift the handle and clear the holes in the entrance needles the same way. Run two cleansing brews without a pod afterward. Wipe the inside of the reservoir and the underside of its lid with a damp, non-abrasive, lint-free cloth and let it air-dry.',
+    },
+  ],
+  ifMethodFails: [
+    'If the clean or descale light comes back on right after one cycle, run the descaling cycle again with a fresh vinegar mixture or a new bottle of descaling solution, then rinse again. Cuisinart notes that one cycle is usually enough.',
+    'If a Keurig still brews only a partial cup after you have descaled it twice, Keurig says to contact its Customer Service. A heavily scaled Keurig may dispense little or nothing after the descaler goes in; the guide says to unplug it, discard the solution, refill with water and repeat the fresh-water rinse.',
+    'If coffee still tastes of vinegar, run one or two more full brews of plain fresh water and wash the carafe again.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How often should you clean a coffee maker?',
+      answer: 'Wash the carafe, filter basket and other removable parts after every use. Descale the machine itself about once a month according to Mr. Coffee, whenever the clean light comes on for Cuisinart, or every 3 months for Keurig brewers. Hard water means descaling more often.',
+    },
+    {
+      question: 'What is the ratio of vinegar to water to clean a coffee maker?',
+      answer: 'About one part white vinegar to two parts water. Cuisinart\'s instruction booklet specifies one-third white vinegar and two-thirds water to fill the reservoir, and Mr. Coffee says to use around half as much vinegar as water.',
+    },
+    {
+      question: 'Can you descale a Keurig with vinegar?',
+      answer: 'Keurig\'s Use and Care Guide for current brewers such as the K-Supreme describes descaling with Keurig Descaling Solution and does not give a vinegar method. Follow your own brewer\'s guide, and whatever you use, finish with fresh-water rinse brews until the descale light turns off.',
+    },
+    {
+      question: 'How many times do you run water through a coffee maker after vinegar?',
+      answer: 'Cuisinart calls for one cycle with a full reservoir of fresh, cold water, while Mr. Coffee recommends two water-only brews. If you can still smell or taste vinegar, run another full pot of plain water.',
+    },
+    {
+      question: 'Is the coffee pot dishwasher safe?',
+      answer: 'It depends on the model. Cuisinart says its carafe, carafe lid and filter basket can go in the dishwasher on the upper rack only. The base, cord and plug are never dishwasher safe and must not be immersed in water.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-coffee-1',
+      title: 'How To Clean A Coffee Maker The Easy Way',
+      publisher: 'Mr. Coffee',
+      url: 'https://www.mrcoffee.com/blog/how-to-clean-your-coffee-maker-the-easy-way.html',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean the carafe, filter and removable parts after every use and deep clean monthly with about half as much white vinegar as water, using the clean setting or a normal brew, letting it sit 15 to 30 minutes, then running two water-only brews; the base, cord and plug should never be immersed.',
+    },
+    {
+      id: 'src-coffee-2',
+      title: 'Tips on How to Clean a Drip Coffee Maker',
+      publisher: 'Mr. Coffee',
+      url: 'https://www.mrcoffee.com/blog/Tips-for-Cleaning-Your-Automatic-Drip-Coffee-Maker.html',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean a drip coffee maker after every 90 brews, or twice a month with hard water; avoid harsh or scented soap, which can leave a taste; and always read the manufacturer\'s instructions before cleaning.',
+    },
+    {
+      id: 'src-coffee-3',
+      title: 'PerfecTemp 14-Cup Programmable Coffeemaker DCC-3200C Instruction Booklet',
+      publisher: 'Cuisinart',
+      url: 'https://www.cuisinart.ca/on/demandware.static/-/Sites-master-ca/en_CA/v1775984659605//Instruction%20Booklet/DCC-3200C.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wash the filter basket, carafe and lid in warm soapy water or on the dishwasher upper rack, never immerse the base, avoid scouring agents; to decalcify, remove the charcoal filter, fill the reservoir with one-third white vinegar and two-thirds water, run the Clean cycle, then run one full reservoir of fresh cold water to rinse.',
+    },
+    {
+      id: 'src-coffee-4',
+      title: 'K-Supreme Use and Care Guide',
+      publisher: 'Keurig',
+      url: 'https://dam.keurig.com/content/dam/public-assets/kcom_support/FINAL_KDP_KSupreme_UCGuide.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Descale every 3 months or when the descale notification turns on, using a full bottle of Keurig Descaling Solution plus a bottle of water in Descale Mode, then fresh-water rinse brews until the descale light turns off; never immerse the brewer, and clear the needles with a straightened paper clip.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Coffee Maker (Drip and Keurig)',
+    description: 'How to clean a coffee maker: wash the carafe and basket daily, descale with a 1:2 vinegar and water brew, then rinse. Plus how Keurig descaling differs.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-coffee-maker',
+    indexable: true,
+    focusKeyword: 'how to clean a coffee maker',
+  },
+};
+
+export default article;

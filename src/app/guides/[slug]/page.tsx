@@ -137,13 +137,14 @@ export default function StepByStepGuidePage({
 
   const path = `/guides/${article.slug}`;
   const roomName = store.rooms.find((r) => r.slug === article.roomSlug)?.name || article.roomSlug.replace(/-/g, ' ');
+  const reviewer = store.authors.find((au) => au.slug === article.reviewedBy?.authorSlug);
   const schema = graph(
     breadcrumbSchema([
       { name: 'Home', path: '/' },
       { name: roomName, path: `/rooms/${article.roomSlug}` },
       { name: article.title, path },
     ]),
-    articleSchema(article, author, path),
+    articleSchema(article, author, path, { reviewer, roomName }),
     howToSchema(article, path),
     faqSchema(article.faqs),
   );
@@ -183,7 +184,12 @@ export default function StepByStepGuidePage({
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-secondary">{article.subtitle}</p>
             <div className="mt-6 space-y-3">
-              <Byline author={author} updatedAt={article.updatedAt} publishedAt={article.publishedAt} />
+              <Byline
+                author={author}
+                updatedAt={article.updatedAt}
+                publishedAt={article.publishedAt}
+                reviewer={reviewer && article.reviewedBy ? { author: reviewer, reviewedAt: article.reviewedBy.reviewedAt } : undefined}
+              />
               <EvidenceLabel status={article.evidenceStatus} />
             </div>
           </div>

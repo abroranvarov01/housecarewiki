@@ -1,0 +1,156 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-ink-out-of-clothes',
+  slug: 'how-to-get-ink-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get ink out of clothes',
+  subtitle: 'Ballpoint, gel and permanent marker each behave differently. Test for colorfastness, work rubbing alcohol through the stain from the back onto a paper towel, rinse cold, pretreat, wash, and keep the garment out of the dryer until the ink is gone.',
+  excerpt: 'Test first, dab alcohol through the back onto a paper towel, rinse cold, pretreat, wash, and air-dry until the ink is gone.',
+  quickAnswer: 'Blot fresh ink gently, never rub, then check the care label and test rubbing alcohol on a hidden seam. Lay the stain face down on a paper towel and dab alcohol onto the back so the ink transfers into the towel, moving to a clean spot as it picks up color. Rinse in cold water, pretreat with liquid detergent or a stain remover for about 5 minutes, and wash in the warmest water the care label allows. Permanent marker is the hardest ink and may need repeated treatment or a bleach product suited to the fabric. Do not put the garment in the dryer until the stain is completely gone, because heat sets it.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-laundry.webp',
+  heroImageAlt: 'Hand scrubbing a yellowed stain on the collar of a white button-down shirt with a wooden-handled brush, with a pile of laundry and a white basket behind it',
+  safetyWarnings: [
+    'Always test rubbing alcohol, hand sanitizer or any stain remover on a hidden area first. Tide warns that these solvents can attack fabric dyes, and the University of Georgia Extension says to pretest every cleaning agent for colorfastness.',
+    'Alcohol damages acetate, triacetate, modacrylic and acrylic fibers, and acetone should not be used on acetate, triacetate or modacrylics. Check the fiber content on the care label before you start.',
+    'Use chlorine bleach only on white, bleach-safe fabrics and always diluted, never full strength. Never bleach wool, silk, mohair, leather or spandex, and never mix bleach with ammonia, vinegar or other cleaners.',
+    'Rubbing alcohol and other ink solvents are flammable. Work in a ventilated room away from flames, and wash the garment before it goes anywhere near a dryer.',
+    'Keep the garment out of the dryer until the stain is completely gone. Heat sets ink, and a set stain is much harder to remove.',
+  ],
+  materialsNeeded: [
+    'Rubbing alcohol (isopropyl), or a clear alcohol-based hand sanitizer gel',
+    'White paper towels or clean white cloths',
+    'Cotton balls or a clean white cloth for dabbing',
+    'Liquid laundry detergent or a laundry stain pretreatment',
+    'For colored fabrics: a color-safe (oxygen) bleach stain remover',
+    'For white, bleach-safe fabrics only: chlorine bleach',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Blot Fresh Ink and Keep It Away from Other Laundry',
+      instruction: 'Treat ink as soon as you notice it, because laundering can set it. Blot wet ink gently with a white paper towel; do not rub, which pushes it deeper into the fibers and spreads it. Keep the stained item separate so wet ink does not transfer to other clothes.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Check the Care Label and Fiber Content',
+      instruction: 'Read the care label before using any solvent. Alcohol damages acetate, triacetate, modacrylic and acrylic, and acetone is not safe on acetate, triacetate or modacrylics. For dry-clean-only garments and those fibers, take the item to a dry cleaner and point out the ink.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Identify the Type of Ink',
+      instruction: 'Ballpoint ink is thick and oily, a mix of dyes and grease, so it needs a solvent such as rubbing alcohol to break it up. Gel and fountain pen inks are water-based, thinner and non-greasy, and are usually the easiest to remove. Permanent ink and permanent marker are the hardest and often need repeated treatment or a dedicated remover.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Test for Colorfastness',
+      instruction: 'Dab a little rubbing alcohol on a hidden area such as an inside seam or hem allowance, wait 1 to 3 minutes, then blot with a white paper towel. If no color comes off on the towel, it is safe to continue. If dye transfers, stop and use only detergent and cold water, or see a dry cleaner.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Dab Alcohol Through the Back of the Stain',
+      instruction: 'Fold a few paper towels into a pad and lay the stain face down on it. Dab rubbing alcohol onto the back of the stain with a cotton ball or cloth so the ink is pushed out into the towel instead of deeper into the fabric. Move the garment to a clean area of the towel, or swap pads, as they pick up ink, and keep going until no more color bleeds out.',
+      proTip: 'On a sleeve or pocket, stretch the stained spot over the mouth of a glass jar and drip alcohol through it from the back.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse Cold, Pretreat and Wash',
+      instruction: 'Rinse the area under cold running water to flush out the loosened ink and solvent. Work liquid detergent or a laundry pretreatment into the spot, leave it about 5 minutes, then wash on the usual cycle in the warmest water the care label allows, with the pretreatment still on the stain.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Treat Permanent Marker with Sanitizer Gel and the Right Bleach',
+      instruction: 'Saturate a permanent marker stain with clear alcohol-based hand sanitizer gel and leave it a few minutes; the mark should start to lighten. For white, bleach-safe fabric, soak the stain for 5 minutes in a solution of 1/4 cup chlorine bleach per gallon of water, then wash. For colors or whites containing spandex, apply a color-safe bleach stain remover for 5 to 10 minutes without letting it dry, then wash in the warmest water the label allows. Ventilate when using bleach.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Air-Dry and Check Before Using the Dryer',
+      instruction: 'Let the garment air-dry and look at the spot in good light. If any ink remains, repeat the alcohol and wash steps. Only put it in the dryer once the stain is completely gone, because drying sets ink.',
+    },
+  ],
+  ifMethodFails: [
+    'Repeat the cycle: dab with alcohol from the back, let the area dry, then pretreat and launder again. Concentrated felt-tip and marker inks often need several rounds before they fade completely.',
+    'If a stain has already been through the dryer, apply rubbing alcohol or hand sanitizer gel, then wash with a detergent that contains bleach suitable for the fabric, or a color-safe bleach product on colors.',
+    'For silk, wool, acetate, acrylic and other delicate or dry-clean-only fabrics, stop home treatment and take the garment to a professional dry cleaner, telling them it is ink.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does rubbing alcohol remove ink from clothes?',
+      answer: 'Yes. Both Tide and the University of Georgia Extension list rubbing alcohol as a solvent for ballpoint ink, which is a mix of dyes and grease. Test it on a hidden area first, then dab it onto the back of the stain over a paper towel so the ink transfers out, rinse in cold water and wash. Do not use alcohol on acetate, triacetate, modacrylic or acrylic.',
+    },
+    {
+      question: 'Can ink stains come out after drying?',
+      answer: 'Often they can, but a stain that has been through the dryer is harder to shift because heat sets ink. Treat it with rubbing alcohol or alcohol-based hand sanitizer, then wash with a detergent containing bleach that suits the fabric. Repeat if needed, and air-dry between attempts.',
+    },
+    {
+      question: 'How do you get permanent marker out of clothes?',
+      answer: 'Saturate the mark with clear alcohol-based hand sanitizer gel for a few minutes, then use diluted chlorine bleach on white, bleach-safe fabric or a color-safe bleach stain remover on colors before washing. Permanent ink is the hardest kind to remove, so expect to repeat the treatment, and keep the garment out of the dryer until it is gone.',
+    },
+    {
+      question: 'Is gel pen ink easier to remove than ballpoint?',
+      answer: 'Usually yes. Gel and fountain pen inks are water-based, thinner and non-greasy, so they tend to release more readily than oily ballpoint ink. The same routine works for both: blot, test, dab alcohol from the back, rinse cold, pretreat and wash.',
+    },
+    {
+      question: 'What do I do if a pen went through the dryer?',
+      answer: 'Check your dryer\'s use and care guide first. Clean the drum only with a non-flammable household cleaner sprayed onto a soft cloth, never with alcohol or other flammable ink solvents, because the dryer is a heat source. Wipe the drum with a damp cloth, then tumble a load of clean towels to dry the drum. Treat the stained clothes with the steps above before they go back in.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-inkclothes-1',
+      title: 'How to Remove Ink Stains',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/ink-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Ballpoint ink is thick and oily (dyes and grease), gel and fountain pen inks are thinner, non-greasy and easiest to remove, and permanent ink is hardest; blot rather than rub, test solvents such as rubbing alcohol or hand sanitizer on a hidden area for 1 to 3 minutes, apply over a paper towel, rinse in cold water, pretreat for 5 minutes, wash at the warmest temperature the label allows, and check before drying because drying sets the stain.',
+    },
+    {
+      id: 'src-inkclothes-2',
+      title: 'Remove Stains From Ink (Ballpoint, Felt Tip, India, Mimeo, Stamp Pad)',
+      publisher: 'University of Georgia Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-ink-ballpoint-felt-tip-india-mimeo-stamp-pad/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Pretest every cleaning agent on an inconspicuous area for colorfastness; sponge ballpoint ink repeatedly with rubbing alcohol until bleeding stops, changing pads as they pick up ink, then launder; alcohol damages acetate, triacetate, modacrylic and acrylic, and acetone should not be used on acetate, triacetate or modacrylics; treat stains while fresh because laundering can set them.',
+    },
+    {
+      id: 'src-inkclothes-3',
+      title: 'How to Get Permanent Marker Out of Clothes & Fabric',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-get-marker-out-fabric-clothes/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Saturate marker stains with clear alcohol-based hand sanitizer gel for a few minutes; soak white bleach-safe fabric 5 minutes in 1/4 cup bleach per gallon of water; use Clorox 2 for Colors for 5 to 10 minutes on colors and whites with spandex; never bleach wool, silk, mohair, leather or spandex or use bleach full strength; air-dry and keep out of a hot dryer until the stain is gone.',
+    },
+    {
+      id: 'src-inkclothes-4',
+      title: 'Will Dried Ink in Dryer Get on Clothes?',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/will-dried-ink-in-dryer-get-on-clothes/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Check the dryer\'s use and care guide; clean the drum only with a non-flammable household cleaner sprayed onto a soft cloth because ink solvents are flammable and a dryer is a heat source; wipe the drum with a damp cloth, then tumble a load of clean towels.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Ink Out of Clothes: Ballpoint, Gel, Marker',
+    description: 'How to get ink out of clothes: test first, dab rubbing alcohol from the back onto a paper towel, rinse cold, pretreat and wash. Plus permanent marker tips.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-ink-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get ink out of clothes',
+  },
+};
+
+export default article;

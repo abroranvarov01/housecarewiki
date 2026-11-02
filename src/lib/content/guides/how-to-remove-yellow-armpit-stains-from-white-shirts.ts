@@ -1,0 +1,147 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-yellow-armpit-stains-from-white-shirts',
+  slug: 'how-to-remove-yellow-armpit-stains-from-white-shirts',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove yellow armpit stains from white shirts',
+  subtitle: 'Dish soap, an oxygen-bleach soak and a hot wash, with no heat until the yellow is gone. Why chlorine bleach can backfire, and what changes for synthetics, silk and wool.',
+  excerpt: 'Dish soap, oxygen-bleach soak, peroxide for stubborn spots, no chlorine and no heat. Six steps.',
+  quickAnswer: 'Rub undiluted liquid dish soap into the yellowed underarm area and let it sit about 10 minutes. Soak the shirt in warm water with oxygen bleach (sodium percarbonate or perborate) for at least 15 to 30 minutes, longer for old stains, then wash in the hottest water the care label allows. For stubborn marks on white cotton, dab on 3 percent hydrogen peroxide for 15 to 20 minutes before washing. Skip chlorine bleach, which can yellow nylon and wrinkle-resistant finishes, and air-dry until the stain is gone because heat sets it.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-laundry.webp',
+  heroImageAlt: 'Close-up of a white cotton shirt laid on a speckled countertop, its collar band discolored yellow-brown and being brushed with a small bristle brush, a plant and mixed laundry in the background',
+  safetyWarnings: [
+    'Never iron, tumble-dry or otherwise heat a shirt that still shows underarm staining. Heat combined with antiperspirant residue sets the stain and can damage the fabric.',
+    'Never mix chlorine bleach with ammonia, vinegar or other cleaners; the combinations release toxic gas. Do not combine chlorine bleach with oxygen bleach either, because chlorine stops the oxygen bleach from working.',
+    'Ammonia damages silk and wool. If you use it to restore color on those fibers, dilute it with an equal amount of water and use it sparingly.',
+    'Test hydrogen peroxide and oxygen bleach on an inside seam before using them on anything that is not pure white.',
+  ],
+  materialsNeeded: [
+    'Clear liquid dish soap (1 to 2 tsp per underarm)',
+    'Oxygen bleach powder (sodium percarbonate or sodium perborate)',
+    'Sink, bucket or basin of warm water',
+    '3 percent hydrogen peroxide',
+    'Soft brush or old toothbrush',
+    'White vinegar or household ammonia (only for color change on dyed fabrics)',
+    'Heavy-duty laundry detergent',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Know What You Are Removing and Check the Label',
+      instruction: 'Yellow underarm marks are a buildup of sweat residue and antiperspirant. Most antiperspirants use aluminum salts such as aluminum chloride, which are acidic and can discolor fabric and dyes. Read the care label for the maximum water temperature and the bleach symbol: "only non-chlorine bleach" rules out chlorine, and "do not bleach" means skip steps 3 and 4 and go straight to detergent and a long soak. Dry-clean-only shirts should go to a cleaner.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Rub Dish Soap Into the Stain',
+      instruction: 'Wet the underarm area, then work 1 to 2 teaspoons of undiluted liquid dish soap into the stain from both sides of the fabric with your fingers or a soft brush. Let it sit about 10 minutes. On a fresh, light stain, a normal wash after this step may be enough.',
+      proTip: 'Treat sweaty shirts the same day. Fresh perspiration residue lifts far more easily than layers that have built up over many wears.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Soak in Warm Water With Oxygen Bleach',
+      instruction: 'Dissolve oxygen bleach in warm water at the dose on the package, then submerge the shirt. Soak at least 15 to 30 minutes for fresh yellowing; for stains that have built up over months, soak several hours or overnight if the package allows. Oxygen bleach works best in warm to hot water.',
+      proTip: 'Wool and silk should not go in an oxygen-bleach soak. Use a gentle detergent and cool water for those fibers.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Spot-Treat Stubborn Yellow With Hydrogen Peroxide',
+      instruction: 'If yellow is still visible, apply 3 percent hydrogen peroxide directly to the stain on white cotton, linen or polyester and leave it 15 to 20 minutes, keeping it moist. Rinse, then move straight to washing. Test first on anything that is not pure white, since peroxide can lighten dyes.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Wash Hot and Skip the Chlorine',
+      instruction: 'Launder in the hottest water the care label allows with a heavy-duty detergent, adding oxygen bleach to the wash. Do not reach for chlorine bleach: some nylon and resin-treated fabrics (many wrinkle-resistant and easy-care shirts use resin finishes) absorb chlorine and turn permanently yellow, which can leave the armpits looking worse.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Air-Dry and Inspect',
+      instruction: 'Hang the shirt to dry and check the underarms in good light once it is dry. If any yellow remains, repeat steps 2 to 5 before the shirt goes in the dryer or under an iron. Older, heavily built-up stains often take two or three cycles.',
+    },
+  ],
+  ifMethodFails: [
+    'If the fabric has changed color rather than stained (common on dyed shirts), the acidic antiperspirant may have altered the dye. Try a few drops of ammonia on a new discoloration or a few drops of white vinegar on an old one, rinse and wash; on silk or wool dilute ammonia with an equal part water.',
+    'If the underarms are stiff or waxy with built-up antiperspirant, sponge the area with a commercial stain remover, rub in dish soap again, rinse and repeat before the oxygen-bleach soak.',
+    'If odor lingers after the yellow is gone, soak the shirt overnight in warm water with 3 to 4 tablespoons of salt per quart, then rewash.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What causes yellow armpit stains on white shirts?',
+      answer: 'They come from sweat residue combined with antiperspirant. Most antiperspirants contain aluminum salts such as aluminum chloride, which are acidic and can discolor fabric. The residue builds up wash after wash, and heat from the dryer or an iron sets it further.',
+    },
+    {
+      question: 'Does chlorine bleach remove yellow sweat stains?',
+      answer: 'It is a poor choice. Some nylon fabrics and many shirts with resin-based wrinkle-resistant finishes absorb chlorine and turn permanently yellow, so the underarms can end up worse. Oxygen bleach, dish soap and 3 percent hydrogen peroxide are safer options for white shirts.',
+    },
+    {
+      question: 'Will hydrogen peroxide damage my shirt?',
+      answer: 'Three percent hydrogen peroxide is considered a safe bleach for all textile fibers, but it can lighten dyes. On a pure white shirt, apply it to the stain for 15 to 20 minutes, then rinse and wash. On colored or striped shirts, test an inside seam first.',
+    },
+    {
+      question: 'Can you remove old, set-in yellow armpit stains?',
+      answer: 'Often yes, with patience. Rub in dish soap, soak several hours or overnight in warm water with oxygen bleach, treat remaining yellow with hydrogen peroxide, and wash hot. Air-dry between attempts and expect to repeat the cycle two or three times.',
+    },
+    {
+      question: 'How do I stop yellow armpit stains from coming back?',
+      answer: 'Pretreat underarms with dish soap or liquid detergent before every wash, rather than waiting for the yellow to show, and wash sweaty shirts promptly. Avoid ironing or tumble-drying shirts that still have residue, since heat sets it.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-armpit-stains-1',
+      title: 'Remove Stains From Antiperspirant, Deodorant',
+      publisher: 'University of Georgia Cooperative Extension (Textiles)',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-antiperspirant-deodorant/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Antiperspirants containing aluminum chloride are acidic and may change dye color (ammonia for new, vinegar for old discoloration); rub undiluted dish soap into the stain and launder, and never iron or apply heat to a deodorant stain.',
+    },
+    {
+      id: 'src-armpit-stains-2',
+      title: 'Remove Stains From Perspiration',
+      publisher: 'University of Georgia Cooperative Extension (Textiles)',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-perspiration/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Soak perspiration stains in warm water with sodium perborate bleach for 15 to 30 minutes, launder in the hottest water and bleach safe for the garment, and use 3 percent hydrogen peroxide for 15 to 20 minutes if color allows.',
+    },
+    {
+      id: 'src-armpit-stains-3',
+      title: 'Products',
+      publisher: 'University of Georgia Cooperative Extension (Textiles)',
+      url: 'https://site.extension.uga.edu/textiles/care/products/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Some nylon and resin-finished fabrics are permanently yellowed by chlorine bleach, chlorine stops sodium perborate bleach from working, chlorine must never be mixed with ammonia, and 3 percent hydrogen peroxide is safe for all fibers.',
+    },
+    {
+      id: 'src-armpit-stains-4',
+      title: 'Clothes Captioning: Complying with the Care Labeling Rule',
+      publisher: 'Federal Trade Commission',
+      url: 'https://www.ftc.gov/business-guidance/resources/clothes-captioning-complying-care-labeling-rule',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'A care label must say "only non-chlorine bleach, when needed" if chlorine bleach would harm the item, and "no bleach" or "do not bleach" if any bleach would.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Yellow Armpit Stains from White Shirts',
+    description: 'Get yellow armpit stains out of white shirts with dish soap, an oxygen-bleach soak and hydrogen peroxide, and see why chlorine bleach can make them worse.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-yellow-armpit-stains-from-white-shirts',
+    indexable: true,
+    focusKeyword: 'how to remove yellow armpit stains from white shirts',
+  },
+};
+
+export default article;

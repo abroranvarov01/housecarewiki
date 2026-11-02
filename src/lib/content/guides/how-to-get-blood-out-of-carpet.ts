@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-blood-out-of-carpet',
+  slug: 'how-to-get-blood-out-of-carpet',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get blood out of carpet',
+  subtitle: 'Cold water, a weak dish-soap solution and patient blotting. When a diluted ammonia solution or 3% hydrogen peroxide is safe, why wool is different, and when a blood spill is a job for a professional.',
+  excerpt: 'Gloves on, blot, cold water, a weak dish-soap mist; ammonia or peroxide only on synthetic carpet after a test.',
+  quickAnswer: 'Put on gloves, blot the blood with a dry white cloth, then blot with a cloth dampened in cold water; never use hot water, because heat sets blood stains. If a mark remains, mist a solution of 1/4 teaspoon clear dish detergent in 1 cup of cool water, blot from the edges inward, and repeat until no more color transfers. For dried or stubborn stains on synthetic carpet, a solution of 1 tablespoon household ammonia per cup of water, or 3% hydrogen peroxide for leftover color, can help after a hidden-spot test, but skip both on wool. Rinse with cold water and blot dry.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'carpet-stains',
+  surfaceSlugs: ['carpet'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-floor-carpet.webp',
+  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige looped carpet, with a glass bowl of soapy water beside it and a pair of muddy hiking boots on the floor in the background',
+  safetyWarnings: [
+    'Treat blood as potentially infectious. Wear gloves, eye protection and long sleeves, and avoid touching the blood. Small drops are a home job; larger spills may need a technician certified in biohazard cleanup.',
+    'Use only cold or cool water. Heat sets blood stains and makes them much harder to remove.',
+    'Never use ammonia on wool or wool-blend carpet, and never mix ammonia or hydrogen peroxide with chlorine bleach. Do not use chlorine bleach on carpet.',
+    'Hydrogen peroxide and ammonia can change carpet color. Test each one on a hidden spot first, and do not use peroxide on wool or other natural fibers without extensive testing.',
+    'Use only clear liquid dish detergent at 1/4 teaspoon per cup of water. Laundry detergent can dye fibers and automatic dishwasher detergent can contain bleaching agents that destroy dyes.',
+  ],
+  materialsNeeded: [
+    'Disposable gloves (plus eye protection for larger spots)',
+    'Several clean white cloths or plain white paper towels',
+    'Cold water',
+    'Clear liquid dish detergent (1/4 teaspoon per cup of cool water)',
+    'Spray bottle or mist sprayer',
+    'Synthetic carpet only, after a test: household ammonia (1 tablespoon per cup of water)',
+    'Synthetic carpet only, after a test: fresh 3% hydrogen peroxide',
+    'A rounded spoon for any clotted blood',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Protect Yourself and Size Up the Spill',
+      instruction: 'Put on gloves, and eye protection and long sleeves for anything more than a few drops. Small droplets usually come out of synthetic carpet with home methods. A large spill of blood or other body fluids may need special cleaning and disposal by a technician certified in hazardous waste removal.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Blot Fresh Blood with a Dry White Cloth',
+      instruction: 'Act fast: delay can turn the spill into a permanent stain. Press a dry white cloth or paper towel onto wet blood and lift straight up, switching to a clean section each time. Lift any clotted blood with a rounded spoon. Do not rub, which spreads the stain and frays the pile.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Blot with a Cloth Dampened in Cold Water',
+      instruction: 'Dampen a clean cloth with cold water, wring it out, and blot the spot repeatedly, working from the outer edge toward the center. Fresh blood often comes out with cold water alone. Never use hot or warm water to speed things up.',
+      proTip: 'Microfiber cloths are ideal for this stage because they lift and hold liquid without leaving lint.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Mist a Weak Dish-Soap Solution and Blot',
+      instruction: 'Test the solution on a hidden spot first. Mix 1/4 teaspoon of clear liquid dish detergent into 1 cup of cool water, never stronger. Mist or dab it onto the stain, let it sit a few minutes, then blot with a dry white cloth. Repeat mist and blot as long as color is still transferring to the cloth.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Dried or Stubborn Stains on Synthetic Carpet: Ammonia Solution',
+      instruction: 'For a dried stain on nylon, polyester or olefin carpet, blot first with a cloth dampened in cold water, then test and apply a solution of 1 tablespoon household ammonia per cup of water, no stronger. Blot repeatedly with paper towels, then rinse with water before trying anything else. Do not use this step on wool or wool blends, and never add bleach.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Lift Leftover Color with 3% Hydrogen Peroxide (Synthetic Only)',
+      instruction: 'If a faint shadow remains on synthetic carpet, test fresh 3% hydrogen peroxide on a hidden spot and let it dry. If the color holds, apply a small amount to the stain and leave it until the mark fades; this can take several hours or a few attempts. Skip this on wool and other natural fibers.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Rinse with Cold Water and Blot Dry',
+      instruction: 'Once the stain is gone, rinse the area with cold water from a mist sprayer, then blot with dry white towels until no moisture comes up. Rinse several times if you used detergent or ammonia, because leftover residue attracts soil. If you own a portable spot cleaner, use it with clear water only at this stage.',
+    },
+  ],
+  ifMethodFails: [
+    'If the stain fades but will not disappear, medication in the bloodstream may contain dyes that keep blood stains from coming out completely. Stop before you damage the pile and call an IICRC-certified cleaning technician.',
+    'If the carpet is wool or a wool blend and cold water plus the weak dish-soap solution did not work, do not reach for ammonia or peroxide. A professional cleaner has wool-safe spotters and extraction equipment.',
+    'If the spot turns gray or dull after drying, detergent residue was left behind. Mist with clean cold water and blot again until the towel stays clean.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does cold water get blood out of carpet?',
+      answer: 'Often, yes, if the blood is fresh. Blot up as much as you can with a dry cloth, then blot with a cloth dampened in cold water. Avoid hot water, because heat sets blood stains. If a mark remains, move on to a weak dish-soap solution.',
+    },
+    {
+      question: 'Will hydrogen peroxide bleach my carpet?',
+      answer: 'It can. The IICRC lists 3% hydrogen peroxide for residual blood color on synthetic carpet but does not recommend it on wool or other natural fibers without extensive testing for color loss. Always test a hidden spot and let it dry before treating the stain.',
+    },
+    {
+      question: 'How do you get dried blood out of carpet?',
+      answer: 'Rehydrate it by blotting with a cloth dampened in cold water, then use the dish-soap solution. On synthetic carpet, a solution of 1 tablespoon household ammonia per cup of water can help after a test, followed by a thorough water rinse. Old stains may need several rounds or a professional.',
+    },
+    {
+      question: 'Can I use ammonia on a wool carpet?',
+      answer: 'No. Sherwin-Williams flooring care guidance says not to use the ammonia solution on wool or wool-blend carpet, and extension textile guidance warns that ammonia damages wool. Stick to cold water and a very weak dish-soap solution, and call a professional for stubborn marks.',
+    },
+    {
+      question: 'Is it safe to clean up blood myself?',
+      answer: 'For a few small drops, yes, with gloves and care not to touch the blood. The IICRC notes that blood and body fluids should be treated as potentially infectious, and larger spills may need a technician certified in hazardous waste removal.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-blood-carpet-1',
+      title: 'Blood',
+      publisher: 'The Carpet and Rug Institute (CRI)',
+      url: 'https://carpet-rug.org/spot-solver/blood/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Act fast because delay can make the spill permanent, blot with dry white cloths, pretest solutions in a hidden area, work from the edges toward the center without rubbing, use 1/4 teaspoon liquid dish detergent per cup of water (never stronger, never laundry or dishwasher detergent) or 1 tablespoon household ammonia per cup of water after testing, rinse with cold water, blot dry, and call a professional for stubborn spills.',
+    },
+    {
+      id: 'src-blood-carpet-2',
+      title: 'IICRC Consumer Floor and Furnishings Care Information (Tip Sheet: Carpet Topics)',
+      publisher: 'Institute of Inspection, Cleaning and Restoration Certification (IICRC)',
+      url: 'https://iicrc.org/wp-content/uploads/2023/01/Tip-Sheet-Carpet-Topics.pdf',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Blood section: treat blood as potentially pathogenic and wear gloves, eye protection and long sleeves; larger spills may need an IICRC technician certified in hazardous waste removal; for small drops on synthetic textiles blot dry, blot with water, mist a few drops of dish soap per cup of water, use 3% hydrogen peroxide for residual color (not on wool or natural fibers without extensive testing); medications in the blood may prevent full removal.',
+    },
+    {
+      id: 'src-blood-carpet-3',
+      title: 'Remove Stains from Blood',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-blood/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Treat blood immediately because stains set by heat are difficult to remove; use cool water with a mild non-alkali detergent on synthetic and wool carpet, ammonia solution on synthetic carpet only, pretest every cleaning agent for colorfastness, and note that ammonia damages wool and silk.',
+    },
+    {
+      id: 'src-blood-carpet-4',
+      title: 'Carpet, Rug and Flooring Stain Removal Guide',
+      publisher: 'Sherwin-Williams',
+      url: 'https://www.sherwin-williams.com/property-facility-managers/floorcovering/floorcovering-education/floorcovering-care/SW-ART-PRO-FLCOV-CARE-STAIN',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For wet blood, blot with dry then water-dampened white towels and a weak dish-soap spray; for dry blood, blot with water-dampened towels, then apply 1 tablespoon household ammonia per cup of water (no stronger, and not on wool or wool-blend carpet), blot and rinse; always blot, never rub.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Blood Out of Carpet (Fresh or Dried)',
+    description: 'How to get blood out of carpet: blot, cold water, a weak dish-soap mist, then ammonia or 3% peroxide only on synthetic fibers after a test. Never on wool.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-blood-out-of-carpet',
+    indexable: true,
+    focusKeyword: 'how to get blood out of carpet',
+  },
+};
+
+export default article;

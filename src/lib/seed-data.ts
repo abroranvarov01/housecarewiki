@@ -10,6 +10,8 @@ import {
   AffiliateClickEvent,
 } from './types';
 import { SITE, amazonProductUrl } from './site';
+// The validator loads TS files by exact path, so the folder index is imported explicitly.
+import { STAIN_GUIDES, SURFACE_CLEANING_GUIDES, ODOR_GUIDES, SAFETY_GUIDES, BATCH5_GUIDES, BATCH6_GUIDES, BATCH7_GUIDES, BATCH8_GUIDES, BATCH9_GUIDES, BATCH10_GUIDES, BATCH11_GUIDES, BATCH12_GUIDES, BATCH13_GUIDES, BATCH14_GUIDES } from './content/guides/index';
 
 export const AUTHORS: Author[] = [
   {
@@ -1065,7 +1067,7 @@ export const ARTICLES: Article[] = [
         title: 'Tile Council of North America (TCNA) Grout Maintenance Guidelines',
         publisher: 'TCNA',
         url: 'https://tcnatile.com/',
-        type: 'Government Standard',
+        type: 'Industry Standard',
         accessedDate: '2026-10-10',
         verifiedClaim: 'Alkaline and neutral cleaners preserve cementitious grout integrity better than strong acids.',
       },
@@ -1159,7 +1161,7 @@ export const ARTICLES: Article[] = [
         title: 'Tile Council of North America (TCNA) Grout Maintenance Guidelines',
         publisher: 'TCNA',
         url: 'https://tcnatile.com/',
-        type: 'Government Standard',
+        type: 'Industry Standard',
         accessedDate: '2026-10-25',
         verifiedClaim: 'Alkaline and neutral cleaners preserve cementitious grout integrity better than strong acids.',
       },
@@ -1223,7 +1225,7 @@ export const ARTICLES: Article[] = [
         title: 'Tile Council of North America (TCNA) Grout Maintenance Guidelines',
         publisher: 'TCNA',
         url: 'https://tcnatile.com/',
-        type: 'Government Standard',
+        type: 'Industry Standard',
         accessedDate: '2026-10-25',
         verifiedClaim: 'Alkaline and neutral cleaners preserve cementitious grout integrity better than strong acids.',
       },
@@ -1497,7 +1499,20 @@ export const ARTICLES: Article[] = [
       indexable: true,
       focusKeyword: 'how to remove pet hair from furniture',
     },
-  },
+  },  ...STAIN_GUIDES,
+  ...SURFACE_CLEANING_GUIDES,
+  ...ODOR_GUIDES,
+  ...SAFETY_GUIDES,
+  ...BATCH5_GUIDES,
+  ...BATCH6_GUIDES,
+  ...BATCH7_GUIDES,
+  ...BATCH8_GUIDES,
+  ...BATCH9_GUIDES,
+  ...BATCH10_GUIDES,
+  ...BATCH11_GUIDES,
+  ...BATCH12_GUIDES,
+  ...BATCH13_GUIDES,
+  ...BATCH14_GUIDES,
 ];
 
 export const SURFACE_GUIDES: SurfaceGuide[] = [

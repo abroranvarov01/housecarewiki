@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-chocolate-out-of-clothes',
+  slug: 'how-to-get-chocolate-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get chocolate out of clothes',
+  subtitle: 'Scrape gently, flush cold water through the back of the fabric, work in liquid detergent and let it sit, then wash in the warmest water the care label allows. When an oxygen soak or bleach helps, and why you check before the dryer.',
+  excerpt: 'Scrape, rinse cold from the back, pretreat with liquid detergent, wash warm, and never dry until it is gone.',
+  quickAnswer: 'Gently scrape off the excess chocolate with a dull knife or spoon, then run cold water through the back of the stain to push it out of the fibers; avoid hot water at this stage because it can set the stain. Work liquid laundry detergent into the stain, let it sit at least 5 minutes, and wash in the warmest water the care label allows. For a stubborn or old stain, soak the garment in an oxygen stain remover solution for 1 to 6 hours first, or use bleach only if the label says it is safe. Check the spot before machine drying and repeat if any chocolate remains.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  safetyWarnings: [
+    'Do not use hot water for the first rinse. Tide warns hot water can set a chocolate stain; save warm or hot water for the wash itself, and only as the care label allows.',
+    'Do not machine dry the garment until the stain is completely gone. Dryer heat makes a leftover stain much harder to remove.',
+    'Oxygen stain remover sprays and soaks are not for silk, wool, leather or dry-clean-only fabrics; read the product label and test a hidden spot first.',
+    'Use chlorine bleach only on white, bleach-safe fabrics, never on items with spandex, and never mix bleach with ammonia, vinegar or other cleaners.',
+    'If you use a solvent-based spot cleaner on an oily residue, ventilate the room, test it on a hidden seam, and keep it away from children.',
+  ],
+  materialsNeeded: [
+    'Dull knife, spoon or plastic scraper',
+    'Cold running water',
+    'Liquid laundry detergent (an enzyme detergent helps on older stains)',
+    'Soft white cloth or paper towels',
+    'Optional: oxygen stain remover powder or spray',
+    'Optional, white bleach-safe fabrics only: chlorine bleach',
+    'Optional for colors: a color-safe stain remover and laundry additive',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check the Care Label and Act Fast',
+      instruction: 'Read the care label before you treat anything and follow any limits it sets on water temperature, bleach or washing. Start as soon as you can; a fresh chocolate stain comes out far more easily than one that has dried and set.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Scrape Off the Excess Chocolate',
+      instruction: 'Lift away as much chocolate as you can with a dull knife, spoon or plastic scraper, working gently. Do not press hard, which drives chocolate deeper into the fibers. If it has dried hard and seems bonded to the fabric, skip the scraping and go straight to rinsing.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Rinse Cold Water Through the Back of the Stain',
+      instruction: 'Turn the garment inside out and hold the stain under cold running water so the water pushes the chocolate back out the way it came in. Do not use hot water here, because it can help set the stain.',
+      proTip: 'If you cannot get to a sink, blot the spot with cold water and a paper towel rather than rubbing it.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Work In Liquid Detergent and Let It Sit',
+      instruction: 'Test the detergent on a hidden spot first. Then work a small amount of liquid laundry detergent into the stain with your fingers or a soft white cloth, moving from the outer edge toward the center. Leave it on for at least 5 minutes so it can break down the fats and color. Detergent also helps keep the stain from setting.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Soak a Stubborn Stain in Oxygen Stain Remover',
+      instruction: 'For a heavy or old stain on washable, colorfast fabric, dissolve an oxygen stain remover powder in the warmest water the care label allows, using the dose on the package, and soak the garment for 1 to 6 hours. Do not heat or boil the solution or store it in a sealed container. Not for silk, wool, leather or dry-clean-only items.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wash in the Warmest Water the Label Allows',
+      instruction: 'Wash the garment without rinsing off the pretreatment, using your regular detergent on the warmest or hottest setting the care label permits. For white, bleach-safe items you can add chlorine bleach following the bleach label; for colors or whites with spandex, use a color-safe stain remover instead.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Check Before You Dry',
+      instruction: 'Look closely at the spot while the garment is still damp, and again after air-drying if you are unsure. If any brown shadow remains, repeat the pretreatment and wash. Only put the item in the dryer once the stain is completely gone.',
+    },
+  ],
+  ifMethodFails: [
+    'If a greasy shadow remains after washing, the fat in the chocolate may still be in the fibers. The University of Georgia Extension suggests treating it with a solvent-based spot cleaner, rinsing, applying heavy-duty detergent and washing again; test first and ventilate.',
+    'If an old stain will not budge, try a longer pretreatment: saturate it with an oxygen laundry stain spray and let it stand before washing, following the product label, or repeat the oxygen soak.',
+    'For dry-clean-only, silk or wool garments, or a stain that survives two full rounds, take the item to a dry cleaner and point out the chocolate stain.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does hot water set chocolate stains?',
+      answer: 'Hot water can set a chocolate stain if you use it before the stain is treated, which is why Tide recommends a cold-water rinse first. Once you have pretreated with detergent, washing in the warmest water the care label allows helps lift what is left.',
+    },
+    {
+      question: 'How do you get dried chocolate out of clothes?',
+      answer: 'Scrape off any loose dried chocolate gently, rinse the back of the stain with cold water, apply liquid detergent and leave it at least 5 minutes, then wash as usual. A soak in an oxygen stain remover solution for 1 to 6 hours helps on old stains.',
+    },
+    {
+      question: 'Can you use dish soap on chocolate stains?',
+      answer: 'Yes. Tide suggests working a gentle liquid laundry detergent or Dawn dish soap into a chocolate stain, rinsing with cold water and repeating as needed when you cannot wash the garment right away.',
+    },
+    {
+      question: 'Can I use bleach on a chocolate stain?',
+      answer: 'Only on white fabrics whose care label allows chlorine bleach. Clorox recommends adding bleach to a hot wash for white, bleach-safe items, and a color-safe stain remover for colors or whites that contain spandex.',
+    },
+    {
+      question: 'Why is chocolate so hard to get out of clothes?',
+      answer: 'Chocolate mixes fat with brown coloring, so a single rinse rarely removes it. Detergent breaks down the oily part, and an oxygen stain remover or bleach that is safe for the fabric tackles the color, which is why a pretreat and a warm wash work better than water alone.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-choc-1',
+      title: 'How to Get Chocolate Stains Out of Clothes',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/chocolate-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Scrape excess chocolate gently without pressing, rinse cold water through the back of the stain and avoid hot water because it can set the stain, test first, work liquid detergent in from the outside edge, and let pretreatment sit at least five minutes before washing; Dawn dish soap is an option when you cannot wash right away.',
+    },
+    {
+      id: 'src-choc-2',
+      title: 'Remove Stains From Chocolate/Cocoa (Candy, Ice Cream, Syrup)',
+      publisher: 'University of Georgia Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-chocolate-cocoa-candy-ice-cream-syrup/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Read the care label first, pretreat with a pre-wash stain remover and heavy-duty liquid detergent, or soak in warm water with an enzyme detergent, treat any remaining oily stain with a solvent cleaner, and launder in warm to hot water with bleach if safe for the fabric; pretest cleaners and ventilate.',
+    },
+    {
+      id: 'src-choc-3',
+      title: 'How to Remove Chocolate Stains',
+      publisher: 'OxiClean',
+      url: 'https://www.oxiclean.com/stain-solutions/how-to-remove-chocolate-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Scrape excess, dissolve OxiClean Versatile Stain Remover in the warmest water possible without heating or boiling, soak 1 to 6 hours, and wash in the warmest water the care label recommends; rinse set-in stains in cold water before spraying, and do not use the spray on silk, wool, leather or dry-clean-only fabrics.',
+    },
+    {
+      id: 'src-choc-4',
+      title: 'How to Get Chocolate Stains Out of Clothes',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-get-chocolate-stains-out-of-clothes',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Scrape the excess, rub laundry detergent into the stain to break down oils and keep it from setting, wash on the hottest setting the label allows with bleach for white bleach-safe items or Clorox 2 for colors and spandex, and check for leftover stain before machine drying.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Chocolate Out of Clothes (Even Dried)',
+    description: 'How to get chocolate out of clothes: scrape, rinse cold through the back, pretreat with detergent, then wash warm. Plus oxygen soaks for old, dried stains.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-chocolate-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get chocolate out of clothes',
+  },
+};
+
+export default article;

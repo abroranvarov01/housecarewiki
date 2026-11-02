@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-engineered-hardwood-floors',
+  slug: 'how-to-clean-engineered-hardwood-floors',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean engineered hardwood floors',
+  subtitle: 'Engineered wood has a real wood top layer and a factory finish, so it is cleaned like any finished wood floor: dry soil off first, then a neutral pH cleaner on a barely damp microfiber pad. Why steam, buckets and vinegar are out, and what to know before sanding.',
+  excerpt: 'Sweep or vacuum often, clean with a neutral pH hardwood cleaner on a damp microfiber pad, never steam or wet mop.',
+  quickAnswer: 'Sweep, dry mop or vacuum engineered hardwood regularly with a hard-floor attachment so grit does not scratch the finish. For a deeper clean, use a neutral pH cleaner approved for your floor on a flat microfiber mop pad that is only slightly damp, not a mop and bucket. Do not use steam mops or wet mops, and skip vinegar, ammonia, harsh chemicals, abrasive cleaners, oil soaps and wax. Blot spills right away, and check the wear layer and warranty before ever sanding the floor.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'hardwood-laminate',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-floor-carpet.webp',
+  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  safetyWarnings: [
+    'Do not use steam mops or wet mops on engineered hardwood. Shaw lists both among things not to do, and Bruce says steam adds too much moisture to engineered floors.',
+    'Do not use a mop and bucket. Anderson Tuftex recommends a flat microfiber pad with a neutral pH cleaner instead, and most engineered wood is water-resistant, not waterproof.',
+    'Skip vinegar, ammonia, harsh chemicals and abrasive cleaners. Bruce warns vinegar is acidic and can dull or degrade modern finishes over time.',
+    'Do not use wax, oil-based polish or oil soaps such as Murphy Oil Soap on a factory-finished engineered floor; Bruce and Shaw both advise against them.',
+    'Never sand an engineered floor without checking its wear layer and warranty first. The number of possible sandings depends on the thickness of the wear layer.',
+  ],
+  materialsNeeded: [
+    'Soft-bristle broom, microfiber dust mop, or vacuum with a hardwood floor attachment (beater bar off)',
+    'Flat microfiber mop with washable pads',
+    'Neutral pH hardwood cleaner approved by your floor maker',
+    'White cloth or paper towels for blotting spills',
+    'Felt or rubber furniture pads',
+    'Walk-off mats or rugs for entrances',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check Your Floor Maker\'s Care Guide',
+      instruction: 'Find the care and maintenance guide and warranty for your exact engineered floor. Anderson Tuftex tells owners to follow their product\'s own care guidelines, and the finish (for example a lacquered or UV oil finish) decides which cleaner is approved. If the guide names a cleaner, use that one.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Sweep, Dry Mop or Vacuum Regularly',
+      instruction: 'Remove dust and grit often with a soft-bristle broom, a microfiber dust mop or a vacuum with a hardwood floor attachment. Grit is what wears and scratches the finish, so this is the most important habit. Keep the beater bar off.',
+      proTip: 'If there is construction or drywall dust on the floor, vacuum it up dry before any damp cleaning. Shaw warns not to add moisture to sheetrock dust.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Blot Spills Immediately',
+      instruction: 'Blot wet spills right away with a white cloth or paper towel so liquid does not soak into the wood or the seams, then wipe the spot dry. Do not leave liquids standing on the floor.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Clean with a Neutral pH Cleaner on a Microfiber Pad',
+      instruction: 'For a deeper clean, apply a neutral pH hardwood cleaner approved for your floor to a flat microfiber mop pad. The pad should be only slightly damp. Do not use a mop and bucket.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Leave No Standing Moisture',
+      instruction: 'Look back over the floor as you go. If you see any streaks of water or puddling at the seams, wipe it dry with a clean cloth. Too much moisture can cause water damage even on water-resistant engineered wood.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Protect the Floor Between Cleanings',
+      instruction: 'Put felt or rubber pads under furniture legs, place walk-off mats at entrances and rugs in high-traffic spots, keep pet nails trimmed, and do not drag heavy furniture. Shaw and Bruce both recommend keeping indoor humidity around 35 to 55 percent to limit expansion and contraction, and Shaw advises shielding floors from direct sunlight to prevent fading.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Know When Cleaning Is Not Enough',
+      instruction: 'If the finish has worn through or the floor is deeply scratched, cleaning will not fix it. The number of times any wood floor can be sanded depends on factors including the thickness of the wear layer, so have the maker or a wood flooring professional confirm the wear layer and warranty terms before refinishing an engineered floor.',
+    },
+  ],
+  ifMethodFails: [
+    'If the floor looks hazy or dull after cleaning, you may be using too much product or a cleaner that leaves residue. Switch to the neutral pH cleaner your maker names, use less of it, and clean with a freshly washed microfiber pad.',
+    'If dullness remains in traffic lanes after a proper clean, the finish itself is worn. Ask a wood flooring professional about a maintenance coat, which NWFA describes as cleaning and lightly sanding the existing finish and then applying a fresh coat.',
+    'If boards are cupping, gapping or lifting, the problem is moisture or humidity, not dirt. Check indoor humidity and contact the floor maker or installer.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Is cleaning engineered hardwood different from solid hardwood?',
+      answer: 'Day to day it is very similar, because both have a real wood surface with a finish on top: dry clean often, use a neutral pH wood floor cleaner on a damp microfiber pad, and avoid steam and wet mopping. The main difference is refinishing, since an engineered board has a limited wear layer that restricts how much it can be sanded.',
+    },
+    {
+      question: 'Can you use a steam mop on engineered hardwood?',
+      answer: 'No. Bruce says steam cleaning engineered hardwood is not advisable because it adds too much moisture, and Shaw tells owners not to use wet mops or steam mops on its hardwood floors.',
+    },
+    {
+      question: 'Can I use vinegar and water on engineered hardwood floors?',
+      answer: 'It is better not to. Bruce notes that vinegar is often suggested online but is acidic and can dull or degrade modern floor finishes over time. Use a neutral pH cleaner made for hardwood instead.',
+    },
+    {
+      question: 'Can you use Murphy Oil Soap on engineered hardwood?',
+      answer: 'Bruce says wax and oil-based soaps, including Murphy Oil Soap, are not suitable for engineered hardwood, and Shaw advises against oil-based wax or polish on its hardwood floors. They can leave residue on the finish.',
+    },
+    {
+      question: 'Can engineered hardwood be sanded and refinished?',
+      answer: 'Often, but with limits. The number of possible sandings depends on factors including the thickness of the wear layer, the equipment and the contractor\'s skill, according to the NWFA. Check the wear layer and your warranty, and have a professional assess the floor first.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-engwood-1',
+      title: 'How to Clean Engineered Hardwood Floors',
+      publisher: 'Bruce',
+      url: 'https://www.bruce.com/en-us/resources/how-to-clean-engineered-hardwood-floors-bruce-flooring.html',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Sweep or vacuum with a hardwood attachment, use a pH-balanced hardwood cleaner and a slightly damp microfiber mop, avoid excessive moisture and wipe spills right away, do not steam clean, avoid vinegar, ammonia-based cleaners, wax and oil-based soaps, use furniture pads and entrance mats, and keep humidity around 35 to 55 percent.',
+    },
+    {
+      id: 'src-engwood-2',
+      title: 'Hardwood Floor Care and Maintenance',
+      publisher: 'Shaw Floors',
+      url: 'https://shawfloors.com/en-us/care-and-warranties/hardwood',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Sweep or vacuum regularly, always use a neutral pH flooring cleaner, do not use wet mops, steam mops, harsh chemicals, ammonia, abrasive cleaners or oil-based wax or polish, wipe spills with a dry cloth, use felt pads and walk-off mats, keep humidity at 35 to 55 percent and protect floors from direct sunlight.',
+    },
+    {
+      id: 'src-engwood-3',
+      title: 'Hardwood Maintenance',
+      publisher: 'Anderson Tuftex',
+      url: 'https://andersontuftex.com/en-us/hardwood-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Dry mop or sweep routinely, clean with a flat microfiber wet mop pad and an approved neutral pH cleaner, do not use a mop and bucket system, blot wet spills promptly with white paper or cloth towels, and follow your product\'s own care guidelines.',
+    },
+    {
+      id: 'src-engwood-4',
+      title: 'Refinishing Your Floors',
+      publisher: 'National Wood Flooring Association',
+      url: 'https://woodfloors.org/refinishing-your-floors/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'The number of times a wood floor can be sanded depends on factors including the contractor\'s skill, the equipment, the thickness of the wear layer and the floor\'s flatness and condition; a maintenance coat means cleaning and lightly sanding the existing finish and applying a fresh coat.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean Engineered Hardwood Floors Safely',
+    description: 'How to clean engineered hardwood floors: dry mop often, use a neutral pH cleaner on a damp microfiber pad, no steam or wet mop, and check the wear layer first.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-engineered-hardwood-floors',
+    indexable: true,
+    focusKeyword: 'how to clean engineered hardwood floors',
+  },
+};
+
+export default article;

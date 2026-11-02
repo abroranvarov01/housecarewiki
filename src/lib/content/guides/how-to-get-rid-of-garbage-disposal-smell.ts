@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-rid-of-garbage-disposal-smell',
+  slug: 'how-to-get-rid-of-garbage-disposal-smell',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get rid of garbage disposal smell',
+  subtitle: 'The smell is rotting food stuck under the splash guard and inside the grind chamber. Cut the power, scrub the guard, then scour the chamber with ice or citrus under cold water, and keep grease and drain cleaners out.',
+  excerpt: 'Power off, scrub the splash guard with baking soda, scour the chamber, keep grease out.',
+  quickAnswer: 'A smelly garbage disposal almost always means food residue is rotting under the rubber splash guard or inside the grind chamber, so the fix is removing that residue, not masking it. Unplug the disposal or switch off its circuit, pull out the splash guard and scrub its underside with baking soda and warm water, then rinse and reseat it. With the power back on and cold water running, grind a few ice cubes or citrus wedges to knock loose residue in the chamber. Never put your hands inside, never pour grease or chemical drain cleaners into the unit, and check that the sink is draining freely, because a slow drain also causes odor.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'sinks-drains',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand wiping food splatter off a stainless steel gas cooktop with a yellow and green sponge, with a dish rack, a potted basil plant and a utensil crock on the speckled granite counter behind',
+  safetyWarnings: [
+    'Cut the power before you remove the splash guard or work near the grind chamber: unplug the disposal, or switch it off at the circuit breaker if it is hardwired. Moen warns never to pull out the splash guard without the power off first.',
+    'Never put your hands inside the disposal, even with the power off. Use tongs or needle-nose pliers to remove anything that has fallen in.',
+    'Never pour lye or chemical drain cleaners into a garbage disposal. Moen states they cause serious corrosion of metal parts and void the warranty.',
+    'Do not mix cleaning products in the sink or drain. In particular, never combine chlorine bleach with ammonia or with acids such as vinegar, and ventilate the kitchen whenever you use any chemical cleaner.',
+  ],
+  materialsNeeded: [
+    'Old toothbrush or soft scrub brush',
+    'Baking soda',
+    'Warm water',
+    'Tongs or needle-nose pliers (for retrieving objects, never your hands)',
+    'A handful of ice cubes',
+    'Optional: a lemon or orange cut into wedges',
+    'Optional: a disposal cleaner made for garbage disposals, used according to its label',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check That the Sink Drains Freely',
+      instruction: 'Run water into the sink and watch how fast it drains. Moen lists a slow or clogged disposal as a cause of odor in its own right, because standing water and food sit in the chamber. If the sink is backing up, deal with the clog first; cleaning will not fix the smell while waste cannot leave the unit.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Turn Off the Power',
+      instruction: 'Unplug the disposal from the outlet under the sink, or switch off its circuit breaker if it is hardwired. Flip the wall switch to confirm it does not start. Do this before you touch the splash guard or look into the chamber.',
+      proTip: 'Even with the power off, never reach into the chamber with your fingers. Use tongs or needle-nose pliers to pull out anything you find.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Remove and Scrub the Splash Guard',
+      instruction: 'Pull out the rubber splash guard in the sink opening; it is a common hiding place for the rotting film that causes the smell. Scrub its underside with an old toothbrush dipped in baking soda and warm water, rinse it under warm tap water, and press it back into its original position. On many models, including Moen, the splash guard is also dishwasher safe.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Clean the Removable Baffle If Your Model Has One',
+      instruction: 'Some disposals, such as InSinkErator Evolution Series models, have a baffle in the collar that lifts out. Remove it, rinse it, and wipe off any food residue before reseating it. If your splash guard does not come out, scrub the underside in place with the power still off.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Restore Power and Scour the Chamber with Ice',
+      instruction: 'Plug the disposal back in or switch the breaker on. Start a strong flow of cold water, turn the disposal on, and feed in a handful of ice cubes. Ice helps knock residue off the grinding parts, though InSinkErator notes it usually melts before it cleans the whole chamber, so it is a helper rather than a complete fix. Ice does not sharpen anything: InSinkErator disposals do not have blades.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Freshen with Citrus Wedges',
+      instruction: 'Cut a lemon or orange into wedges. With cool water running and the disposal on, drop the wedges in one at a time. InSinkErator says the rind helps clean the grinding parts and the citrus helps neutralize the smell. Treat citrus as the finishing step after the splash guard is clean, not a substitute for it.',
+      proTip: 'InSinkErator also suggests that a hard peach pit can help dislodge food waste stuck in the chamber.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Keep Grease Out and Grind in Small Batches',
+      instruction: 'Going forward, never pour fats, oils or grease into the disposal or any sink drain; InSinkErator says they collect inside the pipes and cause plumbing problems. Feed food waste in batches rather than overloading the unit, and run a strong flow of cold water while grinding so scraps flush through the pipes. Coffee grounds and eggshells will not hurt the disposal itself but can slow older or restricted drains.',
+    },
+  ],
+  ifMethodFails: [
+    'If the smell returns within days, the splash guard is probably still dirty underneath or cracked. Turn off the power, scrub it again with baking soda and warm water, and replace a torn or worn guard with the replacement part listed for your model.',
+    'If the sink drains slowly or water backs up, the odor is coming from trapped waste in the drain line. Do not reach for a chemical drain cleaner; call a plumber or contact your disposal manufacturer\'s support line.',
+    'If you want a stronger cleaning product, use only one sold specifically for garbage disposals, follow its label exactly, and confirm your owner\'s manual allows it.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Why does my garbage disposal smell so bad?',
+      answer: 'The smell comes from food residue rotting where water does not rinse it away, most often on the underside of the rubber splash guard and on the grinding parts. A slow or clogged drain makes it worse because waste sits in the chamber. Cleaning the splash guard and keeping the drain flowing removes the source.',
+    },
+    {
+      question: 'Does putting ice in a garbage disposal really clean it?',
+      answer: 'Ice helps knock residue off the grinding parts, but InSinkErator notes it usually melts before it cleans the grind chamber completely. It also does not sharpen anything, since InSinkErator disposals have no blades. Use ice alongside a scrubbed splash guard, not instead of it.',
+    },
+    {
+      question: 'Can I pour Drano or other drain cleaner into my garbage disposal?',
+      answer: 'No. Moen states that lye and chemical drain cleaners cause serious corrosion of a disposal\'s metal parts, that the damage is easy to detect, and that using them voids all warranties. For a clog, contact a plumber or your disposal maker\'s support line.',
+    },
+    {
+      question: 'Are lemon peels good for a garbage disposal?',
+      answer: 'Yes. InSinkErator recommends grinding citrus wedges one at a time with cool water running; the rind helps clean the grinding parts and the citrus helps neutralize odor. It freshens the unit but will not fix a smell coming from a dirty splash guard or a slow drain.',
+    },
+    {
+      question: 'What should you never put down a garbage disposal?',
+      answer: 'Never put fats, oils or grease in a disposal or down any drain, and never put lye or chemical drain cleaners in it. InSinkErator says coffee grounds and eggshells will not harm the disposal but can clog older or restricted plumbing, so run plenty of cold water with them or put them in the trash.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-disposal-1',
+      title: 'How do I Eliminate Odors in a Garbage Disposal',
+      publisher: 'Moen Solutions',
+      url: 'https://solutions.moen.com/Article_Library/How_do_I_Eliminate_Odors_in_a_Garbage_Disposal',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'A slow or clogged disposal and the splash guard can both cause odor; cut the power (unplug or switch off at the electrical box) before pulling out the splash guard, scrub its underside with baking soda and warm water, rinse and reseat it; the guard is dishwasher safe; never place hands in the disposal and use tongs or needle-nose pliers to remove objects.',
+    },
+    {
+      id: 'src-disposal-2',
+      title: 'Can I Use Drain Cleaners with the Garbage Disposal',
+      publisher: 'Moen Solutions',
+      url: 'https://solutions.moen.com/Article_Library/Can_I_Use_Drain_Cleaners_with_the_Garbage_Disposal',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Never put lye or chemical drain cleaners into a garbage disposal because they cause serious corrosion of metal parts; resulting damage can be detected and all warranties are void.',
+    },
+    {
+      id: 'src-disposal-3',
+      title: 'How to Clean a Garbage Disposal',
+      publisher: 'InSinkErator',
+      url: 'https://www.insinkerator.com/en-us/support/how-to/how-to-clean-garbage-disposal',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'InSinkErator disposals do not have blades; ice can help clean the grinding parts but usually melts before cleaning the chamber completely; grinding citrus wedges one at a time with cool water running helps clean the grinding parts and neutralize odor; a peach pit can dislodge stuck waste; Evolution Series models have a removable baffle that can be rinsed and wiped clean.',
+    },
+    {
+      id: 'src-disposal-4',
+      title: 'What Not to Put in a Garbage Disposal',
+      publisher: 'InSinkErator',
+      url: 'https://www.insinkerator.com/en-us/support/how-to/what-not-to-put-in-a-garbage-disposal',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Never place fats, oils or grease in a garbage disposal or down a sink drain because they collect in plumbing pipes; coffee grounds and eggshells do not harm the disposal but can clog older or restricted drains, so grind gradually with a strong flow of cold water; avoid overloading and feed waste in batches.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Rid of Garbage Disposal Smell for Good',
+    description: 'Get rid of garbage disposal smell at the source: cut the power, scrub the splash guard with baking soda, scour with ice or citrus, and keep grease out of it.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-rid-of-garbage-disposal-smell',
+    indexable: true,
+    focusKeyword: 'how to get rid of garbage disposal smell',
+  },
+};
+
+export default article;

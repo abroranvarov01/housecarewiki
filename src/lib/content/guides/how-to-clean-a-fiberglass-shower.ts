@@ -1,0 +1,150 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-fiberglass-shower',
+  slug: 'how-to-clean-a-fiberglass-shower',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a fiberglass shower',
+  subtitle: 'Warm water, a non-abrasive cleanser and a soft sponge for routine cleaning, gentle pastes for scum and stains, and the abrasives, solvents and leave-on sprays that dull a gelcoat finish.',
+  excerpt: 'Sponge with warm water and a non-abrasive cleanser, treat scum and scale gently, rinse well and never scour the gelcoat.',
+  quickAnswer: 'Sponge the walls and floor with warm water and a non-abrasive liquid cleanser, then rinse well; that handles most fiberglass showers. For soap scum and mildew, leave a paste of baking soda and cool water on for a few minutes and rinse with warm water; for hard water scale, sponge on white vinegar and rinse with cold water. Never use scouring pads, harsh abrasives, paint removers or cleaners whose label warns against acrylic, polyester or plastics, because they scratch or damage the gelcoat. To bring back the shine, makers such as HYTEC and Swan allow automotive or fiberglass wax on the walls, but never on the floor you stand on.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'showers-tubs',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-bathroom.webp',
+  heroImageAlt: 'Sunlit bathroom with a white vessel sink, a spray bottle and folded grey cloth on a wooden vanity, white towels on a ladder rack and a glass shower enclosure with water streaks',
+  safetyWarnings: [
+    'Do not use scouring pads, steel wool, wire brushes or harsh abrasive powders on a fiberglass shower. Aquatic warns harsh abrasives harm and dull the finish, and Swan says not to use abrasive cleaners or scouring pads on its Veritek fiberglass products.',
+    'Never use paint remover or paint stripper. HYTEC warns they contain solvents that can permanently damage the surface. Also skip any cleaner whose label cautions against use on acrylic, polyester or plastics.',
+    'Never mix bleach with vinegar, lime-scale removers or ammonia, and rinse thoroughly between products. Mixing bleach with acids or ammonia releases toxic gases. Ventilate the bathroom whenever you use chemical cleaners.',
+    'Do not wax the shower floor or any area where you walk or stand; HYTEC\'s care instructions say to wax only other areas.',
+    'Avoid leave-on daily shower sprays. Swan advises against them because prolonged contact with harsh chemicals can discolor the surface over time.',
+  ],
+  materialsNeeded: [
+    'Soft sponge and soft cloths',
+    'Warm water',
+    'Non-abrasive liquid bathroom cleaner (one labeled safe for fiberglass)',
+    'Baking soda',
+    'White vinegar',
+    'Soft-bristled brush no stiffer than a toothbrush (for a textured floor)',
+    '3% hydrogen peroxide and cotton rags (for deep dark stains)',
+    'Optional for restoring shine: white automotive polishing compound and white automotive paste wax, or a fiberglass wax',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check Your Brand\'s Care Sheet',
+      instruction: 'Look for the care sheet that came with your shower or the brand name molded on it, and follow the maker\'s instructions first. Fiberglass showers have a smooth gelcoat or molded finish that scratches more easily than tile, and brands differ on which cleaners they allow. Read every cleaner\'s label before using it on the shower.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Do a Routine Wipe-Down',
+      instruction: 'Wet the walls and floor, then sponge them with warm water and a non-abrasive liquid cleanser or a bathroom cleaner made for fiberglass. Work from the top down and rinse well. In hard water areas, clean more often so scale does not build up.',
+      proTip: 'If you use a rubber or plastic bath mat, take it out after every shower; Aquatic warns that leaving one down can harm the floor finish.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Lift Soap Scum and Mildew with Baking Soda',
+      instruction: 'Mix baking soda with cool water into a paste and spread it over soap deposits or mildew spots. Leave it for a few minutes, then rinse it off with warm water and a soft sponge.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Dissolve Hard Water Scale with Vinegar',
+      instruction: 'For white crusty lime or calcium deposits, sponge white vinegar onto the area, then rinse with cold water. Aquatic suggests trying vinegar or a lime-scale remover only after regular cleaning has not worked, and Swan says scale removers can be used on its fiberglass products. Ventilate and follow the product label.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Treat Deep Dark Stains Overnight',
+      instruction: 'For deep dark stains, soak cotton rags in 3% hydrogen peroxide, lay them over the stain and leave them overnight. In the morning, remove the rags and rinse with cold water.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Clean a Textured Floor Gently',
+      instruction: 'Anti-slip floors trap dirt in their texture. Apply your cleaner and work it in with a soft-bristled brush no rougher than a toothbrush, using light pressure. Aquatic warns that heavy scrubbing can damage the floor finish. Rinse with cold water until no cleaner or paste is left behind.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Rinse Thoroughly and Dry',
+      instruction: 'Rinse every surface with clean water so no cleaner, paste or vinegar is left sitting on the finish, then wipe the walls dry with a soft cloth. Do not leave cleaning products on to soak beyond what their label or your care sheet says.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Restore Shine to Dull Walls',
+      instruction: 'If the walls look dull or have light scratches, HYTEC recommends rubbing them firmly with white automotive polishing compound on a clean rag, wiping off the residue, then applying white automotive paste wax. Swan says fiberglass wax or automotive paste wax can be used to protect its fiberglass finish. Wax the walls only, never the floor.',
+      proTip: 'Use white compound and white wax so no tint is left in the texture or seams.',
+    },
+  ],
+  ifMethodFails: [
+    'If stains remain after vinegar or peroxide, repeat the treatment once more rather than switching to a scouring pad or powder, then contact the shower\'s manufacturer; Aquatic, for example, directs owners to its customer care for questions its care page does not cover.',
+    'If paint has splashed on the shower, HYTEC allows mineral spirits to remove it, followed by a water wash. Ventilate well and never use paint remover or stripper.',
+    'Deep scratches, cracks and chips in the gelcoat need a repair, not more cleaning. Contact the manufacturer or a fiberglass bathtub repair professional.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What is the best thing to clean a fiberglass shower with?',
+      answer: 'Warm water and a non-abrasive liquid cleanser on a soft sponge handle most cleaning, according to HYTEC. Aquatic also lists all-purpose and bathroom liquid cleaners made for fiberglass. For tougher grime, use a baking soda paste for soap scum and white vinegar for hard water, then rinse well.',
+    },
+    {
+      question: 'Can you use a Magic Eraser on a fiberglass shower?',
+      answer: 'Not without checking your care sheet. Swan\'s care guide lists the Magic Eraser alongside nylon scouring pads for its solid-surface Swanstone vanity tops, but for its Veritek fiberglass products it says not to use abrasive cleaners or scouring pads and to stick to a sponge or soft cloth.',
+    },
+    {
+      question: 'Can I use bleach on a fiberglass shower?',
+      answer: 'Brands differ. Aquatic allows diluted household bleach with moderate scrubbing for soap scum, grime or algae, followed by a careful cold-water rinse. Follow your manufacturer\'s instructions, ventilate, and never use bleach together with vinegar, lime-scale removers or ammonia.',
+    },
+    {
+      question: 'How do you make a fiberglass shower shiny again?',
+      answer: 'HYTEC recommends rubbing dull areas with white automotive polishing compound, wiping off the residue, and finishing with white automotive paste wax. Swan says fiberglass wax or automotive paste wax can protect its fiberglass finish. Never wax the floor or anywhere you stand.',
+    },
+    {
+      question: 'Is vinegar safe for fiberglass showers?',
+      answer: 'Yes, according to the manufacturers we checked. HYTEC suggests sponging white vinegar on hard water scale and rinsing with cold water, and Aquatic lists white vinegar for lime and calcium deposits. Rinse it off fully and never mix it with bleach.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-fiberglass-1',
+      title: 'Care and Cleaning',
+      publisher: 'HYTEC (Kohler Co.)',
+      url: 'https://hytec.ca/care-and-cleaning',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For HYTEC gelcoat or acrylic bathing products, sponge with warm water and a non-abrasive cleanser; use a baking soda and cool water paste for mold, mildew and soap deposits, 3% hydrogen peroxide rags overnight for deep dark stains, and white vinegar for hard water scale; never use paint remover or stripper; restore dull areas with white automotive polishing compound followed by white automotive paste wax, and do not wax areas where you walk or stand.',
+    },
+    {
+      id: 'src-fiberglass-2',
+      title: 'Product Maintenance',
+      publisher: 'Aquatic Bath',
+      url: 'https://aquaticbath.com/product-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Use nonabrasive liquid cleaners and bathroom cleaners made for fiberglass, do not use harsh abrasives because they harm and dull the finish, scrub textured floors only with a soft brush no rougher than a toothbrush, try white vinegar or a lime remover for lime and calcium deposits, use diluted bleach for soap scum or algae, rinse with cold water, and remove rubber or plastic mats after every shower.',
+    },
+    {
+      id: 'src-fiberglass-3',
+      title: 'Care and Cleaning Guide',
+      publisher: 'Swan',
+      url: 'https://images.homedepot-static.com/catalog/pdfImages/6e/6e51d2e6-10c3-482d-b635-37db2d5a3040.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For Veritek products, clean regularly with common household liquid cleaners and a sponge or soft cloth, use scale removers for hard water stains, and protect the finish with fiberglass wax or automotive paste wax; do not use abrasive cleaners, scouring pads, leave-on automatic shower sprays, or cleaners that caution against use on acrylic, polyester or plastics.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Fiberglass Shower Without Scratching',
+    description: 'How to clean a fiberglass shower the way manufacturers advise: non-abrasive cleanser, baking soda for scum, vinegar for scale, and wax for shine.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-fiberglass-shower',
+    indexable: true,
+    focusKeyword: 'how to clean a fiberglass shower',
+  },
+};
+
+export default article;

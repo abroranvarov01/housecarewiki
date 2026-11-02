@@ -180,12 +180,15 @@ export function Byline({
   updatedAt,
   publishedAt,
   readingTime,
+  reviewer,
   className = '',
 }: {
   author: Pick<Author, 'name' | 'slug'>;
   updatedAt: string;
   publishedAt?: string;
   readingTime?: string;
+  // Expert sign-off, rendered as its own line so it reads as a separate check, not a co-byline.
+  reviewer?: { author: Pick<Author, 'name' | 'slug' | 'role'>; reviewedAt: string };
   className?: string;
 }) {
   return (
@@ -207,6 +210,20 @@ export function Byline({
           <span aria-hidden="true"> · </span>
           {readingTime}
         </>
+      )}
+      {reviewer && (
+        <span className="mt-1 block">
+          Reviewed by{' '}
+          <Link
+            href={`/authors/${reviewer.author.slug}`}
+            className="font-semibold text-ink hover:text-terracotta-deep hover:underline underline-offset-2"
+          >
+            {reviewer.author.name}
+          </Link>
+          {reviewer.author.role && <>, {reviewer.author.role}</>}
+          <span aria-hidden="true"> · </span>
+          <time dateTime={isoDate(reviewer.reviewedAt)}>{formatDate(reviewer.reviewedAt)}</time>
+        </span>
       )}
     </p>
   );

@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-does-bleach-kill-mold',
+  slug: 'does-bleach-kill-mold',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'Does bleach kill mold?',
+  subtitle: 'On hard, nonporous surfaces, yes, but killing mold is not the goal: removing it and fixing the moisture is. What the EPA and CDC actually recommend, when bleach makes sense, the 10 square foot rule, and the gear to wear.',
+  excerpt: 'Bleach kills mold on hard, nonporous surfaces, but the EPA does not recommend it as routine; scrub with detergent and water and fix the moisture.',
+  quickAnswer: 'Yes on hard, nonporous surfaces such as tile and glass, but the EPA does not recommend bleach as a routine part of mold cleanup, because dead mold can still cause allergic reactions and has to be physically removed anyway. The EPA says to scrub mold off hard surfaces with detergent and water, dry completely, and fix the moisture source; porous materials like ceiling tiles and carpet may have to be thrown away. If you do use bleach, the CDC limits it to no more than 1 cup of household bleach per gallon of water, and you should ventilate and never mix it with ammonia or other cleaners. Patches larger than about 10 square feet call for EPA\'s professional remediation guidance.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'mold-mildew',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/guide-shower-mold.webp',
+  heroImageAlt: 'Black mold growing along the caulk line at the base of a glass shower panel on beige tile, with a toothbrush and a clear spray bottle on the ledge',
+  safetyWarnings: [
+    'Never mix bleach with ammonia, vinegar or any other cleaner. The CDC warns mixing bleach with ammonia or other cleaners produces a poisonous gas, and the EPA warns toxic fumes could be produced.',
+    'Ventilate: open windows and doors, and if you use bleach or another biocide, the EPA says to exhaust the air to the outdoors.',
+    'Protect yourself: the EPA suggests an N-95 respirator, long gloves that reach the middle of the forearm, and goggles without ventilation holes; do not touch mold with bare hands.',
+    'Do not use more than 1 cup of household laundry bleach per gallon of water, the CDC\'s upper limit, and follow the product label.',
+    'If the moldy area is larger than about 10 square feet, the water was sewage or otherwise contaminated, or you have health concerns, the EPA advises getting professional help or consulting a health professional before you start.',
+  ],
+  materialsNeeded: [
+    'Detergent and warm water',
+    'Scrub brush or sponge',
+    'N-95 respirator',
+    'Long rubber gloves (to mid-forearm)',
+    'Goggles without ventilation holes',
+    'Bucket and measuring cup',
+    'Optional, hard nonporous surfaces only: household bleach labeled for mold, diluted per the label',
+    'Fan for drying',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Measure the Moldy Area',
+      instruction: 'Estimate how big the growth is. The EPA says most people can clean up an area smaller than about 10 square feet, roughly a 3 by 3 foot patch, themselves. Larger growth, heavy water damage, sewage water or a possibly contaminated HVAC system calls for EPA\'s professional remediation guidance.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Find and Fix the Moisture Source',
+      instruction: 'Mold comes back if the water does. Fix leaks and other water problems as soon as possible. The EPA notes it is important to dry water-damaged areas and items within 24 to 48 hours to prevent mold growth. In bathrooms, increase ventilation.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Ventilate and Put On Protective Gear',
+      instruction: 'Open windows and doors for fresh air. Put on an N-95 respirator that fits properly, long gloves that reach the middle of the forearm, and goggles without ventilation holes so spores stay out of your eyes.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Scrub Hard Surfaces with Detergent and Water',
+      instruction: 'On tile, glass, sealed countertops and other hard surfaces, scrub the mold off with detergent and water. This is the EPA\'s standard method. The point is to physically remove the mold, because the EPA says dead mold may still cause allergic reactions.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Use Bleach Only If You Choose To, and Only as Labeled',
+      instruction: 'Bleach is optional, not required, and only for hard, nonporous surfaces. Rinse away any other cleaner first. Dilute exactly per the label, never stronger than the CDC\'s limit of 1 cup of household bleach per gallon of water. For Clorox Disinfecting Bleach, Clorox directs 1/3 cup per gallon, kept wet on the surface for 10 minutes. Then rinse with clean water.',
+      proTip: 'Mix bleach solution fresh each time; Clorox notes diluted bleach should be freshly mixed.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Dry Everything Completely',
+      instruction: 'Dry the cleaned area completely; a fan speeds it up. Do not paint or caulk over moldy surfaces. The EPA says to clean and dry them first, because paint applied over mold is likely to peel.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Replace Porous Materials That Stay Moldy',
+      instruction: 'Absorbent materials such as ceiling tiles and carpet may have to be thrown away if they become moldy, because the EPA notes mold can be impossible to remove from them fully. Bleach is not recommended for mold on porous materials. For valuable or sentimental items, consult a specialist.',
+    },
+  ],
+  ifMethodFails: [
+    'If mold returns to the same spot within weeks, the moisture problem is not solved. Look for a hidden leak, poor ventilation or water trapped behind tile, and fix that before cleaning again.',
+    'If a stain remains after the mold is scrubbed off and the surface is dry, it may be permanent. The EPA notes mold can cause staining and cosmetic damage that cleaning cannot fully reverse.',
+    'If the growth is larger than about 10 square feet, keeps spreading, or you smell mold but cannot find it, follow EPA\'s mold remediation guidance or hire an experienced contractor and check their references.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does bleach kill mold or just change its color?',
+      answer: 'On hard, nonporous surfaces, Clorox says its bleach kills mold when used as directed. But the EPA points out that dead mold can still cause allergic reactions, so the mold must be scrubbed off, not just killed. Clorox itself says bleach is not recommended for mold on porous materials.',
+    },
+    {
+      question: 'Why doesn\'t the EPA recommend bleach for mold?',
+      answer: 'The EPA says using a biocide such as chlorine bleach is not recommended as a routine practice during mold cleanup. In most cases it is not possible or desirable to sterilize an area; a background level of spores remains but will not grow once the moisture problem is fixed. Professionals may still use it in special cases, such as when immune-compromised people are present.',
+    },
+    {
+      question: 'Is vinegar or bleach better for killing mold?',
+      answer: 'Neither is the EPA\'s first choice: its guidance is to scrub mold off hard surfaces with detergent and water and dry completely. Whatever you use, never combine them. Clorox warns that mixing bleach with vinegar, ammonia or any other cleaner can create dangerous fumes.',
+    },
+    {
+      question: 'Can you use bleach on mold on drywall or wood?',
+      answer: 'Bleach is not recommended for mold on porous materials, according to Clorox. The EPA says absorbent materials that become moldy may have to be thrown away, because mold can be impossible to remove from them fully. Large or spreading growth on walls is a job for a professional.',
+    },
+    {
+      question: 'What is the ratio of bleach to water for mold?',
+      answer: 'Follow your product label. The CDC says to use no more than 1 cup of household laundry bleach in 1 gallon of water. Clorox directs 1/3 cup of its Disinfecting Bleach per gallon for mold on hard, nonporous surfaces, with a 10 minute contact time before rinsing.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-bleachmold-1',
+      title: 'A Brief Guide to Mold, Moisture and Your Home',
+      publisher: 'U.S. Environmental Protection Agency',
+      url: 'https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Chlorine bleach or other biocides are not recommended as a routine practice during mold cleanup; dead mold may still cause allergic reactions, so it must be removed; ventilate and exhaust air outdoors if using biocides; never mix chlorine bleach with ammonia-containing cleaners; suggests an N-95 respirator, long gloves to mid-forearm and unvented goggles; dry water-damaged areas within 24 to 48 hours.',
+    },
+    {
+      id: 'src-bleachmold-2',
+      title: 'Mold Cleanup in Your Home',
+      publisher: 'U.S. Environmental Protection Agency',
+      url: 'https://www.epa.gov/mold/mold-cleanup-your-home',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Areas smaller than about 10 square feet (roughly 3 ft by 3 ft) can usually be cleaned by the homeowner; scrub mold off hard surfaces with detergent and water and dry completely; porous materials like ceiling tiles and carpet may have to be thrown away; do not paint or caulk moldy surfaces; call a professional for sewage-contaminated water.',
+    },
+    {
+      id: 'src-bleachmold-3',
+      title: 'About Mold and Your Health',
+      publisher: 'Centers for Disease Control and Prevention',
+      url: 'https://www.cdc.gov/mold-health/about/index.html',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'If using bleach, use no more than 1 cup of household laundry bleach in 1 gallon of water; never mix bleach with ammonia or other cleaners because it produces a poisonous gas; open windows and doors; wear rubber boots, rubber gloves and goggles; follow product directions.',
+    },
+    {
+      id: 'src-bleachmold-4',
+      title: 'Does Bleach Kill Mold? How to Remove Mold Walls to Ceiling',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/does-bleach-kill-mold/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Bleach kills mold on hard, nonporous surfaces when used as directed but is not recommended for mold on porous materials; use 1/3 cup Clorox Disinfecting Bleach per gallon of water, 10 minute contact time, rinse with clean water and air dry; work in a well-ventilated area, wear gloves, and never mix bleach with vinegar, ammonia or any other cleaner.',
+    },
+  ],
+  seo: {
+    title: 'Does Bleach Kill Mold? What the EPA and CDC Say',
+    description: 'Does bleach kill mold? On hard surfaces, yes, but the EPA does not recommend it as routine. Scrub, dry, fix moisture, plus the 10 sq ft rule and gear to wear.',
+    canonical: 'https://housecarewiki.com/guides/does-bleach-kill-mold',
+    indexable: true,
+    focusKeyword: 'does bleach kill mold',
+  },
+};
+
+export default article;

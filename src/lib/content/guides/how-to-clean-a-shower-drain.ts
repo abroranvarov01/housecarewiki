@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-shower-drain',
+  slug: 'how-to-clean-a-shower-drain',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a shower drain',
+  subtitle: 'Most slow shower drains are a mat of hair and soap just below the cover. Lift the cover, pull the hair out by hand or with a plastic drain snake, flush with hot tap water, and fit a hair catcher so it does not come back. Why caustic drain cleaners are the last thing to reach for.',
+  excerpt: 'Remove the cover, pull out the hair with gloves or a plastic drain snake, flush with hot tap water, then fit a hair catcher.',
+  quickAnswer: 'Put on rubber gloves, pull any hair off the top of the strainer, then remove the drain cover, which usually unscrews or lifts out depending on the type. Feed a plastic drain clog remover strip into the drain, twist and pull it back up to drag out the hair, and repeat from a few angles until it comes up clean. Flush with hot tap water, not boiling water, refit the cover and add a hair catcher to stop the next clog. Skip caustic chemical drain cleaners: they can burn skin and eyes, splash back out of a blocked drain and damage some pipes.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'showers-tubs',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/guide-shower-mold.webp',
+  heroImageAlt: 'Tiled shower floor with a round dark drain grate behind a wet glass panel, black mildew along the shower sill, a toothbrush and a clear spray bottle on the ledge',
+  safetyWarnings: [
+    'Wear rubber gloves and eye protection when pulling hair out with a plastic drain snake; Mr. Rooter notes splatter is likely.',
+    'Avoid caustic chemical drain cleaners. Poison Control warns that non-enzymatic drain cleaners contain strong acids or alkalis that can cause serious burns, and that they can splash back when poured into a completely blocked drain.',
+    'Never mix a drain cleaner with bleach, ammonia, vinegar or another drain product. If a chemical cleaner is already in the drain, ventilate the room, do not plunge or snake through it, and tell your plumber what you used.',
+    'Do not pour boiling water down the drain. Roto-Rooter warns that boiling water can crack or damage porcelain, acrylic and natural stone fixtures; use hot tap water instead.',
+    'If a drain cleaner touches skin or eyes, is swallowed or its fumes are inhaled, contact Poison Control at 1-800-222-1222 right away.',
+  ],
+  materialsNeeded: [
+    'Rubber gloves and safety glasses',
+    'Flat and Phillips screwdrivers (and pliers or an Allen wrench for some stoppers)',
+    'A rag or rubber grip to protect the drain finish',
+    'Plastic drain clog remover strip (barbed plastic drain snake)',
+    'Paper towels and a small trash bag for the hair',
+    'Plunger (if the drain is still slow)',
+    'Hair catcher sized for your drain',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Put On Gloves and Clear the Strainer',
+      instruction: 'Put on rubber gloves and safety glasses and lay paper towels next to the drain. Pick off any hair and soap scum sitting on top of the strainer or grate and bag it.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Identify the Drain Cover Type',
+      instruction: 'Look at how the cover is attached. Stall showers usually have a flat grate held by screws or one that snaps in. Tub-shower combinations often have a stopper: lift-and-turn, push-pull, toe-touch, pop-up or flip-it. Each comes out a different way, so identify yours before you start prying.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Remove the Cover or Stopper',
+      instruction: 'For a screw-in grate, remove the screws with a flat or Phillips screwdriver. For a lift-and-turn stopper, open it, look for a small set screw and loosen it, or simply turn the stopper counterclockwise if there is none. For a toe-touch stopper, unscrew the cap counterclockwise from the open position. Pop-up and flip-it stoppers usually pull straight up or out with a little wiggling. Wrap pliers in a rag so you do not scratch the finish.',
+      proTip: 'Keep paper towels ready: hair and soap often come up attached to the underside of the cover.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Pull Out the Hair With a Plastic Drain Snake',
+      instruction: 'Pull out any hair you can reach with your gloved fingers. Then feed a plastic drain clog remover strip down the drain, twist it gently, and pull it straight back up to drag out the hair caught on its barbs. Wipe it off and repeat from different angles until it comes up clean. Do not force the strip or any tool if it meets hard resistance.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Clean the Cover and Flush the Drain',
+      instruction: 'Rinse the cover or stopper and scrub off the soap film with a little dish soap and a soft brush. Then run hot tap water down the drain for a minute or two to carry away loosened soap and hair. Do not use boiling water, which can damage acrylic, porcelain and stone shower pans.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Plunge if the Drain Is Still Slow',
+      instruction: 'If water still drains slowly, leave 1 to 2 inches of water in the shower or tub, block a tub overflow plate with a wet rag or duct tape, and plunge forcefully several times. Check the drainage and repeat a few more rounds if needed.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Refit the Cover and Add a Hair Catcher',
+      instruction: 'Reinstall the cover or stopper, then fit a hair catcher over or into the drain. Hair catchers do not fit every cover style, so check the size and type before buying. Empty it after showers so hair never reaches the pipe.',
+    },
+  ],
+  ifMethodFails: [
+    'If the plastic strip cannot reach the clog, use a light-duty hand auger, which can reach past the trap. Feed it slowly and never force it through the pipe.',
+    'If the drain stays blocked after snaking and plunging, call a plumber rather than pouring in chemicals. If you have already used a drain cleaner, tell the plumber which product it was before they start.',
+    'If the drain runs freely but smells, the problem is likely the trap or venting rather than hair; that is covered in our guide on getting rid of sewer smell in a bathroom.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What dissolves hair in a shower drain?',
+      answer: 'Caustic drain cleaners can dissolve hair, but Poison Control warns they can cause serious burns and splash back, and Roto-Rooter says they can damage some pipes. Enzyme cleaners are gentler but slower. For a hair clog, pulling the hair out with gloves or a plastic drain snake is faster and safer than dissolving it.',
+    },
+    {
+      question: 'Does baking soda and vinegar unclog a shower drain?',
+      answer: 'Not a hair clog. Roto-Rooter says baking soda and vinegar is ineffective against hair, and Poison Control notes the carbon dioxide it produces usually escapes up the drain rather than building pressure. Some plumbers suggest it for light soap buildup, but remove the hair mechanically first.',
+    },
+    {
+      question: 'Can you clean a shower drain without removing the cover?',
+      answer: 'Often, yes. A thin plastic drain clog remover strip can usually be fed through the slots of a grate or around a stopper to hook hair. If it comes up empty but the drain is still slow, remove the cover so you can reach the hair directly.',
+    },
+    {
+      question: 'Will drain cleaner damage my shower drain finish?',
+      answer: 'Delta says that in most cases the finish is safe if you follow the drain opener\'s label and do not leave it on the finish for more than 30 minutes. The bigger risks are to you and the pipes, so treat chemical openers as a last resort and rinse any spill off the finish promptly.',
+    },
+    {
+      question: 'How often should you clean a shower drain?',
+      answer: 'Clear the hair as soon as water starts pooling or draining slowly, before it packs into a solid clog. With a hair catcher in place, empty it after showers so hair never builds up below the cover.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-showerdrain-1',
+      title: 'How to Remove a Shower Drain Cover',
+      publisher: 'Mr. Rooter Plumbing',
+      url: 'https://www.mrrooter.com/about/blog/how-to-remove-a-shower-drain-cover/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Describes removing screw-in, push-pull, lift-and-turn, pop-up, toe-touch and flip-it drain covers with screwdrivers, pliers wrapped in a rag or an Allen wrench; pulling hair out with a plastic drain clog remover strip from different angles while wearing gloves and goggles; plunging with 1 to 2 inches of water and the overflow covered; and installing a hair catcher, checking that it fits the cover style.',
+    },
+    {
+      id: 'src-showerdrain-2',
+      title: 'Lesser-Known Tips for Unclogging a Drain',
+      publisher: 'Roto-Rooter',
+      url: 'https://azure.rotorooter.com/blog/drains/lesser-known-tips-for-unclogging-a-drain',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Baking soda and vinegar is ineffective against hair clogs; clear visible hair by hand or with a tool, then flush with hot water; boiling water may crack or damage porcelain, acrylic or natural stone fixtures; most chemical drain cleaners are lye-based caustics that can irritate skin and eyes and damage some pipes, so tell a plumber if you used one; light-duty hand augers can reach past the trap and tools should never be forced.',
+    },
+    {
+      id: 'src-showerdrain-3',
+      title: 'What\'s in Drain Cleaner?',
+      publisher: 'Poison Control (National Capital Poison Center)',
+      url: 'https://www.poison.org/articles/whats-in-drain-cleaner',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Non-enzymatic drain cleaners contain acids or alkalis that can cause serious burns and permanent tissue damage, can splash back when poured from too high or into a completely blocked drain, and call for goggles and rubber gloves; baking soda and vinegar gas usually escapes through the drain; call 1-800-222-1222 after an exposure.',
+    },
+    {
+      id: 'src-showerdrain-4',
+      title: 'Can Drain Openers Cause Damage to Finishes?',
+      publisher: 'Delta Faucet',
+      url: 'https://www.deltafaucet.com/node/273',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'In most cases the finish is safe if you follow the drain opener manufacturer\'s instructions and the drain cleaner is not left on the finish for longer than 30 minutes.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Shower Drain (Hair Clogs, No Chemicals)',
+    description: 'How to clean a shower drain: remove the cover, pull hair out with a plastic drain snake, flush with hot tap water and add a hair catcher. Skip caustic cleaners.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-shower-drain',
+    indexable: true,
+    focusKeyword: 'how to clean a shower drain',
+  },
+};
+
+export default article;

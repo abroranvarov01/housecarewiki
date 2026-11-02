@@ -1,0 +1,150 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-glass-stovetop',
+  slug: 'how-to-clean-a-glass-stovetop',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a glass stovetop',
+  subtitle: 'Ceramic cooktop cleaner, a razor scraper held at about 45 degrees and a dry polish. How to deal with burned-on residue, why sugary spills cannot wait, and the cleaners that damage smooth-top glass.',
+  excerpt: 'Controls off, scrape at about 45 degrees, rub in cooktop cleaner, let it haze, polish dry.',
+  quickAnswer: 'Turn all controls off and let the glass cool, then rub a few drops of ceramic cooktop cleaner into the surface with a cooktop cleaning pad and polish it off with a dry paper towel or cloth. For burned-on residue, hold a razor scraper made for ceramic glass at about a 45 degree angle against the surface, keep a little cleaner on the spot, and scrape with firm pressure before cleaning and polishing. Sugary spills and melted plastic are the exception: GE says to push them to a cool area while still hot, wearing an oven mitt, because they can pit the glass. Never use steel wool, abrasive powders, chlorine bleach, rust remover or ammonia.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing a greasy, crumb-covered stainless steel gas stovetop with a yellow and green sponge, next to black cast-iron burner grates',
+  safetyWarnings: [
+    'Make sure every control is off before you clean, and wear an oven mitt whenever you scrape a warm cooktop.',
+    'Do not use steel wool, abrasive powder cleansers, chlorine bleach, rust remover or ammonia on ceramic glass; Whirlpool warns they can damage the cooktop.',
+    'Use only the cleaners, pads and scrapers your manufacturer recommends. GE warns that other sponges or cleaners can damage the cooktop.',
+    'Sugary spills such as jam, fudge, candy or syrup, and melted plastic, can permanently pit the glass if left to cool on it. Deal with them while the surface is still hot.',
+    'Do not turn a burner back on until all cleaning cream and spill residue have been removed.',
+  ],
+  materialsNeeded: [
+    'Ceramic glass cooktop cleaner cream (for example affresh, Weiman or CeramaBryte)',
+    'Cooktop cleaning pad (the non-scratch type made for glass cooktops)',
+    'Razor scraper designed for ceramic glass cooktops, with a sharp, undamaged blade',
+    'Paper towels or clean, dry soft cloths',
+    'Oven mitt',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Turn Off the Controls and Check Your Manual',
+      instruction: 'Make sure every surface unit is off before you start. Check your owner\'s manual for the cleaner and scraper it recommends: most smooth tops use the routine below, but some finishes, such as Whirlpool\'s WipeClean glass, are not meant to be scraped at all.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Handle Sugary Spills and Melted Plastic Immediately',
+      instruction: 'If jam, syrup, candy, fudge or plastic melts onto the glass, do not wait for it to cool. Turn off the burners, put on an oven mitt and remove the hot pan. Use a razor scraper to push the spill to a cool part of the cooktop, wipe it up with paper towels, and leave whatever remains until the glass has cooled.',
+      proTip: 'This is the one time you clean a hot cooktop. GE warns that sugary spills and melted plastic can cause pitting that is not covered by warranty.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Scrape Burned-On Residue at About 45 Degrees',
+      instruction: 'Put a few drops of cooktop cleaner on the residue. Hold a razor scraper made for ceramic glass at approximately a 45 degree angle against the glass and scrape with firm pressure, keeping a little cream on the spot as you go. Whirlpool says scraping works best while the glass is warm but not hot to the touch, wearing an oven mitt; GE has you let the cooktop cool first. Either way, never scrape a hot surface.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Let the Cooktop Cool Completely',
+      instruction: 'Before applying cleaner to the whole surface, let the cooktop cool until it is cool to the touch.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rub In Ceramic Cooktop Cleaner',
+      instruction: 'Apply a few dime-sized drops of ceramic cooktop cleaner to the soiled areas and rub them in with a cooktop cleaning pad, using reasonable pressure on stubborn stains. Let the cleaner dry to a white haze.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Polish Dry',
+      instruction: 'Buff the haze off with a clean, dry cloth or paper towel until no cream is left. Rinsing is not needed, but make sure all the cleaner is gone before you heat the cooktop again. Repeat scraping, cleaning and polishing for stubborn or burned-on stains.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Prevent Marks with Your Cookware',
+      instruction: 'Lift pots and pans rather than sliding them, which leaves metal marks on the glass. Check pan bottoms for nicks or rough spots that can scratch. If an aluminum or copper-bottomed pan boils dry, clean off the dark marks right away or they may become permanent.',
+    },
+  ],
+  ifMethodFails: [
+    'Metal marks and dark discoloration from pans usually come off with cooktop cleaner, a cleaning pad and the razor scraper; repeat the scrape, clean and polish steps.',
+    'White or metallic-looking film is often mineral deposits; GE says these clean off with cooktop cleaner cream.',
+    'Pitting from a sugary spill, or melted plastic that has hardened onto the glass, usually cannot be removed. Contact the manufacturer for service, because the glass may need to be replaced.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you use a razor blade on a glass stovetop?',
+      answer: 'Yes, on most ceramic glass cooktops. GE and Whirlpool both recommend a razor scraper made for ceramic glass, held at approximately a 45 degree angle with some pressure. Check your manual first, since some finishes, such as Whirlpool WipeClean glass, should not be scraped.',
+    },
+    {
+      question: 'Can I use Windex on a glass stove top?',
+      answer: 'It is better not to. Whirlpool lists ammonia among the products that can damage ceramic glass, and many glass cleaners contain it. GE recommends an approved ceramic cooktop cleaner such as Weiman or CeramaBryte instead.',
+    },
+    {
+      question: 'Should you clean a glass cooktop hot or cold?',
+      answer: 'Cool, for routine cleaning and applying cleaner. The exceptions are sugary spills and melted plastic, which GE says to push to a cool area while still hot, wearing an oven mitt. Whirlpool also suggests scraping while the glass is warm but not hot.',
+    },
+    {
+      question: 'What should you not use on a glass top stove?',
+      answer: 'Avoid steel wool, abrasive powder cleansers, chlorine bleach, rust remover and ammonia, which Whirlpool says can damage the cooktop. GE adds that sponges or cleaners other than those it recommends can cause damage, so stick to a ceramic cooktop cleaner, its pad and a cooktop scraper.',
+    },
+    {
+      question: 'How do you get burnt-on food off a glass stovetop?',
+      answer: 'Let the cooktop cool, apply a few drops of ceramic cooktop cleaner, then scrape with a razor scraper held at about 45 degrees, keeping a little cream on the residue. Rub the area with a cleaning pad, then polish the whole surface with cleaner and a dry paper towel. Repeat for stubborn spots.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-glasstop-1',
+      title: 'Electric Range and Cooktop - Glass Cooktop Cleaning Instructions',
+      publisher: 'GE Appliances',
+      url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=16244',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Recommends an approved cleaner such as Weiman or CeramaBryte; for burned-on residue let the cooktop cool and hold a razor scraper at approximately 45 degrees with cream on the residue; sugary spills and melted plastic can cause pitting and should be removed while hot with an oven mitt; do not slide pans; other sponges or cleaners can damage the cooktop.',
+    },
+    {
+      id: 'src-glasstop-2',
+      title: 'Cleaning Ceramic Glass Cooktops',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Cooking/Cooktops/Product_Info/Cooktop_Cleaning_and_Care/Cleaning_Ceramic_Glass_Cooktops',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'With controls off, scrape while the cooktop is warm but not hot, wearing an oven mitt, holding the scraper at about 45 degrees; let it cool, rub in a few dime-sized drops of cooktop cleaner with the cleaning pad, let it dry to a white haze and polish dry; do not use steel wool, abrasive powders, chlorine bleach, rust remover or ammonia.',
+    },
+    {
+      id: 'src-glasstop-3',
+      title: 'Gas Range and Cooktop - Glass Cooktop Cleaning Instructions',
+      publisher: 'GE Appliances',
+      url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=39080',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Make sure the surface is cool to the touch, spread a few drops of cream, wipe off all residue with a dry cloth or paper towel and do not heat the cooktop until the cream is fully removed; white or metallic marks are mineral deposits that clean off with cream; hardened melted plastic may require glass replacement.',
+    },
+    {
+      id: 'src-glasstop-4',
+      title: 'WipeClean Glass Cooktop Cleaning',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Cooking/Wall_Ovens_and_Ranges/Ranges/Cleaning_and_Maintenance/WipeClean/WipeClean_Glass_Cooktop_Cleaning',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'On WipeClean glass cooktops a scraper is not recommended because it might scratch the cooktop; very heavy soil is instead soaked with water and removed with a soft, non-abrasive sponge and a nonabrasive cooktop cleaner.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Glass Stovetop Without Scratching',
+    description: 'How to clean a glass stovetop: cooktop cleaner, a razor scraper at about 45 degrees, a dry polish, fast action on sugary spills, and cleaners to avoid.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-glass-stovetop',
+    indexable: true,
+    focusKeyword: 'how to clean a glass stovetop',
+  },
+};
+
+export default article;

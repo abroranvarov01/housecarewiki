@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-white-porcelain-kitchen-sink',
+  slug: 'how-to-clean-a-white-porcelain-kitchen-sink',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a white porcelain kitchen sink',
+  subtitle: 'White kitchen sinks are usually enameled cast iron or fireclay, and they pick up coffee, tea and gray pot marks fast. How to wash them, lift food stains and metal marks, which scrubbers each maker forbids, and how a bottom grid protects the glaze.',
+  excerpt: 'Rinse and dry after use, never leave coffee grounds or tea bags sitting in the bowl, lift pot marks with a cast iron cleaner, and use a bottom grid instead of a rubber mat.',
+  quickAnswer: 'Rinse a white porcelain kitchen sink after each use and wipe it dry with a soft cloth, and wash it with a soft, damp sponge and a cleaner your sink maker lists. Coffee grounds, tea bags and dirty dishes left in the bowl are what stain it, so clear them out promptly and use a soft abrasive cleaner sparingly for stubborn marks. Gray pot marks on enameled cast iron rub off with a cast iron cleaner and a soft cloth or cork. Never use steel wool, wire brushes or abrasive sponge pads on enameled cast iron, and protect the base with a bottom grid or rinse basket rather than a rubber mat.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'sinks-drains',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-kitchen.webp',
+  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  safetyWarnings: [
+    'Do not use steel wool, wire brushes or abrasive sponge pads on an enameled cast iron sink. Kohler\'s kitchen sink care guide rules them out.',
+    'Never let a cleaner sit or soak on the sink. Kohler says to rinse surfaces completely with water immediately after applying a cleaner, and to test any new cleaner on a hidden spot first.',
+    'Rust removers and bleach-containing cleansers are strong chemicals. Wear gloves, ventilate the kitchen, follow the label, and never mix them with each other, with ammonia or with vinegar or other acids.',
+    'Do not leave a rubber dish mat in an enameled sink. Kohler warns that bacteria can grow under it and permanently discolor the enamel, and that this is not covered by its warranty.',
+    'Never drop heavy pans or utensils into a fireclay sink. Shaws and ROHL say fireclay is chip resistant but not chip proof.',
+  ],
+  materialsNeeded: [
+    'Soft sponge and soft cloths',
+    'A general-purpose cleaner your sink maker lists (Kohler names products such as Fantastik Antibacterial Heavy Duty, Formula 409 Antibacterial All-Purpose and Green Works All-Purpose)',
+    'A soft abrasive cleanser for stubborn stains, such as Soft Scrub or Bon Ami, used sparingly',
+    'For gray pot marks on enameled cast iron: KOHLER Cast Iron Cleaner and a soft cloth or cork',
+    'For fireclay marks: the cleaner your maker names (Shaws and ROHL recommend Astonish)',
+    'For rust spots: a rust remover your maker lists, such as Bar Keepers Friend for fireclay or Super Iron Out',
+    'Rubber gloves',
+    'A stainless bottom grid or rinse basket sized to your bowl',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Identify Enameled Cast Iron or Fireclay',
+      instruction: 'A white porcelain kitchen sink is usually enameled cast iron, a very heavy iron sink with a glassy enamel coat, or fireclay, a solid glazed ceramic popular for farmhouse sinks. Check the model number or brand under the sink or in your paperwork. The two take different rules on abrasives, so look up your maker\'s care guide before you scrub. If you are cleaning a bathroom basin instead, see our separate guide on cleaning a porcelain bathroom sink.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Clear Out Food and Staining Materials',
+      instruction: 'Empty the sink of dishes, coffee grounds, tea bags and food scraps. Kohler warns not to leave dirty dishes, coffee grounds, tea bags or other staining materials in contact with the enamel for long periods, because that is how brown and beige stains set into a white sink.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wash with a Soft Sponge and an Approved Cleaner',
+      instruction: 'Test your cleaner on a hidden spot first. Then wash the bowl with a soft, dampened sponge or cloth and a general-purpose cleaner from your maker\'s list. Do not let the cleaner soak; rinse the whole surface completely with water straight away and wipe it dry with a soft cloth.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Lift Coffee and Tea Stains with a Soft Abrasive',
+      instruction: 'For stains that remain, use a soft abrasive cleanser on a damp sponge, sparingly. Kohler says to use abrasive cleaners sparingly for rare stubborn stains on enameled cast iron, and a soft abrasive cleaner when necessary on fireclay. Rub gently, rinse thoroughly and dry.',
+      proTip: 'Shaws and ROHL say everyday abrasives will not harm the glaze on their fireclay sinks. Kohler is stricter about enameled cast iron, so keep abrasives occasional on that material.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rub Off Gray Pot Marks',
+      instruction: 'Gray or black streaks are usually metal transferred from pans, most often aluminum cookware. Kohler says they look like scratches but do not penetrate the enamel. On enameled cast iron, apply a small amount of KOHLER Cast Iron Cleaner and gently rub the marks away with a soft cloth or cork. On Shaws or ROHL fireclay, use Astonish, which the maker recommends for black marks from pots and pans. Rinse and dry.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Treat Rust Spots Occasionally',
+      instruction: 'For occasional rust spots, Kohler\'s kitchen sink guide lists Bon Ami or Super Iron Out for rust on enameled cast iron, and Bar Keepers Friend or Super Iron Out for fireclay. Wear gloves, ventilate, follow the label, keep the product moving rather than letting it soak, then rinse completely and dry.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Protect the Base with a Grid, Not a Rubber Mat',
+      instruction: 'Kohler recommends bottom bowl racks and rinse baskets to protect the sink base from scratches, and warns that rubber dish mats can trap bacteria and permanently discolor enamel. Lift the grid out when you clean so the bowl underneath can be washed and dried, and set heavy cookware down gently rather than dropping it.',
+    },
+  ],
+  ifMethodFails: [
+    'If gray marks will not budge with a cast iron cleaner, they may be real scratches or worn enamel rather than metal transfer. Contact the sink maker before trying stronger abrasives, which can dull the glaze further.',
+    'If the whole bowl has turned dull or yellowed, harsh cleaners or long-soaking products may have etched the surface. Go back to mild cleaners, rinse and dry after every use, and ask the manufacturer about refinishing options.',
+    'For a chip in fireclay, Shaws and ROHL say a color-matched repair kit is available through House of Rohl dealers; the fireclay underneath will not rust. For a chip in enameled cast iron, contact the sink maker.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How do I get coffee stains out of my white porcelain sink?',
+      answer: 'Wash the sink with a soft sponge and a cleaner your sink maker lists, then use a soft abrasive cleanser sparingly on any stain that remains, rinsing and drying afterward. To stop new stains, do not leave coffee grounds, tea bags or dirty dishes in the bowl for long periods, which Kohler names as a cause of staining.',
+    },
+    {
+      question: 'How do you get gray marks out of a white sink?',
+      answer: 'Gray marks are usually metal rubbed off pots and pans, especially aluminum. Kohler says they sit on top of the enamel and can be removed by applying a small amount of KOHLER Cast Iron Cleaner and gently rubbing with a soft cloth or cork. Shaws and ROHL recommend Astonish for black pot marks on their fireclay sinks.',
+    },
+    {
+      question: 'Can I use Bar Keepers Friend on a white porcelain kitchen sink?',
+      answer: 'Kohler lists Bar Keepers Friend for rust removal on its vitreous china and fireclay kitchen sinks. For enameled cast iron, its kitchen sink guide lists Bon Ami and Super Iron Out for rust instead and says to use abrasive cleaners only sparingly. Check your own sink maker\'s list before using it.',
+    },
+    {
+      question: 'Should you put a mat in a porcelain kitchen sink?',
+      answer: 'Kohler does not recommend rubber dish mats in its sinks, because bacteria can grow under them and permanently discolor the enamel. It suggests bottom bowl racks and rinse baskets instead to protect the base from scratches.',
+    },
+    {
+      question: 'Is a fireclay sink the same as a porcelain sink?',
+      answer: 'Both have a white glazed finish, but fireclay is a solid glazed ceramic, while many porcelain kitchen sinks are enameled cast iron, an iron body with an enamel coat. Shaws and ROHL say abrasives will not harm their solid-color fireclay glaze, while Kohler warns against steel wool, wire brushes and abrasive pads on enameled cast iron.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-white-sink-1',
+      title: 'KOHLER Care and Cleaning Guide: Kitchen Sinks',
+      publisher: 'Kohler',
+      url: 'https://images.thdstatic.com/catalog/pdfImages/6f/6f5798e0-86c1-42ef-8a4d-f6c86e5cbec7.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Test cleaners on an inconspicuous area, rinse completely right after applying, do not let cleaner soak, and use a soft dampened sponge or cloth. For enameled cast iron kitchen sinks: rinse and wipe dry after each use, use abrasive cleaners sparingly for rare stubborn stains, no steel wool, wire brushes or abrasive sponge pads, do not leave dirty dishes, coffee grounds or tea bags on the enamel, use bottom bowl racks and rinse baskets; Bon Ami or Super Iron Out for rust. For fireclay: soft abrasive cleaner when necessary, Bar Keepers Friend or Super Iron Out for rust.',
+    },
+    {
+      id: 'src-white-sink-2',
+      title: 'Installation Guide: Self-Rimming Cast Iron Sinks (Cleaning Your Cast Iron Sink)',
+      publisher: 'Kohler',
+      url: 'https://resources.kohler.com/onlinecatalog/pdf/1053525_2.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Test cleaning solutions on an inconspicuous area, do not let cleaners soak, never use a brush or scouring pad, rinse completely right after cleaning, do not leave dirty dishes, coffee grounds or tea bags on the enamel for extended periods, and consider bottom basin racks and rinse baskets to protect the surface from scratches.',
+    },
+    {
+      id: 'src-white-sink-3',
+      title: 'Enameled Cast Iron Sink Care',
+      publisher: 'Kohler',
+      url: 'https://assist.kohler.com/en/sinks/Enameled-Cast-Iron-Sink-Care',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Abrasive cleaners are not recommended on enameled surfaces; pot marks come from metal objects, most commonly aluminum cookware, do not penetrate the enamel, and can be removed with a small amount of KOHLER Cast Iron Cleaner rubbed gently with a soft cloth or cork; rubber dish mats are not recommended because bacteria under them can permanently discolor the enamel, which the warranty does not cover.',
+    },
+    {
+      id: 'src-white-sink-4',
+      title: 'Shaws: Allia Sinks Care and Maintenance',
+      publisher: 'House of Rohl',
+      url: 'https://solutions.houseofrohl.com/Content_Library/Repair_Guides/Shaws/Shaws%3A_Allia_Sinks_Care_and_Maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wipe the sink after use; everyday use of abrasives or abrasive pads will not harm Shaws or Allia fireclay surfaces; Astonish removes black marks from pots and pans; fireclay is chip resistant but not chip proof, so never drop heavy pans or utensils into the sink; chips do not rust and a repair kit is available.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a White Porcelain Kitchen Sink',
+    description: 'How to clean a white porcelain kitchen sink: lift coffee and tea stains, remove gray pot marks, what Kohler and Shaws forbid, and why a grid beats a rubber mat.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-white-porcelain-kitchen-sink',
+    indexable: true,
+    focusKeyword: 'how to clean a white porcelain kitchen sink',
+  },
+};
+
+export default article;

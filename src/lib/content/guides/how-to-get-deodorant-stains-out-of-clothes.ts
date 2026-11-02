@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-deodorant-stains-out-of-clothes',
+  slug: 'how-to-get-deodorant-stains-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get deodorant stains out of clothes',
+  subtitle: 'Fresh white streaks rub off with a dry sock or towel. Built-up, chalky residue on dark tops needs dish soap or detergent worked in, a wash, and no heat until it is gone. Plus how to stop the marks before they start.',
+  excerpt: 'Rub fresh white marks off dry, pretreat built-up residue with dish soap or detergent, wash, and skip the dryer until it is gone.',
+  quickAnswer: 'For a fresh white mark, rub it off dry with a clean sock, nylon stocking or dry towel, or rub the fabric gently against itself. For built-up residue, brush off the excess, rinse under cold running water, work undiluted dishwashing liquid or liquid detergent into the area, let it sit about 5 minutes and wash at the warmest temperature the care label allows. Check before drying and repeat if needed, because dryer heat and ironing set deodorant stains. To prevent the marks, let deodorant dry fully before you get dressed.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-laundry.webp',
+  heroImageAlt: 'Hand scrubbing a discolored collar on a white button-down shirt with a wooden-handled bristle brush on a speckled countertop, with a pile of mixed laundry and a white basket behind it',
+  safetyWarnings: [
+    'Never iron or tumble-dry a garment with a deodorant stain still on it. Heat sets the stain, and the University of Georgia Extension warns the combination of antiperspirant chemicals and heat can ruin many fabrics.',
+    'Do not use chlorine bleach on dark or colored clothes unless the care label allows it, and never mix bleach with ammonia, vinegar or other cleaners.',
+    'Antiperspirants containing aluminum chloride are acidic and can change the color of some dyes. Test any cleaner on an inside seam first to check for color change.',
+    'Ventilate the room when you use ammonia, commercial stain removers or bleach, and keep them away from children.',
+    'Check the care label before you start. These methods are for washable fabrics; take dry-clean-only garments to a professional cleaner.',
+  ],
+  materialsNeeded: [
+    'Clean dry sock, nylon stocking or dry towel (for fresh white marks)',
+    'Soft-bristled toothbrush',
+    'Liquid dishwashing detergent or liquid laundry detergent',
+    'Baking soda (optional, for a no-wash paste)',
+    'White vinegar (optional, for older marks and color restoration)',
+    'Bowl or basin for soaking',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Rub Fresh White Marks Off Dry',
+      instruction: 'If you just brushed antiperspirant onto a dark top while dressing, rub the white streak with a clean sock, a nylon stocking or a dry towel, or gently rub the fabric against itself. Fresh marks from a deodorant stick usually lift this way without any water.',
+      proTip: 'Work on the outside of the garment with light, quick strokes; heavy scrubbing can rough up the surface of dark knits.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Check the Label and Brush Off Built-Up Residue',
+      instruction: 'For chalky, stiff residue that has built up over several wears, read the care label first. Then brush off any loose deposit with a soft-bristled toothbrush and rinse the area under cold running water.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Work In Dish Soap or Liquid Detergent',
+      instruction: 'Rub undiluted hand dishwashing liquid or a liquid laundry detergent into the stained area, using the toothbrush or by rubbing the fabric together gently. Let it sit for about 5 minutes. Do not rinse it off before washing; leaving it on gives the wash extra cleaning power.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wash at the Warmest Temperature the Label Allows',
+      instruction: 'Wash the garment on its usual cycle with your normal detergent dose at the hottest temperature permitted by the care label. Take it out as soon as the cycle ends.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Check Before Drying and Repeat if Needed',
+      instruction: 'Look at the underarm area while it is still damp. If any residue or shadow remains, repeat the pretreatment and wash. Do not dry or iron the garment until the stain is gone, because heat sets deodorant stains.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Soak Older Marks in White Vinegar',
+      instruction: 'For older, stubborn marks on white or colored clothes, soak the stained area in white vinegar for about an hour, brush gently and then wash. Test the vinegar on a hidden seam first, especially on dark fabric.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Let Deodorant Dry Before You Get Dressed',
+      instruction: 'Prevention is easier than removal. Let deodorant or antiperspirant dry completely on your skin before putting on clothes, and wash garments soon after wearing them so residue does not build up.',
+    },
+  ],
+  ifMethodFails: [
+    'If you cannot wash the garment right away, make a paste of baking soda and water in a 3 to 1 ratio, scrub it in with a soft-bristled toothbrush, leave it for an hour, rinse with cold water and air-dry. Repeat if needed.',
+    'If the dye under the arms looks faded or changed, the University of Georgia Extension suggests a few drops of white vinegar for an older stain or a few drops of ammonia for a new one to help restore color. Test first, ventilate, and never use them together or with bleach.',
+    'If the residue has yellowed on a white shirt, that is a different problem from white marks; see our guide on removing yellow armpit stains from white shirts.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How do you get white deodorant marks off black clothes?',
+      answer: 'For a fresh mark, rub it off dry with a clean sock, nylon stocking or dry towel, or rub the fabric gently against itself. If residue has built up, rinse it in cold water, work in liquid detergent or dish soap, let it sit about 5 minutes and wash at the warmest temperature the label allows.',
+    },
+    {
+      question: 'Why does deodorant leave white marks on clothes?',
+      answer: 'Antiperspirants contain aluminum salts and other ingredients that can rub onto fabric, especially if you dress before the product has dried. Over many wears the residue builds up into a stiff, chalky patch that a normal wash does not always remove.',
+    },
+    {
+      question: 'Does vinegar remove deodorant stains?',
+      answer: 'It can. Soaking the stained area in white vinegar for about an hour, then brushing gently and washing, works on both white and colored clothes according to Persil. Test on a hidden seam first, and never mix vinegar with bleach.',
+    },
+    {
+      question: 'Can deodorant stains come out after drying?',
+      answer: 'They become much harder to remove. Tide warns that drying sets deodorant stains, and the University of Georgia Extension says never to iron or apply heat to a deodorant stain. Always check the stain after washing and repeat the treatment before the garment goes in the dryer.',
+    },
+    {
+      question: 'How do I stop deodorant from getting on my clothes?',
+      answer: 'Apply deodorant before you dress and let it dry fully on your skin before putting on clothes. Washing garments soon after wearing them also keeps residue from building up in the underarm area.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-deodorant-1',
+      title: 'Remove Stains From Antiperspirant, Deodorant',
+      publisher: 'University of Georgia Extension, Textiles, Merchandising and Interiors',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-antiperspirant-deodorant/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rub undiluted hand dishwashing liquid into the stain and launder; never iron or apply heat to a deodorant stain; aluminum chloride antiperspirants are acidic and may change some dye colors, which a few drops of ammonia (new stains) or white vinegar (old stains) can help restore; read the care label, pretest for colorfastness and ventilate.',
+    },
+    {
+      id: 'src-deodorant-2',
+      title: 'How to Remove Deodorant Stains',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/deodorant-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Brush off excess deodorant and rinse under cold running water, pretreat and let sit five minutes without rinsing, wash at the hottest temperature the care label permits, and repeat before drying because drying sets the stain; for a no-wash fix, scrub in a 3 to 1 baking soda and water paste, leave an hour, rinse cold and air-dry.',
+    },
+    {
+      id: 'src-deodorant-3',
+      title: 'How to Remove Deodorant Stains',
+      publisher: 'Tide',
+      url: 'https://tide.ca/en-ca/how-to-wash-clothes/how-to-remove-stains/deodorant-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Work liquid detergent into the stain with a soft toothbrush or by gently rubbing the fabric together and let it sit 5 minutes; to prevent stains, let deodorant dry fully before dressing and wash clothing right after wearing it.',
+    },
+    {
+      id: 'src-deodorant-4',
+      title: 'How to Remove Deodorant Stains From Clothes',
+      publisher: 'Persil',
+      url: 'https://www.persil.com/uk/laundry/laundry-tips/stains/how-to-remove-deodorant-stains-from-clothes.html',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Fresh deodorant-stick marks can be rubbed off with nylon stockings, a dry towel or a clean sock; set-in stains on white or colored clothes can be soaked in white vinegar for about an hour, brushed gently and washed; check the care label and test on a hidden area first.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Deodorant Stains Out of Clothes (Even Black)',
+    description: 'How to get deodorant stains out of clothes: rub fresh white marks off dry, pretreat built-up residue with dish soap, wash warm, and keep heat away until clean.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-deodorant-stains-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get deodorant stains out of clothes',
+  },
+};
+
+export default article;

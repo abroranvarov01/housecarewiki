@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-tile-floors',
+  slug: 'how-to-clean-tile-floors',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean tile floors',
+  subtitle: 'Sweep or vacuum first, damp mop with a mild tile-safe cleaner in clean water, rinse, and dry. Why oil soaps, wax and no-rinse cleaners leave ceramic and porcelain floors dull or slippery, and how to handle textured tile.',
+  excerpt: 'Sweep or vacuum, damp mop with a mild tile-safe cleaner, rinse with clean water, then dry the floor.',
+  quickAnswer: 'Sweep, dust mop or vacuum to remove grit, then damp mop with warm water and a mild tile cleaner that is safe for grout, changing the water as soon as it looks dirty. Rinse the floor with clean water and dry it with a towel, squeegee or wet vacuum so no residue is left behind. Skip oil soaps, wax-based cleaners, no-rinse cleaners, acids and ammonia, which can leave a film, reduce slip resistance or damage glaze and grout. On textured or unglazed tile, use a neutral-pH tile cleaner and a soft non-metallic brush to reach into the texture.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tile-grout',
+  surfaceSlugs: ['ceramic-tile'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/guide-shower-mold.webp',
+  heroImageAlt: 'Beige tiled shower floor with a round drain seen through a wet glass panel, with dark mold along the frame, a toothbrush and a clear spray bottle on the tiled ledge',
+  safetyWarnings: [
+    'Do not use no-rinse cleaners on tile floors; Daltile does not recommend them because leftover residue can reduce slip resistance.',
+    'Avoid oil-based and wax-based cleaners, including oil soaps. TCNA warns they leave a waxy or oily film in the grout.',
+    'Do not use cleaners that contain acids or ammonia on glazed ceramic or porcelain; acids can damage the glaze and grout, and ammonia can discolor grout.',
+    'Never mix bleach with ammonia or acidic cleaners, and ventilate the room when using any chemical cleaner. Daltile notes that bleach and alkaline cleaners may need several rinses to remove.',
+    'Wet tile is slippery. Keep people and pets off the floor until it is completely dry.',
+  ],
+  materialsNeeded: [
+    'Broom, dust mop or vacuum with a hard-floor setting',
+    'Microfiber or cotton mop',
+    'Two buckets (one for cleaning solution, one for clean rinse water)',
+    'Mild tile cleaner labeled safe for ceramic tile and grout, or warm water with a little mild soap for porcelain',
+    'Neutral-pH tile cleaner for unglazed or textured tile',
+    'Soft non-metallic scrub brush',
+    'Clean towels, a floor squeegee or a wet vacuum for drying',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check What Kind of Tile You Have',
+      instruction: 'This method is for glazed ceramic and porcelain floors. Unglazed and textured tile call for a neutral-pH tile cleaner. Natural stone such as marble, travertine or slate is porous and needs a separate maintenance program, so do not use ceramic-tile products on it.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Sweep, Dust Mop or Vacuum First',
+      instruction: 'Remove loose dirt and grit before any liquid touches the floor. Tile manufacturers recommend regular dust mopping, sweeping or vacuuming before wet cleaning, because mopping over grit just pushes it around.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Mix a Mild Tile-Safe Cleaning Solution',
+      instruction: 'Fill a bucket with warm water and add a mild cleaner labeled safe for ceramic tile and grout, diluted exactly as the label directs. Marazzi says warm water and mild soap are enough for routine cleaning of porcelain floors. Use a neutral-pH tile cleaner on unglazed tile.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Damp Mop in Sections',
+      instruction: 'Wring the mop until it is damp, not dripping, and mop a section at a time. Change the water whenever it looks dirty; Daltile warns that mopping with dirty water only spreads the dirt across the whole floor.',
+      proTip: 'Start in the far corner and work toward the door so you never walk across the wet, cleaned area.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Scrub Textured Tile and Heavy Soil',
+      instruction: 'On textured, matte or slip-resistant tile, work the cleaner into the surface with a soft non-metallic brush. For heavily soiled spots, let the cleaner dwell only as long as its label directs, then agitate. Do not use metal brushes or abrasive pads.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse with Clean Water',
+      instruction: 'Go over the floor again with a mop rinsed in a second bucket of clean water. TCNA notes that even good cleaners leave a sticky film if they are not properly rinsed, and that film attracts dirt and dulls the floor.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Dry the Floor',
+      instruction: 'Remove the remaining water with clean towels, a floor squeegee or a wet vacuum, as Daltile recommends. Drying prevents water spots and leaves no wet residue to attract new dirt.',
+    },
+  ],
+  ifMethodFails: [
+    'If the floor looks hazy or feels sticky, cleaner residue is the usual cause. Mop again with plain clean water, changing it often, and dry thoroughly.',
+    'If a waxy film builds up from past wax or oil-soap use, manufacturers recommend a tile sealer and adhesive remover for ceramic tile; test a small area first and never use it on natural stone.',
+    'If the tile looks clean but grout lines stay dark, the grout needs its own periodic cleaning. Treat the joints with a grout-specific routine rather than a harsher cleaner on the whole floor.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What is the best way to clean tile floors?',
+      answer: 'Sweep or vacuum first, damp mop with warm water and a mild cleaner that is safe for tile and grout, rinse with clean water, and dry the floor. Change the mop water as soon as it gets dirty.',
+    },
+    {
+      question: 'Can I use Murphy Oil Soap or other oil soaps on tile floors?',
+      answer: 'TCNA advises against oil-based and wax-based cleaners on tile because they leave a waxy or oily film in the grout that attracts dirt. Use a mild tile-safe cleaner and rinse it off instead.',
+    },
+    {
+      question: 'Why are my tile floors still dirty or dull after mopping?',
+      answer: 'Usually because cleaner residue or dirty mop water was left on the floor. Even good cleaners leave a sticky film if they are not rinsed, and that film holds dirt. Rinse with clean water and dry the floor completely.',
+    },
+    {
+      question: 'Can you use vinegar to clean tile floors?',
+      answer: 'Tile manufacturers warn that acids can damage grout and glazed tile, and TCNA explains that cement grout is dissolved by acids. Vinegar is acidic, so a mild tile and grout cleaner is the safer choice.',
+    },
+    {
+      question: 'Should I use a no-rinse floor cleaner on tile?',
+      answer: 'Daltile does not recommend no-rinse cleaners for its tile because the residue they leave can reduce slip resistance. Choose a cleaner you rinse off with clean water.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-tilefloor-1',
+      title: 'How to Care for and Maintain Ceramic and Porcelain Tile',
+      publisher: 'Daltile',
+      url: 'https://www.daltile.com/how-to/how-to-care-for-and-maintain-tile/how-to-care-for-and-maintain-ceramic-and-porcelain-tile',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Sweep or vacuum before mopping and never mop with dirty water; dilute and dwell the cleaner as its manufacturer directs; rinse with clean water and remove excess by squeegee, wiping or wet vacuum; no-rinse cleaners are not recommended because residue can reduce slip resistance; bleach and alkaline cleaners may need multiple rinses.',
+    },
+    {
+      id: 'src-tilefloor-2',
+      title: 'Cleaning Grout',
+      publisher: 'Tile Council of North America (TCNA)',
+      url: 'https://tcnatile.com/resource-center/faq/cleaning-grout/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Oil- or wax-based cleaners leave a waxy or oily film in grout; cement grout is dissolved by acids; even good cleaners leave a sticky soap film if not properly rinsed; tile can often be cleaned with water.',
+    },
+    {
+      id: 'src-tilefloor-3',
+      title: 'Tile Care and Maintenance',
+      publisher: 'Marazzi',
+      url: 'https://www.marazziusa.com/style-and-design/resources/care-and-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Warm water and mild soap are sufficient for routine porcelain floor cleaning; dust mop, sweep or vacuum before liquid cleaning; use a neutral-pH tile cleaner on unglazed tile; avoid acids, ammonia and abrasive implements; rinse and dry thoroughly.',
+    },
+    {
+      id: 'src-tilefloor-4',
+      title: 'Ceramic Tile Care Instructions',
+      publisher: 'American Olean',
+      url: 'https://www.americanolean.com/resources/care-and-maintenance/ceramic-tile',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Apply and agitate cleaner with a cotton mop, cloth, sponge or non-metallic brush, then rinse and dry; acids damage grout and glaze and ammonia discolors grout; sealer removers are for ceramic only and natural stone needs a different maintenance program.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean Tile Floors Without Residue',
+    description: 'How to clean tile floors: sweep, damp mop with a mild tile-safe cleaner, rinse and dry. Why oil soaps, wax and no-rinse cleaners leave residue on ceramic tile.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-tile-floors',
+    indexable: true,
+    focusKeyword: 'how to clean tile floors',
+  },
+};
+
+export default article;

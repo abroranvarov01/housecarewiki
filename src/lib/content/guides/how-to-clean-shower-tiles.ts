@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-shower-tiles',
+  slug: 'how-to-clean-shower-tiles',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean shower tiles',
+  subtitle: 'A gentle, grout-safe cleaner, a soft non-metallic brush, a thorough clear-water rinse and a dry finish. How to handle soap scum on ceramic and porcelain walls, and why natural stone needs a different routine.',
+  excerpt: 'Spray a grout-safe tile cleaner, scrub with a soft non-metallic brush, rinse with clean water and dry.',
+  quickAnswer: 'Spray the walls with a gentle multipurpose cleaner made for tile and safe for grout, scrub with a sponge, cloth or soft non-metallic brush, then rinse thoroughly with clean water and dry the tile. Tile manufacturers recommend a neutral-pH or all-purpose, low-VOC cleaner for routine care and warn against acids and ammonia, which can damage the glaze and discolor grout. Rinsing matters as much as scrubbing, because cleaner left on the wall dries into a sticky film that holds dirt. If your shower is natural stone rather than ceramic or porcelain, use a stone-specific routine instead.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tile-grout',
+  surfaceSlugs: ['ceramic-tile'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/guide-spin-scrubber.webp',
+  heroImageAlt: 'Hand holding a white electric spin scrubber with a round bristle brush against soapy white wall tiles inside a shower, with a glass door and chrome shower hose at the side',
+  safetyWarnings: [
+    'Do not use cleaners that contain acids or ammonia on glazed ceramic or porcelain shower tile; Marazzi and American Olean warn that acids can damage the glaze and grout and ammonia can discolor grout.',
+    'Never mix bleach with ammonia, vinegar or any acidic cleaner. Use one product at a time, rinse completely between products, and ventilate the bathroom by running the fan or opening a window.',
+    'Avoid steel wool, metal brushes and abrasive pads. Manufacturers call for non-abrasive tools and a non-metallic brush on tile.',
+    'Natural stone (marble, travertine, limestone, slate) is porous and needs its own maintenance program. Never use ceramic sealer removers, sulfamic acid or grout removers on stone.',
+    'Wear gloves when using heavy-duty or alkaline tile cleaners and follow the label for dilution and dwell time.',
+  ],
+  materialsNeeded: [
+    'Multipurpose tile and bath spray cleaner labeled safe for ceramic tile and grout (neutral pH or all-purpose, low VOC)',
+    'Soft sponge, microfiber cloth or non-metallic scrub brush',
+    'Bucket or handheld shower sprayer for clean rinse water',
+    'Clean dry towel or squeegee',
+    'Rubber gloves',
+    'Optional for heavy buildup: professional-strength tile and grout cleaner',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Confirm the Tile Is Ceramic or Porcelain',
+      instruction: 'This method is for glazed ceramic and porcelain tile. If your shower walls are marble, travertine, limestone or another natural stone, stop here: stone is porous and manufacturers say it needs a different maintenance program and different cleaners than ceramic tile.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Ventilate and Rinse the Walls',
+      instruction: 'Turn on the exhaust fan or open a window, then wet the walls with warm water from the shower head to loosen surface soil and soap residue before you apply any cleaner.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Apply a Gentle Grout-Safe Cleaner',
+      instruction: 'Spray a multipurpose tile and bath cleaner that is labeled safe for ceramic tile and grout. Tile manufacturers recommend an all-purpose, low-VOC cleaner for glazed tile and a neutral-pH tile cleaner for unglazed tile. Skip products that contain acids or ammonia. Let it sit only as long as the label directs.',
+      proTip: 'Work in one section at a time, top to bottom, so the cleaner does not dry on the wall before you rinse it.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Scrub with a Soft Non-Metallic Tool',
+      instruction: 'Agitate the cleaner with a sponge, cloth or non-metallic brush, paying extra attention to the lower wall where soap scum collects. Do not use steel wool or abrasive pads, which manufacturers warn against.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rinse Thoroughly with Clean Water',
+      instruction: 'Rinse every section with clean water until no suds or slick film remain. TCNA notes that even good cleaners leave a sticky soap film if they are not properly rinsed, and that film attracts dirt.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Dry the Tile',
+      instruction: 'Dry the walls thoroughly with a clean towel or squeegee. Marazzi recommends always drying porcelain thoroughly after cleaning, which also leaves less water to dry into spots.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Step Up for Heavy Soap Scum',
+      instruction: 'If buildup remains, use a professional-strength tile and grout cleaner made to remove soap scum, body oil and mildew, following the label for dilution and dwell time. Start with the least aggressive pad or brush, then rinse with clear water and dry. Grout lines need their own periodic cleaning; see our guide on cleaning grout in bathroom tiles.',
+    },
+  ],
+  ifMethodFails: [
+    'If the walls feel sticky or look dull after cleaning, residue was left behind. Rinse again with plenty of clean water and dry; TCNA recommends repeated clear-water rinses for soapy dirt.',
+    'If a waxy or hazy film persists, it may be an old topical sealer or wax. Manufacturers recommend a tile sealer and adhesive remover for ceramic tile only; test a small area first and never use it on natural stone.',
+    'If grout stays dark after the tile is clean, the problem is in the grout, not the tile. Treat it with a grout-specific routine rather than a stronger cleaner on the whole wall.',
+  ],
+  recommendedProductIds: ['prod-electric-spin-scrubber'],
+  faqs: [
+    {
+      question: 'What is the best thing to clean shower tiles with?',
+      answer: 'A multipurpose tile and bath cleaner labeled safe for ceramic tile and grout. Marazzi and American Olean recommend an all-purpose, low-VOC cleaner for glazed tile and a neutral-pH tile cleaner for unglazed tile, applied with a sponge, cloth or non-metallic brush and rinsed off with clean water.',
+    },
+    {
+      question: 'Can I use vinegar on shower tiles?',
+      answer: 'Tile manufacturers advise against acidic cleaners on glazed tile because acids can damage the glaze and the grout, and TCNA explains that cement grout is dissolved by acids. Vinegar is an acid, so stick to a cleaner made for tile and grout.',
+    },
+    {
+      question: 'How do you get soap scum off shower tiles?',
+      answer: 'Use a multipurpose bath spray made to remove soap scum, hard water deposits and mildew, scrub with a non-metallic brush, and rinse thoroughly. For heavy buildup, Daltile recommends a professional-strength tile and grout cleaner formulated for soap scum and body oil, followed by a clear-water rinse.',
+    },
+    {
+      question: 'Do I need to seal ceramic shower tiles?',
+      answer: 'Glazed ceramic and porcelain tile does not need to be sealed, according to Marazzi and American Olean. They do recommend sealing cement grout with a penetrating sealer that does not contain silicone.',
+    },
+    {
+      question: 'Can I clean marble or stone shower tiles the same way?',
+      answer: 'No. Natural stone is porous and needs a different maintenance program than ceramic tile. Products made for ceramic, such as sealer removers and sulfamic acid grout removers, should never be used on stone, so use a cleaner made for natural stone.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-showertile-1',
+      title: 'Cleaning Grout',
+      publisher: 'Tile Council of North America (TCNA)',
+      url: 'https://tcnatile.com/resource-center/faq/cleaning-grout/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Cement grout is dissolved by acids, so it is better cleaned with an alkaline cleaner than an acid; oil- or wax-based cleaners leave a film in grout; even good cleaners leave a sticky soap film if not properly rinsed; tile can often be cleaned with water, and soapy dirt calls for repeated clear-water rinses.',
+    },
+    {
+      id: 'src-showertile-2',
+      title: 'Tile Care and Maintenance',
+      publisher: 'Marazzi',
+      url: 'https://www.marazziusa.com/style-and-design/resources/care-and-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean glazed tile with an all-purpose, low-VOC cleaner safe for grout and unglazed tile with a neutral-pH tile cleaner; use a multipurpose spray for soap scum, hard water and mildew on shower walls; do not use acids or ammonia on porcelain; use non-abrasive tools; rinse and dry thoroughly; glazed tile does not need sealing.',
+    },
+    {
+      id: 'src-showertile-3',
+      title: 'Ceramic Tile Care Instructions',
+      publisher: 'American Olean',
+      url: 'https://www.americanolean.com/resources/care-and-maintenance/ceramic-tile',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Apply cleaner with a cotton mop, cloth, sponge or non-metallic brush, rinse with clean water and dry; acids damage grout and glazed tile and ammonia discolors grout; natural stone is porous and needs a different maintenance program, and sealer removers, sulfamic acid and grout removers must never be used on stone.',
+    },
+    {
+      id: 'src-showertile-4',
+      title: 'How to Care for and Maintain Ceramic and Porcelain Tile',
+      publisher: 'Daltile',
+      url: 'https://www.daltile.com/how-to/how-to-care-for-and-maintain-tile/how-to-care-for-and-maintain-ceramic-and-porcelain-tile',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For heavier cleaning, use a professional-strength tile and grout cleaner that removes soap scum, grease, body oil and mildew, starting with the least aggressive pad, then rinse with clear water; bleach and alkaline cleaners may need multiple rinses to remove.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean Shower Tiles (Ceramic and Porcelain)',
+    description: 'How to clean shower tiles: a grout-safe tile cleaner, a soft non-metallic brush, a full clean-water rinse and drying. Plus soap scum and natural stone tips.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-shower-tiles',
+    indexable: true,
+    focusKeyword: 'how to clean shower tiles',
+  },
+};
+
+export default article;

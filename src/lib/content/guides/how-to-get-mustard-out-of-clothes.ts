@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-mustard-out-of-clothes',
+  slug: 'how-to-get-mustard-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get mustard out of clothes',
+  subtitle: 'Mustard is colored with turmeric, a yellow dye that sets fast. Scrape, rinse cold from the back, pretreat with detergent, use oxygen bleach or hydrogen peroxide for the yellow that is left, and keep the shirt out of the dryer until it is gone.',
+  excerpt: 'Scrape it off, rinse cold from the back, pretreat, soak in oxygen bleach if yellow remains, and never dry it until the stain is gone.',
+  quickAnswer: 'Act fast, because the turmeric in mustard is a yellow dye that sets quickly. Scrape off the excess with a dull knife or spoon, turn the garment inside out and rinse the stain with cold water, then work in a liquid stain remover or detergent, let it sit about 5 minutes, rinse, and wash at the warmest temperature the care label allows. If yellow remains, dab on 3% hydrogen peroxide or soak in an oxygen bleach solution, then wash again. Check the spot before drying: dryer heat can set the stain for good.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'Folded white button-up shirt with a yellow-brown splash stain on the chest, resting on folded cream and sage green towels on a wooden counter above a front-loading washer, next to a wicker basket, a bottle of milky liquid and a potted plant',
+  safetyWarnings: [
+    'Read the care label first and skip any product or step it rules out. Silk, wool, acetate, rayon, leather and dry-clean-only items should not get the wash-and-soak method; blot gently and take them to a dry cleaner.',
+    'Test every product, including hydrogen peroxide and oxygen bleach, on a hidden spot such as an inside hem before using it on the stain.',
+    'Never mix chlorine bleach with ammonia, vinegar or other cleaners; Clorox warns the combinations release toxic chloramine or chlorine gas. Use one product at a time, rinse between products, and ventilate the room.',
+    'Do not put the garment in the dryer until the stain is completely gone. Heat can set mustard so it may never come out.',
+  ],
+  materialsNeeded: [
+    'Dull knife, spoon or fork for scraping',
+    'Cold running water',
+    'Liquid laundry stain remover or heavy-duty liquid detergent',
+    'Soft-bristled toothbrush (optional)',
+    'White vinegar (a few drops only)',
+    '3% hydrogen peroxide (for leftover yellow, test first)',
+    'Oxygen bleach powder such as OxiClean Versatile Stain Remover, for soaking set-in stains',
+    'Bucket or basin',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Scrape Off the Excess Right Away',
+      instruction: 'Treat the stain as soon as you can; the turmeric in mustard sets quickly. Lift off fresh mustard with a dull knife, spoon or fork, or blot it with a paper towel.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Rinse From the Back With Cold Water',
+      instruction: 'Turn the garment inside out and run cold water through the back of the stain. Tide recommends this as the first rinse for washable clothes.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Pretreat With a Stain Remover or Detergent',
+      instruction: 'Pour a liquid laundry stain remover or liquid detergent directly on the stain and work it in gently with your fingers or a soft-bristled toothbrush. Let it sit about 5 minutes, then rinse. For an older stain, soak the area in cold water first and give the pretreatment about 10 minutes.',
+      proTip: 'University of Georgia Extension suggests working a light-duty liquid detergent and a few drops of vinegar into the stain, then rinsing well.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Lift Leftover Yellow With Hydrogen Peroxide',
+      instruction: 'If a yellow shadow remains, test 3% hydrogen peroxide on a hidden seam, then apply it to the stain and rinse. Use it on its own and rinse well between products, then launder.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Soak Set-In Stains in Oxygen Bleach',
+      instruction: 'For a stain that has already set, dissolve oxygen bleach powder in water following the package label (OxiClean lists line 4 of the scoop per gallon for set-in stains) and soak the garment for 1 to 6 hours. Tougher stains need the longer soak. Do not use oxygen bleach on wool, silk, leather or dry-clean-only items.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wash at the Warmest Temperature the Label Allows',
+      instruction: 'Wash as usual with your regular detergent, using the warmest water the care label permits. Pull the garment out as soon as the cycle ends.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Check Before Drying',
+      instruction: 'Look at the spot in good light while the garment is still wet. If any yellow remains, repeat the pretreatment or soak and wash again. Only put it in the dryer once the stain is completely gone; air drying is the safer choice if you are not sure.',
+    },
+  ],
+  ifMethodFails: [
+    'If the stain is still yellow after one round, repeat the pretreatment and a full 6-hour oxygen bleach soak; set-in turmeric often needs more than one pass.',
+    'For non-washable fabrics such as silk, wool, acetate or rayon, blot the spot with a damp white cloth and take the garment to a dry cleaner, pointing out the stain.',
+    'If the stain has already been through the dryer, it may be permanent. Try the oxygen bleach soak, but expect only partial results.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Why is mustard so hard to get out of clothes?',
+      answer: 'Yellow mustard gets its color from turmeric, a strong yellow dye that bonds to fibers and sets quickly. That is why speed matters: scraping and rinsing within minutes removes far more of the dye than treating it the next day.',
+    },
+    {
+      question: 'Should I use hot or cold water on a mustard stain?',
+      answer: 'Rinse and soak the stain in cold water first. Once it has been pretreated, Tide recommends washing at the hottest temperature the care label allows. The heat to avoid is the dryer, which can set any yellow that is left.',
+    },
+    {
+      question: 'Does hydrogen peroxide remove mustard stains?',
+      answer: 'It can help with the yellow that stays after detergent. University of Georgia Extension suggests applying 3% hydrogen peroxide to a remaining stain, then rinsing and laundering. Test it on a hidden spot first, since it can lighten some dyes.',
+    },
+    {
+      question: 'Can I use chlorine bleach on a mustard stain?',
+      answer: 'The sources used here recommend detergent, hydrogen peroxide and oxygen or color-safe bleach rather than chlorine bleach. If you do use chlorine bleach on white cotton, follow its label and never combine it with vinegar, ammonia or other cleaners.',
+    },
+    {
+      question: 'How do you get old, set-in mustard out of a shirt?',
+      answer: 'Pretreat with a liquid stain remover, then soak the garment in an oxygen bleach solution for up to 6 hours before washing. Check the spot before drying and repeat if needed; dried and heat-set stains may only partly fade.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-mustard-1',
+      title: 'How to Remove Mustard Stains',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/mustard-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Mustard\'s high turmeric content colors fibers; scrape the excess, turn the garment inside out and rinse with cold water, pretreat with a liquid stain remover for 5 minutes (10 minutes after a cold soak for set-in stains), wash at the hottest temperature the care label allows, and do not dry until the stain is gone because drying sets it; send silk, wool, acetate and rayon to a dry cleaner if blotting fails.',
+    },
+    {
+      id: 'src-mustard-2',
+      title: 'Remove Stains From Mustard',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-mustard/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For apparel, scrape off excess, apply a pre-wash stain remover and rinse, work in light-duty liquid detergent and a few drops of vinegar and rinse, then apply 3% hydrogen peroxide if the stain remains before laundering; mustard contains turmeric, a yellow dye that sets quickly, so treat immediately, read the care label and pretest products.',
+    },
+    {
+      id: 'src-mustard-3',
+      title: 'How to Remove Set-in Stains & Old Stains from Clothes',
+      publisher: 'OxiClean',
+      url: 'https://www.oxiclean.com/en/stain-solutions/how-to-remove-tough-set-in-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For set-in stains, dissolve OxiClean Versatile Stain Remover at line 4 per gallon of water and soak 1 to 6 hours (6 hours for best results), then wash as normal; test first, and do not use it on wool, silk, leather or dry-clean-only fabrics; heat can set stains, so inspect items before drying.',
+    },
+    {
+      id: 'src-mustard-4',
+      title: 'How to Clean with Bleach Safely in Your Home: The Do\'s and Don\'ts',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/dos-and-donts-for-cleaning-and-disinfecting-with-bleach/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Never mix bleach with other cleaners, especially ammonia (forms chloramine gas) or vinegar and acids (forms chlorine gas); always use bleach on its own in a well-ventilated space.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Mustard Out of Clothes (Even Set-In)',
+    description: 'How to get mustard out of clothes: scrape, rinse cold, pretreat, then lift the turmeric yellow with peroxide or an oxygen bleach soak before drying.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-mustard-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get mustard out of clothes',
+  },
+};
+
+export default article;

@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-gas-stovetop',
+  slug: 'how-to-clean-a-gas-stovetop',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a gas stovetop',
+  subtitle: 'Controls off and cool, grates and burner parts off, hot soapy water, a pin for clogged ports and a full dry before anything goes back. Why a wet burner keeps clicking, and the tools that block gas ports.',
+  excerpt: 'Turn it off, let it cool, wash the caps and heads, clear ports with a pin, dry everything before reassembly.',
+  quickAnswer: 'Turn every burner off and let the cooktop cool, then lift off the grates, burner caps and burner heads, noting where each one goes. Wash the caps and heads in hot soapy water with a nonabrasive plastic pad, clear any clogged ports with a straight pin or sewing needle, and wipe the cooktop surface with a soft damp cloth and mild soapy water. Let every part dry completely before you put it back, because moisture left in the ports makes the burner click without lighting. Skip steel wool, abrasive cleaners, oven cleaner, bleach and the dishwasher for burner caps, and check your owner\'s manual for model-specific rules.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand wiping a crumb-covered stainless steel gas stovetop with a yellow and green sponge, beside black cast-iron burner grates and dark burner caps',
+  safetyWarnings: [
+    'Make sure every control is off and the cooktop, grates and caps are cool before you start. GE also advises disconnecting power to the range or cooktop before cleaning the burners.',
+    'Do not use oven cleaner, bleach, rust remover, steel wool or abrasive cleaners on the cooktop or burners; Whirlpool and Samsung warn they can damage the finish and parts.',
+    'Never spray cleaner into the manifold holes or let water run into the burner base and the brass gas orifice. Samsung notes the ignition system sits there.',
+    'Do not put a wet burner cap or head back on the cooktop. Moisture left in the ignition and flame ports keeps the burner clicking and stops it lighting until it dries.',
+    'Ventilate the kitchen if you use a degreaser or cooktop cleaner, and never mix cleaning products.',
+  ],
+  materialsNeeded: [
+    'Warm water and mild dish soap',
+    'Soft cloths or sponges',
+    'Nonabrasive plastic scrubbing pad',
+    'Mildly abrasive cooktop cleaner (optional, for burned-on residue)',
+    'Straight pin, sewing needle or small-gauge wire for clogged ports',
+    'Soft brush for the burner heads',
+    'Dry towel',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Turn Everything Off and Let It Cool',
+      instruction: 'Turn all burner knobs to off and wait until the cooktop, grates and burner caps are cool to the touch. If your model plugs in, disconnect power before taking the burners apart, as GE advises. Check your owner\'s manual for any model-specific cleaning rules.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Remove the Grates, Caps and Burner Heads',
+      instruction: 'Lift off the grates, then the burner caps and the burner heads or bases underneath. Note the size and position of each piece as you go: caps and heads come in different sizes and are not interchangeable, so each one has to go back on its own burner.',
+      proTip: 'Lay the parts out on a towel in the same pattern as the cooktop so reassembly is quick.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wash the Caps and Heads by Hand',
+      instruction: 'Wash the caps and heads in hot soapy water and rinse them in clean running water. For burned-on food, use a nonabrasive plastic scrubbing pad, with a mildly abrasive cleaner if needed, or a soft brush on the heads. Do not put burner caps in the dishwasher or in the oven during a self-clean cycle.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Clear Clogged Burner Ports',
+      instruction: 'Hold each head up to the light and check every flame port. Clear any blocked opening with a straight pin, sewing needle or small-gauge wire. Whirlpool warns against wooden toothpicks, which can break off inside and block gas flow, and against enlarging or distorting the port.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Wipe the Cooktop Surface',
+      instruction: 'Wipe the cooktop with a soft cloth and warm soapy water, or the cleaner your manual names for your finish. Around each burner base, wipe gently with a damp cloth, taking care not to scratch or bend it, and keep water and cleaner out of the openings. Gently clean the igniter with a damp cloth only. Finish with a clean damp cloth to remove soap, then dry.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Dry Every Part Completely',
+      instruction: 'Shake excess water out of the caps and heads and let them dry thoroughly. GE says you can air-dry them or place them in a warm oven for about 30 minutes. Dry the cooktop surface too. The ports must be fully dry before reassembly or the burner will click and not light.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Reassemble and Test Each Burner',
+      instruction: 'Put each head back in its original position, then set the matching cap on top so it sits flat and flush with very little side-to-side movement, lining up any alignment pins. Replace the grates, restore power and light each burner. If one does not light, check the cap alignment and that the correct cap is on the correct base.',
+    },
+  ],
+  ifMethodFails: [
+    'If a burner keeps clicking without lighting right after cleaning, moisture is likely still in the ports. Turn it off, remove the cap and head again and let them dry fully, then recheck that every port is clear.',
+    'If the flame is uneven or missing on one side, a port is probably still blocked. Clear it again with a straight pin or needle, without widening the opening.',
+    'If the igniter does not click at all when you turn on a burner, or the burner still will not light once dry and correctly seated, contact the manufacturer for service rather than taking the burner apart further.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Why does my gas stove keep clicking after cleaning?',
+      answer: 'Water is usually still sitting in the ignition port or flame ports. GE explains that the burner will keep clicking and will not ignite until the ports are clear and the burner dries out. Remove the cap and head, let them dry thoroughly, check the cap is seated flat, and try again.',
+    },
+    {
+      question: 'Can I put gas burner caps in the dishwasher?',
+      answer: 'Whirlpool says not to wash burner caps in the dishwasher, and Samsung advises against putting any cooktop component in the dishwasher. Wash caps and heads by hand in hot soapy water instead. Grates are a separate question that depends on your model and its manual.',
+    },
+    {
+      question: 'Can I use a toothpick to clean gas burner holes?',
+      answer: 'Makers disagree. Whirlpool warns that a wooden toothpick can break off in the port and block gas flow, and recommends a straight pin, needle or small-gauge wire instead, while a Frigidaire guide lists a toothpick for the ignition port. A metal pin or needle avoids the risk; follow your own manual, and never enlarge the hole.',
+    },
+    {
+      question: 'What should you not use on a gas stovetop?',
+      answer: 'Avoid steel wool, abrasive cleansers, oven cleaner, bleach, rust remover and caustic lye cleaners, which manufacturers warn can damage the finish. Do not spray cleaner into the manifold holes or let water get into the burner base and gas orifice.',
+    },
+    {
+      question: 'How often should I clean my gas stove burners?',
+      answer: 'Clean spills as soon as the cooktop, grates and caps are cool, since acidic spills such as vinegar and tomato can affect the finish. Give the burner heads a full wash whenever a spillover lands on them, because cleaning debris and spills that clog the ports are the most common cause of ignition problems.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-gasstove-1',
+      title: 'Gas Range & Cooktop - Common Causes for Slow Ignition, No Ignition or Clicking on Surface Burners',
+      publisher: 'GE Appliances',
+      url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=17827',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clogged ports from cleaning or spillovers are the most common ignition problem; moisture left in the ignition and flame ports makes the burner click continuously and not ignite until the ports are clear and dry. Disconnect power before cleaning, shake out excess water and air-dry the heads and caps or place them in a warm oven for about 30 minutes, then reinstall them in their correct positions.',
+    },
+    {
+      id: 'src-gasstove-2',
+      title: 'Cleaning Burners and Burner Ports - Gas Cooktop',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Cooking/Cooktops/Gas_Cooktop/Cleaning_and_Maintenance/Removable_Components/Cleaning_Burners_and_Burner_Ports_-_Gas_Cooktop',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean with controls off and the cooktop cool; avoid oven cleaners, bleach and rust removers; scrub caps and bases with a nonabrasive plastic pad and mildly abrasive cleaner; clean the igniter gently with a damp cloth; clear clogged ports with a straight pin, needle or small-gauge wire, not a wooden toothpick, without enlarging the port; do not wash caps in the dishwasher or self-clean oven; reseat caps flush on the matching base.',
+    },
+    {
+      id: 'src-gasstove-3',
+      title: 'How to clean your Samsung gas cooktop',
+      publisher: 'Samsung US Support',
+      url: 'https://www.samsung.com/us/support/answer/ANS10006924/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Note each burner cap and head size and location because they are not interchangeable; wash them in hot soapy water, rinse, use a plastic scouring pad for burned-on food and clear the head holes with a sewing needle or twist tie; do not spray cleaner into the manifold holes or let water into the burner base and brass orifices; avoid steel wool, abrasive cleaners, caustic lye and chlorine; do not clean components in the dishwasher; dry all pieces before reassembly.',
+    },
+    {
+      id: 'src-gasstove-4',
+      title: 'Gas Cooktop Ignition Port Cleaning Guide',
+      publisher: 'Frigidaire Support',
+      url: 'https://support.frigidaire.ca/support-articles/article/gas-cooktop-ignition-port-cleaning-guide',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean the burner head with a soft-bristle brush, clear the ignition port with a toothpick, paperclip or ignition port cleaning brush, avoid abrasive cleansers, oven cleaners and steel wool around the burner head, and make sure the caps are properly seated before using the cooktop again.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Gas Stovetop: Burners, Ports and Caps',
+    description: 'How to clean a gas stovetop: wash burner caps and heads, clear clogged ports with a pin, dry fully so it lights, and the cleaners and tools makers say to avoid.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-gas-stovetop',
+    indexable: true,
+    focusKeyword: 'how to clean a gas stovetop',
+  },
+};
+
+export default article;

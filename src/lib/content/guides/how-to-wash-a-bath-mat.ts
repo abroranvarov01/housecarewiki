@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-wash-a-bath-mat',
+  slug: 'how-to-wash-a-bath-mat',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to wash a bath mat',
+  subtitle: 'Shake it out, wash it cold on a gentle cycle, and keep heat away from rubber backing and suction-cup tub mats. How the care label changes the method for memory foam, rubber-backed and in-tub mats.',
+  excerpt: 'Shake it outside, wash cold and gentle with mild detergent, and air dry anything with rubber or suction cups.',
+  quickAnswer: 'Read the care label first, then shake the mat outside to knock off hair and lint. Machine wash it on a gentle cycle in cold water with a mild detergent, and air dry rubber-backed mats and suction-cup tub mats, because dryer heat can warp and damage rubber. Memory foam rugs with a fabric top often allow a low tumble dry but no bleach or fabric softener, so follow that label. Tide suggests washing regular bath mats every one to two weeks and rubber-backed mats about every four weeks.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tools',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'Folded cream and sage green towels on a wooden counter above a front-loading washer, with a white shirt on top, a bottle of detergent and woven baskets in a sunlit laundry room',
+  safetyWarnings: [
+    'Never put a rubber or suction-cup shower mat in the dryer; the heat can warp and damage the rubber.',
+    'Check the care label before using bleach. Some bath rugs, including Gorilla Grip memory foam rugs, are labeled do not bleach and no fabric softener.',
+    'If the label allows a bleach soak for a rubber tub mat, wear rubber gloves, open a window, and never mix bleach with vinegar, ammonia or other cleaners.',
+    'Suction-cup tub mats only grip clean, smooth surfaces. Rinse off soap film, press the cups down before every use, and do not use bath oils on the mat, which the maker warns can cause slipping.',
+  ],
+  materialsNeeded: [
+    'Mild laundry detergent',
+    'Washing machine with a gentle or delicate cycle',
+    'Drying rack, shower rod or the edge of the tub for air drying',
+    'Stiff brush (for rubber and suction-cup tub mats)',
+    'Rubber gloves (only if you use bleach on a bleach-safe mat)',
+    'Chlorine bleach (optional, only if the care label allows it)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Read the Care Label',
+      instruction: 'Find the sewn-in tag or the care section on the product page. It tells you whether the mat is machine washable, which water temperature to use, whether bleach and fabric softener are allowed, and whether it can go in the dryer. Rubber-backed rugs, memory foam rugs and plastic or rubber in-tub mats all have different limits.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Shake Out Hair and Lint Outside',
+      instruction: 'Take the mat outdoors and give it a few firm shakes to remove loose hair, lint and grit before it goes in the washer. This keeps clumps of hair out of the machine and lets the detergent reach the fibers.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wash Cold on a Gentle Cycle',
+      instruction: 'Put the mat in the washer with a mild detergent and run a gentle cycle with cold water. Cold water is what Tide recommends for bath mats and what Gorilla Grip lists for its tub mats and memory foam rugs. Skip fabric softener unless the label allows it.',
+      proTip: 'Wash new bath rugs once before first use; Gorilla Grip recommends it to remove packaging creases.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wash Suction-Cup Tub Mats the Same Way',
+      instruction: 'Plastic and rubber mats that sit in the tub or shower can usually be machine washed too if the label says so. Gorilla Grip lists cold water with mild detergent for its bathtub mat. Washing them with towels gives extra scrubbing action on the suction cups and drain holes.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Air Dry Anything with Rubber',
+      instruction: 'Hang rubber-backed mats and in-tub mats over a shower rod, drying rack or the side of the tub until fully dry. Do not put rubber mats in the dryer, which can warp and damage the rubber. Memory foam rugs with a fabric top may allow tumble drying on low; only do this if the label says so.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Treat Mildew on a Rubber Tub Mat',
+      instruction: 'For mildew spots or a musty smell on a bleach-safe rubber mat, lift it so the suction cups release, lay it in a tub of warm water, and add bleach following the bleach label. Wearing rubber gloves and with a window open, scrub both sides with a stiff brush, soak for up to a few hours for heavy mildew, then drain, rinse the mat and tub thoroughly and hang it to dry.',
+      proTip: 'If your mat\'s label says do not bleach, skip this step and machine wash it instead.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Keep It on a Washing Schedule',
+      instruction: 'Tide suggests washing fabric bath mats every one to two weeks and mats with a non-skid rubber backing about every four weeks. Between washes, hang in-tub mats over the side of the tub after showers so water drains out from under the suction cups.',
+    },
+  ],
+  ifMethodFails: [
+    'If a rubber mat still smells musty after washing, repeat the scrub and soak on a bleach-safe mat, then make sure it dries completely before it goes back down.',
+    'If rubber backing is cracking, flaking or peeling, or suction cups no longer hold, the mat has worn out and should be replaced; washing will not restore it.',
+    'If a fabric mat stays stiff or dingy, wash it again cold with the right amount of detergent and no fabric softener, and let it dry fully before using it.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you put a bath mat in the washing machine?',
+      answer: 'Most fabric bath mats and many rubber or plastic tub mats are machine washable, but check the care label. Use a gentle cycle with cold water and a mild detergent, and air dry anything with rubber.',
+    },
+    {
+      question: 'Can you put a rubber-backed bath mat in the dryer?',
+      answer: 'No. Heat can warp and damage rubber, so hang rubber-backed and suction-cup mats to air dry. Some memory foam rugs with silicone grip dots allow a low tumble dry, but only follow that if the label says so.',
+    },
+    {
+      question: 'How often should you wash your bath mat?',
+      answer: 'Tide recommends washing bath mats every one to two weeks and those with a non-skid rubber backing about every four weeks. Wash sooner if the mat smells musty or stays damp.',
+    },
+    {
+      question: 'Can I use bleach on a bath mat?',
+      answer: 'Only if the care label allows it. Some bath rugs are labeled do not bleach. For a bleach-safe rubber tub mat, dilute bleach in a tub of warm water per the bleach label, wear gloves, ventilate, and never mix it with vinegar or ammonia.',
+    },
+    {
+      question: 'What water temperature should I wash a bath mat in?',
+      answer: 'Cold is the safe default. Tide recommends a gentle cycle with cold water, and Gorilla Grip lists cold water for both its tub mats and memory foam rugs. Some general guides suggest a hot cycle for rubber mats, but follow your mat\'s own label.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-bathmat-1',
+      title: '12 Everyday Items You Should Wash Regularly',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/washing-different-fabrics-and-colors/everyday-items-to-wash-regularly',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Shake bath mats outside to remove hair and lint, then wash with detergent on a gentle cycle in cold water; wash regular mats every one to two weeks and mats with non-skid rubber backing every four weeks.',
+    },
+    {
+      id: 'src-bathmat-2',
+      title: 'Bathtub Mat',
+      publisher: 'Gorilla Grip',
+      url: 'https://gorillagrip.com/products/bath-mat',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'The bathtub mat is machine washable in cold water with mild detergent and should be air dried, for example over the side of the tub; it only attaches to clean, smooth surfaces, suction cups should be secured before each use, and bath oils may cause slipping.',
+    },
+    {
+      id: 'src-bathmat-3',
+      title: 'Memory Foam Bath Mat',
+      publisher: 'Gorilla Grip',
+      url: 'https://gorillagrip.com/products/memory-foam-bath-rug',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Care instructions: machine wash cold, do not bleach, tumble dry low, do not dry clean, no fabric softener; wash the rug before first use to remove packaging creases.',
+    },
+    {
+      id: 'src-bathmat-4',
+      title: 'How to clean shower mats',
+      publisher: 'Cleanipedia (Unilever)',
+      url: 'https://www.cleanipedia.com/gb/bathroom-cleaning/how-to-clean-your-shower-mats',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Lift a rubber shower mat so the suction cups release, soak it in a tub of warm water with bleach while wearing rubber gloves and with a window open, scrub both sides with a stiff brush, leave it a few hours for mildew, rinse, hang to dry, and never put a rubber shower mat in the dryer because the rubber can warp.',
+    },
+  ],
+  seo: {
+    title: 'How to Wash a Bath Mat (Rubber, Foam, Tub Mats)',
+    description: 'How to wash a bath mat: shake it out, wash cold on gentle with mild detergent, air dry rubber-backed and suction mats, and when bleach is safe to use.',
+    canonical: 'https://housecarewiki.com/guides/how-to-wash-a-bath-mat',
+    indexable: true,
+    focusKeyword: 'how to wash a bath mat',
+  },
+};
+
+export default article;

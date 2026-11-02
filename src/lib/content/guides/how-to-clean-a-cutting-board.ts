@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-cutting-board',
+  slug: 'how-to-clean-a-cutting-board',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a cutting board',
+  subtitle: 'Hot soapy water after every use, a weak bleach sanitizer after raw meat, and different rules for wood and plastic. Why wood boards stay out of the dishwasher and the sink, and how to oil them.',
+  excerpt: 'Wash in hot soapy water, rinse, sanitize after raw meat, dry upright, and oil wood boards when they look dry.',
+  quickAnswer: 'Scrape off food, wash both sides of the board in hot, soapy water, rinse with clear water, and let it air-dry or pat it dry. After raw meat, poultry or seafood, sanitize it with 1 tablespoon of unscented liquid chlorine bleach per gallon of water, let the solution stand on the surface for several minutes, then rinse and dry. Plastic boards can go in the dishwasher, but wood boards should be hand-washed, never soaked, and dried standing on edge. Oil wood boards with food-grade mineral oil or a board oil at least once a month, never with cooking oil.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'countertops',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-kitchen.webp',
+  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, with a wooden cutting board standing against the backsplash beside lemons, wooden spoons and a coffee mug',
+  safetyWarnings: [
+    'Use a separate board for raw meat, poultry and seafood, and another for produce, bread and ready-to-eat foods, so bacteria from raw meat cannot spread to food that will not be cooked.',
+    'Use only unscented, regular liquid chlorine bleach for sanitizing, diluted as directed. Never mix bleach with ammonia, vinegar or other cleaners, and ventilate the kitchen while you work.',
+    'Do not put wood cutting boards in the dishwasher or soak them in water. John Boos says this disrupts the wood\'s moisture content and can split the board.',
+    'Never oil a wood board with vegetable, olive or other cooking oils. John Boos warns cooking oil will damage the board; use food-grade mineral oil or a dedicated board oil instead.',
+    'Replace any board with deep grooves, cracks, chips or crevices, because bacteria can hide in them where cleaning cannot reach.',
+  ],
+  materialsNeeded: [
+    'Hot water and liquid dish soap',
+    'A brush or sponge reserved for dishes',
+    'Unscented, regular liquid chlorine bleach (for sanitizing)',
+    'A gallon jug or measuring cup and a tablespoon',
+    'Clean dish towels or paper towels',
+    'For wood boards: food-grade mineral oil or a board oil and board cream',
+    'Optional for odors on wood: coarse salt and a lemon',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Scrape Off Food Right After Use',
+      instruction: 'Scrape crumbs, scraps and juices into the trash as soon as you finish cutting. Do not leave meat juices or other liquids sitting on a wood board.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Wash Both Sides in Hot Soapy Water',
+      instruction: 'Scrub the whole board, both sides and the edges, with hot water and dish soap after every use. Rinse with clear water. Wash a wood board by hand at the sink without letting it sit in a basin of water. Plastic, acrylic and glass boards can go in the dishwasher instead.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Sanitize After Raw Meat, Poultry or Seafood',
+      instruction: 'Mix 1 tablespoon of unscented liquid chlorine bleach into 1 gallon of water. Flood the clean surface with the solution and let it stand for several minutes. Plastic boards can be submerged in it; for wood boards, pour or wipe the solution on rather than soaking the board. John Boos gives a similar strength for its wood boards, 1 teaspoon of bleach per quart of water, or a 1-to-5 vinegar-to-water dilution.',
+      proTip: 'Wash first, then sanitize. Sanitizer works on a surface that is already clean, not on one still coated with food.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Rinse and Dry Standing Up',
+      instruction: 'Rinse the sanitizer off with clear water. Pat the board dry with a clean towel or paper towel, then stand it on its edge to air-dry so water cannot pool underneath and warp it.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Deodorize a Wood Board with Salt and Lemon',
+      instruction: 'If a wood board smells of garlic, onion or fish, sprinkle it with coarse salt and scrub it with the cut side of half a lemon. Let it sit 5 to 15 minutes, rinse with warm water, dry thoroughly, and re-oil the board afterward.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Oil Wood Boards When They Look Dry',
+      instruction: 'Once the board is completely dry, apply an even coat of food-grade mineral oil or a board oil such as John Boos Mystery Oil, let it soak in, and wipe off the excess. John Boos recommends oiling at least once a month, and sooner whenever the wood looks dry or lighter in color. A beeswax board cream on top adds a moisture barrier.',
+      proTip: 'John Boos suggests letting the oil soak in overnight, then applying board cream the next day.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Inspect and Replace Worn Boards',
+      instruction: 'Check plastic and wood boards for deep knife grooves, cracks and chips. Replace a board once it has many deep cuts, because bacteria can collect in grooves that washing cannot reach.',
+    },
+  ],
+  ifMethodFails: [
+    'If a plastic board stays stained or still smells after washing and sanitizing, and it is covered in deep knife grooves, replace it; extension food-safety guidance says heavily scored boards should be discarded.',
+    'If a wood board still smells after washing, repeat the salt-and-lemon scrub, rinse, dry it standing on end, and re-oil it.',
+    'If a wood board has warped or split along the glue lines, it has likely been soaked, put through the dishwasher or left dry too long. Contact the maker about repair, and if it has cracks that trap food, replace it.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How do you sanitize a cutting board after raw chicken?',
+      answer: 'Wash the board in hot, soapy water and rinse it first. Then flood the surface with a solution of 1 tablespoon of unscented liquid chlorine bleach per gallon of water, let it stand for several minutes, rinse with clear water and let it dry. Use a separate board for raw meat and for ready-to-eat foods.',
+    },
+    {
+      question: 'Can you put a wooden cutting board in the dishwasher?',
+      answer: 'John Boos says its wood cutting boards are not dishwasher safe and should never be soaked, because the water can make the board split. Some extension guidance says solid wood boards can go in a dishwasher, but follow your board maker\'s instructions; when in doubt, hand-wash wood. Plastic, acrylic and glass boards are fine in the dishwasher.',
+    },
+    {
+      question: 'Is a wood or plastic cutting board more sanitary?',
+      answer: 'Food-safety guidance says you can choose either wood or a nonporous material such as plastic. What matters is washing it after every use, sanitizing it after raw meat, using separate boards for raw meat and ready-to-eat food, and replacing boards that have deep grooves or cracks.',
+    },
+    {
+      question: 'What oil should I use on a wooden cutting board?',
+      answer: 'Use food-grade mineral oil or a board oil made for the purpose, such as John Boos Mystery Oil, optionally followed by a beeswax board cream. John Boos warns never to use cooking oils, which it says will damage the board. Oil it at least monthly or whenever it looks dry.',
+    },
+    {
+      question: 'Can I clean a cutting board with vinegar?',
+      answer: 'John Boos lists a one-to-five dilution of vinegar as an option for sanitizing its wood boards, alongside a weak bleach solution. Extension food-safety guidance for boards used with raw meat calls for unscented liquid chlorine bleach. Never mix vinegar and bleach.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-cuttingboard-1',
+      title: 'How Safe is Your Cutting Board?',
+      publisher: 'University of Wisconsin-Madison Division of Extension, Winnebago County',
+      url: 'https://winnebago.extension.wisc.edu/2020/06/08/how-safe-is-your-cutting-board',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Either wood or nonporous boards such as plastic are acceptable; wash with hot, soapy water after each use, rinse, and air-dry or pat dry; sanitize with 1 tablespoon of unscented liquid chlorine bleach per gallon of water, let it stand for several minutes and rinse; nonporous and solid wood boards can go in a dishwasher but laminated boards may crack; use one board for raw meat, poultry and seafood and another for ready-to-eat foods; replace boards with cracks, chips or grooves.',
+    },
+    {
+      id: 'src-cuttingboard-2',
+      title: 'Cutting Boards',
+      publisher: 'University of Illinois Extension',
+      url: 'https://extension.illinois.edu/meat-safety/cutting-boards',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Have dedicated cutting boards for raw meat, wash boards with soap and hot water, sanitize boards used for raw meat in a dilute unscented bleach solution for several minutes and let them air-dry, and replace boards when they have many cuts.',
+    },
+    {
+      id: 'src-cuttingboard-3',
+      title: 'Frequently Asked Questions',
+      publisher: 'John Boos & Co.',
+      url: 'https://www.johnboos.com/frequently-asked-questions',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wood cutting boards are not dishwasher safe and should not be soaked or submerged, which can split the board; wash with hot soapy water after each use; sanitize with 1 teaspoon of liquid chlorine bleach per quart of water or a one-to-five vinegar dilution; never use cooking oil; oil with Mystery Oil or food-grade mineral oil at least once a month or when the board looks dry; air-dry standing on end.',
+    },
+    {
+      id: 'src-cuttingboard-4',
+      title: 'Complete Guide To Caring For Your Wood Cutting Board',
+      publisher: 'John Boos & Co.',
+      url: 'https://www.johnboos.com/blog/complete-guide-to-caring-for-your-wood-cutting-board',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Dry the board with a towel and let it air-dry standing up so water does not pool; oil with Mystery Oil left to soak in overnight followed by Board Cream; for odors and stains, rub coarse salt in with a cut lemon, let it sit 5 to 15 minutes, rinse, dry and re-oil.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Cutting Board (Wood and Plastic)',
+    description: 'How to clean a cutting board: hot soapy water, a weak bleach sanitizer after raw meat, why wood stays out of the dishwasher, and how to oil a wooden board.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-cutting-board',
+    indexable: true,
+    focusKeyword: 'how to clean a cutting board',
+  },
+};
+
+export default article;

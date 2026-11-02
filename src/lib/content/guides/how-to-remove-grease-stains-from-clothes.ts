@@ -1,0 +1,143 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-grease-stains-from-clothes',
+  slug: 'how-to-remove-grease-stains-from-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove grease stains from clothes',
+  subtitle: 'Absorb the excess, work detergent in from the back, then wash in the hottest water the label allows. What changes for set-in stains, synthetics and silk or wool.',
+  excerpt: 'Absorb, pretreat from the back, hottest safe wash, air-dry until it is gone. Six steps.',
+  quickAnswer: 'Blot or scrape off excess grease, then cover the spot with talcum powder or cornstarch for 15 to 30 minutes to absorb the oil and brush it off. Lay the stain face down on paper towels and work liquid dish soap or heavy-duty liquid laundry detergent into the back of the fabric, letting it sit at least 5 to 10 minutes. Wash in the hottest water the care label allows. Check the spot before drying and air-dry if any mark remains, because dryer heat sets grease stains.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and green towels on a wooden counter above a front-loading washer, beside a wicker basket and a bottle of liquid detergent',
+  safetyWarnings: [
+    'Never put a grease-stained item in the dryer until the stain is completely gone. Dryer heat bakes the oil into the fibers and the stain becomes very hard to remove.',
+    'Solvent spot removers (petroleum distillates, naphtha) are toxic and often flammable. Use them in a well-ventilated room away from pilot lights, open flames or sparks, wear gloves, and let the garment air out before washing. Never put a solvent-soaked item in the dryer.',
+    'Never mix chlorine bleach with ammonia, vinegar or other cleaners; the combinations release toxic gas.',
+    'Check the care label first. Dry-clean-only items should go to a dry cleaner; tell them it is an oil or grease stain.',
+  ],
+  materialsNeeded: [
+    'Paper towels or a clean white cloth',
+    'Talcum powder, cornstarch or baking soda',
+    'Blunt knife or spoon for scraping',
+    'Clear liquid dish soap or heavy-duty liquid laundry detergent (1 to 2 tsp)',
+    'Soft brush or old toothbrush',
+    'Pre-wash spot and stain remover (for set-in stains)',
+    'Oxygen bleach (sodium percarbonate or perborate) for whites and colorfast fabrics, optional',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Scrape and Blot Off the Excess',
+      instruction: 'Lift any solid grease off with the edge of a spoon or blunt knife, then press a paper towel on the spot to soak up surface oil. Do not rub, which spreads the oil into a wider ring.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Absorb the Oil With Powder',
+      instruction: 'Cover the stain with a generous layer of talcum powder, cornstarch or baking soda and leave it 15 to 30 minutes. Brush the powder away and repeat while it keeps darkening with oil.',
+      proTip: 'This step matters most on silk, wool and dry-clean-only fabrics, where you may not be able to use water or detergent at home.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Check the Care Label',
+      instruction: 'Read the label for washing method, maximum water temperature and bleach instructions. If it says dry clean only, stop here and take it to a cleaner. Cotton and linen usually tolerate warm or hot water; polyester, nylon and other synthetics often call for warm or cool water; silk and wool need cool water and a gentle detergent.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Pretreat From the Back of the Stain',
+      instruction: 'Lay the stain face down on a few clean paper towels. Apply 1 to 2 teaspoons of liquid dish soap or heavy-duty liquid laundry detergent to the back of the fabric and work it in gently with your fingers or a soft brush, so the oil is pushed out onto the towel rather than deeper into the fibers. Let it sit 5 to 10 minutes, or up to 30 minutes for a heavy stain.',
+      proTip: 'Do not rinse the detergent off before washing. Put the garment straight into the machine so the pretreatment keeps working.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Wash in the Hottest Water the Label Allows',
+      instruction: 'Launder with the normal amount of detergent at the hottest temperature the care label permits. Hot water helps melt and release oil on cotton; synthetics should stay at the label temperature. For whites and colorfast fabrics you can add oxygen bleach to the wash if the label allows bleach.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Inspect Before Drying',
+      instruction: 'Check the spot while the garment is still wet, and again after it air-dries, since damp oil stains can be hard to see. If any darkened area remains, repeat steps 4 and 5 before it goes anywhere near the dryer.',
+    },
+  ],
+  ifMethodFails: [
+    'For an old or set-in grease stain (especially on polyester, which holds oil), apply a commercial pre-wash spot and stain remover, let it sit as the label directs, then rewash in the hottest water safe for the fabric. Two or three rounds are often needed.',
+    'For automotive grease or heavy oil, a solvent-based spot remover can dissolve what detergent cannot. Test on a seam first, use it outdoors or with good ventilation, let the garment air out fully, then launder.',
+    'If a light shadow remains on white cotton, soak it for a few hours in warm or hot water with oxygen bleach (follow the package dose), then wash again.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does dish soap get grease out of clothes?',
+      answer: 'Yes. Grease-cutting liquid dish soap is designed to break up oil, and it works well as a pretreatment on most washable fabrics. Work a teaspoon or two into the back of the stain, wait 5 to 10 minutes, then wash in the hottest water the care label allows.',
+    },
+    {
+      question: 'Can you get a grease stain out after it has been through the dryer?',
+      answer: 'Often you can lighten it, but it is harder. Pretreat with a pre-wash stain remover or heavy-duty liquid detergent, let it sit up to 30 minutes, and rewash in the hottest water safe for the fabric. Repeat a few times and air-dry between attempts.',
+    },
+    {
+      question: 'Should I use hot or cold water on grease stains?',
+      answer: 'Grease is an oil-based stain, so the wash should be as hot as the care label allows. A quick cold rinse right after the spill is fine, but the main wash should be warm or hot. Blood, sweat and other protein stains are the opposite and need cold water.',
+    },
+    {
+      question: 'How do you get grease out of polyester or other synthetics?',
+      answer: 'Synthetic fibers attract and hold oil, so absorb as much as possible with powder first, then pretreat generously with heavy-duty liquid detergent and let it sit longer, around 30 minutes. Wash at the warmest temperature the label allows and repeat before drying if needed.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-grease-clothes-1',
+      title: 'Remove Stains From Grease (Automotive, Cooling, Vaseline)',
+      publisher: 'University of Georgia Cooperative Extension (Textiles)',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-grease-automotive-cooling-vaseline/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Use talcum powder to absorb as much grease as possible, treat with a pre-wash spot and stain remover, and launder in the hottest water safe for the fabric, with adequate ventilation when using commercial cleaners.',
+    },
+    {
+      id: 'src-grease-clothes-2',
+      title: 'How to Remove Pesky Stains',
+      publisher: 'Mississippi State University Extension Service',
+      url: 'https://extension.msstate.edu/blogs/extension-for-real-life/how-remove-pesky-stains',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Grease stains should be washed in the hottest water safe for the fabric, heavy stains treated face down on paper towels with detergent applied to the back, and garments never dried until the stain is gone.',
+    },
+    {
+      id: 'src-grease-clothes-3',
+      title: 'How To Remove Grease Stains',
+      publisher: 'Tide (Procter & Gamble)',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/grease-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rub dish soap into fresh grease, pretreat with liquid detergent for a few minutes without rinsing it off, wash at the hottest temperature on the care label, and repeat before drying because the dryer can set the stain.',
+    },
+    {
+      id: 'src-grease-clothes-4',
+      title: 'Clothes Captioning: Complying with the Care Labeling Rule',
+      publisher: 'Federal Trade Commission',
+      url: 'https://www.ftc.gov/business-guidance/resources/clothes-captioning-complying-care-labeling-rule',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Care labels must give a water temperature when regular hot water would harm the item, state when only non-chlorine bleach or no bleach may be used, and "dry clean only" means the garment cannot be safely washed.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Grease Stains from Clothes (Even Set-In)',
+    description: 'Remove grease stains from clothes: absorb the oil, pretreat from the back with dish soap or detergent, then wash hot. Covers set-in stains, synthetics and silk.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-grease-stains-from-clothes',
+    indexable: true,
+    focusKeyword: 'how to remove grease stains from clothes',
+  },
+};
+
+export default article;

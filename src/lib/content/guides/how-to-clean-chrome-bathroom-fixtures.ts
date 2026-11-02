@@ -1,0 +1,150 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-chrome-bathroom-fixtures',
+  slug: 'how-to-clean-chrome-bathroom-fixtures',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean chrome bathroom fixtures',
+  subtitle: 'Mild soap, a soft damp cloth, a thorough rinse and a blot dry. What faucet makers say never to use on chrome, and why brushed nickel and matte black need gentler rules.',
+  excerpt: 'Wash with mild soap on a soft cloth, rinse with warm water, blot dry, and skip abrasives, bleach and harsh acids.',
+  quickAnswer: 'Wipe chrome faucets, handles and shower trim with a soft cloth dampened in warm water and a little mild liquid dish soap, rinse with clean warm water, then blot completely dry with a clean, soft cloth. Drying is the step most people skip, and water left to evaporate is what leaves spots and mineral film. Do not use abrasive cleansers, scouring pads, bleach, ammonia or harsh acid cleaners, which faucet makers warn can damage the finish and void the warranty. Brushed nickel, matte black and other coated finishes have stricter rules, so check your maker\'s care page before using anything stronger than soap and water.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tools',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-bathroom.webp',
+  heroImageAlt: 'Hand wiping the spout of a polished chrome single-lever faucet with a blue microfiber cloth, with water droplets on the faucet body and a marble-look vanity top',
+  safetyWarnings: [
+    'Never use abrasive cleansers, scouring powders or scrub pads on chrome fixtures. Kohler and Pfister both warn against abrasive cleaners, and Delta names green heavy-duty scrub sponges as products to avoid.',
+    'Do not use bleach-based cleaners, ammonia or strong acid products on faucet finishes. Kohler says never to use cleaners containing ammonia, bleach or acids, and Delta lists bleach-based cleaners and products containing hydrochloric, hydrofluoric or phosphoric acid among products not to use.',
+    'Avoid general "all-purpose bathroom cleaners", toilet bowl cleaners and tub-and-tile cleaners on the faucet itself. Delta specifically warns against them.',
+    'Never mix bleach with ammonia, vinegar or other acid cleaners; the fumes are dangerous. Ventilate the bathroom whenever you use any chemical cleaner.',
+    'Using cleaners your faucet maker forbids can void the finish warranty. Moen, Kohler and Pfister all say so on their care pages.',
+  ],
+  materialsNeeded: [
+    'Two soft, clean cloths (one for washing, one for drying)',
+    'Warm water',
+    'Mild liquid dish soap (a few drops)',
+    'Soft old toothbrush for the base of the spout and around handles',
+    'Optional, chrome only and only if your maker allows it: an all-purpose cleaner your faucet maker names, such as Formula 409 or Fantastik',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Confirm the Finish and Check the Maker\'s Care Page',
+      instruction: 'Polished chrome is mirror-bright and bluish-silver. Brushed nickel is warmer and satin, and matte black, bronze and colored finishes are often powder-coated or PVD. Look up your brand\'s care page or the faucet\'s maintenance guide, because each maker lists the cleaners its finishes can take, and following those instructions keeps the warranty valid.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Mix Warm Water with a Little Mild Soap',
+      instruction: 'Add a few drops of mild liquid dish soap to a bowl of warm water. Dip a soft cloth and wring it until it is just damp. Moen, Kohler and Pfister all start with a damp cloth and mild soap for routine cleaning.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wipe the Spout, Handles and Trim',
+      instruction: 'Wipe the faucet from the top down: spout, handles, base, then the drain stopper and shower trim. Use gentle pressure. For toothpaste and soap residue around the base and handle joints, work a soft toothbrush dipped in the soapy water into the crevices.',
+      proTip: 'Do the faucet before you clean the sink bowl, so cleaner meant for the basin does not drip onto the metal.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Rinse Off All the Soap',
+      instruction: 'Rinse the cloth in clean warm water, wring it out, and wipe every surface again to remove soap film. Kohler tells owners to rinse thoroughly with warm water, and Moen says to rinse any cleaner off promptly.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Blot the Metal Completely Dry',
+      instruction: 'With a clean, dry, soft cloth, blot all the water off the fixture. Kohler calls blotting the ideal technique and says to use a dabbing action rather than a rubbing or abrasive one, because water left to evaporate on metal forms deposits. Delta gives the same advice.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Use a Maker-Approved Cleaner Only for Heavy Grime',
+      instruction: 'If soap and water is not enough on polished chrome, use only a cleaner your faucet maker names. Kohler lists Windex Original, Fantastik All Purpose, Spic and Span Pine Liquid and Mr. Clean for very dirty chrome, and Delta lists Formula 409, Fantastik and Windex Original. Spray it on a cloth, follow the product label, then rinse and blot dry right away.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Treat Light Water Spots with Water, Not Scrubbing',
+      instruction: 'Delta recommends warm water and a soft, damp cloth for water spots. If spots remain, Moen and Delta allow a 50/50 mix of white vinegar and water on many finishes for a short time, followed by a rinse and dry. Kohler and Pfister say not to use acids on their faucets, so skip vinegar on those brands. For heavy white crust, see our guide on removing calcium buildup from faucets.',
+    },
+  ],
+  ifMethodFails: [
+    'If spots return within a day, they are dried water, not dirt. The fix is drying: blot the fixture with a soft cloth after each use, as Kohler and Delta advise.',
+    'If the chrome is peeling, pitted, bubbled or discolored, the finish itself is damaged and no cleaner will restore it. Contact the faucet maker about the finish warranty instead of scrubbing harder.',
+    'If a store-bought cleaner left a cloudy film, rewash with warm water and mild soap, rinse, and blot dry, then go back to soap and water or a cleaner your maker lists.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What is the best thing to clean chrome bathroom fixtures with?',
+      answer: 'A soft cloth dampened with warm water and a little mild liquid dish soap, followed by a clean-water rinse and a blot dry. That is the routine Moen, Kohler and Pfister give for their faucet finishes.',
+    },
+    {
+      question: 'Can I use vinegar on chrome faucets?',
+      answer: 'It depends on the brand. Moen and Delta allow a 50/50 white vinegar and water mix for water spots, used briefly and rinsed off. Kohler says never to use cleaners containing acids, and Pfister says to avoid any product with acid in it. Follow the maker of your faucet.',
+    },
+    {
+      question: 'Will bleach damage chrome fixtures?',
+      answer: 'Faucet makers advise against it. Kohler says never to use cleaners containing bleach, and Delta tells owners not to use bleach-based cleaners on its finishes. Use mild soap and water instead.',
+    },
+    {
+      question: 'How do you clean brushed nickel or matte black faucets?',
+      answer: 'Use only a damp cloth with mild dish soap, rinse, and dry with a soft cloth. Moen says its powder-coated matte black and spot-resist brushed nickel finishes must not get abrasives, organic solvents or harsh cleansers such as lime scale removers. Check your own brand\'s care page before using anything else.',
+    },
+    {
+      question: 'How do I keep chrome faucets from getting water spots?',
+      answer: 'Dry them. Kohler and Delta both say water left to evaporate on metal leaves mineral deposits, so blotting the faucet dry with a soft cloth after use prevents most spots.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-chrome-1',
+      title: 'Faucet Finish Care and Cleaning',
+      publisher: 'Moen',
+      url: 'https://solutions.moen.com/Article_Library/Faucet_Finish_Care_and_Cleaning',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Chrome should be washed with a damp cloth and mild liquid dish soap, rinsed and dried with a soft cloth; a 50/50 vinegar and water blend may be used briefly for water spots; harsh cleansers such as lime scale removers should be avoided; powder-coat and spot-resist finishes must not get abrasives or organic solvents; failure to comply may void the warranty.',
+    },
+    {
+      id: 'src-chrome-2',
+      title: 'Maintenance Guide: Centerset Lavatory Faucets K-7401, K-7403, K-7404',
+      publisher: 'Kohler',
+      url: 'https://resources.kohler.com/onlinecatalog/pdf/116430_5.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean with a mild soap, rinse thoroughly with warm water and dry with a clean soft cloth; blot metal dry with a dabbing action because water left to evaporate forms deposits; never use cleaners containing abrasive cleansers, ammonia, bleach or acids; failure to comply may void the warranty.',
+    },
+    {
+      id: 'src-chrome-3',
+      title: 'How to Clean and Maintain Your Kitchen or Bath Faucet and Shower Head',
+      publisher: 'Delta Faucet',
+      url: 'https://www.deltafaucet.com/il/home-improvement-101/how-to-clean-a-faucet',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Blot water off the faucet because evaporating water leaves mineral deposits; use warm water and a soft damp cloth for water spots; Formula 409, Fantastik and Windex Original are acceptable; do not use all-purpose bathroom cleaners, abrasive cleaners, bleach-based cleaners or products with hydrochloric, hydrofluoric or phosphoric acid.',
+    },
+    {
+      id: 'src-chrome-4',
+      title: 'Care & Cleaning for Your Faucet',
+      publisher: 'Pfister',
+      url: 'https://www.pfisterfaucets.com/parts-support/care-cleaning',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'A soft damp cloth with warm soapy water keeps faucets looking new; avoid polish, detergents, abrasive cleaners, organic solvents or any product with acid in it, which can damage the finish and nullify the limited lifetime warranty.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean Chrome Bathroom Fixtures (Maker-Approved)',
+    description: 'How to clean chrome bathroom fixtures: mild soap, a soft cloth, rinse and blot dry. What Moen, Kohler and Delta forbid, and rules for nickel and matte black.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-chrome-bathroom-fixtures',
+    indexable: true,
+    focusKeyword: 'how to clean chrome bathroom fixtures',
+  },
+};
+
+export default article;

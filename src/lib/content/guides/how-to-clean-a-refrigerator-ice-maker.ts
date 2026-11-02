@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-refrigerator-ice-maker',
+  slug: 'how-to-clean-a-refrigerator-ice-maker',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a refrigerator ice maker',
+  subtitle: 'Pause the ice maker, empty and wash the bin, wipe the chute and the area under the bin, and dry everything before it goes back. Plus how to break up clumped ice, which cleaners to keep off plastic parts, and flushing a new water filter.',
+  excerpt: 'Pause the ice maker, empty the bin, wash it in mild soapy water, wipe the chute, dry completely and reinstall.',
+  quickAnswer: 'Pause or turn off the ice maker, then remove the ice bin and empty it. Wash the bin in warm water with mild dish soap, rinse thoroughly and dry it completely. Wipe the ice delivery chute, the bottom of the bin area and any frost or ice fragments with a warm, damp cloth, dry them, then reinstall the bin and turn the ice maker back on. Keep bleach, abrasive and petroleum-based cleaners off the plastic parts, and if you change the water filter, flush it as your manual says before using the ice.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing food splatter off a stainless steel gas cooktop with a yellow and green sponge, with a potted herb and a dish rack on the counter behind',
+  safetyWarnings: [
+    'Pause or turn off the ice maker before you remove the bin, and unplug the refrigerator first only if your owner\'s manual allows it for cleaning.',
+    'Do not use bleach, abrasive or harsh cleaners, scouring cleansers, window sprays, flammable fluids or petroleum-based cleansers on the ice bin and other plastic parts; Whirlpool warns they can damage plastic parts, liners and gaskets.',
+    'Do not spray cleaner directly onto the ice maker unit or any electronics. Wipe with a damp cloth instead.',
+    'Do not force a bin that is frozen in place. Break up clumped ice gently, and if the bin still will not come out, contact the manufacturer for service.',
+    'Use a plastic utensil, not a knife or metal tool, to clear ice jammed in the bin or chute.',
+  ],
+  materialsNeeded: [
+    'Warm water',
+    'Mild dish soap',
+    'Soft cloths or a non-abrasive sponge',
+    'Lint-free towel for drying',
+    'Plastic utensil for clearing jammed ice',
+    'A large bowl or cooler for the old ice',
+    'Replacement water filter, if yours is due',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Pause the Ice Maker',
+      instruction: 'Turn the ice maker off or pause it from the control panel or the switch on the ice maker, following your owner\'s manual. If your model allows it, Whirlpool suggests unplugging the refrigerator or turning off the cooling before a deep clean.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Remove and Empty the Ice Bin',
+      instruction: 'Lift and pull the bin out as your manual describes, then dump the ice into a bowl or the sink. If the cubes are frozen together, LG suggests tapping the bin gently with the heel of your palm or shaking it to separate them; if they still will not separate, throw the ice away and clean the bin before reinstalling it.',
+      proTip: 'If ice is jammed in the bin or chute, loosen it with a plastic utensil rather than anything sharp or metal.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wash the Bin in Mild Soapy Water',
+      instruction: 'Wash the bin and any removable ice scoop by hand in warm water mixed with mild dish soap, using a soft cloth or non-abrasive sponge. Do not use bleach, scouring cleansers or other harsh products on the plastic.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Rinse and Dry Completely',
+      instruction: 'Rinse the bin thoroughly with clean water so no soap is left to flavor the ice, then dry it completely with a lint-free towel. Whirlpool says all parts should be completely dry before bins go back into the refrigerator.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Wipe the Chute and the Bin Area',
+      instruction: 'Clean the ice delivery chute and the bottom of the ice storage bin area with a warm, damp cloth, then dry thoroughly. Check the compartment for frost or ice fragments and wipe them out with a damp cloth. Do not spray cleaner onto the ice maker itself.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Reinstall the Bin and Restart',
+      instruction: 'Slide the dry bin back into place until it seats fully, as your manual describes, then turn the ice maker back on.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Replace and Flush the Water Filter if It Is Due',
+      instruction: 'If your filter is due, replace it and flush the system before relying on the ice. On models with a water dispenser, Whirlpool says to press the dispenser for 5 seconds and release for 5 seconds, repeating until 1 to 4 gallons have run through, depending on the filter. On models without a water dispenser, fill and discard three full containers of ice to remove loose carbon from the new filter.',
+    },
+  ],
+  ifMethodFails: [
+    'If the bin is frozen in place, do not force it. Let the ice loosen, break up clumps gently, and if it still will not come out or the problem keeps coming back, contact the manufacturer for service.',
+    'If the ice maker is not used often, Whirlpool recommends emptying the bin and cleaning the chute, the bin and the area beneath it every 2 weeks.',
+    'If the ice still smells or tastes off after cleaning, the odor may be coming from the refrigerator or freezer itself; see our guide on getting rid of refrigerator smell, and check whether the water filter is overdue.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can I clean my refrigerator ice bin with bleach?',
+      answer: 'Some online guides suggest a bleach solution, but Whirlpool advises against bleaches and other harsh cleaners on plastic parts, liners and gaskets. Wash the bin in warm water with mild dish soap, rinse thoroughly and dry completely, and check your owner\'s manual for anything your model specifically allows.',
+    },
+    {
+      question: 'Can you put a refrigerator ice bin in the dishwasher?',
+      answer: 'Only if your owner\'s manual says the bin is dishwasher safe. The manufacturer guidance we reviewed describes washing by hand with mild soapy water or a warm, damp cloth, then drying thoroughly.',
+    },
+    {
+      question: 'How often should you clean a refrigerator ice maker?',
+      answer: 'If you do not use ice regularly, Whirlpool recommends emptying the bin and cleaning the chute, the bin and the area beneath it every 2 weeks. Otherwise, clean it whenever ice clumps, jams or picks up odors, and follow the schedule in your owner\'s manual.',
+    },
+    {
+      question: 'Should you throw out the first ice after changing the fridge water filter?',
+      answer: 'On refrigerators without a water dispenser, Whirlpool says to fill and discard three full containers of ice after installing a new filter, which removes some loose carbon. Models with a dispenser are flushed by running 1 to 4 gallons of water through the dispenser instead, depending on the filter.',
+    },
+    {
+      question: 'Why are the ice cubes stuck together in the bin?',
+      answer: 'Shake the bin or tap it gently with the heel of your palm to break the clumps apart; if that does not work, throw the ice away, clean and dry the bin, and reinstall it.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-icemaker-1',
+      title: 'Cleaning the Ice Dispenser Chute - Refrigerator',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Refrigeration/Full-Size_Refrigerators/French_Door_Bottom_Freezer_Refrigerator/Cleaning/Exterior/Cleaning_the_Ice_Dispenser_Chute_-_Refrigerator',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'If ice is not dispensed regularly, empty the ice storage bin and clean every 2 weeks; remove ice clogging the bin and chute with a plastic utensil; clean the ice delivery chute and the bottom of the ice storage bin with a warm, damp cloth, then dry thoroughly.',
+    },
+    {
+      id: 'src-icemaker-2',
+      title: 'Cleaning the Interior of the Refrigerator',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Refrigeration/Full-Size_Refrigerators/Product_Info/Cleaning_and_Care/Cleaning_the_Interior_of_the_Refrigerator',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'If the model allows, unplug or turn off cooling and pause the ice maker before a deep clean; use warm water with mild dish soap; avoid abrasive or harsh cleaners, bleaches and petroleum-based cleansers on plastic parts, liners and gaskets; do not spray cleaners on electronics; rinse, dry completely and make sure parts are dry before reinstalling bins.',
+    },
+    {
+      id: 'src-icemaker-3',
+      title: 'How to Flush the Water System in a Refrigerator',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Refrigeration/Water_Filter_Information/Installation_Support/How_to_Flush_the_Water_System_in_a_Refrigerator',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'After a new filter, dispenser models are flushed by pressing the dispenser 5 seconds on and 5 seconds off until 1 to 4 gallons are dispensed depending on the filter; models without a water dispenser should fill and discard three full containers of ice to remove loose carbon.',
+    },
+    {
+      id: 'src-icemaker-4',
+      title: 'Cannot Remove Ice Bucket',
+      publisher: 'LG Help Library',
+      url: 'https://www.lg.com/us/support/help-library/cannot-remove-ice-bucket-CT10000021-20150384501613',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Tap the bin gently or shake it to separate clumped ice; if it does not separate, dispose of the ice and clean the bin before reinstalling; wipe frost or ice fragments with a damp cloth; request service if the bin cannot be removed or the problem returns.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Refrigerator Ice Maker and Bin',
+    description: 'How to clean a refrigerator ice maker: pause it, empty and wash the bin in mild soapy water, wipe the chute, dry fully and reinstall. Plus filter flushing.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-refrigerator-ice-maker',
+    indexable: true,
+    focusKeyword: 'how to clean a refrigerator ice maker',
+  },
+};
+
+export default article;

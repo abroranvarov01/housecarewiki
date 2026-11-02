@@ -1,0 +1,150 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-an-area-rug',
+  slug: 'how-to-clean-an-area-rug',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean an area rug',
+  subtitle: 'Read the label, shake out the loose dirt, vacuum with the beater bar off and away from the fringe, blot spills with a white cloth, and know when a rug belongs in the washer, at the dry cleaner or with a professional.',
+  excerpt: 'Check the label, shake and vacuum gently, blot spots from the edge in, and hand heirloom rugs to a pro.',
+  quickAnswer: 'Start with the care label: it tells you whether the rug is machine washable, dry clean only or a job for a professional. Shake small rugs outside, then vacuum with the beater bar off or raised, working from the center toward the fringe and keeping the fringe out of the brush. Blot spills right away with a white cloth, pretest any cleaner in a hidden spot, apply it to the cloth and work from the edge of the spot inward, then rinse with clear water. Oriental, Persian and heirloom rugs should be cleaned to the maker\'s instructions or by a professional.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'area-rugs',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-floor-carpet.webp',
+  heroImageAlt: 'White cordless stick vacuum on a beige patterned shag rug in a sunlit living room, beside a sofa with a fringed knit throw and a round wooden coffee table',
+  safetyWarnings: [
+    'Do not run a spinning beater bar over fringe or over loop and braided rugs. Turn the brush off, remove it or set the vacuum to its highest height, and lift the rug edge to vacuum under the fringe instead.',
+    'Pretest every cleaner, even a certified one, on a hidden spot or scrap before using it on the visible face of the rug.',
+    'Do not scrub or use a brush on spots; bristles and scrubbing can damage the pile. Blot instead.',
+    'Never put bleach on a washable rug, rug cover or rug pad, and never machine-wash or submerge a rug pad unless its maker says you can.',
+    'Use a white, undyed cloth or plain white paper towels for blotting; printed or colored material can transfer dye to the rug.',
+  ],
+  materialsNeeded: [
+    'Vacuum with a way to turn off or raise the beater bar (or a suction-only attachment)',
+    'Clean white cloths or plain white paper towels',
+    'Spoon or dull knife for lifting semisolid spills',
+    'Spot cleaner suitable for your rug\'s fiber (check the label)',
+    'Clean water and a spray bottle for rinsing',
+    'Clothesline or railing for shaking and beating small rugs (optional)',
+    'Mild, non-bleach detergent if the label says the rug is machine washable',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Read the Care Label and Identify the Fiber',
+      instruction: 'Find the label on the back of the rug or the care page from its maker. It tells you whether the rug is machine washable, spot clean only or dry clean only, and what fiber it is. A washable rug cover, a wool rug and a hand-knotted Oriental rug all need different handling, so do not guess.',
+      proTip: 'If the label says dry clean only, call the dry cleaner first; many do not handle rugs.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Shake Out Loose Dirt',
+      instruction: 'If the rug is small enough to lift, take it outside and shake it. Larger rugs you can carry can be hung over a clothesline and beaten to knock out grit before you bring them in to vacuum. Shake shag rugs outdoors to loosen dirt trapped deep in the pile.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Vacuum with the Beater Bar Off',
+      instruction: 'Remove or switch off the beater bar. If your vacuum has settings, use the highest pile height and the lowest power. Work down the full length of the rug in one direction, then move over and repeat. On loop or braided rugs the beater bar should always be off; if yours cannot be disabled, set it to the highest height.',
+      proTip: 'Rug makers suggest vacuuming a regular pile rug about once a week, especially in its first month while it sheds.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Vacuum Fringed Edges by Hand',
+      instruction: 'Use gentle suction and vacuum from the center of the rug toward the fringe, stopping before the strands so they are not pulled into the brush. Lift the rug edge and vacuum the floor and rug underneath the fringe.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Blot Spills Right Away',
+      instruction: 'Blot liquid spills with a dry white cloth or plain white paper towels, pressing down rather than rubbing. Scoop semisolids up with a spoon and vacuum dried solids. Do not scrub or brush the spot.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Test, Then Spot Clean from the Edge In',
+      instruction: 'Test your spot cleaner on a hidden corner or the back of the rug first. Put a small amount on a white cloth rather than pouring it on the rug, work from the outer edge of the spot toward the center, and blot. Repeat as needed, then rinse with a little clear water and blot dry.',
+      proTip: 'For pet urine, skip the steam cleaner; heat can set the stain and odor. Extract with a wet vacuum and rinse with cool water.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Machine Wash Only What the Maker Allows',
+      instruction: 'If the label says the rug or its cover is machine washable, follow those directions exactly. For Ruggable covers and all-in-one rugs, that means cold water, a delicate cycle and a mild detergent with no bleach, then low-heat tumble drying or air drying until completely dry. The pad is spot clean only. CRI suggests warm water and mild detergent for small washable rugs, so let your rug\'s own label decide.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Send Delicate and Heirloom Rugs to a Professional',
+      instruction: 'Clean Oriental, Turkish and Persian rugs according to the maker\'s instructions or use a professional rug cleaning service, and hire professionals for heirloom rugs. Handle the fringe gently in either case.',
+    },
+  ],
+  ifMethodFails: [
+    'If a spot keeps coming back after it dries, there is likely cleaner or soil left deep in the pile. Rinse again with a small amount of clear water and blot until the cloth comes up clean.',
+    'If a stain will not lift after a few careful rounds of blotting, stop before you damage the pile and take the rug to a professional rug cleaner.',
+    'If your vacuum cannot turn off or raise its beater bar, use a suction-only floor tool or hand attachment on the rug instead.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you put an area rug in the washing machine?',
+      answer: 'Only if the care label says it is machine washable. Washable rugs and covers usually call for a gentle cycle with mild, non-bleach detergent and low or no heat to dry. Rugs labeled dry clean only, and Oriental or heirloom rugs, should not go in the washer.',
+    },
+    {
+      question: 'Should you use a beater bar on an area rug?',
+      answer: 'Rug makers advise turning off or removing the beater bar, or raising the vacuum to its highest setting if it cannot be turned off. Keep the brush away from fringe entirely; vacuum from the center toward the fringe and stop before the strands.',
+    },
+    {
+      question: 'How often should area rugs be professionally cleaned?',
+      answer: 'The Carpet and Rug Institute recommends professional deep cleaning of carpet every 12 to 18 months, or more often in homes with pets or heavy traffic. Valuable Oriental and heirloom rugs should always go to a professional rather than being deep cleaned at home.',
+    },
+    {
+      question: 'How do you get a stain out of an area rug without damaging it?',
+      answer: 'Blot up as much as you can with a white cloth, pretest your cleaner in a hidden spot, then apply a little cleaner to the cloth and work from the edge of the stain toward the center. Rinse with clear water and blot dry. Never scrub or use a brush.',
+    },
+    {
+      question: 'How do you clean a rug with fringe?',
+      answer: 'Vacuum with gentle suction from the center of the rug toward the fringe, without running the vacuum over the strands. Lift the edge to vacuum underneath. Rug makers also advise avoiding the fringe when spot cleaning, and a professional is the safest choice for dirty fringe on valuable rugs.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-arearug-1',
+      title: 'Cleaning and Maintenance',
+      publisher: 'The Carpet and Rug Institute',
+      url: 'https://carpet-rug.org/carpet-for-homes/cleaning-and-maintenance/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For fringed area rugs, use gentle suction from the center toward the fringe, keep strands out of the beater bar and lift the edge to vacuum under it; shake small rugs outside and beat them on a line; take dry-clean-only rugs to a dry cleaner after calling ahead; clean Oriental, Turkish and Persian rugs to the maker\'s specifications or use a professional, and hire professionals for heirloom rugs; blot with white cloths, do not scrub or brush, work from the edges in, rinse with clear water, pretest any cleaner; professionally deep clean every 12 to 18 months.',
+    },
+    {
+      id: 'src-arearug-2',
+      title: 'What Is the Best Way to Vacuum Different Types of Rugs?',
+      publisher: 'Loloi Rugs Support',
+      url: 'https://support.joonloloi.com/customerkb/knowledge-base/what-is-the-best-way-to-vacuum-different-types-of-rugs',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Remove or turn off the beater bar (always for loop or braided rugs, or use the highest height if it cannot be disabled), use the highest pile and lowest power setting, vacuum the full length of the rug in sections, vacuum regular pile rugs about once a week especially in the first month, and shake shag rugs outdoors.',
+    },
+    {
+      id: 'src-arearug-3',
+      title: 'Rug Care',
+      publisher: 'Ruggable',
+      url: 'https://ruggable.com/help/assembly-and-care/rug-care',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Washable rug covers and all-in-one rugs go in cold water on a delicate cycle with mild non-bleach detergent and are tumble dried on low or air dried until fully dry; rug pads are spot clean only and must never be machine washed, bleached or submerged; non-washable wool rugs are blotted with a white cloth after a spot test, not saturated or scrubbed, with the fringe avoided.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean an Area Rug Without Damaging It',
+    description: 'How to clean an area rug: read the label, vacuum with the beater bar off and away from fringe, blot spots with a white cloth, and know when to call a pro.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-an-area-rug',
+    indexable: true,
+    focusKeyword: 'how to clean an area rug',
+  },
+};
+
+export default article;

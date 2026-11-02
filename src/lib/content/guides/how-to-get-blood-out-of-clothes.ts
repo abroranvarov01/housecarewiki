@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-blood-out-of-clothes',
+  slug: 'how-to-get-blood-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get blood out of clothes',
+  subtitle: 'Cold water first and last, detergent rubbed in, an enzyme presoak for what is left. When hydrogen peroxide or bleach is safe, how to handle dried stains, and why the dryer waits.',
+  excerpt: 'Rinse in cold running water, rub in detergent, soak, then wash cold. Check before drying.',
+  quickAnswer: 'Rinse the stain under cold running water, never hot, because heat sets blood. Rub liquid detergent or bar soap into the stain, rinse, and repeat, then soak the garment in cool water for 30 minutes or longer. If a mark remains, soak it in an enzyme presoak, and on white or colorfast fabric only, dab on a few drops of 3 percent hydrogen peroxide for 1 to 3 minutes before rinsing. Wash in cold water and do not put the garment in the dryer until the stain is completely gone.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-laundry.webp',
+  heroImageAlt: 'Close-up of a white cotton shirt laid on a speckled countertop, its collar band discolored yellow-brown and being brushed with a small wooden-handled bristle brush, with a plant and mixed laundry in the background',
+  safetyWarnings: [
+    'Use cold water until the stain is completely gone. Hot water and dryer heat set blood in the fibers and can make the stain permanent.',
+    'Hydrogen peroxide and chlorine bleach can lighten or discolor colored fabrics. Use them only on white or colorfast, bleach-safe fabric, and test a hidden spot first.',
+    'Never mix bleach with ammonia, vinegar or any other cleaner; the combinations release dangerous fumes. Rinse a garment thoroughly between products and ventilate the room.',
+    'Check the care label before using bleach or a presoak, and read the enzyme product label for fabrics it should not be used on.',
+  ],
+  materialsNeeded: [
+    'Cold running water',
+    'Liquid laundry detergent or bar soap',
+    'Enzyme presoak or enzyme stain remover',
+    '3 percent hydrogen peroxide (white or colorfast fabric only)',
+    'Bleach-free color-safe stain remover (for colored fabric)',
+    'Chlorine bleach (white, bleach-safe fabric only)',
+    'Sink, bucket or basin for soaking',
+    'Clean white cloths for blotting',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Blot, Then Rinse in Cold Running Water',
+      instruction: 'Treat the stain as quickly as you can, because blood clots as it is exposed to air and binds to the fibers. Blot up excess blood with a clean cloth, then hold the stain under cold running water.',
+      proTip: 'Never reach for hot water to speed things up. Warm or hot water sets blood; you can switch to warmer water only after the stain is gone.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Rub in Detergent and Rinse Again',
+      instruction: 'Rub a little liquid laundry detergent or bar soap into the stain, rinse in cold water, and repeat until no more color comes out. Tide also suggests soaking the garment in a liquid detergent and cold water mix for up to 5 minutes, weighed down so it stays submerged.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Soak in Cool Water for 30 Minutes',
+      instruction: 'Fill a basin with cool water and soak the garment for 30 minutes or longer. Mississippi State University Extension gives the same 30-minute cold soak for fresh blood. After soaking, rub detergent into any mark that remains and rinse.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Use an Enzyme Presoak for What Is Left',
+      instruction: 'If a stain is still visible, soak the garment for 30 minutes or longer in lukewarm water with an enzyme presoak, following the product label. Rinse, rub detergent into any remaining stain, and rinse again.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Try Hydrogen Peroxide on White or Colorfast Fabric Only',
+      instruction: 'For a stain that survives the presoak on white or colorfast fabric, test 3 percent hydrogen peroxide on a hidden seam. If the color holds, put a few drops on the stain for 1 to 3 minutes, then rinse thoroughly. Do not use peroxide on colored fabric that has not passed the test, because it can bleach or discolor it.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wash Cold with the Right Stain Remover',
+      instruction: 'On white, bleach-safe fabric, Clorox gives a pretreatment of 1/3 cup bleach per gallon of water left on for 10 minutes before washing. On colored fabric, use a bleach-free color-safe stain remover instead, left on for about 10 minutes. Then wash on the usual cycle in cold water, without rinsing off the detergent pretreatment.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Check Before Drying and Repeat if Needed',
+      instruction: 'Take the garment out as soon as the cycle ends and check the stain in good light. If any mark remains, repeat the treatment and wash before it goes near the dryer. Air-dry if you are not sure the stain is completely gone.',
+    },
+  ],
+  ifMethodFails: [
+    'For an old or stubborn stain, the University of Georgia extension suggests applying a few drops of ammonia and washing again. Rinse out every trace of bleach first and never use ammonia and bleach on the same garment at the same time.',
+    'Repeat the enzyme presoak and cold wash two or three times before drying; dried blood often lightens in stages.',
+    'For dry-clean-only, silk or wool garments, or a stain that has already been through the dryer, take the item to a professional dry cleaner and tell them the stain is blood.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does hot water set blood stains?',
+      answer: 'Yes. Tide, Clorox and the University of Georgia extension all warn against heat on blood stains. Rinse and wash in cold water, and keep the garment out of the dryer until the stain is completely gone.',
+    },
+    {
+      question: 'How do you get dried blood out of clothes?',
+      answer: 'Soak the garment in cool water for 30 minutes or longer, rub in detergent, then soak again in an enzyme presoak. On white or colorfast fabric, a few drops of 3 percent hydrogen peroxide for 1 to 3 minutes can lift what is left. Repeat before drying; old stains often need more than one round.',
+    },
+    {
+      question: 'Is hydrogen peroxide safe on colored clothes?',
+      answer: 'Not always. Clorox warns that hydrogen peroxide may bleach or discolor colored fabric. Test it on a hidden seam first and use it only if the color does not change; otherwise stick to cold water, detergent and an enzyme presoak or color-safe stain remover.',
+    },
+    {
+      question: 'Can you use bleach to get blood out of clothes?',
+      answer: 'Only on white, bleach-safe fabrics, and only if the care label allows it. Clorox gives a solution of 1/3 cup bleach per gallon of water left on for 10 minutes, then a cold wash. Never mix bleach with ammonia, vinegar or other cleaners.',
+    },
+    {
+      question: 'How do you get blood out of jeans or sheets?',
+      answer: 'Rinse in cold water, then soak in cold water with detergent for about 30 minutes before washing cold. For a stain on a mattress rather than the bedding, see our separate guide on getting blood out of a mattress, since a mattress must never be soaked.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-blood-1',
+      title: 'How to Remove Blood Stains',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/blood-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rinse in cold water, soak in liquid detergent and cold water for up to 5 minutes, wash without rinsing off the detergent on a cold cycle, and repeat before drying; hot water and drying set the stain, and blood clots on exposure to air, so act quickly.',
+    },
+    {
+      id: 'src-blood-2',
+      title: 'Remove Stains From Blood',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-blood/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rinse fresh stains in cold running water and rub with bar soap or detergent; soak in cool water 30 minutes or longer, then in lukewarm water with an enzyme presoak 30 minutes or longer; if a stain remains, apply a few drops of 3 percent hydrogen peroxide for 1 to 3 minutes and rinse; heat-set stains are difficult to remove; ammonia for old stains.',
+    },
+    {
+      id: 'src-blood-3',
+      title: 'How to Remove Blood Stains from Clothes and Fabrics With Bleach',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-remove-blood-stains-clothes-fabrics-with-bleach/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Always start with cold water and avoid heat until the stain is gone; on white bleach-safe fabric use 1/3 cup bleach per gallon for 10 minutes, on colors use Clorox 2 for Colors for 10 minutes, wash cold and check before drying; never mix bleach with vinegar or ammonia; hydrogen peroxide may discolor colors.',
+    },
+    {
+      id: 'src-blood-4',
+      title: 'How to Remove Pesky Stains',
+      publisher: 'Mississippi State University Extension',
+      url: 'https://extension.msstate.edu/blogs/extension-for-real-life/how-remove-pesky-stains',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Soak freshly blood-stained clothing in cold water for 30 minutes, rub detergent into the remaining stain, rinse and wash, rewash with fabric-safe bleach if still visible, and do not put the garment in the dryer until the stain is completely gone.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Blood Out of Clothes (Fresh or Dried)',
+    description: 'How to get blood out of clothes: cold water only, detergent, an enzyme presoak, peroxide or bleach on whites, and a check before drying. Works on dried stains.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-blood-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get blood out of clothes',
+  },
+};
+
+export default article;

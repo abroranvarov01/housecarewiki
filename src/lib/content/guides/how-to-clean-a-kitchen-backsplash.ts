@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-kitchen-backsplash',
+  slug: 'how-to-clean-a-kitchen-backsplash',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a kitchen backsplash',
+  subtitle: 'Cut cooking grease off ceramic and glass tile with a mild household cleaner, scrub the grout lines with a non-metal brush, then rinse and dry. Plus the cleaners that etch natural stone and damage grout.',
+  excerpt: 'Wash with a mild cleaner, brush the grout, rinse well, dry. Stone and glass tile need gentler products.',
+  quickAnswer: 'Once the cooktop is cool, wash the backsplash with an all-purpose household cleaner or warm water and a little mild dish detergent, using a cloth, sponge or non-metallic brush to work through the grease film. Scrub the grout lines with a soft non-metal brush, rinse thoroughly with clean water so no soapy film is left, and dry the tile. Skip acids such as vinegar, which tile makers say can damage glaze and grout and which etch marble, limestone and travertine, and never use steel wool or scouring pads on glass tile.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'countertops',
+  surfaceSlugs: ['ceramic-tile'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing a greasy stainless steel stovetop surround with a yellow and green sponge beside a gas burner, with white subway tile on the wall behind a potted herb and a dish rack',
+  safetyWarnings: [
+    'Avoid acid cleaners, including vinegar and lemon, on glazed tile and grout; Marazzi warns acids can damage grout and the glazed tile surface, and the Natural Stone Institute warns they may dull or etch marble, limestone and travertine.',
+    'Do not use scouring pads, steel wool, sandpaper or other abrasives on glass tile, and avoid scouring powders on natural stone, which may scratch.',
+    'Never mix bleach with ammonia or with acids; the combination creates a toxic gas. Ventilate the kitchen whenever you use a chemical cleaner.',
+    'Let the cooktop and wall cool completely, and keep spray and drips away from burner controls and outlets.',
+    'Avoid cleaners containing fluorine compounds, which Daltile says damage ceramic, glass and stone, and ammonia, which Marazzi says can discolor grout.',
+  ],
+  materialsNeeded: [
+    'Soft cotton or microfiber cloths',
+    'Non-scratch sponge',
+    'All-purpose household cleaner labeled safe for tile and grout, or mild liquid dish detergent and warm water',
+    'Soft non-metallic grout brush or old toothbrush',
+    'Bucket of clean rinse water',
+    'Dry towel',
+    'For natural stone: a neutral stone cleaner or stone soap',
+    'For glass tile: a non-abrasive cleaner recommended for glass or tile',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Identify What Your Backsplash Is Made Of',
+      instruction: 'Glazed ceramic and porcelain tile handle routine household cleaners well. Glass tile needs non-abrasive products only. Marble, limestone, travertine and other natural stone need a neutral cleaner and no acids. A painted wall behind the stove is not tile at all; clean it gently with a soft cloth and the cleaning advice from the paint maker. If you are unsure, test any cleaner on a small hidden spot first.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Let the Area Cool and Wipe Loose Splatter',
+      instruction: 'Turn off the cooktop and let the wall and burners cool. Wipe away loose food splatter with a damp cloth so you are not smearing it around once the cleaner goes on.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wash Off the Grease Film',
+      instruction: 'Apply an all-purpose household cleaner that is safe for tile and grout, or warm water with a little mild liquid dish detergent, with a cloth, sponge or non-metallic brush. Work it over the tile to loosen the grease film, concentrating on the area right behind the cooktop. For natural stone, use a neutral cleaner, stone soap or mild dish detergent and warm water only.',
+      proTip: 'Follow the cleaner\'s label for how long to leave it on before you wipe.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Scrub the Grout Lines',
+      instruction: 'Grout traps grease and grime more than the tile does. Scrub the joints with a soft non-metallic brush and your cleaner. The Tile Council of North America says an alkaline household cleaner is a better choice for grout than an acid-based one, and that oil- or wax-based cleaners should not be used.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rinse Thoroughly with Clean Water',
+      instruction: 'Wipe the whole backsplash with a cloth rinsed often in clean water until no slippery or soapy film is left. Leftover cleaner dulls the tile and attracts new grease. Daltile notes that bleaches and alkaline cleaners in particular may need more than one rinse to remove.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Dry the Tile and Grout',
+      instruction: 'Dry the surface thoroughly with a clean, soft towel. On natural stone, dry with a soft cloth right after rinsing.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Seal Cement Grout to Resist Future Stains',
+      instruction: 'Once the grout is clean and fully dry, consider sealing it. The Tile Council of North America recommends sealing cementitious grout to help prevent staining. Daltile adds that sealing does not stop surface buildup, so regular cleaning is still needed. For a natural stone backsplash, ask your installer whether the stone itself needs sealing.',
+    },
+  ],
+  ifMethodFails: [
+    'If grease still feels tacky, repeat the wash with fresh cleaner and a clean cloth, then rinse again; a single pass often just spreads a heavy film around.',
+    'If grout stays dark after scrubbing, the residue may be deep in the joint. Daltile suggests a professional-strength tile and grout cleaner made to remove grease and body oil, used as its label directs.',
+    'If grease has darkened a natural stone backsplash, the oil has soaked into the stone. Do not reach for acids or abrasives; use a stone-safe stain remover as its label directs, or call a stone care professional.',
+  ],
+  recommendedProductIds: ['prod-grout-brush-set'],
+  faqs: [
+    {
+      question: 'What is the best way to clean a greasy kitchen backsplash?',
+      answer: 'Wash it with an all-purpose household cleaner that is safe for tile and grout, or warm water with mild dish detergent, using a cloth, sponge or non-metallic brush. Scrub the grout lines, rinse thoroughly with clean water, and dry. Repeat rather than switching to an abrasive pad.',
+    },
+    {
+      question: 'Can I use vinegar to clean my tile backsplash?',
+      answer: 'It is best avoided. Tile maker Marazzi says acids can damage grout and the glazed surface of tile, and the Natural Stone Institute warns that vinegar and lemon may dull or etch marble, limestone and travertine.',
+    },
+    {
+      question: 'How do you clean grout on a kitchen backsplash?',
+      answer: 'Scrub the grout joints with a soft non-metallic brush and a household cleaner, then rinse well so no soap film remains. The Tile Council of North America says alkaline cleaners are better for grout than acid-based ones and recommends sealing cement grout to resist stains.',
+    },
+    {
+      question: 'How do you clean a glass tile backsplash?',
+      answer: 'Use a non-abrasive cleaning product recommended for glass or tile with a soft cloth or sponge, then rinse and dry. Marazzi warns against scouring pads, steel wool, sandpaper and other abrasives on glass tile.',
+    },
+    {
+      question: 'Can I use bleach on a kitchen backsplash?',
+      answer: 'Daltile notes that bleaches and alkaline cleaners can be hard to rinse off and may need several rinses. If you use a bleach-based product, follow its label, ventilate the kitchen and never mix it with ammonia or an acidic cleaner such as vinegar.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-backsplash-1',
+      title: 'Tile Care and Maintenance',
+      publisher: 'Marazzi USA',
+      url: 'https://www.marazziusa.com/style-and-design/resources/care-and-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Glazed tile should be cleaned with an all-purpose, low-VOC household cleaner applied with a cloth, sponge or non-metallic brush, then rinsed with clean water and dried; acids can damage grout and the glaze and ammonia can discolor grout; glass tile takes a non-abrasive cleaner recommended for glass or tile, never scouring pads, steel wool or sandpaper.',
+    },
+    {
+      id: 'src-backsplash-2',
+      title: 'Cleaning Grout',
+      publisher: 'Tile Council of North America',
+      url: 'https://tcnatile.com/resource-center/faq/cleaning-grout/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Grout is better cleaned with an alkaline cleaner than an acid-based one, oil- or wax-based cleaners should not be used, brushing the joints helps, thorough rinsing removes soap film, and cementitious grout should be sealed to prevent staining.',
+    },
+    {
+      id: 'src-backsplash-3',
+      title: 'Ceramic and Porcelain Tile Care and Maintenance',
+      publisher: 'Daltile',
+      url: 'https://www.daltile.com/how-to/how-to-care-for-and-maintain-tile/how-to-care-for-and-maintain-ceramic-and-porcelain-tile',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rinse with clean water after cleaning; bleaches and alkaline cleaners may need multiple rinses; avoid fluorine compounds, which damage ceramic, glass and stone; grout needs periodic cleaning and sealing does not prevent buildup; heavy buildup calls for a professional-strength tile and grout cleaner that removes grease.',
+    },
+    {
+      id: 'src-backsplash-4',
+      title: 'Learn About Cleaning Products for Natural Stone',
+      publisher: 'Natural Stone Institute',
+      url: 'https://www.naturalstoneinstitute.org/consumers/care/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean stone with a neutral cleaner, stone soap or mild dishwashing detergent and warm water, rinse thoroughly and dry with a soft cloth; lemon, vinegar and other acids may dull or etch calcareous stone, scouring powders may scratch, and ammonia and bleach must never be mixed.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Kitchen Backsplash (Tile, Glass, Stone)',
+    description: 'How to clean a kitchen backsplash: cut grease on ceramic and glass tile with a mild cleaner, scrub grout, rinse and dry, and protect natural stone from acids.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-kitchen-backsplash',
+    indexable: true,
+    focusKeyword: 'how to clean a kitchen backsplash',
+  },
+};
+
+export default article;

@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-mildew-out-of-clothes',
+  slug: 'how-to-get-mildew-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get mildew out of clothes',
+  subtitle: 'Brush the spores off outdoors, wash in the hottest water the care label allows, use chlorine bleach on bleach-safe whites and a color-safe bleach on colors, then air dry and check. Why old mildew spots may never fully come out.',
+  excerpt: 'Brush off outdoors, hot wash with the right bleach for the fabric, air dry in the sun, and repeat before using the dryer.',
+  quickAnswer: 'Take the garment outside and brush off as much of the mildew as you can, then check the care label. Wash it in the hottest water the label allows with detergent, adding chlorine bleach for bleach-safe whites or presoaking colors in a color-safe bleach made for colored fabrics, following the product label. Air dry, ideally in direct sunlight, and inspect before using the dryer; repeat if spots remain. Mildew weakens fibers, so old, heavy stains may not come out completely and the item may need replacing.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-laundry.webp',
+  heroImageAlt: 'Hand scrubbing a yellowed stain along the collar of a white button-down shirt with a wooden-handled bristle brush on a speckled countertop, with a pile of mixed laundry, a plant and a white laundry basket behind',
+  safetyWarnings: [
+    'Never mix chlorine bleach with vinegar, ammonia or any other cleaner; the combination can release dangerous fumes. Wear gloves and work with good ventilation.',
+    'Brush mildew off outdoors. Touching or breathing mold spores can cause allergic reactions such as sneezing, runny nose, red eyes and skin rashes, and can trigger asthma attacks in people who are allergic to mold.',
+    'Use chlorine bleach only on fabrics the care label says are bleach safe. When in doubt with colored clothes, assume chlorine bleach will discolor them, and patch test any bleach on a hidden spot first.',
+    'Mildew weakens fibers. Work gently on old or heavy stains, because hard scrubbing can tear the damaged fabric.',
+    'Keep mildewed items out of high dryer heat until the stains are gone; check after air drying and repeat the wash if needed.',
+  ],
+  materialsNeeded: [
+    'Soft brush (used outdoors)',
+    'Laundry detergent',
+    'Chlorine bleach (for bleach-safe whites only)',
+    'Color-safe bleach for colored fabrics',
+    'Bucket or tub for presoaking',
+    'Rubber gloves',
+    'Clothesline or drying rack, ideally in a sunny spot',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Brush Off the Mildew Outdoors',
+      instruction: 'Take the garment outside and brush the visible mildew off the fabric with a soft brush, so the spores do not spread inside your home. Brush gently, because mildew weakens the fibers it grows on.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Read the Care Label and Patch Test',
+      instruction: 'Check the care label for the hottest water allowed and whether bleach is permitted, and do not use any product or method the label prohibits. Test whichever bleach you plan to use on a hidden spot such as an inside seam before treating the whole garment.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wash Bleach-Safe Whites with Chlorine Bleach',
+      instruction: 'For white, bleach-safe items, machine wash in the hottest water the care label allows with your regular detergent and chlorine bleach. Clorox directs 1/3 cup of its disinfecting bleach added to the wash with detergent; follow the label of the bleach you use.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Presoak Colors in a Color-Safe Bleach',
+      instruction: 'For colored or non-bleach-safe fabrics, presoak in a color-safe bleach dissolved in hot water, as far as the garment label allows. Clorox\'s directions for its color-safe powder are 2/3 cup in 2 gallons of hot water, soaking bright colors for 30 minutes and other garments for 1 hour. Then machine wash in the hottest allowed water with detergent and more of the color-safe bleach.',
+      proTip: 'Color-safe bleach is gentler, so expect to repeat the soak and wash for heavier mildew.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Air Dry, Ideally in the Sun',
+      instruction: 'Hang the garment to dry, in direct sunlight if you can, and inspect it once it is dry. Sun and moving air help it dry quickly and discourage new mold growth. Avoid high dryer heat until the stain is gone.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Treat Remaining Spots and Repeat',
+      instruction: 'If spots remain on a fabric that tolerates chlorine bleach, the University of Georgia Extension suggests soaking the stain for 10 to 15 minutes in 1/4 cup chlorine bleach mixed with 3/4 cup water, then rinsing and laundering. On colors, repeat the color-safe presoak and wash. Stop if the fabric starts to thin or fray.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Dry Completely Before Storing',
+      instruction: 'Make sure the clothes are completely dry before you fold or store them, because damp fabric can grow mildew again. Do not leave wet or sweaty clothes sitting in a hamper or the washer, and keep closets and storage areas dry.',
+    },
+  ],
+  ifMethodFails: [
+    'If a bleach-safe white still shows spots after two washes, try the University of Georgia Extension spot soak of 1/4 cup chlorine bleach in 3/4 cup water for 10 to 15 minutes, then rinse and launder.',
+    'If a colored garment cannot take chlorine bleach and color-safe bleach has not worked after several rounds, take it to a professional dry cleaner, especially for silk, wool or dry-clean-only items.',
+    'If the stain remains or the fabric is thin, torn or crumbly, the mildew has damaged the fibers. Clorox advises that heavily damaged items may need to be replaced.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can mildew stains be removed from clothes?',
+      answer: 'Fresh mildew usually comes out with brushing, a hot wash and the right bleach for the fabric. Old, heavy mildew is harder: it weakens the fibers and can leave permanent discoloration, so an item may need replacing if stains remain after repeated treatment.',
+    },
+    {
+      question: 'Does vinegar get rid of mildew on clothes?',
+      answer: 'Clorox lists adding 1 cup of white vinegar to a load as a non-bleach option to help with mold stains. Never use vinegar in the same wash or soak as chlorine bleach, because mixing them can release dangerous fumes.',
+    },
+    {
+      question: 'How do you get mildew out of colored clothes without bleach?',
+      answer: 'Brush off the spores, then presoak in a color-safe bleach and wash in the hottest water the label allows. The University of Georgia Extension also lists treating the spot with salt and lemon juice and drying it in direct sunlight as an alternative to chlorine bleach; test on a hidden area first.',
+    },
+    {
+      question: 'Is it safe to wear clothes that had mildew on them?',
+      answer: 'Once the mildew is washed out and the garment is fully dry, it can be worn. Before cleaning, handle it outdoors: the EPA notes that touching or inhaling mold spores can cause allergic reactions in sensitive people.',
+    },
+    {
+      question: 'How do I get the mildew smell out of clothes?',
+      answer: 'A hot wash in the hottest water the label allows, followed by drying completely, removes most mildew odor. Clorox also suggests a laundry odor remover added to the rinse. For towels that keep smelling sour, see our guide on getting musty smell out of towels.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-mildew-1',
+      title: 'Remove Stains From Mildew',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-mildew/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Brush mildew off outdoors, apply detergent and launder; if the stain remains, soak 10 to 15 minutes in 1/4 cup chlorine bleach (if safe for the fabric) and 3/4 cup water, or treat with salt and lemon juice and dry in direct sunlight, then rinse and launder. Work cautiously because mildew weakens fibers; read the care label and pretest every cleaning agent.',
+    },
+    {
+      id: 'src-mildew-2',
+      title: 'How to Get Mold Stains and Mildew Stains Out of Colored Clothes',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-remove-mold-mildew-from-colored-clothes/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Patch test and assume bleach will stain colors when in doubt; brush off spores; bleach-safe fabrics get the hottest allowed wash with detergent and 1/3 cup bleach; non-bleach-safe fabrics get a presoak of 2/3 cup color-safe bleach in 2 gallons hot water (30 minutes for brights, 1 hour otherwise), then a hot wash; air dry, dry in direct sunlight or with a fan, and repeat for heavy stains.',
+    },
+    {
+      id: 'src-mildew-3',
+      title: 'How to Get Mold and Mildew Stains Out of Towels and Sheets',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-get-mold-mildew-out-of-towels-sheets/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wash bleach-safe items in the hottest water the label recommends with detergent and 1/3 cup bleach, air dry and inspect, avoid high heat until stains are gone, dry completely before storing, never mix bleach with vinegar, ammonia or other cleaners, wear gloves with good ventilation, and replace items if stains remain or damage is extensive.',
+    },
+    {
+      id: 'src-mildew-4',
+      title: 'A Brief Guide to Mold, Moisture and Your Home',
+      publisher: 'U.S. Environmental Protection Agency',
+      url: 'https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Inhaling or touching mold or spores may cause allergic reactions and asthma attacks in sensitive people; dry water-damaged items within 24 to 48 hours to prevent mold growth; never mix chlorine bleach with cleaners containing ammonia.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Mildew Out of Clothes (Whites and Colors)',
+    description: 'How to get mildew out of clothes: brush spores off outdoors, hot wash, chlorine bleach for whites or color-safe bleach for colors, then sun dry and check.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-mildew-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get mildew out of clothes',
+  },
+};
+
+export default article;

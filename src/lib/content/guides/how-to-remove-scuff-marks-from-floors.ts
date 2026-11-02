@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-scuff-marks-from-floors',
+  slug: 'how-to-remove-scuff-marks-from-floors',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove scuff marks from floors',
+  subtitle: 'Black heel and shoe marks come off most floors with gentle friction and the right cleaner for the surface. What wood, luxury vinyl and tile makers allow, which solvents and scrubbers they rule out, and how to stop new scuffs.',
+  excerpt: 'Sweep, buff gently, then use the cleaner or solvent your floor maker allows for wood, vinyl or tile.',
+  quickAnswer: 'Sweep away grit, then buff the mark with a clean, soft dry cloth; many rubber heel marks sit on top of the finish and lift with gentle friction. If it stays, use what your floor maker allows: a cleaner made for your wood finish on hardwood, a white cloth lightly dampened with isopropyl alcohol on luxury vinyl that permits it, and your tile cleaner with a soft brush on tile, followed by a rinse. Skip steel wool, scouring powder and abrasive cleaners, and test anything stronger than water in a hidden spot first. Scuffs that have worn into a wood finish can be hidden with a matching stain marker or wax stick.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'hardwood-laminate',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-floor-carpet.webp',
+  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug over a honey-toned wood floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  safetyWarnings: [
+    'Isopropyl alcohol, lighter fluid and painter\'s naphtha are flammable. Use only a small amount on a cloth, ventilate the room, keep them away from flames and follow the container\'s precautions.',
+    'Do not use abrasive cleaners, steel wool or scouring powder on luxury vinyl; Mannington warns they can scratch the floor. Its rigid vinyl care guide also says never to wax, polish or sand the floor.',
+    'On wood, do not use vinyl or tile cleaning products, and avoid wet mops and steam mops; the NWFA warns they damage the finish and the wood over time.',
+    'On polished porcelain tile, Daltile strongly cautions against acid-based or solvent-based chemicals, so do not use alcohol or other solvents on polished tile.',
+    'Always test any cleaner or solvent on a small, hidden area first, and check your own floor\'s care guide; allowed products vary by maker and product line.',
+  ],
+  materialsNeeded: [
+    'Soft broom, dust mop or vacuum',
+    'Clean, soft, white cloths',
+    'Wood floor cleaner made for your finish (hardwood)',
+    'Isopropyl alcohol (luxury vinyl, only if your care guide allows it)',
+    'Your usual tile cleaner, a soft to medium bristle brush and clean rinse water (tile)',
+    'Optional for worn spots in a wood finish: stain marker or wax stick matched to the floor',
+    'Felt furniture protectors and non-staining entrance mats (prevention)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Identify Your Floor and Check Its Care Guide',
+      instruction: 'Confirm whether the floor is finished hardwood, luxury vinyl or tile, and look up the maker\'s care page for your product line. Allowed cleaners and solvents differ: some vinyl makers permit isopropyl alcohol for scuffs, while tile and wood makers rule out solvents or products made for other floor types.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Sweep Up Grit First',
+      instruction: 'Sweep, dust mop or vacuum the area before you rub anything. Loose grit dragged under a cloth can scratch the finish and turn a scuff into a scratch.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Buff the Mark with a Soft Dry Cloth',
+      instruction: 'Rub the scuff firmly with a clean, soft, dry cloth. Fresh rubber heel and shoe marks often sit on the surface and come off with friction alone, without any cleaner. If the mark lifts, you are done.',
+    },
+    {
+      stepNumber: 4,
+      title: 'On Hardwood, Use a Cleaner Made for Your Finish',
+      instruction: 'Spot-clean with a wood floor cleaner made for your floor\'s finish on a soft cloth, wrung out so it is barely damp. Do not use vinyl or tile cleaning products, wet mops or steam mops on wood. If the scuff has worn a light mark into the finish, rub a stain marker or wax stick that matches the floor over it and buff with a soft cloth.',
+    },
+    {
+      stepNumber: 5,
+      title: 'On Luxury Vinyl, Try Isopropyl Alcohol on a White Cloth',
+      instruction: 'If your care guide allows it, wipe the scuff with a clean white cloth lightly dampened with isopropyl alcohol. Mannington\'s rigid vinyl guide also lists lighter fluid or painter\'s naphtha for scuffs and marks, but start with the mildest option. Ventilate, use only a little, and wipe the spot with a damp cloth afterward. Never use abrasive cleaners, steel wool, scouring powder or wax.',
+    },
+    {
+      stepNumber: 6,
+      title: 'On Tile, Scrub Gently and Rinse',
+      instruction: 'Apply your usual nonhazardous tile cleaner at the label dilution, work the mark with a soft to medium bristle brush, then rinse with clean water and wipe the floor dry. If you need a scrub pad, start with the least aggressive one and step up only if needed. Avoid acid-based and solvent-based chemicals on polished porcelain.',
+      proTip: 'Rinsing matters on tile: Daltile notes that leftover cleaner can leave a slick residue that reduces slip resistance.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Prevent New Scuffs',
+      instruction: 'Put stick-on felt protectors under furniture legs, avoid walking on wood floors in high heels or sports cleats, and place mats at entrances to catch grit. On vinyl, use mats labeled non-staining; Mannington warns that rubber-backed, latex-backed and coco fiber mats can stain or damage its rigid vinyl floors.',
+    },
+  ],
+  ifMethodFails: [
+    'If the mark is still there after cleaning and it looks lighter than the floor rather than darker, it is probably wear in the finish, not rubber on top. On hardwood, a matching stain marker or wax stick can hide it; on vinyl, contact the flooring maker, since its care guides rule out sanding and refinishing.',
+    'If isopropyl alcohol does not lift a scuff on vinyl, do not switch to acetone, abrasive powders or steel wool. Check your product\'s care guide for the next approved step or contact the manufacturer.',
+    'If scuffs on a wood floor have spread into a dull, worn traffic lane, the finish itself is wearing through; ask a certified wood flooring professional about recoating.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How do you get black scuff marks off the floor?',
+      answer: 'Sweep first, then buff the mark with a soft dry cloth, since many rubber marks lift with friction alone. If it stays, use the cleaner your floor maker allows: a wood floor cleaner on hardwood, a white cloth lightly dampened with isopropyl alcohol on vinyl that permits it, or your tile cleaner and a soft brush on tile, then rinse.',
+    },
+    {
+      question: 'Does the tennis ball trick work on scuff marks?',
+      answer: 'It is a popular home hack, but none of the floor maker care guides we checked mention it. The low-risk version is the same idea with a clean, soft, dry cloth: buff the mark gently, and move on to your maker\'s approved cleaner if friction alone does not lift it.',
+    },
+    {
+      question: 'Can I use rubbing alcohol on vinyl plank floors?',
+      answer: 'Some makers allow it. Mannington lists isopropyl alcohol on a clean white cloth for scuffs and marks on its rigid vinyl floors. Check your own product\'s care guide, test a hidden spot first, use only a small amount and ventilate the room.',
+    },
+    {
+      question: 'How do you remove scuff marks from hardwood floors?',
+      answer: 'Buff with a soft dry cloth, then spot-clean with a cleaner made for your floor\'s finish. Avoid vinyl or tile cleaners, wet mops and steam mops on wood. If the scuff has worn into the finish, rub a matching stain marker or wax stick over it and buff with a soft cloth.',
+    },
+    {
+      question: 'What causes scuff marks on floors?',
+      answer: 'Most are rubber transferred from shoe heels and soles, along with furniture legs dragged across the floor. Felt protectors under furniture, mats at entrances and keeping high heels and sports cleats off wood floors all reduce new marks.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-scuff-1',
+      title: 'Spring Cleaning: Top Tips for Caring for Wood Floors',
+      publisher: 'National Wood Flooring Association (NWFA)',
+      url: 'https://woodfloors.org/spring-cleaning-top-tips-for-caring-for-wood-floors/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Put stick-on felt protectors under furniture legs to prevent scuffing and scratching, use throw rugs at doorways, avoid sports cleats and high heels on wood floors, do not use vinyl or tile cleaning products on wood, and avoid wet mops and steam mops.',
+    },
+    {
+      id: 'src-scuff-2',
+      title: 'How to Fix Scratches on Hardwood',
+      publisher: 'Bruce Flooring',
+      url: 'https://bruce.com/en-us/resources/how-to-fix-scratches-on-hardwood-bruce-flooring.html',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Scuffs on hardwood can be treated with stain markers, floor wax sticks or a hardwood touch-up kit: rub the marker or wax stick over the scuffed area, then buff with a soft cloth.',
+    },
+    {
+      id: 'src-scuff-3',
+      title: 'ADURA Rigid Care and Maintenance',
+      publisher: 'Mannington Mills',
+      url: 'https://www.mannington.com/residential/adura-luxury-vinyl/adura-r-rigid-care-and-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For scuffs, marks and scratches, wipe with a clean white cloth dampened with lighter fluid, painter\'s naphtha or isopropyl alcohol, which are flammable; do not use abrasive cleaners, steel wool, scouring powder or soap-based detergents; never wax, polish or sand the floor; use non-staining mats and felt protectors, not rubber-backed, latex-backed or coco fiber mats.',
+    },
+    {
+      id: 'src-scuff-4',
+      title: 'How to Care for and Maintain Ceramic and Porcelain Tile',
+      publisher: 'Daltile',
+      url: 'https://www.daltile.com/how-to/how-to-care-for-and-maintain-tile/how-to-care-for-and-maintain-ceramic-and-porcelain-tile',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Use a nonhazardous, low-VOC cleaner per its directions with soft to medium bristle brushes, rinse with clean water and dry the floor, start with a less aggressive pad, test a small area first, and avoid acid-based or solvent-based chemicals on polished porcelain.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Scuff Marks From Floors',
+    description: 'How to remove scuff marks from floors: buff black heel marks with a soft cloth, then use the cleaner your wood, vinyl or tile maker allows. What to avoid.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-scuff-marks-from-floors',
+    indexable: true,
+    focusKeyword: 'how to remove scuff marks from floors',
+  },
+};
+
+export default article;

@@ -1,0 +1,145 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-slime-out-of-carpet',
+  slug: 'how-to-get-slime-out-of-carpet',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get slime out of carpet',
+  subtitle: 'Scrape off the glob, dab a weak dish-soap solution from the edges in, rinse, and blot dry. What to do about the color left behind by tinted slime, and when a dry-cleaning spot remover or a pro is the better call.',
+  excerpt: 'Scrape, dab a weak dish-soap solution, rinse and blot. Then deal with any dye shadow.',
+  quickAnswer: 'Gently scrape up as much slime as you can with a rounded spoon, then pretest and dab a solution of 1/4 teaspoon clear liquid dish detergent in 1 cup of lukewarm water onto the spot with a white cloth, working from the edges toward the center without rubbing. Let it sit a few minutes, blot, and repeat while slime keeps transferring to the cloth. Rinse with water and blot until the carpet is dry. If colored slime leaves a dye shadow, follow with a white vinegar solution (1 cup vinegar to 2 cups water) and rinse again; call a professional cleaner for stubborn color or wool carpet.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'carpet-stains',
+  surfaceSlugs: ['carpet'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-floor-carpet.webp',
+  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige looped carpet, with a glass bowl of soapy water beside it and a pair of muddy hiking boots on the floor in the background',
+  safetyWarnings: [
+    'Pretest every cleaning solution in a hidden spot, such as inside a closet, and check for color transfer or carpet damage before treating the slime.',
+    'Use only clear liquid dish detergent, never stronger than 1/4 teaspoon per cup of water. Laundry detergent can contain optical brighteners and automatic dishwasher detergent can contain bleaching agents, and both can change carpet color.',
+    'If you use a dry-cleaning spot remover, put it on a cloth, never pour it on the carpet, and keep it away from the backing: solvents can damage the latex that holds carpet backings together. Ventilate the room while you work.',
+    'Never mix cleaners, and never combine ammonia or vinegar with chlorine bleach. Do not use bleach on carpet.',
+    'Do not overwet the spot. Rinse with a mist sprayer, and blot after every rinse so water does not soak into the backing and pad.',
+  ],
+  materialsNeeded: [
+    'Rounded spoon or dull butter knife',
+    'Several clean white cloths or white paper towels',
+    'Clear liquid dish detergent (1/4 teaspoon)',
+    'Lukewarm and cold tap water',
+    'White vinegar (for dye from colored slime)',
+    'Mist spray bottle',
+    'Vacuum',
+    'Optional: non-flammable dry-cleaning-type spot remover for sticky residue',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Scrape Up the Excess Slime',
+      instruction: 'Act quickly. Gently scrape up the slime with a rounded spoon, lifting it off the pile rather than pushing it down. Break up any firm pieces and vacuum the loose bits. The less slime you leave in the yarn, the less there is to dissolve.',
+      proTip: 'Work from the outside of the glob toward the middle so you do not drag it across clean carpet.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Pretest Your Cleaning Solution',
+      instruction: 'Mix 1/4 teaspoon of clear liquid dish detergent into 1 cup of lukewarm water. Dab a little on a hidden area of the same carpet, wait, then blot with a white cloth. If color comes off on the cloth or the pile changes, do not use that solution; call a professional cleaner instead.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Dab the Detergent Solution From the Edges In',
+      instruction: 'Put a small amount of the solution on a white cloth, not straight onto the carpet. Dab gently from the outer edge of the spot toward the center without rubbing. Let it sit a few minutes, then blot with a dry cloth.',
+      proTip: 'Never make the mix stronger. Extra soap leaves a sticky residue that attracts dirt and turns the spot gray.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Repeat While Slime Keeps Transferring',
+      instruction: 'Keep dabbing and blotting with the same solution as long as slime or color is still coming off onto the cloth, switching to a clean section each time. Complete removal can take several rounds. When nothing more transfers, move on.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Treat Leftover Dye With a Vinegar Solution',
+      instruction: 'If colored slime left a tint behind, mix 1 cup of white vinegar with 2 cups of water. Apply it the same way, on a cloth from the edges in, let it sit a few minutes and blot. The vinegar solution also helps neutralize detergent left in the pile. Skip vinegar on cotton carpet or rugs.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse Out All Cleaning Agents',
+      instruction: 'Mist the area with lukewarm tap water and blot, then repeat several times. Detergent left in the carpet causes the spot to resoil faster, so rinse more than you think you need to.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Blot Dry and Reset the Pile',
+      instruction: 'Finish with a cold-water rinse, then press dry white cloths or paper towels into the spot until no more moisture comes up. Brush the pile with your fingers so it dries standing up, and vacuum once it is fully dry.',
+    },
+  ],
+  ifMethodFails: [
+    'If a sticky, glue-like residue remains, put a small amount of a non-flammable dry-cleaning-type spot remover on a white cloth and dab from the edges in, never pouring it and never letting it reach the backing. Ventilate, then rinse and blot as in steps 6 and 7.',
+    'If a dye shadow remains on synthetic or blended carpet, the University of Georgia Extension suggests dabbing with 1 part clear non-sudsy ammonia to 4 parts water after a hidden-spot test, then sponging with clear water and blotting. Never use ammonia anywhere near bleach.',
+    'For stubborn color, wool or other natural-fiber carpet, call a professional carpet cleaner. Professionals have stronger solutions and extraction equipment, and wool needs a different dye-removal method.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does vinegar get slime out of carpet?',
+      answer: 'Vinegar is not the main cleaner in the Carpet and Rug Institute charts; a weak dish-detergent solution is. A solution of 1 cup white vinegar to 2 cups water is useful afterwards to neutralize detergent and to work on dye left by colored slime. Pretest it first and rinse with water afterwards.',
+    },
+    {
+      question: 'How do you get dried slime out of carpet?',
+      answer: 'Scrape and break up as much of the dried slime as you can and vacuum the pieces. Then work through the detergent solution, applied on a cloth and left a few minutes before blotting. Dried slime usually needs several rounds, so keep going while it is still transferring to the cloth.',
+    },
+    {
+      question: 'Why is there a colored stain after the slime is gone?',
+      answer: 'Colored slime is tinted with dye, which can stay in the fibers after the glue base is removed. Treat it like a food coloring spill: detergent solution, then a vinegar solution, then rinse. On synthetic carpet a weak ammonia solution is a further option; for wool or stubborn color, call a professional.',
+    },
+    {
+      question: 'Can I use laundry detergent on a slime stain in carpet?',
+      answer: 'No. The Carpet and Rug Institute warns that laundry detergent can contain optical brighteners and automatic dishwasher detergent can contain bleaching agents, either of which can change carpet color. Use clear liquid dish detergent at no more than 1/4 teaspoon per cup of water.',
+    },
+    {
+      question: 'Should I scrub slime out of the carpet?',
+      answer: 'No. Rubbing spreads the slime into clean carpet. Scrape it up, then dab the cleaning solution gently from the edges toward the center without rubbing, and blot.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-slime-1',
+      title: 'Spot Solver: Glue',
+      publisher: 'Carpet and Rug Institute',
+      url: 'https://carpet-rug.org/spot-solver/glue/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For glue, blot and scrape up excess, pretest, apply solutions on a white cloth from the edges toward the center; use a non-flammable dry-cleaning-type solvent without letting it reach the backing, or a detergent solution of 1/4 teaspoon liquid dish detergent per cup of lukewarm water, then rinse with a mist sprayer and blot.',
+    },
+    {
+      id: 'src-slime-2',
+      title: 'Spot Solver: Food Coloring',
+      publisher: 'Carpet and Rug Institute',
+      url: 'https://carpet-rug.org/spot-solver/food-coloring/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For food coloring, scrape semi-solids with a rounded spoon, pretest, dab detergent solution from the edges in and let it sit a few minutes, repeat while color transfers, use a vinegar solution of 1 cup white vinegar to 2 cups water, rinse with cold water and blot dry; call a professional for stubborn spots. Do not use laundry or automatic dishwasher detergent.',
+    },
+    {
+      id: 'src-slime-3',
+      title: 'Remove Stains From Dye (Hair, Food Coloring, Other)',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-dye-hair-food-coloring-other/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'On synthetic or blended carpet, sponge dye with white vinegar, then if needed dab with 1 part clear non-sudsy ammonia to 4 parts water and rinse; wool and natural fibers need a separate method. Pretest every agent, ventilate, and do not use vinegar on cotton or linen.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Slime Out of Carpet (Even Colored Slime)',
+    description: 'How to get slime out of carpet: scrape it up, dab a weak dish-soap solution from the edges in, rinse and blot dry, then lift any dye left by colored slime.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-slime-out-of-carpet',
+    indexable: true,
+    focusKeyword: 'how to get slime out of carpet',
+  },
+};
+
+export default article;

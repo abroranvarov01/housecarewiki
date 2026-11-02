@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-mold-from-bathroom-ceiling',
+  slug: 'how-to-remove-mold-from-bathroom-ceiling',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove mold from a bathroom ceiling',
+  subtitle: 'Goggles on, fan running, detergent and water on a sponge, then dry it completely. When a small patch is a DIY job, when it is not, and why paint only goes on after the mold is gone and the moisture is fixed.',
+  excerpt: 'Protect your eyes, scrub the spots with detergent and water, dry the ceiling, then fix the ventilation that caused them.',
+  quickAnswer: 'Put on sealed goggles, gloves and an N-95 respirator, open a window or run the exhaust fan, and scrub the spots off the painted ceiling with detergent and water or a household cleaner made for mildew, following its label. Dry the ceiling completely afterward. If the moldy area is larger than about 10 square feet, or the drywall is soft or water-stained, the EPA recommends following its remediation guidance or hiring a professional. Mold on a bathroom ceiling almost always means shower steam is not being vented, so run a fan during and after every shower, and never paint over mold.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'mold-mildew',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/guide-shower-mold.webp',
+  heroImageAlt: 'Black mold spots along the caulk line at the base of a glass shower panel on a beige tile ledge, next to a clear spray bottle and a toothbrush',
+  safetyWarnings: [
+    'Overhead cleaning drips onto your face. Wear goggles without ventilation holes, gloves and a properly fitted N-95 respirator, as the EPA recommends for mold cleanup.',
+    'Never mix bleach with ammonia or any other cleaner; the CDC warns the combination creates a toxic gas. Open windows and doors or run the exhaust fan while you work.',
+    'If you use bleach, the CDC says to use no more than 1 cup of household laundry bleach per gallon of water and to follow the product label.',
+    'Do not paint or caulk over mold. The EPA says paint applied over moldy surfaces is likely to peel, and Benjamin Moore notes that mildew will grow through new paint.',
+    'If the moldy area is more than about 10 square feet, or it came from a roof or plumbing leak, follow the EPA\'s mold remediation guidance or hire an experienced professional.',
+  ],
+  materialsNeeded: [
+    'Sealed goggles (no ventilation holes)',
+    'N-95 respirator and rubber gloves',
+    'Sturdy step stool or ladder',
+    'Liquid detergent or a household cleaner labeled for mildew',
+    'Bucket of warm water',
+    'Soft sponge or soft-bristle brush',
+    'Clean cloths or towels for rinsing and drying',
+    'Drop cloth or old towel to protect the floor and tub',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Confirm It Is Mildew, Not Dirt',
+      instruction: 'Benjamin Moore suggests dabbing a few drops of household bleach on one spot. Mildew lightens or disappears within a few minutes, while dirt stays the same. Do this test only with the room ventilated and with nothing else applied to the spot.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Measure the Patch and Check the Drywall',
+      instruction: 'If the moldy area is smaller than about 10 square feet, the EPA says you can usually handle it yourself. Press gently on the ceiling. If it is soft, sagging, stained by a leak, or the mold covers a larger area, stop and follow the EPA\'s remediation guidance or call a professional; porous materials that are moldy may have to be removed.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Ventilate and Put On Your Gear',
+      instruction: 'Open the window and door or turn on the exhaust fan. Cover the floor and tub with a drop cloth. Put on goggles without vent holes, gloves and an N-95 respirator before you climb up, since cleaning overhead sends drips and debris toward your face.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Scrub with Detergent and Water',
+      instruction: 'Mix detergent into warm water, wring a soft sponge or brush until damp rather than dripping, and scrub the spots with gentle pressure. The EPA\'s method for hard surfaces is detergent and water. If you use a cleaner made to kill mildew instead, follow its label exactly, including any dwell time.',
+      proTip: 'Work in small sections and keep the sponge just damp; a soaking-wet sponge runs down your arm and can soften painted drywall.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Wipe Clean and Dry Completely',
+      instruction: 'Wipe the area with a cloth dampened in clean water to remove cleaner residue, then dry it with a towel and leave the fan running or the window open until the ceiling is fully dry. The EPA stresses drying completely after cleaning.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Fix the Moisture That Caused It',
+      instruction: 'Bathroom ceiling mold usually comes from shower steam with nowhere to go. Use an exhaust fan that vents outdoors, run it or open a window while showering, and keep indoor humidity below 60 percent, ideally 30 to 50 percent, as the EPA recommends. If the fan is weak or noisy, clean or service it.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Repaint Only After the Surface Is Clean and Dry',
+      instruction: 'If the paint is stained or you want added protection, repaint only once the mold is gone and the ceiling is dry. Benjamin Moore recommends priming and using a high-quality mildew-resistant paint in bathrooms. Mildew-resistant paint helps prevent regrowth but does not fix a ventilation problem.',
+    },
+  ],
+  ifMethodFails: [
+    'If spots return within weeks, the moisture source is not fixed. Check that the exhaust fan actually vents outdoors and is strong enough, and run it during and after every shower.',
+    'If stains remain after cleaning but the spots no longer smear or spread, the paint may be discolored. Let the ceiling dry fully, then prime and repaint with a mildew-resistant paint.',
+    'If the mold keeps coming back through the paint, the drywall itself may be affected. Porous materials can hold mold in their crevices, so have the area assessed by a professional.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can I use bleach to clean mold off a bathroom ceiling?',
+      answer: 'You can, but it is not required. The EPA says detergent and water work on hard surfaces. If you use bleach, the CDC says to use no more than 1 cup per gallon of water, ventilate, and never mix it with ammonia or other cleaners. Benjamin Moore suggests a stronger 3 parts water to 1 part bleach wash before repainting; follow the label of whatever product you use.',
+    },
+    {
+      question: 'Why does mold keep growing on my bathroom ceiling?',
+      answer: 'Warm, moist air from showers rises and condenses on the ceiling. Without a fan venting it outdoors, the ceiling stays damp long enough for mold to grow. The EPA says recurring bathroom mold can often be controlled by running a fan or opening a window and cleaning more often.',
+    },
+    {
+      question: 'Can you just paint over mold on a bathroom ceiling?',
+      answer: 'No. The EPA says not to paint or caulk moldy surfaces because the paint is likely to peel, and Benjamin Moore notes that mildew will grow through new paint. Clean the mold off, let the ceiling dry completely, then prime and paint.',
+    },
+    {
+      question: 'Is mildew-resistant paint worth it for a bathroom ceiling?',
+      answer: 'It helps. Benjamin Moore recommends a high-quality mildew-resistant paint for bathrooms. It reduces regrowth on the paint film, but it only works alongside good ventilation and a clean, dry surface before painting.',
+    },
+    {
+      question: 'When should I call a professional for bathroom ceiling mold?',
+      answer: 'The EPA suggests professional help or its remediation guidance when the moldy area is larger than about 10 square feet, when there was significant water damage, or when you have health concerns. A soft or sagging ceiling also points to a leak that needs repair.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-ceilmold-1',
+      title: 'A Brief Guide to Mold, Moisture and Your Home',
+      publisher: 'U.S. Environmental Protection Agency',
+      url: 'https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Areas under about 10 square feet can usually be cleaned yourself; scrub mold off hard surfaces with detergent and water and dry completely; do not paint or caulk moldy surfaces; wear goggles without ventilation holes, gloves and an N-95 respirator; never mix bleach with ammonia; keep indoor humidity below 60 percent, ideally 30 to 50 percent.',
+    },
+    {
+      id: 'src-ceilmold-2',
+      title: 'Mold Cleanup in Your Home',
+      publisher: 'U.S. Environmental Protection Agency',
+      url: 'https://www.epa.gov/mold/mold-cleanup-your-home',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Porous materials such as ceiling tiles may have to be thrown away if moldy; recurring bathroom mold can often be controlled by running a fan or opening a window and cleaning more often; paint applied over moldy surfaces is likely to peel.',
+    },
+    {
+      id: 'src-ceilmold-3',
+      title: 'About Mold and Your Health',
+      publisher: 'Centers for Disease Control and Prevention',
+      url: 'https://www.cdc.gov/mold-health/about/index.html',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Hard surfaces can be cleaned with household products, soap and water, or a bleach solution of no more than 1 cup of bleach per gallon of water; never mix bleach with ammonia or other cleaners; open windows and doors; use bathroom exhaust fans that vent outdoors.',
+    },
+    {
+      id: 'src-ceilmold-4',
+      title: 'How to Prevent and Remove Mildew',
+      publisher: 'Benjamin Moore',
+      url: 'https://www.benjaminmoore.com/en-us/contractors/tips-and-solutions/how-to-prevent-and-remove-mildew',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'A few drops of bleach lighten mildew within minutes but not dirt; wash with 3 parts water to 1 part bleach or a cleanser designed to kill mildew, scrub with a soft brush and rinse; mildew will grow through new paint; prime and use a high-quality mildew-resistant paint and exhaust fans in bathrooms.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Mold from a Bathroom Ceiling',
+    description: 'How to remove mold from a bathroom ceiling safely: goggles and N-95, detergent and water, dry it fully, fix the ventilation, and never paint over mold first.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-mold-from-bathroom-ceiling',
+    indexable: true,
+    focusKeyword: 'how to remove mold from bathroom ceiling',
+  },
+};
+
+export default article;

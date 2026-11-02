@@ -202,13 +202,17 @@ export default function BestProductsPage({
   const nextIndex = () => String(++sectionCount).padStart(2, '0');
 
   const path = `/best/${article.slug}`;
+  const reviewer = store.authors.find((au) => au.slug === article.reviewedBy?.authorSlug);
   const schema = graph(
     breadcrumbSchema([
       { name: 'Home', path: '/' },
       { name: 'Reviews', path: '/products' },
       { name: article.title, path },
     ]),
-    articleSchema(article, author, path),
+    articleSchema(article, author, path, {
+      reviewer,
+      roomName: store.rooms.find((r) => r.slug === article.roomSlug)?.name,
+    }),
     itemListSchema(
       article.title,
       recommendedProducts.map((p) => ({ name: p.name, path: `/products/${p.slug}` })),
@@ -243,6 +247,7 @@ export default function BestProductsPage({
               updatedAt={article.updatedAt}
               publishedAt={article.publishedAt}
               readingTime={article.readingTime}
+              reviewer={reviewer && article.reviewedBy ? { author: reviewer, reviewedAt: article.reviewedBy.reviewedAt } : undefined}
               className="mt-5"
             />
             <div className="mt-4 border-l-2 border-honey-deep pl-3">

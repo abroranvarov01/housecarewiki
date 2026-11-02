@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-makeup-out-of-carpet',
+  slug: 'how-to-get-makeup-out-of-carpet',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get makeup out of carpet',
+  subtitle: 'Vacuum loose powder, scrape up lipstick and foundation, then a dry-cleaning solvent on a cloth followed by a weak dish-detergent solution. What changes for lipstick and mascara, and the solvent rules that protect the carpet backing.',
+  excerpt: 'Lift loose product, dab on a dry-cleaning solvent, then weak detergent, rinse and dry.',
+  quickAnswer: 'Vacuum up loose powder and gently scrape up lipstick, foundation or mascara with a rounded spoon before adding any liquid. Pretest a non-flammable dry-cleaning solvent on a hidden spot, then dab it on with a white cloth, never pouring it on the carpet, and blot from the edges toward the center while makeup keeps transferring. Follow with 1/4 teaspoon of clear dish detergent in 1 cup of lukewarm water, then rinse with plain water and blot dry. If a stain remains, call a professional carpet cleaner.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'carpet-stains',
+  surfaceSlugs: ['carpet'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-floor-carpet.webp',
+  heroImageAlt: 'Hand pressing a white terry towel onto a brown dirt stain on a beige loop-pile carpet, next to a glass bowl of soapy water, with muddy boots by the door behind',
+  safetyWarnings: [
+    'Never pour solvent directly onto the carpet or let it reach the backing. The Carpet and Rug Institute warns it can damage the latex that holds the primary and secondary backings together. Always apply it with a dampened white cloth.',
+    'Ventilate the room when using dry-cleaning solvents, keep them away from open flames, and wear rubber gloves. Choose a non-flammable spot remover where possible.',
+    'Pretest each solvent and solution on a hidden area for color transfer or fiber damage first. Do not use oil-based solvents on antique or fine Oriental rugs, whose dyes may not stand up to them.',
+    'Never use laundry detergent or automatic dishwasher detergent on carpet, and never make the dish-detergent solution stronger than 1/4 teaspoon per cup of water. Never mix chlorine bleach with ammonia or vinegar.',
+  ],
+  materialsNeeded: [
+    'Vacuum with a hose attachment (for powder)',
+    'Rounded spoon or dull knife',
+    'Several clean white cloths or white paper towels',
+    'Non-flammable dry-cleaning solvent or spot remover (follow its label)',
+    'Clear liquid hand dish detergent (1/4 teaspoon) and lukewarm water',
+    'Mist-type spray bottle for rinsing',
+    'Rubber gloves',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Remove Loose Product Before Adding Liquid',
+      instruction: 'Act quickly, because delay can turn makeup into a permanent stain. For pressed or loose powder, eyeshadow or blush, break up any clumps and vacuum the area with a hose attachment. For lipstick, foundation or mascara, gently scrape up the excess with a rounded spoon or dull knife, lifting rather than pushing it into the pile, and blot any liquid with a dry white cloth.',
+      proTip: 'Lift straight up instead of wiping sideways. Smearing oily makeup spreads it into clean fibers and makes the stain larger.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Pretest the Solvent and the Detergent',
+      instruction: 'Dab a little of each product you plan to use on a hidden spot, such as inside a closet, wait a few minutes and blot with a white cloth. If color comes off or the fibers look different, choose another solution.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Dab On a Dry-Cleaning Solvent',
+      instruction: 'For foundation, lipstick, mascara and other oily or waxy makeup, dampen a clean white cloth with a non-flammable dry-cleaning solvent or spot remover. Work it gently into the stain from the edges toward the center, do not rub, and do not soak the carpet. Let it sit a few minutes, then blot.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Repeat While Makeup Keeps Transferring',
+      instruction: 'Change to a clean area of the cloth each time it picks up color and keep using the solvent as long as makeup is still moving onto the cloth. Removal can take several rounds. When nothing more transfers, move on to the detergent step.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Follow With a Weak Dish-Detergent Solution',
+      instruction: 'Mix 1/4 teaspoon of clear liquid dish detergent into 1 cup of lukewarm water. Dab it onto the area with a white cloth, working from the edges inward, let it sit a few minutes and blot. Repeat while any residue is still coming up.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse With Clean Water',
+      instruction: 'Mist the spot with lukewarm or cold tap water and blot with paper towels after each rinse. Repeat several times. Solvent and detergent left in the pile attract soil and can make the spot reappear darker than the carpet around it.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Blot Dry and Brush the Pile',
+      instruction: 'Blot with dry white cloths until no more moisture comes up, then brush the pile upright with your fingers. A dry absorbent carpet cleaning compound can be used instead to shorten drying time; follow its label.',
+    },
+  ],
+  ifMethodFails: [
+    'For lipstick that still shows color after the solvent and detergent steps, the Carpet and Rug Institute lists a white-vinegar solution (1 cup white vinegar to 2 cups water) next. Dab, blot, then rinse well with water.',
+    'Some carpet spot removal kits are designed for common household stains. Follow the directions exactly, and if the kit has a separate stain-resist solution, do not use it until the makeup is fully removed, or it may set a permanent stain.',
+    'If a stain persists, or the rug is wool, antique or a fine Oriental, stop and call a professional carpet cleaner. Professionals have more aggressive solutions and equipment for stubborn spots.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How do you get foundation out of carpet?',
+      answer: 'Scrape up the excess with a rounded spoon, then dab a non-flammable dry-cleaning solvent onto the spot with a white cloth and blot from the edges toward the center. Follow with a weak dish-detergent solution, rinse with water and blot dry.',
+    },
+    {
+      question: 'How do you get powder makeup out of carpet?',
+      answer: 'Keep it dry at first. Break up any clumps and vacuum the loose powder with a hose attachment before you add any liquid. If a tinted mark remains, treat it like other makeup: a solvent on a cloth, then a weak dish-detergent solution, a water rinse and a thorough blot.',
+    },
+    {
+      question: 'Can I use nail polish remover to get lipstick out of carpet?',
+      answer: 'The Carpet and Rug Institute lists nail polish remover as an option for lipstick, with the same precautions as a dry-cleaning solvent: pretest it in a hidden spot, apply it with a cloth rather than pouring it, and keep it away from the backing. Rinse thoroughly afterward, since some removers leave residue that causes rapid soiling.',
+    },
+    {
+      question: 'How do I get mascara out of carpet?',
+      answer: 'Blot or gently scrape up any wet mascara first, then dab a non-flammable dry-cleaning solvent on with a white cloth; the Carpet and Rug Institute lists solvent as the first solution for mascara. Follow with 1/4 teaspoon of dish detergent in 1 cup of lukewarm water, rinse with clean water and blot dry.',
+    },
+    {
+      question: 'Is it safe to use a solvent on carpet?',
+      answer: 'Yes, if you use it sparingly and correctly. Apply a non-flammable dry-cleaning solvent with a cloth, never pour it on, and do not let it soak into the backing or pad, where it can dissolve the latex adhesive. Ventilate the room, keep flames away and wear rubber gloves.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-makeup-carpet-1',
+      title: 'Makeup - Spot Solver',
+      publisher: 'The Carpet and Rug Institute (CRI)',
+      url: 'https://carpet-rug.org/spot-solver/makeup/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Act quickly, blot liquids, scrape semi-solids with a rounded spoon and break up solids and vacuum; pretest solutions, work from the edges to the center without rubbing, rinse with cold water and blot dry; lists a 1/4 teaspoon dish detergent per cup of lukewarm water solution (never laundry or automatic dishwasher detergent), a non-flammable dry-cleaning solvent applied without pouring it or letting it reach the backing, and a professional cleaner for stubborn spills.',
+    },
+    {
+      id: 'src-makeup-carpet-2',
+      title: 'Lipstick - Spot Solver',
+      publisher: 'The Carpet and Rug Institute (CRI)',
+      url: 'https://carpet-rug.org/spot-solver/lipstick/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For lipstick, lists nail polish remover (with dry-cleaning solvent precautions and thorough rinsing), a dry-cleaning solvent, the 1/4 teaspoon per cup detergent solution, a 1 cup white vinegar to 2 cups water solution, a spot removal kit whose stain-resist part must not be used before the spill is fully removed, an ammonia solution, and a professional cleaner.',
+    },
+    {
+      id: 'src-makeup-carpet-3',
+      title: 'Mascara - Spot Solver',
+      publisher: 'The Carpet and Rug Institute (CRI)',
+      url: 'https://carpet-rug.org/spot-solver/mascara/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For mascara, lists a non-flammable dry-cleaning solvent first, then the 1/4 teaspoon per cup dish detergent solution, a lukewarm water rinse, a spot removal kit and a professional cleaner, and warns that solvent poured on the carpet can damage the backing latex.',
+    },
+    {
+      id: 'src-makeup-carpet-4',
+      title: 'Remove Stains From Cosmetics/Makeup/Sunscreen',
+      publisher: 'University of Georgia Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-cosmetics-makeup-sunscreen/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For face powder, liquid foundation, mascara and similar cosmetics on carpet, sponge with a cloth dampened in dry-cleaning solvent without soaking the carpet, then use a neutral detergent solution, sponge with clean water and blot dry; pretest, ventilate, avoid open flames, wear rubber gloves, and do not use oil-based solvents on antique or fine Oriental rugs.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Makeup Out of Carpet (Foundation, Lipstick)',
+    description: 'Get makeup out of carpet: vacuum loose powder, scrape up lipstick or foundation, dab on a dry-cleaning solvent, then a weak dish-detergent mix. Rinse and blot.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-makeup-out-of-carpet',
+    indexable: true,
+    focusKeyword: 'how to get makeup out of carpet',
+  },
+};
+
+export default article;

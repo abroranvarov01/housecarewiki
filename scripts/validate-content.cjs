@@ -33,6 +33,7 @@ const warn = (where, msg) => warnings.push(`${where}: ${msg}`);
 const productIds = new Set(data.PRODUCTS.map((p) => p.id));
 const authorSlugs = new Set(data.AUTHORS.map((a) => a.slug));
 const roomSlugs = new Set(data.ROOM_CATEGORIES.map((r) => r.slug));
+const surfaceSlugs = new Set(data.SURFACE_GUIDES.map((s) => s.slug));
 
 function localImageExists(src) {
   return !src.startsWith('/') || fs.existsSync(path.join(PUBLIC, src));
@@ -63,7 +64,22 @@ for (const a of data.ARTICLES) {
   if (!a.faqs || a.faqs.length === 0) err(where, 'needs at least one FAQ');
   if (!a.sources || a.sources.length === 0) err(where, 'needs at least one primary source');
   if (!authorSlugs.has(a.authorSlug)) err(where, `unknown author "${a.authorSlug}"`);
+  if (a.reviewedBy) {
+    if (!authorSlugs.has(a.reviewedBy.authorSlug)) err(where, `unknown reviewer "${a.reviewedBy.authorSlug}"`);
+    if (!a.reviewedBy.reviewedAt) err(where, 'reviewedBy needs reviewedAt');
+  }
+  if (a.seo && a.seo.canonical && !a.seo.canonical.endsWith(`/${a.routeType}/${a.slug}`)) {
+    warn(where, `seo.canonical "${a.seo.canonical}" does not match /${a.routeType}/${a.slug}`);
+  }
   if (!roomSlugs.has(a.roomSlug)) err(where, `unknown room "${a.roomSlug}"`);
+  const room = data.ROOM_CATEGORIES.find((r) => r.slug === a.roomSlug);
+  if (room && !room.subCategories.some((s) => s.id === a.subCategory)) err(where, `unknown subCategory "${a.subCategory}" in ${a.roomSlug}`);
+  for (const s of a.surfaceSlugs || []) if (!surfaceSlugs.has(s)) err(where, `unknown surface "${s}"`);
+  // A source must be a specific page that backs a claim, not a publisher's homepage.
+  for (const s of a.sources || []) {
+    if (/^https?:\/\/[^/]+\/?$/.test(s.url)) warn(where, `source "${s.id}" points at a homepage: ${s.url}`);
+    if (!s.verifiedClaim) err(where, `source "${s.id}" has no verifiedClaim`);
+  }
   if (!localImageExists(a.heroImage)) err(where, `hero image not found: ${a.heroImage}`);
   for (const id of a.recommendedProductIds || []) if (!productIds.has(id)) err(where, `unknown product "${id}"`);
   if (a.topPickProductId && !productIds.has(a.topPickProductId)) err(where, `unknown top pick "${a.topPickProductId}"`);

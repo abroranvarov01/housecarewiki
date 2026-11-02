@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-bathroom-exhaust-fan',
+  slug: 'how-to-clean-a-bathroom-exhaust-fan',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a bathroom exhaust fan',
+  subtitle: 'Power off at the breaker, drop the grille, wash it in dish soap, and vacuum the blower and housing without getting the motor wet. Plus how long to run the fan after a shower so it actually keeps mold away.',
+  excerpt: 'Switch off the breaker, wash the grille with mild detergent, vacuum the fan and housing, and never soak the motor.',
+  quickAnswer: 'Turn the power off at the breaker panel, pull the grille down, and squeeze its spring clips to release it. Wash the grille in warm water with mild dish soap, then dry it with a soft cloth. While it dries, gently vacuum the fan blades, motor and inside of the housing with a brush attachment; metal and electrical parts should never be immersed in water. Reinstall the grille, restore power, and run the fan during showers and for at least 15 minutes after.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tools',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-bathroom.webp',
+  heroImageAlt: 'Sunlit bathroom with a round wood-framed mirror, white vessel sink and spray bottle on a wooden vanity, towels on a ladder rack, and a glass shower with water streaks',
+  safetyWarnings: [
+    'Switch the power off at the service panel before cleaning. Broan-NuTone says to lock the panel or tag it with a warning so no one turns the fan back on while you work.',
+    'Never immerse the motor, fan or any metal or electrical parts in water, and do not spray cleaner into the housing.',
+    'Do not use abrasive cloths, steel wool pads or scouring powders on the grille, as Broan-NuTone warns.',
+    'Do not oil the motor. Broan-NuTone says its motors are permanently lubricated and never need oiling.',
+    'Work from a stable step stool or ladder, and wear eye protection if you are vacuuming dust directly overhead.',
+  ],
+  materialsNeeded: [
+    'Access to your breaker panel',
+    'Step stool or ladder',
+    'Vacuum with a dusting brush attachment',
+    'Mild dishwashing liquid and a sink or bucket of warm water',
+    'Soft cloths (one damp, one dry)',
+    'Screwdriver, if your model\'s grille or blower is screwed in',
+    'Your fan\'s installation or use-and-care manual',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Turn the Power Off at the Breaker',
+      instruction: 'Flip the breaker for the bathroom fan circuit, not just the wall switch, and lock or tag the panel so nobody switches it back on. Broan-NuTone lists this as the first step before any servicing or cleaning.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Remove the Grille',
+      instruction: 'Pull the grille gently down from the ceiling. On many Broan-NuTone models it hangs on two metal spring clips; squeeze the springs together and slide them out of their slots. Some models use screws instead, so check your manual.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wash and Dry the Grille',
+      instruction: 'Wash the grille in warm water with a mild detergent such as dishwashing liquid, then dry it with a soft cloth. Panasonic suggests vacuuming loose dust off the cover first. Skip abrasive pads and scouring powder, which can scratch the finish.',
+      proTip: 'Let the grille dry completely while you clean the housing so no water drips back into the fan when you reinstall it.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Vacuum the Blower, Motor and Housing',
+      instruction: 'With a dusting brush attachment, gently vacuum the fan blades or blower wheel, the motor and the inside of the housing. Dust packed on the blower wheel reduces airflow and is a common cause of a loud fan, according to Broan-NuTone.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Wipe Stubborn Dust Without Wetting the Motor',
+      instruction: 'If grime remains on the blades or housing after vacuuming, Panasonic suggests wiping them with a damp cloth while the power is off. Wring the cloth out well, never pour or spray water into the housing, and never immerse metal or electrical parts.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Check for Loose Parts and Reinstall',
+      instruction: 'Tighten any loose grille or housing screws and make sure the mounting clips are secure, since Broan-NuTone notes loose parts cause rattling. Squeeze the grille springs, insert them into their slots and push the grille up flush with the ceiling. Restore power and switch the fan on.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Test the Airflow and Run It Long Enough',
+      instruction: 'Hold a single sheet of tissue near the running grille; Panasonic says if it does not stay against the grille, check the duct and the exterior vent flap for blockages. Going forward, ENERGY STAR recommends running the fan during and 15 minutes after showers and baths to control humidity.',
+    },
+  ],
+  ifMethodFails: [
+    'If the fan is still loud, grinding or squealing after cleaning, Broan-NuTone says the motor may need replacement. Its manuals recommend replacing the motor with the exact service motor and the impeller at the same time.',
+    'If airflow is still weak after cleaning, check that the exterior vent flap opens freely and is not blocked by lint, nests or plants, which Panasonic notes can push humid air back inside.',
+    'If the fan is old, noisy and moves little air, consider replacing it, and look for an ENERGY STAR certified ventilation fan when you shop.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How often should you clean a bathroom exhaust fan?',
+      answer: 'Panasonic recommends inspecting and cleaning the grille every 6 to 12 months. Clean it sooner if you see dust on the grille, the fan gets louder, or the mirror stays fogged longer than it used to.',
+    },
+    {
+      question: 'Can I clean a bathroom fan without turning off the breaker?',
+      answer: 'It is not recommended. Broan-NuTone says to switch power off at the service panel and lock or tag it before servicing or cleaning, because a wall switch can be flipped on by someone else while your hands are near the blower.',
+    },
+    {
+      question: 'How long should you run a bathroom fan after a shower?',
+      answer: 'ENERGY STAR recommends running it during and 15 minutes after showers and baths. Panasonic suggests at least 20 minutes afterward. If the mirror is still fogged, keep it running a little longer.',
+    },
+    {
+      question: 'Why is my bathroom exhaust fan so loud?',
+      answer: 'Broan-NuTone lists dust buildup, loose components, worn motor bearings and an aging motor as the usual causes. Cleaning the grille, blower wheel and motor housing and tightening loose screws often helps; if not, the motor may need replacing.',
+    },
+    {
+      question: 'Does a dirty bathroom fan cause mold?',
+      answer: 'A clogged fan moves less air, so steam lingers. Panasonic notes that lingering moisture invites mold and mildew, and that bath fans help keep relative humidity below the 60 percent level where they thrive.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-bathfan-1',
+      title: 'Models 670, 671, 671MX, 688 and 689 Ceiling/Wall Fans Installation Guide',
+      publisher: 'Broan-NuTone',
+      url: 'https://broan-nutone.com/getmedia/5de83f3d-e96a-4f2b-b52c-717e5f9009fc/Installation-Guide-670-671-688-689.pdf?ext=.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Switch power off at the service panel and lock or tag it before servicing or cleaning; clean the grille with mild detergent such as dishwashing liquid and dry with a soft cloth, without abrasive cloths, steel wool or scouring powders; gently vacuum the fan, motor and housing; never immerse metal or electrical parts in water; the motor is permanently lubricated and never needs oiling.',
+    },
+    {
+      id: 'src-bathfan-2',
+      title: 'Bathroom Exhaust Fan Making Noise? Here\'s What May Be Causing It',
+      publisher: 'Broan-NuTone',
+      url: 'https://broan-nutone.com/en-us/home/learn/my-bath-fan-sounds-like-a-lawnmower',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Dust buildup, loose components and worn motors cause noisy bath fans; vacuum the grille, blower wheel and motor housing and tighten loose screws and mounting clips; if cleaning does not resolve the noise, the motor may need replacement.',
+    },
+    {
+      id: 'src-bathfan-3',
+      title: 'How to Choose the Best Bathroom Exhaust Fan for Your Home',
+      publisher: 'Panasonic',
+      url: 'https://iaq.na.panasonic.com/healthy-living/how-to-choose-the-best-bathroom-exhaust-fan-for-your-home',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Inspect and clean the grille every 6 to 12 months; vacuum the cover and wash it with mild soap; wipe the motor housing and blades with a damp cloth while the power is off; run the fan during showers and at least 20 minutes after; check the exterior vent flap and use a tissue test for airflow.',
+    },
+    {
+      id: 'src-bathfan-4',
+      title: 'Low- to No-Cost Tips for Saving Energy at Home',
+      publisher: 'ENERGY STAR (U.S. EPA)',
+      url: 'https://www.energystar.gov/products/recent_program_updates/low-no-cost-tips',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Run the bathroom ventilating fan during and 15 minutes after showers and baths to control humidity and avoid moisture problems.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Bathroom Exhaust Fan Safely',
+    description: 'How to clean a bathroom exhaust fan: power off at the breaker, wash the grille in dish soap, vacuum the motor and housing dry, and run it 15 min after showers.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-bathroom-exhaust-fan',
+    indexable: true,
+    focusKeyword: 'how to clean a bathroom exhaust fan',
+  },
+};
+
+export default article;

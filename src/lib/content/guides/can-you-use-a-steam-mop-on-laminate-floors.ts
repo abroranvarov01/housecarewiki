@@ -1,0 +1,150 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-can-you-use-a-steam-mop-on-laminate-floors',
+  slug: 'can-you-use-a-steam-mop-on-laminate-floors',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'Can you use a steam mop on laminate floors?',
+  subtitle: 'Mohawk and Shaw say never, and Pergo\'s general answer is no. Why steam gets into laminate seams, the few waterproof lines whose care sheets allow it, and how to clean laminate safely instead.',
+  excerpt: 'Usually no. Most laminate care guides forbid steam; a few waterproof lines allow it with strict conditions.',
+  quickAnswer: 'No, not on most laminate: Mohawk and Shaw tell owners never to use steam cleaners on their laminate, and Pergo\'s general answer is no because steam forces moisture into the joints and between the layers of the planks. The only exception is a floor whose own care sheet explicitly allows steam, such as Pergo TimberCraft Elite with WetProtect, and then only on the lowest or laminate setting, through a microfiber pad, along the length of the planks. For every other laminate, vacuum or dust mop, then wipe with a well wrung out cloth or mop and dry the floor right away.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'hardwood-laminate',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-floor-carpet.webp',
+  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  safetyWarnings: [
+    'Do not use a steam mop or steam cleaner unless the care guide for your exact laminate collection says it is allowed. Mohawk\'s laminate instructions say never to use steam cleaners, and Shaw warns that excess water can cause warping and irreparable damage.',
+    'Never pour liquid directly on laminate or use a wet mop that leaves puddles. Apply water or cleaner to the cloth, wring it well, and wipe the floor dry immediately instead of letting it air-dry.',
+    'Do not use soap, detergents, wax, polish or oil soaps unless your manufacturer names them. Mohawk and Pergo both list them as products to avoid; Shaw, by contrast, gives a mild dish-soap recipe. Follow the brand of floor you own.',
+    'Wipe up bleach, strong acids, hair dye and similar chemicals at once. Mohawk warns these damage laminate if left on it for more than 10 minutes. Never mix bleach with ammonia or vinegar, and ventilate the room when you spot-clean with ammonia, alcohol or acetone.',
+  ],
+  materialsNeeded: [
+    'Dust mop, dry microfiber mop, or vacuum with a soft bristle brush (no beater bar)',
+    'Microfiber mop or soft cloth that can be wrung out until barely damp',
+    'Plain water or the laminate cleaner your floor\'s manufacturer recommends',
+    'Clean, dry white cotton or microfiber cloth for drying',
+    'Acetone (nail polish remover) or denatured alcohol for stubborn marks',
+    'Blunt plastic or rubber scraper for wax and gum',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Find the Care Sheet for Your Exact Floor',
+      instruction: 'Look up the brand and collection name on your receipt, the box label or the manufacturer\'s website, and read its care and warranty documents before you clean. Rules differ by line: Mohawk forbids steam on its laminate and recommends dry maintenance only for its bevel-edged products, Shaw says not to use a steam mop, and Pergo allows steam only on lines such as TimberCraft Elite with WetProtect. If you cannot identify the floor, treat it as no steam.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Dry Clean First',
+      instruction: 'Remove grit with a dust mop, a dry microfiber mop or a vacuum with a soft bristle brush. Avoid vacuum heads with beater bars or spinning brushes, which Mohawk warns can damage laminate, and check that the vacuum\'s wheels are free of embedded grit. For most laminate this is all the routine cleaning the floor needs.',
+      proTip: 'Pergo suggests vacuuming as often as you can and damp mopping about once a week rather than steaming.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Damp Mop with a Well Wrung Out Cloth',
+      instruction: 'Put plain water or your manufacturer\'s laminate cleaner on the cloth or mop pad, never directly on the floor, and wring it until it is only slightly damp. Wipe the floor in sections. If your floor is a Mohawk bevel-edged product, skip this step and keep to dry maintenance.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wipe the Floor Dry Immediately',
+      instruction: 'Follow right behind the damp mop with a clean, dry white cotton or microfiber cloth until no moisture is visible. Mohawk says not to let laminate air-dry. Any standing water left near the seams is what laminate makers warn against.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Spot-Treat Stubborn Marks Without Water',
+      instruction: 'For ink, nail polish, crayon, shoe polish or marker, put a little acetone (nail polish remover) or denatured alcohol on a soft cloth and rub the spot gently, with a window open. Pergo notes not to use acetone on wall base or quarter round. For candle wax or chewing gum, let it harden and scrape it off carefully with a blunt plastic or rubber scraper.',
+    },
+    {
+      stepNumber: 6,
+      title: 'If Your Care Sheet Allows Steam, Follow It Exactly',
+      instruction: 'Only on a floor whose care sheet permits steam, such as Pergo TimberCraft Elite with WetProtect: use a residential steam mop with the steam going into a microfiber pad, never directly onto the floor, set it to the laminate setting or the lowest setting, and move it along the length of the planks only. Pergo\'s general advice is not to linger over one spot or over the joints.',
+    },
+    {
+      stepNumber: 7,
+      title: 'If You Already Steamed, Dry It and Check the Seams',
+      instruction: 'Wipe up any moisture right away with a dry cloth and let the room air out. Over the next days, look along the joints for raised edges, swelling or fading. Pergo\'s care sheet recommends color-matched filler for minor surface damage and a professional plank replacement when the damaged area is larger than 1/4 inch. Contact the manufacturer with your product name before attempting repairs if you plan a warranty claim.',
+    },
+  ],
+  ifMethodFails: [
+    'If the floor looks streaky or dull after damp mopping, residue from soap or an unapproved cleaner is the likely cause. Wipe again with a cloth barely dampened in plain water and dry immediately, then stick to the cleaner your manufacturer names.',
+    'If edges have already swollen or lifted after steaming or a spill, the core has absorbed water and cleaning will not reverse it. Stop wet cleaning that area and contact the manufacturer or a flooring installer about replacing the affected planks.',
+    'If you want the convenience of steam, look for a laminate collection whose care sheet explicitly allows a steam mop, and keep that document with your warranty papers.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does using a steam mop void a laminate floor warranty?',
+      answer: 'The care sheets we read do not quote warranty terms, but they set the care your floor is meant to get, and Mohawk and Shaw both tell owners not to use steam on laminate. Read the warranty for your exact product before steaming; if the care guide says no steam, using one puts you outside the manufacturer\'s instructions.',
+    },
+    {
+      question: 'Can you steam mop waterproof laminate?',
+      answer: 'Only if the care sheet for that specific line says so. Pergo\'s TimberCraft Elite with WetProtect care sheet allows a residential steam mop on the laminate or lowest setting, with steam applied through a microfiber pad and moved along the length of the planks. Water-resistant marketing alone is not permission to steam.',
+    },
+    {
+      question: 'Why is steam bad for laminate floors?',
+      answer: 'Pergo explains that steam forces moisture down into the joints and between the layers of the floor, and that frequent wetting can fade the surface. Shaw warns that excess water can cause warping and other irreparable damage. Mohawk laminate is built on HDF board, and Mohawk still says to remove excess water immediately.',
+    },
+    {
+      question: 'What is the best way to mop laminate floors?',
+      answer: 'Vacuum or dust mop first, then wipe with a cloth or mop wrung out until barely damp, using plain water or your manufacturer\'s laminate cleaner applied to the cloth, not the floor. Dry the floor right away with a clean cloth. Pergo suggests vacuuming often and damp mopping about once a week.',
+    },
+    {
+      question: 'Can you use vinegar on laminate floors?',
+      answer: 'It depends on the brand. Mohawk lists 3 parts water to 1 part vinegar for spots like juice, wine and coffee, and Pergo\'s WetProtect care sheet allows 1 cup of vinegar per gallon of water. Shaw instead suggests rubbing alcohol and water with a little dish soap. Use the recipe your floor\'s manufacturer gives, and never combine vinegar with bleach.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-steamlam-1',
+      title: 'Mohawk Laminate Maintenance Instructions',
+      publisher: 'Mohawk Hard Surfaces',
+      url: 'https://images.thdstatic.com/catalog/pdfImages/36/36fad8fb-7f94-42f7-bbad-7e5ec4ae7c7d.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Do not use cleaning machines such as steam cleaners, spray mops or power cleaners; wet maintenance is entirely forbidden; apply Mohawk cleaner or plain water to a well wrung out cloth, never directly to the floor, and wipe dry immediately; bevel-edged products get dry maintenance only; avoid beater bars, soap, detergents, wax and polish; bleach and similar chemicals damage laminate if left more than 10 minutes.',
+    },
+    {
+      id: 'src-steamlam-2',
+      title: 'Floor Cleaning and Care',
+      publisher: 'Shaw Floors',
+      url: 'https://costco.shawfloors.com/floor-cleaning-and-care',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For laminate: do not use a steam mop because excess water can cause warping and other irreparable damage; do not wet mop with any liquid cleaning product; a mix of 1 part rubbing alcohol, 3 parts water and a squirt of dish soap on a lightly dampened cloth; avoid steel wool, abrasive cleaners and strong ammoniated or chlorinated cleaners.',
+    },
+    {
+      id: 'src-steamlam-3',
+      title: 'Can I Steam Clean My Floor?',
+      publisher: 'Pergo',
+      url: 'https://int.pergo.com/en/frequently-asked-questions-helpcenter/laminate/maintenance/can-i-steam-clean-my-floor',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For wood, laminate and vinyl floors the simple answer is no, because steam forces moisture into the joints and between the layers and frequent wetting can fade the surface; if steaming, do not linger over a spot or the joints; Pergo recommends vacuuming often and damp mopping once a week instead.',
+    },
+    {
+      id: 'src-steamlam-4',
+      title: 'Pergo TimberCraft Elite + WetProtect Laminate Floors Care and Repair',
+      publisher: 'Pergo (Unilin North America)',
+      url: 'https://pdf.lowes.com/productdocuments/02e53115-1b26-421b-9479-a6da302810be/66371323.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For this WetProtect line only, a residential steam mop may be used if steam is applied to a microfiber pad, not directly to the floor, on the laminate or lowest setting and in the length direction of the planks; do not pour liquid on the floor or leave standing moisture; do not use detergents, soaps, waxes or polishes; damage larger than 1/4 inch calls for professional plank replacement.',
+    },
+  ],
+  seo: {
+    title: 'Can You Use a Steam Mop on Laminate Floors?',
+    description: 'Can you use a steam mop on laminate floors? Mohawk and Shaw say no and Pergo allows it only on some waterproof lines. Why steam harms laminate and what to use.',
+    canonical: 'https://housecarewiki.com/guides/can-you-use-a-steam-mop-on-laminate-floors',
+    indexable: true,
+    focusKeyword: 'can you use a steam mop on laminate floors',
+  },
+};
+
+export default article;

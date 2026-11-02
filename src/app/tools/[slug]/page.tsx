@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import { buildMetadata, fitDescription } from '@/lib/seo';
 import { absoluteUrl } from '@/lib/site';
 import { JsonLd } from '@/components/JsonLd';
-import { ORG_ID, breadcrumbSchema, graph } from '@/lib/schema';
+import { ORG_ID, breadcrumbSchema, graph, webPageSchema } from '@/lib/schema';
 import { Breadcrumbs, Container, Kicker } from '@/components/field';
 import { isStainType, isSurface } from '@/lib/tools-engine';
 import {
@@ -167,6 +167,7 @@ export default function InteractiveToolPage({
       { name: 'Tools', path: '/tools' },
       { name: meta.title, path },
     ]),
+    webPageSchema({ path, name: meta.title, description: meta.subtitle, aboutId: `${absoluteUrl(path)}#app` }),
     {
       '@type': 'WebApplication',
       '@id': `${absoluteUrl(path)}#app`,
@@ -175,9 +176,11 @@ export default function InteractiveToolPage({
       url: absoluteUrl(path),
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Any',
+      browserRequirements: 'Requires JavaScript',
       isAccessibleForFree: true,
       offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
       publisher: { '@id': ORG_ID },
+      mainEntityOfPage: { '@id': `${absoluteUrl(path)}#webpage` },
     },
   );
 

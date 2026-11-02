@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-can-you-use-bleach-on-grout',
+  slug: 'can-you-use-bleach-on-grout',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'Can you use bleach on grout?',
+  subtitle: 'Occasionally, diluted and rinsed off, yes. As a weekly habit, no. Why bleach can wear down grout sealer, how epoxy and cement grout differ, and the gentler cleaners tile and grout makers recommend for routine cleaning.',
+  excerpt: 'Diluted bleach can lift mildew stains from sealed grout now and then, but grout makers recommend pH-neutral cleaners for routine care.',
+  quickAnswer: 'Only occasionally, diluted exactly as the label says and rinsed off well, because bleach used regularly can break down grout sealer and some manufacturers warn it may damage grout surfaces. Clorox directs 1/3 cup of its Disinfecting Bleach per gallon of water for mold stains on sealed grout, left 10 minutes and then rinsed thoroughly. For routine weekly cleaning, the Tile Council of North America and Laticrete recommend a pH-neutral tile and grout cleaner instead. Epoxy grout tolerates bleaching cleaners better than cement grout, and you should never mix bleach with vinegar, ammonia or any other cleaner.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tile-grout',
+  surfaceSlugs: ['grout'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/guide-spin-scrubber.webp',
+  heroImageAlt: 'Hand holding a white electric spin scrubber with a round brush head, scrubbing foamy cleaner across light grey shower wall tiles next to a chrome shower hose',
+  safetyWarnings: [
+    'Never mix bleach with vinegar, ammonia or any other cleaner. Clorox warns the combination can create dangerous fumes, so rinse away any other product before you use bleach.',
+    'Ventilate: open a window or door while you work, and wear gloves and clothes you do not mind getting splashed.',
+    'Do not make bleach your weekly grout cleaner. The Tile Council of North America notes that regular use of strong high-pH cleaners like bleach may break down grout sealers, and Laticrete warns bleach may damage some grout surfaces and degrade an applied sealer.',
+    'Keep bleach cleaners off stainless steel fixtures and trim. Laticrete cautions that chlorine may damage stainless finishes.',
+    'Test any cleaner on a hidden joint first and let it dry before judging the result, especially on colored grout; none of the grout makers we checked describes bleach as color-safe for cement grout.',
+  ],
+  materialsNeeded: [
+    'pH-neutral tile and grout cleaner (for routine cleaning)',
+    'Household bleach labeled for use on hard surfaces (occasional stain treatment only)',
+    'Measuring cup and a bucket',
+    'Rubber gloves',
+    'Nylon grout brush or white nylon scrub pad',
+    'Clean water for rinsing (showerhead or a fresh bucket)',
+    'Optional: penetrating grout sealer for cement grout',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Find Out What Kind of Grout You Have',
+      instruction: 'Most bathroom grout is cement-based, which is absorbent and is normally sealed. Epoxy grout is far less absorbent, does not need sealing, and its maker Laticrete says it can be cleaned with a bleaching cleaner for tough soil. If you are not sure, check the installer\'s paperwork or ask the grout manufacturer, because the right cleaner depends on it.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Start with a pH-Neutral Cleaner',
+      instruction: 'For everyday dirt and soap film, use a pH-neutral cleaner made for tile and grout, or a mildly alkaline household detergent and water, following the product label. Scrub the joints with a nylon brush or pad. This is the routine method both the Tile Council of North America and Laticrete recommend, and it often removes discoloration that people assume needs bleach.',
+      proTip: 'Nylon or plastic scrubbers generally will not scratch tile; skip steel wool and wire brushes.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Ventilate and Clear Other Cleaners',
+      instruction: 'If mildew stains remain on sealed grout, open a window or door and put on gloves. Rinse the area with plain water first so no vinegar, ammonia or other cleaner is left in the joints before bleach goes on.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Dilute Bleach Exactly as the Label Says',
+      instruction: 'Mix a fresh solution according to your bleach label. For Clorox Disinfecting Bleach, Clorox directs 1/3 cup per 1 gallon of water for hard, nonporous surfaces. Use freshly mixed solution, because bleach degrades once diluted. Do not make it stronger than the label calls for.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Apply, Wait, and Scrub Lightly',
+      instruction: 'Apply the solution to the stained grout and let it sit for the time on the label; Clorox gives 10 minutes for mold stains with its Disinfecting Bleach. Then work the joints gently with a nylon grout brush.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse Thoroughly with Clean Water',
+      instruction: 'Rinse the grout and tile thoroughly with the showerhead or a fresh bucket of clean water, not the dirty cleaning water. Any cleaner left behind can dull the tile and attract dirt faster.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Dry, Then Reseal Cement Grout',
+      instruction: 'Let the area dry completely. After a deep clean, the Tile Council of North America advises letting cement grout dry thoroughly and applying a good sealer within 24 hours, before new dirt and oil get into the unprotected grout. Epoxy grout does not need sealing.',
+    },
+  ],
+  ifMethodFails: [
+    'If dark spots come back within weeks no matter how you clean, the problem may be moisture behind the tile or failed sealer rather than surface dirt. The Tile Council of North America notes repeat mildew can mean the substrate is holding water; have the installation checked rather than bleaching more often.',
+    'If stains will not lift from cement grout, they may have soaked into it. Laticrete notes stains become part of cement-based grouts, so ask the grout manufacturer\'s technical support about a stain remover or regrouting.',
+    'If bleach left the grout blotchy or lighter, stop using it, rinse well, and contact the grout manufacturer about a color restoration or colorant product made for that grout.',
+  ],
+  recommendedProductIds: ['prod-grout-brush-set'],
+  faqs: [
+    {
+      question: 'Does bleach damage grout?',
+      answer: 'It can over time. The Tile Council of North America says regular use of strong high-pH cleaners like bleach may break down grout sealers, and Laticrete warns bleach may damage some grout surfaces and degrade an applied sealer. Occasional use, diluted per the label and rinsed off, is less of a concern than weekly use.',
+    },
+    {
+      question: 'Can I use bleach on colored grout?',
+      answer: 'Be cautious. None of the grout manufacturers we checked lists bleach as color-safe for cement grout, and Laticrete warns it may damage grout surfaces. Use a pH-neutral grout cleaner instead, and if you do try bleach, test a hidden joint first and let it dry before judging.',
+    },
+    {
+      question: 'Is bleach safe on epoxy grout?',
+      answer: 'Generally more so than on cement grout. Laticrete\'s maintenance guide for its SpectraLOCK PRO epoxy grout says tough soil can be cleaned with a bleaching cleaner on a nylon pad or stiff brush, after testing a discrete area. Check your own grout maker\'s instructions.',
+    },
+    {
+      question: 'What is the best thing to clean grout with instead of bleach?',
+      answer: 'A pH-neutral cleaner made for tile and grout, or a mildly alkaline household detergent, with a nylon brush and a thorough clean-water rinse. Many people also use oxygen-bleach powders on grout; if you do, follow the package directions and test a hidden spot first.',
+    },
+    {
+      question: 'Can you mix bleach and vinegar to clean grout?',
+      answer: 'No. Clorox warns never to mix bleach with vinegar, ammonia or any other cleaner because it can create dangerous fumes. Vinegar is also a poor grout cleaner on its own: the Tile Council of North America notes acids like vinegar can eat away at unprotected cement grout.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-bleachgrout-1',
+      title: 'Bathroom Tile and Grout: A Few Tips on Keeping Them Clean',
+      publisher: 'Tile Council of North America',
+      url: 'https://tcnatile.com/wp-content/uploads/2022/08/Bathroom-Tile-and-Grout-A-Few-Tips-on-Keeping-Them-Clean.pdf',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Regular use of strong cleaners such as bleach (high pH) or vinegar (low pH) may break down grout sealers; acidic cleaners may eat away at unprotected cement grout; repeat mildew may mean the substrate is holding water; after a deep clean, dry thoroughly and seal within 24 hours; use a neutral tile and grout cleaner or mildly alkaline detergent for weekly cleaning, keep strong cleaners for periodic use, and rinse with fresh clean water.',
+    },
+    {
+      id: 'src-bleachgrout-2',
+      title: 'Care & Maintenance of Tile & Stone Installations (TDS-1113)',
+      publisher: 'LATICRETE',
+      url: 'https://cdn-global.laticrete.com/-/media/project/laticrete-international/australia/product-documents/tds/tds-1113-0623-care--maintenance-of-tile-and-stone-installations-web.pdf?rev=ec7acd6f66034676935ac0d2ca174ca1&hash=CC887DA8B26C056CAD49551B72C9CF94',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'A clear pH-neutral cleaner is recommended for routine cleaning of LATICRETE grouts; highly alkaline, acidic, ammonia-based, abrasive cleaners or bleach may damage some tile and/or grout surfaces and degrade an applied sealer; test any cleaner on a small inconspicuous area first.',
+    },
+    {
+      id: 'src-bleachgrout-3',
+      title: 'LATICRETE SpectraLOCK PRO Grout Installation & Maintenance Guide (TDS 400 PRO)',
+      publisher: 'LATICRETE',
+      url: 'https://cdn-global.laticrete.com/-/media/project/laticrete-international/shared/files/support-and-downloads/technical-datasheets/tds400-pro.ashx?la=en',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'SpectraLOCK PRO epoxy grout does not need to be sealed and stays colorfast; stains become part of Portland cement-based grouts; tough soil on the epoxy grout can be cleaned with a bleaching cleaner on a nylon pad or stiff brush after testing a discrete area; chlorine may damage stainless partitions and fixtures.',
+    },
+    {
+      id: 'src-bleachgrout-4',
+      title: 'How to Clean Grout Stains & Remove Mold Stains',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-clean-grout/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Mix 1/3 cup Clorox Disinfecting Bleach per 1 gallon of water for hard, nonporous surfaces, use freshly mixed solution, let it sit on mold-stained grout for 10 minutes, rinse grout and tile thoroughly with clean water and let dry; open a window or door, wear gloves, and never mix bleach with vinegar, ammonia or any other cleaner.',
+    },
+  ],
+  seo: {
+    title: 'Can You Use Bleach on Grout? What Tile Pros Say',
+    description: 'Can you use bleach on grout? Only now and then, diluted per the label and rinsed well. Why it can wear grout sealer, epoxy vs cement grout, and safer cleaners.',
+    canonical: 'https://housecarewiki.com/guides/can-you-use-bleach-on-grout',
+    indexable: true,
+    focusKeyword: 'can you use bleach on grout',
+  },
+};
+
+export default article;

@@ -1,0 +1,147 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-wool-rug',
+  slug: 'how-to-clean-a-wool-rug',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a wool rug',
+  subtitle: 'Wool is tough but sensitive to heat, harsh alkaline cleaners, bleach and too much water. How to vacuum it, blot spills without spreading them, pick a wool-safe cleaner and dry the spot fast.',
+  excerpt: 'Act fast, blot never rub, use a little wool-safe cleaner on a cloth, and dry the spot quickly.',
+  quickAnswer: 'Vacuum a wool rug regularly with the beater bar off, and treat spills right away by blotting with a clean white cloth, never rubbing. For a spot, pretest a wool-safe cleaner in a hidden area, apply a small amount to the cloth rather than the rug, work from the edge toward the center, and use several light applications instead of soaking the rug. Avoid bleach, high-pH or alkaline household cleaners, heat and heavy agitation, then let the spot air-dry quickly without a hair dryer or heater. Old, large or set-in stains belong with a professional rug cleaner.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'area-rugs',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-floor-carpet.webp',
+  heroImageAlt: 'Hand pressing a white terry towel onto a muddy footprint on a beige looped carpet, with a glass bowl of soapy water nearby and muddy boots in the background',
+  safetyWarnings: [
+    'Never use chlorine bleach on wool; rug makers warn that bleach, harsh chemicals and alkaline household products can discolor or damage the fiber.',
+    'Avoid cleaners with a high pH (STARK advises against anything above pH 8.0) and look for products certified for wool, such as those carrying the WoolSafe mark.',
+    'Keep heat away from wool: do not use a hair dryer, heater or other direct heat to dry a spot, and avoid hot, aggressive scrubbing, since heat and agitation can damage wool.',
+    'If you use a solvent-based spotter, wear rubber gloves and ventilate the room well.',
+    'Do not use dish soap or general household cleaners not made for carpet; they can leave a sticky residue that attracts dirt faster.',
+  ],
+  materialsNeeded: [
+    'Vacuum with the beater bar turned off, or a suction-only attachment',
+    'Clean white, undyed cloths or plain white paper towels',
+    'Spoon or dull knife for lifting solids',
+    'Wool-safe spot cleaner (look for WoolSafe certification, pH 8.0 or lower)',
+    'Clean cool water in a spray bottle for rinsing',
+    'Rubber gloves',
+    'A fan or open window for air drying',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check the Label and Maker\'s Care Page',
+      instruction: 'Confirm the rug is wool or a wool blend and read its care instructions. Most wool rugs are spot clean only and not machine washable. If the label or the maker\'s instructions differ from the steps below, follow the maker.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Vacuum Regularly with the Beater Bar Off',
+      instruction: 'Vacuum on a regular schedule to keep grit from wearing the fibers. Turn off or remove the beater bar, or use the highest height setting, and keep the vacuum off the fringe.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Act Fast and Remove as Much as You Can',
+      instruction: 'Fresh spills are far easier to remove than old stains. Scoop up solids with a spoon, then blot liquid with a clean white cloth, pressing down and lifting. Blot, never rub, and work from the outside in so the spill does not spread.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Pretest a Wool-Safe Cleaner',
+      instruction: 'Choose a spot cleaner made for wool, ideally one certified by WoolSafe, and avoid high-pH or alkaline products. Test it on a hidden spot first, such as a corner on the back or under furniture, and check for color change before using it on the stain.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Apply to the Cloth and Work from the Edge In',
+      instruction: 'Put a small amount of cleaner on a white cloth, not directly on the rug. Blot from the outer edge of the spot toward the middle so it does not spread. Several light applications work better than one heavy one; do not saturate the rug.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse Lightly and Blot Out the Moisture',
+      instruction: 'Rinse water-based spotters out with a light mist of clean water, then blot firmly with a dry white cloth until no more moisture transfers. Leftover cleaner can attract dirt, so rinse thoroughly but with as little water as possible.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Dry the Spot Quickly Without Heat',
+      instruction: 'Let the area air-dry, and help it along with good airflow from a fan or open window. Do not use a hair dryer, heater or other direct heat, and do not cover the spot or put furniture back on it while it is still damp.',
+    },
+  ],
+  ifMethodFails: [
+    'If the stain is large, old or set in, stop and call a professional rug cleaner; Fabrica recommends a WoolSafe Approved Service Provider for extensive or set-in stains.',
+    'If the spot looks darker or dirtier after it dries, cleaner residue is probably left in the pile. Mist lightly with clean water, blot dry and let it air-dry again.',
+    'If the pile looks fuzzy or flattened where you worked, you rubbed or soaked it. Let it dry fully, then vacuum gently; avoid further scrubbing.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can I use dish soap on a wool rug?',
+      answer: 'Wool carpet maker Fabrica advises against dish washing liquid and other cleaners not made for carpet, because they leave sticky residue that resoils faster. A wool-safe spot cleaner, ideally WoolSafe certified and not strongly alkaline, is the safer choice. Pretest anything in a hidden spot first.',
+    },
+    {
+      question: 'Can you get a wool rug wet?',
+      answer: 'A little moisture is fine, but do not saturate it. Use small amounts of cleaner and water, blot out as much moisture as you can, and help the spot dry quickly with airflow rather than heat.',
+    },
+    {
+      question: 'Can you use bleach on a wool rug?',
+      answer: 'No. Bleach, harsh chemicals and alkaline household products can discolor or damage wool. Use a pH-neutral, wool-safe spot cleaner instead.',
+    },
+    {
+      question: 'How often should a wool rug be professionally cleaned?',
+      answer: 'The Carpet and Rug Institute recommends professional deep cleaning every 12 to 18 months, or more often with pets or heavy traffic. For wool, choose a cleaner experienced with wool rugs, such as a WoolSafe Approved Service Provider, and send valuable or hand-knotted rugs to a rug specialist.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-woolrug-1',
+      title: 'Wool Maintenance',
+      publisher: 'Fabrica',
+      url: 'https://www.fabrica.com/pages/wool-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Act quickly, remove as much soil as possible first, test spotting agents in an inconspicuous area, apply them to a cloth not the stain, blot never rub, work from the edge to the middle, use several light applications, do not over-wet, ventilate when using solvents, rinse water-based spotters, avoid dish washing liquid, and use a WoolSafe Approved Service Provider for extensive or set-in stains.',
+    },
+    {
+      id: 'src-woolrug-2',
+      title: 'Cleaning and Maintenance',
+      publisher: 'STARK Carpet',
+      url: 'https://info.starkcarpet.com/migration/knowledge/cleaning-and-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For wool and wool blends, vacuum regularly, avoid excessive agitation and heat, clean spills with neutral detergents and dry quickly, use woolsafe products and avoid cleaners above pH 8.0, and avoid bleach, harsh chemicals and alkaline household products that can discolor or damage wool.',
+    },
+    {
+      id: 'src-woolrug-3',
+      title: 'Rug Care',
+      publisher: 'Ruggable',
+      url: 'https://ruggable.com/help/assembly-and-care/rug-care',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Easy-care wool rugs are not machine washable: blot spills right away with a clean white undyed cloth, spot test, mist lightly with a gentle cleaner, do not saturate or scrub, avoid the fringe, and air-dry only without a hair dryer, heater or other direct heat and without covering the rug while damp.',
+    },
+    {
+      id: 'src-woolrug-4',
+      title: 'Cleaning and Maintenance',
+      publisher: 'The Carpet and Rug Institute',
+      url: 'https://carpet-rug.org/carpet-for-homes/cleaning-and-maintenance/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Keep rug fringe out of the beater bar, clean imported Oriental, Turkish and Persian rugs to the maker\'s specifications or with a professional, hire professionals for heirloom rugs, and have carpet professionally deep cleaned every 12 to 18 months or more often if needed.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Wool Rug Safely at Home',
+    description: 'How to clean a wool rug: vacuum with the beater bar off, blot spills, use a wool-safe cleaner sparingly, skip bleach and heat, and dry the spot fast. Pro tips.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-wool-rug',
+    indexable: true,
+    focusKeyword: 'how to clean a wool rug',
+  },
+};
+
+export default article;

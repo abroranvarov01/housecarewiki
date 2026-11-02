@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-mud-out-of-carpet',
+  slug: 'how-to-get-mud-out-of-carpet',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get mud out of carpet',
+  subtitle: 'Let it dry, break it up and vacuum, then spot clean the leftover dirt with a weak dish-soap solution. Why wet mud should be left alone, how to rinse without soaking the pad, and what to do when the dirt mark comes back.',
+  excerpt: 'Let the mud dry, break it up, vacuum, then blot the leftover dirt with a weak dish-soap solution and rinse.',
+  quickAnswer: 'Let the mud dry completely, then break up the dried clumps with the handle of a knife or a spoon and vacuum them up. Spot clean the remaining dirt mark by blotting it with a solution of no more than 1/4 teaspoon of clear dish soap in 1 cup of lukewarm water, working from the edges toward the center without rubbing. Rinse with a light mist of clear water, blot until no moisture remains, and dry under weighted paper towels. If the mark keeps coming back as the carpet dries, the dirt is wicking up from the base of the yarns and needs another light mist-and-blot.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'carpet-stains',
+  surfaceSlugs: ['carpet'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-floor-carpet.webp',
+  heroImageAlt: 'Hand pressing a white terry towel onto a muddy footprint stain on a beige loop carpet, with a glass bowl of soapy water beside it and muddy hiking boots by the door',
+  safetyWarnings: [
+    'Do not scrub wet mud. Rubbing pushes it deeper into the pile and can fray the carpet fibers; blot instead.',
+    'Use only clear liquid dish soap, never laundry detergent (its optical brighteners can dye the fiber) or automatic dishwasher detergent (it can contain bleach that destroys carpet dyes). Never use chlorine bleach on carpet.',
+    'Pretest every solution, including hydrogen peroxide, in a hidden spot. If color changes or transfers to the cloth, stop and call a professional carpet cleaner.',
+    'Do not soak the spot. Rinse with a mist sprayer so water does not reach the backing and pad, where leftover dirt can wick back to the surface.',
+    'Never mix cleaning products, and ventilate the room while you use any spot remover.',
+  ],
+  materialsNeeded: [
+    'Vacuum, ideally an upright with a brush roll',
+    'Butter knife handle or rounded spoon for breaking up dried mud',
+    'Clean white cloths or white paper towels',
+    'Clear liquid dish soap (no more than 1/4 teaspoon per cup of water)',
+    'Lukewarm tap water',
+    'Spray bottle or mist sprayer',
+    'Optional, synthetic carpet only after a hidden-spot test: fresh 3% hydrogen peroxide',
+    'Paper towels, a plastic bag and a few heavy books for drying',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Leave Wet Mud Alone Until It Dries',
+      instruction: 'Resist the urge to wipe fresh mud. Let it dry completely so it turns into loose dirt you can lift out, rather than a paste you smear deeper into the pile. If there are large wet clumps on top, you can gently lift them off with a spoon without pressing down.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Break Up the Dried Mud',
+      instruction: 'Once it is fully dry, shatter the crust by tapping it with the handle of a butter knife, or crumble it with a spoon. The goal is to turn the clumps into small, loose particles that a vacuum can pull out.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Vacuum Thoroughly from Several Directions',
+      instruction: 'Vacuum the area slowly, passing over it from three or more directions so the brush roll and suction reach dirt lodged at the base of the yarns. Keep going until no more grit comes up.',
+      proTip: 'Getting as much dry soil out as possible before adding any liquid means there is less dirt to turn back into mud in the next step.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Pretest a Weak Dish-Soap Solution',
+      instruction: 'Mix no more than 1/4 teaspoon of clear liquid dish soap into 1 cup of lukewarm water. Dab a little on a hidden spot, blot with a white cloth, and check for color transfer or fiber change before using it on the mud mark.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Blot the Remaining Dirt Mark',
+      instruction: 'Dampen a white cloth or paper towel with the solution and work gently from the edges of the mark toward the center, blotting rather than rubbing. Let it sit a few minutes, then blot with a dry cloth. Repeat while dirt keeps transferring to the cloth.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse Out the Soap',
+      instruction: 'Lightly mist the area with clear lukewarm water and blot, repeating several times. Soap left in the pile attracts new soil and leaves a dark patch, so rinse until the cloth no longer feels slippery.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Blot Dry and Weigh It Down',
+      instruction: 'Blot with a dry cloth until no more moisture comes up. Then cover the spot with 6 to 10 layers of white paper towel, put a plastic bag on top, and weigh it down with a few books for 6 to 8 hours, changing the towels if they show dirt. Brush the pile upright with your fingers once it is dry.',
+    },
+  ],
+  ifMethodFails: [
+    'If a dirt shadow reappears after the carpet dries, soil left at the base of the yarns has wicked up. Let the carpet dry for at least 48 hours, vacuum again slowly from three or more directions, then lightly mist with distilled water and blot with a microfiber towel until the transfer stops.',
+    'If a stain remains on synthetic carpet after cleaning, test fresh 3% hydrogen peroxide in a hidden spot, then moisten the stained tufts with it, let it stand for about an hour and blot. Repeat if needed and dry under weighted paper towels. Skip this on wool and other natural fibers.',
+    'If regular spot cleaning cannot remove the mark, or a large area was tracked through, call a professional carpet cleaner. They have stronger solutions and extraction equipment.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Should you let mud dry before cleaning it out of carpet?',
+      answer: 'Yes. Carpet care guidance says to allow mud to dry completely, then break it up and vacuum. Cleaning it while wet tends to spread it and push it deeper into the pile.',
+    },
+    {
+      question: 'What is the best homemade solution for mud stains on carpet?',
+      answer: 'A very weak dish-soap solution: no more than 1/4 teaspoon of clear liquid dish detergent in 1 cup of lukewarm water, according to the Carpet and Rug Institute. Some manufacturer care sheets use an even weaker mix. Avoid laundry and dishwasher detergents, and rinse well afterwards.',
+    },
+    {
+      question: 'Why does the mud stain keep coming back on my carpet?',
+      answer: 'This is wicking. Dirt left at the base of the yarns or in the backing travels up to the tips as the carpet dries. Let it dry fully, vacuum again, then lightly mist and blot, and dry the spot under weighted paper towels.',
+    },
+    {
+      question: 'Can I use a carpet cleaner machine on mud?',
+      answer: 'Only after the mud is dry and vacuumed. Start by vacuuming up as much dry soil as possible, then spot clean or rinse with the machine using clear water so no detergent is left in the pile, and extract as much moisture as you can.',
+    },
+    {
+      question: 'Can you use hydrogen peroxide on a mud stain?',
+      answer: 'On synthetic carpet, a fresh 3% hydrogen peroxide treatment can help with a stain that remains after cleaning, but test it in a hidden spot first. The IICRC does not recommend peroxide on wool or other natural fibers without extensive testing for color loss.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-mud-carpet-1',
+      title: 'Mud - The Carpet and Rug Institute',
+      publisher: 'The Carpet and Rug Institute (CRI)',
+      url: 'https://carpet-rug.org/spot-solver/mud/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Act quickly, break up solids and vacuum, pretest solutions in a hidden area, work from the edges inward without rubbing, use 1/4 teaspoon dish detergent per cup of lukewarm water (never stronger, never laundry or dishwasher detergent), rinse several times with a mist sprayer to avoid residue and overwetting, and consult a professional for stubborn spills.',
+    },
+    {
+      id: 'src-mud-carpet-2',
+      title: 'Carpet Cleaning and Maintenance (homeowner care sheet referencing Mohawk FloorCare Essentials)',
+      publisher: 'D.R. Horton',
+      url: 'https://www.drhorton.com/-/media/drhorton/forms-and-docs/al_mobile-baldwin_mnt_carpet-cleaning-and-maintenance.ashx',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Mud and dirt: allow mud to dry completely, shatter it with the handle of a knife, then vacuum; treat dirt with a small amount of detergent solution (1/4 teaspoon per quart of water), blot, rinse with tap water from a spray bottle and blot; for remaining stains, moisten tufts with 3% hydrogen peroxide for one hour, blot and repeat, and dry under weighted paper towels.',
+    },
+    {
+      id: 'src-mud-carpet-3',
+      title: 'Carpet Care and Maintenance',
+      publisher: 'Shaw Floors',
+      url: 'https://shawfloors.com/en-us/care-and-warranties/carpet',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Give spots prompt attention, blot with a clean white absorbent cloth, never rub or scrub abrasively because it can fray the fibers, vacuum often to keep soil from working below the pile surface, and consult a professional cleaner if regular spot cleaning cannot remove a stain.',
+    },
+    {
+      id: 'src-mud-carpet-4',
+      title: 'IICRC Consumer Floor and Furnishings Care Information (Tip Sheet: Carpet Topics)',
+      publisher: 'Institute of Inspection, Cleaning and Restoration Certification (IICRC)',
+      url: 'https://iicrc.org/wp-content/uploads/2023/01/Tip-Sheet-Carpet-Topics.pdf',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wicking section: soil left at the base of yarns and backing can migrate to the tips as carpet dries; let it dry at least 48 hours, vacuum slowly from three or more directions with a brush-roll upright, mist distilled water and blot with microfiber, and dry under 6 to 10 layers of weighted towels for 6 to 8 hours; 3% hydrogen peroxide is not recommended on wool or natural fibers without extensive testing.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Mud Out of Carpet (Wet or Dried)',
+    description: 'Get mud out of carpet the right way: let it dry, break it up, vacuum, then blot the dirt mark with a weak dish-soap mix, rinse, and stop it wicking back up.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-mud-out-of-carpet',
+    indexable: true,
+    focusKeyword: 'how to get mud out of carpet',
+  },
+};
+
+export default article;

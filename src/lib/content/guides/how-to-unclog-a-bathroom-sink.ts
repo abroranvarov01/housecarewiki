@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-unclog-a-bathroom-sink',
+  slug: 'how-to-unclog-a-bathroom-sink',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to unclog a bathroom sink',
+  subtitle: 'Pull the pop-up stopper and clear the hair wound around it, plug the overflow before you plunge, then open the trap where most clogs sit. Why chemical drain openers are a risky shortcut, and what never to do after pouring one in.',
+  excerpt: 'Remove the pop-up stopper, clear the hair, plug the overflow and plunge, then open the trap cleanout.',
+  quickAnswer: 'Most bathroom sink clogs are hair and soap caught on the pop-up stopper or in the trap below it. Pull the stopper out by loosening the nut on the horizontal rod under the sink, clear the hair, and run water to test. If it is still slow, plug the overflow hole with a wet washcloth and work a cup plunger 20 to 30 times, then open the trap cleanout plug over a bucket and clear it. Skip chemical drain openers: they are caustic, and you should never plunge or open the trap after pouring one in.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tools',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/bathroom-hero.webp',
+  heroImageAlt: 'White undermount bathroom sink with a chrome pop-up drain, a brushed nickel faucet, a blue towel, a spray bottle and toothbrushes on a speckled stone vanity',
+  safetyWarnings: [
+    'If anyone has already poured a chemical drain cleaner into the sink, do not plunge it and do not open the trap. Caustic cleaner still sitting in the water can splash onto skin and eyes.',
+    'Chemical drain openers are caustic and can burn skin and damage pipes or fixture finishes. If you do use one, open windows, wear rubber gloves and goggles, pour carefully close to the drain, and never lean over the opening.',
+    'Never follow one drain cleaner with a different brand or type. Mixing drain chemicals can produce dangerous fumes; also never mix bleach with ammonia or acids.',
+    'Put a pan or bucket under the trap before you unscrew the cleanout plug or loosen any fitting: the trap is full of dirty water.',
+    'Store drain cleaners tightly closed and out of sight and reach of children. If someone swallows, inhales or is splashed by one, call Poison Control at 1-800-222-1222.',
+  ],
+  materialsNeeded: [
+    'Cup (sink) plunger',
+    'Washcloth or rag to plug the overflow',
+    'Adjustable or crescent wrench',
+    'Pan or bucket and an old towel',
+    'Rubber gloves and a flashlight',
+    'A piece of stiff wire or a small drain cleaning tool',
+    'Hot water and liquid dish soap for the final rinse',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check What Is Already in the Drain',
+      instruction: 'Before you touch the sink, find out whether anyone has poured a chemical drain opener into it. If they have, do not plunge and do not open the trap; let the product clear as the label directs or call a plumber. If the water is plain, bail out most of the standing water into a bucket so you can see the stopper.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Lift Out the Pop-Up Stopper',
+      instruction: 'Try lifting the stopper straight out first. If it will not come, it is held by the horizontal pivot rod on the back of the drain pipe under the sink. Put a towel down, unscrew the nut that holds the rod (counterclockwise), pull the rod straight back about an inch, and the stopper will come free of the drain.',
+      proTip: 'Note which hole of the lift-rod strap the pivot rod passes through so it goes back the same way.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Clear the Hair from the Stopper and Drain',
+      instruction: 'Pull off the hair and gunk wound around the stopper; long hair is the usual culprit. Shine a flashlight into the drain and remove any debris you can reach in the pop-up assembly with gloved fingers or a bent piece of wire.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Refit the Rod and Test the Flow',
+      instruction: 'With the stopper still out, put the pivot rod and its nut back in place so water cannot leak from that opening, then run the tap. If the sink now drains freely, skip ahead to reinstalling the stopper.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Plug the Overflow and Plunge',
+      instruction: 'Push a wet washcloth or rag firmly into the overflow hole near the rim and hold it there, or the plunger will just push air out of it. Set a cup plunger over the drain, press down smoothly, then jerk it up sharply. Repeat 20 to 30 times. If the clog clears, flush the drain with hot soapy water.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Open the Trap Cleanout',
+      instruction: 'If plunging twice does not work, look at the U-shaped trap under the sink for a cleanout plug at the bottom of the bend. Put a pan or bucket underneath, unscrew the plug with an adjustable wrench, and clear the trap with a gloved finger, a pencil or wire; most clogs sit here. Screw the plug back in and run hot soapy water through the drain.',
+      proTip: 'No cleanout plug? Pfister notes that servicing the P-trap is fairly simple if you are comfortable with it; otherwise call your landlord or a plumber.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Reinstall the Stopper and Check the Seal',
+      instruction: 'Drop the stopper in with the hole at its base lined up with the rod opening, make sure the washer sits firmly on the ball of the rod, and thread the rod through the hole. Wiggle it to confirm the stopper moves, then tighten the nut clockwise until it stops plus a quarter turn with a wrench. Close the stopper, fill the basin and check that it holds water.',
+    },
+  ],
+  ifMethodFails: [
+    'If you can see no debris in the stopper or drain and the sink still drains slowly, the clog is further down the line; Pfister recommends having a licensed plumber check it.',
+    'If plunging and clearing the trap cleanout do not help, or the trap has no cleanout plug, notify your landlord or call a plumber rather than reaching for chemicals.',
+    'If the sink drains but will not hold water after reassembly, clean any debris off the stopper O-ring, make sure the stopper cap is fully threaded on, and pull up the lift rod to seat the stopper.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Why is my bathroom sink draining slowly?',
+      answer: 'Usually hair and soap caught on the pop-up stopper or in the pop-up assembly just below it. Pulling the stopper and clearing the hair fixes many slow sinks in a few minutes; if not, the next most likely spot is the trap under the sink.',
+    },
+    {
+      question: 'Can I use Drano or another drain cleaner in a bathroom sink?',
+      answer: 'It is not the safer choice. Chemical drain cleaners are caustic, help only sluggish drains, can damage pipes and fixture finishes, and can splash back. If one is already in the sink, do not plunge or open the trap. Mechanical methods are safer: stopper, plunger, trap.',
+    },
+    {
+      question: 'Do I need to cover the overflow hole when plunging a sink?',
+      answer: 'Yes. Plug the overflow with a wet washcloth or rag and hold it in place while you plunge. Otherwise the pressure escapes through the overflow instead of pushing on the clog.',
+    },
+    {
+      question: 'Will baking soda and vinegar unclog a bathroom sink?',
+      answer: 'Probably not a real clog. Poison control experts note that the fizz generally does not build enough pressure to dislodge a blockage and is unlikely to be strong enough to break up tough clogs. Pulling the hair off the stopper and plunging work better.',
+    },
+    {
+      question: 'How do you get a pop-up stopper out of a bathroom sink?',
+      answer: 'Lift it first; some come straight out. If it is stuck, look under the sink for the horizontal rod on the back of the drain pipe, unscrew its nut, and pull the rod back about an inch. The stopper will then lift free.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-bathsink-1',
+      title: 'Making Simple Repairs: Clogged Drains (FCS5234)',
+      publisher: 'University of Florida IFAS Extension',
+      url: 'https://ufdcimages.uflib.ufl.edu/IR/00/00/13/19/00001/FY80700.pdf',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Plug the overflow of a single-bowl sink with a washcloth or rag, press the plunger down smoothly and jerk it up sharply 20 to 30 times, rinse with hot soapy water; if still clogged, place a pan under the trap, unscrew the cleanout plug and clear the clog, since most clogs are in the trap. Chemical drain cleaners are caustic, help only sluggish drains, can damage pipes or finishes; do not mix brands and do not use a plunger after them.',
+    },
+    {
+      id: 'src-bathsink-2',
+      title: 'How do I remove my bathroom sink drain stopper for cleaning?',
+      publisher: 'Delta Faucet',
+      url: 'https://www.deltafaucet.com/node/265',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'If a stopper does not lift straight out, it is held by the horizontal rod on the back of the drain pipe; remove the nut, pull the rod straight away from the pipe about an inch, and the stopper comes free.',
+    },
+    {
+      id: 'src-bathsink-3',
+      title: 'My pop up drain is not draining water',
+      publisher: 'Pfister',
+      url: 'https://www.pfisterfaucets.com/parts-support/troubleshooting/support-articles/pop-up-drain-not-draining-water',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Unfasten the ball rod by turning the nut counterclockwise, pull the stopper out, remove hair and debris from it and the pop-up assembly, reinstall the rod and test drainage; reinstall the stopper aligned with the rod opening, tighten the nut until it stops plus a quarter turn, and call a licensed professional if no debris is visible.',
+    },
+    {
+      id: 'src-bathsink-4',
+      title: 'What\'s in Drain Cleaner?',
+      publisher: 'Poison Control (National Capital Poison Center)',
+      url: 'https://www.poison.org/articles/whats-in-drain-cleaner',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Non-enzymatic drain cleaners contain corrosive acids or alkalis that burn skin and tissue; splashback happens when product is poured from too high or into a completely blocked drain; wear goggles and rubber gloves, store containers closed and away from children; baking soda and vinegar is unlikely to clear tough clogs.',
+    },
+  ],
+  seo: {
+    title: 'How to Unclog a Bathroom Sink (No Chemicals)',
+    description: 'How to unclog a bathroom sink: pull the pop-up stopper and clear the hair, plug the overflow and plunge, then clean the trap. Why to skip chemical cleaners.',
+    canonical: 'https://housecarewiki.com/guides/how-to-unclog-a-bathroom-sink',
+    indexable: true,
+    focusKeyword: 'how to unclog a bathroom sink',
+  },
+};
+
+export default article;

@@ -1,0 +1,150 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-greasy-kitchen-cabinets',
+  slug: 'how-to-clean-greasy-kitchen-cabinets',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean greasy kitchen cabinets',
+  subtitle: 'A soft cloth, warm water and a little dishwashing liquid or emulsion cleaner, then dry right away. What cabinet makers say about painted, stained wood, laminate and thermofoil fronts, and the cleaners that ruin the finish.',
+  excerpt: 'Wipe with a weak dish-liquid solution or an emulsion cleaner, rinse with a damp cloth, dry immediately.',
+  quickAnswer: 'Mix a small amount of dishwashing liquid into warm water (MasterBrand suggests about 5 percent soap to 95 percent water), or use an emulsion-type cleaner such as Murphy Original Oil Soap if you have KraftMaid cabinets. Wipe the greasy doors with a soft cotton or microfiber cloth that is damp, not wet, then remove the soap film with a cloth dampened in plain water and dry the surface immediately with a clean, lint-free cloth. Do not use ammonia, bleach, scouring pads, steel wool, abrasive powders, oven cleaner or silicone polishes, and never let water sit on the finish. Check your cabinet maker\'s care guide first, because the details differ by brand and finish.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'cabinets-pantry',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/guide-kitchen-org.webp',
+  heroImageAlt: 'Open white kitchen drawer with a brass cup pull and a grey cutlery organizer, below a marble-look countertop holding a wooden cutting board with bread, a coffee mug, utensils and a striped towel',
+  safetyWarnings: [
+    'Do not use ammonia, bleach or products containing either. MasterBrand lists them among cleaners to avoid, and American Woodmark warns against cleaners containing bleach. KraftMaid only says ammonia cleaners should be diluted, so the safest choice on any brand is to skip ammonia entirely.',
+    'Never use scouring pads, steel wool, scouring powders or other abrasive cleaners on cabinet doors; every cabinet maker cited here warns they damage the finish.',
+    'Keep oven cleaner off the cabinets completely, and do not use solvents such as mineral spirits, nail-polish remover or paint thinner. KraftMaid also warns against cleaners with acetone, acetate or ethyl alcohol on melamine and thermofoil.',
+    'Self-cleaning oven cycles get far hotter than normal cooking. KraftMaid and MasterBrand both recommend removing the doors and drawers of the cabinets next to the oven before running one.',
+    'Ventilate the kitchen when using any cleaning product, and never mix cleaners together.',
+  ],
+  materialsNeeded: [
+    'Two or three soft, clean cotton or microfiber cloths (microfiber for laminate and high-gloss fronts)',
+    'Warm water in a bowl or bucket',
+    'Mild dishwashing liquid (not dishwasher detergent), or an emulsion-type cleaner such as Murphy Original Oil Soap',
+    'A clean, lint-free cotton cloth for drying',
+    'Ammonia-free glass cleaner, only if you have glass door inserts',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Identify Your Finish and Check the Maker\'s Guide',
+      instruction: 'Find out who made your cabinets and whether the doors are stained wood, painted, laminate, high-gloss, melamine or thermofoil. Look up that brand\'s care and cleaning page. Makers differ: KraftMaid recommends an emulsion-type cleaner, while MasterBrand and American Woodmark recommend a mild dishwashing-liquid solution.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Mix a Weak Cleaning Solution',
+      instruction: 'Stir a small amount of mild dishwashing liquid into warm water. MasterBrand gives a ratio of about 5 percent soap to 95 percent water and specifies dishwashing liquid, not dishwasher products. If your maker recommends an emulsion-type cleaner such as Murphy Original Oil Soap instead, use that and follow its label.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wipe the Grease with a Damp Cloth',
+      instruction: 'Dip a soft, clean cotton cloth (microfiber on laminate and high-gloss doors) in the solution and wring it out until it is just damp. Wipe the greasy areas, working one door or drawer front at a time, and pay most attention to doors near the stove, sink and trash can. Do not use a sponge or a used dish cloth, which can hold grit or grease that scratches or smears the finish.',
+      proTip: 'Wring the cloth hard. Too much water is one of the main ways cabinet finishes get damaged, peeling or discolored.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Remove the Soap Film',
+      instruction: 'Rinse a second cloth in plain warm water, wring it out well, and wipe the same area again to lift any soap film, as American Woodmark advises.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Dry Immediately',
+      instruction: 'Dry every surface right away with a clean, soft, lint-free cloth. Do not leave doors to air-dry. On laminate and high-gloss fronts, use microfiber to dry so you do not scratch the surface, and avoid paper towels.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Clean Knobs, Pulls and Glass Separately',
+      instruction: 'Wash knobs and pulls with mild soap and warm water, then dry them. Skip brass and silver polishes, which KraftMaid says can contain harsh chemicals that damage hardware. For glass inserts, spray an ammonia-free glass cleaner onto the cloth rather than onto the glass.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Keep Grease from Building Up Again',
+      instruction: 'Wipe up grease splatters and spills as soon as they happen; MasterBrand warns grease and oil splatters can cause permanent damage or discoloration. KraftMaid suggests a weekly wipe-down if you cook often. Do not drape damp dish towels over sink-base doors.',
+    },
+  ],
+  ifMethodFails: [
+    'If a sticky layer remains, repeat the dish-liquid wipe in small sections rather than reaching for a stronger cleaner or a scrubbing pad. KraftMaid allows a mild detergent with warm water for stubborn stains.',
+    'If the doors look cloudy or smeary after cleaning, the cause may be wax or silicone polish buildup or leftover soap. Wipe again with a cloth dampened in plain water and dry well; KraftMaid notes long-term use of wax polishes can leave a film.',
+    'If the finish is peeling, discolored or worn through, that is damage rather than dirt. Contact your cabinet maker about touch-up kits or repair instead of scrubbing harder.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What is the best way to remove sticky grease from kitchen cabinets?',
+      answer: 'Use warm water with a small amount of mild dishwashing liquid on a soft, damp cloth, then wipe again with a cloth dampened in plain water and dry right away. If you have KraftMaid cabinets, the maker recommends an emulsion-type cleaner such as Murphy Original Oil Soap instead. Avoid abrasive pads and strong chemicals.',
+    },
+    {
+      question: 'Can I use a degreaser on kitchen cabinets?',
+      answer: 'None of the cabinet makers cited here recommends a heavy-duty kitchen degreaser for cabinet doors. They call for mild dishwashing liquid or an emulsion cleaner and warn against ammonia, bleach, abrasives and solvents. Only use a degreaser if your own cabinet maker\'s care guide names it as safe for your finish.',
+    },
+    {
+      question: 'Is Murphy Oil Soap safe for kitchen cabinets?',
+      answer: 'KraftMaid recommends an emulsion-type cleaner such as Murphy Original Oil Soap for its cabinets. Other makers, including MasterBrand and American Woodmark, recommend a mild dishwashing-liquid solution. Follow your own cabinet maker\'s guide and the product label, and dry the surface immediately afterward.',
+    },
+    {
+      question: 'How do you clean painted kitchen cabinets without damaging the paint?',
+      answer: 'Wipe painted doors with a soft cloth that is only damp, using warm water and a little mild dishwashing liquid for grease, then dry them right away with a soft cloth. Avoid scouring pads, abrasive powders, ammonia, bleach and solvents, and never leave water standing on the paint.',
+    },
+    {
+      question: 'Should I wax or polish my kitchen cabinets?',
+      answer: 'MasterBrand says its cabinets do not need waxing and does not recommend it, and it lists silicone-based polishes among products to avoid. KraftMaid warns silicone polishes can harm the finish and wax polishes can leave a buildup over time. Clean, dry cabinets generally need no polish at all.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-cabinets-1',
+      title: 'Care & Cleaning',
+      publisher: 'KraftMaid Cabinetry',
+      url: 'https://homedepot.kraftmaid.com/order-install/your-cabinets-are-in-now-what/care-and-cleaning/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Recommends an emulsion-type cleaner such as Murphy Original Oil Soap and a mild detergent with warm water for stubborn stains; avoid excessive moisture, always dry immediately with a lint-free cotton cloth, never use abrasive cleaners, scouring pads or powdered cleansers, do not use a dish cloth, keep oven cleaner off the cabinets, avoid silicone polishes, and do not use acetone, acetate or ethyl alcohol on melamine or thermofoil.',
+    },
+    {
+      id: 'src-cabinets-2',
+      title: 'Do\'s and Don\'ts of Kitchen Cabinet Cleaning',
+      publisher: 'KraftMaid Cabinetry',
+      url: 'https://kraftmaid.com/kraftmaid/dos-and-donts-of-kitchen-cabinet-cleaning',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Use a non-detergent, non-abrasive, emulsion-type cleaner; avoid harsh detergents, abrasive and powdered cleaners, scouring pads, wax polishes, petroleum solvents and silicones; pay extra attention to cabinets exposed to grease and moisture; wipe up spills right away and dry with a lint-free cotton cloth; a weekly wipe-down helps if you cook often.',
+    },
+    {
+      id: 'src-cabinets-3',
+      title: 'Care and Cleaning',
+      publisher: 'MasterBrand Cabinets',
+      url: 'https://www.masterbrandcabinets.com/get-started/love-your-space/care-and-cleaning',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For grease and dirt, use dishwashing liquid (not dishwasher products) at about 5 percent soap to 95 percent water on a soft cotton or microfiber cloth, then dry; avoid ammonia, bleach, abrasives, steel wool, silicone products, wax, solvents, sponges, dish cloths and paper towels; grease splatters and moisture can cause permanent damage; remove doors near the oven before a self-cleaning cycle.',
+    },
+    {
+      id: 'src-cabinets-4',
+      title: 'Continental Cabinetry Care and Cleaning',
+      publisher: 'American Woodmark',
+      url: 'https://americanwoodmark.com/resources/continental-cabinetry',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean with a solution of mild dishwashing soap and warm water on a soft cloth, remove soap film with a damp cloth, dry immediately with a clean soft cloth, and do not use abrasive cleaners or cleaners containing bleach or silicone.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean Greasy Kitchen Cabinets (By Finish)',
+    description: 'How to clean greasy kitchen cabinets the way cabinet makers advise: mild dish soap or emulsion cleaner, a damp cloth, dry fast, and no ammonia or abrasives.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-greasy-kitchen-cabinets',
+    indexable: true,
+    focusKeyword: 'how to clean greasy kitchen cabinets',
+  },
+};
+
+export default article;

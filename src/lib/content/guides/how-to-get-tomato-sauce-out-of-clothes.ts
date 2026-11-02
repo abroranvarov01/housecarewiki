@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-tomato-sauce-out-of-clothes',
+  slug: 'how-to-get-tomato-sauce-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get tomato sauce out of clothes',
+  subtitle: 'Tomato sauce is two stains in one: an oily part and a red-orange color. Scrape and rinse cold from the back, break up the oil with dish detergent, then treat the color with an oxygen or color-safe stain remover before a warm wash.',
+  excerpt: 'Scrape, cold rinse from the back, dish soap for the oil, a stain remover for the color, and no dryer until it is gone.',
+  quickAnswer: 'Scrape off the excess sauce with a spoon or butter knife and rinse cold water through the back of the fabric while the stain is still damp. Massage a little traditional liquid dish detergent into the spot, wait about 5 minutes to break up the oil, and rinse it out. Then treat the remaining color with an oxygen or color-safe stain remover, following its label, and wash in the warmest water the care label allows. Air-dry and check the spot; repeat before you ever use the dryer, because heat sets what is left.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-laundry.webp',
+  heroImageAlt: 'Close-up of a white cotton shirt laid on a speckled countertop, its collar band discolored yellow-brown and being brushed with a small wooden-handled bristle brush, with a plant and mixed laundry in the background',
+  safetyWarnings: [
+    'Do not put the garment in the dryer while any stain is visible. Dryer heat sets tomato sauce stains, and damp fabric can hide leftover oil, so air-dry and check first.',
+    'Do not use chlorine bleach on wool, silk, leather, mohair or spandex, and use it on whites only when the care label allows.',
+    'Oxygen stain remover sprays and soaks are not for wool, wool blends, silk, silk blends, leather or dry-clean-only fabrics. Test any product on a hidden seam first.',
+    'Never mix bleach with ammonia, vinegar or other cleaners, and ventilate the room when you use bleach or solvent-based spot cleaners.',
+  ],
+  materialsNeeded: [
+    'Spoon or butter knife',
+    'Paper towels',
+    'Cold running water',
+    'Traditional liquid dish detergent',
+    'Oxygen laundry stain remover (spray or powder) or a color-safe stain remover',
+    'Liquid laundry detergent',
+    'Optional, white bleach-safe fabrics only: chlorine bleach',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Scrape and Blot Right Away',
+      instruction: 'Check the care label, then scrape off excess sauce with a spoon or butter knife and blot gently with a paper towel. Act while the stain is still damp; once tomato sauce dries it is much harder to remove.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Rinse Cold Water Through the Back',
+      instruction: 'Turn the garment inside out and run cold water through the back of the stain. Rinsing from the front pushes the sauce deeper into the fibers, while rinsing from the back flushes it out.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Break Up the Oil With Dish Detergent',
+      instruction: 'Saturate the stain with a traditional liquid dish detergent, not a plant-based one, and massage it in gently. Let it sit for 5 minutes so it can break up the oil in the sauce.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Rinse Out the Dish Soap',
+      instruction: 'Rinse the area with warm water until all the dish detergent is gone. Leftover dish soap should not go into the washing machine.',
+      proTip: 'If you are unsure whether the fabric tolerates warm water, check the care label before this rinse.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Treat the Red Color',
+      instruction: 'For colors or whites with spandex, rub a little color-safe stain remover into what is left of the stain and let it stand 10 minutes without letting it dry out. Or saturate the stain with an oxygen laundry stain spray and let it stand as the label directs. Test a hidden spot first and skip these products on wool, silk, leather and dry-clean-only items.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Soak Whites or Old Stains if Needed',
+      instruction: 'For white clothes or a stain that has already dried, dissolve an oxygen whitener or stain remover powder in the warmest water the care label allows, using the dose on the package, and soak for about 6 hours before washing.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Wash Warm and Air-Dry to Check',
+      instruction: 'Wash in the warmest water the care label allows with your regular detergent. For white, bleach-safe items you can use the hottest allowed water and add chlorine bleach per its label. Air-dry the garment and inspect the spot; if any color or oil remains, repeat from the dish detergent step on dry fabric.',
+    },
+  ],
+  ifMethodFails: [
+    'If a faint orange shadow remains on washable fabric, the University of Georgia Extension suggests a 30-minute soak in a quart of warm water with a tablespoon of sodium perborate (oxygen) bleach, then a rinse and a wash with a bleach safe for the fabric.',
+    'If a greasy ring shows once the fabric dries, the oil was not fully removed. Repeat the dish detergent pretreatment on the dry stain, rinse, and wash again.',
+    'For dry-clean-only, silk or wool garments, or a stain that survives two rounds, take it to a dry cleaner and tell them it is tomato sauce.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does dish soap get tomato sauce out of clothes?',
+      answer: 'Dish soap handles the oily part of the stain. Clorox recommends saturating the spot with traditional liquid dish detergent and leaving it 5 minutes, then rinsing it out and using a stain remover on the color that remains.',
+    },
+    {
+      question: 'Should you use hot or cold water on tomato sauce stains?',
+      answer: 'Start with cold water rinsed through the back of the fabric, as Tide recommends. After you have pretreated the oil and color, wash in the warmest water the care label allows.',
+    },
+    {
+      question: 'How do you get dried tomato sauce out of clothes?',
+      answer: 'Pretreat the dried stain with an oxygen laundry stain spray and let it stand as the label directs, or soak whites in an oxygen whitener solution for about 6 hours, then wash in the warmest water the fabric allows. Repeat before drying if any color remains.',
+    },
+    {
+      question: 'Can I use bleach on a spaghetti sauce stain?',
+      answer: 'On white, bleach-safe fabric, yes: Clorox suggests washing in the hottest allowed water with detergent and chlorine bleach. Do not use bleach on wool, silk, leather, mohair or spandex; use a color-safe stain remover on colors instead.',
+    },
+    {
+      question: 'Why does tomato sauce stain come back after washing?',
+      answer: 'Tomato sauce combines oil and color, and damp fabric can hide leftover oil that shows up once it dries. Air-dry and check the spot, and repeat the treatment on dry fabric before using the dryer.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-tomato-1',
+      title: 'How to Remove Spaghetti Sauce Stains',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/spaghetti-sauce-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Scrape excess with a spoon or butter knife and blot, rinse under cold water from the back while the stain is damp because rinsing from the front pushes it deeper, wash per the care label, and repeat before using the dryer because drying sets a visible stain.',
+    },
+    {
+      id: 'src-tomato-2',
+      title: 'How to Get Tomato Sauce Out of Clothes',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-get-spaghetti-sauce-out-of-clothes/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Saturate with traditional (not plant-based) dish detergent for 5 minutes, rinse with warm water until it is gone, apply Clorox 2 for Colors to the remaining stain for 10 minutes, wash warmest or hottest per label (with bleach for white bleach-safe items), avoid bleach on wool, silk, leather, mohair and spandex, and air-dry because damp fabric can hide oil.',
+    },
+    {
+      id: 'src-tomato-3',
+      title: 'How to Remove Tomato Sauce Stains',
+      publisher: 'OxiClean',
+      url: 'https://www.oxiclean.com/stain-solutions/how-to-remove-tomato-sauce-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Saturate with OxiClean Max Force spray and let stand 5 minutes up to a week before washing in the warmest water the fabric accepts, or soak whites 6 hours in White Revive at 1 scoop per gallon; test first and do not use on wool, silk, leather or dry-clean-only fabrics.',
+    },
+    {
+      id: 'src-tomato-4',
+      title: 'Remove Stains From Ketchup, Tomato, Tomato-based Sauces/Juices',
+      publisher: 'University of Georgia Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-ketchup-tomato-tomato-based-sauces-juices',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Read the care label first, pretreat with a pre-wash stain remover and launder with heavy-duty liquid detergent; for spaghetti sauce a 30-minute soak in 1 quart warm water with 1 tablespoon sodium perborate bleach, then laundering with a bleach safe for the fabric; pretest cleaners and ventilate.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Tomato Sauce Out of Clothes',
+    description: 'How to get tomato sauce out of clothes: rinse cold from the back, dish soap for the oil, a stain remover for the red color, then wash warm and air-dry to check.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-tomato-sauce-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get tomato sauce out of clothes',
+  },
+};
+
+export default article;

@@ -1,0 +1,158 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-range-hood-filter',
+  slug: 'how-to-clean-a-range-hood-filter',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a range hood filter',
+  subtitle: 'Metal grease filters wash clean in warm soapy water or, if your manual allows, the dishwasher. Charcoal filters on ductless hoods cannot be washed and need replacing. How to tell which you have and how often to do each.',
+  excerpt: 'Soak metal grease filters in warm water with mild detergent, rinse, dry completely and reinstall. Replace charcoal filters instead of washing them.',
+  quickAnswer: 'Turn the hood off, let it cool and pop out the metal grease filters. Soak them in warm water with a mild detergent for 15 to 20 minutes per side, as Broan-NuTone recommends, then rinse and dry completely before reinstalling. Many metal filters can also go in the dishwasher with warm water and detergent, but only if your owner\'s manual says yours are dishwasher-safe. Charcoal filters on ductless, recirculating hoods are not washable; replace them about every 6 months, or sooner if you cook greasy food often.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand cleaning grease and crumbs off a stainless steel gas cooktop with a yellow and green sponge beside black burner grates, with a dish rack and potted basil in the background',
+  safetyWarnings: [
+    'Turn the hood and cooktop off and let them cool completely before removing or cleaning the filters.',
+    'Never wash a charcoal (carbon) filter. Whirlpool states the charcoal filter is not washable, so replace it instead.',
+    'Put metal filters in the dishwasher only if your owner\'s manual says they are dishwasher-safe. Broan-NuTone notes only some filters are.',
+    'Follow the label on any detergent or degreaser you use, and ventilate the kitchen while you work.',
+    'Dry filters completely before putting them back, and make sure each one latches; on some downdraft hoods the fan will not run until the filter is properly seated.',
+  ],
+  materialsNeeded: [
+    'Your range hood owner\'s manual (filter type and dishwasher rules)',
+    'A sink or tub large enough to submerge the filters',
+    'Warm water',
+    'Mild liquid detergent',
+    'Non-phosphate dishwasher detergent (only if your filters are dishwasher-safe)',
+    'Soft brush or non-abrasive sponge',
+    'Clean towel for drying',
+    'Replacement charcoal filters for ductless hoods (the part number in your manual)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Turn Off the Hood and Let It Cool',
+      instruction: 'Switch off the hood fan and light and the cooktop, and wait until everything is cool. Hot grease and metal edges can burn, and some filters sit right above the burners.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Identify Which Filters You Have',
+      instruction: 'Check your owner\'s manual. Metal grease filters (aluminum mesh or stainless baffle panels) are washable. Ductless, recirculating hoods also have charcoal filters, used together with the aluminum grease filters to trap odors; those are replaced, not washed.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Remove the Grease Filters',
+      instruction: 'Release each filter using the latch, tab or spring handle shown in your manual and lower it out. On many downdraft hoods you pull the spring release handle, then pull the filter down and out.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Soak in Warm Water and Mild Detergent',
+      instruction: 'Fill a sink with warm water and a mild detergent and submerge the filters. Broan-NuTone recommends soaking them for 15 to 20 minutes on each side for best results. Then work the loosened grease out with a soft brush or non-abrasive sponge.',
+      proTip: 'If you use a kitchen degreaser for heavy buildup, choose one labeled safe for your filter material and follow its label.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Or Use the Dishwasher if Your Manual Allows',
+      instruction: 'If your manual says your metal filters are dishwasher-safe, wash them in the dishwasher with warm water and detergent. Broan-NuTone recommends a non-phosphate detergent for metal filters; phosphate detergents or local water can discolor them, though that does not affect how they work.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse and Dry Completely',
+      instruction: 'Rinse off all detergent and loosened grease with clean water, shake off the excess and let each filter dry completely before reinstalling it, as Whirlpool advises.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Reinstall and Check the Fit',
+      instruction: 'Slide each filter back into its track and latch it. If the fan will not start afterward, push the filter in as far as it goes; some downdraft hoods have a switch that stops the fan until the filter is seated.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Replace Charcoal Filters on Schedule',
+      instruction: 'On a ductless hood, swap the charcoal filters for the part your manual specifies. Whirlpool says about every 6 months with normal use, and Broan-NuTone says every 6 months or more often if your cooking creates extra grease.',
+    },
+  ],
+  ifMethodFails: [
+    'If grease is still sticky after one soak, repeat the warm-water and mild-detergent soak and brush the filter again, working from the cleaner side through to the dirtier side.',
+    'If a metal filter is torn, bent out of shape or the mesh is clogged beyond cleaning, replace it with the genuine part listed in your manual.',
+    'If your ductless hood still leaves cooking smells after the grease filters are clean, the charcoal filter is probably saturated. Replace it rather than trying to wash it.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you put a range hood filter in the dishwasher?',
+      answer: 'Metal grease filters often can, but only some are dishwasher-safe, so check your owner\'s manual first. Whirlpool says its grease filters can be washed in the sink or the dishwasher with warm water and detergent. Broan-NuTone recommends a non-phosphate detergent. Never put a charcoal filter in the dishwasher.',
+    },
+    {
+      question: 'How often should you clean a range hood filter?',
+      answer: 'Clean metal grease filters frequently; how often depends on how much you cook, so follow your manual. Whirlpool says frequent cleaning keeps the vent system running efficiently. If you see a grease film on the filter or the hood seems less effective, it is time to wash it.',
+    },
+    {
+      question: 'Can you wash a charcoal range hood filter?',
+      answer: 'No. Whirlpool states that the charcoal filter is not washable. Replace it, typically about every 6 months with normal use, using the replacement part your owner\'s manual specifies.',
+    },
+    {
+      question: 'Why did my aluminum range hood filter turn dark after washing?',
+      answer: 'Broan-NuTone says phosphate detergents or local water conditions can discolor metal filters in the dishwasher. The discoloration does not affect how the filter works. Using a non-phosphate detergent helps prevent it.',
+    },
+    {
+      question: 'How do I know if my range hood has a charcoal filter?',
+      answer: 'Charcoal filters are used on ductless, recirculating hoods that blow air back into the kitchen instead of venting outside. They sit alongside the aluminum grease filters. Your owner\'s manual lists the filters your model uses.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-hoodfilter-1',
+      title: 'How do I clean my Range Hood\'s Grease Filters?',
+      publisher: 'Broan-NuTone Help Center',
+      url: 'https://help.broan-nutone.com/en/range-hoods/How-do-I-clean-my-Range-Hoods-Grease-Filters-7a38',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Soak grease filters in warm water with a mild detergent solution for 15 to 20 minutes per side; only some filters are dishwasher-safe, so check the manual; use a non-phosphate detergent for metal filters, since phosphates or local water can discolor them without affecting performance.',
+    },
+    {
+      id: 'src-hoodfilter-2',
+      title: 'Clean or Replace Filters - Vent Hood',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Cooking/Ventilation_and_Hoods/Vent_Hoods/Cleaning_and_Maintenance/Clean_or_Replace_Filters_-_Vent_Hood',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'With controls off and the hood cool, wash the grease filter in the sink or dishwasher with warm water and detergent; the charcoal filter on non-vented models is not washable and should be replaced about every 6 months with normal use.',
+    },
+    {
+      id: 'src-hoodfilter-3',
+      title: 'Clean and Replace the Grease Filters in a Downdraft Vent Hood',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Cooking/Ventilation_and_Hoods/Product_Info/Ventilation_Cleaning_and_Care/Clean_and_Replace_the_Grease_Filters_in_a_Downdraft_Vent_Hood',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Frequently remove and clean the filters to improve efficiency; wash them in the sink or dishwasher with warm water and detergent, dry completely before reinstalling, and note that a microswitch keeps the vent from running until the filter is properly installed.',
+    },
+    {
+      id: 'src-hoodfilter-4',
+      title: 'Genuine Replacement Charcoal Filter for Range Hoods (HPF30)',
+      publisher: 'Broan-NuTone',
+      url: 'https://broan-nutone.com/en-us/accessory/hpf30',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'The charcoal filter is used in ductless applications, together with the hood\'s aluminum filters, to capture grease and odors; replace it every 6 months, or more often if your cooking style generates extra grease.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Range Hood Filter (and When to Replace)',
+    description: 'How to clean a range hood filter: soak metal grease filters in warm soapy water or use the dishwasher if allowed. Charcoal filters get replaced, not washed.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-range-hood-filter',
+    indexable: true,
+    focusKeyword: 'how to clean a range hood filter',
+  },
+};
+
+export default article;

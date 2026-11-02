@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-calcium-buildup-from-faucets',
+  slug: 'how-to-remove-calcium-buildup-from-faucets',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove calcium buildup from faucets',
+  subtitle: 'Take the aerator off and soak it in white vinegar, treat crust on the faucet body only with what your faucet maker allows, and know exactly where CLR can and cannot go.',
+  excerpt: 'Unscrew the aerator, soak and scrub the parts in white vinegar, and use only maker-approved treatments on the faucet finish.',
+  quickAnswer: 'Most calcium buildup sits in the aerator, the screen at the tip of the spout. Unscrew it by hand, take it apart, soak the pieces in white vinegar and scrub them with an old toothbrush, then rinse and reinstall with the gasket in place. On the faucet body itself, use only what your faucet maker allows: Moen and Delta permit a 50/50 white vinegar and water mix used briefly and rinsed off, but Kohler and Pfister say not to use acid products on their finishes. CLR is labeled for chrome and stainless steel but not for brass, copper or coated surfaces, so check both your faucet maker\'s rules and the CLR label first.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tools',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/bathroom-hero.webp',
+  heroImageAlt: 'Wet silver-tone widespread faucet with water spots on a speckled stone vanity, next to a clear spray bottle, a folded blue towel, a toothbrush holder and a potted plant',
+  safetyWarnings: [
+    'Never mix vinegar or CLR with bleach or other household cleaners. CLR\'s directions say not to mix it with bleach or other cleaners, and acids combined with bleach release toxic gas. Ventilate the bathroom while you work.',
+    'Do not use CLR on brass, copper, aluminum, galvanized metal, natural stone such as marble and granite, or painted, coated or sealed surfaces, and do not leave it on any surface longer than 2 minutes before rinsing. Those limits come from the CLR product page.',
+    'Many faucet makers advise against lime scale removers and rust removers on the finish itself. Moen says to avoid harsh cleansers such as lime scale removers, Delta says not to use products that claim to remove tarnish and rust, and Kohler and Pfister say not to use acid products. When the faucet maker and the cleaner label disagree, follow the faucet maker.',
+    'Keep vinegar and CLR off natural stone vanity tops. Wipe up drips right away.',
+    'Use a cloth around the spout if you need pliers on a stuck aerator, and go gently. Delta warns against bending it.',
+  ],
+  materialsNeeded: [
+    'White vinegar',
+    'Small bowl or cup for soaking',
+    'Old toothbrush',
+    'Soft cloths (one for wrapping the spout, one for drying)',
+    'Rag or plastic bag and a rubber band for a stuck aerator',
+    'Channel lock pliers (only if the aerator will not turn by hand)',
+    'Optional, chrome or stainless parts only: CLR Calcium, Lime and Rust Remover, used per its label',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check Your Faucet Finish and Maker\'s Rules',
+      instruction: 'Find your faucet brand and finish before choosing a descaler. Moen and Delta allow a 50/50 white vinegar and water mix for hard water spots. Kohler says never to use cleaners containing acids, and Pfister says to avoid any product with acid in it. Moen also warns that harsh cleansers such as lime scale removers can damage its finishes, and that ignoring its care instructions may void the warranty.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Unscrew the Aerator',
+      instruction: 'You do not need to shut off the water. Turn the aerator at the tip of the spout counterclockwise by hand. If mineral buildup has locked it in place, wrap a rag soaked in white vinegar around it and give it a few hours to soften the deposits, as Delta suggests. If it still will not turn, wrap a cloth around it and use channel lock pliers gently.',
+      proTip: 'Put the sink stopper in first so small parts cannot fall down the drain.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Take the Aerator Apart and Note the Order',
+      instruction: 'Separate the screen and inner pieces, laying them out in the order they came apart or taking a quick photo. Remove the rubber gasket too; Delta notes it can stay stuck to the end of the spout. Rinse away loose grit.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Soak the Parts in White Vinegar and Scrub',
+      instruction: 'Drop the metal and plastic pieces into a small bowl of white vinegar and let them soak until the white crust softens, then scrub them with an old toothbrush. Delta recommends exactly this for stubborn deposits. If the aerator is chrome or stainless steel, CLR\'s label lists sink aerators as a use: dilute it with equal parts warm water, leave it no more than 2 minutes, and rinse thoroughly with cold water. Replace any parts that are cracked or damaged.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Treat Crust on the Faucet Body Only If Your Maker Allows It',
+      instruction: 'For Moen and Delta faucets, dampen a soft cloth with a 50/50 mix of white vinegar and water, hold it on the spotted area for a short time, then rinse with clean water. For Kohler and Pfister faucets, skip acids and use warm water, mild soap and a soft cloth. Never scrape deposits off with abrasive pads, which Moen, Kohler and Delta all warn against.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse Everything with Clean Water',
+      instruction: 'Rinse the aerator parts under running water and wipe the faucet body with a cloth dampened in clean water. Any vinegar or CLR left on the metal keeps working on the finish, which is why both Moen and the CLR label call for prompt rinsing.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Reassemble, Reinstall and Blot Dry',
+      instruction: 'Rebuild the aerator in its original order, put the gasket back, and screw it onto the spout hand-tight. Run the water to check the flow, then blot the whole faucet dry with a soft cloth. Kohler and Delta both say water left to evaporate on the faucet is what builds new mineral deposits.',
+    },
+  ],
+  ifMethodFails: [
+    'If the aerator screen is still clogged after soaking and scrubbing, or any piece is cracked or warped, replace the aerator. Delta advises replacement when parts are damaged.',
+    'If white crust on the faucet body will not come off with the method your maker allows, stop rather than switching to scouring pads or a stronger acid. Contact the faucet maker; repeated harsh treatments can damage the finish and void the warranty.',
+    'If buildup returns quickly, dry the faucet after each use. Kohler says blotting metal dry prevents the water deposits that turn into crust.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does vinegar remove calcium buildup from faucets?',
+      answer: 'Yes, white vinegar dissolves mineral deposits. Delta recommends soaking aerator parts in white vinegar and scrubbing them with a toothbrush, and Moen and Delta allow a 50/50 vinegar and water mix on the faucet surface. Kohler and Pfister say not to use acid products on their finishes, so check your brand first.',
+    },
+    {
+      question: 'Is CLR safe to use on faucets?',
+      answer: 'CLR\'s label lists chrome, stainless steel and sink aerators among its uses, but says not to use it on brass, copper, aluminum or painted, coated or sealed surfaces, or to leave it on longer than 2 minutes. Several faucet makers, including Moen, advise against lime scale removers on their finishes, so check your faucet\'s care page before using it on the faucet body.',
+    },
+    {
+      question: 'How do you get a stuck aerator off a faucet?',
+      answer: 'Wrap a rag soaked in white vinegar around the aerator and give it a few hours to dissolve the minerals, then try turning it counterclockwise by hand. If it still sticks, wrap a cloth around it and use channel lock pliers gently so you do not bend it.',
+    },
+    {
+      question: 'Can I use vinegar on brushed nickel or matte black faucets?',
+      answer: 'Moen allows a 50/50 vinegar and water blend for a limited time on its brushed nickel and matte black finishes, followed by a rinse and dry, but forbids lime scale removers and abrasives on its powder-coated finishes. Other makers differ, so follow your own brand\'s care instructions.',
+    },
+    {
+      question: 'How do I stop calcium from building up on my faucet?',
+      answer: 'Dry the faucet after use. Kohler and Delta both say that letting water evaporate on the metal is what leaves mineral deposits, so blotting it dry with a soft cloth keeps crust from forming.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-calcium-1',
+      title: 'How To Fix Your Flow',
+      publisher: 'Delta Faucet',
+      url: 'https://www.deltafaucet.com/il/home-improvement-101/how-fix-your-flow',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Unscrew the aerator without shutting off the water; for a stuck aerator wrap a vinegar-soaked rag around it for a few hours, or use channel lock pliers over a cloth without bending it; remove the gasket, soak the pieces in white vinegar and scrub with a toothbrush, replace damaged parts, and reinstall hand-tight.',
+    },
+    {
+      id: 'src-calcium-2',
+      title: 'Faucet Finish Care and Cleaning',
+      publisher: 'Moen',
+      url: 'https://solutions.moen.com/Article_Library/Faucet_Finish_Care_and_Cleaning',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'A 50/50 vinegar and water blend may be used for a limited time on water spots, then rinsed and dried; harsh cleansers such as lime scale removers should be avoided on all listed finishes; abrasives are not allowed on powder-coat finishes; failure to comply may void the warranty.',
+    },
+    {
+      id: 'src-calcium-3',
+      title: 'Maintenance Guide: Centerset Lavatory Faucets K-7401, K-7403, K-7404',
+      publisher: 'Kohler',
+      url: 'https://resources.kohler.com/onlinecatalog/pdf/116430_5.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Never use cleaners containing abrasive cleansers, ammonia, bleach or acids; blot metal dry because water left to evaporate forms deposits, and drying often prevents soap and water deposits.',
+    },
+    {
+      id: 'src-calcium-4',
+      title: 'CLR Calcium, Lime & Rust Remover',
+      publisher: 'CLR Brands',
+      url: 'https://clrbrands.com/Products/CLR-Household/CLR-Calcium-Lime-Rust-Remover',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Use in a ventilated area, dilute with equal parts warm water, test a hidden area, leave no more than 2 minutes and rinse with cold water; uses include sink aerators, shower heads, chrome and stainless steel; do not use on brass, copper, aluminum, galvanized metal, natural stone or painted, coated or sealed surfaces, and do not mix with bleach or other cleaners.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Calcium Buildup From Faucets',
+    description: 'How to remove calcium buildup from faucets: soak the aerator in vinegar, descale only as your faucet maker allows, and know where CLR is safe. Rinse and dry.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-calcium-buildup-from-faucets',
+    indexable: true,
+    focusKeyword: 'how to remove calcium buildup from faucets',
+  },
+};
+
+export default article;

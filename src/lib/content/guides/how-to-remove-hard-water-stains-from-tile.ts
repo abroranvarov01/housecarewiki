@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-hard-water-stains-from-tile',
+  slug: 'how-to-remove-hard-water-stains-from-tile',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove hard water stains from tile',
+  subtitle: 'Start with a neutral tile cleaner and a nylon scrubber, then, on glazed ceramic or porcelain only, a lime remover used exactly as labeled: spot-tested, short contact, rinsed off with clean water. Why acids stay off natural stone and colored grout.',
+  excerpt: 'Neutral cleaner first; a short, label-timed lime remover on ceramic or porcelain only; rinse with fresh water and dry.',
+  quickAnswer: 'First confirm the tile is glazed ceramic or porcelain, not marble, limestone or travertine, because acids can etch calcium-based stone. Scrub the spots with a neutral tile cleaner and a nylon brush, then rinse with fresh clean water and dry. If mineral scale remains, use a calcium and lime remover that lists your surface, spot-test it, follow the label dilution, and rinse it off promptly; CLR, for example, says never leave it on longer than 2 minutes and to keep it off colored grout. Prevent new spots by rinsing off cleaner residue and drying or squeegeeing the tile after showers.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tile-grout',
+  surfaceSlugs: ['ceramic-tile'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/guide-spin-scrubber.webp',
+  heroImageAlt: 'Hand holding a white electric spin scrubber with a round bristle brush against soapy, spotted light grey shower wall tiles, with a glass door and chrome shower hose at the side',
+  safetyWarnings: [
+    'Never use acidic cleaners, vinegar or lemon on marble, limestone, travertine or other calcium-based natural stone. The Natural Stone Institute warns that products containing lemon, vinegar or other acids may dull or etch these stones.',
+    'Keep acidic lime removers off unsealed or colored cement grout. The Tile Council of North America notes that grout contains cement, which reacts with acids, and CLR lists colored grout (any color other than white) among surfaces to avoid.',
+    'Never mix a lime or rust remover with bleach or any other household cleaner. Work in a well-ventilated bathroom and wear gloves.',
+    'Do not leave a lime remover on longer than its label allows. CLR Calcium, Lime and Rust Remover says never longer than 2 minutes and warns it may etch older sinks, tubs and tiles.',
+    'Rust removers and some toilet bowl cleaners can contain hydrofluoric acid, which the Natural Stone Institute says attacks all stone, including granite and quartzite. Do not use them as a tile cleaner.',
+  ],
+  materialsNeeded: [
+    'Neutral (pH-neutral) tile and grout cleaner',
+    'Nylon or plastic scrub brush or non-scratch pad',
+    'Two buckets: one for cleaning solution, one of fresh clean rinse water',
+    'Sponge or microfiber cloths for rinsing and drying',
+    'Rubber gloves',
+    'For stubborn scale on glazed ceramic or porcelain only: a calcium and lime remover whose label lists your surface',
+    'Squeegee for prevention',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Identify the Tile and the Grout',
+      instruction: 'Make sure the surface is glazed ceramic or porcelain tile. If it is marble, limestone, travertine or another natural stone, stop here and use only non-acidic stone cleaners. Look at the grout too: cement grout reacts with acids, and lime removers can lighten or discolor colored grout, so plan to keep any acid product on the tile faces only.',
+      proTip: 'If you are not sure whether a tile is stone or porcelain, treat it as stone and skip acids entirely.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Scrub with a Neutral Tile Cleaner First',
+      instruction: 'Mix a neutral cleaner made for tile and grout as its label directs, apply it to the spotted area and scrub with a nylon or plastic brush, which generally will not scratch the glaze. Light hard water film and soap residue often come off at this stage without any acid.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Rinse with Fresh Clean Water and Check',
+      instruction: 'Rinse with a fresh bucket of clean water, not the dirty cleaning water, and wipe dry. Leftover cleaner leaves tile dull and quicker to soil, which can look like hard water staining. Look at the tile once it is dry: if white chalky spots remain, they are mineral scale.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Spot-Test a Lime Remover (Ceramic or Porcelain Only)',
+      instruction: 'Choose a calcium and lime remover whose label lists your surface, ventilate the bathroom and put on gloves. Test it on a small hidden area first, following the label exactly. CLR, for example, is mixed with an equal amount of warm water and warns that older tiles may be more sensitive, so testing matters.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Apply Briefly and Never Exceed the Label Time',
+      instruction: 'Apply the solution only to the spotted tile with a cloth, sponge or brush, keeping it off colored grout and any stone trim. Leave it no longer than the label allows; CLR says 2 minutes at most. Scrub lightly with the nylon brush while it works.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse Promptly and Thoroughly',
+      instruction: 'Rinse the area promptly and thoroughly with clean, cold water, then rinse again with fresh water so no acid residue stays on the tile or soaks into the grout. Dry with a clean cloth and repeat steps 5 and 6 on stubborn spots rather than leaving the product on longer.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Prevent New Hard Water Spots',
+      instruction: 'Hard water spots form when water dries on the tile and leaves minerals behind. Squeegee or towel-dry the walls after each shower, keep up regular cleaning with a neutral tile cleaner, and always finish with a clean-water rinse so residue does not build up.',
+      proTip: 'Keep a squeegee hanging in the shower so drying the walls becomes part of every shower.',
+    },
+  ],
+  ifMethodFails: [
+    'If spots remain after two short lime-remover passes, the deposit may be etching or damage to an older glaze rather than scale. Stop applying acid and ask a tile professional; longer contact can make it worse.',
+    'If the grout lightened or looks rough after cleaning, the acid reached it. Rinse well, let it dry thoroughly and consider resealing the grout; see our guide on how to seal grout.',
+    'If the "stains" are on natural stone, do not try stronger acids. Use a non-acidic stone cleaner and contact a stone restoration professional for etching.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What removes hard water stains from shower tile?',
+      answer: 'On glazed ceramic or porcelain, start with a neutral tile cleaner and a nylon brush, then rinse with clean water. For remaining mineral scale, a calcium and lime remover labeled for your surface works, used briefly as the label directs and rinsed off promptly.',
+    },
+    {
+      question: 'Can I use vinegar on tile to remove hard water stains?',
+      answer: 'The Tile Council of North America cautions that acids are not generally recommended for cleaning tile, because cement grout reacts with acids and vinegar may eat away at unprotected grout. Never use vinegar on marble, limestone or travertine, which it can etch.',
+    },
+    {
+      question: 'Is CLR safe on ceramic tile?',
+      answer: 'CLR lists porcelain among suitable surfaces but warns it may etch older sinks, tubs and tiles and should be kept off natural stone and colored grout. Dilute it as the label says, test a hidden spot, never leave it on longer than 2 minutes and rinse promptly with cold water.',
+    },
+    {
+      question: 'How do you remove hard water stains from marble or travertine tile?',
+      answer: 'Not with acidic lime removers or vinegar, which can etch calcium-based stone. The Natural Stone Institute suggests buffing surface hard water spots with dry 0000 steel wool and using non-acidic cleaners; for etching, call a stone professional.',
+    },
+    {
+      question: 'How do I keep hard water stains off my shower tile?',
+      answer: 'Dry the tile after each shower with a squeegee or towel so minerals are not left behind, clean regularly with a neutral tile cleaner, and always rinse cleaner off with fresh water so residue does not build up.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-hwtile-1',
+      title: 'Bathroom Tile and Grout: A Few Tips on Keeping Them Clean',
+      publisher: 'Tile Council of North America (TILE Magazine)',
+      url: 'https://tcnatile.com/wp-content/uploads/2022/08/Bathroom-Tile-and-Grout-A-Few-Tips-on-Keeping-Them-Clean.pdf',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Grout contains cement, which is alkaline and reacts with acids, so acidic cleaners like vinegar may eat away at unprotected grout; acids are not generally recommended to clean tile; use a neutral tile cleaner for regular cleaning, nylon or plastic scrubbers, and rinse thoroughly with fresh clean water to remove residue.',
+    },
+    {
+      id: 'src-hwtile-2',
+      title: 'Care and Cleaning for Natural Stone Surfaces',
+      publisher: 'Natural Stone Institute',
+      url: 'https://www.naturalstoneinstitute.org/consumers/care/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Products containing lemon, vinegar or other acids may dull or etch calcareous stones; rust removers and toilet bowl cleaners can contain hydrofluoric acid, which attacks all stones; surface hard water spots can be buffed with dry 0000 steel wool; a squeegee after each use minimizes soap scum.',
+    },
+    {
+      id: 'src-hwtile-3',
+      title: 'CLR Calcium, Lime & Rust Remover',
+      publisher: 'CLR Brands',
+      url: 'https://www.clrbrands.com/products/clr-household/clr-calcium-lime-and-rust-remover/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'In a well-ventilated area mix equal parts product and warm water, test on a small hidden area, let it sit 2 minutes and never longer, rinse promptly and thoroughly with cold water; avoid natural stone and sealed or coated surfaces; do not mix with bleach or other household cleaners; older tiles may be more sensitive.',
+    },
+    {
+      id: 'src-hwtile-4',
+      title: 'Calcium, Lime and Rust Remover FAQs',
+      publisher: 'CLR Brands',
+      url: 'https://www.clrbrands.com/how-to/faqs/clr-calcium-lime-rust-remover',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Calcium, Lime and Rust Remover may etch older sinks, tubs and tiles, should not be used on colored grout (any color other than white) or any natural stone including granite, should never be left on longer than two minutes, and should never be mixed with other household cleaners or bleach.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Hard Water Stains from Tile',
+    description: 'How to remove hard water stains from tile: neutral cleaner first, then a short, label-timed lime remover on ceramic or porcelain only. Never on natural stone.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-hard-water-stains-from-tile',
+    indexable: true,
+    focusKeyword: 'how to remove hard water stains from tile',
+  },
+};
+
+export default article;

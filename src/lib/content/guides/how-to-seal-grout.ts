@@ -1,0 +1,157 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-seal-grout',
+  slug: 'how-to-seal-grout',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to seal grout',
+  subtitle: 'Which grout needs a sealer (cement does, epoxy usually does not), how long new grout must cure first, how to clean and dry the joints, apply a penetrating sealer, wipe off the excess and check the result with a few drops of water.',
+  excerpt: 'Let cement grout cure, clean and dry it, apply a penetrating sealer, wipe off the excess, then test with drops of water.',
+  quickAnswer: 'Seal cement-based grout; epoxy grouts such as LATICRETE SPECTRALOCK do not require a sealer. Let new grout cure first, at least 48 to 72 hours depending on the grout and sealer labels, and make sure the joints are clean and completely dry. Apply a penetrating grout sealer with a sponge, brush or applicator, let it soak in for the time on the label, wipe the excess off the tile, and add a second coat if the first soaks in. A few hours later, drop water on the grout: if it soaks in right away, apply another coat.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tile-grout',
+  surfaceSlugs: ['grout'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/guide-shower-mold.webp',
+  heroImageAlt: 'Beige tiled shower ledge and floor with grout lines seen through a wet glass panel, black mildew along the bottom of the frame, a toothbrush and a clear spray bottle on the ledge',
+  safetyWarnings: [
+    'Wear chemical-resistant gloves, such as nitrile, and safety glasses when applying grout sealer, as sealer manufacturers direct. Keep the bathroom well ventilated.',
+    'Do not seal new grout before it has cured. Mapei calls for at least 48 hours, Custom Building Products 48 to 72 hours, and LATICRETE at least 72 hours at 70 degrees F for its cement grouts; when they differ, follow the longer of your grout and sealer labels.',
+    'Never seal over dirt, hard water deposits, rust or an old sealer. Mapei requires the grout to be dry and free of these contaminants.',
+    'Remove any sealer the grout did not absorb from the tile faces promptly. Dried excess can leave a residue on the tile.',
+    'Do not use bleach-based, strongly alkaline or acidic cleaners as routine grout cleaners on sealed grout; the Tile Council of North America and Mapei both note that harsh cleaners can break down sealers.',
+  ],
+  materialsNeeded: [
+    'Penetrating grout sealer made for cement grout',
+    'Tile and grout cleaner (neutral, or a heavy-duty tile and grout cleaner for first-time prep)',
+    'Grout brush or nylon scrub brush',
+    'Bucket of fresh clean rinse water and a sponge',
+    'Applicator: sponge, small brush, roller or applicator bottle',
+    'Clean lint-free towels for wiping off excess',
+    'Nitrile gloves and safety glasses',
+    'Painter\'s tape to protect painted surfaces',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check What Kind of Grout You Have',
+      instruction: 'Sealer is for cement-based grout, sanded or unsanded. LATICRETE says its epoxy grouts, such as SPECTRALOCK PRO Premium, do not require a grout sealer. If you do not know what was used, check the installer\'s paperwork or ask the installer before you buy a sealer.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Let New Grout Cure Fully',
+      instruction: 'For new installations, wait until the grout has cured before sealing. Mapei\'s UltraCare Grout Sealer calls for at least 48 hours, Custom Building Products\' TileLab Grout and Tile Sealer for 48 to 72 hours, and LATICRETE asks for at least 72 hours at 70 degrees F for its cement grouts and says to check whether your sealer needs longer. Follow the longer of the two labels.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Deep Clean the Grout Lines',
+      instruction: 'On existing grout, scrub the joints with a tile and grout cleaner and a grout brush to remove dirt, soap film, hard water deposits and any old sealer or wax. Then rinse with a fresh bucket of clean water, not the dirty cleaning water, so no cleaner residue is left in the joints.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Let the Grout Dry Completely',
+      instruction: 'Sealer needs a dry surface. Keep the shower out of use and let the grout dry thoroughly before you start, and work when the room and sealer are between 50 and 80 degrees F, the range Mapei gives. Tape off painted walls or trim you do not want sealed.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Test the Sealer in a Hidden Spot',
+      instruction: 'Apply a little sealer to an inconspicuous section of grout and let it dry to make sure you like the result and the color does not change. Mapei recommends waiting 24 hours after a test before judging it.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Apply an Even Coat and Let It Soak In',
+      instruction: 'Ventilate the room and put on gloves and safety glasses. Apply the sealer evenly to the grout lines with a sponge, brush, roller or applicator. Let it penetrate for the time on your label: up to 5 minutes for TileLab Grout and Tile Sealer, 5 to 10 minutes for Mapei UltraCare Grout Sealer.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Wipe Off the Excess and Add a Second Coat if Needed',
+      instruction: 'Wipe any sealer that did not soak in off the tile and grout with a clean towel. If the first coat absorbed quickly, apply a second coat the same way; Mapei asks for at least 30 minutes between coats. If a light haze appears after drying, remove it with a towel or sponge dampened with water.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Do the Water-Drop Test and Let It Cure',
+      instruction: 'About 2 hours after application, put a few drops of water on the grout. If the water soaks in immediately, apply another coat; if it beads or sits on top, the grout is sealed. Keep the area dry for as long as the label says before showering; Mapei specifies 12 hours for UltraCare Grout Sealer.',
+    },
+  ],
+  ifMethodFails: [
+    'If water still soaks into the grout after two or three coats, the grout may be very porous or still carrying old sealer or residue. Let it dry, clean it again and reapply, following the label.',
+    'If a cloudy film dried on the tile, the excess was not wiped off in time. Remove it with water and a sponge or white polishing pad, as Custom Building Products directs for TileLab Grout and Tile Sealer.',
+    'If the grout is cracked, crumbling or missing in places, sealing will not fix it. Have the damaged joints regrouted, let the new grout cure, then seal.',
+  ],
+  recommendedProductIds: ['prod-grout-brush-set'],
+  faqs: [
+    {
+      question: 'How long after grouting can you seal grout?',
+      answer: 'It depends on the grout and the sealer. Mapei calls for at least 48 hours, Custom Building Products for 48 to 72 hours, and LATICRETE for at least 72 hours at 70 degrees F for its cement grouts. Check both labels and follow the longer wait.',
+    },
+    {
+      question: 'Do you need to seal epoxy grout?',
+      answer: 'Generally no. LATICRETE says its epoxy grouts, including SPECTRALOCK PRO Premium, do not require a grout sealer. Cement-based grout, sanded or unsanded, is the type that is usually sealed.',
+    },
+    {
+      question: 'How do I know if my grout is sealed?',
+      answer: 'Put a few drops of water on the grout. If the water soaks in right away and darkens the joint, the grout needs sealer or another coat. If it beads up or sits on the surface, the sealer is still working.',
+    },
+    {
+      question: 'How often should you reseal grout?',
+      answer: 'Test it with water drops periodically and reseal when water soaks in. Mapei recommends resealing every 1 to 3 years for its UltraCare Grout Sealer, and a Tile Council of North America article notes grout sealers may be reapplied once a year. Harsh cleaners and heavy use shorten the interval.',
+    },
+    {
+      question: 'Can you seal dirty or wet grout?',
+      answer: 'No. Sealer manufacturers require the grout to be clean and dry, free of dirt, hard water deposits, rust and old sealers. Clean the joints, rinse with fresh water and let them dry thoroughly before you seal.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-sealgrout-1',
+      title: 'UltraCare Grout Sealer Technical Data Sheet',
+      publisher: 'MAPEI',
+      url: 'https://cdnmedia.mapei.com/docs/librariesprovider65/products-documents/1_3000206_ultracare-grout-sealer_en-ca_2474cc793de54af79bbd089e04ecfa38.pdf?sfvrsn=8c2e41a1_0',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Water-based penetrating sealer for cement grout; surface must be dry and free of dirt, lime and hard water deposits, rust and previous sealers; let new grout cure at least 48 hours; apply at 50 to 80 degrees F; test first and wait 24 hours; let soak 5 to 10 minutes, wipe off non-absorbed sealer, 30 minutes between coats; keep dry 12 hours; test with water drops and reseal every 1 to 3 years; harsh cleaners reduce performance.',
+    },
+    {
+      id: 'src-sealgrout-2',
+      title: 'TileLab Grout & Tile Sealer (TDS-148)',
+      publisher: 'Custom Building Products',
+      url: 'https://www.custombuildingproducts.com/TDS/TDS-148.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Penetrating sealer; surface should be dry, clean and free of waxes, sealers or finishes; new installations need to cure 48 to 72 hours; test in an obscure area; wear chemical-resistant gloves; let penetrate up to 5 minutes and wipe off excess; apply a second coat if absorbed; test with drops of water after 2 hours and recoat if it penetrates; remove residue with water and a sponge or white pad.',
+    },
+    {
+      id: 'src-sealgrout-3',
+      title: 'Cement Grouts FAQ',
+      publisher: 'LATICRETE',
+      url: 'https://www.laticrete.com/support-and-training/downloads-and-faq/faqs/troubleshooting-a-project/cement-grouts',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'LATICRETE cement grouts should cure a minimum of 72 hours at 70 degrees F before a STONETECH sealer is used, and users should check with the sealer manufacturer whether a longer cure is required; its epoxy grouts (SPECTRALOCK PRO Premium, SPECTRALOCK 2000 IG) do not require a grout sealer.',
+    },
+    {
+      id: 'src-sealgrout-4',
+      title: 'Bathroom Tile and Grout: A Few Tips on Keeping Them Clean',
+      publisher: 'Tile Council of North America (TILE Magazine)',
+      url: 'https://tcnatile.com/wp-content/uploads/2022/08/Bathroom-Tile-and-Grout-A-Few-Tips-on-Keeping-Them-Clean.pdf',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Strong high-pH or low-pH cleaners used regularly may break down grout sealers; after a deep clean the area should dry thoroughly before sealer is applied; use a neutral tile cleaner for routine care; rinse with fresh clean water; grout sealers may be reapplied once a year.',
+    },
+  ],
+  seo: {
+    title: 'How to Seal Grout: Cure Time, Prep and Water Test',
+    description: 'How to seal grout: let cement grout cure 48 to 72 hours, clean and dry it, apply a penetrating sealer, wipe off excess and check with a water-drop test.',
+    canonical: 'https://housecarewiki.com/guides/how-to-seal-grout',
+    indexable: true,
+    focusKeyword: 'how to seal grout',
+  },
+};
+
+export default article;

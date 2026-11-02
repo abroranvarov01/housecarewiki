@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-burnt-pot',
+  slug: 'how-to-clean-a-burnt-pot',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a burnt pot',
+  subtitle: 'Let it cool, then match the method to the pot: a baking soda boil and Bar Keepers Friend for stainless, baking soda and a soft sponge for enameled cast iron, and a vinegar and water boil with no metal for nonstick and hard-anodized pans.',
+  excerpt: 'Cool the pot, loosen the burn with a baking soda or vinegar boil, then clean gently for its material.',
+  quickAnswer: 'First let the pot cool completely, and never run cold water into a hot pot. For stainless steel, sprinkle baking soda generously over the burn, add water, bring it to a boil and loosen the residue with a wooden spoon; then rub any remaining marks with a paste of Bar Keepers Friend and water on a soft cloth. For enameled cast iron, boil water with baking soda and lift the food with a pan scraper or soft sponge. For nonstick and hard-anodized pans, boil a 50/50 mix of white vinegar and water, scrape with a wooden spoon and clean only with a soft sponge or nylon pad, never steel wool.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'cabinets-pantry',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  safetyWarnings: [
+    'Let a burnt pot cool before cleaning it, and never put a hot pot under cold water or fill it with cold water. All-Clad warns this can warp the pan or cause thermal shock.',
+    'Do not use steel wool, steel scouring pads or oven cleaners on stainless, nonstick, hard-anodized or enameled cookware. All-Clad lists them among products that can damage the pan.',
+    'Keep metal tools off nonstick, ceramic nonstick and enamel. Use wooden spoons, nylon pads, soft sponges or a pan scraper instead, as All-Clad and Lodge advise.',
+    'Do not use Bar Keepers Friend on regular bare cast iron; the brand advises against it. Use one cleaner at a time, rinse well between products, and never mix any cleaner with bleach.',
+    'Ventilate the kitchen while boiling vinegar or baking soda solutions in a pot, and stay with the pan so it does not boil dry and burn again.',
+  ],
+  materialsNeeded: [
+    'Baking soda',
+    'Distilled white vinegar (for nonstick and hard-anodized pans)',
+    'Bar Keepers Friend Cookware Cleanser or the powder cleanser (stainless and enameled only)',
+    'Wooden spoon',
+    'Plastic or nylon pan scraper',
+    'Soft sponge, soft cloth and nylon scrubbing pad',
+    'Mild dish soap and warm water',
+    'Dry dish towel',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Let the Pot Cool and Identify Its Material',
+      instruction: 'Take the pot off the heat and let it cool before cleaning. Do not run cold water into a hot pan; All-Clad warns that can cause warping or thermal shock. While it cools, check the bottom stamp or the care sheet to see whether it is stainless steel, enameled cast iron, nonstick or hard-anodized aluminum, because each takes a different method.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Stainless Steel: Boil with Baking Soda',
+      instruction: 'Sprinkle baking soda generously over the burnt area, add enough water to cover it and bring it to a boil. Use a wooden spoon to loosen the burnt food from the surface, as All-Clad recommends. Let the pot cool, pour out the water and wash with warm soapy water and a nylon scouring pad.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Stainless Steel: Finish with Bar Keepers Friend',
+      instruction: 'For burnt fat or charred marks that remain, wet the surface, sprinkle on Bar Keepers Friend and rub it in with a soft, wet cloth. For tougher stains, mix it with a little water into a paste and leave it about a minute, as the brand directs, then wash, rinse well and dry. All-Clad names Bar Keepers Friend among the nonabrasive, non-chlorine cleansers safe for its stainless.',
+      proTip: 'Bar Keepers Friend also works on scorched outsides and bottoms of stainless pans. Work it in with the cloth rather than a metal pad.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Enameled Cast Iron: Simmer with Baking Soda',
+      instruction: 'Once the pot is cool, add 2 cups of water and 4 tablespoons of baking soda and boil for a few minutes, as Lodge directs for baked-on food. Let it cool, then lift the softened residue with a plastic pan scraper or soft sponge and wash with warm water and gentle dish soap. Dry it thoroughly, including the rim.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Enameled Cast Iron: Treat Leftover Marks Gently',
+      instruction: 'For marks that remain, wet the pot, sprinkle about a tablespoon of Bar Keepers Friend on the bottom and scrub small areas in circles with a soft, damp, non-abrasive sponge, then rinse and dry. Never use metal pads or metal utensils on enamel; Lodge says metal can scratch the finish. Lodge also advises avoiding citrus-based cleaners, which can dull the exterior gloss.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Nonstick and Hard-Anodized Pans: Boil Vinegar and Water',
+      instruction: 'For burnt residue on nonstick or hard-anodized nonstick, fill the pan with a 50/50 mixture of white vinegar and water and bring it to a boil, as All-Clad recommends. Use a wooden spoon to lift the stuck-on bits, let the pan cool completely, then wash with warm soapy water and a soft sponge or nylon scrubbing pad. Never use steel wool, steel scouring pads, oven cleaners or harsh detergents.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Wash, Dry and Prevent the Next Burn',
+      instruction: 'Give every pot a final wash in warm soapy water, rinse well and dry it with a towel. To avoid repeat burns, cook over low to medium heat and do not leave an empty pan on a hot burner; All-Clad notes overheating causes stains, and its nonstick lines should never go on high heat unless boiling liquids.',
+    },
+  ],
+  ifMethodFails: [
+    'If burnt food remains on stainless, repeat the baking soda boil and wooden-spoon scrape, then apply Bar Keepers Friend as a paste again. Several gentle rounds are safer for the pan than a steel wool pad.',
+    'If an enameled pot is still stained after the baking soda boil, wipe the area with a dampened cloth and an enamel or ceramic cookware cleaner, as Lodge suggests for slight stains, or repeat the Bar Keepers Friend sponge step.',
+    'If a nonstick surface is scratched, peeling or still sticky after the vinegar boil, the coating is worn. Stop scrubbing and check the maker\'s care sheet or warranty instead of trying abrasive cleaners.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How do you get burnt food off the bottom of a pot?',
+      answer: 'Let the pot cool, then soften the burn before scrubbing. On stainless steel, All-Clad recommends sprinkling baking soda generously, adding water, boiling and loosening the food with a wooden spoon. On nonstick and hard-anodized pans, it recommends boiling a 50/50 mix of white vinegar and water instead.',
+    },
+    {
+      question: 'Can you use Bar Keepers Friend on a burnt stainless steel pot?',
+      answer: 'Yes. All-Clad lists Bar Keepers Friend among the nonabrasive, non-chlorine cleansers to use on burnt fat and charred food on its stainless cookware. Wet the pan, sprinkle it on, rub with a soft wet cloth or leave a paste for about a minute, then rinse and dry.',
+    },
+    {
+      question: 'Does baking soda and vinegar clean burnt pans?',
+      answer: 'Each has its place. Cookware makers use baking soda boiled in water for burnt stainless steel and enameled cast iron, and a 50/50 white vinegar and water boil for burnt nonstick and hard-anodized pans. Follow the method for your pan\'s material rather than combining everything at once.',
+    },
+    {
+      question: 'How do you clean a burnt Le Creuset or enameled Dutch oven?',
+      answer: 'Boil water with baking soda in the cooled pot, then lift the softened food with a plastic scraper or soft sponge. Lodge gives 2 cups of water to 4 tablespoons of baking soda for a few minutes. Never use metal pads or utensils on enamel, and do not pour cold water into a hot pot.',
+    },
+    {
+      question: 'Can you use steel wool on a burnt nonstick pan?',
+      answer: 'No. All-Clad says not to use steel wool, steel scouring pads, oven cleaners or harsh detergents on its nonstick and hard-anodized cookware. Use a soft sponge or nylon pad after a vinegar and water boil, and keep metal utensils out of nonstick pans.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-burntpot-1',
+      title: 'All-Clad Use and Care Guide',
+      publisher: 'All-Clad',
+      url: 'https://www.all-clad.com/care-use',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Let pans cool before cleaning and never put a hot pan under cold water; for burnt food on stainless, boil baking soda and water and loosen with a wooden spoon, and use a nonabrasive non-chlorine cleanser such as Bar Keepers Friend for charred marks; for nonstick and hard-anodized, boil a 50/50 white vinegar and water mix; avoid steel wool, steel scouring pads, oven cleaners and harsh detergents.',
+    },
+    {
+      id: 'src-burntpot-2',
+      title: 'Cleaning and Care: Lodge Enameled Cast Iron',
+      publisher: 'Lodge Cast Iron',
+      url: 'https://www.lodgecastiron.com/pages/cleaning-care-enameled-cast-iron',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For baked-on food, boil 2 cups of water with 4 tablespoons of baking soda for a few minutes and loosen with a pan scraper; use wooden, silicone or nylon tools because metal can scratch enamel; avoid citrus-based cleaners; use an enamel or ceramic cleaner on a damp cloth for slight stains.',
+    },
+    {
+      id: 'src-burntpot-3',
+      title: 'How to Clean a Scorched Pan with Bar Keepers Friend Cookware Cleanser',
+      publisher: 'Bar Keepers Friend',
+      url: 'https://barkeepersfriend.com/blogs/bar-keepers-blog/how-to-clean-a-scorched-pan',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wet the area, sprinkle on the Cookware Cleanser, rub with a soft wet cloth, rinse and dry; for tougher stains make a paste with water, leave it about one minute, then wash, rinse and dry. Designed for stainless steel and copper cookware.',
+    },
+    {
+      id: 'src-burntpot-4',
+      title: 'Tips for Cleaning Enameled Cast Iron',
+      publisher: 'Bar Keepers Friend',
+      url: 'https://barkeepersfriend.com/blogs/bar-keepers-blog/cleaning-enameled-cast-iron',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'On wet enameled cast iron, sprinkle about a tablespoon of the powder cleanser and scrub small areas in circles with a soft, damp, non-abrasive sponge, then rinse and dry; avoid steel wool, and do not use the product on regular bare cast iron.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Burnt Pot (by Pan Material)',
+    description: 'How to clean a burnt pot: baking soda boil and Bar Keepers Friend for stainless, baking soda for enamel, vinegar boil and no steel wool for nonstick pans.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-burnt-pot',
+    indexable: true,
+    focusKeyword: 'how to clean a burnt pot',
+  },
+};
+
+export default article;

@@ -1,5 +1,5 @@
 import { SITE, absoluteUrl } from './site';
-import type { Article, ArticleFAQ, Author, Product, SourceCitation } from './types';
+import type { Article, ArticleFAQ, Author, Product, SourceCitation, SurfaceGuide } from './types';
 
 // JSON-LD generators. Every node links back to the Organization / WebSite via @id.
 export const ORG_ID = `${SITE.url}/#organization`;
@@ -25,6 +25,15 @@ export function organizationSchema(): Json {
     description: SITE.description,
     foundingDate: SITE.foundingDate,
     logo: { '@type': 'ImageObject', url: absoluteUrl(SITE.logo), width: 512, height: 512 },
+    image: absoluteUrl(SITE.logo),
+    areaServed: { '@type': 'Country', name: SITE.areaServed },
+    knowsAbout: SITE.knowsAbout,
+    // Publisher trust signals: how we write, fix mistakes, test products and get paid.
+    publishingPrinciples: absoluteUrl(SITE.policies.publishingPrinciples),
+    correctionsPolicy: absoluteUrl(SITE.policies.correctionsPolicy),
+    actionableFeedbackPolicy: absoluteUrl(SITE.policies.correctionsPolicy),
+    ownershipFundingInfo: absoluteUrl(SITE.policies.ownershipFundingInfo),
+    contactPoint: { '@type': 'ContactPoint', contactType: 'editorial', email: SITE.email, availableLanguage: 'English' },
     ...(SITE.sameAs.length ? { sameAs: SITE.sameAs } : {}),
   };
 }
@@ -84,29 +93,65 @@ export function breadcrumbSchema(items: { name: string; path: string }[]): Json 
   };
 }
 
+// Government standards (EPA, CPSC…) are cited as GovernmentOrganization publications, the rest as Organization.
 function citations(sources: SourceCitation[]): Json[] {
   return sources.map((s) => ({
     '@type': 'CreativeWork',
     name: s.title,
     url: s.url,
-    publisher: { '@type': 'Organization', name: s.publisher },
+    publisher: { '@type': s.type === 'Government Standard' ? 'GovernmentOrganization' : 'Organization', name: s.publisher },
   }));
 }
 
-export function articleSchema(article: Article, author: Author, path: string): Json {
+function reviewNode(reviewer: Author): Json {
+  return {
+    '@type': reviewer.kind === 'team' ? 'Organization' : 'Person',
+    '@id': personId(reviewer),
+    name: reviewer.name,
+    url: absoluteUrl(`/authors/${reviewer.slug}`),
+    ...(reviewer.kind === 'team' ? {} : { jobTitle: reviewer.role }),
+  };
+}
+
+// The rooms and surfaces an article covers, as plain Things: helps engines file the page under the right topics.
+function topics(article: Article, roomName?: string): Json[] {
+  return [
+    ...(roomName ? [{ '@type': 'Thing', name: roomName }] : []),
+    ...article.surfaceSlugs.map((s) => ({ '@type': 'Thing', name: s.replace(/-/g, ' ') })),
+  ];
+}
+
+export function articleSchema(
+  article: Article,
+  author: Author,
+  path: string,
+  opts: { reviewer?: Author; roomName?: string } = {},
+): Json {
   const url = absoluteUrl(path);
+  const about = topics(article, opts.roomName);
   return {
     '@type': 'Article',
     '@id': `${url}#article`,
     headline: article.title,
+    alternativeHeadline: article.subtitle,
     description: article.seo.description,
-    image: absoluteUrl(article.heroImage),
+    abstract: article.quickAnswer,
+    image: { '@type': 'ImageObject', url: absoluteUrl(article.heroImage), caption: article.heroImageAlt },
     datePublished: isoDate(article.publishedAt),
     dateModified: isoDate(article.updatedAt),
     inLanguage: SITE.lang,
     articleSection: article.categoryLabel,
     keywords: article.seo.focusKeyword,
-    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    isAccessibleForFree: true,
+    ...(about.length ? { about } : {}),
+    // reviewedBy / lastReviewed belong to WebPage in schema.org, not Article.
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': url,
+      ...(opts.reviewer && article.reviewedBy
+        ? { reviewedBy: reviewNode(opts.reviewer), lastReviewed: isoDate(article.reviewedBy.reviewedAt) }
+        : {}),
+    },
     author: personSchema(author),
     publisher: { '@id': ORG_ID },
     isPartOf: { '@id': WEBSITE_ID },
@@ -143,7 +188,25 @@ export function howToSchema(article: Article, path: string): Json | null {
       name: s.title,
       text: s.instruction,
       url: `${absoluteUrl(path)}#step-${s.stepNumber}`,
+      ...(s.image ? { image: absoluteUrl(s.image) } : {}),
     })),
+  };
+}
+
+// Surface care pages: the visible deep-clean steps as a HowTo, the agents to avoid as safety notes.
+export function surfaceHowToSchema(surface: SurfaceGuide, path: string): Json | null {
+  if (!surface.deepCleanSteps.length) return null;
+  const url = absoluteUrl(path);
+  return {
+    '@type': 'HowTo',
+    '@id': `${url}#howto`,
+    name: `How to deep clean ${surface.name.toLowerCase()}`,
+    description: surface.summary,
+    ...(surface.image ? { image: absoluteUrl(surface.image) } : {}),
+    ...(surface.safeAgents.length
+      ? { supply: surface.safeAgents.map((a) => ({ '@type': 'HowToSupply', name: a })) }
+      : {}),
+    step: surface.deepCleanSteps.map((text, i) => ({ '@type': 'HowToStep', position: i + 1, text })),
   };
 }
 
@@ -172,8 +235,19 @@ export function productReviewSchema(product: Product, author: Author): Json {
     brand: { '@type': 'Brand', name: product.brand },
     model: product.model,
     sku: product.asin,
+    category: product.category.replace(/-/g, ' '),
     description: product.summary,
     image: absoluteUrl(product.image),
+    // The same spec table the page shows.
+    ...(Object.keys(product.specs).length
+      ? {
+          additionalProperty: Object.entries(product.specs).map(([name, value]) => ({
+            '@type': 'PropertyValue',
+            name,
+            value,
+          })),
+        }
+      : {}),
     review: {
       '@type': 'Review',
       reviewRating: { '@type': 'Rating', ratingValue: product.scores.overall, bestRating: 10, worstRating: 0 },
@@ -192,7 +266,16 @@ export function productReviewSchema(product: Product, author: Author): Json {
   };
 }
 
-export function webPageSchema(opts: { path: string; name: string; description: string; type?: string; about?: string }): Json {
+// `aboutId` points at another node in the graph (a tool, a HowTo) as the page's main subject.
+export function webPageSchema(opts: {
+  path: string;
+  name: string;
+  description: string;
+  type?: string;
+  about?: string;
+  aboutId?: string;
+  image?: string;
+}): Json {
   const url = absoluteUrl(opts.path);
   return {
     '@type': opts.type || 'WebPage',
@@ -203,7 +286,12 @@ export function webPageSchema(opts: { path: string; name: string; description: s
     inLanguage: SITE.lang,
     isPartOf: { '@id': WEBSITE_ID },
     publisher: { '@id': ORG_ID },
-    ...(opts.about ? { about: { '@type': 'Thing', name: opts.about } } : {}),
+    ...(opts.aboutId
+      ? { about: { '@id': opts.aboutId }, mainEntity: { '@id': opts.aboutId } }
+      : opts.about
+        ? { about: { '@type': 'Thing', name: opts.about } }
+        : {}),
+    ...(opts.image ? { primaryImageOfPage: { '@type': 'ImageObject', url: absoluteUrl(opts.image) } } : {}),
   };
 }
 

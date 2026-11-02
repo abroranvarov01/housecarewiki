@@ -1,0 +1,157 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-deep-clean-a-bathroom',
+  slug: 'how-to-deep-clean-a-bathroom',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to deep clean a bathroom',
+  subtitle: 'Clear the room, ventilate, clean before you disinfect, and work from the walls down to the floor. Why the contact time on the label matters more than the scrubbing, and which products must never meet.',
+  excerpt: 'Declutter, ventilate, then clean and disinfect top to bottom, leaving each surface wet for the label contact time.',
+  quickAnswer: 'Clear out everything that sits on the counters and in the shower, open a window, put on gloves, and remove loose hair and dust first. Then work top to bottom: walls, shower and tub, sink and counter, toilet, fixtures and touch points, and the floor last. Wash visibly dirty surfaces with soap or detergent before disinfecting, and keep each surface visibly wet for the full contact time on the disinfectant label, which Clorox gives as 10 minutes for its diluted bleach on walls and tubs. Never mix bleach with ammonia, vinegar or other cleaners, and use one product at a time.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'tools',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-bathroom.webp',
+  heroImageAlt: 'Sunlit bathroom with a white vessel sink on a wooden vanity, a white spray bottle and grey cloth beside it, a round wood-framed mirror, a ladder towel rack with white towels and a glass shower door with water streaks',
+  safetyWarnings: [
+    'Never mix bleach with ammonia, vinegar or other acids, rubbing alcohol, toilet bowl cleaner or any other cleaner or disinfectant. The combinations can release vapors that are very dangerous to breathe.',
+    'Ventilate: open windows and doors or run a fan while you clean, and wear gloves, especially for a long session.',
+    'Never use undiluted bleach for cleaning. Dilute it per the label, mix a fresh solution each day, and use regular unscented household bleach.',
+    'Do not use bleach on surfaces or fabrics that are not bleach-safe; check the label of the product and the care instructions for the surface.',
+    'Wash your hands after cleaning and disinfecting, even if you wore gloves.',
+  ],
+  materialsNeeded: [
+    'Rubber gloves',
+    'An EPA-registered bathroom disinfectant or regular unscented household bleach',
+    'Liquid soap or detergent cleaner for pre-cleaning',
+    'Toilet brush and a toilet bowl cleaner',
+    'Scrubber sponge and microfiber cloths',
+    'Lint-free cloth for mirrors and faucets',
+    'Bucket, broom or vacuum, and mop',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Clear the Room and Ventilate',
+      instruction: 'Take bottles, soap dishes, toys, toothbrushes and rugs out of the room so every surface is reachable. Open the window and door or switch on the fan, and put on gloves. Pull the bath mat and shower liner aside to wash separately.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Remove Loose Debris First',
+      instruction: 'Pick up hair, lint and dust and dry-wipe surfaces before any cleaner goes on. Clorox notes that removing loose debris first lets cleaning products work more effectively. Then wash any visibly dirty surface with a soap or detergent cleaner, because disinfectants work on clean surfaces.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Read Each Disinfectant Label for Its Contact Time',
+      instruction: 'The contact time on the label is how long the surface must stay visibly wet for the product to disinfect. If it dries early, reapply. For diluted household bleach, CDC says follow the bottle; if there are no directions, use 1/3 cup of bleach per gallon of room-temperature water and leave it on at least 1 minute. Clorox\'s own directions for its bleach on bathroom walls and tubs call for 10 minutes.',
+      proTip: 'Use one disinfectant at a time and rinse it off before switching to a different product.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Start High: Walls, Then Shower and Tub',
+      instruction: 'Dust or dry-wipe the walls, then apply your disinfectant and leave it wet for the label time; Clorox uses 1/3 cup of its bleach per gallon of water for 10 minutes. Move to the empty shower and tub, apply the same way, then rinse and let it dry. Our dedicated guides cover soap scum, hard water on glass doors and mold on caulk.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Clean the Sink, Counter, Faucet and Mirror',
+      instruction: 'Rinse the sink with warm water, scrub the bowl and fixtures with your disinfectant on a scrubber sponge, and keep the surfaces wet for the label time before wiping clean. Wipe the counter and faucet, then buff the faucet and mirror dry with a lint-free cloth.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Disinfect the Toilet',
+      instruction: 'Apply a toilet bowl cleaner inside the bowl, under the rim and around the waterline, scrub with the toilet brush, and let it sit for the time on its label before flushing; Clorox gives 10 minutes for its bleach toilet cleaner. Never add a second cleaner to the bowl. Then disinfect the seat, lid, handle and outside of the bowl. The full toilet routine is in our toilet cleaning guide.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Wipe Touch Points, Then Do the Floor Last',
+      instruction: 'Disinfect door handles, light switches and cabinet pulls. Finish with the floor: sweep or vacuum, then mop from the far corner toward the door so you do not walk over clean, wet floor. Rinse surfaces with clean water after disinfecting where the label calls for it.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Put Everything Back Dry',
+      instruction: 'Let surfaces dry, wash your hands, then return items to the room. Wash the bath mat and shower liner per their care labels; our bath mat guide covers rubber-backed and suction-cup mats.',
+    },
+  ],
+  ifMethodFails: [
+    'If a disinfectant seems not to work, check that the surface was cleaned first and stayed visibly wet for the full label contact time; reapply rather than wiping it off early.',
+    'If stains remain after disinfecting, they are usually mineral, soap scum, rust or mold problems that need their own method; use the dedicated guide for that problem instead of adding a stronger product.',
+    'If fumes build up or you feel lightheaded, stop, leave the room and air it out before continuing with more ventilation.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What order should you deep clean a bathroom in?',
+      answer: 'Clear the room and remove loose debris, then work top to bottom: walls, shower and tub, sink and counter, toilet, touch points, and the floor last, so dirt and drips fall onto areas you have not cleaned yet.',
+    },
+    {
+      question: 'How long should disinfectant sit before wiping?',
+      answer: 'As long as the contact time on the product label, with the surface kept visibly wet the whole time. CDC gives at least 1 minute for diluted household bleach when the bottle has no directions, while Clorox\'s own bathroom directions use 10 minutes; follow the label of the product you are using.',
+    },
+    {
+      question: 'Do I need to disinfect my bathroom, or is cleaning enough?',
+      answer: 'CDC says soap and water cleaning is usually enough at home, and disinfecting is generally needed when someone in the home is sick or a sick person recently visited. Always clean visibly dirty surfaces before disinfecting.',
+    },
+    {
+      question: 'Can I mix bleach and vinegar to clean the bathroom?',
+      answer: 'No. Clorox warns against mixing bleach with ammonia or acids like vinegar because it can release toxic fumes, and CDC says never to mix bleach with any other cleaner or disinfectant.',
+    },
+    {
+      question: 'How long does it take to deep clean a bathroom?',
+      answer: 'Clorox estimates 45 to 60 minutes for a full deep clean that includes grout, tub and toilet, compared with 15 to 20 minutes for a quick surface clean.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-deepbath-1',
+      title: 'How to Clean Your Bathroom: Step-by-Step Guide & Tips',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-clean-your-bathroom-step-by-step-guide-and-tips/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Remove loose debris and dry-wipe first; walls and tub get 1/3 cup bleach per gallon of water left wet 10 minutes, the sink stays wet 6 minutes, the toilet cleaner sits 10 minutes before flushing; wear gloves, ventilate, never mix bleach with vinegar or ammonia; a full deep clean takes 45 to 60 minutes.',
+    },
+    {
+      id: 'src-deepbath-2',
+      title: 'How to Clean with Bleach Safely in Your Home: The Do\'s and Don\'ts',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/dos-and-donts-for-cleaning-and-disinfecting-with-bleach/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Always dilute bleach and never use it undiluted, ventilate, wear gloves, rinse after disinfecting, do not mix bleach with ammonia, acids like vinegar, rubbing alcohol or toilet bowl cleaner, and do not use it on non-bleach-safe surfaces or fabrics.',
+    },
+    {
+      id: 'src-deepbath-3',
+      title: 'Cleaning and Disinfecting with Bleach',
+      publisher: 'Centers for Disease Control and Prevention',
+      url: 'https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean visibly dirty surfaces first, ventilate, never mix bleach with other cleaners or disinfectants, use 5 to 9 percent unscented bleach at 1/3 cup per gallon if the label gives no directions, leave it wet at least 1 minute unless the manufacturer says otherwise, and mix a fresh solution daily.',
+    },
+    {
+      id: 'src-deepbath-4',
+      title: 'EPA Provides Critical Information to the American Public About Safe Disinfectant Use',
+      publisher: 'U.S. Environmental Protection Agency',
+      url: 'https://www.epa.gov/newsreleases/epa-provides-critical-information-american-public-about-safe-disinfectant-use',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Always follow the product directions, do not combine products unless the directions say to, pre-clean with soap and water when the label says so, keep the surface visibly wet for the listed contact time, and wash your hands after using a disinfectant.',
+    },
+  ],
+  seo: {
+    title: 'How to Deep Clean a Bathroom: Top-to-Bottom Steps',
+    description: 'How to deep clean a bathroom top to bottom: declutter, ventilate, clean before you disinfect, respect label contact times, and never mix bleach with others.',
+    canonical: 'https://housecarewiki.com/guides/how-to-deep-clean-a-bathroom',
+    indexable: true,
+    focusKeyword: 'how to deep clean a bathroom',
+  },
+};
+
+export default article;

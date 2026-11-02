@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-makeup-out-of-clothes',
+  slug: 'how-to-get-makeup-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get makeup out of clothes',
+  subtitle: 'Liquid foundation, powder and mascara each need a slightly different first move. Lift the excess without rubbing, pretreat with liquid detergent, wash at the warmest temperature the care label allows, and keep the garment out of the dryer until the mark is gone.',
+  excerpt: 'Scrape or blow off the excess, pretreat with liquid detergent, wash per the care label, and air-dry until the stain is gone.',
+  quickAnswer: 'Lift off as much makeup as you can first: scrape liquid foundation or mascara with a spoon or dull knife, and blow off or lift loose powder with a lint roller instead of brushing it with your hand. Work liquid laundry detergent into the stain and let it sit about 5 to 15 minutes, then wash at the warmest temperature the care label allows, adding a color-safe oxygen bleach if the fabric permits. Oil-based foundation and mascara may need a pre-wash stain remover or a repeat treatment. Check the spot before drying, because dryer heat can set what is left.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'Folded white button-down shirt with a beige splash stain on the front, resting on stacked cream and sage towels above a front-loading washer in a sunlit laundry room',
+  safetyWarnings: [
+    'Read the care label and test any detergent, stain remover or solvent on a hidden spot such as an inside hem before treating the stain, to check that the color does not run or fade.',
+    'Do not put the garment in the dryer until the stain is completely gone; heat can set any makeup that remains.',
+    'Oxygen-based stain removers like OxiClean are not meant for wool, silk, their blends, leather or dry-clean-only fabrics, and Persil cautions that rubbing alcohol and bleach can damage some fabrics. Take dry-clean-only items to a cleaner.',
+    'If you use a solvent-based spot cleaner, ventilate the room, keep it away from flames, wear rubber gloves and follow the product label.',
+    'Do not treat a stain while you are still wearing the garment; take it off first.',
+  ],
+  materialsNeeded: [
+    'Spoon or dull knife',
+    'Sticky lint roller (for powder)',
+    'Liquid laundry detergent',
+    'Soft-bristled toothbrush',
+    'Cotton balls or paper towels',
+    'Color-safe oxygen bleach (if the care label allows)',
+    'Optional: pre-wash stain remover or stain remover spray',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check the Care Label and Test First',
+      instruction: 'Read the care label before you start, and dab a little of your detergent or stain remover on an inconspicuous spot, such as an inside seam, to make sure the color holds. Dry-clean-only, wool and silk garments are best left to a professional cleaner.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Lift the Excess Without Rubbing',
+      instruction: 'For liquid foundation, concealer or mascara, gently scrape off what sits on the surface with a spoon or a dull knife. For powder, blush or bronzer, blow the loose powder off or lift it with a sticky lint roller rather than brushing it with your hand, which can spread it. Rubbing pushes makeup deeper into the fibers.',
+      proTip: 'Treat it as soon as you can. Fresh makeup comes out far more easily than a mark that has been worn all day.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Pretreat Liquid Foundation',
+      instruction: 'Work a few drops of liquid laundry detergent into the stain with a soft brush or your fingertips and let it sit 5 to 15 minutes. For a water-based foundation, dampening the spot and rubbing it with bar soap is another option. For a heavier, oil-based foundation, sponge the spot first with a pre-wash stain remover, rinse, then apply detergent.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Pretreat Powder, Blush or Bronzer',
+      instruction: 'Once the loose powder is gone, dab the remaining mark with a cotton ball dipped in liquid detergent, then rinse in cold water to remove the residue before washing.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Work Detergent Into Mascara',
+      instruction: 'Mascara is oily and pigmented. Cover the mark with liquid detergent, let it sit about 15 minutes, then gently scrub with a soft-bristled toothbrush and rinse the area with water.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wash at the Warmest Temperature the Label Allows',
+      instruction: 'Without rinsing off the pretreatment, wash the garment on its usual cycle at the warmest temperature the care label permits. If the fabric allows it, add a color-safe oxygen bleach to the wash.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Check Before Drying',
+      instruction: 'Take the garment out as soon as the cycle ends and look at the spot in good light. If any trace remains, repeat the pretreatment and wash. Air-dry or tumble dry only when the stain is fully gone.',
+    },
+  ],
+  ifMethodFails: [
+    'For a stubborn or set-in oily makeup stain, soak the whole garment in an oxygen-based stain remover solution following the product directions (OxiClean suggests 1 to 6 hours), then wash again, on colorfast, washable fabrics only.',
+    'If an oil-based foundation still shows, try a commercial pre-wash stain remover, rinse, rub in detergent until the outline fades, and launder again. Repeat if needed.',
+    'If the garment is delicate, dry-clean-only, or the stain has already been through the dryer, take it to a professional cleaner and tell them it is makeup.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How do you get foundation out of a shirt collar?',
+      answer: 'Scrape off any thick foundation, work liquid laundry detergent into the collar with a soft toothbrush, and let it sit 5 to 15 minutes. Wash at the warmest temperature the care label allows and check the collar before drying; repeat if a shadow of the stain remains.',
+    },
+    {
+      question: 'Does dried makeup come out of clothes?',
+      answer: 'Often, yes, as long as it has not been through the dryer. Pretreat with detergent and wash, and for dried or oily stains soak the garment in an oxygen-based stain remover per the label before washing again. Heat-set stains are much harder to remove.',
+    },
+    {
+      question: 'Can I use rubbing alcohol to remove makeup from clothes?',
+      answer: 'Sources disagree. University of Georgia Extension includes sponging with alcohol as one step for some cosmetic stains, while Persil warns that rubbing alcohol may damage some fabrics. If you try it, test a hidden spot first, and start with detergent, which every source recommends.',
+    },
+    {
+      question: 'How do you get powder makeup out of clothes without spreading it?',
+      answer: 'Do not brush or wipe it with your hand. Blow the loose powder off or pick it up with a sticky lint roller, then dab what remains with a little detergent on a cotton ball, rinse and wash.',
+    },
+    {
+      question: 'Should I wash makeup stains in hot or cold water?',
+      answer: 'Rinse powder residue in cold water, then wash in the warmest water the care label allows. Tide recommends the hottest temperature on the label, but never go above what the label permits.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-makeup-1',
+      title: 'How to Remove Makeup Stains',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/makeup-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Scrape off excess without rubbing; pretreat foundation with liquid detergent for 5 to 10 minutes and mascara for 15 minutes before scrubbing with a soft toothbrush; lift powder with a lint roller, dab with detergent and rinse in cold water; wash at the hottest temperature the care label allows and do not dry until the stain is gone because heat sets it.',
+    },
+    {
+      id: 'src-makeup-2',
+      title: 'How to Get Makeup Out of Clothes',
+      publisher: 'Persil',
+      url: 'https://www.persillaundry.com/us/en/laundry-help/laundry-tips/how-to-remove-stains/how-to-get-makeup-out-of-clothes.html',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Treat liquid foundation, concealer, lipstick and mascara as oil-based: scrape with a spoon, work in liquid detergent for about fifteen minutes, wash per the care label with color-safe oxygen bleach, and soak in oxygen bleach if needed; blow powder off rather than brushing it; rubbing alcohol and bleach may damage some fabrics.',
+    },
+    {
+      id: 'src-makeup-3',
+      title: 'How to Remove Makeup Stains from Clothes',
+      publisher: 'OxiClean',
+      url: 'https://www.oxiclean.com/en/stain-solutions/how-to-remove-makeup-stains/clothes',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Scrape liquid makeup and blow off powder without rubbing, do not treat while wearing, soak set-in or oily stains 1 to 6 hours in Versatile Stain Remover, test an inconspicuous area first, do not use on wool, silk, leather or dry-clean-only fabrics, and check before drying because heat can set the stain.',
+    },
+    {
+      id: 'src-makeup-4',
+      title: 'Remove Stains From Cosmetics/Makeup/Sunscreen',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-cosmetics-makeup-sunscreen/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For water-based cosmetics, dampen and rub with bar soap or pretreat with heavy-duty liquid detergent, then launder; for oil-based cosmetics, sponge with a commercial cleaner, rinse, apply detergent and launder; always read the care label, pretest for colorfastness and ventilate when using solvent cleaners.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Makeup Out of Clothes (Foundation, Mascara)',
+    description: 'How to get makeup out of clothes: lift foundation, powder and mascara without rubbing, pretreat with liquid detergent, wash per the label, and skip the dryer.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-makeup-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get makeup out of clothes',
+  },
+};
+
+export default article;

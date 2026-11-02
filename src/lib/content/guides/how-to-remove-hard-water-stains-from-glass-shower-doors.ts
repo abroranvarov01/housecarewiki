@@ -1,0 +1,146 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-hard-water-stains-from-glass-shower-doors',
+  slug: 'how-to-remove-hard-water-stains-from-glass-shower-doors',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove hard water stains from glass shower doors',
+  subtitle: 'A 50/50 vinegar solution on the glass, a soft non-scratch pad, a thorough rinse and a daily squeegee. How to keep acid off stone tile and metal hardware, and what changes for factory-coated glass.',
+  excerpt: '50/50 vinegar on the glass only, soft pad, rinse, squeegee. Six steps.',
+  quickAnswer: 'Hard water stains are mineral deposits left when shower water dries on the glass. Spray a 50/50 mix of white vinegar and water onto the glass, let it work for a few minutes without drying, wipe with a soft cloth or non-scratch sponge, then rinse thoroughly with clean water and squeegee dry. Keep the vinegar off natural stone tile and metal frames, and never use abrasive pads, bristle brushes or scrapers on the glass. A squeegee pass after every shower stops new spots from forming.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'mirrors-glass',
+  surfaceSlugs: ['glass'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/ba-shower-glass.webp',
+  heroImageAlt: 'Split view of a frameless glass shower panel with brass rain shower fixtures and beige stone-look wall tile, cloudy and hazy on the left half and clear on the right',
+  safetyWarnings: [
+    'Keep vinegar and other acidic cleaners off marble, limestone and travertine. Acids etch calcitic stone, so protect a natural stone surround or shower floor and rinse any drips immediately.',
+    'Do not spray vinegar onto metal frames, hinges or handles, and do not leave any cleaner soaking on them. Acids can damage metal finishes; apply the solution to a cloth and keep it on the glass.',
+    'Never use abrasive powders, scouring pads, steel wool, bristle brushes or razor scrapers on shower glass. They scratch the glass and can strip factory easy-clean coatings.',
+    'Never mix vinegar with bleach or with other cleaning products. Ventilate the bathroom while you clean.',
+  ],
+  materialsNeeded: [
+    'Distilled white vinegar and water (equal parts) in a spray bottle',
+    'Mild liquid dish detergent (a few drops in warm water)',
+    'Soft microfiber cloths or a non-scratch sponge',
+    'Silicone shower squeegee',
+    'Old towel to lay over a stone shower floor or ledge',
+    'Optional: a long-handled squeegee or non-scratch sponge mop for the top of tall panels',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check the Surround, the Hardware and the Glass Type',
+      instruction: 'Before any acid touches the shower, look at what sits next to the glass. If the walls, ledge or floor are marble, limestone or travertine, lay a towel along the base and plan to wipe, not spray. Note any metal frame or hinges. If the door came with a factory coating (sold under names such as CleanCoat or ShowerGuard), read the maker\'s care sheet, since some list approved cleaners only.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Wash Off Soap Film First',
+      instruction: 'Wipe the glass with a soft cloth dipped in warm water with a few drops of mild dish detergent, then rinse. Clearing the soap film first shows you which spots are mineral deposits that need the vinegar step.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Apply a 50/50 Vinegar Solution to the Glass Only',
+      instruction: 'Mix equal parts distilled white vinegar and water. Spray it onto a folded microfiber cloth or non-scratch sponge, or mist the glass directly only where no stone or metal is below it, and wet the stained areas. Leave it for about 5 minutes, re-wetting any patch that starts to dry. Do not leave it soaking longer than it takes to loosen the deposits.',
+      proTip: 'Work from the top of the panel down so drips run over areas you have not cleaned yet.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wipe with a Soft, Non-Scratch Pad',
+      instruction: 'Wipe the loosened deposits with the soft cloth or non-scratch sponge using light, overlapping strokes. For heavier spotting, repeat the vinegar application and wipe again rather than pressing harder or switching to a scouring pad.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rinse Thoroughly with Clean Water',
+      instruction: 'Rinse the whole panel with clean water to remove all vinegar residue, paying attention to the bottom edge, seals and any frame. Wipe the stone ledge or floor below with plain water too.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Squeegee Dry and Make It a Daily Habit',
+      instruction: 'Pull a squeegee down the glass in overlapping strokes, then dry the edges with a towel. Repeat that squeegee pass after every shower, while the glass is still wet, and leave the door ajar so the enclosure can dry. Minerals cannot spot glass that does not stay wet.',
+      proTip: 'If your glass has a permanent factory coating, skip aftermarket wipe-on coatings. Guardian says they are not needed on ShowerGuard glass and may not bond to it.',
+    },
+  ],
+  ifMethodFails: [
+    'If spots return quickly even with soft or filtered water, the cause may be silica, which water softeners do not remove. Squeegee daily and clean more often rather than reaching for stronger acids.',
+    'For years of buildup, repeat the vinegar, wipe and rinse cycle over several sessions. Do not switch to commercial descalers containing hydrochloric or phosphoric acid; VIGO lists acid-based cleaners like these as damaging to shower door finishes.',
+    'If the glass still looks cloudy after it is fully clean and dry, it may be etched rather than stained. Etching is surface damage that cleaning cannot remove; contact the door manufacturer or a glass professional.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does vinegar remove hard water stains from glass shower doors?',
+      answer: 'Yes. A 50/50 mix of white vinegar and water dissolves the mineral deposits that hard water leaves behind, and at least one shower door maker recommends exactly that ratio. Keep it on the glass, away from natural stone and metal hardware, and rinse it off thoroughly afterward.',
+    },
+    {
+      question: 'Can I use vinegar on a shower with marble or travertine tile?',
+      answer: 'Not on the stone itself. Vinegar is acidic and will etch calcitic stones like marble, limestone and travertine. Apply the solution to a cloth instead of spraying, protect the ledge and floor with a towel, and rinse any drips off the stone right away.',
+    },
+    {
+      question: 'How do I keep hard water spots off my shower glass?',
+      answer: 'Squeegee or towel-dry the glass after every shower while it is still wet, and leave the door ajar so the enclosure dries. A weekly wipe with a mild, non-abrasive cleaner keeps light spotting from building into scale.',
+    },
+    {
+      question: 'Will a magic eraser or scouring pad scratch shower glass?',
+      answer: 'Door makers advise against abrasive sponges, bristle brushes, scouring pads and sharp tools on shower glass because they can scratch some glass and remove easy-clean coatings. Stick to microfiber or a sponge labeled non-scratch.',
+    },
+    {
+      question: 'Why does my shower glass still look cloudy after cleaning?',
+      answer: 'If the haze survives a full vinegar clean and the glass is completely dry, it may be etching, which is permanent surface damage rather than a deposit. Cleaning cannot reverse it, but daily squeegeeing keeps it from getting worse.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-shower-glass-1',
+      title: 'How to Clean Glass Shower Doors (and Keep Them Clean)',
+      publisher: 'VIGO Industries',
+      url: 'https://vigoindustries.com/blogs/all/how-to-clean-glass-shower-doors-and-keep-them-clean',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'VIGO\'s cleaning guide recommends a 50/50 water and vinegar solution for hard water and soap scum on the glass, kept off the hardware and rinsed thoroughly, a squeegee after each use, and no abrasive cleaners, scouring pads, steel wool or acid-based commercial cleaners.',
+    },
+    {
+      id: 'src-shower-glass-2',
+      title: 'How to Clean & Care for Bath & Shower Doors',
+      publisher: 'Sterling Plumbing (Kohler Co.)',
+      url: 'https://sterling.kohler.com/en/support/care-and-cleaning/how-to-clean-and-care-bath-and-shower-doors',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Squeegee or wipe doors dry after each use to prevent water spots and lime buildup, never use bristle brushes, abrasive sponges or cleaners, or sharp instruments on the glass, keep acids off metal surfaces, do not let cleaners soak, and avoid abrasive cleaners on CleanCoat glass.',
+    },
+    {
+      id: 'src-shower-glass-3',
+      title: 'How to Clean ShowerGuard Shower Doors - Easy Maintenance Guide',
+      publisher: 'Guardian Glass',
+      url: 'https://showerguardglass.com/care-and-cleaning',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Drying the glass with a squeegee or towel after each shower helps prevent water spots, aftermarket wipe-on coatings are not recommended on permanently coated ShowerGuard glass, and water softeners do not remove the silica that can still spot glass.',
+    },
+    {
+      id: 'src-shower-glass-4',
+      title: 'Eco-friendly Cleaning Practices for Natural Stone',
+      publisher: 'Use Natural Stone (Natural Stone Institute)',
+      url: 'https://usenaturalstone.org/eco-friendly-cleaning-practices-for-natural-stone/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Acidic cleaners such as vinegar and lemon juice etch the surface of calcitic stones like marble and limestone, and removing excess water from shower stalls helps prevent soap scum.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Hard Water Stains from Glass Shower Doors',
+    description: 'Remove hard water stains from glass shower doors with a 50/50 vinegar mix, a soft pad and a squeegee, while protecting stone tile, metal hardware and coatings.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-hard-water-stains-from-glass-shower-doors',
+    indexable: true,
+    focusKeyword: 'how to remove hard water stains from glass shower doors',
+  },
+};
+
+export default article;

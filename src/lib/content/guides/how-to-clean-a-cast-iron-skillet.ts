@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-cast-iron-skillet',
+  slug: 'how-to-clean-a-cast-iron-skillet',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a cast iron skillet',
+  subtitle: 'Wash with warm water and a little soap if you like, scrub off stuck food, dry it completely and rub in a thin coat of oil. What Lodge and Field Company say about soaking, dishwashers, rust and re-seasoning.',
+  excerpt: 'Wash, scrub, dry completely, oil thinly. Never soak it or put it in the dishwasher.',
+  quickAnswer: 'Wash the skillet by hand with warm water and, if you want, a little mild dish soap, scrubbing with a stiff brush, scrubbing pad or chain mail scrubber. Loosen stuck-on food with a nylon brush or pan scraper and rinse. Dry the pan completely, warming it on the stovetop for a few minutes to drive off the last moisture, then rub a very thin layer of cooking oil over the whole surface and wipe off the excess. Never soak cast iron or put it in the dishwasher; both strip seasoning and cause rust. If rust does appear, scour it off, wash, dry, oil and bake the pan to re-season it.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'cabinets-pantry',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  safetyWarnings: [
+    'Never put a seasoned cast iron skillet in the dishwasher. Lodge says the dishwasher strips seasoning and will likely cause rust.',
+    'Do not leave cast iron soaking in the sink or let it air-dry. Lodge and Field Company both link standing water to rust.',
+    'Save steel wool and metal scouring pads for rust removal only. Lodge does not recommend them for everyday cleaning because they take off seasoning.',
+    'Let a hot skillet cool enough to handle safely before washing, and use an oven mitt when heat-drying it on the stove; cast iron stays hot for a long time.',
+    'When re-seasoning in a hot oven, ventilate the kitchen, use only a very thin layer of oil and put foil on the lower rack to catch drips, as Lodge advises.',
+  ],
+  materialsNeeded: [
+    'Warm water',
+    'Mild liquid dish soap (optional)',
+    'Stiff-bristled brush, scrubbing pad or chain mail scrubber',
+    'Nylon brush or pan scraper for stuck-on food',
+    'Paper towels or a lint-free cloth',
+    'Cooking oil or a cast iron seasoning oil',
+    'For rust only: steel wool or a rust eraser, aluminum foil and an oven',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Clean the Skillet Soon After Cooking',
+      instruction: 'Once the pan has cooled enough to handle, take it to the sink. Cleaning it the same day keeps food from drying on and keeps the skillet out of standing water, which Lodge and Field Company both warn leads to rust.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Wash with Warm Water and a Little Soap',
+      instruction: 'Rinse the skillet under warm water and scrub it with a stiff-bristled brush or scrubbing pad. A small amount of mild dish soap is fine: Lodge says modern dish soap is not strong enough to strip seasoning, and a Virginia Tech food scientist explains that well-polymerized seasoning does not wash off with soap. Soap is optional, not required.',
+      proTip: 'Field Company recommends a natural fiber brush for loose food, followed by a chain mail scrubber for anything left behind.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Loosen Stuck-On Food',
+      instruction: 'For bits that stay stuck, work them loose with a nylon brush or pan scraper, as Lodge recommends, then rinse under warm water. A chain mail scrubber also lifts residue and lightly scuffs the surface, which Field Company says helps new seasoning bond.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Dry the Skillet Completely',
+      instruction: 'Dry the pan straight away with a paper towel or lint-free cloth, inside, outside and on the handle. Then set it on the stovetop over low heat for a few minutes to evaporate any moisture left in the pores of the iron. Wipe up any last droplets.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rub In a Thin Layer of Oil',
+      instruction: 'Put a small dab of cooking oil or seasoning oil on a paper towel and spread it over the entire cooking surface. Field Company says to wipe off the excess so the pan has a dry, matte finish rather than a sticky or shiny one. Store the skillet in a dry place.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Scour Off Any Rust',
+      instruction: 'If you find rust spots, scour only the rusty areas with steel wool or a rust eraser. Lodge says it is fine to use a scouring pad and soap at this stage because you are about to re-season the pan. Wash in warm soapy water, then dry it completely, finishing on the stovetop over low heat.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Re-Season in the Oven',
+      instruction: 'Coat the whole skillet with a very thin layer of cooking oil so nothing drips when you tilt it. Put foil on the bottom oven rack, preheat the oven to 450 to 500 degrees F, place the skillet upside down on the center rack and bake for 1 hour. Turn the oven off and let the skillet cool inside, following Lodge\'s restoration steps.',
+      proTip: 'Too much oil is the most common mistake here. Wipe it on, then wipe it back off until the pan looks almost dry.',
+    },
+  ],
+  ifMethodFails: [
+    'If the skillet feels sticky after oiling, too much oil was left on. Wipe it back with a clean paper towel, warm the pan on the stove, and next time apply a thinner coat and wipe off the excess.',
+    'If rust keeps coming back, the pan is not drying fully or the seasoning has worn thin. Scour the rust, wash, dry on the stovetop and re-season in the oven as in steps 6 and 7.',
+    'If acidic dishes have dulled the seasoning, re-season the pan. Lodge notes that long cooks with large amounts of very acidic food can break seasoning down, and that re-seasoning fixes it.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you use soap on a cast iron skillet?',
+      answer: 'Yes. Lodge says soap is not necessary but you can use mild dish soap, because today\'s dish soaps are not strong enough to strip seasoning. Some older advice and a few extension guides still say to skip soap, a rule that dates from when soap contained lye. Field Company treats soap as optional and advises re-oiling after washing.',
+    },
+    {
+      question: 'Can you soak a cast iron pan overnight?',
+      answer: 'No. Lodge warns that soaking cast iron in water causes rust, and Virginia Tech\'s food scientist also advises against long soaks. Loosen stuck food with a scraper, brush or chain mail scrubber instead, then dry the pan right away.',
+    },
+    {
+      question: 'Can cast iron go in the dishwasher?',
+      answer: 'Seasoned bare cast iron should not. Lodge says the dishwasher strips the seasoning and will likely cause rust, so wash it by hand. Enameled cast iron has different care instructions, so check the maker for that kind of pan.',
+    },
+    {
+      question: 'How do you get rust off a cast iron skillet?',
+      answer: 'Scour the rusty areas with steel wool or a rust eraser, wash in warm soapy water and dry the pan completely. Then oil it very thinly and bake it upside down at 450 to 500 degrees F for 1 hour, letting it cool in the oven, which is how Lodge restores rusty cast iron.',
+    },
+    {
+      question: 'Can you use metal utensils on cast iron?',
+      answer: 'Yes. Lodge lists silicone, wooden and even metal utensils as fine for cooking in seasoned cast iron. The caution about metal applies to steel wool and metal scrubbers for everyday cleaning, which Lodge reserves for rust removal.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-castiron-1',
+      title: 'How to Clean Cast Iron',
+      publisher: 'Lodge Cast Iron',
+      url: 'https://www.lodgecastiron.com/pages/how-to-clean',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wash by hand with warm water and soap using a stiff-bristled brush or scrubbing pad, use a nylon brush or pan scraper for stuck-on food, dry completely, rub in a thin layer of oil, and avoid soaking and the dishwasher because both lead to rust or stripped seasoning; metal scrubbers are for rust only.',
+    },
+    {
+      id: 'src-castiron-2',
+      title: 'How to Restore and Season a Rusty Cast Iron Skillet',
+      publisher: 'Lodge Cast Iron',
+      url: 'https://www.lodgecastiron.com/pages/cleaning-and-care-cast-iron-restore-and-season-rusty-cast-iron',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Scour rust with steel wool or a rust eraser, wash in warm soapy water, dry completely (low heat on the stovetop helps), apply a very thin layer of cooking oil, then bake upside down on the center rack at 450 to 500 degrees F for 1 hour with foil below and let it cool in the oven.',
+    },
+    {
+      id: 'src-castiron-3',
+      title: 'Cast Iron Cleaning and Care: The Field Method',
+      publisher: 'Field Company',
+      url: 'https://fieldcompany.com/pages/cast-iron-cleaning-care-field-method',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rinse with warm water and a natural fiber brush (soap optional), scrub with a chain mail scrubber, heat-dry on the stovetop for a few minutes, spread a small dab of seasoning oil over all surfaces and wipe off the excess for a dry, matte finish.',
+    },
+    {
+      id: 'src-castiron-4',
+      title: 'Virginia Tech food scientist dispels the myths behind cast iron pan use',
+      publisher: 'Virginia Tech News',
+      url: 'https://news.vt.edu/articles/2024/08/cast-iron-myths.html',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Washing with soap will not remove polymerized seasoning (the old rule came from lye soaps), warm water and soap if needed are fine for cleaning, the pan should be dried thoroughly, and seasoned cast iron should not be soaked because water causes rust.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Cast Iron Skillet (and Fix Rust)',
+    description: 'How to clean a cast iron skillet: wash with warm water and a little soap, scrub, dry fully and oil thinly. Plus no soaking, no dishwasher and fixing rust.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-cast-iron-skillet',
+    indexable: true,
+    focusKeyword: 'how to clean a cast iron skillet',
+  },
+};
+
+export default article;

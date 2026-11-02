@@ -21,6 +21,30 @@ export const SITE = {
   // (z4946iuout) are configured inside the container. Empty = no analytics script and no cookie banner.
   gtmId: 'GTM-K9GRGZQ9' as string,
   foundingDate: '2026',
+  areaServed: 'United States',
+  // Topical authority for the Organization card (schema.org knowsAbout), like a firm's practice areas.
+  knowsAbout: [
+    'Stain removal',
+    'Upholstery cleaning codes',
+    'Carpet and rug cleaning',
+    'Bathroom cleaning',
+    'Kitchen cleaning',
+    'Hardwood floor care',
+    'Natural stone care',
+    'Pet hair and odor removal',
+    'Mold and mildew cleaning',
+    'Cleaning chemical safety',
+    'Home organization',
+    'Cleaning equipment',
+  ],
+  // Publisher trust pages, referenced from the Organization schema.
+  policies: {
+    publishingPrinciples: '/editorial-policy',
+    correctionsPolicy: '/editorial-policy#updates',
+    reviewMethodology: '/methodology',
+    ownershipFundingInfo: '/affiliate-disclosure',
+    about: '/about',
+  },
 } as const;
 
 export function amazonProductUrl(asin: string): string {

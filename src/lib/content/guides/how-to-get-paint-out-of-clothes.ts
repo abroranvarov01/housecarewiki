@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-paint-out-of-clothes',
+  slug: 'how-to-get-paint-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get paint out of clothes',
+  subtitle: 'Latex and acrylic paint come out with water and detergent while still wet. Oil-based paint needs the solvent named on the paint can, used with ventilation and away from flames. What to try on dried paint, and why the dryer waits.',
+  excerpt: 'Treat it wet: water and detergent for latex and acrylic, the label solvent for oil-based, and no dryer until it is gone.',
+  quickAnswer: 'Act while the paint is still wet. For latex or acrylic paint, scrape or blot off the excess, flush the spot with water, rub in liquid detergent, rinse, then wash in the warmest water the care label allows. For oil-based paint, blot from the back, treat the spot with the thinner the paint label recommends (mineral spirits if there is no label) after a spot test, work in liquid detergent and launder, using the solvent with good ventilation and away from flames. Dried paint often will not come out completely, and the garment should stay out of the dryer until the stain is gone.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'A folded white button-up shirt with a tan splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  safetyWarnings: [
+    'Paint thinners and cleanup solvents can be flammable. Read the solvent label, and use it away from ignition sources such as water heaters, furnaces, electric motors and fans. Never use gasoline.',
+    'Ventilate well when using solvents: open doors and windows to the outside, or work outdoors. Wear gloves to keep solvent off your skin.',
+    'Spot test every solvent, alcohol or stain remover on a hidden seam first. Solvents and rubbing alcohol can fade dyes or damage some fabrics.',
+    'Do not put the garment in the dryer until the paint stain is completely gone; drying can set it.',
+    'Always read the care label first and do not use any product or method it prohibits. Take dry-clean-only items to a professional cleaner.',
+  ],
+  materialsNeeded: [
+    'Dull knife, spoon or old credit card for scraping',
+    'Clean cloth towels or white cloths for blotting',
+    'Liquid laundry detergent and a pre-wash stain remover',
+    'Soft-bristled toothbrush',
+    'Isopropyl rubbing alcohol (latex and acrylic paint, after a spot test)',
+    'The thinner named on the paint can, or mineral spirits (oil-based paint only)',
+    'Rubber gloves',
+    'Bucket or sink for soaking',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Identify the Paint and Act Fast',
+      instruction: 'Check the paint can to see whether it is water-based (latex or acrylic) or oil-based (alkyd), and what it lists for cleanup. Treat the stain while it is still wet; once latex paint dries, the stain may become permanent. If you cannot treat an oil-based stain right away, wrap the area in plastic wrap so it does not dry.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Remove the Excess Gently',
+      instruction: 'Scrape off thick paint with a dull edge and blot the rest with a clean cloth towel. Do not rub, and do not scrape hard, because too much force can damage the threads. Tide advises against paper towels here because they can leave particles in the fibers.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Flush Latex or Acrylic Paint and Rub in Detergent',
+      instruction: 'For water-based paint, sponge or rinse the stain from the back with water, rub liquid detergent into it, and rinse. You can also soak the stain in a mix of liquid detergent and warm water, then blot. Repeat until no more color comes out on the cloth.',
+      proTip: 'For stubborn acrylic or latex, Tide notes isopropyl alcohol can help break the paint down; test first, since alcohol can fade some dyes.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Treat Oil-Based Paint with the Label Solvent',
+      instruction: 'Working outdoors or in a well-ventilated room and wearing gloves, blot the stain from the back with a dry cloth. After a spot test, blot the stain with the thinner the paint can recommends, or mineral spirits if there is no label. While the stain is still wet with solvent, work liquid detergent into it with a soft-bristled toothbrush.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Soak Stubborn Oil-Based Stains',
+      instruction: 'If an oil-based stain remains after the solvent and detergent, the University of Georgia Extension suggests soaking the item in hot water overnight before laundering, as far as the care label allows. Repeat the solvent step if needed.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Pretreat and Wash Warm',
+      instruction: 'Apply a pre-wash stain remover or liquid detergent to the spot and leave it on; do not rinse it off before washing. Wash on the usual cycle at the hottest temperature the care label allows.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Check Before Drying',
+      instruction: 'Unload right away and look at the stain in good light. If any paint remains, repeat the treatment before the garment goes anywhere near the dryer, because drying can set the stain. Air dry when you are unsure.',
+    },
+  ],
+  ifMethodFails: [
+    'For paint that has already dried, scrape off what you can, then spot test rubbing alcohol on a hidden area. If the fabric tolerates it, dab it onto the paint, blot with a white cloth, scrub in a stain remover with a soft toothbrush and wash.',
+    'If an oil-based stain is still visible after two rounds of solvent, detergent and an overnight soak, take the garment to a dry cleaner and tell them it is oil-based paint.',
+    'Dried paint, especially latex that set before treatment, often will not come out completely. If the stain remains after a couple of tries, the garment may be best kept as painting clothes.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you get dried paint out of clothes?',
+      answer: 'Sometimes, but not reliably. Latex paint that is allowed to dry may become permanent. Scrape off the excess, test rubbing alcohol on a hidden spot, dab it on, scrub in a stain remover and wash, then repeat before drying. Oil-based paint that has dried is harder still and may need a dry cleaner.',
+    },
+    {
+      question: 'Does hot water set paint in clothes?',
+      answer: 'The usual advice is to rinse the fresh paint out with water first, then wash at the hottest temperature the care label allows once you have pretreated. Drying can set a paint stain, so do not machine dry the garment until the stain is completely gone.',
+    },
+    {
+      question: 'Does rubbing alcohol remove acrylic paint from clothes?',
+      answer: 'It can help. Tide notes that isopropyl alcohol helps break down acrylic and latex paint, but it can also fade colors, so test it on a hidden seam first and follow with a stain remover and a normal wash.',
+    },
+    {
+      question: 'What takes oil-based paint out of clothes?',
+      answer: 'Oil-based paint will not break down with just water and soap. Use the thinner the paint can recommends, or mineral spirits if there is no label, then work in liquid detergent and launder. Use solvents with plenty of ventilation, away from flames and pilot lights, and spot test first.',
+    },
+    {
+      question: 'Is it safe to wash clothes with paint thinner on them?',
+      answer: 'The standard method is to work liquid detergent into the stain while it is still wet with solvent and then launder. Read the thinner\'s label for its flammability and handling warnings, keep it away from ignition sources, and keep the garment out of the dryer until the stain is gone.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-paintclothes-1',
+      title: 'Remove Stains From Paint',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-paint/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For latex, sponge with water, rub in detergent and rinse as soon as possible, then pretreat and wash; treat while wet because dried latex may become permanent. For oil-based paint, use the thinner the label recommends or mineral spirits, work in liquid detergent while wet with solvent, soak overnight in hot water if needed, and wrap in plastic if it cannot be treated right away. Read the care label, pretest, and ventilate.',
+    },
+    {
+      id: 'src-paintclothes-2',
+      title: 'How to Get Paint Out of Clothes',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/paint-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Remove excess with a kitchen towel rather than paper towels, pretreat with liquid detergent and leave it on, wash at the hottest temperature the care label allows, and repeat before drying because drying can set the stain. Isopropyl alcohol helps with latex and acrylic but can fade colors; oil-based paint is blotted from the back and treated with white spirit after a spot test; dried paint is scraped and treated with a spot-tested cleaner.',
+    },
+    {
+      id: 'src-paintclothes-3',
+      title: 'How to Clean Paint Brushes and Rollers',
+      publisher: 'Sherwin-Williams',
+      url: 'https://www.sherwin-williams.com/en-us/project-center/paint/how-to-clean-tools',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Latex and acrylic paints clean up with warm water and mild dish soap while still wet; oil-based paints will not break down with water and soap and need a solvent such as mineral spirits or turpentine, with gloves and following the manufacturer\'s safety guidelines.',
+    },
+    {
+      id: 'src-paintclothes-4',
+      title: 'Healthy Indoor Painting Practices',
+      publisher: 'U.S. Environmental Protection Agency',
+      url: 'https://www.epa.gov/sites/default/files/2015-09/documents/inpaint5.pdf',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Latex paint usually cleans up with soap and water while alkyd paints need the products listed on the label; read the label to find out if the paint cleaner is flammable, use flammable products away from ignition sources such as water heaters, furnaces, electric motors and fans, never use gasoline, and provide plenty of fresh air.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Paint Out of Clothes: Latex, Acrylic, Oil',
+    description: 'How to get paint out of clothes: water and detergent for wet latex or acrylic, the label solvent for oil-based paint, what to try on dried paint, and safety.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-paint-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get paint out of clothes',
+  },
+};
+
+export default article;

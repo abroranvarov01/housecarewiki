@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-vacuum-filter',
+  slug: 'how-to-clean-a-vacuum-filter',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a vacuum filter',
+  subtitle: 'Unplug, check whether your filter is washable, tap out the dust, rinse washable filters in plain water until it runs clear, and air-dry them for at least 24 hours. Why heat, washing machines and a damp filter are off-limits.',
+  excerpt: 'Unplug, tap out dust, rinse washable filters in plain water, air-dry 24 hours, refit only when bone dry.',
+  quickAnswer: 'Unplug the vacuum and check the manual to see which filters are washable, because some filters can only be tapped or brushed clean and must be replaced. Tap loose dust out over a trash can, then rinse washable foam, felt or post-motor filters under the tap in plain water, at the temperature your manual gives, until the water runs clear, with no detergent. Squeeze out excess water and let the filter air-dry for at least 24 hours, never with a hair dryer or other heat. Put it back only when it is completely dry, and never run the vacuum without all its filters in place.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'machines',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-floor-carpet.webp',
+  heroImageAlt: 'White cordless stick vacuum with a clear brush head resting on a plush beige patterned rug in a sunlit living room, beside a cream sofa with a knitted throw and a round wooden coffee table',
+  safetyWarnings: [
+    'Always switch off and unplug the vacuum, or remove a cordless model from its charger, before taking the filters out.',
+    'Never put a filter back while it is still wet or damp. Bosch says it must be totally dry before it goes back in the machine.',
+    'Do not dry filters with a hair dryer or any other heat source, and do not put them in a washing machine or dishwasher; Shark\'s manuals rule out all of these.',
+    'Never run the vacuum without all of its filters in place. Shark\'s manual says not to operate the vacuum unless every filter is fitted.',
+    'Only wet filters your manual says are washable. If the manual or the filter itself does not say washable, including on many HEPA and paper filters, tap or brush it clean and replace it rather than rinsing it.',
+  ],
+  materialsNeeded: [
+    'Your vacuum\'s owner\'s manual (printed or from the maker\'s support site)',
+    'Trash can or outdoor bin for tapping out dust',
+    'Sink with running water',
+    'Soft, dry brush (for non-washable filters)',
+    'Towel or drying rack in a room-temperature spot',
+    'Optional: a spare set of filters to use while the washed ones dry',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Unplug and Find Every Filter',
+      instruction: 'Switch off and unplug the vacuum. Use the manual to locate each filter: most models have a pre-motor filter (often foam and felt) near the dust cup or bag compartment and a post-motor or exhaust filter at the back or base. Note which ones the manual calls washable and which must only be tapped or brushed.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Tap Out the Loose Dust',
+      instruction: 'Hold each filter inside a trash bag or over an outdoor bin and tap it firmly against the side to knock out loose dust. For filters the manual says are not washable, finish by gently brushing the surface with a soft, dry brush, then refit them.',
+      proTip: 'Do this outdoors if you can; a lot of fine dust comes out of a filter that has not been cleaned in months.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Rinse Washable Filters Until the Water Runs Clear',
+      instruction: 'Hold the washable filter under the tap and rinse it with plain water at the temperature your manual specifies until the water running out of it is clear. Shark\'s manuals call for lukewarm water and Bosch says to use water only, with no detergent. Do not put filters in a washing machine or dishwasher.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Squeeze Out Excess Water Gently',
+      instruction: 'Gently squeeze foam and felt filters to push out as much water as you can, without twisting or wringing them hard. Shake pleated or rigid filters to drain them.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Air-Dry for at Least 24 Hours',
+      instruction: 'Lay the filters on a towel or rack at room temperature and leave them to air-dry for at least 24 hours. Shark, Bosch and Hoover all give 24 hours as the drying guideline. Do not speed it up with a hair dryer, radiator or other heat.',
+      proTip: 'If a filter still feels even slightly damp after 24 hours, leave it longer. A spare set lets you keep vacuuming in the meantime.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Refit Only When Completely Dry',
+      instruction: 'Check that each filter is completely dry all the way through, then put every filter back in its housing exactly as it came out and close any covers. Do not run the vacuum with a filter missing.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Set a Cleaning and Replacement Schedule',
+      instruction: 'Follow your model\'s schedule: Shark manuals range from rinsing foam filters monthly to every 3 months under normal use, and Hoover recommends dusting filters out at least once a month and replacing them once a year. Clean sooner if suction drops.',
+    },
+  ],
+  ifMethodFails: [
+    'If suction is still weak after the filters are clean and dry, check the dust cup or bag, the hose and the brush roll for blockages, then follow your manual\'s troubleshooting section.',
+    'If a filter is torn, misshapen or still discolored and clogged after washing, replace it. Hoover recommends fitting new filters at least once a year.',
+    'If you refitted a filter and it still feels damp, take it straight back out and let it air-dry for another full day; filters must be totally dry before they go back in.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you wash a vacuum filter with water?',
+      answer: 'Only if your manual says it is washable. Foam, felt and many post-motor filters can be rinsed in plain water until it runs clear, but not every filter is washable, and some, such as paper filters, are meant to be tapped out and replaced. Check the manual or the label on the filter first.',
+    },
+    {
+      question: 'Should you use soap to clean a vacuum filter?',
+      answer: 'Generally no. Bosch says washable filters should be cleaned with water only and no detergent, and Shark\'s manuals call for a plain rinse. If your own manual gives different instructions, follow it.',
+    },
+    {
+      question: 'How long does a vacuum filter take to dry?',
+      answer: 'Plan on at least 24 hours of air-drying at room temperature. Shark, Bosch and Hoover all give 24 hours as the guideline, and the filter must be completely dry before it goes back in. Thick filters in humid rooms can take longer.',
+    },
+    {
+      question: 'Can I run my vacuum without the filter while it dries?',
+      answer: 'No. Shark\'s manual says not to operate the vacuum without all the filters in place Wait until the washed filter is dry, or fit a spare set in the meantime.',
+    },
+    {
+      question: 'How often should you clean a vacuum filter?',
+      answer: 'It depends on the model. Shark\'s manuals call for rinsing foam filters anywhere from monthly to every 3 months under normal use, and Hoover recommends dusting filters out at least monthly and replacing them once a year. Clean them sooner if you notice a loss of suction.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-vacfilter-1',
+      title: 'Shark NV41 Upright Vacuum Owner\'s Guide: Proper Care of Your Vacuum',
+      publisher: 'SharkNinja (via ManualsLib)',
+      url: 'https://www.manualslib.mx/manual/96306/Shark-Nv41.html?page=11',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rinse the filters thoroughly in lukewarm water until the water runs clear, squeeze out excess water and air-dry for at least 24 hours, do not use a hair dryer or other heat, do not put filters in a washing machine or dishwasher, rinse every 3 months under normal use, and do not operate the vacuum without all the filters in place.',
+    },
+    {
+      id: 'src-vacfilter-2',
+      title: 'Shark UV300 Owner\'s Guide: Proper Care of Your Vacuum',
+      publisher: 'SharkNinja (via ManualsLib)',
+      url: 'https://manualslib.mx/manual/9580/Shark-Uv300.html?page=10',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Foam and felt filters should be rinsed in lukewarm water monthly under normal use, the post-motor filter washed under the tap about once every 12 months, all filters air-dried for at least 24 hours without heat, and never put in a washing machine or dishwasher.',
+    },
+    {
+      id: 'src-vacfilter-3',
+      title: 'Cleaning Your Vacuum Cleaner',
+      publisher: 'Bosch Home Appliances',
+      url: 'https://www.bosch-home.com/us/owner-support/get-support/cleaning-vacuum-cleaner',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'A washable filter can be cleaned with just water and no detergent, should air-dry at room temperature for at least 24 hours, and must be totally dry before it goes back in the device.',
+    },
+    {
+      id: 'src-vacfilter-4',
+      title: 'Clean or Replace the Filters',
+      publisher: 'Hoover UK Service',
+      url: 'https://service.hoover.co.uk/advice-centre/how-to-maintain-your-vacuum-cleaner/274-clean-or-replace-the-filters/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Disconnect the vacuum from the mains first, dust filters out at least once a month, wash them in warm water for best results, make sure they are thoroughly dry before refitting (up to 24 hours), and replace filters once a year.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Vacuum Filter (Washable vs HEPA)',
+    description: 'How to clean a vacuum filter: tap out dust, rinse washable filters in plain water, air-dry 24 hours and never run the vacuum without one. What not to wash, too.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-vacuum-filter',
+    indexable: true,
+    focusKeyword: 'how to clean a vacuum filter',
+  },
+};
+
+export default article;

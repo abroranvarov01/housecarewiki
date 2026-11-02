@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-an-oven',
+  slug: 'how-to-clean-an-oven',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean an oven',
+  subtitle: 'Self-clean, steam clean or wipe by hand: how to prepare the oven for each, why the racks and foil come out first, and why commercial oven cleaner does not belong in a self-cleaning oven.',
+  excerpt: 'Pick the right cycle, empty the oven first, ventilate, then wipe out the ash or loosened soil.',
+  quickAnswer: 'For light soil, wait until the oven is cool and wipe it with warm water, mild detergent and a nonabrasive scrub sponge. For baked-on grime, use the oven\'s own cleaning cycle: take out the racks, broiler pan, cookware and any foil, hand-clean the door edge outside the gasket, ventilate the kitchen, then run Self-Clean and wipe out the ash once it has cooled. A Steam Clean cycle softens light soil with water and needs no chemicals. Do not use commercial oven cleaner in a self-cleaning oven; GE and Whirlpool both warn it can etch, stain or pit the porcelain liner.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing a greasy, crumb-covered stainless steel gas stovetop with a yellow and green sponge, next to black cast-iron burner grates',
+  safetyWarnings: [
+    'Do not use commercial oven cleaner in a self-cleaning oven, even a product labeled safe for self-clean models. GE warns repeated use etches and discolors the liner, and Whirlpool warns of staining, etching and pitting of the porcelain.',
+    'Keep the kitchen well ventilated during a self-clean cycle and never block the oven vents. The cycle runs at very high heat and gives off heat, odor and some smoke.',
+    'Move pet birds to another closed, well-ventilated room before running a self-clean cycle. Whirlpool warns that some birds are extremely sensitive to the fumes.',
+    'Do not clean, rub, bend or move the door gasket, and keep water and cleaner out of the slots in the door frame.',
+    'Do not open the oven door during a Steam Clean cycle: the water in the bottom of the oven is hot. Never use oven cleaner or other additives with Steam Clean.',
+  ],
+  materialsNeeded: [
+    'Your oven\'s owner\'s manual (cycle settings and rack rules vary by model)',
+    'Warm water and mild liquid detergent',
+    'Nonabrasive scrub sponge or eraser-style cleaning pad',
+    'Soft cloths or sponges for wiping out ash and water',
+    'Optional, if your manual lists it: a ceramic cooktop cleaner such as affresh, plus distilled water for rinsing',
+    'Oven mitt',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Choose the Right Method for the Mess',
+      instruction: 'Check your owner\'s manual to see which cleaning cycles your oven has. Light, fresh spills only need a hand wipe. A Steam Clean cycle uses water to soften light soil so it wipes out easily. The high-temperature Self-Clean cycle burns heavy, baked-on soil to a powdery ash. Do not wait too long: Whirlpool advises self-cleaning before the oven becomes heavily soiled, because heavy soil means more smoke and a longer cycle.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Wipe Routine Spills by Hand Once the Oven Is Cool',
+      instruction: 'Let the oven cool, then clean spills with warm water, mild detergent and a soft cloth. For tougher spots on the walls, door and bottom, use a nonabrasive scrub sponge or an eraser-style pad without added cleaners. Whirlpool also allows its affresh cooktop cleaner on the oven bottom, walls and door; if you use it, wipe out the cavity afterward with distilled water.',
+      proTip: 'Do not line the oven bottom with foil or an oven liner to catch drips. Manufacturers warn it can permanently damage the finish.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Empty the Oven Before a Cleaning Cycle',
+      instruction: 'Remove the oven racks, broiler pan and grid, cookware, bakeware and any foil. Wipe out loose crumbs and soil to cut down on smoke. Clear plastic items off the cooktop so they cannot melt, and empty the storage drawer. Some models allow special self-clean racks to stay in; only leave racks in if your manual says yours are designed for it.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Hand-Clean the Door Edge Without Touching the Gasket',
+      instruction: 'With a damp cloth, clean inside the door edge and the area about 1 1/2 inches around the oven cavity frame, which the cycle does not reach. Work around the gasket, the soft seal on the door, without rubbing, bending or moving it, and keep liquid out of the slots in the door frame.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Ventilate and Move Pet Birds',
+      instruction: 'Open a window or turn on the range hood so heat, odors and smoke can clear, and make sure nothing is blocking the oven vents. If you keep birds, move them to another closed, well-ventilated room before you start.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Run the Self-Clean or Steam Clean Cycle',
+      instruction: 'Close the door fully, then select Clean, choose the setting or cycle time your manual recommends, and press Start. During Self-Clean the door locks automatically and stays locked until the oven cools; the cycle time includes a cool-down period. For Steam Clean, follow the prompts on your control, add no cleaners or additives, and keep the door closed while the water is hot.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Wipe Out the Ash or Loosened Soil',
+      instruction: 'After Self-Clean, let the oven cool completely and wipe out the remaining ash with a damp cloth. After Steam Clean, soak up the leftover water and debris in the oven bottom with a sponge or cloth, then wipe moisture from the door and cavity walls. Wash the racks you removed separately before putting them back.',
+      proTip: 'Some discoloration, loss of gloss or faint hairline crazing on porcelain after a self-clean cycle is normal, according to Whirlpool, and does not affect performance.',
+    },
+  ],
+  ifMethodFails: [
+    'If baked-on soil is still there after a cleaning cycle, let the oven cool and work the spot with a nonabrasive scrub sponge and warm soapy water, or run the cycle again as your manual directs, rather than reaching for oven cleaner or an abrasive pad.',
+    'If you used a commercial oven cleaner before learning it is not recommended, rinse every trace away with clear water on a damp, not soaked, cloth before running Self-Clean, as GE advises.',
+    'If the door will not lock or the cycle will not start, make sure the door is fully closed and check the owner\'s manual or contact the manufacturer for your model.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Do you have to take the racks out of a self-cleaning oven?',
+      answer: 'Usually, yes. Whirlpool\'s self-clean instructions say to remove the oven racks, broiler pan, cookware and foil before starting the cycle. Leave racks in only if your owner\'s manual says they are designed to stay in during the cycle.',
+    },
+    {
+      question: 'Can you use Easy-Off or other oven cleaner in a self-cleaning oven?',
+      answer: 'GE says no commercial oven cleaner of any kind, even ones labeled for self-clean models, should be used in a self-cleaning oven, and that continued use etches and discolors the liner. Whirlpool also says not to use oven cleaners. If some was used, rinse it away completely with clear water before running Self-Clean.',
+    },
+    {
+      question: 'Are self-cleaning oven fumes dangerous?',
+      answer: 'The cycle produces heat, odors and some smoke, so keep the kitchen well ventilated and do not block the oven vents. Whirlpool specifically warns that some birds are extremely sensitive to the fumes and should be moved to another closed, well-ventilated room.',
+    },
+    {
+      question: 'What is the difference between Self-Clean and Steam Clean?',
+      answer: 'Self-Clean uses very high heat to burn soil to ash, locks the door and suits heavier buildup. Steam Clean uses water to soften light soil so you can wipe it out afterward. Neither cycle should be used with oven cleaners or other additives.',
+    },
+    {
+      question: 'Should I put foil on the bottom of my oven to catch spills?',
+      answer: 'No. Whirlpool warns that lining the oven bottom with foil or a liner can permanently damage the finish, and GE says not to use liners or foil to catch spillovers in a self-cleaning oven. Wipe spills up once the oven has cooled instead.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-oven-1',
+      title: 'High Temperature Self-Clean Cycle Information',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Cooking/Wall_Ovens_and_Ranges/Product_Info/Oven_Cleaning_and_Care/High_Temperature_Self-Clean_Cycle_Information',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Before Self-Clean, remove racks, broiler pan, grid, cookware, bakeware and foil, hand-clean the door edge and 1 1/2 in area around the cavity frame without moving the gasket, keep the kitchen ventilated, do not block vents, move birds to another closed, well-ventilated room, and wipe out ash after the oven cools.',
+    },
+    {
+      id: 'src-oven-2',
+      title: 'Using the Steam Clean Function',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Cooking/Wall_Ovens_and_Ranges/Product_Info/Oven_Product_Assistance/Using_the_Steam_Clean_Function',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Steam Clean softens hard soil to make cleaning easier; remove the wire shelf and trays first, do not use oven cleaners or other additives, do not open the door while the water is hot, and wipe leftover water and debris out afterward.',
+    },
+    {
+      id: 'src-oven-3',
+      title: 'Routine Oven Cleaning - Range',
+      publisher: 'Whirlpool Product Help',
+      url: 'https://producthelp.whirlpool.com/Cooking/Wall_Ovens_and_Ranges/Ranges/Cleaning_and_Maintenance/Oven/Routine_Oven_Cleaning_-_Range',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean routine spills with warm water, mild detergent and a soft cloth after the oven cools; use a nonabrasive scrub sponge or eraser-style pad for deeper cleaning; affresh cooktop cleaner may be used followed by a distilled water wipe; do not use oven cleaners because staining, etching or pitting of porcelain can result.',
+    },
+    {
+      id: 'src-oven-4',
+      title: 'Range Problem Cleaners (Self-Clean and Continuous Clean)',
+      publisher: 'GE Appliances',
+      url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=18005',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'No commercial oven cleaner, even one labeled for self-clean models, should be used in a self-clean oven; continuous use etches and discolors the liner; any residue must be rinsed off with clear water on a damp cloth before self-cleaning; do not use oven liners or foil to catch spillovers.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean an Oven: Self-Clean, Steam or by Hand',
+    description: 'How to clean an oven safely: when to use Self-Clean or Steam Clean, what to remove first, how to wipe by hand, and why oven cleaner damages self-clean liners.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-an-oven',
+    indexable: true,
+    focusKeyword: 'how to clean an oven',
+  },
+};
+
+export default article;

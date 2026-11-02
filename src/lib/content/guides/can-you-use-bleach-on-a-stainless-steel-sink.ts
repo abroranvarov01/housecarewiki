@@ -1,0 +1,156 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-can-you-use-bleach-on-a-stainless-steel-sink',
+  slug: 'can-you-use-bleach-on-a-stainless-steel-sink',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'Can you use bleach on a stainless steel sink?',
+  subtitle: 'Sink makers say no: Kraus and Blanco tell owners not to clean stainless sinks with bleach, and Kohler links bleach overspray and fumes to rust. What to clean with instead, how to rinse if bleach gets in the sink, and how to disinfect safely.',
+  excerpt: 'Kraus, Blanco and Kohler all steer you away from bleach on stainless sinks. Wash with mild soap, rinse, dry, and rinse immediately after any bleach contact.',
+  quickAnswer: 'No, not as a cleaner: stainless steel sink makers say bleach can damage the finish and cause rust. Kraus tells owners not to use cleaners containing bleach or chlorine and to rinse the sink immediately if they touch it, Blanco says not to use bleach containing hypochlorite, and Kohler says bleach overspray from nearby countertops and fumes from bleach stored under the sink can rust it. Clean the sink with water and a mild liquid dish soap, wipe in the direction of the grain, rinse and dry with a microfiber cloth. If bleach does get into the sink, rinse it away with plenty of clean water right away and ventilate the room.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'sinks-drains',
+  surfaceSlugs: ['stainless-steel'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand wiping a stainless steel stovetop panel with a yellow and green sponge beside gas burners and food crumbs, with a dish rack and a potted herb on the counter behind',
+  safetyWarnings: [
+    'Do not clean a stainless steel sink with bleach or chlorine-based cleaners. Kraus says not to use cleaners containing bleach, ammonia, alcohol or chlorine, and Blanco says not to use bleach containing hypochlorite.',
+    'Never mix bleach with vinegar, ammonia or any other cleaner. The CDC warns that mixing bleach with other cleaners can release vapors that are dangerous to breathe.',
+    'Do not spray bleach cleaners on the countertop next to the sink. Kohler says the overspray can land on the sink and cause rusting; if you do, rinse the sink thoroughly afterwards.',
+    'Do not store open containers of bleach, acids, salt or lye in the cabinet under the sink. Kohler says fumes from household chemicals can rust the underside of a stainless steel sink.',
+    'Never use steel wool, wire brushes or abrasive pads on stainless steel. Kohler, Kraus and Blanco all warn against them; use non-scratch pads only.',
+  ],
+  materialsNeeded: [
+    'Mild liquid dish soap (ammonia-free)',
+    'Soft sponge or non-scratch cleaning pad',
+    'Lukewarm water',
+    'Microfiber cloth for drying',
+    'Optional for mineral deposits: white vinegar, if your sink maker allows it',
+    'Optional: the stainless steel sink cleaner your sink maker sells or recommends',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Rinse Away Any Bleach Immediately',
+      instruction: 'If bleach or a bleach-based cleaner splashes into the sink or drips from the counter, run plenty of clean water over every surface it touched right away. Kraus says rinsing the sink immediately after contact with bleach or chlorine minimizes potential damage. Open a window or turn on the range hood while you do it.',
+      proTip: 'After cleaning the counters next to the sink, always rinse the sink down too; Kohler says overspray from countertop cleaners can cause rust inside the sink.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Wash With Mild Dish Soap and Water',
+      instruction: 'For routine cleaning, wet a soft sponge or non-scratch pad with water and a few drops of mild, ammonia-free liquid dish soap, which is what Kraus recommends for its stainless sinks. Wash the basin, walls, rim and drain area.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wipe in the Direction of the Grain',
+      instruction: 'Look at the steel from an angle to see the fine brushed lines, and clean along them rather than in circles. Blanco says to clean stainless sinks in the direction of brushing and to avoid circular movements.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Rinse Off Every Trace of Cleaner',
+      instruction: 'Rinse the whole sink with lukewarm, clean water so no cleaning agent is left on the steel. Blanco says to rinse surfaces thoroughly so no traces of the cleaning agent remain.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Dry With a Microfiber Cloth',
+      instruction: 'Pat or rub the sink dry with a clean microfiber cloth. Both Kraus and Blanco finish their stainless sink cleaning routines with a microfiber dry, which also prevents water spots.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Remove Mineral Deposits With Vinegar, Not Bleach',
+      instruction: 'For white, chalky hard-water deposits, Kraus recommends vinegar to neutralize the minerals and remove the deposits, and Blanco recommends diluted vinegar essence for limescale. Wipe it on with a soft cloth, then rinse thoroughly and dry. Never use vinegar in a sink that still has bleach in it.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Disinfect With a Product Labeled for Stainless Steel',
+      instruction: 'When you need to disinfect, for example after raw meat, wash with soap and water first, then use a disinfectant whose label says it is safe for stainless steel and follow its directions for contact time and rinsing. Ventilate, check the label for gloves, and never mix it with another cleaner.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Move Chemicals Out of the Sink Cabinet',
+      instruction: 'Check the cabinet under the sink and close or remove open containers of bleach, acids, salt or lye. Kohler says fumes from household chemicals can rust a stainless steel sink from underneath.',
+    },
+  ],
+  ifMethodFails: [
+    'If rust-colored spots appear inside the sink, think about what was used in or around it. Kohler says rust inside a stainless sink is likely the result of chemicals used in or around the sink, and that surface rust can be removed with the right cleaners; check your sink maker\'s recommended cleaner.',
+    'If the underside of the sink is rusting, look for open chemical containers in the cabinet below and remove them, as Kohler advises.',
+    'If water spots or dull patches remain after cleaning, rinse again, dry immediately with a microfiber cloth, and use your sink maker\'s stainless steel cleaner or diluted vinegar for mineral film, rather than bleach or abrasive pads.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Will bleach ruin a stainless steel sink?',
+      answer: 'It can damage it. Kraus tells owners not to use cleaners containing bleach or chlorine on its stainless sinks, Blanco says not to use bleach containing hypochlorite, and Kohler links bleach overspray and fumes to rust on stainless sinks. If it splashes in, rinse it away right away, as Kraus advises.',
+    },
+    {
+      question: 'What happens if bleach sits in a stainless steel sink?',
+      answer: 'Sink makers warn that bleach and chlorine can damage the surface and lead to rust, which is why Kraus says to rinse the sink immediately after any contact. Do not let bleach solutions or bleach-soaked items sit in the basin.',
+    },
+    {
+      question: 'How do I disinfect a stainless steel sink without bleach?',
+      answer: 'Wash it first with mild dish soap and water, rinse and dry. Then use a disinfectant whose label says it is safe for stainless steel and follow its directions. Sink makers such as Kraus and Blanco advise against bleach on stainless steel sinks.',
+    },
+    {
+      question: 'Can I soak dishes in bleach water in a stainless steel sink?',
+      answer: 'It is better not to. Kraus says not to use bleach or chlorine on its stainless sinks and to rinse immediately if they come in contact with it. If bleach is ever used nearby, ventilate the room and never combine it with other cleaners, as the CDC warns.',
+    },
+    {
+      question: 'Can you use vinegar on a stainless steel sink?',
+      answer: 'Yes, for mineral deposits. Kraus recommends vinegar to remove hard-water deposits, and Blanco recommends diluted vinegar essence for limescale. Rinse well afterwards and never use vinegar while bleach is still in the sink.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-bleach-sink-1',
+      title: 'Care & Maintenance',
+      publisher: 'Kraus USA',
+      url: 'https://www.kraususa.com/care-and-maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Do not use cleaners containing abrasive powders, bleach, ammonia, alcohol or chlorine on stainless steel sinks, rinse the sink immediately if they come in contact with it, clean with water and a mild ammonia-free liquid soap, rinse and pat dry with microfiber, use vinegar for mineral deposits, and use non-scratch pads only.',
+    },
+    {
+      id: 'src-bleach-sink-2',
+      title: 'Problem with Rust on Stainless Steel Product',
+      publisher: 'Kohler',
+      url: 'https://assist.kohler.com/en/sinks/Problem-with-Rust-on-Stainless-Steel-Product',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rust inside a stainless sink is likely caused by chemicals used in or around it; do not use bleach cleaners on adjacent countertops because overspray can rust the sink, thoroughly rinse the sink after using countertop cleaner, do not store open containers of bleach, acids, salt or lye under the sink, and do not use steel wool, wire brushes or abrasive pads.',
+    },
+    {
+      id: 'src-bleach-sink-3',
+      title: 'Cleaning and Care of Stainless Steel Sinks',
+      publisher: 'BLANCO',
+      url: 'https://www.blanco.com/int/sinks/advisor/cleaning-and-care-of-stainless-steel-sinks/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Do not use aggressive cleaning agents, abrasive cleaners or bleach containing hypochlorite; clean in the direction of brushing, rinse thoroughly so no cleaning agent remains, rub dry with a microfibre cloth, use diluted vinegar essence for limescale, and never use steel wool.',
+    },
+    {
+      id: 'src-bleach-sink-4',
+      title: 'Cleaning and Disinfecting with Bleach',
+      publisher: 'Centers for Disease Control and Prevention',
+      url: 'https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Never mix household bleach or any disinfectant with other cleaners or disinfectants because it can release vapors that are dangerous to breathe; keep air flowing when using bleach indoors and check the label for gloves or eye protection.',
+    },
+  ],
+  seo: {
+    title: 'Can You Use Bleach on a Stainless Steel Sink? No',
+    description: 'Can you use bleach on a stainless steel sink? Kraus, Blanco and Kohler say no: it can cause rust. How to rinse it off, and safer ways to clean and disinfect.',
+    canonical: 'https://housecarewiki.com/guides/can-you-use-bleach-on-a-stainless-steel-sink',
+    indexable: true,
+    focusKeyword: 'can you use bleach on a stainless steel sink',
+  },
+};
+
+export default article;

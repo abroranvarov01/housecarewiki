@@ -1,0 +1,150 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-can-you-use-bleach-on-carpet',
+  slug: 'can-you-use-bleach-on-carpet',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'Can you use bleach on carpet?',
+  subtitle: 'Even the bleach maker says no. Why household bleach strips carpet dye for good, why wool is off-limits, what to use on stains instead, and what to do the moment bleach hits the carpet.',
+  excerpt: 'No. Bleach destroys carpet dye permanently. Blot, flush with water, and use a carpet-safe spot cleaner instead.',
+  quickAnswer: 'No: household chlorine bleach changes or destroys carpet dye, and once that happens nothing an owner or a professional cleaner does can bring the original color back. Clorox itself says it would not use its disinfecting bleach on carpet, that you absolutely cannot use it on wool, and that synthetic carpet makers typically recommend against it too. Treat stains instead by blotting with a white cloth, using a pretested carpet spot cleaner, rinsing with cold water and blotting dry. If bleach is spilled, blot it and flush the spot with water several times right away, then call a carpet repair professional about re-coloring.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'carpet-stains',
+  surfaceSlugs: ['carpet'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-floor-carpet.webp',
+  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige looped carpet, with a glass bowl of soapy water beside it and a pair of muddy hiking boots on the floor in the background',
+  safetyWarnings: [
+    'Do not use chlorine bleach on carpet, diluted or not. The University of Kentucky Cooperative Extension lists all household bleaches among the chemicals that change or destroy carpet dye, and says the color usually cannot be restored.',
+    'Never use bleach on wool carpet. Clorox says you absolutely cannot, and a carpet-cleaning supplier warns that chlorine bleach dissolves wool and damages cotton.',
+    'Never mix bleach with ammonia, vinegar or other cleaners, and do not add a spot cleaner on top of a fresh bleach spill. Ventilate the room and wear gloves while you blot and flush a spill.',
+    'Bleach damage can show up late. The extension service notes that bleaching needs humidity to start, so a spot may appear days later or right after the carpet is cleaned.',
+    'Do not soak the carpet while flushing or cleaning. Clorox warns that soaking carpet with water is bad for the subfloor, and heavily soaked padding can wick contaminants back up.',
+  ],
+  materialsNeeded: [
+    'Several clean, dry white cloths or white paper towels',
+    'Cold water in a bowl or spray bottle',
+    'A carpet spot cleaner labeled for your carpet type (pretested)',
+    'Rubber gloves',
+    'A fan or open window for ventilation',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Put the Bleach Away and Check the Fiber',
+      instruction: 'Before treating any carpet stain, set chlorine bleach aside. Check the carpet\'s label, receipt or the manufacturer\'s care guide for the fiber type. Wool is never a candidate for bleach, and synthetic carpet manufacturers (nylon, olefin, polyester) typically recommend against it too, according to Clorox.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Blot the Stain with a White Cloth',
+      instruction: 'Blot up as much of the spill as you can with a dry, white absorbent cloth or white paper towels. Blot rather than rub, and use white cloths so you can see whether color is coming off the carpet.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Pretest Your Spot Cleaner',
+      instruction: 'Apply a little of the spot cleaner you plan to use to an inconspicuous area, such as inside a closet or under furniture. The Carpet and Rug Institute says to check for color transfer to the cloth or damage to the carpet, and to choose another solution if anything changes.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Work the Cleaner In Gently',
+      instruction: 'Put a small amount of the pretested cleaner on a white cloth, not directly on the carpet, and work it in gently. Keep blotting with fresh areas of the cloth until no more of the stain transfers. Follow the cleaner\'s label for how long to leave it.',
+      proTip: 'For pet urine, Clorox points carpet owners to its Urine Remover rather than bleach; there is a separate guide on getting dog urine out of carpet.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rinse with Cold Water and Blot Dry',
+      instruction: 'When the stain is gone, rinse the area with cold water and blot with a dry cloth until no more moisture comes up. Do not soak the spot; water that reaches the backing and pad is hard to get out.',
+    },
+    {
+      stepNumber: 6,
+      title: 'If Bleach Spills, Blot and Flush Right Away',
+      instruction: 'Open a window and put on gloves. Blot up the bleach with white cloths, then flush the spot with water and blot again, repeating at least three times, as a carpet-cleaning supplier advises. For a large spill that soaked through, the padding may need to be removed so bleach does not wick back up, which is a job for a professional.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Have a Professional Re-Color the Spot',
+      instruction: 'Once the color is gone, cleaning will not bring it back. Carpet repair technicians can neutralize remaining bleach and replace the lost dye in small spots with color-matched dyes. Getting the shade right takes color correction, so ask a professional before trying dyes yourself.',
+    },
+  ],
+  ifMethodFails: [
+    'If a light or yellow spot appears days after a spill or after cleaning, bleach residue may have reacted with humidity. Flush and blot the area with water again, then have a professional assess it for re-coloring.',
+    'If a spot cleaner removes color during the pretest, stop and choose another cleaner, as the Carpet and Rug Institute advises, or call a professional cleaner.',
+    'If the bleached area is large or the carpet is wool, call a carpet repair professional rather than trying to dye it yourself.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you use diluted bleach on carpet?',
+      answer: 'No. Diluting bleach does not make it safe for carpet dye. Clorox says it would not use its disinfecting bleach on carpet, and the University of Kentucky Cooperative Extension lists all household bleaches among chemicals that can change or destroy carpet dye.',
+    },
+    {
+      question: 'How do you fix a bleach stain on carpet?',
+      answer: 'Blot and flush the spot with water several times right away. After that, cleaning will not restore the color; the fix is re-coloring. Professionals neutralize any remaining bleach and replace the lost dye with color-matched carpet dyes, which works best on small spots.',
+    },
+    {
+      question: 'Does carpet warranty cover bleach spots?',
+      answer: 'Usually not. The University of Kentucky Cooperative Extension explains that chemical spots, including those from household bleach, are not covered under most carpet manufacturers\' warranties, because few dyes resist chemical attack. Check your own warranty for its exact terms.',
+    },
+    {
+      question: 'Is bleach safe on white carpet?',
+      answer: 'Not reliably. White carpet has no color to lose, but the extension service notes that strong oxidizers and bleaches typically leave yellow stains on carpet. Many white carpets are also wool, which bleach damages.',
+    },
+    {
+      question: 'What should I use instead of bleach on carpet?',
+      answer: 'Use a carpet spot cleaner labeled for your carpet type, pretested on a hidden area, applied with a white cloth, then rinsed with cold water and blotted dry. For urine, Clorox recommends its Urine Remover on carpet instead of bleach.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-bleachcarpet-1',
+      title: 'Can You Use Bleach on Carpet to Remove Urine Stains?',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/can-you-use-bleach-on-carpet-to-remove-urine-stains/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clorox would not use Clorox Disinfecting Bleach on carpet, you absolutely cannot if the carpet is wool, and synthetic (nylon, olefin, polyester) carpet manufacturers typically recommend against it; it recommends Clorox Urine Remover for carpet and warns never to soak carpet with water because it is bad for the subfloor.',
+    },
+    {
+      id: 'src-bleachcarpet-2',
+      title: 'Cause and Prevention of Carpet and Upholstery Spots and Stains (HF-LRA.074)',
+      publisher: 'University of Kentucky Cooperative Extension Service',
+      url: 'https://fcs.mgcafe.uky.edu/sites/fcs.mgcafe.uky.edu/files/hf-lra.074.pdf',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'All household bleaches are among chemicals that change or destroy carpet dye; the original color usually cannot be restored by an individual or professional cleaner; such spots are not covered under most manufacturers\' warranties; humidity is needed to start bleaching, so spots can appear later or after cleaning; bleaches typically leave yellow stains.',
+    },
+    {
+      id: 'src-bleachcarpet-3',
+      title: 'Spot Solver: Wine (general spot-removal steps)',
+      publisher: 'The Carpet and Rug Institute',
+      url: 'https://carpet-rug.org/spot-solver/wine/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Pretest any spot removal solution in an inconspicuous area for color transfer or carpet damage; blot liquids with a dry white cloth or white paper towels; apply a small amount of solution to a white cloth and work in gently; rinse with cold water and blot dry until all moisture is removed.',
+    },
+    {
+      id: 'src-bleachcarpet-4',
+      title: 'CMC Color Modifying Cosmetics for Correcting Carpet Bleach Spots',
+      publisher: 'Bane-Clene',
+      url: 'https://www.baneclene.com/pages/cmccolormodifyingcosmeticsforcarpetbleachstains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Chlorine bleach dissolves wool and damages cotton; blot a bleach spill and flush with water at least three times; heavy spills may require removing the padding; neutralize the bleach, rinse, and restore small bleached spots by replacing the lost dye; pretest in an inconspicuous area.',
+    },
+  ],
+  seo: {
+    title: 'Can You Use Bleach on Carpet? No, and Here\'s Why',
+    description: 'Can you use bleach on carpet? No. Bleach destroys carpet dye for good and harms wool. What to use instead, how to test a cleaner, and what to do after a spill.',
+    canonical: 'https://housecarewiki.com/guides/can-you-use-bleach-on-carpet',
+    indexable: true,
+    focusKeyword: 'can you use bleach on carpet',
+  },
+};
+
+export default article;

@@ -1,0 +1,145 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-baseboards',
+  slug: 'how-to-clean-baseboards',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean baseboards',
+  subtitle: 'Vacuum the dust off first, wash with warm water and a little mild dish soap on a well-wrung sponge, rinse, and dry. How hard you can rub depends on the paint sheen, and paint makers say harsh cleaners and abrasive scrubbing dull the finish.',
+  excerpt: 'Dust with the vacuum brush, wash gently with mild soap, rinse, dry with a soft towel.',
+  quickAnswer: 'Start by running the brush attachment of your vacuum along the baseboards to lift loose dust, so you are not smearing it into mud. Then wipe them with a non-abrasive sponge or microfiber cloth dipped in warm water with a little mild dish soap and wrung out well, rubbing gently. Rinse with a second cloth in plain water and dry with a soft towel. Glossier trim paint tolerates more washing than flat or matte paint, and paint makers warn that harsh chemicals, glass cleaner and abrasive scrubbing can scratch or dull the finish.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'hardwood-laminate',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-floor-carpet.webp',
+  heroImageAlt: 'White cordless stick vacuum on a plush beige patterned rug in a sunlit living room, with a cream sofa, a round wooden coffee table and white trim along the windows behind',
+  safetyWarnings: [
+    'Never use glass cleaner or heavy-duty household spray cleaners on painted trim; Benjamin Moore warns against them on painted surfaces.',
+    'Avoid harsh chemicals and abrasive scrubbing. Sherwin-Williams says both can scratch painted surfaces or dull the finish.',
+    'Do not mix cleaning products, and never combine bleach with ammonia or acids. If you step up to a store-bought cleaner, use one product at a time and ventilate the room.',
+    'Wring your cloth out thoroughly. Too much water can hurt the paint, so wipe up any drips that run down onto the floor as you go.',
+    'Wait at least two weeks before washing freshly painted baseboards with soap and water so the paint can cure; wetting it sooner can alter or damage the finish.',
+  ],
+  materialsNeeded: [
+    'Vacuum with a soft brush (dusting) attachment',
+    'Two buckets: one for wash water, one for rinse water',
+    'Warm water',
+    'Mild liquid dish soap (a few drops)',
+    'Two non-abrasive sponges or microfiber cloths',
+    'Soft, dry towels',
+    'Baking soda (for scuff marks)',
+    'Rubber gloves (optional)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Vacuum Off the Loose Dust',
+      instruction: 'Fit the soft brush attachment to your vacuum and run it slowly along the top edge and face of every baseboard, including corners and the gap behind doors. Getting the dry dust off first means your damp cloth cleans instead of turning dust into streaky mud.',
+      proTip: 'Do this while you vacuum the floor so the dust you knock loose gets picked up in the same pass.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Check the Paint Sheen and Test a Hidden Spot',
+      instruction: 'Look at how shiny the paint is. Semi-gloss and high-gloss trim paint is the most washable; flat, matte and eggshell paint needs a lighter touch and less water. Before you wash the whole room, try your cleaning solution on a spot behind a door or furniture. If the paint still looks even and no water marks remain once it dries, carry on.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Mix Warm Water and Mild Dish Soap',
+      instruction: 'Fill one bucket with warm water and a few drops of mild dish soap, and a second bucket with plain warm water for rinsing. For light marks, plain warm water on a sponge is often enough, so start there and add soap only if you need it.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wash Gently in Small Sections',
+      instruction: 'Dip a non-abrasive sponge or microfiber cloth in the soapy water and wring it out until it is just damp. Wipe a short stretch of baseboard at a time with gentle circular strokes, letting the solution do the work rather than pressure. Clean the top edge, where most dust settles, as well as the face.',
+      proTip: 'Kneeling pads or a low stool make it easier to keep steady, light pressure along a whole wall.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rinse as You Go',
+      instruction: 'Dip the second sponge or cloth in the plain rinse water, wring it out well and wipe each section right after washing it to remove the leftover cleaning solution before it dries on the paint.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Dry with a Soft Towel',
+      instruction: 'Wipe each rinsed section with a soft, absorbent towel so no moisture is left on the paint or on the floor below it. If you see faint streaks once it is dry, buff them lightly with a dry microfiber cloth.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Lift Scuffs with a Baking Soda Paste',
+      instruction: 'For scuff marks that soap and water did not remove, mix baking soda with a little water, rub it gently onto the mark with a soft damp cloth, then rinse with a clean damp cloth and dry. Use light pressure on flat or matte paint. If a mark still will not come off, touch it up with leftover paint in the same color and sheen rather than scrubbing harder.',
+    },
+  ],
+  ifMethodFails: [
+    'If grime remains after soap and water, Benjamin Moore suggests stepping up to a mild all-purpose cleaner on a sponge. Use one product only, test it in a hidden spot first, rinse and dry afterward.',
+    'If washing leaves dull or shiny patches, the paint is likely flat or matte and was rubbed too hard. Stop scrubbing, let it dry, and touch up with matching paint if the patch is still visible.',
+    'Chips, cracks and bare spots are damage, not dirt. Clean the area, let it dry, and repaint with leftover paint or a color and sheen match.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'What is the best thing to clean baseboards with?',
+      answer: 'Warm water with a few drops of mild dish soap on a non-abrasive sponge or microfiber cloth. Paint makers including Sherwin-Williams and Benjamin Moore name mild soap and warm water as the cleaner to start with for painted surfaces, followed by a plain-water rinse and a dry towel.',
+    },
+    {
+      question: 'Should you vacuum or dust baseboards before washing them?',
+      answer: 'Yes. Run the vacuum\'s brush attachment along them first to remove loose dust and dirt. Washing dusty baseboards just spreads the dust around as a muddy film.',
+    },
+    {
+      question: 'Can you use a Magic Eraser on baseboards?',
+      answer: 'Melamine sponges work by mild abrasion, and paint makers warn that abrasive scrubbing can scratch or dull painted finishes. Try mild soap and water or a baking soda paste first, test anything stronger in a hidden spot, and be especially gentle on flat or matte paint.',
+    },
+    {
+      question: 'How do you clean baseboards without damaging the paint?',
+      answer: 'Use a well-wrung, non-abrasive sponge with mild soap and warm water, rub gently in small circles, rinse, and dry with a soft towel. Avoid glass cleaner, heavy-duty sprays, harsh chemicals and hard scrubbing, and go lighter on flat and matte paint, which is less durable than satin or semi-gloss.',
+    },
+    {
+      question: 'How long after painting can you wash baseboards?',
+      answer: 'Wait at least two weeks before washing with soap and water so the paint can fully cure. Both Sherwin-Williams and Benjamin Moore give two weeks as the guideline; Benjamin Moore notes a fresh spill can be wiped gently after a few hours if needed.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-baseboards-1',
+      title: 'How to Clean Walls',
+      publisher: 'Sherwin-Williams',
+      url: 'https://www.sherwin-williams.com/en-us/project-center/paint/how-to-clean-walls',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Dust with a vacuum dust brush, wash painted surfaces with mild soap and warm water on a soft cloth or sponge, rinse lightly with a well-wrung wet rag, dry with a clean towel, use baking soda and water for scuffs, test in an inconspicuous spot, avoid harsh chemicals and abrasive scrubbing, scrub flat and matte paint more gently than satin or semi-gloss, and wait at least two weeks after painting.',
+    },
+    {
+      id: 'src-baseboards-2',
+      title: 'Cleaning Painted Walls',
+      publisher: 'Benjamin Moore',
+      url: 'https://benjaminmoore.com/en-ca/interior-exterior-paints-stains/how-to-advice/painting-101/cleaning-painted-walls',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Remove surface dust with the vacuum brush attachment, start with warm water then mild dish detergent on a non-abrasive sponge, use two buckets and rinse as you go, rub gently in a circular motion, dry with a soft absorbent cloth, never use glass cleaner or heavy-duty spray cleaners, avoid combining products, and be gentler the lower the sheen.',
+    },
+    {
+      id: 'src-baseboards-3',
+      title: 'How to Paint Trim',
+      publisher: 'Sherwin-Williams',
+      url: 'https://www.sherwin-williams.com/homeowners/how-to/painting/interior-painting-how-tos/sw-article-dir-paint-trim',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Trim can be cleaned of dirt and grime with a damp sponge, and the recommended trim paint is a semi-gloss or high-gloss finish.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean Baseboards Without Damaging Paint',
+    description: 'How to clean baseboards: vacuum the dust, wash with mild soap and warm water, rinse and dry. Plus how sheen changes the method and which cleaners dull paint.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-baseboards',
+    indexable: true,
+    focusKeyword: 'how to clean baseboards',
+  },
+};
+
+export default article;

@@ -6,7 +6,7 @@ import { ArrowRight, Check, X } from 'lucide-react';
 import { readStore } from '@/lib/store';
 import { buildMetadata, fitDescription } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
-import { breadcrumbSchema, graph, webPageSchema } from '@/lib/schema';
+import { breadcrumbSchema, graph, itemListSchema, surfaceHowToSchema, webPageSchema } from '@/lib/schema';
 import { AffiliateDisclosureNote, EditorScore, AffiliateButton } from '@/components/ui/Badges';
 import {
   Breadcrumbs,
@@ -59,18 +59,28 @@ export default function SurfaceGuidePage({
     .map((id) => store.products.find((p) => p.id === id))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
+  const path = `/surfaces/${surface.slug}`;
+  const howTo = surfaceHowToSchema(surface, path);
   const schema = graph(
     breadcrumbSchema([
       { name: 'Home', path: '/' },
       { name: 'Surfaces', path: '/tools/surface-checker' },
-      { name: surface.name, path: `/surfaces/${surface.slug}` },
+      { name: surface.name, path },
     ]),
     webPageSchema({
-      path: `/surfaces/${surface.slug}`,
+      path,
       name: `${surface.name} Cleaning & Safety Guide`,
       description: surface.summary,
-      about: surface.name,
+      ...(howTo ? { aboutId: howTo['@id'] as string } : { about: surface.name }),
+      image: surface.image,
     }),
+    howTo,
+    recommendedProducts.length
+      ? itemListSchema(
+          `Products that are safe on ${surface.name.toLowerCase()}`,
+          recommendedProducts.map((p) => ({ name: p.name, path: `/products/${p.slug}` })),
+        )
+      : null,
   );
 
   const relatedGuides = store.articles.filter(

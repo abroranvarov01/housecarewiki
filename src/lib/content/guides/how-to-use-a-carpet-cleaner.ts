@@ -1,0 +1,157 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-use-a-carpet-cleaner',
+  slug: 'how-to-use-a-carpet-cleaner',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to use a carpet cleaner',
+  subtitle: 'Vacuum first, pretest, measure the formula your machine calls for, then pair every slow wet pass with dry suction-only passes. How to avoid over-wetting, soap residue and slow drying, and when wool needs a different plan.',
+  excerpt: 'Vacuum, pretest, use the machine\'s own formula at the stated dose, two wet passes, two dry passes, and let it dry fully.',
+  quickAnswer: 'Vacuum the carpet thoroughly, pretest the cleaning formula in a hidden spot, and fill the clean tank with the water and the amount of formula your machine\'s instructions specify. Starting in the far corner, pull the machine slowly backward while holding the spray trigger for two wet passes, then release the trigger and make two dry passes over the same strip to suck up the water. Overlap each strip by a few inches and keep going until the water being pulled up looks clean. Do not over-wet the carpet, and keep furniture off it until it is fully dry.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'machines',
+  surfaceSlugs: ['carpet'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-floor-carpet.webp',
+  heroImageAlt: 'White cordless stick vacuum on a beige patterned carpet in a sunlit living room, with a cream sofa, knit throw and a round wooden coffee table',
+  safetyWarnings: [
+    'Do not over-wet the carpet. Carpet maker Shaw warns that water left in carpet can cause problems, including breakdown of the carpet backing, so always follow wet passes with dry passes.',
+    'Use only the cleaning formula made for your machine, at the dose its instructions give. More is not better: extra soap leaves residue that makes carpet get dirty again faster.',
+    'Pretest any cleaner on a scrap of carpet or a hidden spot and let it dry before cleaning the whole room, as the Carpet and Rug Institute advises.',
+    'Wool, imported and heirloom rugs need care. Check the carpet maker\'s instructions before using a home machine, and use a professional cleaner if the instructions call for one.',
+    'Do not use a steam or hot-water cleaner on urine spots; the Carpet and Rug Institute warns heat can set the stain and the smell. Treat those first with a urine-specific method.',
+  ],
+  materialsNeeded: [
+    'Carpet cleaning machine (upright extractor or rental unit), ideally one certified under the CRI Seal of Approval program',
+    'Vacuum cleaner',
+    'The carpet cleaning formula made for your machine',
+    'Spot and pretreat spray for heavy stains and traffic lanes',
+    'Measuring cup',
+    'Hot tap water, unless your machine or carpet instructions say otherwise',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Clear the Room and Vacuum Thoroughly',
+      instruction: 'Move furniture out of the room, then vacuum the whole area thoroughly before you add any water. Rug Doctor says it cannot stress the importance of this step enough.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Pretest the Formula in a Hidden Spot',
+      instruction: 'Apply a little of the diluted cleaning formula to a scrap of carpet or an out-of-the-way area, such as inside a closet, and let it dry. If the color changes or the pile looks damaged, stop and call a professional. Check the carpet maker\'s care instructions too, especially for wool.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Pretreat Heavy Stains and Traffic Lanes',
+      instruction: 'Spray old or dark stains, pet spots and high-traffic lanes with a pretreat product made for carpet cleaners. Follow the product label for how long to leave it before cleaning; pretreating heavily soiled areas saves time and improves results.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Fill the Tank with the Right Formula and Dose',
+      instruction: 'Fill the clean-water tank to the fill line with the water your manual specifies and add the formula at the stated dose. Rug Doctor\'s deep carpet cleaner, for example, takes hot tap water and 4 ounces (half a cup) of its cleaning solution per tank. Do not add extra formula and do not substitute other cleaners; check your own model\'s manual for its dose.',
+      proTip: 'Use the formula your machine\'s maker names. Products not certified for carpet can leave residue that attracts soil.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Make Two Slow Wet Passes',
+      instruction: 'Start in a far corner of the room and work back toward the door so you are not walking on wet carpet. Hold the spray trigger and pull the machine slowly and steadily backward in a straight line, then repeat over the same strip for a second wet pass.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Follow with Two Dry Passes',
+      instruction: 'Release the trigger and pull the machine slowly over the same strip twice more without spraying. These suction-only passes remove the dirty water and are the main defense against over-wetting and slow drying. Watch the dirty tank: keep cleaning a strip until the water being pulled up looks clean.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Overlap Strips and Empty the Tank Often',
+      instruction: 'Move over and overlap the cleaned strip by a few inches, then repeat wet and dry passes across the room. Empty the dirty tank and refill the clean tank with water and formula whenever needed so suction stays strong.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Let the Carpet Dry Completely',
+      instruction: 'Keep people, pets and furniture off the carpet until it is completely dry. Drying time depends on the machine\'s extraction power, the carpet and the room; some rental locations offer floor dryers to speed it up. Empty the tanks and wipe down and clean the machine before storing or returning it.',
+      proTip: 'If the carpet still feels wet after you finish, make another round of dry passes before you leave it to dry.',
+    },
+  ],
+  ifMethodFails: [
+    'If the carpet is soaked or slow to dry, go back over it with more dry, suction-only passes. Machines without strong extraction may not remove enough water for the carpet to dry properly; Shaw recommends equipment certified under the CRI Seal of Approval program.',
+    'If the carpet gets dirty again quickly after cleaning, soap residue is the likely cause. Clean again using the formula at the stated dose, never more, and make extra dry passes.',
+    'If stains are still visible or the carpet is wool or a valuable rug, book a professional hot water extraction cleaning. Carpet makers recommend professional cleaning every 12 to 18 months, and Shaw notes professional equipment has more extraction power than rental units.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How many passes should you do with a carpet cleaner?',
+      answer: 'Rug Doctor recommends two wet passes with the spray trigger held, followed by two dry passes over the same area with the trigger released. Repeat on a strip until the water being pulled up looks clean, then overlap the next strip by a few inches.',
+    },
+    {
+      question: 'Do you need to vacuum before using a carpet cleaner?',
+      answer: 'Yes. Rug Doctor says to vacuum the area thoroughly before cleaning and stresses how important that step is. Pick up loose dirt and hair first, then let the carpet cleaner work on the soil below the surface.',
+    },
+    {
+      question: 'Can you use too much carpet shampoo?',
+      answer: 'Yes. More formula does not clean better. Leftover soap residue attracts soil and can make the whole carpet re-soil quickly, so measure the dose your machine\'s instructions give.',
+    },
+    {
+      question: 'How do I keep from over-wetting my carpet?',
+      answer: 'Move the machine slowly, follow every two wet passes with two dry passes without spraying, and do not keep spraying on the same spot. Strong extraction matters too: Shaw notes machines without the CRI Seal of Approval may not pull out enough water for proper drying.',
+    },
+    {
+      question: 'Can I use a carpet cleaner on a wool rug?',
+      answer: 'Check the rug or carpet maker\'s care instructions first. The Carpet and Rug Institute advises cleaning imported rugs according to the manufacturer\'s specifications or with a professional service, and hiring professionals for heirloom rugs.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-carpetcleaner-1',
+      title: 'How to Avoid Over-Wetting your Carpet When Deep Cleaning with a Rug Doctor',
+      publisher: 'Rug Doctor',
+      url: 'https://www.rugdoctor.com/how-to-avoid-over-wetting-your-carpet-when-deep-cleaning-with-a-rug-doctor/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Move furniture and vacuum first, pretreat heavily soiled areas, make two wet passes holding the solution button followed by two passes without it, overlap cleaned areas by a few inches, return furniture only when the carpet is fully dry, and floor dryers are available at some rental locations.',
+    },
+    {
+      id: 'src-carpetcleaner-2',
+      title: 'Deep Carpet Cleaner Support',
+      publisher: 'Rug Doctor',
+      url: 'https://www.rugdoctor.com/purchase-support/deep-carpet-cleaner/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Vacuum thoroughly before cleaning, spray old or dark stains with pretreat, fill the clean tank with hot tap water and add 4 oz (1/2 cup) of cleaning solution, pull the machine slowly backward while cleaning, then release the button and pull slowly over the same path to dry; test in a hidden area first on upholstery.',
+    },
+    {
+      id: 'src-carpetcleaner-3',
+      title: 'Cleaning and Maintenance',
+      publisher: 'Carpet and Rug Institute',
+      url: 'https://carpet-rug.org/carpet-for-homes/cleaning-and-maintenance/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Pretest any cleaner on a scrap or out-of-the-way area, more product is not better, SOA-certified cleaners are recommended and sometimes required by manufacturers, have carpet professionally cleaned every 12 to 18 months, clean imported rugs per manufacturer specifications or professionally, and do not steam clean urine spots.',
+    },
+    {
+      id: 'src-carpetcleaner-4',
+      title: 'Carpet Cleaning',
+      publisher: 'Shaw Floors',
+      url: 'https://costco.shawfloors.com/flooring/how-to/carpet-how-to-s/carpet-care-maintenance/carpet-cleaning',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Hot water extraction gives the best cleaning; over-wet carpet that is not extracted causes problems including backing breakdown; machines without the CRI Seal of Approval may not extract enough water for proper drying; soap residue causes rapid re-soiling; professional equipment has more extraction power than rental units.',
+    },
+  ],
+  seo: {
+    title: 'How to Use a Carpet Cleaner (Without Over-Wetting)',
+    description: 'How to use a carpet cleaner: vacuum, pretest, measure the right formula, make two slow wet passes and two dry passes, and let carpet dry fully. Wool tips too.',
+    canonical: 'https://housecarewiki.com/guides/how-to-use-a-carpet-cleaner',
+    indexable: true,
+    focusKeyword: 'how to use a carpet cleaner',
+  },
+};
+
+export default article;

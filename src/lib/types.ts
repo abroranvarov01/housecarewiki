@@ -118,6 +118,9 @@ export interface Article {
   subCategory: string;
   surfaceSlugs: string[];
   authorSlug: string;
+  // Expert sign-off (E-E-A-T): shown under the H1 and emitted as WebPage.reviewedBy / lastReviewed.
+  // Set only when that person actually read and approved the current version.
+  reviewedBy?: { authorSlug: string; reviewedAt: string };
   updatedAt: string;
   publishedAt: string;
   readingTime: string;

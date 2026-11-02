@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-grass-stains-out-of-clothes',
+  slug: 'how-to-get-grass-stains-out-of-clothes',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get grass stains out of clothes',
+  subtitle: 'Pretreat with an enzyme stain remover, wash in the warmest water the care label allows, and check before the dryer. When diluted rubbing alcohol helps, and the fabrics that need gentler handling.',
+  excerpt: 'Enzyme pretreat, warmest safe wash, diluted alcohol for stubborn green, and never dry until it is gone.',
+  quickAnswer: 'Cover the grass stain on both sides with a liquid laundry detergent or stain remover that contains enzymes, work it in gently and let it sit about 5 minutes, or soak the garment in an enzyme or oxygen stain remover solution for a tougher stain. Wash it without rinsing off the pretreatment, in the warmest water the care label allows. If green still shows, sponge it with rubbing alcohol diluted with 2 parts water after testing a hidden spot, then wash again. Do not put the garment in the dryer until the stain is completely gone, because dryer heat sets it.',
+  roomSlug: 'laundry-care',
+  subCategory: 'stain-removal',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  safetyWarnings: [
+    'Do not put the garment in the dryer until the grass stain is completely gone. Dryer heat sets the stain and makes it much harder or impossible to remove.',
+    'Rubbing alcohol is flammable and can affect dyes. Test it on a hidden seam first, use it in a well-ventilated room away from flames or heat, and keep it out of reach of children.',
+    'Oxygen stain remover powders and sprays are not for wool, wool blends, silk, silk blends, leather or dry-clean-only fabrics; check the product label before you soak.',
+    'Use bleach only if the care label allows it, choose a type that is safe for that fabric, and never mix bleach with ammonia, vinegar, alcohol or other cleaners.',
+  ],
+  materialsNeeded: [
+    'Liquid laundry detergent or stain remover that contains enzymes',
+    'Oxygen stain remover powder (for soaking tough or set-in stains on washable fabrics)',
+    'Soft-bristled toothbrush',
+    'Isopropyl rubbing alcohol and water (for stubborn green on colorfast fabric)',
+    'Clean white cloths or cotton pads',
+    'Bucket or sink for soaking',
+    'Bleach that is safe for the fabric (only if the care label allows it)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Read the Care Label and Act Fast',
+      instruction: 'Check the garment\'s care label for the warmest water and any bleach it allows, and set dry-clean-only items aside for a professional cleaner. Treat the stain as soon as you can. Grass chlorophyll behaves like a dye, so a stain that has had time to set is much harder to lift.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Pretreat with an Enzyme Detergent or Stain Remover',
+      instruction: 'Pour a liquid detergent or stain remover that contains enzymes straight onto the stain until it is completely covered, treating both sides of the fabric. Work it in gently with a soft-bristled toothbrush or by rubbing the fabric against itself, then let it sit for about 5 minutes.',
+      proTip: 'Do not rinse the pretreatment off before washing; leaving it on the stain gives the wash extra cleaning power.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Soak Tough or Dried Stains',
+      instruction: 'For a heavy or set-in stain on a washable fabric that is not wool or silk, dissolve an oxygen stain remover powder in water at the dose the label gives for tough stains, test it on a hidden spot, and soak the garment. OxiClean, for example, gives a soak of 1 to 6 hours and says 6 hours gives the best results. An enzyme presoak product is another option; follow its label.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wash in the Warmest Water the Fabric Allows',
+      instruction: 'Load the garment with the pretreatment still on it and run the usual cycle with detergent, using the hottest water the care label permits. If the care label allows bleach, you can add a bleach that is safe for that fabric to this wash.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Check the Stain Before Drying',
+      instruction: 'Take the garment out as soon as the cycle ends and look at the stained area in good light while it is still wet. If any green or brown shadow remains, do not dry it. Repeat the pretreatment and wash, or move on to the alcohol step.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Sponge Stubborn Green with Diluted Rubbing Alcohol',
+      instruction: 'On a colorfast fabric, mix 1 part rubbing alcohol with 2 parts water and test it on a hidden seam. If the color holds, sponge the stain with a white cloth dampened in the mixture, blotting rather than scrubbing, in a ventilated room. Rinse, then pretreat and wash again. On acetate, one extension guide uses 1 part alcohol to 1 part water; test first either way.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Air-Dry Only When the Stain Is Gone',
+      instruction: 'Once the stain has disappeared completely, dry the garment as its care label directs. If you are unsure whether a faint mark remains, air-dry it first and check again; heat is what makes a leftover grass stain permanent.',
+    },
+  ],
+  ifMethodFails: [
+    'Repeat the enzyme pretreatment and wash cycle two or three times before drying; old grass stains often fade in stages.',
+    'For white, bleach-safe cotton, a few drops of hydrogen peroxide on the remaining stain followed by a wash is an option the University of Georgia extension lists; test a hidden area first because peroxide can lighten colors.',
+    'For dry-clean-only, silk, wool or delicate fabrics, or if the stain has already been through the dryer, take the garment to a professional dry cleaner and point out the stain.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Why are grass stains so hard to get out?',
+      answer: 'Grass contains chlorophyll, which acts as a dye on fabric. Like other dye stains, it bonds more firmly the longer it sits and the more heat it is exposed to, which is why fast pretreatment and keeping the garment out of the dryer matter so much.',
+    },
+    {
+      question: 'Does rubbing alcohol remove grass stains?',
+      answer: 'It can help with stubborn green that is left after an enzyme pretreatment and wash. Mississippi State University Extension says to dilute the alcohol with 2 parts water and sponge it on. Test it on a hidden seam first, because alcohol can affect some dyes, and work in a ventilated room.',
+    },
+    {
+      question: 'Should I use hot or cold water for grass stains?',
+      answer: 'Tide and Mississippi State University Extension both say to wash in the hottest water that is safe for the fabric, after pretreating. Always check the care label first; the dryer, not the wash water, is the step that most often sets a grass stain.',
+    },
+    {
+      question: 'Can you get old grass stains out after drying?',
+      answer: 'Sometimes. Soak the garment in an oxygen stain remover or enzyme presoak solution for several hours, then pretreat and wash again, and repeat before drying. Tide notes that set-in grass stains are harder to remove than fresh ones, so expect to repeat the process.',
+    },
+    {
+      question: 'How do you get grass stains out of white baseball pants?',
+      answer: 'Pretreat both sides with an enzyme stain remover, soak in an oxygen stain remover solution if the label allows it for that fabric, and wash in the warmest water the care label permits. Check the stain before drying and repeat the process until it is gone.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-grass-1',
+      title: 'How to Remove Grass Stains',
+      publisher: 'Tide',
+      url: 'https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains/grass-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Grass chlorophyll acts as a dye; cover the stain completely with liquid detergent, work it in with a soft-bristled toothbrush, wait 5 minutes, wash without rinsing off the pretreatment at the hottest temperature the care label allows, and repeat before drying because drying sets the stain.',
+    },
+    {
+      id: 'src-grass-2',
+      title: 'How to Remove Pesky Stains',
+      publisher: 'Mississippi State University Extension',
+      url: 'https://extension.msstate.edu/blogs/extension-for-real-life/how-remove-pesky-stains',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For grass, pretreat with a stain stick or soak with an enzyme product; if the stain remains, sponge with alcohol diluted with 2 parts water; if still visible, wash in the hottest water safe for the fabric with fabric-safe bleach, and do not put the garment in the dryer until the stain is gone.',
+    },
+    {
+      id: 'src-grass-3',
+      title: 'Remove Stains From Grass',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://site.extension.uga.edu/textiles/care/stain-removal/remove-stains-from-grass/',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Read the care label and pretest products for colorfastness; pretreat both sides with a prewash stain remover for 2 minutes and launder with fabric-safe bleach; if the stain remains, apply a few drops of hydrogen peroxide or sponge with rubbing alcohol (1 part alcohol to 1 part water on acetate); ensure ventilation.',
+    },
+    {
+      id: 'src-grass-4',
+      title: 'How to Remove Grass Stains',
+      publisher: 'OxiClean',
+      url: 'https://www.oxiclean.com/stain-solutions/how-to-remove-grass-stains',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Dissolve Versatile Stain Remover powder (line 2 to 4 per gallon), test in an inconspicuous area, soak 1 to 6 hours (6 hours for best results), wash in the warmest water the fabric accepts, and do not use on wool, silk, their blends, leather or dry-clean-only fabrics.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Grass Stains Out of Clothes',
+    description: 'How to get grass stains out of clothes: enzyme pretreat, warmest safe wash, diluted rubbing alcohol for stubborn green, and why you never dry it too soon.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-grass-stains-out-of-clothes',
+    indexable: true,
+    focusKeyword: 'how to get grass stains out of clothes',
+  },
+};
+
+export default article;

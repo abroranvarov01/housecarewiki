@@ -1,0 +1,155 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-water-stains-from-hardwood-floors',
+  slug: 'how-to-remove-water-stains-from-hardwood-floors',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove water stains from hardwood floors',
+  subtitle: 'A milky white mark sits in the finish and can often be lifted at home; a dark mark means water reached the wood itself. How to tell them apart, what to try yourself, and when it is time to call a wood flooring professional.',
+  excerpt: 'White marks are in the finish and often come out with a hardwood cleaner and patience; dark marks are in the wood and usually need a pro.',
+  quickAnswer: 'First look at the color. A milky white mark is moisture trapped in the finish, so dry the spot, rub it with a hardwood floor cleaner on a soft cloth, and on a stubborn spot follow Bruce\'s advice to clean it with mineral spirits and then the cleaner again. A dark gray, brown or black mark means water got through the finish into the wood, which usually takes stripping, bleaching or sanding and refinishing, a job for a wood flooring professional. Never use steam, a wet mop, vinegar or ammonia to try to fix either one.',
+  roomSlug: 'floor-carpet-care',
+  subCategory: 'hardwood-laminate',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-floor-carpet.webp',
+  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug over a honey-toned wood floor, next to a linen sofa and a round wooden coffee table in a sunlit living room',
+  safetyWarnings: [
+    'Do not use a steam mop, a wet mop or standing water on the spot. The National Wood Flooring Association says wet and steam mops damage the finish and the wood over time, and Bruce warns that water may dull the finish and permanently damage the floor.',
+    'Skip vinegar and other acids, ammonia-based cleaners, bleach, detergents, oil soaps, polishes and abrasive cleaning soaps; Bruce lists all of them as products not to use on its hardwood floors.',
+    'Mineral spirits are a solvent: open windows and ventilate the room, keep flames and sparks away, use only a dampened cloth, and follow the label. Test on a hidden spot first.',
+    'Heat can help a white mark, but too much makes a finish blister. Use a hair dryer on a low setting, keep it moving, and stop if the finish softens or bubbles.',
+    'Leave oxalic acid wood bleach to a professional. Popular Woodworking warns it is toxic and can cause severe skin and respiratory problems, and it only works after the finish is stripped off.',
+  ],
+  materialsNeeded: [
+    'Clean, dry, soft cloths or towels',
+    'Hardwood floor cleaner made for your floor\'s finish (the one your flooring manufacturer recommends)',
+    'Mineral spirits, for stubborn spots on surface-finished floors only',
+    'Hair dryer with a low heat setting',
+    'For wax-finished floors only: the paste wax made for your floor and a fine scrub pad',
+    'Gloves and good ventilation when using mineral spirits',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Dry the Spot and Remove What Caused It',
+      instruction: 'Wipe up any remaining water at once with a dry or slightly damp cloth, as the National Wood Flooring Association advises for all spills. Move away the plant pot, pet bowl or mat that caused the ring; Bruce warns that rubber, foam-back and plastic mats can trap moisture and discolor the floor. Let the area air-dry before judging the mark.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Tell a White Mark from a Dark One',
+      instruction: 'Look at the color in good light. A milky white or cloudy mark is moisture that got into the finish and left tiny voids in it; the wood underneath is usually fine. A gray, brown or black mark means water, often with metal residue from a pot or can, worked through cracks in the finish and into the wood itself. White marks are often a do-it-yourself job; dark marks usually are not.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Identify Your Floor\'s Finish',
+      instruction: 'Check your flooring warranty or care guide. Many floors have a surface finish, but some older or specialty floors have a wax finish, and the two need different products. Bruce, for example, says not to use its hardwood and laminate cleaner on its wax-finish floors and never to clean those floors with water.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Rub a White Mark with Hardwood Floor Cleaner',
+      instruction: 'On a surface-finished floor, apply a hardwood floor cleaner made for your finish to a clean soft cloth, not to the floor, and rub the white area. Bruce lists this as the first step for spots caused by food, water or animals. Dry any cleaner that does not evaporate right away with a clean towel.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Try Mineral Spirits on a Stubborn Spot',
+      instruction: 'If the mark is still there, Bruce says more stubborn spots may need cleaning with mineral spirits, followed by its hardwood floor cleaner. Ventilate the room, test on a hidden spot first, dampen a soft cloth lightly with mineral spirits, rub the spot gently, then clean the area with the hardwood floor cleaner again.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Use Gentle Heat on a Lingering White Haze',
+      instruction: 'A white mark in a film finish can sometimes clear when the finish is warmed and the trapped moisture escapes. Hold a hair dryer on a low setting over the spot and keep it moving. Check often, and stop at once if the finish feels soft or starts to bubble, because an overheated finish blisters.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Treat a Wax-Finished Floor with Wax, Not Water',
+      instruction: 'On a wax-finished floor, Bruce\'s method for food and water spots is to rub lightly with a scrub pad dampened with the paste wax made for the floor, wipe dry, rub on a little wax, and buff with a clean cloth. Use the wax and pad your flooring manufacturer specifies and never a water-based cleaner.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Call a Wood Flooring Professional for Dark Stains',
+      instruction: 'A dark mark lives in the wood, so cleaners on top of the finish cannot reach it. Removing it usually means stripping or sanding off the finish, bleaching the wood and refinishing to blend the repair. The NWFA recommends a complete sand and refinish when there is damage to the wood and suggests hiring a certified wood flooring professional, and Bruce notes that badly damaged boards can be replaced by a professional installer.',
+    },
+  ],
+  ifMethodFails: [
+    'If a white haze remains after cleaning and gentle heat, stop rubbing; repeated scrubbing can wear through the finish. A wood flooring professional can judge whether a maintenance coat, which the NWFA describes as lightly sanding the existing finish and applying a new coat, will blend it in.',
+    'If the mark is dark, spreading or did not lighten at all, it is in the wood. Ask a certified flooring professional about sanding and refinishing that area or replacing the affected boards.',
+    'If boards near the stain feel soft, smell musty or have raised edges, the floor has taken on moisture; the NWFA notes that wood that gains moisture can cup. Find and fix the water source and have a professional check the floor before refinishing.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can white water stains be removed from hardwood floors?',
+      answer: 'Often, yes. A milky white mark is moisture trapped in the finish rather than damage to the wood. Rubbing it with a hardwood floor cleaner on a soft cloth, then mineral spirits on a stubborn spot, and gentle low heat from a hair dryer can clear many of them. If it will not budge, a professional recoat may be needed.',
+    },
+    {
+      question: 'Can you get dark water stains out of hardwood?',
+      answer: 'Rarely with household methods. A dark mark means water, often with metal residue, got into the wood itself. The usual fix is stripping the finish and bleaching the wood with oxalic acid, or sanding and refinishing, which is best left to a wood flooring professional. Badly stained boards can also be replaced.',
+    },
+    {
+      question: 'Does mayonnaise or toothpaste remove water rings from wood?',
+      answer: 'These are furniture remedies for white marks. Popular Woodworking notes that oily substances such as mayonnaise usually restore only some of the finish\'s clarity, and toothpaste works as a mild abrasive that can scratch or dull a floor\'s sheen. On a floor, start with a hardwood floor cleaner and test any remedy in a hidden spot first.',
+    },
+    {
+      question: 'Can I use a steam mop to remove water stains on wood floors?',
+      answer: 'No. Adding moisture and heat makes water damage worse. The National Wood Flooring Association says steam mops and wet mops damage the finish and the wood over time, and Bruce says water may dull the finish and permanently damage the floor.',
+    },
+    {
+      question: 'Will refinishing get rid of water stains on hardwood floors?',
+      answer: 'Sanding to bare wood and refinishing removes marks in the finish and many shallow stains in the wood, and the NWFA recommends a complete sand and refinish when the wood itself is damaged. Deep black stains may still show after sanding, in which case a professional may bleach the wood or replace the boards.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-waterstain-1',
+      title: 'Easy Care Steps for Armstrong, Bruce and Robbins Hardwood Floors',
+      publisher: 'Bruce',
+      url: 'https://www.bruce.com/cdn/maintenance/186465.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'For spots caused by food, water or animals, apply the hardwood floor cleaner to a soft cloth and rub; more stubborn spots may need mineral spirits followed by the cleaner. Do not let water stand, avoid ammonia, bleach, detergents, oil soaps, polishes and vinegar, and avoid rubber, foam-back or plastic mats that may trap moisture and discolor the floor. Wax-finish floors: never clean with water, rub food or water spots with a scrub pad dampened with paste wax, then rewax and buff. Heavily damaged boards can be replaced by a professional installer.',
+    },
+    {
+      id: 'src-waterstain-2',
+      title: 'Spring Cleaning: Top Tips for Caring for Wood Floors',
+      publisher: 'National Wood Flooring Association',
+      url: 'https://woodfloors.org/spring-cleaning-top-tips-for-caring-for-wood-floors/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean spills immediately with a dry or slightly damp cloth, and avoid wet mops or steam mops, which damage the finish and the wood over time.',
+    },
+    {
+      id: 'src-waterstain-3',
+      title: 'Refinishing Your Floors',
+      publisher: 'National Wood Flooring Association',
+      url: 'https://woodfloors.org/refinishing-your-floors/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'A maintenance coat (cleaning, lightly sanding and recoating the existing finish) suits a dull floor; a complete sand and refinish is recommended when there is damage to the wood floor, and a certified wood flooring professional should do the work.',
+    },
+    {
+      id: 'src-waterstain-4',
+      title: 'Remove Watermarks',
+      publisher: 'Popular Woodworking',
+      url: 'https://www.popularwoodworking.com/article/remove-watermarks/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Milky-white marks are moisture in the finish that creates voids and can be treated with heat from a blow dryer (too hot and the finish blisters), oily substances that usually restore only some transparency, or mild abrasives; dark marks are water and metal residue that got through cracks in the finish into the wood and usually require stripping and bleaching with oxalic acid, which is toxic.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Water Stains from Hardwood Floors',
+    description: 'Remove water stains from hardwood floors: white marks sit in the finish and often lift at home, dark marks are in the wood. What to try and when to call a pro.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-water-stains-from-hardwood-floors',
+    indexable: true,
+    focusKeyword: 'how to remove water stains from hardwood floors',
+  },
+};
+
+export default article;

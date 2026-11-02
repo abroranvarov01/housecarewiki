@@ -1,0 +1,157 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-marble-countertops',
+  slug: 'how-to-clean-marble-countertops',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean marble countertops',
+  subtitle: 'Marble is a calcareous stone, so acids dull it on contact. A pH-neutral daily routine, how to blot spills, how to tell an etch from a stain, and why sealing helps with stains but not with etching.',
+  excerpt: 'Neutral stone cleaner, rinse, dry. Blot spills fast, keep acids off, and know an etch from a stain.',
+  quickAnswer: 'Clean marble with a pH-neutral cleaner labeled safe for stone, a stone soap, or a little mild dish soap in warm water, then rinse and dry with a soft cloth. Blot spills with a paper towel right away instead of wiping, especially wine, juice, coffee and oil. Never use vinegar, lemon or other acids, or scouring powders and creams, because acids etch marble into dull spots. Sealing makes marble more stain resistant, but it does not stop etching, so coasters, cutting boards and quick cleanup do most of the work.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'countertops',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-kitchen.webp',
+  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, a bowl of lemons, a wooden cutting board and a basil plant in a sunlit kitchen',
+  safetyWarnings: [
+    'Do not use vinegar, lemon juice or any acidic cleaner on marble. The Natural Stone Institute says products containing lemon, vinegar or other acids may dull or etch calcareous stones like marble.',
+    'Skip scouring powders and abrasive creams. They often contain abrasives that can scratch the stone.',
+    'Keep rust removers and toilet bowl cleaners off the counter. Some contain hydrofluoric acid, which the Natural Stone Institute says attacks all types of stone.',
+    'Never mix ammonia and bleach; the combination creates a toxic gas. If you use a chemical stain treatment such as hydrogen peroxide or acetone, ventilate the room and follow the product label.',
+  ],
+  materialsNeeded: [
+    'pH-neutral cleaner labeled safe for natural stone, a stone soap, or mild liquid dish soap',
+    'Warm water',
+    'Soft cotton or microfiber cloths (one to wash, one to rinse, one to dry)',
+    'Paper towels for blotting spills',
+    'Coasters, trivets and large cutting boards',
+    'For light etches on polished marble: marble polishing powder or an etch remover made for marble',
+    'Penetrating stone sealer, food-safe for kitchen counters (only if the water test shows you need it)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Know What Marble Can and Cannot Handle',
+      instruction: 'Marble is made mostly of calcium carbonate, so acids react with it. Tomatoes, citrus, juice, alcohol and vinegar can leave an etch, a dull spot or burn-like mark, even if you wipe them up quickly. Oils and red wine are the main stain risks if they sit. Expect some etching over time; your job is to keep it to a minimum and avoid stains.',
+      proTip: 'Polished marble shows etches more readily than honed marble, whose matte finish hides them best.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Blot Spills Immediately',
+      instruction: 'Blot the spill with a paper towel right away. Do not wipe it, which spreads the liquid over a larger area. Then flush the spot with water and a little mild soap, rinse several times, and dry it thoroughly with a soft cloth.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wash with a pH-Neutral Stone Cleaner',
+      instruction: 'For daily cleaning, use a neutral cleaner labeled for stone, a stone soap, or a few drops of mild dish soap in warm water on a soft cloth. Read the label and make sure the product is made for stone. Use only as much cleaner as the label calls for, because too much leaves a film and streaks.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Rinse and Dry with a Soft Cloth',
+      instruction: 'Wipe the counter again with a cloth dampened in clean water to remove any cleaner, changing the rinse water often. Then dry the whole surface with a soft, dry cloth so no film or water is left behind.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Protect the Surface from Acids and Heat',
+      instruction: 'Put coasters under all glasses, especially those holding alcohol or citrus juice. Keep large cutting boards by the sink and the stove, never cut directly on the marble, and do not squeeze lemons over the stone. Use trivets or mats under hot pans.',
+      proTip: 'One stone industry expert suggests boards of about 20 by 20 inches, one near the sink and one near the stove, where most food prep happens.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Tell an Etch from a Stain',
+      instruction: 'An etch is a dull, lighter or rough-looking patch you see best when light hits the stone at an angle; it is damage to the polish, not something sitting in the stone. A stain is a discoloration inside the stone, and oil-based stains darken it. For an oil stain, the Natural Stone Institute suggests a poultice of baking soda and water, which draws the stain out as it dries.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Buff Out Light Etches on Polished Marble',
+      instruction: 'For a light etch on polished marble, wet the area with clean water, sprinkle on marble polishing powder, and rub it in with a damp cloth until the mark fades and the shine returns. An etch remover product made for marble works the same way; follow its label. Deep or widespread etching needs a professional stone restorer to repolish the surface.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Check Whether It Needs Sealing',
+      instruction: 'Put a few drops of water on the marble. If the spot darkens, the stone is absorbing liquid and should be sealed with a penetrating sealer safe for food-prep surfaces, applied per the label. Sealing makes marble more stain resistant, not stain proof, and it does not protect against etching.',
+    },
+  ],
+  ifMethodFails: [
+    'If a dull mark will not buff out with polishing powder or an etch remover, the etch is too deep for a home fix. A professional stone restorer can hone and repolish the area; stone pros say polished marble may need refinishing every two to three years and honed marble every three to five.',
+    'If a dark stain remains after a poultice, repeat it once more, then call your stone dealer or a stone restorer rather than reaching for acidic or abrasive cleaners.',
+    'If the counter looks streaky or cloudy after cleaning, you may be using too much cleaner. Rinse with clean water, dry with a soft cloth, and dilute the cleaner as the label directs next time.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can I use vinegar to clean marble countertops?',
+      answer: 'No. Vinegar is an acid, and the Natural Stone Institute warns that products containing lemon, vinegar or other acids may dull or etch calcareous stones like marble. Use a pH-neutral stone cleaner or mild dish soap and warm water instead.',
+    },
+    {
+      question: 'What is the difference between etching and staining on marble?',
+      answer: 'Etching is a chemical reaction: acids such as lemon juice dissolve a tiny bit of the surface and leave a dull spot or burn-like mark. Staining is a discoloration absorbed into the stone, such as oil or red wine left sitting. Stains can often be drawn out with a poultice; etches have to be polished out.',
+    },
+    {
+      question: 'Does sealing marble prevent etching?',
+      answer: 'No. A penetrating sealer only makes marble more resistant to stains. Stone professionals note that a sealer does nothing to stop etching, no matter how much you apply, so coasters, cutting boards and blotting spills fast are still essential.',
+    },
+    {
+      question: 'Is dish soap safe for marble countertops?',
+      answer: 'Yes, in small amounts. The Natural Stone Institute lists a mild liquid dishwashing detergent with warm water as an option alongside neutral stone cleaners and stone soaps. Rinse well and dry with a soft cloth so no soap film is left behind.',
+    },
+    {
+      question: 'How often should marble countertops be sealed?',
+      answer: 'It depends on the stone and the sealer, and experts disagree, with recommendations ranging from about once a year to every five to ten years. Use the water drop test: if water darkens the stone, it is time to reseal, following the sealer label.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-marble-1',
+      title: 'Care and Cleaning for Natural Stone Surfaces',
+      publisher: 'Natural Stone Institute',
+      url: 'https://www.naturalstoneinstitute.org/consumers/care/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean stone with a neutral cleaner, stone soap or mild dishwashing detergent and warm water, rinse and dry with a soft cloth; blot spills immediately without wiping; use coasters under glasses with alcohol or citrus; products containing lemon, vinegar or other acids may dull or etch calcareous stones; sealing makes stone more stain resistant, not stain proof; never mix ammonia and bleach.',
+    },
+    {
+      id: 'src-marble-2',
+      title: 'Stain Removal for Natural Stone',
+      publisher: 'Natural Stone Institute',
+      url: 'https://www.naturalstoneinstitute.org/consumers/stains/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Etch marks are caused by acids left on the stone; light etches can be buffed with marble polishing powder rubbed in with a damp cloth, deeper ones need a stone dealer or professional restorer; oil-based stains darken stone and can be poulticed with baking soda and water.',
+    },
+    {
+      id: 'src-marble-3',
+      title: 'How to Care for Your Marble Countertops',
+      publisher: 'Use Natural Stone (Natural Stone Institute)',
+      url: 'https://usenaturalstone.org/how-to-care-for-your-marble-countertops/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Clean marble daily with a mild soap or a cleaner labeled for stone; acids cause etching that looks like a dull spot or burn mark; a sealer does nothing to protect against etching; use the water drop test for sealing; use large cutting boards, trivets and coasters; honed marble is more practical than polished, and refinishing intervals run about two to three years for polished and three to five for honed.',
+    },
+    {
+      id: 'src-marble-4',
+      title: 'A Year with Marble Countertops in the Kitchen',
+      publisher: 'Use Natural Stone (Natural Stone Institute)',
+      url: 'https://usenaturalstone.org/a-year-with-marble-countertops-in-the-kitchen/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Etching occurs when acids like lemon juice dull the stone and shows when light hits it at an angle; a honed finish hides etches best; the owner cleans with an acid-free cleaner or dish soap and water, avoids squeezing lemons on the stone or cutting directly on it, and removed etches by rubbing in an etch remover product.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean Marble Countertops Without Etching',
+    description: 'How to clean marble countertops: pH-neutral cleaner, rinse and dry, blot spills fast, and keep acids off. Etching vs staining, and why sealing is not enough.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-marble-countertops',
+    indexable: true,
+    focusKeyword: 'how to clean marble countertops',
+  },
+};
+
+export default article;

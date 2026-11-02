@@ -1,0 +1,145 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-toilet-tank',
+  slug: 'how-to-clean-a-toilet-tank',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a toilet tank',
+  subtitle: 'Shut off the water, flush to drain the tank, scrub the walls with a mild cleaner, rinse and refill, then check the flapper. Why toilet and valve makers warn against bleach and in-tank tablets.',
+  excerpt: 'Turn off the supply, flush to empty, scrub gently with mild soap, rinse, refill and inspect the flapper.',
+  quickAnswer: 'Turn off the water supply valve behind the toilet, then flush and hold the handle down so the tank drains. Scrub the walls and bottom with a soft brush or non-abrasive sponge and a little mild dish soap, keeping cleaner off the rubber flapper and valves as much as you can. Rinse by pouring clean water down the sides with the handle held down, turn the water back on to refill, and wipe slime off the flapper and its seat. Skip bleach, descaling chemicals and drop-in tablets: TOTO, Kohler and Fluidmaster all warn they damage the seals, flappers and valves inside the tank.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'toilets',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/bathroom-hero.webp',
+  heroImageAlt: 'Bathroom vanity with a white undermount sink, brushed nickel faucet, clear spray bottle, blue towel, potted plant, toothbrush holder and a wood-framed mirror',
+  safetyWarnings: [
+    'Do not put bleach, descaling agents or harsh chemical cleaners inside the tank. TOTO says these damage the internal rubber seals, flappers, valves and mechanical components.',
+    'Do not use drop-in tank tablets containing bleach or chlorine. Fluidmaster warns they can damage tank components, cause flooding and property damage, warp flappers and void its warranty, and Kohler does not recommend any cleaning product left submerged in the tank.',
+    'Never mix cleaners in the tank. If a rust remover or other acidic product has been used, Clorox warns that combining it with bleach can release hazardous gas; rinse thoroughly between any treatments.',
+    'Wear gloves and ventilate the bathroom by opening a window or running a fan while you clean.',
+    'Turn the water supply back on when you finish, and watch the first refill to make sure the flapper seals and nothing leaks.',
+  ],
+  materialsNeeded: [
+    'Rubber gloves',
+    'Soft scrub brush or non-abrasive sponge',
+    'Mild liquid dish soap',
+    'Bucket or jug of clean water for rinsing',
+    'Clean cloth for wiping the flapper and flush valve seat',
+    'Optional: replacement flapper that fits your toilet model',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Ventilate and Turn Off the Water Supply',
+      instruction: 'Open a window or run the fan and put on gloves. Find the water supply valve on the wall or floor behind the toilet and turn it off.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Flush to Drain the Tank',
+      instruction: 'Lift the tank lid and set it somewhere safe and flat. Flush and hold the handle down so as much water as possible drains from the tank, then check that the flapper has dropped back closed.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Scrub the Walls and Bottom Gently',
+      instruction: 'Add a few drops of mild dish soap to a damp non-abrasive sponge or soft brush and scrub the sides and bottom of the tank to lift slime, sediment and stains. Work around the fill valve, overflow tube and flapper rather than soaking them, and do not use bleach, descalers or harsh chemicals.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Rinse with Clean Water',
+      instruction: 'Hold the flush handle down and pour clean water down the inside walls so the soapy water rinses out through the flush valve. Repeat until no suds remain.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Wipe and Inspect the Flapper and Seat',
+      instruction: 'Wipe slime and debris from the underside of the flapper and from the flush valve seat with a clean cloth. Run a finger around the seat rim to feel for nicks or rough spots. Fluidmaster says to simply replace a flapper that is more than five years old, and TOTO advises replacing a degraded rubber flapper before it starts to leak.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Refill and Check for Leaks',
+      instruction: 'Turn the water supply back on and let the tank refill. Replace the lid, flush once to clear the bowl, and listen for running water. For a leak check, Fluidmaster suggests turning the water off with a full tank, marking the water level without flushing, and checking it every 15 minutes; a falling level points to a leak.',
+    },
+  ],
+  ifMethodFails: [
+    'If the toilet keeps running after cleaning, wipe the flapper and seat again; Fluidmaster says to replace the flush valve if the leak continues after the flapper and drain seat are cleaned, or if the seat rim has nicks.',
+    'If the flapper looks warped, swollen or blistered, the rubber has degraded, often from chlorine. Replace it with one that fits your model rather than trying to clean it.',
+    'If the tank has heavy rust stains or mineral crust you cannot shift with mild soap, check your toilet manufacturer\'s care guide or call a plumber before reaching for an acidic product, since toilet makers warn harsh chemicals damage tank parts.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you put bleach in a toilet tank to clean it?',
+      answer: 'Sources disagree. Clorox says its bleach, used as directed, can clean an empty tank, but TOTO strongly advises against bleach, descaling agents or harsh chemicals inside the tank because they damage seals, flappers and valves. Follow the toilet manufacturer and use mild soap instead.',
+    },
+    {
+      question: 'Are blue toilet tank tablets bad for your toilet?',
+      answer: 'Fluidmaster warns against in-tank drop-in cleaners containing bleach or chlorine because they can damage tank components, warp flappers and cause flooding, and their use voids its warranty. Kohler also does not recommend cleaning products submerged in the tank, saying their acids prematurely deteriorate gaskets and valve parts.',
+    },
+    {
+      question: 'How do you drain a toilet tank for cleaning?',
+      answer: 'Turn off the water supply valve behind the toilet, then flush and hold the handle down so the tank empties through the flush valve.',
+    },
+    {
+      question: 'How often should you replace a toilet flapper?',
+      answer: 'Fluidmaster says if the flapper is more than five years old, simply change it rather than cleaning it. Replace it sooner if the rubber is warped, swollen or the toilet runs after you have cleaned the flapper and seat.',
+    },
+    {
+      question: 'Why is there black slime in my toilet tank?',
+      answer: 'Slime and debris build up on the tank walls and on the underside of the flapper over time. Scrub the walls with mild soap, rinse, and wipe the flapper and flush valve seat with a clean cloth. Fluidmaster\'s fix for a leaking flapper starts with exactly this wipe-down.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-tank-1',
+      title: 'Product FAQ',
+      publisher: 'TOTO USA',
+      url: 'https://www.totousa.com/product-faq',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'TOTO strongly advises against using bleach, descaling agents or harsh chemical cleaners inside the toilet tank because they damage internal rubber seals, flappers, valves and mechanical components, and says a degraded rubber flapper should be replaced before leaks occur.',
+    },
+    {
+      id: 'src-tank-2',
+      title: 'Identify and Fix Toilet Flapper Leaks',
+      publisher: 'Fluidmaster',
+      url: 'https://fluidmaster.com/toilet-problems/identify-fix-toilet-flapper-leaks/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Do not use in-tank drop-in cleaners containing bleach or chlorine; wipe slime and debris from the underside of the flapper and the flush valve seat with a clean cloth, check the seat rim for nicks, replace a flapper more than 5 years old, and test for leaks by shutting off the water with a full tank, marking the level and checking every 15 minutes.',
+    },
+    {
+      id: 'src-tank-3',
+      title: 'Cleaning and Caring for Your Products',
+      publisher: 'Kohler New Zealand',
+      url: 'https://kohler.co.nz/cleaning-and-caring-for-your-products/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Kohler does not recommend any cleaning products submerged in the cistern, because the acids they contain prematurely deteriorate gaskets and valve parts, and lists abrasives, bleach and acid or alkaline cleaners among solutions to avoid.',
+    },
+    {
+      id: 'src-tank-4',
+      title: 'How to Clean a Toilet Tank',
+      publisher: 'Clorox',
+      url: 'https://www.clorox.com/learn/how-to-clean-toilet-tank/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Ventilate, turn off the water supply at the back of the toilet, flush and hold the handle so the tank drains, scrub the sides and bottom, rinse by pouring clean water down the sides with the handle held down, then refill; never mix rust remover with bleach.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Toilet Tank Safely',
+    description: 'How to clean a toilet tank: shut off the water, flush to drain, scrub with mild soap, rinse, refill and check the flapper. Why bleach and tablets harm parts.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-toilet-tank',
+    indexable: true,
+    focusKeyword: 'how to clean a toilet tank',
+  },
+};
+
+export default article;

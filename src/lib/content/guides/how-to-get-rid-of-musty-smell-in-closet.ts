@@ -1,0 +1,146 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-rid-of-musty-smell-in-closet',
+  slug: 'how-to-get-rid-of-musty-smell-in-closet',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get rid of musty smell in a closet',
+  subtitle: 'A musty closet is a damp closet. Find the moisture, empty and launder, scrub mildew off hard surfaces with detergent and water, then keep humidity under 60 percent with airflow or a dehumidifier so the smell does not come back.',
+  excerpt: 'Find the damp, empty the closet, scrub and dry, launder, then keep humidity down.',
+  quickAnswer: 'A musty smell in a closet comes from mildew growing where moisture, warmth and still air meet, so the fix is removing the dampness and the growth, not covering the smell with fragrance. Empty the closet, look for leaks or damp walls, scrub any mildew off hard surfaces with detergent and water, and let everything dry completely. Air out and launder the clothes and linens that picked up the odor, then put back only clean, fully dry items, hung loosely. Keep indoor humidity below 60 percent, ideally 30 to 50 percent, with airflow or a dehumidifier.',
+  roomSlug: 'home-organization',
+  subCategory: 'closets',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-organization.webp',
+  heroImageAlt: 'Open hallway closet with a white wire shelf holding fabric bins and a wicker basket, and a plastic tub, a cardboard box of folded sweaters and a pair of white sneakers on the wood floor below',
+  safetyWarnings: [
+    'If the moldy area is larger than about 10 square feet, or the closet had significant water damage, the EPA advises getting professional help rather than cleaning it yourself.',
+    'Wear long gloves, goggles without vent holes and an N-95 respirator while scrubbing mildew; the EPA recommends this to limit contact with mold and airborne spores.',
+    'Chlorine bleach is not recommended by the EPA as a routine part of mold cleanup. If you do use it, ventilate and exhaust the air outdoors, and never mix bleach with ammonia or any other cleaner, because toxic fumes can result.',
+    'Do not use chlorine bleach on silk, wool or spandex, and test any stain treatment for colorfastness on a hidden seam first.',
+    'Do not paint or caulk over mildew. Clean and dry the surface first; paint applied over mold is likely to peel.',
+  ],
+  materialsNeeded: [
+    'Laundry baskets or bags for emptying the closet',
+    'Household detergent and warm water in a bucket',
+    'Scrub brush or sponge and clean rags',
+    'Long rubber or nitrile gloves, unvented goggles and an N-95 respirator',
+    'Vacuum (empty or replace the bag outdoors afterward)',
+    'Fan for drying',
+    'Hygrometer (humidity meter)',
+    'Optional: dehumidifier sized for the room',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Find Where the Moisture Comes From',
+      instruction: 'Smell alone does not fix anything; the source does. Look and feel for damp spots on the walls, floor and ceiling, sweating exterior walls, and stains near plumbing or the roofline. Mildew grows in dark places with little air circulation, which is exactly what a closed closet is. If you find a leak or damp wall, get it fixed before you clean; otherwise the moisture that fed the mildew is still there.',
+      proTip: 'A cheap hygrometer left inside the closet overnight tells you whether the air itself is too humid.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Empty the Closet Completely',
+      instruction: 'Take everything out: clothes, shoes, bins, boxes and bedding. Spread items out in a dry, airy room or outdoors so they stop sharing damp air. Set aside anything that looks visibly mildewed or still feels damp to treat first.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Scrub Mildew Off Walls and Shelves',
+      instruction: 'Put on gloves, goggles and an N-95. Vacuum loose dust from the floor and corners, then scrub any visible mildew off hard surfaces such as shelves, wire racks, rods and painted walls with detergent and water. Wipe with a clean damp rag and dry everything completely. Porous materials such as carpet or ceiling tiles that stay moldy may need to be removed, because mold can be hard or impossible to clean out of them.',
+      proTip: 'Empty or throw away the vacuum bag outside afterward; it will contain spores.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Dry the Closet Out',
+      instruction: 'Leave the door open and run a fan into the empty closet until the walls, floor and shelves are completely dry. The EPA advises drying damp areas within 24 to 48 hours to prevent mold growth. Do not put anything back while it still feels cool or damp.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Air Out and Launder the Contents',
+      instruction: 'Brush visible mildew off clothing outdoors, then let the items sun and air before laundering or dry cleaning, as UF/IFAS Extension recommends. Wash washable items according to their care labels, test any stain treatment on a hidden seam, and keep chlorine bleach away from silk, wool and spandex. Dry everything thoroughly before it goes back.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Put Back Only Clean, Dry Items, Loosely',
+      instruction: 'Return only clothes, shoes and linens that are clean and fully dry; damp and soiled items are what start mildew in storage. Do not pack the rod or shelves tightly. Leave space between hangers and bins so air can move through the closet.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Keep the Humidity Down',
+      instruction: 'Keep indoor relative humidity below 60 percent, ideally between 30 and 50 percent. Improve airflow by opening the closet door or running a fan, use bathroom and kitchen exhaust fans, and if the space stays damp, run a dehumidifier in the room with doors and windows closed so it works efficiently. ENERGY STAR notes that dehumidifiers address damp spaces with musty odors and that certified models have a built-in humidistat you can set to a target level.',
+      proTip: 'Size the dehumidifier to the room and how damp it is; ENERGY STAR says oversizing is better than undersizing.',
+    },
+  ],
+  ifMethodFails: [
+    'If the smell returns within days, moisture is still getting in. Recheck the walls behind the closet, the ceiling and any nearby bathroom, laundry or exterior wall for a leak or condensation, and measure the humidity with a hygrometer.',
+    'If mildew keeps growing back on drywall, carpet or ceiling tile, the material itself may be contaminated. Porous materials may need to be removed and replaced once the moisture source is fixed.',
+    'If the moldy area is larger than about 10 square feet or followed a leak or flood, call a professional, as the EPA advises.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Why does my closet smell musty?',
+      answer: 'Musty odor comes from mildew, which grows where moisture, warmth and still air meet. Closets are dark, often closed, and packed with fabric, so damp air, a hidden leak or clothes put away slightly damp or soiled are the usual causes.',
+    },
+    {
+      question: 'Will an air freshener or scented sachet get rid of a musty closet smell?',
+      answer: 'No. Fragrance only masks the odor while the mildew keeps growing. Remove the source by cleaning and drying the closet and its contents, then control humidity so it does not return.',
+    },
+    {
+      question: 'What humidity should a closet be to prevent mildew?',
+      answer: 'The EPA recommends keeping indoor humidity below 60 percent, ideally between 30 and 50 percent. ENERGY STAR gives the same 30 to 50 percent range and notes higher levels may promote mold growth.',
+    },
+    {
+      question: 'Should I use bleach to clean mildew in my closet?',
+      answer: 'The EPA says scrubbing hard surfaces with detergent and water and drying them completely is the standard method, and that bleach is not recommended as a routine part of mold cleanup. If you use bleach, ventilate and never mix it with ammonia or other cleaners.',
+    },
+    {
+      question: 'Do I need to wash all my clothes if the closet smells musty?',
+      answer: 'Anything that smells musty or shows mildew spots should be brushed off outdoors, aired and laundered or dry cleaned according to its care label before it goes back. Putting musty items back into a clean closet brings the smell straight back.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-closet-1',
+      title: 'A Brief Guide to Mold, Moisture and Your Home',
+      publisher: 'U.S. Environmental Protection Agency',
+      url: 'https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Keep indoor humidity below 60 percent (ideally 30 to 50 percent), dry damp areas within 24 to 48 hours, scrub mold off hard surfaces with detergent and water and dry completely, porous materials may need to be discarded, bleach is not recommended routinely and must never be mixed with ammonia, wear an N-95, long gloves and unvented goggles, get professional help above about 10 square feet, and do not paint over mold.',
+    },
+    {
+      id: 'src-closet-2',
+      title: 'Mildew Removal',
+      publisher: 'UF/IFAS Extension Jefferson County',
+      url: 'https://blogs.ifas.ufl.edu/jeffersonco/disaster-preparedness-recovery/mildew-removal',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Keep items clean, dry and cool with good air circulation, do not pack closets too densely, brush mildew off clothing outdoors and sun and air it before laundering or dry cleaning, test for colorfastness, avoid chlorine bleach on silk, wool and spandex, and dispose of the vacuum bag after vacuuming mildew.',
+    },
+    {
+      id: 'src-closet-3',
+      title: 'Dehumidifiers',
+      publisher: 'ENERGY STAR',
+      url: 'https://www.energystar.gov/products/dehumidifiers',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Optimum relative humidity is generally 30 to 50 percent and higher levels may promote mold growth; dehumidifiers address damp spaces with musty odors and mildew; certified models have a built-in humidistat; keep doors and windows closed while the unit runs, size by room and dampness, and oversizing is preferable to undersizing.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Rid of Musty Smell in a Closet',
+    description: 'How to get rid of musty smell in a closet: find the moisture, scrub mildew with detergent and water, launder, then keep humidity under 60% so it stays fresh.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-rid-of-musty-smell-in-closet',
+    indexable: true,
+    focusKeyword: 'how to get rid of musty smell in closet',
+  },
+};
+
+export default article;

@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-rust-stains-from-a-bathtub',
+  slug: 'how-to-remove-rust-stains-from-a-bathtub',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove rust stains from a bathtub',
+  subtitle: 'The right rust remover depends on what your tub is made of. What Kohler, American Standard and Delta allow on enameled cast iron, enameled steel and acrylic, why chlorine bleach makes rust worse, and how to stop the stain coming back.',
+  excerpt: 'Identify the tub material, test a rust remover the maker approves, apply it with a soft sponge, rinse and dry.',
+  quickAnswer: 'Find out what your tub is made of, then use a rust stain remover its manufacturer approves: Kohler lists Super Iron Out and Bon Ami for enameled cast iron, American Standard lists Iron Out, Zud and CLR for its Americast tubs, and Delta lists Iron Out Rust Stain Remover for acrylic. Test it in a hidden spot, wet the tub, apply the remover with a soft damp sponge following the label, then rinse completely and wipe dry. Never use steel wool, scouring pads or abrasive powders, and do not use chlorine bleach on rust, which can set the stain. Then remove the source, such as metal cans left on a wet ledge or iron in your water.',
+  roomSlug: 'bathroom-cleaning',
+  subCategory: 'showers-tubs',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '7 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/bathroom-hero.webp',
+  heroImageAlt: 'Wet white undermount bathroom sink in a speckled stone-look vanity top with a brushed-nickel faucet, a clear spray bottle, a blue-grey cloth, a toothbrush holder and a potted plant in front of a wood-framed mirror',
+  safetyWarnings: [
+    'Do not use chlorine bleach on rust stains. The University of Georgia Extension warns that chlorine bleach can set rust stains instead of removing them.',
+    'Never mix a rust remover with bleach or any other cleaner. Many rust removers are acid-based (oxalic acid is a common ingredient), and bleach mixed with acids or ammonia releases toxic gas. Rinse the tub fully before switching products, and ventilate the bathroom while you work.',
+    'Never use steel wool, wire brushes, scouring pads or abrasive powders such as Comet. Kohler, American Standard and Delta all warn that abrasives damage enamel or acrylic, and a scratched or chipped finish rusts and stains more easily.',
+    'On acrylic tubs, avoid solvents such as acetone, paint thinner and mineral spirits, and any cleaner whose label says it is not suitable for acrylic; Delta warns they can permanently damage the surface.',
+    'Wear gloves and follow the rust remover\'s label exactly, including how long it may stay on the surface.',
+  ],
+  materialsNeeded: [
+    'Your tub\'s care guide or owner\'s manual (to identify the material and approved cleaners)',
+    'A rust stain remover your tub maker approves (for example Iron Out Rust Stain Remover)',
+    'Soft sponge, soft cloth or terry towel',
+    'Soft nylon brush (for a textured slip-resistant bottom only, if your maker allows it)',
+    'Mild liquid dish soap and warm water',
+    'Rubber gloves',
+    'A clean, dry soft cloth for drying',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Identify the Tub Material and Read the Care Guide',
+      instruction: 'Check your manual, the tub\'s model label or the manufacturer\'s support site. Enameled cast iron, porcelain-enameled steel, composite tubs such as Americast, acrylic and fiberglass each have their own list of approved cleaners, and the wrong one can damage the finish. For fiberglass, which none of the manufacturer guides below cover, use only a remover whose label says it is safe on fiberglass.',
+      proTip: 'If you cannot find the manual, treat the tub as the most delicate material: soft sponge only, no abrasives, and a remover whose label says it is safe for your surface.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Find Where the Rust Is Coming From',
+      instruction: 'Rust forms when iron or steel meets moisture. Look for a shaving-cream can, razor, hair pin or metal caddy left on a wet ledge, orange streaks below the faucet or drain, which point to iron in the water or corroding pipes, and chips in the enamel that expose bare metal underneath. In a newly installed tub, American Standard notes that rust spots usually come from metal debris left inside during installation, not from a defect in the enamel.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wash the Tub with Mild Soap First',
+      instruction: 'Clean the stained area with warm, soapy water and a soft cloth or sponge to remove soap film and body oils, so the rust remover reaches the stain. American Standard and Delta both list ordinary liquid dishwashing detergent for routine cleaning. Rinse well before moving on.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Test the Rust Remover in a Hidden Spot',
+      instruction: 'Choose a remover your manufacturer names for your material. Kohler lists Bon Ami and Super Iron Out Rust Stain Remover for enameled cast iron; American Standard lists Iron Out, Zud, KRC-7, didi seven and CLR for its Americast tubs; Delta lists Iron Out Rust Stain Remover for acrylic. Apply a little to an inconspicuous area first, as Kohler advises, and check for dulling or discoloration after rinsing.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Apply the Remover with a Soft Damp Sponge',
+      instruction: 'Wet the tub surface, apply the cleaner to the stain, then work it gently with a wet soft sponge or cloth, following the product\'s label directions. On enameled cast iron, Kohler warns not to let the cleaner soak on the surface, so rinse it off as soon as the label allows. On a textured slip-resistant bottom, Kohler allows a soft nylon brush.',
+      proTip: 'Choose a water-soluble product on textured bottoms. Kohler notes that cream cleaners can build up and reduce the grip of slip-resistant surfaces.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse Completely and Wipe Dry',
+      instruction: 'Rinse the whole area with plenty of clean water, including any overspray on nearby surfaces, so no remover is left behind. Then wipe the tub dry with a soft cloth. Repeat steps 5 and 6 if a faint stain remains rather than scrubbing harder.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Stop the Rust from Coming Back',
+      instruction: 'Move metal cans and razors off the tub ledge or onto a plastic tray, and wipe the tub dry after use, as Kohler recommends for cast iron. If stains return near the faucet or drain, the iron is likely in your water supply or pipes; a water test or a plumber can confirm it. Chips that expose bare metal will keep rusting, so contact the manufacturer or a refinisher about a repair.',
+    },
+  ],
+  ifMethodFails: [
+    'If the stain fades but does not disappear, repeat the remover application and rinse a second time rather than switching to an abrasive. Rust that has sat for a long time may need several gentle rounds.',
+    'If rust keeps coming back from a chip or crack in the enamel, the metal underneath is exposed. Cleaning cannot fix that; contact the tub manufacturer about warranty coverage or a professional repair.',
+    'If the whole tub develops orange streaks near the faucet and drain, the cause is probably iron in the water. Ask your water utility for a test or have a well tested, and treat the water rather than the tub.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does bleach remove rust stains from a bathtub?',
+      answer: 'No. Chlorine bleach does not dissolve rust, and the University of Georgia Extension warns that it can set rust stains. Bleach is also dangerous to combine with acid-based rust removers. Use a rust stain remover your tub manufacturer approves, and rinse thoroughly between any two products.',
+    },
+    {
+      question: 'Is Iron Out safe on an acrylic tub?',
+      answer: 'Delta lists Iron Out Rust Stain Remover among the cleaners it recommends for its acrylic tubs and showers. Kohler and American Standard also name Iron Out for their tubs. Test it in a hidden spot first and follow the label directions.',
+    },
+    {
+      question: 'Can I use CLR on my bathtub?',
+      answer: 'American Standard lists CLR among the rust removers for its Americast tubs, and Delta lists CLR Bath and Kitchen Cleaner for acrylic. Kohler\'s cast iron care guide does not list CLR, naming Bon Ami and Super Iron Out instead. Check your own tub\'s care guide before using it.',
+    },
+    {
+      question: 'Why does my bathtub keep getting rust stains?',
+      answer: 'Rust needs iron plus moisture. The usual causes are metal cans or razors left on a wet ledge, iron in the water supply or corroding pipes, and chips in the enamel that expose the steel or cast iron underneath. Remove the source or the stain will return.',
+    },
+    {
+      question: 'Can I use a pumice stone or scouring powder on rust in a tub?',
+      answer: 'Kohler, American Standard and Delta all advise against abrasive pads, steel wool and abrasive powders, which can scratch enamel and permanently damage acrylic. For rust, Kohler names Bon Ami and Super Iron Out rather than scouring powder. A rust remover on a soft sponge is the safer choice.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-tubrust-1',
+      title: 'Cast Iron Baths and Whirlpools care and cleaning',
+      publisher: 'Kohler',
+      url: 'https://images.homedepot-static.com/catalog/pdfImages/8f/8f5eef30-e441-4356-b76a-2697dcdc0bf5.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Test any cleaner on an inconspicuous area, rinse completely right after applying, do not let cleaner soak, use a soft dampened sponge or cloth, never steel wool, wire brushes or abrasive pads, use a soft nylon brush on the textured bottom, dry with a soft cloth after use, and use Bon Ami or Super Iron Out Rust Stain Remover for rust; cream cleaners can build up on slip-resistant surfaces.',
+    },
+    {
+      id: 'src-tubrust-2',
+      title: 'Americast Care and Cleaning Instructions',
+      publisher: 'American Standard',
+      url: 'https://www.afsupply.com/pub/media/catalog/product/matridtech/american/manual/2392202J.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Rust spots can occur when metal debris is left in the tub during installation and are not an enamel defect; remove them with Iron Out, Zud, KRC-7, didi seven or CLR by wetting the surface, applying the cleaner, working it with a wet sponge and rinsing; never use scouring pads or abrasive cleansers such as Comet or Brillo.',
+    },
+    {
+      id: 'src-tubrust-3',
+      title: 'How to Clean Your Acrylic Shower or Tub',
+      publisher: 'Delta Faucet',
+      url: 'https://www.deltafaucet.com/design-innovation/inspiredliving/how-to-clean-acrylic-shower',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Acrylic tubs should be cleaned with non-abrasive products such as dishwashing detergent, CLR Bath and Kitchen Cleaner and Iron Out Rust Stain Remover, using a terry towel, soft cloth or sponge; abrasive pads, steel wool, solvents and products labeled unsuitable for acrylic can permanently damage the surface.',
+    },
+    {
+      id: 'src-tubrust-4',
+      title: 'Remove Stains From Iron, Rust',
+      publisher: 'University of Georgia Cooperative Extension',
+      url: 'https://www.fcs.uga.edu/%E2%80%8Bextension/stain-removal-iron-rust',
+      type: 'Textile Institute',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Do not use chlorine bleach on rust because it can set the stain; ferrous metals rust in the presence of moisture; rust stains on tile can come from iron in the water supply; apply commercial rust removers following the manufacturer\'s directions and pretest on an inconspicuous area.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Rust Stains From a Bathtub',
+    description: 'Remove rust stains from a bathtub by material: rust removers Kohler, American Standard and Delta allow, why bleach sets rust, and how to stop it returning.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-rust-stains-from-a-bathtub',
+    indexable: true,
+    focusKeyword: 'how to remove rust stains from a bathtub',
+  },
+};
+
+export default article;

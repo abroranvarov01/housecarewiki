@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-get-rid-of-dog-smell-in-house',
+  slug: 'how-to-get-rid-of-dog-smell-in-house',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to get rid of dog smell in house',
+  subtitle: 'Dog smell comes from things you can wash: the bed, the blankets, the collar, the carpet and the dog. Clean the sources, keep everything dry, change the HVAC filter and bring in fresh air instead of covering it up.',
+  excerpt: 'Wash the dog bed, collar and throws, vacuum, bathe and fully dry the dog, change the HVAC filter, ventilate.',
+  quickAnswer: 'Get rid of dog smell by cleaning what holds it rather than spraying fragrance over it: wash your dog\'s bed, blankets, collar, harness and toys, vacuum hair from carpets and furniture, and bathe and thoroughly dry your dog. Damp fur and damp bedding are the main sources, because the smell comes from yeasts and bacteria on the coat. Then change your HVAC filter and open windows or run exhaust fans to bring in fresh air. If a urine smell is the problem, treat the accident spots with an enzyme cleaner, and skip ozone generators, which the EPA says do not effectively remove many odors.',
+  roomSlug: 'pet-hair-removal',
+  subCategory: 'urine-odors',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 02, 2026',
+  publishedAt: 'Nov 02, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-floor-carpet.webp',
+  heroImageAlt: 'White cordless stick vacuum cleaning a beige patterned rug in a sunny living room, next to a cream sofa with a knit throw and a round wooden coffee table',
+  safetyWarnings: [
+    'Do not use an ozone generator in an occupied home. The EPA says no federal agency has approved them for occupied spaces, ozone is a lung irritant, and at safe levels ozone does not effectively remove many odor-causing chemicals.',
+    'Never mix bleach with vinegar or ammonia, including when you add vinegar to a wash cycle; the fumes are dangerous. Ventilate the room whenever you use cleaning products.',
+    'Use a fragrance-free, pet-friendly detergent for dog bedding, and rinse until no soap remains before your dog uses it again.',
+    'Let dog beds dry completely before putting them back. A damp bed encourages mold and mildew, which adds its own odor.',
+    'Avoid air cleaners and HVAC filters that intentionally produce ozone, such as some ionizers and electrostatic units; the EPA advises against them.',
+  ],
+  materialsNeeded: [
+    'Vacuum with an upholstery tool',
+    'Lint roller or rubber gloves for hair',
+    'Fragrance-free, pet-friendly laundry detergent',
+    'White vinegar (1 to 2 cups) and baking soda (1/2 cup), for a follow-up wash cycle on very dirty beds',
+    'Dog shampoo, a heavy-duty dog towel or dog blow dryer',
+    'Replacement HVAC filter (MERV 13 or the highest your system accepts)',
+    'Enzyme cleaner, if there are urine spots',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Find the Source Before You Clean',
+      instruction: 'Sniff the places your dog spends time: the dog bed, blankets and throws, the couch, the rug by the door and the collar and harness. Fragrance sprays and candles only mask odor. The smell goes away when you wash or remove what is holding it. If you find a urine spot, treat it as described in our guide to getting dog urine out of carpet.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Vacuum Hair Off the Dog Bed, Then Wash It',
+      instruction: 'Vacuum the bed\'s surface, crevices and sides, then pick up leftover hair with a lint roller or a rubber glove; wet dog hair clumps and can clog your washer. Machine wash the removable cover, or the whole bed if the label allows, with a fragrance-free, pet-friendly detergent on a high-temperature program. For a very dirty bed, run an empty cycle afterward with 1 to 2 cups of white vinegar and 1/2 cup of baking soda in the dispenser to remove lingering odor.',
+      proTip: 'The AKC notes that the CDC recommends washing pet bedding weekly. Dogs that shed heavily or spend a lot of time outdoors may need it more often.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Dry Bedding Completely Before It Goes Back',
+      instruction: 'Air drying is usually best, since some fillings clump in a dryer. Let thick, fiber-filled beds dry all the way through before your dog uses them; a damp bed breeds mold and mildew. If a bed still smells after washing and drying, it is time to replace it.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wash Collars, Harnesses, Toys and Throws',
+      instruction: 'Collars and harnesses often hold smells and should be washed regularly. Nylon collars can go in the laundry; leather ones need a leather cleaner. Wash toys, couch covers and any blankets your dog sleeps on along with the bedding.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Vacuum Carpets and Upholstery',
+      instruction: 'Vacuum carpets, rugs and upholstered furniture where your dog lies, using the upholstery tool on cushions and in the seams. Removing shed hair and dirt takes away material that holds odor. Wash removable cushion covers according to their care labels.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Bathe Your Dog, Then Dry It Thoroughly',
+      instruction: 'Wet dog smell comes from yeasts and bacteria on the coat; as moisture evaporates it carries their odor compounds into the air. The AKC says bathing once to twice a month is plenty for most dogs. Drying matters as much as washing: use a heavy-duty dog towel or a dog blow dryer, and dry your dog before it roams the house after baths, rain or swimming. Wrinkly breeds need cleaning under skin folds, and drooling breeds need the damp areas around the mouth wiped dry.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Change the HVAC Filter and Bring In Fresh Air',
+      instruction: 'Replace your furnace or HVAC filter with one rated at least MERV 13, or the highest rating your system fan and filter slot can handle. Change it as the manufacturer suggests, typically every 60 to 90 days, and sooner if it looks heavily soiled. Then ventilate: open windows when weather allows and run kitchen and bathroom exhaust fans. Filtration helps, but the EPA says it does not replace controlling the source and ventilating.',
+      proTip: 'Ordinary filters capture particles like hair and dust. For odors, the EPA says a filter with activated carbon or another gas-removal medium is needed.',
+    },
+  ],
+  ifMethodFails: [
+    'If the smell comes from your dog itself and seems unusual or will not go away after bathing and drying, have your veterinarian check your dog, and ask a professional groomer for help with drying and coat care.',
+    'If the house smells like urine rather than dog, follow our guide to getting dog urine out of carpet: urine needs an enzyme cleaner, not fragrance, and soaked padding may need replacing.',
+    'If odor lingers in a room after cleaning, look for damp items: a wet dog towel, a bed that never fully dried or a rug by the door. Moisture keeps odors and mildew going, so wash and fully dry them.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Why does my house smell like dog?',
+      answer: 'Usually because of things your dog touches every day: the bed, blankets, collar, couch and carpet. Yeasts and bacteria on a dog\'s coat produce odor compounds, and those transfer to fabrics, especially when the dog or the fabric is damp. Washing those items and keeping them dry removes most of the smell.',
+    },
+    {
+      question: 'How often should I wash my dog\'s bed to stop the smell?',
+      answer: 'The AKC cites CDC guidance to wash pet bedding weekly, and says heavy shedding, coat oils, outdoor time or allergies can call for more frequent washing. Vacuum hair off first, use a fragrance-free pet-friendly detergent and let the bed dry completely.',
+    },
+    {
+      question: 'How often should I bathe my dog so it doesn\'t smell?',
+      answer: 'The AKC says once to twice a month is plenty for most dogs. Drying thoroughly afterward matters as much as the bath, because moisture evaporating from the coat is what spreads wet dog smell. If your dog smells bad soon after a bath, ask your vet.',
+    },
+    {
+      question: 'Do air purifiers or ozone generators get rid of dog smell?',
+      answer: 'An air cleaner with an activated carbon filter can help reduce some odors, but the EPA says filtration only supplements removing the source and ventilating. Ozone generators are a bad choice: the EPA says ozone at safe levels does not effectively remove many odors and that no federal agency has approved them for occupied spaces.',
+    },
+    {
+      question: 'Does changing the air filter help with pet odor?',
+      answer: 'It can help, as part of a plan. The EPA recommends a filter rated at least MERV 13, or the highest your system accepts, changed about every 60 to 90 days or when visibly dirty. Standard filters capture particles, not gases, so washing the sources and ventilating still matter most.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-dog-smell-1',
+      title: 'How to Clean Your Dog\'s Bed and Why It\'s Important',
+      publisher: 'American Kennel Club (AKC)',
+      url: 'https://www.akc.org/expert-advice/home-living/how-to-clean-a-dog-bed/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Cites CDC guidance to wash pet bedding weekly; vacuum hair off first because wet hair clumps and clogs washers; machine wash with a fragrance-free, pet-friendly detergent on a high-temperature program; for very dirty beds run an empty cycle with 1 to 2 cups white vinegar and 1/2 cup baking soda; air dry and let beds dry completely because damp beds encourage mold and mildew; replace beds that still smell.',
+    },
+    {
+      id: 'src-dog-smell-2',
+      title: 'Why Do Wet Dogs Smell So Bad?',
+      publisher: 'American Kennel Club (AKC)',
+      url: 'https://www.akc.org/expert-advice/health/wet-dogs-smell-bad/',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wet dog smell comes from compounds left by yeasts and bacteria on the coat, carried into the air as moisture evaporates; bathing once to twice a month is plenty; dry thoroughly with a dog blow dryer or heavy-duty towel; wash collars, harnesses, beds and toys regularly; clean skin folds; see a vet if the smell is abnormal or persists.',
+    },
+    {
+      id: 'src-dog-smell-3',
+      title: 'Guide to Air Cleaners in the Home',
+      publisher: 'U.S. Environmental Protection Agency',
+      url: 'https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Reducing or removing pollutant sources is most effective and filtration does not replace source control and ventilation; choose an HVAC filter rated at least MERV 13 or as high as the system accommodates, typically replaced every 60 to 90 days; most filters target particles or gases and gases need activated carbon; avoid devices that intentionally produce ozone.',
+    },
+    {
+      id: 'src-dog-smell-4',
+      title: 'Ozone Generators that are Sold as Air Cleaners',
+      publisher: 'U.S. Environmental Protection Agency',
+      url: 'https://www.epa.gov/indoor-air-quality-iaq/ozone-generators-are-sold-air-cleaners',
+      type: 'Government Standard',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'At concentrations within public health standards, ozone is not effective at removing many odor-causing chemicals; no federal agency has approved ozone generators for occupied spaces; EPA advises source control and ventilation instead.',
+    },
+  ],
+  seo: {
+    title: 'How to Get Rid of Dog Smell in Your House',
+    description: 'Get rid of dog smell in your house by cleaning the source: wash the dog bed and collar, vacuum, bathe and dry your dog, change the HVAC filter and ventilate.',
+    canonical: 'https://housecarewiki.com/guides/how-to-get-rid-of-dog-smell-in-house',
+    indexable: true,
+    focusKeyword: 'how to get rid of dog smell in house',
+  },
+};
+
+export default article;
