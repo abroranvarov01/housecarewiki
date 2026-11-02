@@ -16,37 +16,11 @@ services:
       # Admin CMS login (/admin). Set ADMIN_PASSWORD in /opt/housecarewiki/.env on the server.
       - ADMIN_USER=${ADMIN_USER:-admin}
       - ADMIN_PASSWORD=${ADMIN_PASSWORD:-}
-      # Instagram automation (docs/instagram-automation.md). Stays a dry run until IG_DRY_RUN=0 is set.
-      - IG_DRY_RUN=${IG_DRY_RUN:-1}
-      - IG_ACCESS_TOKEN=${IG_ACCESS_TOKEN:-}
-      - IG_APP_SECRET=${IG_APP_SECRET:-}
-      - META_APP_SECRET=${META_APP_SECRET:-}
-      - IG_VERIFY_TOKEN=${IG_VERIFY_TOKEN:-}
-      - IG_TEST_USERNAMES=${IG_TEST_USERNAMES:-}
-      - IG_TWO_STEP_DM=${IG_TWO_STEP_DM:-0}
-      - IG_POLL_COMMENTS=${IG_POLL_COMMENTS:-0}
-      - CRON_SECRET=${CRON_SECRET:-}
     volumes:
-      # Also holds uploaded reels (.data/ig-media) that Instagram downloads at publish time.
       - app_data:/app/.data
     depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_started
-
-  # Runs the Instagram scheduler, token refresh and comment queue once a minute.
-  ig-cron:
-    image: curlimages/curl:8.10.1
-    container_name: housecarewiki-ig-cron
-    restart: unless-stopped
-    environment:
-      - CRON_SECRET=${CRON_SECRET:-}
-    entrypoint: ["/bin/sh", "-c"]
-    command:
-      - 'while true; do sleep 60; curl -fsS -m 240 -X POST -H "Authorization: Bearer $$CRON_SECRET" http://web:3000/api/instagram/tick > /dev/null || echo "tick failed"; done'
-    depends_on:
-      - web
+      - postgres
+      - redis
 
   postgres:
     image: postgres:16-alpine

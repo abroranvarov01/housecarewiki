@@ -50,4 +50,3 @@ Open `http://localhost:3000` in your browser.
 - **Images:** put new photos in `public/images` and run `npm run optimize:images` (needs `sharp`) to create compressed WebP files and app icons.
 - **Admin:** `/admin` uses HTTP Basic auth, checked in the middleware and again by the page and API (`src/lib/admin-auth.ts`) (`ADMIN_USER`, default `admin`, and `ADMIN_PASSWORD` from `.env`). Without `ADMIN_PASSWORD` the admin area stays closed.
 - **Sitemap:** `/sitemap.xml` (with image entries) is generated from content data; lastmod is the newest content date behind each URL.
-- **Instagram automation:** scheduled Reels, comment keyword → public reply + DM, and `/go/<slug>` click-counting links to Amazon, on the official Instagram API. Setup, Meta permissions and the dry-run checklist: [docs/instagram-automation.md](docs/instagram-automation.md). Data is in Postgres via Prisma (`prisma/migrations`); tests: `npm test`.
