@@ -6,9 +6,9 @@ import { ArrowRight } from 'lucide-react';
 import { readStore } from '@/lib/store';
 import { buildMetadata, fitDescription } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
-import { breadcrumbSchema, graph, itemListSchema, webPageSchema } from '@/lib/schema';
+import { breadcrumbSchema, faqSchema, graph, itemListSchema, webPageSchema } from '@/lib/schema';
 import { AffiliateDisclosureNote, EditorScore, AffiliateButton } from '@/components/ui/Badges';
-import { Breadcrumbs, Byline, Callout, Container, EvidenceLabel, Kicker, SectionHead, articleHref } from '@/components/field';
+import { Breadcrumbs, Byline, Callout, Container, EvidenceLabel, FaqList, Kicker, SectionHead, articleHref } from '@/components/field';
 import type { Product } from '@/lib/types';
 
 // ISR: pre-rendered, refreshed hourly and on every CMS publish via revalidatePath.
@@ -29,8 +29,8 @@ export function generateMetadata({
   const a = store.products.find((p) => p.id === comp.productAId);
   const b = store.products.find((p) => p.id === comp.productBId);
   return buildMetadata({
-    title: a && b ? `${a.shortName} vs ${b.shortName}: Which to Buy?` : comp.title,
-    description: fitDescription(comp.subtitle, 'Our verdict, the key differences and the better pick for each situation.'),
+    title: comp.seoTitle || (a && b ? `${a.shortName} vs ${b.shortName}: Which to Buy?` : comp.title),
+    description: comp.seoDescription || fitDescription(comp.subtitle, 'Our verdict, the key differences and the better pick for each situation.'),
     path: `/compare/${comp.slug}`,
     ogKicker: 'Head-to-head comparison',
   });
@@ -64,7 +64,11 @@ export default function EditorialComparisonPage({
   const winner = [productA, productB].find((p) => p.id === comp.winnerId);
   const pair: Product[] = [productA, productB];
   const author = store.authors.find((a) => a.slug === 'housecarewiki-editors') || store.authors[0];
-  const updatedAt = [productA.updatedAt, productB.updatedAt].sort().reverse()[0];
+  const updatedAt = [productA.updatedAt, productB.updatedAt, comp.updatedAt || ''].sort().reverse()[0];
+  const faqs = comp.faqs || [];
+  const relatedGuides = (comp.relatedGuideSlugs || [])
+    .map((slug) => store.articles.find((a) => a.slug === slug && a.status === 'Published'))
+    .filter((a): a is NonNullable<typeof a> => Boolean(a));
 
   const specKeys = Array.from(new Set([...Object.keys(productA.specs), ...Object.keys(productB.specs)]));
   const buyingGuides = store.articles.filter(
@@ -82,6 +86,7 @@ export default function EditorialComparisonPage({
     ]),
     webPageSchema({ path: `/compare/${comp.slug}`, name: comp.title, description: comp.subtitle, about: comp.category }),
     itemListSchema(comp.title, [productA, productB].map((p) => ({ name: p.name, path: `/products/${p.slug}` }))),
+    faqSchema(faqs),
   );
 
   return (
@@ -109,6 +114,11 @@ export default function EditorialComparisonPage({
             {author && <Byline author={author} updatedAt={updatedAt} />}
             <EvidenceLabel status="Research-Based Review" withDetail />
           </div>
+          {comp.quickAnswer && (
+            <Callout tone="answer" title="Short answer" className="mt-6 max-w-3xl">
+              <p>{comp.quickAnswer}</p>
+            </Callout>
+          )}
         </Container>
       </header>
 
@@ -293,10 +303,20 @@ export default function EditorialComparisonPage({
         </section>
       )}
 
-      {/* 6. Keep reading: full reviews and the buying guides that include them. */}
+      {/* 6. Questions shoppers ask about this pair; the same array feeds the FAQPage markup. */}
+      {faqs.length > 0 && (
+        <section aria-labelledby="faq-heading" className="pt-14">
+          <Container>
+            <SectionHead id="faq-heading" index="04" title="Questions people ask" />
+            <FaqList faqs={faqs} className="mt-6 max-w-3xl" />
+          </Container>
+        </section>
+      )}
+
+      {/* 7. Keep reading: full reviews, the buying guides that include them and the stain guides they fit. */}
       <section aria-labelledby="more-heading" className="pt-14">
         <Container>
-          <SectionHead id="more-heading" index="04" title="Keep reading" />
+          <SectionHead id="more-heading" index={faqs.length > 0 ? '05' : '04'} title="Keep reading" />
           <ul className="mt-6 grid gap-x-10 md:grid-cols-2">
             {pair.map((p) => (
               <li key={p.id}>
@@ -311,11 +331,11 @@ export default function EditorialComparisonPage({
                 </Link>
               </li>
             ))}
-            {buyingGuides.map((g) => (
+            {[...buyingGuides, ...relatedGuides].map((g) => (
               <li key={g.id}>
                 <Link href={articleHref(g)} className="group flex items-baseline justify-between gap-4 border-b border-rule py-4">
                   <span>
-                    <span className="kicker block text-ink-muted">Buying guide</span>
+                    <span className="kicker block text-ink-muted">{g.routeType === 'best' ? 'Buying guide' : 'Stain guide'}</span>
                     <span className="mt-1 block font-serif text-xl font-semibold leading-snug text-ink">
                       <span className="hover-title">{g.title}</span>
                     </span>

@@ -120,9 +120,15 @@ for (const r of data.ROOM_CATEGORIES) {
 for (const s of data.SURFACE_GUIDES) {
   for (const id of s.recommendedProductIds) if (!productIds.has(id)) err(`surface ${s.slug}`, `unknown product "${id}"`);
 }
+const articleSlugs = new Set(data.ARTICLES.map((a) => a.slug));
 for (const c of data.COMPARISONS) {
-  for (const id of [c.productAId, c.productBId, c.winnerId]) if (!productIds.has(id)) err(`comparison ${c.slug}`, `unknown product "${id}"`);
+  const where = `comparison ${c.slug}`;
+  for (const id of [c.productAId, c.productBId, c.winnerId]) if (!productIds.has(id)) err(where, `unknown product "${id}"`);
+  for (const slug of c.relatedGuideSlugs || []) if (!articleSlugs.has(slug)) err(where, `unknown related guide "${slug}"`);
+  checkText(where, 'quickAnswer', c.quickAnswer);
+  for (const f of c.faqs || []) checkText(where, 'faq', `${f.question} ${f.answer}`);
 }
+for (const p of data.PRODUCTS) for (const f of p.faqs || []) checkText(`product ${p.slug}`, 'faq', `${f.question} ${f.answer}`);
 
 for (const w of warnings) console.warn(`  warn  ${w}`);
 for (const e of errors) console.error(`  ERROR ${e}`);

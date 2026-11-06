@@ -152,10 +152,17 @@ export default function StepByStepGuidePage({
   const steps = article.steps || [];
   const supplies = article.materialsNeeded || [];
   const fixes = article.ifMethodFails || [];
-  const related = store.articles.filter(
-    (a) =>
-      a.routeType === 'guides' && a.status === 'Published' && a.roomSlug === article.roomSlug && a.slug !== article.slug,
-  );
+  // Closest topic first: guides on the same sub-topic (mold, stains…) lead, the rest of the room follows.
+  const related = store.articles
+    .filter(
+      (a) =>
+        a.routeType === 'guides' && a.status === 'Published' && a.roomSlug === article.roomSlug && a.slug !== article.slug,
+    )
+    .sort((a, b) => Number(b.subCategory === article.subCategory) - Number(a.subCategory === article.subCategory))
+    .slice(0, 8);
+  // Head-to-head pages that list this guide as one of their use cases link back from here.
+  const comparisonsHere = store.comparisons.filter((c) => c.relatedGuideSlugs?.includes(article.slug));
+  const productName = (id: string) => store.products.find((p) => p.id === id)?.shortName || '';
   const hasIndex = steps.length > 0;
 
   return (
@@ -412,6 +419,23 @@ export default function StepByStepGuidePage({
                   href={`/rooms/${article.roomSlug}`}
                   linkLabel={`All ${roomName} guides`}
                 />
+                {comparisonsHere.length > 0 && (
+                  <ul className="mt-4 space-y-2">
+                    {comparisonsHere.map((c) => (
+                      <li key={c.slug}>
+                        <Link
+                          href={`/compare/${c.slug}`}
+                          className="group inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-terracotta-deep"
+                        >
+                          <span className="hover-title">
+                            Choosing a machine? {productName(c.productAId)} vs {productName(c.productBId)}
+                          </span>
+                          <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 {related.length > 0 ? (
                   <ul className="mt-4 border-t border-rule">
                     {related.map((g) => (

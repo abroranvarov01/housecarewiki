@@ -7,7 +7,7 @@ import { readStore } from '@/lib/store';
 import { buildMetadata, fitDescription } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import type { Product, SurfaceGuide } from '@/lib/types';
-import { breadcrumbSchema, graph, productReviewSchema } from '@/lib/schema';
+import { breadcrumbSchema, faqSchema, graph, productReviewSchema } from '@/lib/schema';
 import {
   AffiliateDisclosureNote,
   EditorScore,
@@ -19,6 +19,7 @@ import {
   Byline,
   Container,
   EvidenceLabel,
+  FaqList,
   Figure,
   Kicker,
   SectionHead,
@@ -44,8 +45,8 @@ export async function generateMetadata({
   if (!product) return { title: 'Product Not Found' };
 
   return buildMetadata({
-    title: `${product.shortName} Review: Specs, Pros & Cons`,
-    description: fitDescription(product.summary, 'Specs, pros and cons, and who it suits best.'),
+    title: product.seoTitle || `${product.shortName} Review: Specs, Pros & Cons`,
+    description: product.seoDescription || fitDescription(product.summary, 'Specs, pros and cons, and who it suits best.'),
     path: `/products/${product.slug}`,
     ogKicker: `${product.brand} review`,
   });
@@ -139,6 +140,7 @@ export default function ProductProfilePage({
       { name: product.shortName, path: `/products/${product.slug}` },
     ]),
     productReviewSchema(product, reviewer),
+    faqSchema(product.faqs || []),
   );
 
   return (
@@ -430,6 +432,14 @@ export default function ProductProfilePage({
                 </div>
               )}
             </div>
+          </section>
+        )}
+
+        {/* Model-specific questions; the same array feeds the FAQPage markup. */}
+        {product.faqs && product.faqs.length > 0 && (
+          <section aria-labelledby="faq-heading" className="pt-14">
+            <SectionHead id="faq-heading" index={nextIndex()} title={`${product.shortName}: questions people ask`} />
+            <FaqList faqs={product.faqs} className="mt-6 max-w-3xl" />
           </section>
         )}
 

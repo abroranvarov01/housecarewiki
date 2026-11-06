@@ -89,6 +89,11 @@ export interface Product {
   };
   whoShouldBuy: string[];
   whoShouldSkip: string[];
+  /** Questions shoppers search for about this exact model; rendered on the review page and as FAQPage markup. */
+  faqs?: ArticleFAQ[];
+  /** Overrides the default "<shortName> Review: Specs, Pros & Cons" title, e.g. to match how people spell the model. */
+  seoTitle?: string;
+  seoDescription?: string;
   updatedAt: string;
 }
 
@@ -211,6 +216,14 @@ export interface ComparisonEntry {
     winnerId: string;
     explanation: string;
   }[];
+  /** Direct "which is better" answer shown above the face-off. */
+  quickAnswer?: string;
+  faqs?: ArticleFAQ[];
+  /** How-to guides where one of the two machines does the job; linked from the comparison. */
+  relatedGuideSlugs?: string[];
+  seoTitle?: string;
+  seoDescription?: string;
+  updatedAt?: string;
 }
 
 export interface ScheduledAutomation {

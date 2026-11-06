@@ -63,7 +63,7 @@ export interface DatabaseState {
 
 const DATA_DIR = path.join(process.cwd(), '.data');
 const STORE_PATH = path.join(DATA_DIR, 'store.json');
-const STORE_VERSION = '3.16-batch14-guides';
+const STORE_VERSION = '3.17-striking-distance';
 
 // Seed demo records shipped by earlier versions; they are dropped on migration so admin only shows real data.
 const DEMO_IDS = new Set(['clk-1', 'clk-2', 'clk-3', 'aud-1', 'aud-2']);
