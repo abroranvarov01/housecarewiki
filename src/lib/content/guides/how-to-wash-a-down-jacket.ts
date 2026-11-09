@@ -1,0 +1,160 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-wash-a-down-jacket',
+  slug: 'how-to-wash-a-down-jacket',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to wash a down jacket',
+  subtitle: 'Close the zips, use a front-loader and a down-specific wash, rinse twice, then tumble dry on low with dryer balls for as long as it takes. What Arc\'teryx, Outdoor Research and Nikwax say, and where they differ on water temperature.',
+  excerpt: 'Zip it up, wash it in a front-loader with a down wash, rinse twice, and tumble dry on low with two dryer balls until no clumps remain.',
+  quickAnswer: 'Follow the care label, then close the main zip, open the pocket zips, loosen the drawcords and fasten any Velcro. Wash the jacket in a front-loading washer, or one without a center agitator, on a gentle cycle with a down-specific cleaner rather than regular detergent, and add an extra rinse. Tumble dry on low heat with two clean dryer or tennis balls, which can take three hours or more, until the down is fully lofted and no clumps or damp spots remain. Skip bleach, fabric softener and ironing.',
+  roomSlug: 'laundry-care',
+  subCategory: 'delicates',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 09, 2026',
+  publishedAt: 'Nov 09, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  safetyWarnings: [
+    'Follow the care label sewn into your jacket for water temperature and dryer settings. Nikwax tells owners to follow the garment label.',
+    'Do not use bleach, fabric softener or an iron on a down jacket. Outdoor Research lists all three as things to avoid, and says regular detergent strips the natural oils from down.',
+    'Avoid top-loading washers with a center agitator. Outdoor Research and Nikwax both warn that an agitator can snag the shell fabric or clump the down.',
+    'Make sure the jacket is completely dry before you wear it heavily or store it. Arc\'teryx says it must be fully dry before storage, and damp down clumps and loses warmth.',
+    'Do not put heavy items in the dryer with it. Outdoor Research recommends tennis balls and nothing heavier.',
+  ],
+  materialsNeeded: [
+    'Front-loading washer, or a top-loader without a center agitator',
+    'Down-specific cleaner (for example Nikwax Down Wash Direct or Arc\'teryx Nu Down Detergent)',
+    'Two clean dryer balls or tennis balls',
+    'Optional: mesh laundry bag',
+    'Optional: down waterproofing treatment such as Nikwax Down Proof',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check the Label and Decide If It Needs a Wash',
+      instruction: 'Wash a down jacket when it is dirty, losing loft or starting to clump, not after every wear; Arc\'teryx advises against unnecessary washing. Read the care label for any temperature or dryer limits before you start.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Clear the Detergent Out of Your Washer',
+      instruction: 'Arc\'teryx recommends running an empty rinse cycle first so leftover regular detergent in the drum does not end up in the down.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Prepare the Jacket',
+      instruction: 'Empty the pockets. Close the main zip and any pit zips, open the pocket zips, release the drawcords, and loosen then fasten the cuff Velcro so it cannot snag, as Arc\'teryx describes. A mesh laundry bag adds protection.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wash in a Front-Loader with a Down Cleaner',
+      instruction: 'Put the jacket in a front-loading washer, or a washer without a center agitator, and add a down-specific cleaner in the amount on its bottle; Nikwax uses about 50 mL, one capful, of Down Wash for a jacket. Use a gentle or permanent press cycle. Arc\'teryx specifies 40°C or 104°F, while Outdoor Research says cold; follow your label, which Nikwax says should decide the temperature.',
+      proTip: 'If you only have a top-loader with an agitator, Outdoor Research suggests using a front-loader at a laundromat.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Rinse Twice',
+      instruction: 'Run a second rinse so no cleaner is left in the down. Arc\'teryx calls for a double rinse, and Nikwax suggests rinsing and spinning twice.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Optional: Refresh the Water Repellency',
+      instruction: 'If water no longer beads on the shell, you can run a second cycle with a down waterproofing treatment while the jacket is still wet. Nikwax uses about 150 mL, three capfuls, of Down Proof. Arc\'teryx says a factory water-repellent finish lasts roughly 10 to 20 washes.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Tumble Dry on Low with Dryer Balls',
+      instruction: 'Dry the jacket on low heat with two clean dryer or tennis balls. Arc\'teryx says this can take upwards of three hours, and Nikwax says to keep resetting the timer until the jacket is lump-free and fully dry. Air drying alone will not restore the loft, according to Arc\'teryx.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Check for Clumps, Then Store Loosely',
+      instruction: 'Squeeze the baffles; if you feel clumps or cool damp spots, dry it longer. Store the jacket hanging or in a large breathable bag rather than compressed in a tight stuff sack, as Nikwax recommends.',
+    },
+  ],
+  ifMethodFails: [
+    'If the down is still clumped after drying, it is still wet inside. Keep drying on low with the dryer balls, breaking up clumps by hand between cycles.',
+    'If you cannot machine dry the jacket, Arc\'teryx suggests using its ReBIRD service centre instead of relying on air drying.',
+    'If water stopped beading on the shell, add a down waterproofing cycle such as Nikwax Down Proof the next time you wash it.',
+    'If you only have a top-loader with an agitator, wash the jacket in a front-loader at a laundromat, as Outdoor Research suggests.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you put a down jacket in the washing machine?',
+      answer: 'Yes, in most cases. Arc\'teryx, Outdoor Research and Nikwax all describe machine washing down jackets, ideally in a front-loader or a washer without a center agitator, on a gentle cycle with a down-specific cleaner. Check the care label first.',
+    },
+    {
+      question: 'Can you use regular detergent on a down jacket?',
+      answer: 'It is not recommended. Outdoor Research says regular detergent strips the natural oils from down, and Arc\'teryx does not recommend household detergents. Use a down-specific cleaner instead.',
+    },
+    {
+      question: 'How long does it take to dry a down jacket?',
+      answer: 'Often three hours or more on low heat. Arc\'teryx says drying can take upwards of three hours. Use two dryer or tennis balls and keep drying until the down is fully lofted with no clumps.',
+    },
+    {
+      question: 'Why do you put tennis balls in the dryer with a down jacket?',
+      answer: 'They bounce against the jacket as it tumbles and break up clumps of wet down so it dries evenly and regains its loft. Arc\'teryx and Outdoor Research both recommend dryer or tennis balls, and Outdoor Research says to use nothing heavier.',
+    },
+    {
+      question: 'How often should you wash a down jacket?',
+      answer: 'Only when it needs it, when it is dirty, losing loft or starting to clump, according to Arc\'teryx. Outdoor Research notes that with heavy weekly use, about once a month is reasonable.',
+    },
+    {
+      question: 'Should you dry clean a down jacket?',
+      answer: 'Home washing is fine for most down jackets. Outdoor Research says some companies recommend professional down cleaning but washing it yourself works well. Follow the care label if it says otherwise.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-down-jacket-1',
+      title: 'Down home wash guide',
+      publisher: 'Arc\'teryx',
+      url: 'https://arcteryx.com/us/en/rebird/wash/down-home-wash-guide',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-09',
+      verifiedClaim: 'Wash when dirty, losing loft or clumping and avoid unnecessary washing; run an empty rinse cycle first; close main and pit zips, open pocket zips, release drawcords, fasten Velcro; front-loader recommended; use a down detergent, household detergents not recommended; 40°C or 104°F gentle or permanent press cycle; double rinse; tumble dry low with two dryer or tennis balls, which can take upwards of three hours; dry fully before storage; air drying will not restore loft; water repellency lasts about 10 to 20 washes.',
+    },
+    {
+      id: 'src-down-jacket-2',
+      title: 'How to Wash Your Down Jacket',
+      publisher: 'Outdoor Research',
+      url: 'https://www.outdoorresearch.com/blog/how-to-wash-your-down-jacket',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-09',
+      verifiedClaim: 'Use a front-loader, as a top-loader agitator can snag fabric or clump down, or go to a laundromat; cold water with a down-specific cleaner because regular detergent strips the oils from down; rinse thoroughly; dry on low over several cycles with tennis balls and nothing heavier; no bleach, fabric softener or iron; washing at home is fine; about once a month with heavy weekly use.',
+    },
+    {
+      id: 'src-down-jacket-3',
+      title: 'How to Wash and Waterproof a Down Jacket',
+      publisher: 'Nikwax',
+      url: 'https://nikwax.com/en-us/posts/how-to-wash-a-down-jacket/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-09',
+      verifiedClaim: 'Use a detergent-free down cleaner; no special washer needed unless it has a center-mount agitator; rinse and spin twice; optionally run a second cycle with Down Proof; tumble dry with one or two clean tennis balls and keep resetting the timer until lump-free and dry; store hanging or in a large breathable bag; follow the garment label for temperature.',
+    },
+    {
+      id: 'src-down-jacket-4',
+      title: 'Get DOWN with yo\' bad self! (Or how to clean your down jacket)',
+      publisher: 'Nikwax',
+      url: 'https://nikwax.com/en-us/posts/get-down-with-yo-bad-self/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-09',
+      verifiedClaim: 'Wash in a front-loader with about 50 mL or one capful of Down Wash; for waterproofing, run a second cycle with about 150 mL or three capfuls of Down Proof while the jacket is still wet.',
+    },
+  ],
+  seo: {
+    title: 'How to Wash a Down Jacket (Washer and Dryer Guide)',
+    description: 'How to wash a down jacket: zip it, use a front-loader and a down cleaner, rinse twice, then tumble dry on low with dryer balls until no clumps remain.',
+    canonical: 'https://housecarewiki.com/guides/how-to-wash-a-down-jacket',
+    indexable: true,
+    focusKeyword: 'how to wash a down jacket',
+  },
+};
+
+export default article;

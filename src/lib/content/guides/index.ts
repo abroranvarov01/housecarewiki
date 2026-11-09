@@ -139,6 +139,14 @@ import gHowToGetGumOutOfClothes from './how-to-get-gum-out-of-clothes';
 import gHowToGetCandleWaxOutOfClothes from './how-to-get-candle-wax-out-of-clothes';
 import gHowToGetSunscreenStainsOutOfClothes from './how-to-get-sunscreen-stains-out-of-clothes';
 import gHowToGetPoopStainsOutOfBabyClothes from './how-to-get-poop-stains-out-of-baby-clothes';
+import gHowToCleanARoastingPan from './how-to-clean-a-roasting-pan';
+import gHowToCleanAnEnameledDutchOven from './how-to-clean-an-enameled-dutch-oven';
+import gHowToCleanTarnishedSilverware from './how-to-clean-tarnished-silverware';
+import gHowToWashADownComforter from './how-to-wash-a-down-comforter';
+import gHowToWashADownJacket from './how-to-wash-a-down-jacket';
+import gHowToRemoveSaltStainsFromHardwoodFloors from './how-to-remove-salt-stains-from-hardwood-floors';
+import gHowToGetSaltStainsOutOfCarpet from './how-to-get-salt-stains-out-of-carpet';
+import gCanYouUseASteamMopOnHardwoodFloors from './can-you-use-a-steam-mop-on-hardwood-floors';
 
 // One file per guide: each is a self-contained, source-backed page. Order here is the order on hub pages.
 export const STAIN_GUIDES: Article[] = [
@@ -334,4 +342,16 @@ export const BATCH14_GUIDES: Article[] = [
   gHowToGetCandleWaxOutOfClothes,
   gHowToGetSunscreenStainsOutOfClothes,
   gHowToGetPoopStainsOutOfBabyClothes,
+];
+
+// Batch 15: holiday cookware, down bedding and outerwear, winter salt and floors.
+export const BATCH15_GUIDES: Article[] = [
+  gHowToCleanARoastingPan,
+  gHowToCleanAnEnameledDutchOven,
+  gHowToCleanTarnishedSilverware,
+  gHowToWashADownComforter,
+  gHowToWashADownJacket,
+  gHowToRemoveSaltStainsFromHardwoodFloors,
+  gHowToGetSaltStainsOutOfCarpet,
+  gCanYouUseASteamMopOnHardwoodFloors,
 ];

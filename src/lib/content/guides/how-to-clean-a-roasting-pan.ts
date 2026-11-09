@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-roasting-pan',
+  slug: 'how-to-clean-a-roasting-pan',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a roasting pan',
+  subtitle: 'Let it cool, pour off the fat, soak with hot soapy water, then boil water and vinegar or use Bar Keepers Friend for the burnt-on drippings. The method for stainless steel roasters, what changes for nonstick, and the mistakes that warp or scratch a pan.',
+  excerpt: 'Cool the pan, pour off the grease, soak in hot soapy water, then boil water and vinegar or use a stainless cleanser on what is left.',
+  quickAnswer: 'Let the roasting pan cool completely, never plunging a hot pan into cold water, then tip the liquid fat into a container. Fill it with hot water and a little dish soap, let it soak, and loosen the drippings with a wooden or silicone spatula and a non-abrasive scrubber. For burnt-on residue in a stainless steel pan, Made In suggests covering the bottom with equal parts water and white vinegar, bringing it to a boil and scraping as it loosens, or using a stainless cleanser such as Bar Keepers Friend on a non-abrasive pad. Skip steel wool and bleach, and dry the pan completely before you store it.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: ['stainless-steel'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 09, 2026',
+  publishedAt: 'Nov 09, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  safetyWarnings: [
+    'Let the pan cool before washing. Tramontina warns that putting a hot roasting pan in cold water can warp it.',
+    'Do not use steel wool or overly abrasive scrubbers. Made In says they leave permanent scratches on stainless steel, and Le Creuset says no metal or abrasive pads on its nonstick pans.',
+    'Do not use bleach on a stainless steel roasting pan, which Made In lists among things to avoid.',
+    'When boiling water and vinegar in the pan, keep the heat moderate, stay with the pan, and use oven mitts to move it.',
+  ],
+  materialsNeeded: [
+    'Heatproof container for the fat',
+    'Hot water and liquid dish soap',
+    'Wooden or silicone spatula',
+    'Non-abrasive scrubber or the rough side of a sponge',
+    'Distilled white vinegar',
+    'Baking soda',
+    'Stainless steel cleanser such as Bar Keepers Friend (stainless pans only)',
+    'Dish towel for drying',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Let the Pan Cool',
+      instruction: 'Set the roasting pan aside until it is cool enough to handle. Tramontina says always let the pan cool before washing, because a hot pan dropped into cold water can warp.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Pour Off the Fat and Scrape Loose Bits',
+      instruction: 'Tip the liquid fat into a container, then use a stiff wooden or silicone spatula to push out loose food. If you want gravy, this is the moment to deglaze the browned bits instead of washing them away.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Soak in Hot Soapy Water',
+      instruction: 'Fill the pan with hot water and a little dish soap and let it sit. Made In suggests a few minutes for a roasting pan, and Le Creuset suggests 10 to 15 minutes in warm water for stainless pans. Do not leave it dirty for hours; Tramontina notes that salty or acidic food left in the pan can cause light pitting.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Scrub with a Non-Abrasive Pad',
+      instruction: 'Scrub the softened residue with a kitchen scrubber, nylon pad or the rough side of a sponge, then rinse. For nonstick roasters, use only soft sponges and never scrape metal tools across the coating, as Le Creuset advises.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Boil Off Burnt-On Drippings (Stainless Steel)',
+      instruction: 'If blackened residue is still there, Made In suggests covering the bottom of the pan with equal parts water and distilled white vinegar, bringing it to a boil on the stovetop, and scraping with a wooden or silicone tool as it loosens. Let it cool, then rinse.',
+      proTip: 'A roasting pan often spans two burners. Set it across both and keep the liquid at a gentle boil.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Use a Paste or Cleanser on What Remains',
+      instruction: 'For stains on stainless steel, cover them with baking soda, scrub it into a paste, then add a little white vinegar, scrub and rinse, which is another Made In method. Or apply a small amount of a stainless cleanser such as Bar Keepers Friend with a non-abrasive pad, as Made In and Tramontina both mention, then rinse well.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Clean the Rack and Dry Everything',
+      instruction: 'Soak the roasting rack for an extended period, then wash it by hand or in the dishwasher if the maker allows it, as Tramontina describes. Dry the pan and rack completely before storing, and put a cloth between stacked pans to prevent scratches.',
+    },
+  ],
+  ifMethodFails: [
+    'If burnt residue is still stuck on a stainless pan, repeat the water and vinegar boil, then use Bar Keepers Friend on a non-abrasive pad.',
+    'If the stainless steel has a rainbow or cloudy discoloration, Tramontina recommends a nonabrasive pad and a stainless cleanser such as Bar Keepers Friend.',
+    'If you have a nonstick roaster, skip abrasive pads and cleansers, as Le Creuset advises; repeat the warm soak and soft sponge instead, and check the maker\'s care guide.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How do you get burnt grease off a roasting pan?',
+      answer: 'Soak it in hot soapy water first. For stainless steel, Made In suggests boiling equal parts water and white vinegar in the pan and scraping with a wooden or silicone tool, or using a baking soda paste followed by vinegar, or a cleanser such as Bar Keepers Friend on a non-abrasive pad.',
+    },
+    {
+      question: 'Can you put a roasting pan in the dishwasher?',
+      answer: 'It depends on the pan. Tramontina says its stainless roasting pan and rack are dishwasher safe but should be dried right after the rinse cycle or washed by hand to keep the finish, and Le Creuset says its uncoated stainless pans are dishwasher safe and recommends hand washing nonstick. Check your own pan\'s care instructions.',
+    },
+    {
+      question: 'Can you use Bar Keepers Friend on a roasting pan?',
+      answer: 'On stainless steel, yes. Made In and Tramontina both mention Bar Keepers Friend for stainless roasting pans, used in a small amount with a non-abrasive pad. Do not use powdered cleansers on nonstick coatings.',
+    },
+    {
+      question: 'Can you use steel wool on a roasting pan?',
+      answer: 'No. Made In says steel wool and overly abrasive scrubbers leave permanent scratches on stainless steel, and Le Creuset says no metal pads on its pans. Use a nylon scrubber or the rough side of a sponge instead.',
+    },
+    {
+      question: 'Why did my roasting pan warp?',
+      answer: 'A common cause is thermal shock. Tramontina warns that putting a hot roasting pan into cold water can warp it, so let it cool before washing.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-roasting-pan-1',
+      title: 'How to Clean and Care for a Roasting Pan',
+      publisher: 'Made In Cookware',
+      url: 'https://madeincookware.com/blogs/roasting-pan-care-tips',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-09',
+      verifiedClaim: 'Let the pan cool and pour off liquid grease; loosen debris with a stiff spatula; soak in hot water with a little dish soap for a few minutes; use Made In cleaner or Bar Keepers Friend in a small amount; avoid steel wool and overly abrasive scrubbers, which leave permanent scratches; for stubborn stains use baking soda then vinegar, or boil a 1:1 water and white vinegar mix and scrape with wood or silicone; avoid bleach; dry fully and place a cloth between stacked pans.',
+    },
+    {
+      id: 'src-roasting-pan-2',
+      title: 'Gourmet Roasting Pans 18/10 Stainless Steel Use and Care Instructions',
+      publisher: 'Tramontina USA',
+      url: 'https://images.thdstatic.com/catalog/pdfImages/5b/5ba8e0aa-47f9-4d9b-80cc-5d1ef4b6dd0d.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-09',
+      verifiedClaim: 'Do not put a hot pan in cold water, as it can warp; always let it cool before washing; do not leave food in the pan for long, as very salty or acidic food can cause superficial pitting; pan and rack are dishwasher safe but should be hand-dried after the rinse cycle or hand-washed; use a nonabrasive pad and a stainless cleanser such as Bar Keepers Friend for discoloration; soak the rack for stuck-on food.',
+    },
+    {
+      id: 'src-roasting-pan-3',
+      title: 'Le Creuset Care And Use',
+      publisher: 'Le Creuset',
+      url: 'https://www.lecreuset.com/care-and-use.html',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-09',
+      verifiedClaim: 'Soak stainless pans 10 to 15 minutes in warm water and use nylon or soft abrasive pads, never metallic pads or harsh cleaners; uncoated stainless is dishwasher safe; nonstick is dishwasher safe but hand washing is recommended, with no metal or abrasive pads, and metal tools must never be scraped across the coating.',
+    },
+    {
+      id: 'src-roasting-pan-4',
+      title: 'How to Clean a Burnt Stainless Steel Pan',
+      publisher: 'Made In Cookware',
+      url: 'https://madeincookware.com/blogs/how-to-clean-burnt-stainless-pan',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-09',
+      verifiedClaim: 'Cover charred food with water and dish soap, boil and scrape gently with a wooden spoon; then use Bar Keepers Friend with dish soap and scrub, repeating as needed; baking soda followed by a little vinegar is an alternative.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Roasting Pan (Burnt-On Drippings)',
+    description: 'How to clean a roasting pan: cool it, pour off the fat, soak, then boil water and vinegar or use Bar Keepers Friend on burnt drippings. Nonstick and rack tips.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-roasting-pan',
+    indexable: true,
+    focusKeyword: 'how to clean a roasting pan',
+  },
+};
+
+export default article;
