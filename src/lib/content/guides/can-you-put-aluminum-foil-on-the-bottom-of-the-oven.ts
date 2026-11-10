@@ -1,0 +1,148 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-can-you-put-aluminum-foil-on-the-bottom-of-the-oven',
+  slug: 'can-you-put-aluminum-foil-on-the-bottom-of-the-oven',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'Can you put aluminum foil on the bottom of the oven?',
+  subtitle: 'No. GE, LG, Samsung and Reynolds all say not to line the oven floor with foil: it traps heat, can melt onto the bottom for good, and in gas ovens can block the air openings. Where to put foil instead to catch holiday drips, and what to do if it has already fused.',
+  excerpt: 'No. Foil on the oven floor traps heat, can melt and permanently fuse to it, and can block gas oven vents. Put a small sheet on a lower rack instead.',
+  quickAnswer: 'No. GE Appliances, LG, Samsung and Reynolds all advise against lining the bottom of an oven with aluminum foil. GE says foil can trap heat or melt, permanently damaging the oven bottom and creating a shock or fire hazard, and in gas ovens covering the slots and holes in the floor can block airflow and risk carbon monoxide. To catch drips, put a sheet of foil a few inches larger than the pan on a lower rack several inches below the food, or set the dish on a cookie sheet. Never cover a whole rack with foil.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 10, 2026',
+  publishedAt: 'Nov 10, 2026',
+  readingTime: '4 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  safetyWarnings: [
+    'Do not line the bottom of an electric oven with foil. GE says it can trap heat or melt and create a shock or fire hazard.',
+    'In a gas oven, never cover any slots, holes or passages in the oven bottom. GE warns that blocking airflow may cause carbon monoxide poisoning.',
+    'Do not cover an entire oven rack with foil. GE and LG say it disrupts heat circulation and leads to poor baking.',
+    'Do not line a warming or baking drawer with foil either; GE and LG both advise against it.',
+    'GE says damage from improper use of foil is not covered by its product warranty.',
+    'If you already have foil on the oven floor, take it out before you use the oven again, as Samsung advises.',
+  ],
+  materialsNeeded: [
+    'Heavy-duty aluminum foil',
+    'Rimmed cookie sheet or baking sheet',
+    'Oven mitts',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Take Any Foil Off the Oven Floor',
+      instruction: 'If you have foil lining the oven bottom, remove it once the oven is completely cool. Samsung says to remove foil from the bottom of a range immediately because it disrupts airflow and heat distribution and can cause overheating.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Put a Drip Sheet on a Lower Rack',
+      instruction: 'To catch spills from a pie or casserole, place a sheet of heavy-duty foil on a lower rack several inches below the food. Reynolds says to make it only a few inches larger than the baking pan so heat can circulate.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Leave Space Around the Edges',
+      instruction: 'Use no more foil than you need and keep it at least 1 and a half inches from the oven walls, as GE advises, so air and heat can move around it. Never cover the whole rack.',
+      proTip: 'GE also suggests setting a dish that may bubble over on a cookie sheet instead of using foil at all.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Skip Silicone Oven Liners on the Floor',
+      instruction: 'GE says the same rules apply to silicone oven liners: lining the oven bottom traps heat below and disrupts oven performance.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Check for Fused Foil',
+      instruction: 'If foil has already melted onto the oven bottom, do not try to scrape or chip it off. GE says it cannot provide suggestions for removing fused foil and recommends booking service.',
+    },
+  ],
+  ifMethodFails: [
+    'If baked goods are coming out underdone after you lined the oven with foil, LG says covering the oven bottom or racks hinders even heat distribution; remove it and bake again.',
+    'If foil has fused to the oven floor, contact the manufacturer or a repair service; GE says it cannot recommend a way to remove it.',
+    'On a GE double oven with fused foil in one cavity, GE says the other oven can still be used, including self-clean, as long as it has no foil inside.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Why can\'t you put foil on the bottom of the oven?',
+      answer: 'GE says foil on the oven floor traps heat below, disrupts oven performance and can melt, permanently damaging the oven bottom and creating a shock or fire hazard. In gas ovens it can block the openings in the floor that supply air.',
+    },
+    {
+      question: 'Where should you put foil to catch drips in the oven?',
+      answer: 'On a lower rack several inches below the food, in a sheet only a few inches larger than the pan, as Reynolds and GE describe. GE says to keep foil at least 1 and a half inches from the oven walls.',
+    },
+    {
+      question: 'Can you put foil on the bottom of a gas oven?',
+      answer: 'No. GE and LG say never to cover the slots, holes or passages in a gas oven bottom. GE warns that blocking airflow may cause carbon monoxide poisoning.',
+    },
+    {
+      question: 'How do you get melted foil off the bottom of an oven?',
+      answer: 'GE says it cannot provide suggestions for removing foil that has fused to the oven bottom and recommends service. Avoid scraping, which can damage the surface further.',
+    },
+    {
+      question: 'Are oven liners safe on the oven floor?',
+      answer: 'GE says silicone oven liners on the oven bottom cause the same problem as foil, trapping heat and disrupting oven performance. Put any liner on a lower rack instead, following its maker\'s instructions.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-oven-foil-1',
+      title: 'Range and Wall Oven: Using Aluminum Foil or Silicone Liners',
+      publisher: 'GE Appliances',
+      url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=17043',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-10',
+      verifiedClaim: 'Do not line an electric oven bottom with foil, it can trap heat or melt, creating a shock or fire hazard; in gas ovens never cover slots, holes or passages in the bottom, blocking airflow may cause carbon monoxide poisoning; lining the bottom traps heat and disrupts performance, same for silicone liners; foil can permanently damage the oven bottom; put foil on a lower rack several inches below food, never cover a rack entirely, keep it 1.5 inches from walls; damage from improper foil use is not covered by warranty; do not line warming drawers.',
+    },
+    {
+      id: 'src-oven-foil-2',
+      title: 'Range and Wall Oven: Aluminum Foil Fused in Oven',
+      publisher: 'GE Appliances',
+      url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=18205',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-10',
+      verifiedClaim: 'Do not use foil to line the oven bottom; put foil on the lower rack or the pan on a cookie sheet instead; GE cannot provide suggestions for removing fused foil and recommends service; in a double oven the other cavity can still be used, including self-clean, if it has no foil inside.',
+    },
+    {
+      id: 'src-oven-foil-3',
+      title: 'Oven Under Cooking: Gas Ranges',
+      publisher: 'LG Electronics USA',
+      url: 'https://www.lg.com/us/support/help-library/oven-under-cooking-gas-ranges--20150326690854ELR',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-10',
+      verifiedClaim: 'Never cover the bottom of the oven with aluminum foil; do not line the warming drawer; do not block slots, holes or passages in the oven bottom or cover an entire rack; a small sheet on a lower rack may catch spillovers; covering racks hinders even heat distribution and causes poor baking.',
+    },
+    {
+      id: 'src-oven-foil-4',
+      title: 'Everyday Foil',
+      publisher: 'Reynolds Consumer Products',
+      url: 'https://www.reynoldsbrands.com/standard-foil',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-10',
+      verifiedClaim: 'To avoid possible heat damage, Reynolds does not recommend using foil to line the oven bottom; place heavy-duty foil on the rack under the dish, a few inches larger than the pan for heat circulation, to catch drips.',
+    },
+    {
+      id: 'src-oven-foil-5',
+      title: 'Tech Tips: Aluminum Foil in Ranges',
+      publisher: 'Samsung US Community',
+      url: 'https://community.samsung.com/us/conversations/Appliance-Tips/Beyond-Boundaries-Tech-Tips-Aluminum-Foil-in-Ranges/us_3405711',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-10',
+      verifiedClaim: 'Remove foil from the bottom of the range immediately; foil disrupts airflow and heat distribution, can cause overheating and can damage the appliance over time.',
+    },
+  ],
+  seo: {
+    title: 'Can You Put Foil on the Bottom of the Oven? (No)',
+    description: 'Can you put aluminum foil on the bottom of the oven? No: GE, LG and Reynolds say it traps heat, can fuse to the floor and block gas vents. Where to put it.',
+    canonical: 'https://housecarewiki.com/guides/can-you-put-aluminum-foil-on-the-bottom-of-the-oven',
+    indexable: true,
+    focusKeyword: 'can you put aluminum foil on the bottom of the oven',
+  },
+};
+
+export default article;
