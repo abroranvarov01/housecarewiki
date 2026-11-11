@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-keurig',
+  slug: 'how-to-clean-a-keurig',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a Keurig',
+  subtitle: 'Hand-wash the reservoir, lid and drip tray weekly, clear the entrance and exit needles with a paper clip, and descale every 3 months or when the descale light comes on. Step by step from Keurig\'s own Use and Care Guides.',
+  excerpt: 'Weekly hand-wash of removable parts, a paper clip for the needles, and a full descale every 3 months or when the light comes on.',
+  quickAnswer: 'Turn off and unplug the brewer, then hand-wash the water reservoir, lid, drip tray and pod holder funnel in warm, soapy water; Keurig\'s current guides say these parts are not dishwasher safe. Clear the entrance and exit needles with a straightened paper clip, then run two cleansing brews with no pod. Descale every 3 months or when the descale light turns on: pour a full bottle of Keurig Descaling Solution plus one bottle of water into the reservoir, run brews into a large ceramic mug until the add-water light comes on, then refill with fresh water and run rinse brews until the descale light goes off. Never immerse the brewer in water.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 11, 2026',
+  publishedAt: 'Nov 11, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-kitchen.webp',
+  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  safetyWarnings: [
+    'Always turn off and unplug the brewer before cleaning it, and never immerse the brewer in water or other liquids.',
+    'There are sharp needles above the pod holder and in its bottom. Keep your fingers away from them and use a straightened paper clip, not your finger, to clear them.',
+    'Use a large ceramic mug, not a paper cup, to catch hot water and descaling solution.',
+    'Keurig\'s current Use and Care Guides state that parts are not dishwasher safe. Hand-wash the reservoir, lid and drip tray unless your own model\'s guide says otherwise.',
+    'Clean the exterior with a damp, soapy, non-abrasive cloth. On metal trim, Keurig specifies a non-vinegar glass cleaner and a paper towel.',
+  ],
+  materialsNeeded: [
+    'Warm water and mild dish soap',
+    'Damp, lint-free, non-abrasive cloth',
+    'Straightened paper clip',
+    'Keurig Descaling Solution (one bottle) or descaling pouch',
+    'Large ceramic mug',
+    'Non-vinegar glass cleaner and a paper towel (for metal trim)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Turn Off and Unplug the Brewer',
+      instruction: 'Switch the brewer off and unplug it before any cleaning. Never put the brewer itself under the tap or in water.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Hand-Wash the Reservoir, Lid and Drip Tray Weekly',
+      instruction: 'Remove the water reservoir and lid and slide out the drip tray, keeping it level because it can hold up to 8 ounces of overflow. Keurig\'s K-Mini Go guide says to hand-wash these parts in warm, soapy water weekly. Rinse well. Do not dry the inside of the reservoir with a cloth, which can leave lint; let it air-dry.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Remove and Wash the Pod Holder Funnel',
+      instruction: 'Lift the handle, then push up on the pod holder from underneath until it releases. Pop the funnel off the bottom and wash it in warm, soapy water. Mind the sharp needle in the bottom of the holder.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Clear the Exit Needle',
+      instruction: 'With the funnel detached, insert a straightened paper clip into the exit needle at the bottom of the pod holder and move it around to loosen trapped grounds. Rinse the holder and put the funnel and holder back.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Clear the Entrance Needles',
+      instruction: 'Hold the handle up, push a straightened paper clip into each of the entrance needle holes on the underside of the lid and move it around. Then plug the brewer in and run two cleansing brews with water only and no pod. Keurig\'s K-Express guide also recommends this when switching from coffee to tea or cocoa.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Descale Every 3 Months or When the Light Comes On',
+      instruction: 'Keurig\'s current guides call for descaling every 3 months or when the descale notification turns on. Empty the reservoir, pour in the entire bottle of Keurig Descaling Solution, then fill the empty bottle with water and add that too. Put a large ceramic mug on the drip tray, enter descale mode as your model\'s guide describes (on the K-Supreme Plus, hold the 8 oz and 12 oz buttons for 3 seconds with the brewer plugged in and off), and run brews, discarding each one, until the add-water light comes on.',
+      proTip: 'Some foaming during descaling is normal, according to Keurig. The full process takes about 15 to 20 minutes.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Rinse Until the Descale Light Turns Off',
+      instruction: 'Rinse the reservoir, refill it to the MAX line with fresh water, and run rinse brews into the mug until the descale notification turns off. Keurig notes the full procedure must be completed for the light to go off. Wipe the exterior with a damp, soapy, non-abrasive cloth to finish.',
+    },
+  ],
+  ifMethodFails: [
+    'If the descale light is still on afterward, run the full descaling procedure again; Keurig says to repeat it if the brewer still shows Descale.',
+    'If a heavily scaled brewer will not fill during descaling, rinse the solution out of the reservoir. If that does not help, Keurig suggests leaving the brewer unplugged for at least 30 minutes before trying again.',
+    'If you still get a partial cup after descaling twice, clean both needles again with a paper clip, and contact Keurig Customer Service if the problem continues.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'How often should you descale a Keurig?',
+      answer: 'Keurig\'s current Use and Care Guides say every 3 months, or whenever the descale notification turns on. An older Keurig descaling sheet gave a range of every 3 to 6 months.',
+    },
+    {
+      question: 'Can you descale a Keurig with vinegar?',
+      answer: 'Keurig\'s current guides specify Keurig Descaling Solution or a descaling pouch, and that is the safest choice for newer brewers. An older Keurig instruction sheet for classic K-Cup brewers did allow undiluted white vinegar, so check the guide for your exact model before using it.',
+    },
+    {
+      question: 'Are Keurig parts dishwasher safe?',
+      answer: 'On current models, no. Keurig\'s K-Mini Go and K-Express guides state that parts are not dishwasher safe and say to hand-wash the reservoir, lid and drip tray in warm, soapy water.',
+    },
+    {
+      question: 'How do you clean the Keurig needle?',
+      answer: 'Unplug the brewer and use a straightened paper clip. For the exit needle, remove the pod holder, detach the funnel and work the clip into the needle at the bottom. For the entrance needles, lift the handle and push the clip into each hole on the underside. Then run two cleansing brews without a pod.',
+    },
+    {
+      question: 'How do you turn off the descale light on a Keurig?',
+      answer: 'Complete the full descaling procedure, including the fresh-water rinse brews. Keurig says the light only turns off after the whole process is finished; if it stays on, repeat the procedure.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-keurig-1',
+      title: 'K-Supreme Plus Use & Care Guide',
+      publisher: 'Keurig',
+      url: 'https://dam.keurig.com/content/dam/public-assets/kcom_support/FINAL_KSupremePlus_UCGuide.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-11',
+      verifiedClaim: 'Turn off and unplug before cleaning and never immerse the brewer; clean metal with a non-vinegar glass cleaner and plastic with a damp, soapy, non-abrasive cloth; let the reservoir air-dry; the drip tray holds up to 8 ounces; remove the pod holder and funnel, clear the exit and entrance needles with a straightened paper clip and run two cleansing brews; sharp needles warning; descale every 3 months or when the notification turns on using a full bottle of descaling solution plus a bottle of water and a ceramic mug, then rinse brews until the light turns off; foaming is natural; if it will not fill, rinse and unplug at least 30 minutes.',
+    },
+    {
+      id: 'src-keurig-2',
+      title: 'K-Mini Go Use & Care Guide',
+      publisher: 'Keurig',
+      url: 'https://dam.keurig.com/content/dam/public-assets/kcom_support/K-Mini_Go_Use_and_Care_Guide.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-11',
+      verifiedClaim: 'Hand-wash the water reservoir, lid and drip tray weekly in warm, soapy water; parts are not dishwasher safe; descale every 3 months or when the descale notification turns on.',
+    },
+    {
+      id: 'src-keurig-3',
+      title: 'K-Express Use & Care Guide',
+      publisher: 'Keurig',
+      url: 'https://dam.keurig.com/content/dam/public-assets/kcom_support/K-Express%20Use%20and%20Care%20Guide.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-11',
+      verifiedClaim: 'The reservoir is hand wash only and parts are not dishwasher safe; the full descaling procedure must be completed to turn off the descale light; clean the needles and run two cleansing brews when switching from coffee to tea or cocoa; descale every 3 months.',
+    },
+    {
+      id: 'src-keurig-4',
+      title: 'Descaling Your Keurig Brewer',
+      publisher: 'Keurig',
+      url: 'https://www.keurig.com/medias/Descaling-Instructions.pdf?context=bWFzdGVyfGFjY2Vzc29yaWVzLXVzZXItZ3VpZGUtcGRmc3wyMjcyOTc1fGFwcGxpY2F0aW9uL3BkZnxhY2Nlc3Nvcmllcy11c2VyLWd1aWRlLXBkZnMvaDczL2hmMi8xNTI5NTk1ODcxMjM1MC5wZGZ8NzNjNjZiNjFkNzllM2YwMzAwYmE0NmJjNGE4ODRlYzY4ZTE3NTRkMTU0ZmRmYjFmOGQ3OTg4ZGQ2N2JlMGQ2Yg',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-11',
+      verifiedClaim: 'Older multi-model sheet recommending descaling every 3 to 6 months; classic K-Cup brewers could be descaled with at least 48 oz of undiluted white vinegar; repeat the procedure if the brewer still shows Descale.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Keurig (Needles, Parts and Descaling)',
+    description: 'How to clean a Keurig: hand-wash the reservoir and drip tray, clear the needles with a paper clip, and descale every 3 months or when the light comes on.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-keurig',
+    indexable: true,
+    focusKeyword: 'how to clean a keurig',
+  },
+};
+
+export default article;

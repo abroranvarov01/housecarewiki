@@ -155,6 +155,14 @@ import gCanYouPutAluminumFoilOnTheBottomOfTheOven from './can-you-put-aluminum-f
 import gHowToWashAWoolSweater from './how-to-wash-a-wool-sweater';
 import gHowToCleanUggBoots from './how-to-clean-ugg-boots';
 import gHowToGetTreeSapOutOfClothes from './how-to-get-tree-sap-out-of-clothes';
+import gCanYouUseVinegarOnHardwoodFloors from './can-you-use-vinegar-on-hardwood-floors';
+import gHowToWashPillows from './how-to-wash-pillows';
+import gHowToCleanAHumidifier from './how-to-clean-a-humidifier';
+import gHowToCleanADryerVent from './how-to-clean-a-dryer-vent';
+import gHowToCleanFireplaceGlass from './how-to-clean-fireplace-glass';
+import gHowToGetRidOfCondensationOnWindows from './how-to-get-rid-of-condensation-on-windows';
+import gHowToCleanAKeurig from './how-to-clean-a-keurig';
+import gHowToCleanAKitchenaidStandMixer from './how-to-clean-a-kitchenaid-stand-mixer';
 
 // One file per guide: each is a self-contained, source-backed page. Order here is the order on hub pages.
 export const STAIN_GUIDES: Article[] = [
@@ -374,4 +382,16 @@ export const BATCH16_GUIDES: Article[] = [
   gHowToWashAWoolSweater,
   gHowToCleanUggBoots,
   gHowToGetTreeSapOutOfClothes,
+];
+
+// Batch 17: winter humidity and heating (humidifier, dryer vent, fireplace glass, window condensation), holiday kitchen appliances, wood floors, pillows.
+export const BATCH17_GUIDES: Article[] = [
+  gCanYouUseVinegarOnHardwoodFloors,
+  gHowToWashPillows,
+  gHowToCleanAHumidifier,
+  gHowToCleanADryerVent,
+  gHowToCleanFireplaceGlass,
+  gHowToGetRidOfCondensationOnWindows,
+  gHowToCleanAKeurig,
+  gHowToCleanAKitchenaidStandMixer,
 ];
