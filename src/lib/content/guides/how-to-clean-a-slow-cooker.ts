@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-slow-cooker',
+  slug: 'how-to-clean-a-slow-cooker',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a slow cooker',
+  subtitle: 'Unplug and cool it, wash the stoneware and lid in hot soapy water or the dishwasher, lift baked-on food with Crockpot\'s vinegar and baking soda soak, and only wipe the heating base. Based on Crockpot and Hamilton Beach care instructions.',
+  excerpt: 'Unplug and cool, wash the crock and lid, use vinegar and baking soda on baked-on food, and never immerse the heating base.',
+  quickAnswer: 'Turn the slow cooker off, unplug it and let it cool, and never pour cold water into hot stoneware. Wash the removable crock and lid in hot, soapy water or the dishwasher, using a sponge or rubber spatula instead of scouring pads. For baked-on residue, Crockpot suggests filling the crock with water above the food line, adding white vinegar and baking soda, about 1 cup each for a 6-quart cooker, and running it on LOW for 1 hour before scrubbing. Wipe the heating base with a damp, soapy cloth and dry it, but never immerse it.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 12, 2026',
+  publishedAt: 'Nov 12, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  safetyWarnings: [
+    'Always turn the slow cooker off, unplug it and let it cool before cleaning.',
+    'Never immerse the heating base, cord or plug in water or any other liquid. Crockpot and Hamilton Beach both warn of electrical shock.',
+    'Avoid sudden temperature changes. Do not wash hot stoneware with cold water or set a hot crock or lid in cold water or on a wet surface; ceramic can crack.',
+    'Do not use abrasive cleaners or metal scouring pads on the stoneware or lid.',
+    'Do not use a crock or lid that is chipped, cracked or severely scratched, as Hamilton Beach advises.',
+    'Hamilton Beach says not to use the dishwasher\'s Sanitize setting on its crock and lid, because the high temperatures could damage them.',
+  ],
+  materialsNeeded: [
+    'Hot water and dish soap',
+    'Soft sponge, cloth or rubber spatula',
+    'Distilled white vinegar',
+    'Baking soda',
+    'Oven mitts',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Turn It Off, Unplug It and Let It Cool',
+      instruction: 'Switch the slow cooker off, unplug it and let the crock cool before cleaning. Use oven mitts to lift out the crock if it is still warm.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Wash the Stoneware and Lid',
+      instruction: 'Wash the removable stoneware and the lid in hot, soapy water, or put them in the dishwasher. Use a sponge, cloth or rubber spatula to lift residue; Crockpot says not to use scouring pads or abrasive cleaners.',
+      proTip: 'Wait until the crock has cooled before adding water. Cold water on hot stoneware can crack it.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Loosen Baked-On Food with Vinegar and Baking Soda',
+      instruction: 'For stubborn residue, fill the crock with water to just above the food line. Add 1/2 cup of distilled white vinegar for a 3-quart cooker or 1 cup for a 6-quart cooker, then slowly pour in the same amount of baking soda and let the bubbling settle. Cover and set it on LOW for 1 hour, as Crockpot recommends.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Scrub, Cool and Wash Again',
+      instruction: 'Scrub the loosened residue with a soft sponge. Let the cooker cool, then wash the crock in the sink with warm, soapy water, rinse and dry.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Remove Water Spots with Vinegar',
+      instruction: 'To remove water spots and light stains on the stoneware, wipe them with a non-abrasive cleaner or vinegar, then rinse.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wipe the Heating Base',
+      instruction: 'Clean the outside and inside of the heating base with a soft cloth dampened in warm, soapy water, then wipe it dry. Do not use abrasive cleaners, and never immerse the base.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Dry and Store',
+      instruction: 'Let all parts dry completely on the counter before reassembling. Hamilton Beach says not to clip the lid on during storage.',
+    },
+  ],
+  ifMethodFails: [
+    'If residue remains after one vinegar and baking soda cycle, let the crock cool, repeat the soak, and scrub again with a soft sponge or rubber spatula.',
+    'If you find a chip or crack in the crock or lid, stop using it and replace the part.',
+    'To make cleanup easier next time, Crockpot suggests using slow cooker liners.',
+    'If the heating base is stained, wipe it again with a soapy, well-wrung cloth rather than any abrasive product.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you put a slow cooker crock in the dishwasher?',
+      answer: 'Crockpot and Hamilton Beach both say the removable stoneware and lid can go in the dishwasher. Hamilton Beach adds that you should not use the Sanitize setting, because its high temperatures could damage the crock. The heating base never goes in the dishwasher or in water.',
+    },
+    {
+      question: 'How do you get burnt food off a slow cooker?',
+      answer: 'Fill the crock with water just above the food line, add white vinegar and baking soda, 1/2 cup each for a 3-quart or 1 cup each for a 6-quart cooker, cover and run on LOW for 1 hour. Then scrub with a soft sponge, let it cool and wash with warm, soapy water.',
+    },
+    {
+      question: 'Why did my slow cooker crock crack?',
+      answer: 'Sudden temperature changes are a common cause. Crockpot and Hamilton Beach warn not to wash hot stoneware with cold water, set a hot crock on a wet surface, or add refrigerated food to a heated crock.',
+    },
+    {
+      question: 'How do you clean the heating base of a slow cooker?',
+      answer: 'Unplug it and let it cool, then wipe it with a soft cloth dampened in warm, soapy water and dry it. Do not use abrasive cleaners, and never immerse the base in water or any liquid.',
+    },
+    {
+      question: 'Is it safe to reheat leftovers in a slow cooker?',
+      answer: 'The USDA does not recommend it. Refrigerate leftovers within two hours after cooking, reheat them to 165 degrees F, and only then hold them in a preheated slow cooker at 140 degrees F or above.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-slow-cooker-1',
+      title: 'Slow Cooker Cleaning Tips',
+      publisher: 'Crockpot',
+      url: 'https://www.crock-pot.com/slow-cooking-cleaning-tips.html',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Turn off, unplug and cool before cleaning; glass lids and removable stoneware can be washed in hot, soapy water or the dishwasher; no scouring pads or abrasive cleaners, use sponges, cloths or a rubber spatula; use a non-abrasive cleaner or vinegar on stains; do not wash hot stoneware with cold water; never immerse the heating base; deep clean by filling with water above the food line, adding 1/2 cup vinegar and 1/2 cup baking soda for a 3-quart or 1 cup each for a 6-quart, and running on LOW for 1 hour, then scrubbing, cooling and washing; liners ease cleanup.',
+    },
+    {
+      id: 'src-slow-cooker-2',
+      title: 'Cleaning Your Slow Cooker & Stoneware',
+      publisher: 'Crockpot',
+      url: 'https://www.crock-pot.com/on/demandware.store/Sites-crockpot-Site/default/Support-Show?cfid=help-and-how-to-use-cleaning-faq',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Turn off, unplug and cool before cleaning; the lid and removable stoneware can be washed in the dishwasher or hot, soapy water; no abrasive compounds or scouring pads; use a non-abrasive cleaner or vinegar for water spots and stains; stoneware and lid will not withstand sudden temperature changes; clean the outside of the heating base with a soft cloth and warm, soapy water and wipe dry; never immerse the heating base.',
+    },
+    {
+      id: 'src-slow-cooker-3',
+      title: 'Slow Cooker Use & Care Manual (Models 33167, 33608, 33665, 33666)',
+      publisher: 'Hamilton Beach Brands',
+      url: 'https://useandcares.hamiltonbeach.com/files/840290407.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Disconnect power before cleaning and do not immerse cord, plug or base; unplug, cool and use oven mitts to remove the crock; wash lid and crock in hot, soapy water or the dishwasher, but not on the Sanitize setting, which could damage them; wipe the base with a damp cloth and dry; do not clip the lid during storage; avoid sudden temperature changes such as placing a hot crock in cold water or on a wet surface, or adding refrigerated food to a heated crock; do not use a chipped, cracked or severely scratched crock or lid; no abrasive cleansers or metal scouring pads.',
+    },
+    {
+      id: 'src-slow-cooker-4',
+      title: 'Slow Cookers and Food Safety',
+      publisher: 'USDA Food Safety and Inspection Service',
+      url: 'https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/slow-cookers-and-food-safety',
+      type: 'Government Standard',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Begin with a clean cooker, utensils and work area; refrigerate leftovers within two hours after cooking; reheating leftovers in a slow cooker is not recommended; reheat to 165 degrees F, then hold in a preheated slow cooker at least 140 degrees F.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Slow Cooker (Baked-On Food, Base, Crock)',
+    description: 'How to clean a slow cooker: wash the crock and lid once cool, lift baked-on food with Crockpot\'s vinegar and baking soda soak, and only wipe the heating base.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-slow-cooker',
+    indexable: true,
+    focusKeyword: 'how to clean a slow cooker',
+  },
+};
+
+export default article;

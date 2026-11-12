@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-remove-salt-stains-from-leather-boots',
+  slug: 'how-to-remove-salt-stains-from-leather-boots',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to remove salt stains from leather boots',
+  subtitle: 'Brush off the dry salt, wipe the white lines with 1 part vinegar to 2 parts water, wipe again with clean water, dry slowly away from heat, then condition and protect. Steps from Timberland, Clarks, Wolverine and Red Wing care guides.',
+  excerpt: 'Brush off the salt, wipe with 1 part vinegar to 2 parts water, rinse-wipe, air-dry away from heat, then condition.',
+  quickAnswer: 'Let the boots dry, then brush off the loose salt. Mix 1 part vinegar with 2 parts water, as Timberland and Clarks recommend, and wipe the white salt lines with a soft cloth dampened in it. Wipe the residue away with a fresh cloth and clean water, and let the boots air-dry at room temperature, away from radiators, heaters and hair dryers. Once dry, condition smooth leather and add a water and stain protector; on suede and nubuck, brush the nap instead of using conditioner.',
+  roomSlug: 'laundry-care',
+  subCategory: 'delicates',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 12, 2026',
+  publishedAt: 'Nov 12, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-laundry.webp',
+  heroImageAlt: 'Close-up of a white cotton shirt laid on a speckled countertop, its collar band discolored yellow-brown and being brushed with a small wooden-handled bristle brush, with a plant and mixed laundry in the background',
+  safetyWarnings: [
+    'Never dry leather or suede boots with direct heat. Clarks, Wolverine and Red Wing all warn against radiators, heaters, hair dryers and direct sunlight.',
+    'Do not put leather or suede boots in the washing machine. Clarks says never to machine-wash them.',
+    'Do not use oils, conditioners or creams on suede or nubuck. Wolverine says they are for smooth leather only.',
+    'Test conditioner and protector sprays on a hidden spot first. Wolverine notes conditioner may darken some leathers.',
+    'Avoid conditioners, creams or polishes that contain silicone or alcohol, as Wolverine advises.',
+  ],
+  materialsNeeded: [
+    'Soft brush (horsehair for leather, suede or nubuck brush for napped leather)',
+    'Vinegar and water',
+    'Two soft, clean cloths',
+    'Paper or cedar shoe trees for drying',
+    'Leather conditioner (smooth leather only)',
+    'Water and stain protector spray',
+    'Optional: suede eraser bar',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Let the Boots Dry and Brush Off the Salt',
+      instruction: 'If the boots are wet, let them dry at room temperature first. Then brush off as much dry salt as you can with a soft brush. Timberland says to start by brushing off the excess salt.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Mix 1 Part Vinegar to 2 Parts Water',
+      instruction: 'Combine 1 part vinegar with 2 parts water. This is the ratio both Timberland, for salt stains, and Clarks, for cleaning leather boots, give.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Wipe the Salt Lines',
+      instruction: 'Dampen a soft cloth in the solution, wring it out well, and gently rub it over the white salt marks. Timberland says this method works on its smooth leather, nubuck and suede. On suede and nubuck, Clarks suggests dabbing the diluted vinegar onto a cloth and blotting rather than soaking the material.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Wipe Away the Residue',
+      instruction: 'Use a fresh cloth dampened with clean water to remove the vinegar residue, as both Timberland and Clarks recommend.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Dry Slowly at Room Temperature',
+      instruction: 'Stuff the boots with paper or cedar shoe trees to hold their shape and let them dry overnight in a well-ventilated spot. Keep them away from radiators, heaters, hair dryers and direct sunlight.',
+      proTip: 'Use plain paper rather than newspaper inside light-colored suede; Timberland warns the ink may run.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Condition Smooth Leather, Brush Suede',
+      instruction: 'On smooth leather, work in a light coat of leather conditioner, let it dry, and brush off the excess. On suede and nubuck, skip conditioner and brush the nap in one direction with a suede or nubuck brush; an eraser bar can lift remaining marks.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Add a Water and Stain Protector',
+      instruction: 'Finish with a protector spray to help shield the boots from moisture and future salt. Test it on a small or inside area first, especially on suede and nubuck.',
+    },
+  ],
+  ifMethodFails: [
+    'If white lines reappear as the boots dry, salt is still in the leather. Repeat the vinegar wipe and rinse-wipe once the boots are fully dry.',
+    'If smooth leather feels stiff or dry after cleaning, apply another light coat of conditioner. Red Wing notes more is not better, so do not overdo it.',
+    'If suede looks flat or patchy, brush it with the grain and use a suede eraser on remaining marks.',
+    'If the stain still will not shift, take the boots to a shoe repair or leather care professional rather than scrubbing harder.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Does vinegar remove salt stains from leather boots?',
+      answer: 'Yes. Timberland recommends mixing 1 part vinegar with 2 parts water, rubbing it into the salt stain with a soft cloth, wiping away the residue with a fresh cloth, and letting the boots dry overnight in a well-ventilated place.',
+    },
+    {
+      question: 'How do you get salt stains out of suede boots?',
+      answer: 'Brush off the dry salt, then blot the marks with a cloth dampened in diluted vinegar instead of soaking the suede. Let the boots air-dry and brush the nap in one direction. Timberland says its vinegar method works for both suede and nubuck.',
+    },
+    {
+      question: 'Can you dry wet winter boots on a radiator?',
+      answer: 'No. Clarks, Wolverine and Red Wing all say to dry leather boots naturally at room temperature, away from radiators, heaters, hair dryers and direct sunlight. Stuff them with paper or shoe trees to keep their shape.',
+    },
+    {
+      question: 'How often should you condition leather boots in winter?',
+      answer: 'It depends on the brand and use. Wolverine recommends conditioning its leather boots at least once or twice a month, while Red Wing suggests once or twice a year or whenever the leather feels dry. Condition after cleaning off salt, once the boots are dry.',
+    },
+    {
+      question: 'How do you prevent salt stains on boots?',
+      answer: 'Brush boots regularly and apply a water and stain repellent spray, as Timberland suggests. Clarks recommends conditioning and waterproofing leather and suede boots every few months.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-salt-boots-1',
+      title: 'How to remove stains from leather or suede boots',
+      publisher: 'Timberland',
+      url: 'https://www.timberland.com/en-gb/blog/faq/how-to-remove-stains-from-leather-or-suede-boots',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'For salt stains on nubuck and suede: brush off excess salt, mix 1 part vinegar with 2 parts water and rub it in with a soft cloth, wipe away the residue with a fresh cloth, and leave to dry overnight in a well-ventilated place; use an eraser bar on scuffs and brush suede with the fibers; do not stuff suede with newspaper as the ink may run; use a stain repellent spray for protection.',
+    },
+    {
+      id: 'src-salt-boots-2',
+      title: 'How to Clean Shoes: Cleaning Sneakers & Boots',
+      publisher: 'Clarks',
+      url: 'https://www.clarks.com/en-us/editorial/how-to-clean-shoes',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'For leather boots, make a solution of two parts water and one part white vinegar, wipe gently with a dampened cloth, remove it with a cloth dampened with clean water, and dry naturally away from direct heat such as radiators; for suede, blot with diluted vinegar on a cloth and brush in one direction; avoid radiators and hair dryers; never machine-wash leather or suede boots; condition and waterproof every few months.',
+    },
+    {
+      id: 'src-salt-boots-3',
+      title: 'Shoe Care: 1000 Mile',
+      publisher: 'Wolverine',
+      url: 'https://www.wolverine.com/US/en/heritage-accessories-1000-mile-shoe-care/',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Wipe leather with a damp cloth and brush; work in conditioner, let it dry and brush off the excess; test conditioner as it may darken some leathers; do not use oils, sprays or conditioners on suede or nubuck, and test waterproof sprays first; air-dry wet boots without heat; condition leather at least 1 to 2 times per month; avoid products containing silicone or alcohol.',
+    },
+    {
+      id: 'src-salt-boots-4',
+      title: 'Boot Care FAQ',
+      publisher: 'Red Wing Shoes Europe',
+      url: 'https://eu.redwingshoes.com/leather-care/boot-care-faq',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Never dry boots near a radiator, heater or in direct sunlight; dry at room temperature, ideally with cedar boot trees; conditioning is essential but more is not better, about once or twice a year or when the leather feels dry; care is clean, condition, protect.',
+    },
+  ],
+  seo: {
+    title: 'How to Remove Salt Stains from Leather Boots (Vinegar)',
+    description: 'How to remove salt stains from leather boots: brush off the salt, wipe with 1 part vinegar to 2 parts water, air-dry away from heat, then condition and protect.',
+    canonical: 'https://housecarewiki.com/guides/how-to-remove-salt-stains-from-leather-boots',
+    indexable: true,
+    focusKeyword: 'how to remove salt stains from leather boots',
+  },
+};
+
+export default article;

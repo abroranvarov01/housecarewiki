@@ -1,0 +1,153 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-can-you-put-a-yeti-in-the-dishwasher',
+  slug: 'can-you-put-a-yeti-in-the-dishwasher',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'Can you put a YETI in the dishwasher?',
+  subtitle: 'Yes for Rambler drinkware: YETI says tumblers, bottles, mugs, lids and caps are dishwasher safe. Lids go on the top rack, gaskets in the silverware tray, and the MagSlider magnet comes out first. Based on YETI\'s own care pages.',
+  excerpt: 'Rambler drinkware is dishwasher safe. Lids on the top rack, gaskets in the utensil tray, no bleach or abrasives.',
+  quickAnswer: 'Yes. YETI says all Rambler drinkware, including tumblers, bottles, mugs, lids and caps, is dishwasher safe. Put the body upside down on whichever rack it fits, lids and caps on the top rack away from the heat, and gaskets in the silverware tray, and pop the MagSlider piece off the lid first. Do not use bleach or abrasive cleaners on drinkware, and remove the gaskets now and then to wash and dry them separately. Hard coolers are a different product: YETI says to clean those with soap and warm water, not in a dishwasher.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'cabinets-pantry',
+  surfaceSlugs: ['stainless-steel'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 12, 2026',
+  publishedAt: 'Nov 12, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/cat-kitchen.webp',
+  heroImageAlt: 'Hand scrubbing a stainless steel stovetop surround with a yellow and green sponge beside a gas burner, next to a speckled beige stone countertop with a potted herb and a dish rack',
+  safetyWarnings: [
+    'Do not use bleach or abrasive cleaners on Rambler drinkware. YETI\'s drinkware care pages rule both out.',
+    'Do not microwave YETI stainless steel products. YETI warns that fire or personal injury can occur.',
+    'YETI does not recommend putting insulated Rambler products in the freezer, because the vacuum insulation can be lost.',
+    'Do not use cleaning tablets on Rambler caps or lids; YETI says tablets are for the drinkware body only.',
+    'Keep hot drinks below the solid ring under the bottle threads, and do not use straw lids or straw caps with hot beverages, as YETI directs.',
+  ],
+  materialsNeeded: [
+    'Dishwasher, or mild dish soap and warm water',
+    'Bottle brush long enough to reach the bottom',
+    'Soft straw brush (for straw lids)',
+    'Optional: baking soda or vinegar for stains and odors',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Take the Lid Apart',
+      instruction: 'Remove the lid or cap and pull out the gaskets. YETI says to pinch the tumbler lid gasket with two fingers on either side to remove it. On a MagSlider lid, pop the magnetic slider off before washing.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Load the Body Upside Down',
+      instruction: 'Stand the tumbler, bottle or mug body upside down on the top or bottom rack, wherever it fits best. YETI says every Rambler drinkware product is dishwasher safe.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Put Lids on the Top Rack and Gaskets in the Utensil Tray',
+      instruction: 'Place lids and caps on the top rack, away from the heating element. Put gaskets and the MagSlider piece in the silverware or utensil compartment so they do not get lost or fall onto the element.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Or Hand Wash with a Bottle Brush',
+      instruction: 'If you do not have a dishwasher, wash the body, cap and gasket with warm water, mild dish soap and a brush. Clean straws with a soft-bristle brush long enough to reach all the internal surfaces.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Treat Stains and Odors Without Bleach',
+      instruction: 'For coffee stains or smells, YETI suggests sprinkling baking soda or vinegar on the dampened area and letting it sit 5 to 10 minutes before scrubbing and rinsing. If you use YETI cleaning tablets, fill the drinkware with hot water and let it sit 30 minutes, then empty, scrub and rinse. Keep tablets away from lids and caps.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Dry Gaskets Before Reinstalling',
+      instruction: 'Let the gaskets and lid parts dry fully, then reinstall them. YETI recommends removing, washing and drying the gaskets separately for a more thorough clean.',
+    },
+  ],
+  ifMethodFails: [
+    'If a lid still smells after dishwashing, remove the gasket again and wash and dry it separately; trapped moisture under the gasket is the usual source.',
+    'If a stain will not lift with baking soda or vinegar, repeat the soak or use YETI cleaning tablets in the body only.',
+    'If a hard cooler smells, do not try the dishwasher. YETI\'s Tundra care page says to use a solution of 6 parts warm water to 1 part bleach with a sponge, cleaning around the gasket and drain plug.',
+    'If a drink stays warm or cold for much less time than before, the vacuum insulation may be damaged; contact YETI customer support.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Are YETI tumbler lids dishwasher safe?',
+      answer: 'Yes. YETI says its lids and caps, including the MagSlider and StrongHold lids, are dishwasher safe. Put them on the top rack away from the heat, and remove the MagSlider piece and gaskets and place them in the utensil compartment.',
+    },
+    {
+      question: 'Will the dishwasher ruin the color on a YETI?',
+      answer: 'YETI\'s care pages say every part of its drinkware is dishwasher safe and do not set any exception for colored finishes. They do say not to use bleach or abrasive cleaners, so skip scouring pads and harsh powders.',
+    },
+    {
+      question: 'Can you put a YETI cooler in the dishwasher?',
+      answer: 'No. YETI\'s instructions for Tundra hard coolers call for soap and warm water for general cleaning and a 6-to-1 warm water and bleach solution for odors. The dishwasher guidance applies to Rambler drinkware.',
+    },
+    {
+      question: 'Can you microwave or freeze a YETI?',
+      answer: 'No. YETI says not to microwave its stainless steel products because fire or personal injury can occur, and it does not recommend freezing insulated Rambler products because the vacuum can be lost.',
+    },
+    {
+      question: 'How do you get coffee stains out of a YETI?',
+      answer: 'Sprinkle baking soda or vinegar on the dampened stain, let it sit 5 to 10 minutes, scrub and rinse. YETI cleaning tablets in hot water for 30 minutes also work on the body, but not on lids or caps.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-yeti-dishwasher-1',
+      title: 'YETI Rambler FAQ: Bottles, Tumblers, Mugs & Caps',
+      publisher: 'YETI (YETI Europe site)',
+      url: 'https://eu.yeti.com/pages/rambler-faq',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'All Rambler products are dishwasher safe; bottle body upside down on the top or bottom rack; lids and caps on the top rack away from the heat; gaskets in the silverware tray; remove the MagSlider magnet before cleaning; can also be cleaned with dish soap and warm water; do not use bleach or abrasive cleaners; for a thorough clean remove gaskets, wash and dry separately; hot liquids must remain below the solid ring beneath the threads.',
+    },
+    {
+      id: 'src-yeti-dishwasher-2',
+      title: 'YETI Rambler Drinkware FAQ',
+      publisher: 'YETI (YETI Australia site)',
+      url: 'https://au.yeti.com/pages/rambler-drinkware-faq',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'All Rambler Drinkware products are dishwasher safe; lids and caps on the top rack away from the heat; gaskets in the silverware tray; do not use bleach or abrasive cleaners; cleaning tablets: fill with hot water and let sit 30 minutes, not for caps or lids; sprinkle baking soda or vinegar on the dampened area and let sit 5 to 10 minutes; straw lid and bottle straw cap are not intended for hot beverages.',
+    },
+    {
+      id: 'src-yeti-dishwasher-3',
+      title: 'YETI Rambler Cleaning Instructions: Lid & Cap Care',
+      publisher: 'YETI (YETI Ireland site)',
+      url: 'https://ie.yeti.com/pages/rambler-cleaning',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Every inch of YETI drinkware is dishwasher safe; MagSlider and StrongHold lids are dishwasher safe, with the MagSlider popped off and placed in the utensil compartment; hand washing with mild dish soap works; wash bottle, cap and gasket with a brush, warm water and mild dish soap; clean straws with a soft brush long enough to reach all internal surfaces; remove the lid gasket by pinching it with two fingers.',
+    },
+    {
+      id: 'src-yeti-dishwasher-4',
+      title: 'Insulated Bowls FAQs',
+      publisher: 'YETI (YETI Australia site)',
+      url: 'https://au.yeti.com/pages/insulated-bowls-faqs',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Similar to insulated Rambler products, YETI does not recommend placing the bowls in the freezer as loss of vacuum may occur; do not microwave, as they are 18/8 stainless steel and fire or personal injury can occur.',
+    },
+    {
+      id: 'src-yeti-dishwasher-5',
+      title: 'YETI Tundra Guide: Sizing, Ice Retention & Care',
+      publisher: 'YETI (YETI UK site)',
+      url: 'https://uk.yeti.com/pages/tundra-faq',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'For general cleaning of Tundra coolers use soap and warm water; for odors use a warm water and bleach solution at a 6:1 ratio with a sponge or mildly abrasive rag; clean around the gasket and drain plug.',
+    },
+  ],
+  seo: {
+    title: 'Can You Put a YETI in the Dishwasher? (Lids, Gaskets)',
+    description: 'Yes, YETI says Rambler tumblers, bottles, lids and caps are dishwasher safe. Where to load each part, what not to use, and why coolers are different.',
+    canonical: 'https://housecarewiki.com/guides/can-you-put-a-yeti-in-the-dishwasher',
+    indexable: true,
+    focusKeyword: 'can you put a yeti in the dishwasher',
+  },
+};
+
+export default article;

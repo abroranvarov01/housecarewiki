@@ -1,0 +1,152 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-an-instant-pot',
+  slug: 'how-to-clean-an-instant-pot',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean an Instant Pot',
+  subtitle: 'Unplug and cool it, wash the inner pot and lid parts by hand or on the top rack, take out the sealing ring and anti-block shield, and wipe the base with a barely damp cloth only. Steps from Instant Brands manuals and FAQ.',
+  excerpt: 'Unplug and cool, wash the inner pot, lid, sealing ring and anti-block shield, and only wipe the base with a barely damp cloth.',
+  quickAnswer: 'Unplug the Instant Pot and let it cool to room temperature. The stainless steel inner pot, the lid and its small parts are dishwasher safe, lid parts on the top rack, or wash them in hot, soapy water. Remove the sealing ring and anti-block shield every few cycles to wash them and clean the steam release pipe. Wipe the cooker base, rim and control panel with a barely damp cloth only, keep the heating element dry, and never immerse the base. To clear lingering smells, Instant Brands suggests pressure cooking 1 cup of water with 1 cup of white vinegar for 5 to 10 minutes.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: ['stainless-steel'],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 12, 2026',
+  publishedAt: 'Nov 12, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-kitchen.webp',
+  heroImageAlt: 'Hand cleaning grease and crumbs off a stainless steel gas cooktop with a yellow and green sponge beside black burner grates, with a dish rack and potted basil in the background',
+  safetyWarnings: [
+    'Always unplug the Instant Pot and let it cool to room temperature before cleaning.',
+    'Never immerse the cooker base, power cord or plug in water, never rinse the base under a tap, and never put it in the dishwasher. Keep the heating element dry at all times.',
+    'Do not use harsh chemical detergents, powders or scouring pads on any part of the cooker, as Instant Brands warns.',
+    'Never pressure cook without the anti-block shield, sealing ring and float valve silicone cap correctly installed.',
+    'Replace the sealing ring every 12 to 18 months, or sooner if it is stretched, deformed or damaged, and use only authorized Instant Pot rings.',
+    'If liquid spills onto the heating element, Instant Brands says to let it cool, wipe it with a dry cloth, set the base upside down to air-dry for 72 hours, and run a water test before cooking again.',
+  ],
+  materialsNeeded: [
+    'Hot water and mild dish soap',
+    'Soft sponge and soft, barely damp cloth',
+    'Dry towel',
+    'White vinegar',
+    'Optional: dishwasher (top rack for the lid and parts)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Unplug It and Let It Cool',
+      instruction: 'Press Cancel, unplug the cooker and let it cool to room temperature before cleaning. Instant Brands recommends cleaning the pot and all its parts after each use.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Wash the Inner Pot',
+      instruction: 'The inner pot is 18/8 stainless steel with no coating and is dishwasher safe. To hand wash, use hot, soapy water and a soft sponge; do not use abrasive cleaners or scouring pads. For burned-on food, soak it in hot water for a few hours first.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Remove and Wash the Sealing Ring and Anti-Block Shield',
+      instruction: 'Pull the sealing ring out from behind the stainless steel ring rack. Pop off the anti-block shield on the underside of the lid by pressing firmly on its side toward the lid edge. Wash both, along with the float valve and its silicone cap, in hot water with mild dish soap or on the top rack of the dishwasher. Instant Brands says to remove these small parts every few cooking cycles and whenever food particles are visible.',
+      proTip: 'Silicone absorbs strong smells. Instant Brands suggests keeping a spare ring, for example one for savory dishes and one for sweet.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Clean the Lid and Steam Release Pipe',
+      instruction: 'Wash the lid by hand or on the top rack of the dishwasher with the small parts removed. With the steam release valve and anti-block shield off, clean the inside of the steam release pipe so it does not clog. After dishwashing, hold the lid upright over the sink and turn it all the way around to drain trapped water.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Empty the Condensation Collector',
+      instruction: 'Empty and rinse the condensation collector after each use; it is top-rack dishwasher safe. On models with a condensation ring instead, wipe it with a damp cloth.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Wipe the Base with a Barely Damp Cloth',
+      instruction: 'Wipe the inside of the outer pot, the condensation rim and the control panel with a soft, barely damp cloth or sponge, then dry the rim and slot so the cooker rim does not rust. Do not let water reach the heating element.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Treat Odors and Hard Water Stains with Vinegar',
+      instruction: 'To remove odors, add 1 cup of water and 1 cup of white vinegar to the inner pot, pressure cook for 5 to 10 minutes and quick release. For hard water stains on the inner pot, scrub with a sponge dampened with vinegar. Let every part dry fully before reassembling, and store the lid upside down on the base.',
+    },
+  ],
+  ifMethodFails: [
+    'If the inner pot shows rainbow-colored discoloration, Instant Brands says this rainbowing is common and normal in stainless steel, caused by high heat, starchy foods or detergent, and does not affect use.',
+    'If the sealing ring still smells after washing and a vinegar cycle, store it somewhere well ventilated or replace it with a new authorized ring.',
+    'If the sealing ring is cracked, stretched or will not stay in the lid when you turn it over, replace it before pressure cooking.',
+    'If machine-washed parts look discolored, Instant Brands says this does not affect the safety or performance of the cooker.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Is the Instant Pot dishwasher safe?',
+      answer: 'The inner pot, steam rack, lid and lid accessories are dishwasher safe; put the lid and small parts on the top rack. The cooker base with the heating element is not: never put it in the dishwasher or immerse it in water.',
+    },
+    {
+      question: 'How do you get the smell out of an Instant Pot sealing ring?',
+      answer: 'Wash it in hot, soapy water or on the top rack, and store it in a well-ventilated place. Instant Brands also suggests running Pressure Cook for 5 to 10 minutes with 1 cup of water and 1 cup of white vinegar. Keeping separate rings for savory and sweet dishes helps.',
+    },
+    {
+      question: 'How often should you replace the Instant Pot sealing ring?',
+      answer: 'Every 12 to 18 months, or sooner if it is stretched, deformed or damaged, according to Instant Brands. Use only authorized Instant Pot sealing rings.',
+    },
+    {
+      question: 'How do you remove the anti-block shield?',
+      answer: 'Press firmly on the side of the shield toward the outer edge of the lid until it pops off its spring tabs. To reinstall it, center it over the tabs and press down until it snaps into place. Never pressure cook without it.',
+    },
+    {
+      question: 'Why is my Instant Pot inner pot rainbow colored?',
+      answer: 'Instant Brands calls this rainbowing. It can come from high heat, starchy foods such as rice and pasta, or detergent, and it is common and normal in stainless steel cookware.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-instant-pot-1',
+      title: 'Frequently Asked Questions',
+      publisher: 'Instant Brands (Instant Pot)',
+      url: 'https://instantpot.com/pages/frequently-asked-questions',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Clean the Instant Pot and its parts after each use; the steam rack, lid and accessories are top-rack dishwasher safe and the inner pot is dishwasher safe; wipe the outer pot, condensation rim, base and control panel with a barely damp cloth; do not immerse or rinse the appliance; let it cool to room temperature and unplug before cleaning; replace the sealing ring every 12 to 18 months; rainbowing is common and normal; if liquid reaches the heating element, wipe it dry, air-dry upside down 72 hours and run a water test.',
+    },
+    {
+      id: 'src-instant-pot-2',
+      title: 'Instant Pot Duo Evo Plus User Manual (Care and Cleaning)',
+      publisher: 'Instant Brands (manual hosted by Williams-Sonoma)',
+      url: 'https://www.williams-sonoma.com/netstorage/pdf/4629578-2205325-Instant-Pot-Duo-Evo-Plus-6QT-8QT-Manual.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Unplug and cool before cleaning; never use harsh detergents, powders or scouring pads; top rack for the dishwasher; empty and rinse the condensation collector after each use; remove lid parts before dishwashing and clean the steam release pipe; drain the lid by turning it 360 degrees; to remove odors, pressure cook 1 cup water and 1 cup white vinegar for 5 to 10 minutes and quick release; hard water stains may need a vinegar-dampened sponge; soak burned residue in hot water; keep the heating element dry and never immerse the base.',
+    },
+    {
+      id: 'src-instant-pot-3',
+      title: 'Instant Pot Duo Nova User Manual (Care & Cleaning)',
+      publisher: 'Instant Brands (manual hosted by Williams-Sonoma)',
+      url: 'https://www.williams-sonoma.com/netstorage/pdf/20190816-Instant-Pot-Duo-Nova-English-Full-Manual.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Remove the anti-block shield by pressing its side toward the outside edge of the lid until it pops off the spring tabs; reinstall by pressing down until it snaps in; never operate without it; remove small lid parts every few cycles and whenever food particles are visible and wash with hot water and mild dish soap; do not use abrasive cleaners or scouring pads on the inner pot; the inner pot is dishwasher safe.',
+    },
+    {
+      id: 'src-instant-pot-4',
+      title: 'Instant Pot Duo Plus User Manual',
+      publisher: 'Instant Brands (manual hosted by Williams-Sonoma)',
+      url: 'https://www.williams-sonoma.com/netstorage/pdf/116080-116081-Instant-Pot-Duo-Plus-8qt-6qt-and-3qt-Manual.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-12',
+      verifiedClaim: 'Unplug and cool before cleaning; inner pots, lids and accessories are dishwasher safe; remove the sealing ring and anti-block shield and wash in warm, soapy water; wipe the cooker base rim and slot dry to prevent rusting; do not immerse the cooker base in water.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean an Instant Pot (Sealing Ring, Lid, Base)',
+    description: 'How to clean an Instant Pot: wash the inner pot and lid parts, remove the sealing ring and anti-block shield, wipe the base dry, and clear odors with vinegar.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-an-instant-pot',
+    indexable: true,
+    focusKeyword: 'how to clean an instant pot',
+  },
+};
+
+export default article;

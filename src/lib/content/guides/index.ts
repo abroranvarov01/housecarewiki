@@ -163,6 +163,14 @@ import gHowToCleanFireplaceGlass from './how-to-clean-fireplace-glass';
 import gHowToGetRidOfCondensationOnWindows from './how-to-get-rid-of-condensation-on-windows';
 import gHowToCleanAKeurig from './how-to-clean-a-keurig';
 import gHowToCleanAKitchenaidStandMixer from './how-to-clean-a-kitchenaid-stand-mixer';
+import gHowToCleanAnInstantPot from './how-to-clean-an-instant-pot';
+import gHowToCleanASlowCooker from './how-to-clean-a-slow-cooker';
+import gCanYouPutAYetiInTheDishwasher from './can-you-put-a-yeti-in-the-dishwasher';
+import gHowToCleanASpaceHeater from './how-to-clean-a-space-heater';
+import gHowToCleanOutAFireplace from './how-to-clean-out-a-fireplace';
+import gHowToRemoveSaltStainsFromLeatherBoots from './how-to-remove-salt-stains-from-leather-boots';
+import gHowToWashAWeightedBlanket from './how-to-wash-a-weighted-blanket';
+import gHowToCleanAMicrofiberCouch from './how-to-clean-a-microfiber-couch';
 
 // One file per guide: each is a self-contained, source-backed page. Order here is the order on hub pages.
 export const STAIN_GUIDES: Article[] = [
@@ -394,4 +402,16 @@ export const BATCH17_GUIDES: Article[] = [
   gHowToGetRidOfCondensationOnWindows,
   gHowToCleanAKeurig,
   gHowToCleanAKitchenaidStandMixer,
+];
+
+// Batch 18: holiday cooking appliances (Instant Pot, slow cooker, YETI drinkware), winter heating (space heater, fireplace ashes), road salt on boots, weighted blankets, microfiber couches.
+export const BATCH18_GUIDES: Article[] = [
+  gHowToCleanAnInstantPot,
+  gHowToCleanASlowCooker,
+  gCanYouPutAYetiInTheDishwasher,
+  gHowToCleanASpaceHeater,
+  gHowToCleanOutAFireplace,
+  gHowToRemoveSaltStainsFromLeatherBoots,
+  gHowToWashAWeightedBlanket,
+  gHowToCleanAMicrofiberCouch,
 ];
