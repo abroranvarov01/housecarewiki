@@ -171,6 +171,14 @@ import gHowToCleanOutAFireplace from './how-to-clean-out-a-fireplace';
 import gHowToRemoveSaltStainsFromLeatherBoots from './how-to-remove-salt-stains-from-leather-boots';
 import gHowToWashAWeightedBlanket from './how-to-wash-a-weighted-blanket';
 import gHowToCleanAMicrofiberCouch from './how-to-clean-a-microfiber-couch';
+import gHowToWashAnElectricBlanket from './how-to-wash-an-electric-blanket';
+import gHowToCleanAWoolCoat from './how-to-clean-a-wool-coat';
+import gHowToCleanALeatherCouch from './how-to-clean-a-leather-couch';
+import gHowToGetCandleWaxOffWood from './how-to-get-candle-wax-off-wood';
+import gHowToDescaleANespressoMachine from './how-to-descale-a-nespresso-machine';
+import gHowToCleanAnAirPurifier from './how-to-clean-an-air-purifier';
+import gHowToCleanASiliconeBakingMat from './how-to-clean-a-silicone-baking-mat';
+import gCanYouPutKnivesInTheDishwasher from './can-you-put-knives-in-the-dishwasher';
 
 // One file per guide: each is a self-contained, source-backed page. Order here is the order on hub pages.
 export const STAIN_GUIDES: Article[] = [
@@ -414,4 +422,16 @@ export const BATCH18_GUIDES: Article[] = [
   gHowToRemoveSaltStainsFromLeatherBoots,
   gHowToWashAWeightedBlanket,
   gHowToCleanAMicrofiberCouch,
+];
+
+// Batch 19: winter bedding and outerwear (electric blanket, wool coat), holiday hosting (leather couch, candle wax on wood, Nespresso, silicone baking mats, knives in the dishwasher), heating-season air purifiers.
+export const BATCH19_GUIDES: Article[] = [
+  gHowToWashAnElectricBlanket,
+  gHowToCleanAWoolCoat,
+  gHowToCleanALeatherCouch,
+  gHowToGetCandleWaxOffWood,
+  gHowToDescaleANespressoMachine,
+  gHowToCleanAnAirPurifier,
+  gHowToCleanASiliconeBakingMat,
+  gCanYouPutKnivesInTheDishwasher,
 ];

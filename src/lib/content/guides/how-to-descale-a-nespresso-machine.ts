@@ -1,0 +1,151 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-descale-a-nespresso-machine',
+  slug: 'how-to-descale-a-nespresso-machine',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to descale a Nespresso machine',
+  subtitle: 'Use one packet of Nespresso descaling solution topped up with water, put the machine into descaling mode with your model\'s button sequence, run the solution through, then rinse with fresh water and let it rest. Original and Vertuo machines use different button steps. Based on Nespresso descaling guides for the Essenza Mini, Vertuo Pop and VertuoPlus.',
+  excerpt: 'Empty the capsule bin and drip tray, add one packet of descaler plus water, enter descaling mode for your model, run it through, rinse with fresh water and rest 10 minutes.',
+  quickAnswer: 'Nespresso recommends descaling every 3 months or 300 capsules, whichever comes first, with its own descaling kit, and warns that vinegar or store-bought descalers may damage the machine. Eject the capsule, empty the capsule container and drip tray, and fill the tank with one packet of descaling solution plus water. Enter descaling mode with your model\'s button sequence, which differs between Original machines like the Essenza Mini and Vertuo machines like the Vertuo Pop and VertuoPlus. Run the solution through into a large container, then rinse the tank, refill it with fresh water and run a rinse cycle. Wipe the machine with a damp cloth and let it rest for 10 minutes before brewing.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 13, 2026',
+  publishedAt: 'Nov 13, 2026',
+  readingTime: '6 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-kitchen.webp',
+  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  safetyWarnings: [
+    'Do not descale with vinegar. Nespresso\'s descaling guides say vinegar or store-bought descalers may damage the machine, and its UK site also lists citric acid and baking powder as home remedies it does not recommend.',
+    'The descaling solution may irritate eyes and skin. Nespresso says to rinse eyes immediately with plenty of water for 15 minutes and seek medical advice if it gets in them.',
+    'Do not swallow the descaling solution, and keep it out of reach of children.',
+    'Descaling solution can damage or discolor surfaces. Nespresso suggests putting something under the machine and wiping up any spill right away.',
+    'Do not top up the water tank during the descaling cycle, as Nespresso\'s guides advise.',
+    'Discard the liquid that comes out during descaling and rinsing, as Nespresso\'s guides direct.',
+  ],
+  materialsNeeded: [
+    'Nespresso descaling kit (one packet per descaling for the models covered here)',
+    'Fresh drinking water',
+    'Container that holds at least 34 ounces (Vertuo Pop) or 27 ounces (VertuoPlus); a large one works for any model',
+    'Damp cloth',
+    'Towel or mat to protect the counter under the machine',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check Whether It Is Time',
+      instruction: 'Nespresso recommends descaling every 3 months or 300 capsules, whichever comes first, and many machines alert you. The Vertuo Pop\'s cup button blinks orange 3 times before turning steady white, and the VertuoPlus light turns green and red; Nespresso says only several more coffees can be made after the VertuoPlus alert before descaling becomes mandatory.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Empty the Machine and Protect the Counter',
+      instruction: 'Eject any capsule, then empty the used capsule container and drip tray and put them back. Place a towel or mat under the machine, since Nespresso warns the solution can damage or discolor surfaces.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Fill the Tank With Descaler and Water',
+      instruction: 'Pour one packet of Nespresso descaling solution into the water tank. For the Vertuo Pop, add 17 ounces of water; for the VertuoPlus, at least 17 ounces; for the Essenza Mini, fill the rest of the tank up to the max line. Set a large empty container under the coffee outlet.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Enter Descaling Mode on an Original Machine',
+      instruction: 'On the Essenza Mini, turn the machine on, wait until the lights are steady and close the lever. Press and hold both cup buttons together for 5 seconds until the lights blink quickly, then press and release the large cup button to run all the solution through. Pour the used solution back into the tank, empty the drip tray and run it through a second time. Other Original models use a similar two-button sequence, so check your guide.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Enter Descaling Mode on a Vertuo Machine',
+      instruction: 'Vertuo models differ. On the Vertuo Pop, close the head with the lever unlocked, hold the button about 7 seconds until it blinks orange quickly, lock and unlock the lever, hold the button again, then lock the lever and press once to start; Nespresso says the lever and button steps must be done within 45 seconds. On the VertuoPlus, with the machine off, push the button and lever down together for 3 seconds, press the lever once to enter descaling mode, then press the button once to start.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Rinse With Fresh Water',
+      instruction: 'When the solution has finished and the machine is quiet, discard it. Empty and rinse the drip tray and capsule container, rinse the water tank thoroughly and refill it with fresh water, then start the rinse: press the button once on Vertuo models, or the large cup button on the Essenza Mini. Nespresso says to repeat the Essenza Mini rinse two more times because its tank is small.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Exit Descaling Mode and Let It Rest',
+      instruction: 'The Vertuo Pop stops on its own and its button turns steady. On the VertuoPlus, hold the button and lever together for 3 seconds until the light turns green, and on the Essenza Mini, hold both cup buttons for 5 seconds. Refill the tank, wipe the machine with a damp cloth and let it rest for 10 minutes before making coffee.',
+    },
+  ],
+  ifMethodFails: [
+    'If a Vertuo Pop light is not blinking orange quickly after you lock the lever, Nespresso says you have not entered descaling mode; start again from closing the head with the lever unlocked.',
+    'If you miss the 45 second window on the Vertuo Pop, the machine will not enter descaling mode, so repeat the button and lever steps more quickly.',
+    'If your model is not covered here, look up the descaling guide for your exact machine on Nespresso\'s site, because button sequences differ by model.',
+    'If the descaling alert stays on or the machine still runs slowly after descaling, contact Nespresso customer support rather than trying vinegar or another descaler.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you descale a Nespresso machine with vinegar?',
+      answer: 'Nespresso says not to. Its descaling guides state that other solutions, such as vinegar or store-bought descalers, may damage the machine, and its UK descaling page also advises against citric acid and baking powder.',
+    },
+    {
+      question: 'How often should you descale a Nespresso machine?',
+      answer: 'Nespresso\'s descaling guides recommend every 3 months or 300 capsules, whichever comes first. If your machine has a descaling alert, descale when it appears.',
+    },
+    {
+      question: 'Is descaling different on Vertuo and Original machines?',
+      answer: 'The idea is the same, but the button sequence is not. The Essenza Mini, an Original machine, uses a two-button hold, while Vertuo machines use the single button together with the lever, and even the Vertuo Pop and VertuoPlus differ from each other. Nespresso\'s UK site says the same descaling kit works for both Original and Vertuo machines.',
+    },
+    {
+      question: 'How long does descaling a Nespresso take?',
+      answer: 'Nespresso lists about 15 to 20 minutes for the Essenza Mini and 20 minutes for the Vertuo Pop and VertuoPlus, plus a 10 minute rest afterward. The Vertuo Pop guide says its cycle cannot be interrupted.',
+    },
+    {
+      question: 'Why does a Nespresso machine need descaling?',
+      answer: 'Hard water leaves mineral scale inside the machine. Nespresso says that buildup can cause off flavors, change the brewing temperature and water flow, and make the machine louder.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-nespresso-descale-1',
+      title: 'How To Descale Your Nespresso Machine',
+      publisher: 'Nespresso UK',
+      url: 'https://www.nespresso.com/uk/en/articles/descale-nespresso-machine',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-13',
+      verifiedClaim: 'Home remedies such as vinegar, citric acid or baking powder are not recommended for Original or Vertuo machines; the same descaling kit works for both; check the manual for the number of sachets; mineral buildup can cause off flavors, alter brewing temperature and water flow and make the machine louder; many machines alert you when descaling is due.',
+    },
+    {
+      id: 'src-nespresso-descale-2',
+      title: 'Essenza Mini Descaling Guide',
+      publisher: 'Nespresso USA',
+      url: 'https://www.nespresso.com/static/us/documents/Essenza%20Mini%20Descaling%20Guide.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-13',
+      verifiedClaim: 'Descale every 3 months or 300 capsules; vinegar or store-bought descalers may cause damage; solution can damage or discolor surfaces and irritate eyes and skin; do not refill the tank during descaling; Essenza Mini takes 15 to 20 minutes: 1 packet plus water to the max line, hold both cup buttons 5 seconds, run solution through with the large cup button, reuse it for a second pass, rinse with fresh water three times as the tank is small, hold both buttons 5 seconds to exit, wipe with a damp cloth and rest 10 minutes.',
+    },
+    {
+      id: 'src-nespresso-descale-3',
+      title: 'Vertuo Pop Descaling Guide',
+      publisher: 'Nespresso USA',
+      url: 'https://www.nespresso.com/static/us/documents/VertuoPopDescalingGuide.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-13',
+      verifiedClaim: 'Duration 20 minutes and cannot be interrupted; alert is the cup button blinking orange 3 times before steady white; fill the tank with 17 ounces of water and 1 packet of solution; use a container of at least 34 ounces; hold the button about 7 seconds until it blinks orange, lock and unlock the lever, hold again, steps 5 and 6 within 45 seconds; lock the lever and press once to start; rinse with a full tank of fresh water; wipe with a damp cloth and rest 10 minutes.',
+    },
+    {
+      id: 'src-nespresso-descale-4',
+      title: 'VertuoPlus Descaling Guide',
+      publisher: 'Nespresso USA',
+      url: 'https://www.nespresso.com/static/us/documents/VertuoPlus%20Descaling%20Guide.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-13',
+      verifiedClaim: 'Duration 20 minutes; descaling alert is a green and red light, after which only several coffees can be made before descaling becomes mandatory; one unit of descaling liquid and at least 17 ounces of water; with the machine off, push the button and lever down together for 3 seconds to enter the special functions menu, press the lever once for descaling mode, use a receptacle of at least 27 ounces, press the button to start; rinse with fresh water; exit by holding button and lever 3 seconds; rest 10 minutes.',
+    },
+  ],
+  seo: {
+    title: 'How to Descale a Nespresso Machine (Vertuo and Original)',
+    description: 'How to descale a Nespresso machine: use one packet of Nespresso descaler, follow the Vertuo or Original button steps, rinse with fresh water, and skip vinegar.',
+    canonical: 'https://housecarewiki.com/guides/how-to-descale-a-nespresso-machine',
+    indexable: true,
+    focusKeyword: 'how to descale a nespresso machine',
+  },
+};
+
+export default article;
