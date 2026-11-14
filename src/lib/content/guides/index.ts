@@ -179,6 +179,14 @@ import gHowToDescaleANespressoMachine from './how-to-descale-a-nespresso-machine
 import gHowToCleanAnAirPurifier from './how-to-clean-an-air-purifier';
 import gHowToCleanASiliconeBakingMat from './how-to-clean-a-silicone-baking-mat';
 import gCanYouPutKnivesInTheDishwasher from './can-you-put-knives-in-the-dishwasher';
+import gCanYouMixBleachAndAmmonia from './can-you-mix-bleach-and-ammonia';
+import gHowToCleanACarbonSteelPan from './how-to-clean-a-carbon-steel-pan';
+import gHowToCleanAFoodProcessor from './how-to-clean-a-food-processor';
+import gHowToCleanAPizzaStone from './how-to-clean-a-pizza-stone';
+import gHowToRemoveMoldFromWindowSills from './how-to-remove-mold-from-window-sills';
+import gHowToWashAMattressProtector from './how-to-wash-a-mattress-protector';
+import gHowToCleanAFrenchPress from './how-to-clean-a-french-press';
+import gHowToCleanAStanleyCup from './how-to-clean-a-stanley-cup';
 
 // One file per guide: each is a self-contained, source-backed page. Order here is the order on hub pages.
 export const STAIN_GUIDES: Article[] = [
@@ -434,4 +442,16 @@ export const BATCH19_GUIDES: Article[] = [
   gHowToCleanAnAirPurifier,
   gHowToCleanASiliconeBakingMat,
   gCanYouPutKnivesInTheDishwasher,
+];
+
+// Batch 20: holiday kitchen tools (carbon steel pan, food processor, pizza stone, French press, Stanley cup), winter window-sill mold, guest-bed mattress protectors, bleach and ammonia safety.
+export const BATCH20_GUIDES: Article[] = [
+  gCanYouMixBleachAndAmmonia,
+  gHowToCleanACarbonSteelPan,
+  gHowToCleanAFoodProcessor,
+  gHowToCleanAPizzaStone,
+  gHowToRemoveMoldFromWindowSills,
+  gHowToWashAMattressProtector,
+  gHowToCleanAFrenchPress,
+  gHowToCleanAStanleyCup,
 ];

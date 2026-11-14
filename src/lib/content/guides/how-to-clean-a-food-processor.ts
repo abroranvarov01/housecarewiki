@@ -1,0 +1,155 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-clean-a-food-processor',
+  slug: 'how-to-clean-a-food-processor',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to clean a food processor',
+  subtitle: 'Unplug it, take it apart, wash the bowl, lid, pusher and blades on the top rack or by hand as your maker allows, handle the blades by their plastic hubs, wipe the motor base with a damp cloth and never submerge it, then dry and store everything safely. Based on Cuisinart, Breville and KitchenAid manuals.',
+  excerpt: 'Unplug, disassemble, top rack or hand wash per your maker, hold blades by the hub, wipe the base and never submerge it, dry before storing.',
+  quickAnswer: 'Turn the food processor off and unplug it, remove the bowl from the base, then take out the blade or disc. Rinse the bowl, cover, seal, pusher and blade right after use so food does not dry on. Cuisinart and KitchenAid say the removable parts can go on the top rack of the dishwasher, while Breville says its plastic parts should usually be hand washed and only occasionally go in the dishwasher. Hold blades and discs by their plastic hubs and never leave them hidden in soapy water. Wipe the motor base with a damp cloth and dry it, but never put it in water, and dry every part fully before storing.',
+  roomSlug: 'kitchen-cleaning',
+  subCategory: 'appliances',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 14, 2026',
+  publishedAt: 'Nov 14, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-kitchen.webp',
+  heroImageAlt: 'Hand cleaning grease and crumbs off a stainless steel gas cooktop with a yellow and green sponge beside black burner grates, with a dish rack and potted basil in the background',
+  safetyWarnings: [
+    'Always unplug the food processor before taking parts off, removing food or cleaning. Cuisinart, Breville and KitchenAid all say to unplug it first.',
+    'Never put the motor base, power cord or plug in water or any other liquid. Cuisinart warns this protects against the risk of electric shock, and Breville and KitchenAid say never to immerse the base.',
+    'Blades and discs are very sharp. Cuisinart says to handle them by their plastic hubs, and both Cuisinart and Breville say not to leave them sitting in soapy water where you cannot see them.',
+    'Unload the dishwasher carefully wherever you placed the blades and discs, as Cuisinart reminds.',
+    'Do not use scouring pads, abrasive cleansers or harsh caustic cleaners. KitchenAid says they can scratch or cloud the work bowl and cover, and Breville says they will scratch the plastic.',
+    'Never store a blade or disc on the motor shaft, and keep blades and discs out of reach of children, as Cuisinart and Breville advise.',
+  ],
+  materialsNeeded: [
+    'Mild dish soap',
+    'Soft sponge or cloth',
+    'Small cleaning brush or bottle brush',
+    'Clean, soft towels',
+    'Lemon juice (for stains and odors)',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Turn It Off and Unplug It',
+      instruction: 'Press the off button and wait for the blade or disc to stop spinning, then unplug the food processor by pulling the plug, not the cord. Cuisinart, Breville and KitchenAid all say to unplug the unit before cleaning or taking off parts.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Take It Apart Safely',
+      instruction: 'Remove the pusher and lid, then unlock the work bowl from the base. Cuisinart says to remove the work bowl from the base before you remove the chopping or dough blade. Lift blades and discs out by their plastic centers, since the cutting edges are very sharp. Take the removable seal off the lid if your model has one.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Rinse Right Away',
+      instruction: 'Cuisinart recommends rinsing the work bowl, cover, seal, pusher assembly and blade or disc immediately after use so food will not dry on them. If food is stuck inside the pusher, run water through it or use a bottle brush.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Use the Top Rack If Your Maker Allows It',
+      instruction: 'Dishwasher rules vary by brand. Cuisinart says every part except the base is dishwasher safe and recommends the top rack only, because the intense heat on the bottom rack may damage parts over time. KitchenAid says its parts are top-rack safe and to use a gentle cycle such as normal and avoid high-temperature cycles. Breville says its plastic bowl and lid may go on the top shelf only occasionally, because hot water and harsh detergents shorten the life of the plastic, while its blades and discs can go on the top shelf. Place the bowl and pushers upside down to drain and the cover with the feed tube facing up, as Cuisinart directs.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Or Hand Wash the Bowl, Lid and Blades',
+      instruction: 'Wash the bowl and lid in hot, soapy water with a mild detergent and a soft sponge. To clean the metal blade, Cuisinart suggests filling the work bowl with soapy water, holding the blade by its plastic center and moving it quickly up and down on the center shaft, then using a brush if needed. Breville suggests a cleaning brush for food stuck on blades and discs. Do not leave blades or discs to soak in sudsy water, where they can disappear from sight.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Clean the Lid, Seal and Feed Tube',
+      instruction: 'Cuisinart says the lid seal is removable for dishwashing or hand washing, and if the cover still needs cleaning, to remove the seal and run faucet water directly through the holes in the cover. Breville says its silicone seal is dishwasher safe and can stay on the lid. Clear the feed tube and pushers with running water or a bottle brush.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Wipe the Motor Base',
+      instruction: 'Wipe the base and cord with a warm, damp cloth, or with a soapy, nonabrasive material as Cuisinart suggests, then dry it with a soft cloth. KitchenAid says not to use abrasive cleaners or scouring pads on the base, and every maker says never to immerse it.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Dry and Store It',
+      instruction: 'Dry all parts thoroughly before storing, as KitchenAid directs. Keep blades and discs in a storage case or in-bowl caddy if your model has one, never on the motor shaft, and out of reach of children. Breville says not to store discs loose in a utensil drawer, and not to store the processor with the lid locked in place, because that strains the safety switches.',
+    },
+  ],
+  ifMethodFails: [
+    'If carrot or other foods have stained the plastic, or garlic has left an odor, Breville suggests soaking the parts for 5 minutes in 2 liters of water with half a cup of lemon juice, then rinsing and washing as normal.',
+    'If food is still stuck in the cover after washing, remove the seal and run faucet water through the holes in the cover, as Cuisinart suggests, and use a brush on the pusher.',
+    'If the bowl or lid is turning cloudy or scratched, stop using scouring pads and abrasive cleaners, and follow Breville\'s advice to hand wash plastic parts rather than putting them in the dishwasher regularly.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you put food processor parts in the dishwasher?',
+      answer: 'Usually, but check your manual. Cuisinart says all parts except the base are dishwasher safe on the top rack only, and KitchenAid says its parts are top-rack safe on a gentle cycle. Breville says its plastic bowl and lid should only occasionally go in the dishwasher, top shelf only.',
+    },
+    {
+      question: 'Can you put the food processor base in water?',
+      answer: 'No. Cuisinart, Breville and KitchenAid all say never to immerse the motor base in water or other liquid. Unplug it and wipe it with a damp cloth, then dry it.',
+    },
+    {
+      question: 'How do you clean food processor blades safely?',
+      answer: 'Hold blades and discs by their plastic hubs, as Cuisinart advises, and use a brush to remove stuck food. Do not leave them in soapy water where you cannot see them. Cuisinart also suggests swishing the blade up and down on the center shaft of a bowl filled with soapy water.',
+    },
+    {
+      question: 'How do you remove stains and odors from a food processor bowl?',
+      answer: 'Breville says carrots can stain plastic parts and garlic can leave a strong odor. Its manual suggests soaking the parts for 5 minutes in 2 liters of water with half a cup of lemon juice, then rinsing and washing as usual.',
+    },
+    {
+      question: 'Why is my food processor bowl getting cloudy?',
+      answer: 'KitchenAid says abrasive cleansers and scouring pads can scratch or cloud the work bowl and cover. Breville adds that frequent exposure to hot dishwasher water and harsh detergents can damage plastic parts over time.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-food-processor-1',
+      title: '14-Cup Cuisinart Elite Collection 2.0 Food Processor FP-14NC Series Instruction and Recipe Booklet',
+      publisher: 'Cuisinart',
+      url: 'https://cuisinart.ca/on/demandware.static/-/Sites-master-ca/en_CA/v1728723812087//Instruction%20Booklet/FP-14DCNC_en.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-14',
+      verifiedClaim: 'Blades and discs are sharp; unplug before putting on or taking off parts, removing food and cleaning; do not put the base in water or other liquids; all parts except the housing base are dishwasher safe, top rack only, since bottom-rack heat may cause damage; cover with feed tube up, bowl and pushers upside down; seal is removable; rinse parts immediately after use; clear the pusher with running water or a bottle brush; run faucet water through cover holes; handle blades by plastic hubs, do not leave them in soapy water, clean the metal blade by moving it up and down on the shaft in soapy water; wipe the base with a soapy nonabrasive material and dry; never store blades or discs on the motor shaft; keep them out of reach of children; remove the work bowl before removing the chopping or dough blade.',
+    },
+    {
+      id: 'src-food-processor-2',
+      title: 'The Sous Chef 16 Pro Instruction Book (BFP800)',
+      publisher: 'Breville',
+      url: 'https://assets.breville.com/BFP800/BFP800_USC_IB_P26_LR.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-14',
+      verifiedClaim: 'Unplug before cleaning; wipe the motor base with a damp cloth and dry; hand wash bowl and lid in hot soapy water with mild detergent, no scouring pads or abrasive cleaners; plastic parts may occasionally go in the dishwasher top shelf only, not regularly, as hot water and harsh detergents damage the plastic; silicone seal is dishwasher safe and can stay on the lid; use the cleaning brush on blades and discs and do not leave them to soak in sudsy water; blades, discs and spindle can go on the top shelf; soak stained or smelly parts 5 minutes in 2 liters of water with half a cup of lemon juice; do not store with lid locked; do not store discs in a utensil drawer; never immerse the base, cord or plug; no harsh abrasive, caustic or oven cleaners.',
+    },
+    {
+      id: 'src-food-processor-3',
+      title: 'How to Clean the Base and Attachments - Food Processor (13 Cup)',
+      publisher: 'KitchenAid',
+      url: 'https://producthelp.kitchenaid.com/Countertop_Appliances/Food_Processors_and_Choppers/Food_Processor/13_cup/Cleaning_and_Care/How_to_Clean_the_Base_and_Attachments_-_Food_Processor',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-14',
+      verifiedClaim: 'Unplug before cleaning; wipe the base and cord with a warm damp cloth and dry; do not immerse the base; all parts are top-rack dishwasher safe; use a gentle cycle such as normal and avoid high-temperature cycles; abrasive cleansers and scouring pads may scratch or cloud the work bowl and cover; dry all parts thoroughly; blades, discs and drive adapter can be stored in the work bowl caddy; wrap the cord in the cord storage.',
+    },
+    {
+      id: 'src-food-processor-4',
+      title: 'Cleaning the Food Processor (7 Cup)',
+      publisher: 'KitchenAid',
+      url: 'https://producthelp.kitchenaid.com/Countertop_Appliances/Food_Processors_and_Choppers/Food_Processor/7_Cup/Cleaning_and_Care/Cleaning_the_Food_Processor',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-14',
+      verifiedClaim: 'Press OFF/PULSE and unplug before cleaning; wipe the base and cord with a warm damp cloth and dry with a soft cloth; do not immerse the base; do not use abrasive cleaners or scouring pads; all parts are top rack dishwasher safe on gentle cycles such as normal, avoiding high-temperature cycles; avoid abrasive cleansers when hand washing; thoroughly dry all parts.',
+    },
+  ],
+  seo: {
+    title: 'How to Clean a Food Processor (Blades, Bowl, Base)',
+    description: 'How to clean a food processor: unplug, take it apart, top rack or hand wash per your maker, handle blades by the hub, wipe the base and never submerge it.',
+    canonical: 'https://housecarewiki.com/guides/how-to-clean-a-food-processor',
+    indexable: true,
+    focusKeyword: 'how to clean a food processor',
+  },
+};
+
+export default article;
