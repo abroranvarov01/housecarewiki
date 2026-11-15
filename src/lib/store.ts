@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { createHash } from 'crypto';
 import path from 'path';
 import {
   AUTHORS,
@@ -63,7 +64,12 @@ export interface DatabaseState {
 
 const DATA_DIR = path.join(process.cwd(), '.data');
 const STORE_PATH = path.join(DATA_DIR, 'store.json');
-const STORE_VERSION = '3.17-striking-distance';
+// The saved store is replaced whenever the seeded content changes, so a deploy with new or edited guides
+// shows up without anyone remembering to bump a version by hand.
+const STORE_VERSION = `4-${createHash('sha1')
+  .update(JSON.stringify([AUTHORS, PRODUCTS, ROOM_CATEGORIES, ARTICLES, SURFACE_GUIDES, COMPARISONS]))
+  .digest('hex')
+  .slice(0, 12)}`;
 
 // Seed demo records shipped by earlier versions; they are dropped on migration so admin only shows real data.
 const DEMO_IDS = new Set(['clk-1', 'clk-2', 'clk-3', 'aud-1', 'aud-2']);
