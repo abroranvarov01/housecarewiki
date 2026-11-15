@@ -187,6 +187,14 @@ import gHowToRemoveMoldFromWindowSills from './how-to-remove-mold-from-window-si
 import gHowToWashAMattressProtector from './how-to-wash-a-mattress-protector';
 import gHowToCleanAFrenchPress from './how-to-clean-a-french-press';
 import gHowToCleanAStanleyCup from './how-to-clean-a-stanley-cup';
+import gCanYouPutCastIronInTheDishwasher from './can-you-put-cast-iron-in-the-dishwasher';
+import gHowToCleanAWaffleMaker from './how-to-clean-a-waffle-maker';
+import gHowToCleanACoffeeGrinder from './how-to-clean-a-coffee-grinder';
+import gHowToCleanAMeatThermometer from './how-to-clean-a-meat-thermometer';
+import gHowToCleanCrystalGlasses from './how-to-clean-crystal-glasses';
+import gHowToCleanAnArtificialChristmasTree from './how-to-clean-an-artificial-christmas-tree';
+import gHowToCleanSuedeBoots from './how-to-clean-suede-boots';
+import gHowToWashCashmere from './how-to-wash-cashmere';
 
 // One file per guide: each is a self-contained, source-backed page. Order here is the order on hub pages.
 export const STAIN_GUIDES: Article[] = [
@@ -454,4 +462,16 @@ export const BATCH20_GUIDES: Article[] = [
   gHowToWashAMattressProtector,
   gHowToCleanAFrenchPress,
   gHowToCleanAStanleyCup,
+];
+
+// Batch 21: Thanksgiving and holiday hosting (meat thermometer, waffle maker, coffee grinder, crystal glasses, cast iron in the dishwasher), artificial Christmas tree, winter suede boots and cashmere.
+export const BATCH21_GUIDES: Article[] = [
+  gCanYouPutCastIronInTheDishwasher,
+  gHowToCleanAWaffleMaker,
+  gHowToCleanACoffeeGrinder,
+  gHowToCleanAMeatThermometer,
+  gHowToCleanCrystalGlasses,
+  gHowToCleanAnArtificialChristmasTree,
+  gHowToCleanSuedeBoots,
+  gHowToWashCashmere,
 ];

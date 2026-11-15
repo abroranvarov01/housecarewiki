@@ -1,0 +1,158 @@
+import type { Article } from '../../types';
+
+const article: Article = {
+  id: 'art-how-to-wash-cashmere',
+  slug: 'how-to-wash-cashmere',
+  routeType: 'guides',
+  categoryLabel: 'CLEANING GUIDE',
+  title: 'How to wash cashmere',
+  subtitle: 'Check the care label, hand wash in cool or lukewarm water with a wool-safe detergent, press the water out without wringing, roll the piece in a towel, dry it flat away from heat and sun, and store it clean and folded. Based on care guidance from N.Peal, Quince, Everlane and The Laundress.',
+  excerpt: 'Cool or lukewarm hand wash with a wool-safe detergent, no wringing, towel roll, flat dry away from heat and sun, and no tumble dryer, bleach or fabric softener.',
+  quickAnswer: 'Check the care label first, then hand wash cashmere in cool or lukewarm water with a wool-safe detergent, since N.Peal says hot water could cause a cashmere garment to shrink. Soak it briefly and press the water through the knit without rubbing, twisting or wringing, then rinse in water of the same temperature. Roll the piece in a towel to take out excess water, reshape it and dry it flat away from direct heat and sunlight. Never hang it wet or tumble dry it, and skip bleach and fabric softener. Machine wash only if the label allows it, inside out in a mesh bag on a delicate, wool or hand-wash cycle with cold water and a low spin.',
+  roomSlug: 'laundry-care',
+  subCategory: 'delicates',
+  surfaceSlugs: [],
+  authorSlug: 'housecarewiki-editors',
+  updatedAt: 'Nov 15, 2026',
+  publishedAt: 'Nov 15, 2026',
+  readingTime: '5 min read',
+  status: 'Published',
+  evidenceStatus: 'Research-Based Review',
+  heroImage: '/images/room-laundry.webp',
+  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  safetyWarnings: [
+    'Do not use hot water. N.Peal says hot water could cause a cashmere garment to shrink, and The Laundress says cashmere is very sensitive to water temperature and agitation.',
+    'Do not put cashmere in the dryer. N.Peal says not to tumble dry, Quince says never to tumble dry, and The Laundress says cashmere should not be placed in the dryer.',
+    'Do not rub, twist or wring wet cashmere. N.Peal, Quince and Everlane all say to avoid it, and The Laundress says to press the water out instead.',
+    'Do not hang cashmere to dry. N.Peal says the weight of the water stretches the garment, and Quince and Everlane say wet cashmere can stretch.',
+    'Skip bleach and fabric softener, as Quince advises. The Laundress also says to avoid enzyme-based detergents, which it says can degrade the yarns.',
+    'Do not machine wash unless the care label allows it. N.Peal does not recommend machine washing, and Quince says to machine wash only if the care label says you can.',
+  ],
+  materialsNeeded: [
+    'Clean sink or basin',
+    'Wool-safe or cashmere detergent',
+    'Clean dry towels',
+    'Flat mesh drying rack (optional)',
+    'Mesh laundry bag (for machine washing, if the label allows it)',
+    'Cashmere comb',
+    'Cedar balls and a breathable storage bag',
+  ],
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Check the Care Label and Decide If It Needs Washing',
+      instruction: 'Read the care label before anything else. Cashmere does not need washing after every wear. Quince suggests washing every three to five wears and airing the piece out overnight or steaming it in between, and Everlane says layering cashmere over other washable garments reduces how often it needs cleaning. N.Peal advises taking stained garments, woven pieces such as pashminas, loose-knit patterns and items with leather buttons or suede panels to a dry cleaner instead.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Fill a Basin with Cool or Lukewarm Water and Detergent',
+      instruction: 'Fill a clean sink or basin with cool or lukewarm water. Quince and Everlane say to use cold water, The Laundress says cool, and N.Peal says lukewarm. Add a wool-safe or cashmere detergent in the amount the bottle recommends, as Quince says, and swirl it in by hand. N.Peal uses a single capful of its cashmere wash and says a mild detergent or a few drops of baby shampoo can stand in.',
+      proTip: 'N.Peal says a small amount of soap is all you need, so resist adding extra.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Soak and Gently Press the Water Through',
+      instruction: 'Turn the piece inside out, as Quince suggests, and submerge it. Gently squeeze the water through the fibers or press the knit against the side of the basin. Do not rub, twist or wring. Soak times vary by source: N.Peal says a few minutes, Quince about ten minutes, and The Laundress up to 30 minutes.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Rinse in Water of the Same Temperature',
+      instruction: 'Drain the basin, refill it with clean cool water and press the water through the knit again, as Quince describes. N.Peal says to rinse thoroughly in water at the same temperature used for washing, and The Laundress says to rinse until the water runs clear of suds.',
+    },
+    {
+      stepNumber: 5,
+      title: 'Press Out the Water and Roll in a Towel',
+      instruction: 'Press the water out against the side of the basin without wringing. Lay the piece on a clean dry towel and roll it up to absorb the excess water, as N.Peal, Quince, Everlane and The Laundress all describe.',
+    },
+    {
+      stepNumber: 6,
+      title: 'Reshape and Dry Flat',
+      instruction: 'Lay the piece flat on a fresh dry towel or a mesh rack and reshape it while it is damp. Keep it away from direct sunlight and heat sources. The Laundress says heat sources such as radiators can yellow, shrink or damage the yarns. Quince says to allow 12 to 24 hours for drying. Do not hang it and do not tumble dry it.',
+    },
+    {
+      stepNumber: 7,
+      title: 'Comb Off Pills Once It Is Dry',
+      instruction: 'Pilling is normal on cashmere, according to Everlane, and N.Peal says to expect some on a new garment. Once the piece is dry, remove pills with a cashmere comb using light strokes in the direction of the knit, as Quince describes. N.Peal says to pay attention to the elbows, underarms and shoulders. Quince says not to use scissors or razors, which can nick the knit.',
+    },
+    {
+      stepNumber: 8,
+      title: 'Store It Clean and Folded',
+      instruction: 'Fold cashmere rather than hanging it. The Laundress says folding prevents stretching or distortion and that items should be stored clean because soil can attract insects. Quince and Everlane say to keep it in a cool, dry place with cedar, and N.Peal says to replace cedar balls every year. The Laundress advises against storing in plastic, which it says encourages yellowing and can trap moisture.',
+    },
+  ],
+  ifMethodFails: [
+    'If a stain is still there after washing, do not scrub it. N.Peal advises taking stained cashmere to a specialist dry cleaner. For next time, The Laundress suggests pretreating with a gentle stain remover made for knits and testing it in an inconspicuous spot first, and Everlane suggests spot treating with diluted dish soap.',
+    'If the piece comes out creased, use steam rather than pressing hard. N.Peal says a hand-held steamer safely removes creases, or you can turn the garment inside out and iron on the lowest setting with a clean damp cloth between the iron and the knit. The Laundress advises steaming only, because it says ironing can crush or flatten the pile.',
+    'If you would rather use the washer and the care label allows it, turn the piece inside out, put it in a mesh bag and use a delicate, wool or hand-wash cycle with cold water and a low spin, as The Laundress describes. N.Peal says the cycle should be no warmer than 30 degrees Celsius (86 degrees Fahrenheit). Then dry it flat as you would after hand washing.',
+  ],
+  recommendedProductIds: [],
+  faqs: [
+    {
+      question: 'Can you machine wash cashmere?',
+      answer: 'Only if the care label allows it. Quince says to machine wash only when the label says you can, using the recommended cycle, a wool-safe detergent and a mesh bag. The Laundress says to turn the item inside out, use the delicate or hand-wash cycle with cold water and a low spin, and remove it promptly. N.Peal does not recommend machine washing its cashmere.',
+    },
+    {
+      question: 'How often should you wash cashmere?',
+      answer: 'Not after every wear. Quince suggests every three to five wears, less often if you layer, with airing overnight or steaming in between. Everlane says washing less preserves softness and shape. N.Peal says its knitwear does not need regular washing but should be kept clean, because dirt attracts clothes moths.',
+    },
+    {
+      question: 'Can you put cashmere in the dryer?',
+      answer: 'No. N.Peal, Quince and The Laundress all say not to tumble dry cashmere. Roll it in a towel to remove excess water, reshape it and lay it flat to dry away from direct heat and sunlight. Do not hang it, because wet cashmere can stretch.',
+    },
+    {
+      question: 'What detergent should you use on cashmere?',
+      answer: 'Use a wool-safe or cashmere detergent in the amount the bottle recommends. N.Peal says a mild detergent or a few drops of baby shampoo can also work. Quince says to skip bleach and fabric softener, and The Laundress says to avoid enzyme-based detergents.',
+    },
+    {
+      question: 'How do you store cashmere to keep moths away?',
+      answer: 'Wash or clean it first, since The Laundress says soil can attract insects. Fold it and keep it in a cool, dry place with cedar, as Quince and Everlane advise. N.Peal says to replace cedar balls yearly and, for long-term storage, to use a breathable bag in a clean, dry, dark place. The Laundress advises against plastic storage.',
+    },
+  ],
+  sources: [
+    {
+      id: 'src-npeal-1',
+      title: 'The Complete Guide to Caring for Your Cashmere',
+      publisher: 'N.Peal',
+      url: 'https://us.npeal.com/blogs/stories/the-complete-guide-to-caring-for-your-cashmere',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-15',
+      verifiedClaim: 'Hand washing with a specialist cashmere wash is the best method; use lukewarm water because hot water could shrink the garment; add a single capful, or use a mild detergent or a few drops of baby shampoo; soak a few minutes and squeeze water through without rubbing, twisting or wringing; rinse at the same temperature; roll in a towel, reshape and dry flat away from sunlight and heat; do not hang or tumble dry; machine washing is not recommended and only on a delicate, wool or hand-wash cycle at no more than 30 degrees Celsius, inside out in a laundry bag with a low spin; dry clean stains, woven pieces, loose knits and items with leather or suede; expect pilling on new cashmere and comb it off, especially elbows, underarms and shoulders; steam or iron inside out on the lowest setting through a damp cloth; dirt attracts moths; store folded with cedar balls replaced yearly, and long term in a breathable bag in a clean, dry, dark place.',
+    },
+    {
+      id: 'src-quince-1',
+      title: 'How to Wash Cashmere at Home',
+      publisher: 'Quince',
+      url: 'https://www.quince.com/pages/how-to-wash-cashmere',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-15',
+      verifiedClaim: 'A ten-minute cold hand wash with a wool-safe detergent in the amount the bottle recommends, sweater inside out; press gently against the basin and do not wring, twist or rub; drain, refill with clean cool water and press through again; roll in a towel, lay flat on a dry towel or mesh rack, reshape while damp and dry flat 12 to 24 hours away from direct heat and sunlight; never hang or tumble dry; no bleach or fabric softener; machine wash only if the care label allows, with the recommended cycle, wool-safe detergent and a mesh bag; wash every three to five wears and air out or steam between washes; use a cashmere comb with light strokes in the direction of the knit, not scissors or razors; store folded in a cool, dry drawer or shelf with cedar or lavender.',
+    },
+    {
+      id: 'src-everlane-1',
+      title: 'The Cashmere Care Guide',
+      publisher: 'Everlane',
+      url: 'https://www.everlane.com/pages/the-cashmere-care-guide',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-15',
+      verifiedClaim: 'Hand wash in cold water with a gentle detergent and let it soak; do not scrub, twist or wring; spot treat stains with diluted dish soap; roll in a towel to remove excess water and lay flat away from direct heat or sunlight; do not hang wet because it can stretch; pilling is normal and can be removed once dry with a cashmere comb or fabric shaver; store folded in a cool, dry place with cedar wood balls in a drawer, storage box or breathable bag; layering over washable garments reduces how often cashmere needs cleaning, and washing less preserves softness and shape; hand washing is preferred over dry cleaning.',
+    },
+    {
+      id: 'src-laundress-1',
+      title: 'How To Clean Cashmere',
+      publisher: 'The Laundress',
+      url: 'https://www.thelaundress.com/blogs/tips/cashmere',
+      type: 'Industry Standard',
+      accessedDate: '2026-11-15',
+      verifiedClaim: 'Cashmere is very sensitive to water temperature and agitation; pretreat stains with a gentle stain remover after testing in an inconspicuous spot; hand wash in cool water, avoid enzyme-based detergents, soak for up to 30 minutes, rinse until the water runs clear and press water out without wringing; for machine washing turn the item inside out in a mesh bag on the delicate or hand-wash cycle with cold water and low spin, and remove promptly; never use a dryer; lay flat in its natural shape, roll in a towel to speed drying and never hang wet knitwear; keep away from direct sunlight and heat sources such as radiators, which can yellow, shrink or damage yarns; steam rather than iron because ironing can crush or flatten the pile; store knits folded and clean because soil can attract insects, and avoid plastic storage, which encourages yellowing and can trap moisture.',
+    },
+  ],
+  seo: {
+    title: 'How to Wash Cashmere (Hand Wash, Machine, Drying)',
+    description: 'How to wash cashmere: cool or lukewarm hand wash with wool-safe detergent, no wringing, towel roll, dry flat away from heat, and never tumble dry it.',
+    canonical: 'https://housecarewiki.com/guides/how-to-wash-cashmere',
+    indexable: true,
+    focusKeyword: 'how to wash cashmere',
+  },
+};
+
+export default article;
