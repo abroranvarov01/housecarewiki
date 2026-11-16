@@ -195,6 +195,14 @@ import gHowToCleanCrystalGlasses from './how-to-clean-crystal-glasses';
 import gHowToCleanAnArtificialChristmasTree from './how-to-clean-an-artificial-christmas-tree';
 import gHowToCleanSuedeBoots from './how-to-clean-suede-boots';
 import gHowToWashCashmere from './how-to-wash-cashmere';
+import gCanYouMixBleachAndRubbingAlcohol from './can-you-mix-bleach-and-rubbing-alcohol';
+import gCanYouMixHydrogenPeroxideAndVinegar from './can-you-mix-hydrogen-peroxide-and-vinegar';
+import gHowToCleanARoasterOven from './how-to-clean-a-roaster-oven';
+import gHowToGetRedWineOutOfACouch from './how-to-get-red-wine-out-of-a-couch';
+import gHowToWashAFleeceBlanket from './how-to-wash-a-fleece-blanket';
+import gHowToWashFlannelSheets from './how-to-wash-flannel-sheets';
+import gHowToCleanAirVents from './how-to-clean-air-vents';
+import gHowToGetWaxOutOfACandleJar from './how-to-get-wax-out-of-a-candle-jar';
 
 // One file per guide: each is a self-contained, source-backed page. Order here is the order on hub pages.
 export const STAIN_GUIDES: Article[] = [
@@ -474,4 +482,16 @@ export const BATCH21_GUIDES: Article[] = [
   gHowToCleanAnArtificialChristmasTree,
   gHowToCleanSuedeBoots,
   gHowToWashCashmere,
+];
+
+// Batch 22: Thanksgiving and holiday hosting (roaster oven, red wine on the couch, candle jars), winter bedding (fleece blankets, flannel sheets), heating-season air vents, and two mixing-safety questions (bleach and rubbing alcohol, hydrogen peroxide and vinegar).
+export const BATCH22_GUIDES: Article[] = [
+  gCanYouMixBleachAndRubbingAlcohol,
+  gCanYouMixHydrogenPeroxideAndVinegar,
+  gHowToCleanARoasterOven,
+  gHowToGetRedWineOutOfACouch,
+  gHowToWashAFleeceBlanket,
+  gHowToWashFlannelSheets,
+  gHowToCleanAirVents,
+  gHowToGetWaxOutOfACandleJar,
 ];
