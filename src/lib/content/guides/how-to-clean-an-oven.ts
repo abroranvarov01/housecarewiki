@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing a greasy, crumb-covered stainless steel gas stovetop with a yellow and green sponge, next to black cast-iron burner grates',
+  heroImage: '/images/g-how-to-clean-an-oven.webp',
+  heroImageAlt: 'Hand wiping the inside of an open oven door glass with a blue nonabrasive sponge, the racks pulled out on the counter beside a bowl of soapy water',
   safetyWarnings: [
     'Do not use commercial oven cleaner in a self-cleaning oven, even a product labeled safe for self-clean models. GE warns repeated use etches and discolors the liner, and Whirlpool warns of staining, etching and pitting of the porcelain.',
     'Keep the kitchen well ventilated during a self-clean cycle and never block the oven vents. The cycle runs at very high heat and gives off heat, odor and some smoke.',

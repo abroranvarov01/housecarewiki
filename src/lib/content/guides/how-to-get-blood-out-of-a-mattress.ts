@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'A hand scrubbing a yellowed stain along the collar of a white shirt with a wooden-handled brush, with a pile of laundry and a laundry basket on the counter behind it',
+  heroImage: '/images/g-how-to-get-blood-out-of-a-mattress.webp',
+  heroImageAlt: 'A hand blotting a small blood stain on a bare white quilted mattress with a folded white cloth, a glass bowl of cold water beside it',
   safetyWarnings: [
     'Use cold water only. Warm or hot water, a hair dryer on a hot setting or a steam cleaner can set blood protein in the fibers so it never comes out.',
     'Never pour liquid onto the mattress. Memory foam and latex hold moisture for a long time, which can lead to mildew and odor; mattress makers tell you not to soak or saturate the mattress.',

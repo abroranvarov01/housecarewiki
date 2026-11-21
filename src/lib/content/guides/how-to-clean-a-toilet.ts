@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Sunlit bathroom with a round white vessel sink on a wooden vanity, a white spray bottle and folded grey cloth, a wooden towel ladder with white towels and a glass shower door with water spots',
+  heroImage: '/images/g-how-to-clean-a-toilet.webp',
+  heroImageAlt: 'Hand in a yellow rubber glove scrubbing under the rim of a white toilet bowl with a toilet brush in a bright, clean bathroom',
   safetyWarnings: [
     'Never mix bleach with ammonia, vinegar, acidic toilet cleaners or any other cleaner. The CDC warns this can release vapors that are very dangerous to breathe, and Clorox notes that lime, rust and hard-water toilet cleaners are acidic, so they must not be used together with bleach. Flush between products.',
     'Wear rubber gloves and ventilate the bathroom by opening a window or door while you clean. Clorox also recommends safety glasses with acidic toilet cleaners.',

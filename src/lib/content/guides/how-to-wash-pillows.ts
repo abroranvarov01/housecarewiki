@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-wash-pillows.webp',
+  heroImageAlt: 'Two white bed pillows going into the drum of a front-load washing machine, wool dryer balls and a cup of mild detergent on top',
   safetyWarnings: [
     'Follow the pillow\'s sewn-in care label. Pacific Coast notes that the label overrides general guidance on cycle, temperature and detergent.',
     'Never machine wash memory foam or latex pillows. Tempur-Pedic says its TEMPUR material should never be washed, and Purple advises against fully submerging foam or latex cores.',

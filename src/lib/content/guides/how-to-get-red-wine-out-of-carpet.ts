@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'Cordless stick vacuum with a clear brush head on a plush beige patterned area rug in a sunlit living room, beside a cream sofa with a knitted throw and a round wooden coffee table holding a mug and a book',
+  heroImage: '/images/g-how-to-get-red-wine-out-of-carpet.webp',
+  heroImageAlt: 'Hand blotting a fresh red wine spill on a cream carpet with a folded white cloth, a tipped-over wine glass and a bowl of water beside it',
   safetyWarnings: [
     'Hydrogen peroxide can lighten carpet dye. Test it on a hidden spot (inside a closet or under furniture) and wait until it dries before using it on the stain. The IICRC does not recommend it on wool or other natural fibers without extensive testing for color loss.',
     'Never mix cleaners. Do not combine hydrogen peroxide, vinegar or ammonia with chlorine bleach, and do not use chlorine bleach on carpet at all.',

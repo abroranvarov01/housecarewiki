@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-clean-hardwood-floors.webp',
+  heroImageAlt: 'Flat microfiber mop on a warm oak hardwood floor in a sunlit living room, a spray bottle of floor cleaner standing nearby',
   safetyWarnings: [
     'Never use a wet mop or a steam mop on wood floors. The National Wood Flooring Association says they damage the finish and the wood over time, and Bruce warns that water or steam may permanently damage the floor and void the warranty.',
     'Avoid vinegar and other acidic cleaners, ammonia-based cleaners, bleach, detergents, oil soaps and polishes; Bruce lists all of them as products not to use on its hardwood floors.',

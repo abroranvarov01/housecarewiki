@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-clean-a-washing-machine.webp',
+  heroImageAlt: 'Hand wiping the rubber door gasket of an open white front-load washing machine with a cloth, the detergent drawer pulled out and towels in a basket nearby',
   safetyWarnings: [
     'Never use chlorine bleach and vinegar together, in the drum or on the gasket. LG lists this as a warning, and the CDC advises never mixing bleach with any other cleaner because the vapors can be dangerous to breathe.',
     'Do not use thickened, easy-pour or no-splash bleach in the Clean Washer cycle. Whirlpool warns these can cause excessive suds.',

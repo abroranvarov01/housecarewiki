@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-microwave.webp',
+  heroImageAlt: 'Hand wiping the inside of an open microwave with a white cloth, a bowl of water with lemon slices inside and the glass turntable on the counter',
   safetyWarnings: [
     'Never run the microwave empty, including to dry it after cleaning. Samsung warns that operating it without food can damage the magnetron tube or the glass tray.',
     'The water bowl and the turntable can be very hot after the steam cycle. Use oven mitts, let the turntable cool, and do not put a hot glass tray straight into water, which can make it break.',

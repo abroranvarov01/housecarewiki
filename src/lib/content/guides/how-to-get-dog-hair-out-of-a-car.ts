@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-pet-hair.webp',
-  heroImageAlt: 'Hand in a yellow rubber glove sweeping clumps of light pet hair across the seat of a dark grey fabric armchair, with loose hair on the wood floor below',
+  heroImage: '/images/g-how-to-get-dog-hair-out-of-a-car.webp',
+  heroImageAlt: 'Hand in a blue rubber glove sweeping golden dog hair into a clump on a grey fabric car seat, a handheld vacuum on the seat and a golden retriever watching outside',
   safetyWarnings: [
     'Use only the cleaners and procedures your owner\'s manual recommends on seat fabric. Kia warns that anything else may affect the fabric\'s appearance and reduce its fire-resistant properties.',
     'Keep the rubber glove only slightly damp, and do not wipe leather seats with a wet cloth; Kia\'s manual warns that a wet cloth may cause the leather surface to crack.',

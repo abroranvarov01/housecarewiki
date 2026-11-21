@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  heroImage: '/images/g-how-to-clean-a-cast-iron-skillet.webp',
+  heroImageAlt: 'Hand scrubbing a black cast iron skillet with a stiff brush under running water, a chain mail scrubber and a bottle of cooking oil on the counter',
   safetyWarnings: [
     'Never put a seasoned cast iron skillet in the dishwasher. Lodge says the dishwasher strips seasoning and will likely cause rust.',
     'Do not leave cast iron soaking in the sink or let it air-dry. Lodge and Field Company both link standing water to rust.',
