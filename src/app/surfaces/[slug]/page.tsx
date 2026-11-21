@@ -104,7 +104,7 @@ export default function SurfaceGuidePage({
         <header className="grid gap-8 border-b border-rule pb-10 pt-4 lg:grid-cols-12 lg:gap-12 lg:pt-6">
           <div className="lg:col-span-7">
             <Kicker tone="accent">Surface care guide · {surface.category}</Kicker>
-            <h1 className="mt-4 font-serif text-[2.25rem] font-medium leading-[1.05] tracking-[-0.02em] text-ink sm:text-5xl lg:text-[3.5rem]">
+            <h1 className="mt-4 font-display text-[2.25rem] font-bold leading-[1.05] tracking-[-0.02em] text-ink sm:text-5xl lg:text-[3.5rem]">
               {surface.name}
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-secondary">{surface.summary}</p>
@@ -146,17 +146,17 @@ export default function SurfaceGuidePage({
                 ))}
               </ul>
             </div>
-            <div className="bg-terracotta-soft/60 p-5 sm:p-7">
-              <h3 className="kicker flex items-center gap-2 text-terracotta-deep">
-                <span className="inline-flex h-6 w-6 items-center justify-center rounded-sm bg-terracotta text-paper-light" aria-hidden="true">
+            <div className="bg-coral-soft/60 p-5 sm:p-7">
+              <h3 className="kicker flex items-center gap-2 text-coral-deep">
+                <span className="inline-flex h-6 w-6 items-center justify-center rounded-sm bg-coral text-paper-light" aria-hidden="true">
                   <X className="h-4 w-4" />
                 </span>
                 Never use
               </h3>
-              <ul className="mt-4 border-t border-terracotta/30">
+              <ul className="mt-4 border-t border-coral/30">
                 {surface.unsafeAgents.map((u) => (
-                  <li key={u.agent} className="grid grid-cols-[1.25rem_1fr] gap-3 border-b border-terracotta/30 py-3">
-                    <X className="mt-1 h-4 w-4 text-terracotta-deep" aria-hidden="true" />
+                  <li key={u.agent} className="grid grid-cols-[1.25rem_1fr] gap-3 border-b border-coral/30 py-3">
+                    <X className="mt-1 h-4 w-4 text-coral-deep" aria-hidden="true" />
                     <span>
                       <span className="block text-base font-semibold leading-snug text-ink sm:text-[17px]">{u.agent}</span>
                       <span className="mt-1 block text-[15px] leading-relaxed text-ink-secondary">{u.reason}</span>
@@ -196,7 +196,7 @@ export default function SurfaceGuidePage({
             <ol className="mt-2">
               {surface.deepCleanSteps.map((step, i) => (
                 <li key={step} className="grid grid-cols-[3rem_1fr] gap-x-4 border-b border-rule py-5 sm:grid-cols-[4rem_1fr]">
-                  <span className="font-serif text-[2.25rem] font-medium leading-none tracking-[-0.02em] text-terracotta-deep" aria-hidden="true">
+                  <span className="font-display text-[2.25rem] font-bold leading-none tracking-[-0.02em] text-coral-deep" aria-hidden="true">
                     {pad(i + 1)}
                   </span>
                   <p className="max-w-prose text-base leading-relaxed text-ink-secondary sm:text-[17px]">
@@ -230,7 +230,7 @@ export default function SurfaceGuidePage({
                   </Link>
                   <div className="min-w-0">
                     <Link href={`/products/${prod.slug}`} className="group block">
-                      <span className="font-serif text-lg font-semibold leading-snug text-ink">
+                      <span className="font-display text-lg font-bold leading-snug text-ink">
                         <span className="hover-title">{prod.shortName}</span>
                       </span>
                     </Link>
@@ -267,7 +267,7 @@ export default function SurfaceGuidePage({
                     <Figure src={g.heroImage} alt="" ratio="1/1" />
                     <span className="min-w-0">
                       <span className="kicker text-ink-muted">{articleMeta(g)}</span>
-                      <span className="mt-1 block font-serif text-lg font-semibold leading-snug text-ink">
+                      <span className="mt-1 block font-display text-lg font-bold leading-snug text-ink">
                         <span className="hover-title">{g.title}</span>
                       </span>
                     </span>
@@ -290,7 +290,7 @@ export default function SurfaceGuidePage({
                 <li key={s.slug}>
                   <Link
                     href={`/surfaces/${s.slug}`}
-                    className="group flex min-h-[44px] items-center justify-between gap-3 border-b border-rule py-2.5 text-[15px] text-ink hover:text-terracotta-deep"
+                    className="group flex min-h-[44px] items-center justify-between gap-3 border-b border-rule py-2.5 text-[15px] text-ink hover:text-coral-deep"
                   >
                     <span className="hover-title">{s.name}</span>
                     <ArrowRight className="h-4 w-4 shrink-0 text-ink-muted transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />

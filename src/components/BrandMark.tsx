@@ -1,33 +1,27 @@
-// HouseCareWiki logo (docs/brand/logo-sheet.webp): a brush-stroke terracotta roof with a chimney, a honey
-// four-pane window and three honey rays, next to the two-color serif wordmark. Logo colors are the `brand.*` tokens.
+// HouseCareWiki logo (Nov 2026): a soap bubble with a shine, two small peach bubbles rising beside it, next to the
+// two-color Bricolage Grotesque wordmark. Concept made with ChatGPT, redrawn as SVG. Colours are the `brand.*` tokens.
+// tone="ink" is for light grounds (teal bubble); tone="paper" is for teal grounds (cream bubble).
 type Tone = 'ink' | 'paper';
 
 export function BrandMark({ className = 'h-7 w-7', tone = 'ink' }: { className?: string; tone?: Tone }) {
-  const roof = tone === 'paper' ? '#F8F4EB' : '#C75E3D';
+  const bubble = tone === 'paper' ? '#FBF4EC' : '#1F5C5B';
+  const shine = tone === 'paper' ? '#F6B996' : '#FBF4EC';
   return (
     <svg viewBox="0 0 64 64" className={className} aria-hidden="true" focusable="false">
-      <path d="M5 44 31 21l27 23" fill="none" stroke={roof} strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M43 17h7v18l-7-6z" fill={roof} />
-      <g fill="#F6C343">
-        <rect x="23.5" y="31" width="6.5" height="6.5" rx="1.2" />
-        <rect x="32" y="31" width="6.5" height="6.5" rx="1.2" />
-        <rect x="23.5" y="39.5" width="6.5" height="6.5" rx="1.2" />
-        <rect x="32" y="39.5" width="6.5" height="6.5" rx="1.2" />
-      </g>
-      <g stroke="#F6C343" strokeWidth="3.4" strokeLinecap="round">
-        <path d="M45 11.5 43.5 5.5" />
-        <path d="M50.5 12 54 6.5" />
-        <path d="M54 17l6-2.5" />
-      </g>
+      <circle cx="27" cy="38" r="23" fill={bubble} />
+      <path d="M12.5 36.5A15 15 0 0 1 25 22.2" fill="none" stroke={shine} strokeWidth="5" strokeLinecap="round" />
+      <circle cx="14.2" cy="43.5" r="2.6" fill={shine} />
+      <circle cx="50" cy="12" r="7.5" fill="#F6B996" />
+      <circle cx="59" cy="25" r="4" fill="#F6B996" />
     </svg>
   );
 }
 
 export function Wordmark({ tone = 'ink' }: { tone?: Tone }) {
   return (
-    <span className="font-serif text-[1.3rem] font-bold sm:text-[1.5rem] leading-none tracking-[-0.02em]">
-      <span className={tone === 'paper' ? 'text-brand-cream' : 'text-brand-forest'}>HouseCare</span>
-      <span className={tone === 'paper' ? 'text-brand-honey' : 'text-brand-terracotta'}>Wiki</span>
+    <span className="font-display text-[1.3rem] font-extrabold leading-none tracking-[-0.03em] sm:text-[1.5rem]">
+      <span className={tone === 'paper' ? 'text-brand-cream' : 'text-brand-teal'}>HouseCare</span>
+      <span className={tone === 'paper' ? 'text-brand-peach' : 'text-coral-deep'}>Wiki</span>
     </span>
   );
 }

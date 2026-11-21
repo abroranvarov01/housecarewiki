@@ -11,8 +11,8 @@ export const SITE = {
   email: 'hello@housecarewiki.com',
   logo: '/icon.png',
   defaultOgImage: '/og',
-  themeColor: '#F8F4EB',
-  backgroundColor: '#F8F4EB',
+  themeColor: '#FBF4EC',
+  backgroundColor: '#FBF4EC',
   // Add real profiles here once they exist; empty entries are skipped in schema.
   sameAs: [] as string[],
   // Amazon Associates tracking ID. The only place it is set: every product link is built from it.

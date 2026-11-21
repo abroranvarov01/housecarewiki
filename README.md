@@ -11,7 +11,7 @@ Design system: [docs/design-system.md](docs/design-system.md). Latest overhaul a
 ## 1. Implemented Subsystems (Spec v2.0 SYS-01 to SYS-14)
 
 - **SYS-01 Public Website (`src/app/page.tsx`, `src/app/rooms/[slug]`, `src/app/best/[slug]`, `src/app/guides/[slug]`)**:
-  - "Modern Home Field Guide" design system (paper, ink, denim, marker yellow, brick; Newsreader + Schibsted Grotesk + IBM Plex Mono). See docs/design-system.md.
+  - "Warm Editorial Home Guide" design system (cream paper, teal, peach, coral; Bricolage Grotesque + Schibsted Grotesk + IBM Plex Mono). See docs/design-system.md.
 - **SYS-02 Content Engine (`src/lib/seed-data.ts`, `src/lib/store.ts`)**:
   - Structured guides, safety warnings, step-by-step instructions, pro tips, FAQs, and primary source citations (IICRC, EPA, TCNA, AHFA).
 - **SYS-03 & SYS-04 Product Catalog & Review Engine (`/products`, `/products/[slug]`, `/best/[slug]`, `/compare`)**:

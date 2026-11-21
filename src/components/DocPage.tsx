@@ -46,7 +46,7 @@ export function DocPage({
           <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: breadcrumb }]} />
           <div className="mt-8 max-w-3xl">
             <Kicker tone="accent">{kicker}</Kicker>
-            <h1 className="mt-3 font-serif text-[2.5rem] font-medium leading-[1.05] tracking-[-0.02em] text-ink sm:text-[3.25rem]">
+            <h1 className="mt-3 font-display text-[2.5rem] font-bold leading-[1.05] tracking-[-0.02em] text-ink sm:text-[3.25rem]">
               {title}
             </h1>
             {lede && <div className="mt-5 max-w-prose text-lg leading-relaxed text-ink-secondary">{lede}</div>}
@@ -68,11 +68,11 @@ export function DocPage({
                 <li key={r.href}>
                   <Link href={r.href} className="group flex min-h-[44px] items-center justify-between gap-4 py-3">
                     <span>
-                      <span className="font-semibold text-ink group-hover:text-terracotta-deep">{r.label}</span>
+                      <span className="font-semibold text-ink group-hover:text-coral-deep">{r.label}</span>
                       {r.note && <span className="block text-sm text-ink-muted">{r.note}</span>}
                     </span>
                     <ArrowRight
-                      className="h-4 w-4 shrink-0 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-terracotta-deep"
+                      className="h-4 w-4 shrink-0 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-coral-deep"
                       aria-hidden="true"
                     />
                   </Link>
@@ -102,8 +102,8 @@ export function DocSection({
   return (
     <section id={id} aria-labelledby={headingId} className="scroll-mt-24 border-t border-rule-strong/60 pt-4">
       <div className="flex items-baseline gap-3">
-        {index && <span className="kicker shrink-0 text-terracotta-deep">{index}</span>}
-        <h2 id={headingId} className="font-serif text-2xl font-semibold leading-tight tracking-[-0.01em] text-ink sm:text-[1.75rem]">
+        {index && <span className="kicker shrink-0 text-coral-deep">{index}</span>}
+        <h2 id={headingId} className="font-display text-2xl font-bold leading-tight tracking-[-0.01em] text-ink sm:text-[1.75rem]">
           {title}
         </h2>
       </div>
@@ -118,7 +118,7 @@ export function DocList({ items }: { items: React.ReactNode[] }) {
     <ul className="border-t border-rule">
       {items.map((item, i) => (
         <li key={i} className="grid grid-cols-[0.75rem_1fr] gap-3 border-b border-rule py-2.5">
-          <span className="mt-[0.6em] h-1.5 w-1.5 bg-honey-deep" aria-hidden="true" />
+          <span className="mt-[0.6em] h-1.5 w-1.5 bg-peach-deep" aria-hidden="true" />
           <span>{item}</span>
         </li>
       ))}

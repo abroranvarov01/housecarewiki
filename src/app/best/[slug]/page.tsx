@@ -128,7 +128,7 @@ function ResearchAssessment({ product }: { product: Product }) {
             <div key={key} className="grid grid-cols-[7.5rem_1fr_2.5rem] items-center gap-3 text-[14px]">
               <dt className="text-ink-secondary">{label}</dt>
               <dd className="h-1.5 overflow-hidden rounded-full bg-rule" aria-hidden="true">
-                <div className="h-full rounded-full bg-terracotta" style={{ width: `${Math.max(0, Math.min(10, value)) * 10}%` }} />
+                <div className="h-full rounded-full bg-coral" style={{ width: `${Math.max(0, Math.min(10, value)) * 10}%` }} />
               </dd>
               <dd className="text-right font-semibold text-[13px] tabular-nums text-ink">
                 {value.toFixed(1)}
@@ -238,7 +238,7 @@ export default function BestProductsPage({
             <Kicker tone="accent">
               Buying guide · {recommendedProducts.length} picks
             </Kicker>
-            <h1 className="mt-3 font-serif text-[2.25rem] font-medium leading-[1.05] tracking-[-0.02em] text-ink sm:text-5xl">
+            <h1 className="mt-3 font-display text-[2.25rem] font-bold leading-[1.05] tracking-[-0.02em] text-ink sm:text-5xl">
               {article.title}
             </h1>
             <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-secondary">{article.subtitle}</p>
@@ -250,7 +250,7 @@ export default function BestProductsPage({
               reviewer={reviewer && article.reviewedBy ? { author: reviewer, reviewedAt: article.reviewedBy.reviewedAt } : undefined}
               className="mt-5"
             />
-            <div className="mt-4 border-l-2 border-honey-deep pl-3">
+            <div className="mt-4 rounded-xl bg-paper-warm/70 px-4 py-3 ring-1 ring-inset ring-peach-deep/30">
               <EvidenceLabel status={article.evidenceStatus} withDetail />
             </div>
           </div>
@@ -268,7 +268,7 @@ export default function BestProductsPage({
               <li key={item.href} className="shrink-0">
                 <a
                   href={item.href}
-                  className="flex min-h-[44px] items-center whitespace-nowrap px-3 text-[14px] font-medium text-ink-secondary transition-colors hover:text-terracotta-deep"
+                  className="flex min-h-[44px] items-center whitespace-nowrap px-3 text-[14px] font-medium text-ink-secondary transition-colors hover:text-coral-deep"
                 >
                   {item.label}
                 </a>
@@ -304,8 +304,8 @@ export default function BestProductsPage({
                   </Link>
                   <div className="min-w-0">
                     <Kicker tone="accent">{topPick.badge || 'Our top pick'}</Kicker>
-                    <h3 className="mt-1 font-serif text-2xl font-semibold leading-tight text-ink">
-                      <Link href={`/products/${topPick.slug}`} className="hover:text-terracotta-deep">
+                    <h3 className="mt-1 font-display text-2xl font-bold leading-tight text-ink">
+                      <Link href={`/products/${topPick.slug}`} className="hover:text-coral-deep">
                         {topPick.shortName}
                       </Link>
                     </h3>
@@ -342,14 +342,14 @@ export default function BestProductsPage({
           <ol className="mt-4 divide-y divide-rule border-b border-rule">
             {recommendedProducts.map((prod, index) => (
               <li key={prod.id} className="grid grid-cols-[2rem_4rem_1fr] gap-x-4 gap-y-3 py-5 sm:grid-cols-[2.5rem_5rem_1fr_auto] sm:items-center">
-                <span className="kicker pt-1 text-terracotta-deep sm:pt-0">{String(index + 1).padStart(2, '0')}</span>
+                <span className="kicker pt-1 text-coral-deep sm:pt-0">{String(index + 1).padStart(2, '0')}</span>
                 <div className="aspect-square bg-paper-card p-1">
                   <img src={prod.image} alt="" loading="lazy" decoding="async" className="h-full w-full object-contain" />
                 </div>
                 <div className="min-w-0">
                   <Kicker>{prod.badge || `Best for ${prod.bestFor}`}</Kicker>
-                  <h3 className="mt-1 font-serif text-xl font-semibold leading-snug text-ink">
-                    <Link href={`/products/${prod.slug}`} className="hover:text-terracotta-deep">
+                  <h3 className="mt-1 font-display text-xl font-bold leading-snug text-ink">
+                    <Link href={`/products/${prod.slug}`} className="hover:text-coral-deep">
                       {prod.shortName}
                     </Link>
                   </h3>
@@ -359,7 +359,7 @@ export default function BestProductsPage({
                   <EditorScore score={prod.scores.overall} size="xs" />
                   <a
                     href={`#${prod.slug}`}
-                    className="group inline-flex min-h-[44px] items-center gap-1 text-[13px] font-semibold text-terracotta-deep"
+                    className="group inline-flex min-h-[44px] items-center gap-1 text-[13px] font-semibold text-coral-deep"
                   >
                     <span className="hover-title">Our notes</span>
                     <ArrowDown className="h-3.5 w-3.5" aria-hidden="true" />
@@ -411,7 +411,7 @@ export default function BestProductsPage({
                   {recommendedProducts.map((prod) => (
                     <tr key={prod.id}>
                       <th scope="row" className="sticky left-0 z-10 min-w-[9rem] border-r border-rule bg-paper-card px-4 py-3 font-semibold text-ink">
-                        <Link href={`/products/${prod.slug}`} className="hover:text-terracotta-deep">
+                        <Link href={`/products/${prod.slug}`} className="hover:text-coral-deep">
                           {prod.shortName}
                         </Link>
                       </th>
@@ -452,7 +452,7 @@ export default function BestProductsPage({
                   <Kicker tone="accent">
                     {String(idx + 1).padStart(2, '0')} · Best for {prod.bestFor.toLowerCase()}
                   </Kicker>
-                  <h3 id={`${prod.slug}-name`} className="mt-2 font-serif text-[1.75rem] font-semibold leading-tight tracking-[-0.01em] text-ink sm:text-3xl">
+                  <h3 id={`${prod.slug}-name`} className="mt-2 font-display text-[1.75rem] font-bold leading-tight tracking-[-0.01em] text-ink sm:text-3xl">
                     {prod.name}
                   </h3>
                   <div className="mt-3">
@@ -477,7 +477,7 @@ export default function BestProductsPage({
                       <ul className="mt-2 space-y-2 text-[15px] leading-snug text-ink-secondary">
                         {withoutPrices(prod.cons).map((c) => (
                           <li key={c} className="grid grid-cols-[1rem_1fr] gap-2">
-                            <span className="font-semibold text-terracotta-deep" aria-hidden="true">–</span>
+                            <span className="font-semibold text-coral-deep" aria-hidden="true">–</span>
                             <span>{c}</span>
                           </li>
                         ))}
@@ -486,7 +486,7 @@ export default function BestProductsPage({
                   </div>
 
                   {withoutPrices(prod.whoShouldSkip).length > 0 && (
-                    <div className="mt-6 border-l-2 border-terracotta pl-4">
+                    <div className="mt-6 rounded-xl bg-paper-warm/70 px-4 py-3 ring-1 ring-inset ring-coral/30">
                       <Kicker as="div" tone="accent">Skip it if</Kicker>
                       <ul className="mt-1.5 space-y-1 text-[15px] leading-snug text-ink-secondary">
                         {withoutPrices(prod.whoShouldSkip).map((s) => (
@@ -509,7 +509,7 @@ export default function BestProductsPage({
                     />
                     <Link
                       href={`/products/${prod.slug}`}
-                      className="group inline-flex min-h-[44px] items-center gap-1.5 text-sm font-semibold text-terracotta-deep"
+                      className="group inline-flex min-h-[44px] items-center gap-1.5 text-sm font-semibold text-coral-deep"
                     >
                       <span className="hover-title">Full review and specs</span>
                       <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
@@ -565,7 +565,7 @@ export default function BestProductsPage({
                   <div className="prose-field mt-6 max-w-prose space-y-8">
                     {article.buyingGuideSections!.map((sec) => (
                       <div key={sec.heading}>
-                        <h3 className="font-serif text-2xl font-semibold leading-snug text-ink">{sec.heading}</h3>
+                        <h3 className="font-display text-2xl font-bold leading-snug text-ink">{sec.heading}</h3>
                         <p className="mt-2">{sec.body}</p>
                       </div>
                     ))}
@@ -625,7 +625,7 @@ export default function BestProductsPage({
                         <Figure src={g.heroImage} alt="" ratio="1/1" />
                         <span>
                           <span className="kicker text-ink-muted">{articleMeta(g)}</span>
-                          <span className="mt-1 block font-serif text-lg font-semibold leading-snug text-ink">
+                          <span className="mt-1 block font-display text-lg font-bold leading-snug text-ink">
                             <span className="hover-title">{g.title}</span>
                           </span>
                         </span>
@@ -648,9 +648,9 @@ export default function BestProductsPage({
                             href={`/compare/${c.slug}`}
                             className="group grid grid-cols-[1fr_auto_1fr] items-center gap-3 rounded-2xl border border-rule bg-paper-card p-4 transition-colors hover:border-rule-strong"
                           >
-                            <span className="text-right font-serif text-lg font-semibold leading-tight text-ink">{a.shortName}</span>
-                            <span className="kicker rounded-full bg-honey px-2 py-1 text-ink">vs</span>
-                            <span className="font-serif text-lg font-semibold leading-tight text-ink">{b.shortName}</span>
+                            <span className="text-right font-display text-lg font-bold leading-tight text-ink">{a.shortName}</span>
+                            <span className="kicker rounded-full bg-peach px-2 py-1 text-ink">vs</span>
+                            <span className="font-display text-lg font-bold leading-tight text-ink">{b.shortName}</span>
                           </Link>
                         </li>
                       );

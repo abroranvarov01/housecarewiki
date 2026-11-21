@@ -82,7 +82,7 @@ export default function UserAccountPage() {
           <div className="mt-8 grid gap-6 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
               <Kicker tone="accent">Your saved items</Kicker>
-              <h1 className="mt-3 font-serif text-[2.5rem] font-medium leading-[1.05] tracking-[-0.02em] text-ink sm:text-[3.25rem]">
+              <h1 className="mt-3 font-display text-[2.5rem] font-bold leading-[1.05] tracking-[-0.02em] text-ink sm:text-[3.25rem]">
                 Saved guides and products
               </h1>
               <p className="mt-4 max-w-prose text-[1.0625rem] leading-relaxed text-ink-secondary">
@@ -98,7 +98,7 @@ export default function UserAccountPage() {
               <button
                 type="button"
                 onClick={deleteAllData}
-                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded border border-terracotta px-5 text-sm font-semibold text-terracotta-deep transition-colors duration-150 hover:bg-terracotta hover:text-white"
+                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded border border-coral px-5 text-sm font-semibold text-coral-deep transition-colors duration-150 hover:bg-coral hover:text-white"
               >
                 <Trash2 className="h-4 w-4" aria-hidden="true" />
                 Delete all
@@ -109,13 +109,13 @@ export default function UserAccountPage() {
       </header>
 
       <Container className="pt-10">
-        <p role="status" aria-live="polite" className={statusMsg ? 'mb-6 border-l-4 border-leaf-deep bg-leaf-soft px-4 py-3 text-sm font-semibold text-leaf-deep' : 'sr-only'}>
+        <p role="status" aria-live="polite" className={statusMsg ? 'mb-6 rounded-2xl ring-1 ring-inset ring-leaf-deep/40 bg-leaf-soft px-4 py-3 text-sm font-semibold text-leaf-deep' : 'sr-only'}>
           {statusMsg}
         </p>
 
         <section aria-labelledby="saved-heading" className="max-w-3xl">
           <div className="flex items-baseline justify-between border-t border-rule-strong pt-3">
-            <h2 id="saved-heading" className="font-serif text-2xl font-semibold text-ink">
+            <h2 id="saved-heading" className="font-display text-2xl font-bold text-ink">
               Your list
             </h2>
             <span className="kicker text-ink-muted">
@@ -147,14 +147,14 @@ export default function UserAccountPage() {
                 <li key={item.slug} className="flex items-center justify-between gap-4 py-3">
                   <Link href={hrefFor(item)} className="group min-w-0 py-1">
                     <span className="kicker text-ink-muted">{TYPE_LABEL[item.type] || item.type}</span>
-                    <span className="mt-0.5 block font-serif text-lg font-semibold leading-snug text-ink">
+                    <span className="mt-0.5 block font-display text-lg font-bold leading-snug text-ink">
                       <span className="hover-title">{item.title}</span>
                     </span>
                   </Link>
                   <button
                     type="button"
                     onClick={() => removeItem(item.slug)}
-                    className="inline-flex min-h-[44px] shrink-0 items-center gap-1.5 rounded px-3 text-sm font-semibold text-terracotta-deep hover:bg-terracotta-soft"
+                    className="inline-flex min-h-[44px] shrink-0 items-center gap-1.5 rounded px-3 text-sm font-semibold text-coral-deep hover:bg-coral-soft"
                   >
                     <X className="h-4 w-4" aria-hidden="true" />
                     Remove<span className="sr-only"> {item.title}</span>
@@ -165,8 +165,8 @@ export default function UserAccountPage() {
           )}
         </section>
 
-        <aside className="mt-12 max-w-prose border-l-4 border-leaf bg-leaf-soft/60 px-5 py-4 text-[0.9375rem] leading-relaxed text-ink-secondary">
-          <p className="kicker mb-1 text-terracotta-deep">What we keep</p>
+        <aside className="mt-12 max-w-prose rounded-2xl ring-1 ring-inset ring-leaf/40 bg-leaf-soft/60 px-5 py-4 text-[0.9375rem] leading-relaxed text-ink-secondary">
+          <p className="kicker mb-1 text-coral-deep">What we keep</p>
           <p>
             We don&apos;t collect home addresses, phone numbers or cross-site profiles. Clicks on Amazon links record only which
             product and page the link was on.{' '}

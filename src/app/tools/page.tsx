@@ -92,7 +92,7 @@ export default function ToolsIndexPage() {
 
         <header className="max-w-3xl pb-10 pt-2">
           <Kicker tone="accent">Free tools</Kicker>
-          <h1 className="mt-3 font-serif text-[2.25rem] font-semibold leading-[1.08] tracking-[-0.015em] text-ink sm:text-5xl">
+          <h1 className="mt-3 font-display text-[2.25rem] font-bold leading-[1.08] tracking-[-0.015em] text-ink sm:text-5xl">
             Tools for the mess in front of you
           </h1>
           <p className="mt-4 max-w-prose text-[1.0625rem] leading-relaxed text-ink-secondary">
@@ -106,7 +106,7 @@ export default function ToolsIndexPage() {
             {FIX_TOOLS.map((t) => (
               <article key={t.href} className="flex flex-col bg-paper-card p-6 sm:p-8">
                 <Kicker>{t.name}</Kicker>
-                <h3 className="mt-3 font-serif text-[1.75rem] font-semibold leading-tight text-ink sm:text-3xl">
+                <h3 className="mt-3 font-display text-[1.75rem] font-bold leading-tight text-ink sm:text-3xl">
                   <Link href={t.href} className="group">
                     <span className="hover-title">{t.question}</span>
                   </Link>
@@ -132,7 +132,7 @@ export default function ToolsIndexPage() {
                 <div className="mt-auto pt-7">
                   <Link
                     href={t.href}
-                    className="group inline-flex min-h-[44px] items-center gap-2 rounded bg-ink px-5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-ink-deep"
+                    className="group inline-flex min-h-[44px] items-center gap-2 rounded bg-teal px-5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-teal-deep"
                   >
                     {t.cta}
                     <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
@@ -152,13 +152,13 @@ export default function ToolsIndexPage() {
                   href={t.href}
                   className="group grid min-h-[64px] grid-cols-[2.5rem_1fr_auto] items-baseline gap-x-4 gap-y-1 py-5 sm:grid-cols-[2.5rem_minmax(0,18rem)_1fr_auto]"
                 >
-                  <span className="kicker text-terracotta-deep">{String(i + 1).padStart(2, '0')}</span>
-                  <span className="font-serif text-xl font-semibold leading-snug text-ink group-hover:text-terracotta-deep">
+                  <span className="kicker text-coral-deep">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="font-display text-xl font-bold leading-snug text-ink group-hover:text-coral-deep">
                     <span className="hover-title">{t.name}</span>
                   </span>
                   <span className="col-start-2 text-[0.9375rem] text-ink-secondary sm:col-start-3">{t.question}</span>
                   <ArrowRight
-                    className="col-start-3 row-start-1 h-4 w-4 self-center text-ink-muted transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-terracotta-deep sm:col-start-4"
+                    className="col-start-3 row-start-1 h-4 w-4 self-center text-ink-muted transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-coral-deep sm:col-start-4"
                     aria-hidden="true"
                   />
                 </Link>
@@ -167,8 +167,8 @@ export default function ToolsIndexPage() {
           </ul>
         </section>
 
-        <aside className="mt-14 max-w-prose border-l-4 border-leaf bg-leaf-soft/60 px-5 py-4 text-[0.9375rem] leading-relaxed text-ink-secondary">
-          <p className="kicker mb-2 text-terracotta-deep">How these tools work</p>
+        <aside className="mt-14 max-w-prose rounded-2xl ring-1 ring-inset ring-leaf/40 bg-leaf-soft/60 px-5 py-4 text-[0.9375rem] leading-relaxed text-ink-secondary">
+          <p className="kicker mb-2 text-coral-deep">How these tools work</p>
           <p>
             Each tool runs on plain rules written from manufacturer instructions, upholstery cleaning codes and published care
             standards. The answers are guidance, not a guarantee: materials and finishes vary, so always spot-test on a hidden

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Caveat, IBM_Plex_Mono, Newsreader, Schibsted_Grotesk } from 'next/font/google';
+import { Bricolage_Grotesque, Caveat, IBM_Plex_Mono, Schibsted_Grotesk } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -12,13 +12,13 @@ import { readStore } from '@/lib/store';
 import { buildNav } from '@/lib/navigation';
 
 // Self-hosted at build time: no request to Google Fonts, swap display, latin subset only.
-// Newsreader (editorial serif) for headlines, Schibsted Grotesk for reading and UI, IBM Plex Mono for labels and data.
-// Newsreader and Schibsted Grotesk load as variable fonts: one file per style instead of one per weight.
-const fontSerif = Newsreader({
+// Bricolage Grotesque (warm, slightly quirky grotesque with optical sizes) for headlines, Schibsted Grotesk for
+// reading and UI, IBM Plex Mono for labels and data. Bricolage and Schibsted load as variable fonts.
+const fontDisplay = Bricolage_Grotesque({
   subsets: ['latin'],
-  style: ['normal', 'italic'],
+  axes: ['opsz'],
   display: 'swap',
-  variable: '--font-serif',
+  variable: '--font-display',
 });
 const fontSans = Schibsted_Grotesk({
   subsets: ['latin'],
@@ -83,7 +83,7 @@ export default function RootLayout({
 }>) {
   const nav = buildNav(readStore());
   return (
-    <html lang={SITE.lang} className={`${fontSerif.variable} ${fontSans.variable} ${fontMono.variable} ${fontHand.variable}`}>
+    <html lang={SITE.lang} className={`${fontDisplay.variable} ${fontSans.variable} ${fontMono.variable} ${fontHand.variable}`}>
       <body className="min-h-screen flex flex-col bg-paper text-ink antialiased">
         <a
           href="#main"

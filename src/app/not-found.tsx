@@ -24,8 +24,8 @@ export default function NotFound() {
       <Container className="grid gap-10 py-14 sm:py-20 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-7">
           <Kicker tone="accent">Error 404</Kicker>
-          <h1 className="mt-4 font-serif text-[2.75rem] font-medium leading-[1.03] tracking-[-0.025em] text-ink sm:text-6xl">
-            This page has gone <span className="mark italic">missing</span>.
+          <h1 className="mt-4 font-display text-[2.75rem] font-bold leading-[1.03] tracking-[-0.025em] text-ink sm:text-6xl">
+            This page has gone <span className="mark">missing</span>.
           </h1>
           <p className="mt-5 max-w-prose text-lg leading-relaxed text-ink-secondary">
             The link may be old or mistyped. Describe the mess you&apos;re dealing with, or start from one of the pages below.
@@ -44,7 +44,7 @@ export default function NotFound() {
                 placeholder="e.g. coffee stain on sofa"
                 className="min-w-0 flex-1 bg-transparent px-3 py-2.5 text-base text-ink placeholder:text-ink-muted focus:outline-none"
               />
-              <button type="submit" className="min-h-[44px] rounded-full bg-ink px-5 text-[15px] font-semibold text-paper-light transition-colors hover:bg-ink-deep">
+              <button type="submit" className="min-h-[44px] rounded-full bg-teal px-5 text-[15px] font-semibold text-white transition-colors hover:bg-teal-deep">
                 Search
               </button>
             </div>
@@ -57,7 +57,7 @@ export default function NotFound() {
 
         <nav className="lg:col-span-5" aria-labelledby="nf-links">
           <div className="border-t border-rule-strong pt-3">
-            <h2 id="nf-links" className="font-serif text-2xl font-semibold text-ink">
+            <h2 id="nf-links" className="font-display text-2xl font-bold text-ink">
               Common starting points
             </h2>
             <ol className="mt-3 divide-y divide-rule border-b border-rule">
@@ -65,8 +65,8 @@ export default function NotFound() {
                 <li key={s.href}>
                   <Link href={s.href} className="group grid grid-cols-[2rem_1fr_auto] items-center gap-3 py-3.5">
                     <span className="kicker text-ink-muted">{String(i + 1).padStart(2, '0')}</span>
-                    <span className="text-[16px] font-semibold text-ink group-hover:text-terracotta-deep">{s.label}</span>
-                    <ArrowRight className="h-4 w-4 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-terracotta-deep" aria-hidden="true" />
+                    <span className="text-[16px] font-semibold text-ink group-hover:text-coral-deep">{s.label}</span>
+                    <ArrowRight className="h-4 w-4 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-coral-deep" aria-hidden="true" />
                   </Link>
                 </li>
               ))}

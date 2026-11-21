@@ -8,12 +8,12 @@ import { CookieSettingsButton } from '@/components/CookieConsent';
 function FooterColumn({ title, links }: { title: string; links: NavLink[] }) {
   return (
     <div>
-      <span className="mb-3 block h-[3px] w-8 rounded-full bg-leaf" aria-hidden="true" />
-      <h2 className="kicker mb-2 text-leaf-deep">{title}</h2>
+      <span className="mb-3 block h-[3px] w-8 rounded-full bg-peach" aria-hidden="true" />
+      <h2 className="kicker mb-2 text-peach">{title}</h2>
       <ul className="text-[15px]">
         {links.map((l) => (
           <li key={l.href}>
-            <Link href={l.href} className="inline-flex min-h-[44px] items-center text-ink-secondary transition-colors hover:text-leaf-deep hover:underline underline-offset-4 lg:min-h-[36px]">
+            <Link href={l.href} className="inline-flex min-h-[44px] items-center text-paper/80 transition-colors hover:text-white hover:underline underline-offset-4 lg:min-h-[36px]">
               {l.label}
             </Link>
           </li>
@@ -25,19 +25,19 @@ function FooterColumn({ title, links }: { title: string; links: NavLink[] }) {
 
 export function Footer({ nav }: { nav: NavModel }) {
   return (
-    <footer className="mt-24 rounded-t-[2rem] border-t border-rule bg-paper-warm text-ink">
+    <footer className="mt-24 rounded-t-[2rem] bg-teal text-paper">
       <div className="mx-auto max-w-page px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div className="col-span-2 max-w-sm space-y-4 lg:col-span-1">
             <Link href="/" className="inline-flex items-center gap-1.5" aria-label="HouseCareWiki home">
-              <BrandMark className="h-11 w-11" />
-              <Wordmark />
+              <BrandMark tone="paper" className="h-11 w-11" />
+              <Wordmark tone="paper" />
             </Link>
-            <p className="flex gap-2.5 font-serif text-xl leading-snug text-ink">
-              <Leaf className="mt-1 h-5 w-5 shrink-0 text-leaf" aria-hidden="true" />
+            <p className="flex gap-2.5 font-display text-[1.375rem] font-bold leading-snug tracking-[-0.01em] text-paper">
+              <Leaf className="mt-1 h-5 w-5 shrink-0 text-peach" aria-hidden="true" />
               <span>Solve the problem first. Recommend the product second.</span>
             </p>
-            <p className="text-[15px] leading-relaxed text-ink-secondary">
+            <p className="text-[15px] leading-relaxed text-paper/80">
               An independent home care guide. Our methods come from manufacturer instructions and published care standards, and
               each product review says what it is based on.
             </p>
@@ -58,9 +58,9 @@ export function Footer({ nav }: { nav: NavModel }) {
           />
         </div>
 
-        <div className="mt-12 grid gap-4 border-t border-rule-strong/60 pt-6 text-[13px] leading-relaxed text-ink-muted md:grid-cols-[1fr_auto] md:items-end">
+        <div className="mt-12 grid gap-4 border-t border-paper/20 pt-6 text-[13px] leading-relaxed text-paper/70 md:grid-cols-[1fr_auto] md:items-end">
           <div className="max-w-3xl space-y-1.5">
-            <p className="font-medium text-ink-secondary">As an Amazon Associate, HouseCareWiki earns from qualifying purchases.</p>
+            <p className="font-medium text-paper/90">As an Amazon Associate, HouseCareWiki earns from qualifying purchases.</p>
             <p>
               HouseCareWiki is a participant in the Amazon Services LLC Associates Program. We don&apos;t display prices or
               availability; use the &ldquo;Check price on Amazon&rdquo; links for current details. Brands cannot pay for placement or
@@ -68,8 +68,8 @@ export function Footer({ nav }: { nav: NavModel }) {
             </p>
           </div>
           <p className="flex items-center gap-2">
-            <CookieSettingsButton className="underline underline-offset-2 hover:text-ink" />
-            <span className="h-1.5 w-1.5 rounded-full bg-leaf" aria-hidden="true" />© {new Date().getFullYear()} HouseCareWiki
+            <CookieSettingsButton className="inline-flex min-h-[44px] items-center underline underline-offset-2 hover:text-white" />
+            <span className="h-1.5 w-1.5 rounded-full bg-peach" aria-hidden="true" />© {new Date().getFullYear()} HouseCareWiki
           </p>
         </div>
       </div>

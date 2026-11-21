@@ -23,7 +23,7 @@ export default function AffiliateDisclosurePage() {
       breadcrumb="Affiliate disclosure"
       title="Affiliate disclosure"
       lede={
-        <p className="border-l-4 border-honey-deep bg-honey-soft px-4 py-3 text-lg font-semibold text-ink">
+        <p className="rounded-2xl ring-1 ring-inset ring-peach-deep/40 bg-peach-soft px-4 py-3 text-lg font-semibold text-ink">
           As an Amazon Associate I earn from qualifying purchases.
         </p>
       }

@@ -38,10 +38,10 @@ export function NewsletterBox() {
   return (
     <section aria-labelledby={`${inputId}-heading`}>
       <Container>
-      <div className="grid gap-6 rounded-3xl bg-honey-soft px-5 py-8 text-ink sm:px-10 sm:py-10 lg:grid-cols-12 lg:items-end">
+      <div className="grid gap-6 rounded-3xl bg-peach-soft px-5 py-8 text-ink sm:px-10 sm:py-10 lg:grid-cols-12 lg:items-end">
         <div className="lg:col-span-6">
-          <p className="kicker text-terracotta-deep">New guides by email</p>
-          <h2 id={`${inputId}-heading`} className="mt-2 font-serif text-3xl font-semibold leading-tight">
+          <p className="kicker text-coral-deep">New guides by email</p>
+          <h2 id={`${inputId}-heading`} className="mt-2 font-display text-3xl font-bold leading-tight">
             Get new guides when we publish them.
           </h2>
           <p className="mt-2 max-w-md text-base leading-relaxed text-ink-secondary">
@@ -51,7 +51,7 @@ export function NewsletterBox() {
 
         <div className="lg:col-span-6">
           {status === 'success' ? (
-            <p role="status" className="inline-flex items-center gap-2 rounded-lg border-l-4 border-leaf bg-paper-card px-4 py-3 text-[15px]">
+            <p role="status" className="inline-flex items-center gap-2 rounded-2xl ring-1 ring-inset ring-leaf/40 bg-paper-card px-4 py-3 text-[15px]">
               <Check className="h-4 w-4 shrink-0 text-leaf-deep" aria-hidden="true" />
               {message}
             </p>
@@ -76,7 +76,7 @@ export function NewsletterBox() {
             </form>
           )}
           {status === 'error' && (
-            <p role="alert" className="mt-2 text-sm font-semibold text-terracotta-deep">
+            <p role="alert" className="mt-2 text-sm font-semibold text-coral-deep">
               {message}
             </p>
           )}

@@ -19,7 +19,7 @@ export function EditorScore({
       title="HouseCareWiki rating: an editorial judgment from specs, manuals and published standards, not a lab measurement."
     >
       <span
-        className={`inline-flex items-baseline gap-0.5 rounded-full bg-honey-soft font-semibold tabular-nums text-ink ring-1 ring-inset ring-honey-deep/60 ${
+        className={`inline-flex items-baseline gap-0.5 rounded-full bg-peach-soft font-semibold tabular-nums text-ink ring-1 ring-inset ring-peach-deep/60 ${
           size === 'md' ? 'px-3 py-1 text-base' : 'px-2.5 py-0.5 text-[13px]'
         }`}
       >
@@ -47,7 +47,7 @@ export function AffiliateDisclosureNote({ className = '' }: { className?: string
   return (
     <p className={`text-[12px] leading-snug text-ink-muted ${className}`}>
       As an Amazon Associate, HouseCareWiki earns from qualifying purchases. It costs you nothing extra.{' '}
-      <a href="/affiliate-disclosure" className="underline underline-offset-2 hover:text-terracotta-deep">
+      <a href="/affiliate-disclosure" className="underline underline-offset-2 hover:text-coral-deep">
         How we make money
       </a>
     </p>
@@ -101,14 +101,14 @@ export function AffiliateButton({
     }
   };
 
-  // forest = primary (charcoal), coral = high-emphasis (honey), compact = small outline for tables and lists.
+  // forest = primary (teal), coral = high-emphasis (peach), compact = small outline for tables and lists.
   // Variant names are kept for older call sites.
   const styles =
     variant === 'coral'
-      ? 'min-h-[48px] bg-honey hover:bg-honey-deep text-ink px-6 text-[15px] font-semibold rounded-full'
+      ? 'min-h-[48px] bg-peach hover:bg-peach-deep text-ink px-6 text-[15px] font-semibold rounded-full'
       : variant === 'compact'
       ? 'min-h-[44px] border border-ink/70 bg-paper-card text-ink hover:border-ink hover:bg-paper-warm px-4 text-[14px] font-semibold rounded-full'
-      : 'min-h-[48px] bg-ink hover:bg-ink-deep text-paper-light px-5 text-[15px] font-semibold rounded-full';
+      : 'min-h-[48px] bg-teal hover:bg-teal-deep text-white px-5 text-[15px] font-semibold rounded-full';
 
   return (
     <a

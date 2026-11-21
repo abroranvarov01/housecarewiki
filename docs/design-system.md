@@ -1,5 +1,14 @@
 # HouseCareWiki design system — "Warm Editorial Home Guide"
 
+> **Refresh, Nov 2026: "Peach & Teal".** Same warm world, livelier. Tokens are now `paper` #FBF4EC (cream),
+> `ink` #1E2B2B, `teal` #1F5C5B (primary buttons, footer, tool bands; cream text 7.2:1, peach focus ring),
+> `peach` #F6B996 (answer highlight, `.mark`, chips; ink text only), `coral` #D9654B with `coral-deep` #A9432C for
+> text, links and warnings (5.5:1), `leaf` for "safe". The old `terracotta` / `honey` / `forest` names are gone.
+> Headlines use **Bricolage Grotesque** (`font-display`). Callouts are soft cards with a hairline ring, no thick left
+> bars; safety callouts are white with a coral ring so they never blend with the peach answer card. Logo: a teal soap
+> bubble with a cream shine and two peach bubbles (concept from ChatGPT, redrawn in `BrandMark.tsx`,
+> `public/favicon.svg`, `public/app-icon.svg`). The token tables below predate this refresh.
+
 **Principle:** Solve the problem first. Recommend the product second.
 The site should read like an independent American home-care publication: editorial serif headlines, a honey
 highlight on the answer, warm cream paper, and the calm, friendly tone of someone who has cleaned this before.
@@ -25,12 +34,12 @@ palette, softer shapes, fewer mono caps and hard rules. Not an affiliate templat
 
 | Role | Token | Hex | Notes |
 | --- | --- | --- | --- |
-| Page | `paper` / `paper-light` / `paper-warm` / `paper-deep` / `paper-card` | #F8F4EB / #FCFAF5 / #F1EADC / #EAE0CD / #FFFDF8 | Warm cream. `paper-warm` for inset panels (finder, question panels). |
-| Text | `ink` / `ink-secondary` / `ink-muted` | #29322C / #414A43 / #5B635C | Soft charcoal. `ink` is also the primary button color; `ink-deep` #1E2520 for hover. |
+| Page | `paper` / `paper-light` / `paper-warm` / `paper-deep` / `paper-card` | #F9F5EC / #FDFBF6 / #F3EBDB / #EAE0CD / #FFFDF9 | Warm cream. `paper-warm` for inset panels (finder, question panels). |
+| Text | `ink` / `ink-secondary` / `ink-muted` | #1F2A24 / #3C4740 / #59635C | Soft charcoal. `ink` is also the primary button color; `ink-deep` #141C17 for hover. |
 | Lines | `rule` / `rule-strong` | #E4DACA / #C8B99F | Decorative only (dividers, card borders). |
 | Form controls | `rule-field` | #8C8170 | Input/select outlines; ≥ 3:1 on cream, card and warm (WCAG 1.4.11). |
-| Accent | `terracotta` / `terracotta-deep` / `terracotta-soft` | #BC7254 / #9A4E30 / #F6E4DA | `terracotta` = decoration only (strokes, dots, bars). Text and links use `terracotta-deep`. Also warnings. |
-| Highlight | `honey` / `honey-deep` / `honey-soft` | #EFCB77 / #E0B456 / #FAEFD2 | The `.mark` word highlight, "short answer" callouts, the main Amazon CTA. Background for dark text only. |
+| Accent | `terracotta` / `terracotta-deep` / `terracotta-soft` | #C8623C / #9B4322 / #F8E2D6 | `terracotta` = decoration only (strokes, dots, bars). Text and links use `terracotta-deep`. Also warnings. |
+| Highlight | `honey` / `honey-deep` / `honey-soft` | #F3C44F / #E4AA2C / #FCEFCC | The `.mark` word highlight, "short answer" callouts, the main Amazon CTA. Background for dark text only. |
 | Safe / compatible | `leaf` / `leaf-deep` / `leaf-soft` | #6FAE5C / #2D7139 / #E8F2E1 | Fresh leaf green (replaced the muted leaf). Use sparingly: "safe to DIY", field notes, success states. Text uses `leaf-deep`. |
 
 The old names (`denim`, `marker`, `brick`, `moss`, `forest`, `coral`, `mist`, `sun`) are gone; don't reintroduce them
@@ -38,17 +47,17 @@ or hex literals in components.
 
 ### Contrast (WCAG 2.2 AA, measured)
 
-| Text / foreground | on cream #F8F4EB | on card #FFFDF8 | on paper-warm #F1EADC | on soft tint |
+| Text / foreground | on cream #F9F5EC | on card #FFFDF9 | on paper-warm #F3EBDB | on soft tint |
 | --- | --- | --- | --- | --- |
-| `ink` #29322C | 12.1 | 13.0 | 11.1 | ≥ 10.7 (honey/terracotta/leaf-soft); 8.5 on honey |
-| `ink-secondary` #414A43 | 8.4 | 9.0 | 7.7 | ≥ 7.4; 5.9 on honey |
-| `ink-muted` #5B635C | 5.7 | 6.1 | 5.2 | 4.7 on paper-deep, 5.0 on terracotta-soft |
-| `terracotta-deep` #9A4E30 | 5.5 | 5.9 | 5.0 | 4.9 on terracotta-soft, 5.2 on honey-soft |
+| `ink` #1F2A24 | 12.1 | 13.0 | 11.1 | ≥ 10.7 (honey/terracotta/leaf-soft); 8.5 on honey |
+| `ink-secondary` #3C4740 | 8.4 | 9.0 | 7.7 | ≥ 7.4; 5.9 on honey |
+| `ink-muted` #59635C | 5.7 | 6.1 | 5.2 | 4.7 on paper-deep, 5.0 on terracotta-soft |
+| `terracotta-deep` #9B4322 | 5.5 | 5.9 | 5.0 | 4.9 on terracotta-soft, 5.2 on honey-soft |
 | `leaf-deep` #2D7139 | 5.4 | 5.9 | 5.0 | 5.2 on leaf-soft |
 | cream on `ink` button | 12.7 | | | |
 | `ink` on `honey` / `honey-deep` button | 8.5 / 6.8 | | | |
 | `rule-field` #8C8170 (non-text) | 3.5 | 3.8 | 3.2 | |
-| `terracotta` #BC7254 (non-text only) | 3.4 | 3.6 | | Fails 4.5 as text: never use for text. |
+| `terracotta` #C8623C (non-text only) | 3.4 | 3.6 | | Fails 4.5 as text: never use for text. |
 | `leaf` #6FAE5C | 2.6 on card | | | Decoration only (left borders, dots). |
 
 ## Logo
@@ -58,7 +67,7 @@ Source sheet: [`docs/brand/logo-sheet.webp`](brand/logo-sheet.webp). Implemented
 
 - Mark: terracotta brush-stroke roof with chimney, honey 2×2 window, three honey rays. On dark surfaces the roof is cream.
 - Wordmark: bold serif, "HouseCare" forest green + "Wiki" terracotta; on dark, cream + honey.
-- Logo colors are the `brand.*` tokens: forest #285E3E, terracotta #C75E3D, honey #F6C343, cream #F8F4EB, leaf #6FAE5C.
+- Logo colors are the `brand.*` tokens: forest #285E3E, terracotta #C75E3D, honey #F6C343, cream #F9F5EC, leaf #6FAE5C.
   Use them for the logo and icons. UI text, links and controls keep
   the AA-checked tokens in the table (e.g. text uses `terracotta-deep`, not `brand-terracotta`, which is 3.75:1 on cream;
   logos are exempt from WCAG contrast, body text is not).

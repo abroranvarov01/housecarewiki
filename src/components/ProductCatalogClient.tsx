@@ -98,10 +98,10 @@ export function ProductCatalogClient({ products }: { products: CatalogProduct[] 
             <div className="min-w-0">
               <p className="kicker text-ink-muted">
                 {prod.brand}
-                {prod.badge && <span className="text-terracotta-deep"> · {prod.badge}</span>}
+                {prod.badge && <span className="text-coral-deep"> · {prod.badge}</span>}
               </p>
-              <h2 className="mt-1 font-serif text-xl font-semibold leading-snug text-ink sm:text-2xl">
-                <Link href={`/products/${prod.slug}`} className="hover:text-terracotta-deep">
+              <h2 className="mt-1 font-display text-xl font-bold leading-snug text-ink sm:text-2xl">
+                <Link href={`/products/${prod.slug}`} className="hover:text-coral-deep">
                   {prod.name}
                 </Link>
               </h2>
@@ -116,7 +116,7 @@ export function ProductCatalogClient({ products }: { products: CatalogProduct[] 
             <div className="col-span-2 flex flex-wrap items-center gap-x-4 gap-y-2 sm:col-span-1 sm:flex-col sm:items-end">
               <Link
                 href={`/products/${prod.slug}`}
-                className="group inline-flex min-h-[44px] items-center gap-1.5 text-sm font-semibold text-terracotta-deep"
+                className="group inline-flex min-h-[44px] items-center gap-1.5 text-sm font-semibold text-coral-deep"
               >
                 <span className="hover-title">Read review</span>
                 <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />

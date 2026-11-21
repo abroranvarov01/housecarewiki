@@ -52,7 +52,7 @@ export function CompareBuilderClient({ products }: { products: Product[] }) {
       {/* Picker */}
       <fieldset className="border-t border-rule-strong pt-4">
         <legend className="flex w-full flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-          <span className="font-serif text-2xl font-semibold text-ink">Choose 2 to 4 products</span>
+          <span className="font-display text-2xl font-bold text-ink">Choose 2 to 4 products</span>
           <span className="kicker text-ink" aria-live="polite">
             {selectedIds.length} of {MAX_SELECTED} selected
           </span>
@@ -74,7 +74,7 @@ export function CompareBuilderClient({ products }: { products: Product[] }) {
                 >
                   <span
                     className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-sm border ${
-                      active ? 'border-honey bg-honey text-ink' : 'border-rule-strong bg-paper'
+                      active ? 'border-peach bg-peach text-ink' : 'border-rule-strong bg-paper'
                     }`}
                     aria-hidden="true"
                   >
@@ -94,7 +94,7 @@ export function CompareBuilderClient({ products }: { products: Product[] }) {
             );
           })}
         </ul>
-        <p className="mt-3 min-h-[1.25rem] text-[13px] text-terracotta-deep" role="status">
+        <p className="mt-3 min-h-[1.25rem] text-[13px] text-coral-deep" role="status">
           {notice}
         </p>
       </fieldset>
@@ -102,7 +102,7 @@ export function CompareBuilderClient({ products }: { products: Product[] }) {
       {/* Matrix */}
       <section aria-labelledby="matrix-heading">
         <div className="flex flex-wrap items-end justify-between gap-4 border-t border-rule-strong pt-4">
-          <h2 id="matrix-heading" className="font-serif text-2xl font-semibold text-ink">
+          <h2 id="matrix-heading" className="font-display text-2xl font-bold text-ink">
             Side by side
           </h2>
           <label className="inline-flex min-h-[44px] cursor-pointer items-center gap-2.5 text-[14px] font-medium text-ink">
@@ -132,7 +132,7 @@ export function CompareBuilderClient({ products }: { products: Product[] }) {
                     </div>
                     <Link
                       href={`/products/${prod.slug}`}
-                      className="mt-2 flex min-h-[44px] items-center font-serif text-lg font-semibold leading-snug text-ink hover:text-terracotta-deep"
+                      className="mt-2 flex min-h-[44px] items-center font-display text-lg font-bold leading-snug text-ink hover:text-coral-deep"
                     >
                       {prod.shortName}
                     </Link>
@@ -155,7 +155,7 @@ export function CompareBuilderClient({ products }: { products: Product[] }) {
               <tr>
                 <th scope="row" className={`${stickyTh} bg-paper font-semibold text-ink`}>
                   Our rating{' '}
-                  <Link href="/methodology" className="block text-[12px] font-normal text-ink-muted underline underline-offset-2 hover:text-terracotta-deep">
+                  <Link href="/methodology" className="block text-[12px] font-normal text-ink-muted underline underline-offset-2 hover:text-coral-deep">
                     research-based
                   </Link>
                 </th>
@@ -194,7 +194,7 @@ export function CompareBuilderClient({ products }: { products: Product[] }) {
                 </tr>
               ))}
               {displayedSpecKeys.map((specKey) => {
-                const shade = differs(specKey) ? 'bg-honey-soft/40' : 'bg-paper';
+                const shade = differs(specKey) ? 'bg-peach-soft/40' : 'bg-paper';
                 return (
                   <tr key={specKey}>
                     <th scope="row" className={`${stickyTh} bg-paper font-semibold text-ink`}>
@@ -224,7 +224,7 @@ export function CompareBuilderClient({ products }: { products: Product[] }) {
         <p className="mt-3 text-[13px] text-ink-muted">
           Specs come from manufacturer listings and manuals; shaded cells differ between the selected products. Ratings are our
           editorial judgment, not measurements.{' '}
-          <Link href="/methodology" className="underline underline-offset-2 hover:text-terracotta-deep">
+          <Link href="/methodology" className="underline underline-offset-2 hover:text-coral-deep">
             How we evaluate
           </Link>
         </p>

@@ -253,7 +253,7 @@ export default function InteractiveToolPage({
           <Kicker tone="accent" className="print:hidden">
             {meta.kicker}
           </Kicker>
-          <h1 className="mt-3 font-serif text-[2.25rem] font-semibold leading-[1.08] tracking-[-0.015em] text-ink sm:text-5xl">
+          <h1 className="mt-3 font-display text-[2.25rem] font-bold leading-[1.08] tracking-[-0.015em] text-ink sm:text-5xl">
             {meta.title}
           </h1>
           <p className="mt-4 max-w-prose text-[1.0625rem] leading-relaxed text-ink-secondary print:hidden">{meta.subtitle}</p>
@@ -269,7 +269,7 @@ export default function InteractiveToolPage({
           <div className="mt-16 max-w-3xl print:hidden">
             {meta.guide?.map((section) => (
               <section key={section.heading} className="mt-10 first:mt-0">
-                <h2 className="font-serif text-2xl font-semibold text-ink">{section.heading}</h2>
+                <h2 className="font-display text-2xl font-bold text-ink">{section.heading}</h2>
                 {section.body.map((para) => (
                   <p key={para} className="mt-3 max-w-prose text-[1.0625rem] leading-relaxed text-ink-secondary">
                     {para}
@@ -279,7 +279,7 @@ export default function InteractiveToolPage({
             ))}
             {meta.faqs && meta.faqs.length > 0 && (
               <section className="mt-12" aria-labelledby="faq-heading">
-                <h2 id="faq-heading" className="font-serif text-2xl font-semibold text-ink">
+                <h2 id="faq-heading" className="font-display text-2xl font-bold text-ink">
                   Questions people ask
                 </h2>
                 <FaqList faqs={meta.faqs} className="mt-4" />
@@ -290,7 +290,7 @@ export default function InteractiveToolPage({
 
         <div className="mt-16 grid gap-10 border-t border-rule-strong pt-6 lg:grid-cols-12 lg:gap-12 print:hidden">
           <section className="lg:col-span-7" aria-labelledby="how-heading">
-            <h2 id="how-heading" className="font-serif text-2xl font-semibold text-ink">
+            <h2 id="how-heading" className="font-display text-2xl font-bold text-ink">
               How this tool decides
             </h2>
             <ul className="mt-4 max-w-prose space-y-3 text-[0.9375rem] leading-relaxed text-ink-secondary">
@@ -319,11 +319,11 @@ export default function InteractiveToolPage({
                 <li key={r.href}>
                   <Link
                     href={r.href}
-                    className="group flex min-h-[48px] items-center justify-between gap-4 py-3 text-[15px] font-medium text-ink hover:text-terracotta-deep"
+                    className="group flex min-h-[48px] items-center justify-between gap-4 py-3 text-[15px] font-medium text-ink hover:text-coral-deep"
                   >
                     <span className="hover-title">{r.label}</span>
                     <ArrowRight
-                      className="h-4 w-4 shrink-0 text-ink-muted transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-terracotta-deep"
+                      className="h-4 w-4 shrink-0 text-ink-muted transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-coral-deep"
                       aria-hidden="true"
                     />
                   </Link>

@@ -106,7 +106,7 @@ export default function EditorialComparisonPage({
           <Kicker tone="accent" className="mt-6">
             Head-to-head · {comp.category}
           </Kicker>
-          <h1 className="mt-3 max-w-4xl font-serif text-[2.25rem] font-semibold leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl">
+          <h1 className="mt-3 max-w-4xl font-display text-[2.25rem] font-bold leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl">
             {comp.title}
           </h1>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-secondary">{comp.subtitle}</p>
@@ -135,7 +135,7 @@ export default function EditorialComparisonPage({
                 <div key={prod.id} className="flex flex-col bg-paper p-5 sm:p-7">
                   <div className="flex min-h-[28px] items-center justify-between gap-3">
                     <Kicker as="span">{i === 0 ? 'Option A' : 'Option B'}</Kicker>
-                    {isWinner && <span className="kicker bg-honey px-2 py-1 text-ink">Our pick for most homes</span>}
+                    {isWinner && <span className="kicker bg-peach px-2 py-1 text-ink">Our pick for most homes</span>}
                   </div>
                   <div className="mt-4 aspect-[4/3] bg-paper-card p-6">
                     <img
@@ -146,8 +146,8 @@ export default function EditorialComparisonPage({
                       className="h-full w-full object-contain"
                     />
                   </div>
-                  <h3 className="mt-5 font-serif text-2xl font-semibold leading-tight text-ink sm:text-[1.75rem]">
-                    <Link href={`/products/${prod.slug}`} className="hover:text-terracotta-deep">
+                  <h3 className="mt-5 font-display text-2xl font-bold leading-tight text-ink sm:text-[1.75rem]">
+                    <Link href={`/products/${prod.slug}`} className="hover:text-coral-deep">
                       {prod.shortName}
                     </Link>
                   </h3>
@@ -171,7 +171,7 @@ export default function EditorialComparisonPage({
                     />
                     <Link
                       href={`/products/${prod.slug}`}
-                      className="group inline-flex min-h-[44px] items-center gap-1.5 text-sm font-semibold text-terracotta-deep"
+                      className="group inline-flex min-h-[44px] items-center gap-1.5 text-sm font-semibold text-coral-deep"
                     >
                       <span className="hover-title">Full review</span>
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
@@ -185,7 +185,7 @@ export default function EditorialComparisonPage({
 
           <Callout tone="answer" title="Our verdict" className="mt-6">
             {winner && (
-              <p className="mb-2 font-serif text-xl font-semibold leading-snug text-ink">
+              <p className="mb-2 font-display text-xl font-bold leading-snug text-ink">
                 For most homes: the <span className="mark">{winner.shortName}</span>.
               </p>
             )}
@@ -225,12 +225,12 @@ export default function EditorialComparisonPage({
                 const scenWinner = scen.winnerId === productA.id ? productA : productB;
                 return (
                   <li key={scen.scenario} className="grid gap-x-6 gap-y-2 py-5 md:grid-cols-[minmax(0,16rem)_minmax(0,12rem)_1fr] md:items-start">
-                    <h3 className="font-serif text-lg font-semibold leading-snug text-ink">{scen.scenario}</h3>
+                    <h3 className="font-display text-lg font-bold leading-snug text-ink">{scen.scenario}</h3>
                     <p>
                       <span className="sr-only">Better pick: </span>
                       <Link
                         href={`/products/${scenWinner.slug}`}
-                        className="inline-flex min-h-[44px] items-center rounded-full border border-ink px-4 text-[14px] font-semibold text-ink hover:border-terracotta-deep hover:text-terracotta-deep"
+                        className="inline-flex min-h-[44px] items-center rounded-full border border-ink px-4 text-[14px] font-semibold text-ink hover:border-coral-deep hover:text-coral-deep"
                       >
                         {scenWinner.shortName}
                       </Link>
@@ -274,7 +274,7 @@ export default function EditorialComparisonPage({
                       Spec
                     </th>
                     {pair.map((p) => (
-                      <th key={p.id} scope="col" className="px-4 py-3 font-serif text-base font-semibold text-ink">
+                      <th key={p.id} scope="col" className="px-4 py-3 font-display text-base font-bold text-ink">
                         {p.shortName}
                       </th>
                     ))}
@@ -286,7 +286,7 @@ export default function EditorialComparisonPage({
                     const b = productB.specs[key] || '—';
                     const differs = a !== b;
                     return (
-                      <tr key={key} className={differs ? 'bg-honey-soft/40' : 'bg-paper'}>
+                      <tr key={key} className={differs ? 'bg-peach-soft/40' : 'bg-paper'}>
                         <th scope="row" className="px-4 py-3 align-top font-semibold text-ink">
                           {key}
                           {differs && <span className="sr-only"> (differs)</span>}
@@ -323,11 +323,11 @@ export default function EditorialComparisonPage({
                 <Link href={`/products/${p.slug}`} className="group flex items-baseline justify-between gap-4 border-b border-rule py-4">
                   <span>
                     <span className="kicker block text-ink-muted">Full review</span>
-                    <span className="mt-1 block font-serif text-xl font-semibold leading-snug text-ink">
+                    <span className="mt-1 block font-display text-xl font-bold leading-snug text-ink">
                       <span className="hover-title">{p.name}</span>
                     </span>
                   </span>
-                  <ArrowRight className="h-4 w-4 shrink-0 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-terracotta-deep" aria-hidden="true" />
+                  <ArrowRight className="h-4 w-4 shrink-0 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-coral-deep" aria-hidden="true" />
                 </Link>
               </li>
             ))}
@@ -336,11 +336,11 @@ export default function EditorialComparisonPage({
                 <Link href={articleHref(g)} className="group flex items-baseline justify-between gap-4 border-b border-rule py-4">
                   <span>
                     <span className="kicker block text-ink-muted">{g.routeType === 'best' ? 'Buying guide' : 'Stain guide'}</span>
-                    <span className="mt-1 block font-serif text-xl font-semibold leading-snug text-ink">
+                    <span className="mt-1 block font-display text-xl font-bold leading-snug text-ink">
                       <span className="hover-title">{g.title}</span>
                     </span>
                   </span>
-                  <ArrowRight className="h-4 w-4 shrink-0 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-terracotta-deep" aria-hidden="true" />
+                  <ArrowRight className="h-4 w-4 shrink-0 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-coral-deep" aria-hidden="true" />
                 </Link>
               </li>
             ))}

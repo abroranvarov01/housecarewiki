@@ -78,7 +78,7 @@ function StepIndex({
   hasFaq: boolean;
 }) {
   const linkClass =
-    'group flex min-h-[44px] items-baseline gap-3 border-b border-rule py-2.5 text-[15px] leading-snug text-ink hover:text-terracotta-deep';
+    'group flex min-h-[44px] items-baseline gap-3 border-b border-rule py-2.5 text-[15px] leading-snug text-ink hover:text-coral-deep';
   return (
     <ol className="border-t border-rule">
       {hasSupplies && (
@@ -92,7 +92,7 @@ function StepIndex({
       {steps.map((step) => (
         <li key={step.stepNumber}>
           <a href={`#step-${step.stepNumber}`} className={linkClass}>
-            <span className="kicker w-6 shrink-0 text-terracotta-deep">{pad(step.stepNumber)}</span>
+            <span className="kicker w-6 shrink-0 text-coral-deep">{pad(step.stepNumber)}</span>
             <span className="hover-title">{step.title}</span>
           </a>
         </li>
@@ -186,7 +186,7 @@ export default function StepByStepGuidePage({
         <header className="grid gap-8 border-b border-rule pb-10 pt-4 lg:grid-cols-12 lg:gap-12 lg:pt-6">
           <div className="lg:col-span-7">
             <Kicker tone="accent">{articleMeta(article)}</Kicker>
-            <h1 className="mt-4 font-serif text-[2.25rem] font-medium leading-[1.05] tracking-[-0.02em] text-ink sm:text-5xl lg:text-[3.5rem]">
+            <h1 className="mt-4 font-display text-[2.375rem] font-extrabold leading-[1.02] tracking-[-0.03em] text-ink sm:text-[3.25rem] lg:text-[3.75rem]">
               {article.title}
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-secondary">{article.subtitle}</p>
@@ -200,8 +200,10 @@ export default function StepByStepGuidePage({
               <EvidenceLabel status={article.evidenceStatus} />
             </div>
           </div>
-          <div className="lg:col-span-5">
+          {/* Phones get the answer first; the same photo follows the answer below (one download). */}
+          <div className="hidden lg:col-span-5 lg:block">
             <Figure
+              className="[&>div]:rounded-3xl"
               src={article.heroImage}
               alt={article.heroImageAlt}
               ratio="4/3"
@@ -222,7 +224,7 @@ export default function StepByStepGuidePage({
               <ul className="space-y-2">
                 {article.safetyWarnings.map((w) => (
                   <li key={w} className="grid grid-cols-[0.875rem_1fr] gap-2">
-                    <span className="mt-[0.6em] h-1.5 w-1.5 bg-terracotta" aria-hidden="true" />
+                    <span className="mt-[0.6em] h-1.5 w-1.5 bg-coral" aria-hidden="true" />
                     <span>{w}</span>
                   </li>
                 ))}
@@ -230,6 +232,14 @@ export default function StepByStepGuidePage({
             </Callout>
           )}
         </div>
+
+        <Figure
+          className="mt-6 lg:hidden [&>div]:rounded-3xl"
+          src={article.heroImage}
+          alt={article.heroImageAlt}
+          ratio="4/3"
+          sizes="100vw"
+        />
 
         {/* Mobile: collapsible step index */}
         {hasIndex && (
@@ -299,7 +309,7 @@ export default function StepByStepGuidePage({
                         className="grid scroll-mt-24 grid-cols-[3rem_1fr] gap-x-4 border-b border-rule py-7 sm:grid-cols-[4.5rem_1fr] sm:gap-x-6"
                       >
                         <span
-                          className="font-serif text-[2.5rem] font-medium leading-none tracking-[-0.02em] text-terracotta-deep sm:text-[3.25rem]"
+                          className="font-display text-[2.5rem] font-bold leading-none tracking-[-0.02em] text-coral-deep sm:text-[3.25rem]"
                           aria-hidden="true"
                         >
                           {pad(step.stepNumber)}
@@ -308,7 +318,7 @@ export default function StepByStepGuidePage({
                           <Kicker className="mb-1">
                             Step {step.stepNumber} of {steps.length}
                           </Kicker>
-                          <h3 className="font-serif text-2xl font-semibold leading-snug text-ink">{step.title}</h3>
+                          <h3 className="font-display text-2xl font-bold leading-snug text-ink">{step.title}</h3>
                           <p className="mt-3 max-w-prose text-base leading-relaxed text-ink-secondary sm:text-[17px]">
                             {step.instruction}
                           </p>
@@ -347,7 +357,7 @@ export default function StepByStepGuidePage({
                         key={tip}
                         className="grid grid-cols-[2rem_1fr] gap-3 border-b border-rule py-3.5 text-base leading-relaxed text-ink-secondary sm:text-[17px]"
                       >
-                        <span className="kicker pt-1 text-terracotta-deep">{String.fromCharCode(65 + i)}</span>
+                        <span className="kicker pt-1 text-coral-deep">{String.fromCharCode(65 + i)}</span>
                         <span>{tip}</span>
                       </li>
                     ))}
@@ -375,7 +385,7 @@ export default function StepByStepGuidePage({
                         </Link>
                         <div className="min-w-0">
                           <Link href={`/products/${prod.slug}`} className="group flex min-h-[44px] items-center">
-                            <span className="font-serif text-lg font-semibold leading-snug text-ink">
+                            <span className="font-display text-lg font-bold leading-snug text-ink">
                               <span className="hover-title">{prod.shortName}</span>
                             </span>
                           </Link>
@@ -425,7 +435,7 @@ export default function StepByStepGuidePage({
                       <li key={c.slug}>
                         <Link
                           href={`/compare/${c.slug}`}
-                          className="group inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-terracotta-deep"
+                          className="group inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-coral-deep"
                         >
                           <span className="hover-title">
                             Choosing a machine? {productName(c.productAId)} vs {productName(c.productBId)}
@@ -444,7 +454,7 @@ export default function StepByStepGuidePage({
                           <Figure src={g.heroImage} alt="" ratio="1/1" />
                           <span className="min-w-0">
                             <span className="kicker text-ink-muted">{articleMeta(g)}</span>
-                            <span className="mt-1 block font-serif text-lg font-semibold leading-snug text-ink">
+                            <span className="mt-1 block font-display text-lg font-bold leading-snug text-ink">
                               <span className="hover-title">{g.title}</span>
                             </span>
                           </span>
@@ -455,7 +465,7 @@ export default function StepByStepGuidePage({
                 ) : (
                   <Link
                     href={`/rooms/${article.roomSlug}`}
-                    className="group mt-4 inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-terracotta-deep"
+                    className="group mt-4 inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-coral-deep"
                   >
                     <span className="hover-title">Browse the {roomName} hub</span>
                     <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />

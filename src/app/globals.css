@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font CSS variables (--font-serif, --font-sans, --font-mono) are set by next/font in app/layout.tsx. */
+/* Font CSS variables (--font-display, --font-sans, --font-mono) are set by next/font in app/layout.tsx. */
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    background-color: #f8f4eb;
-    color: #29322c;
+    background-color: #fbf4ec;
+    color: #1e2b2b;
     font-family: var(--font-sans);
     -webkit-text-size-adjust: 100%;
   }
 
   body {
-    background-color: #f8f4eb;
-    color: #29322c;
+    background-color: #fbf4ec;
+    color: #1e2b2b;
     overflow-x: hidden;
     font-feature-settings: 'ss01' on;
   }
@@ -31,15 +31,27 @@
   }
 
   ::selection {
-    background: #efcb77;
-    color: #29322c;
+    background: #f6b996;
+    color: #1e2b2b;
   }
 
   /* Visible, consistent keyboard focus (WCAG 2.2 AA: 2.4.7 / 2.4.11). */
   :focus-visible {
-    outline: 2px solid #9a4e30;
+    outline: 2px solid #a9432c;
     outline-offset: 2px;
     border-radius: 2px;
+  }
+
+  /* On the teal surfaces (footer, tool bands) the focus ring switches to peach to stay visible. */
+  .bg-teal :focus-visible,
+  footer :focus-visible {
+    outline-color: #f6b996;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-optical-sizing: auto;
   }
 
   /* Sticky header must not hide focused or anchored content (WCAG 2.4.11). */
@@ -49,18 +61,17 @@
 }
 
 @layer components {
-  /* Legacy helpers kept for older markup; new code uses font-serif / font-mono directly. */
+  /* Legacy helpers kept for older markup; new code uses font-display / font-mono directly. */
   .font-editorial {
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
   }
 
   .font-handwritten {
-    font-family: var(--font-serif);
-    font-style: italic;
+    font-family: var(--font-hand);
   }
 
   .bg-paper-grain {
-    background-color: #f8f4eb;
+    background-color: #fbf4ec;
   }
 
   /* Kicker: small sentence-case label for section kickers, metadata and table headers. */
@@ -84,7 +95,7 @@
 
   /* Honey highlight: the signature way we point at "the answer". */
   .mark {
-    background-image: linear-gradient(transparent 56%, #efcb77 56%, #efcb77 90%, transparent 90%);
+    background-image: linear-gradient(transparent 56%, #f6b996 56%, #f6b996 90%, transparent 90%);
     background-repeat: no-repeat;
     padding: 0 0.08em;
     -webkit-box-decoration-break: clone;
@@ -93,11 +104,11 @@
 
   /* Editorial text link: underline that thickens on hover. */
   .link {
-    color: #9a4e30;
+    color: #a9432c;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
-    text-decoration-color: rgba(154, 78, 48, 0.45);
+    text-decoration-color: rgba(169, 67, 44, 0.45);
     transition: text-decoration-color 150ms, text-decoration-thickness 150ms;
   }
   .link:hover {
@@ -122,13 +133,13 @@
   .prose-field {
     font-size: 1.0625rem;
     line-height: 1.75;
-    color: #414a43;
+    color: #3a4747;
   }
   .prose-field p + p {
     margin-top: 1em;
   }
   .prose-field strong {
-    color: #29322c;
+    color: #1e2b2b;
     font-weight: 600;
   }
 

@@ -68,7 +68,7 @@ export function RoomPageClient({ topics, articles }: { topics: RoomTopic[]; arti
           return (
             <div key={g.kind}>
               <div className="flex items-baseline justify-between gap-4 border-b border-rule-strong pb-2">
-                <h3 className="font-serif text-xl font-semibold text-ink">{g.title}</h3>
+                <h3 className="font-display text-xl font-bold text-ink">{g.title}</h3>
                 <span className="kicker text-ink-muted">{g.note}</span>
               </div>
               {rows.length === 0 ? (
@@ -83,7 +83,7 @@ export function RoomPageClient({ topics, articles }: { topics: RoomTopic[]; arti
                         </span>
                         <span className="min-w-0">
                           <span className="kicker text-ink-muted">{a.meta}</span>
-                          <span className="mt-1 block font-serif text-lg font-semibold leading-snug text-ink">
+                          <span className="mt-1 block font-display text-lg font-bold leading-snug text-ink">
                             <span className="hover-title">{a.title}</span>
                           </span>
                           <span className="mt-1 block text-sm leading-snug text-ink-muted line-clamp-2">{a.excerpt}</span>

@@ -106,8 +106,8 @@ export default function HomePage() {
         <Container className="relative pb-10 pt-8 sm:pb-14 sm:pt-12 lg:flex lg:min-h-[640px] lg:items-center lg:py-16">
           <div className="lg:max-w-[36rem]">
             <Kicker tone="accent">Your home care guide</Kicker>
-            <h1 className="mt-3 font-serif text-[2.6rem] font-semibold leading-[1.03] tracking-[-0.02em] text-ink sm:text-6xl lg:text-[4.25rem]">
-              What needs <span className="mark italic">fixing</span> today?
+            <h1 className="mt-3 font-display text-[2.75rem] font-extrabold leading-[0.98] tracking-[-0.035em] text-ink sm:text-[4rem] lg:text-[4.75rem]">
+              What needs <span className="mark">fixing</span> today?
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-secondary">
               Spills, pet hair, grimy grout, a cabinet that won&apos;t close. Tell us what happened and you&apos;ll get clear
@@ -118,7 +118,7 @@ export default function HomePage() {
               <label htmlFor="home-search" className="mb-2 block text-[15px] font-semibold text-ink">
                 What&apos;s going on at home?
               </label>
-              <div className="flex rounded-full border border-ink-muted bg-paper-card p-1 shadow-card focus-within:border-ink">
+              <div className="flex rounded-full border-2 border-ink/80 bg-paper-card p-1 shadow-card focus-within:border-teal">
                 <Search className="ml-3 mt-3 h-5 w-5 shrink-0 text-ink-muted" aria-hidden="true" />
                 <input
                   id="home-search"
@@ -129,7 +129,7 @@ export default function HomePage() {
                 />
                 <button
                   type="submit"
-                  className="min-h-[44px] rounded-full bg-ink px-5 text-[15px] font-semibold text-paper-light transition-colors hover:bg-ink-deep sm:px-6"
+                  className="min-h-[44px] rounded-full bg-teal px-5 text-[15px] font-semibold text-white transition-colors hover:bg-teal-deep sm:px-6"
                 >
                   Search
                 </button>
@@ -143,7 +143,7 @@ export default function HomePage() {
                   <li key={m.href} className="shrink-0">
                     <Link
                       href={m.href}
-                      className="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full border border-rule-strong bg-paper-card/90 px-4 text-[15px] text-ink transition-colors hover:border-terracotta hover:bg-terracotta-soft"
+                      className="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full border border-rule-strong bg-paper-card/90 px-4 text-[15px] text-ink transition-colors hover:border-coral hover:bg-coral-soft"
                     >
                       {m.label}
                     </Link>
@@ -185,37 +185,37 @@ export default function HomePage() {
       {/* 2. Browse by room: photo cards right under the hero, a swipeable row on phones. */}
       <section className="pb-4 pt-8 sm:pt-10" aria-labelledby="rooms-heading">
         <Container>
-          <h2 id="rooms-heading" className="font-serif text-2xl font-semibold text-ink sm:text-[1.75rem]">
+          <h2 id="rooms-heading" className="font-display text-[1.75rem] font-bold tracking-[-0.02em] text-ink sm:text-[2.125rem]">
             Where&apos;s the mess?
           </h2>
-          <ul className="no-scrollbar -mx-4 mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:px-0 lg:grid-cols-6">
+          <ul className="no-scrollbar -mx-4 mt-5 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:overflow-visible sm:px-0">
             {rooms.map(({ room, count }) => (
-              <li key={room.slug} className="w-[42%] shrink-0 snap-start sm:w-auto">
+              <li key={room.slug} className="w-[64%] shrink-0 snap-start sm:w-auto">
                 <Link
                   href={`/rooms/${room.slug}`}
-                  className="group block h-full overflow-hidden rounded-2xl border border-rule bg-paper-card shadow-card transition-shadow hover:shadow-elevated"
+                  className="group relative block aspect-[4/3] overflow-hidden rounded-3xl bg-paper-deep shadow-card transition-shadow hover:shadow-elevated sm:aspect-[16/10]"
                 >
-                  <div className="aspect-[4/3] overflow-hidden bg-paper-deep">
-                    <img
-                      src={room.cardImage}
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                      className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
-                    />
-                  </div>
-                  <div className="flex items-start justify-between gap-2 p-3.5">
+                  <img
+                    src={room.cardImage}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                  />
+                  <span className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-ink/80 via-ink/35 to-transparent" aria-hidden="true" />
+                  <span className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4 sm:p-5">
                     <span>
-                      <span className="block font-serif text-[1.0625rem] font-semibold leading-tight text-ink">{room.name}</span>
-                      <span className="mt-1 block text-[13px] text-ink-muted">
+                      <span className="block font-display text-[1.25rem] font-bold leading-tight tracking-[-0.01em] text-white sm:text-[1.5rem]">
+                        {room.name}
+                      </span>
+                      <span className="mt-1.5 inline-flex rounded-full bg-peach px-2.5 py-0.5 text-[13px] font-semibold text-ink">
                         {count > 0 ? `${count} ${count === 1 ? 'guide' : 'guides'}` : 'Coming soon'}
                       </span>
                     </span>
-                    <ArrowRight
-                      className="mt-1 h-4 w-4 shrink-0 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-terracotta-deep"
-                      aria-hidden="true"
-                    />
-                  </div>
+                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-paper-card text-ink transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">
+                      <ArrowRight className="h-4 w-4" />
+                    </span>
+                  </span>
                 </Link>
               </li>
             ))}
@@ -232,14 +232,14 @@ export default function HomePage() {
             <article className="mt-8 grid overflow-hidden rounded-3xl border border-rule bg-paper-warm/70 lg:grid-cols-12">
               <div className="p-6 sm:p-10 lg:col-span-6">
                 <Kicker tone="accent">Featured guide · {articleMeta(lead)}</Kicker>
-                <h3 className="mt-3 font-serif text-3xl font-semibold leading-tight tracking-[-0.01em] text-ink sm:text-[2.5rem]">
+                <h3 className="mt-3 font-display text-3xl font-bold leading-[1.05] tracking-[-0.025em] text-ink sm:text-[2.75rem]">
                   <Link href={articleHref(lead)} className="group">
                     <span className="hover-title">{lead.title}</span>
                   </Link>
                 </h3>
-                <div className="mt-6 rounded-xl border-l-4 border-honey-deep bg-paper-card px-5 py-4">
-                  <p className="kicker mb-1 text-ink">Here&apos;s what to do</p>
-                  <p className="text-base leading-relaxed text-ink-secondary">{lead.quickAnswer}</p>
+                <div className="mt-6 rounded-2xl bg-peach-soft px-5 py-5 ring-1 ring-inset ring-peach-deep/40">
+                  <p className="mb-2 inline-flex rounded-full bg-peach px-3 py-1 text-[13px] font-bold text-ink">Here&apos;s what to do</p>
+                  <p className="text-base leading-relaxed text-ink">{lead.quickAnswer}</p>
                 </div>
                 <ButtonLink href={articleHref(lead)} variant="primary" className="mt-6">
                   {lead.steps?.length ? `See all ${lead.steps.length} steps` : 'Read the guide'}
@@ -257,14 +257,14 @@ export default function HomePage() {
               </div>
             </article>
 
-            <h3 className="mt-12 font-serif text-xl font-semibold text-ink">More helpful guides</h3>
+            <h3 className="mt-14 font-display text-[1.5rem] font-bold tracking-[-0.015em] text-ink">More helpful guides</h3>
             <ul className="no-scrollbar -mx-4 mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 lg:grid-cols-4">
-              {moreGuides.map((g) => (
+              {moreGuides.slice(0, 8).map((g) => (
                 <li key={g.id} className="w-[78%] shrink-0 snap-start sm:w-auto">
                   <Link href={articleHref(g)} className="group block">
                     <Figure src={g.heroImage} alt="" ratio="4/3" className="[&>div]:rounded-2xl" />
                     <span className="mt-3 block kicker text-ink-muted">{articleMeta(g)}</span>
-                    <span className="mt-1 block font-serif text-xl font-semibold leading-snug text-ink">
+                    <span className="mt-1 block font-display text-[1.25rem] font-bold leading-snug tracking-[-0.01em] text-ink">
                       <span className="hover-title">{g.title}</span>
                     </span>
                     <span className="mt-1 block text-[15px] leading-snug text-ink-muted line-clamp-2">{g.excerpt}</span>
@@ -272,6 +272,11 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
+            <div className="mt-10 flex justify-center">
+              <ButtonLink href="/search" variant="secondary">
+                See all {guides.length} guides
+              </ButtonLink>
+            </div>
           </Container>
         </section>
       )}
@@ -279,24 +284,24 @@ export default function HomePage() {
       {/* 4. Tool, not a banner: a working two-question stain finder in a warm inset panel. */}
       <section aria-labelledby="finder-heading">
         <Container>
-          <div className="grid gap-8 rounded-3xl bg-paper-warm px-5 py-8 sm:px-10 sm:py-12 lg:grid-cols-12 lg:items-end">
+          <div className="grid gap-8 rounded-3xl bg-teal px-5 py-9 text-paper sm:px-10 sm:py-14 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-5">
-              <Kicker tone="accent">Stain Solution Finder</Kicker>
-              <h2 id="finder-heading" className="mt-2 font-serif text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+              <p className="kicker text-peach">Stain Solution Finder</p>
+              <h2 id="finder-heading" className="mt-2 font-display text-[2rem] font-bold leading-[1.05] tracking-[-0.025em] text-paper sm:text-[2.75rem]">
                 Spilled something? Let&apos;s sort it out.
               </h2>
-              <p className="mt-3 max-w-md text-base leading-relaxed text-ink-secondary">
+              <p className="mt-3 max-w-md text-base leading-relaxed text-paper/80">
                 Coffee on a sofa needs a different method than coffee on grout. Answer two questions and you&apos;ll get the right
                 supplies, steps and warnings.
               </p>
             </div>
             <form action="/tools/stain-finder" method="GET" className="grid gap-4 sm:grid-cols-[1fr_1fr_auto] lg:col-span-7">
               <label className="block">
-                <span className="mb-2 block text-[15px] font-semibold text-ink">What spilled?</span>
+                <span className="mb-2 block text-[15px] font-semibold text-paper">What spilled?</span>
                 <select
                   name="stain"
                   defaultValue="coffee"
-                  className="h-12 w-full rounded-lg border border-ink-muted bg-paper-card px-3 text-base text-ink focus:border-ink"
+                  className="h-12 w-full rounded-xl border-0 bg-paper-card px-3 text-base text-ink focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-peach"
                 >
                   {STAIN_OPTIONS.map(([value, label]) => (
                     <option key={value} value={value}>
@@ -306,11 +311,11 @@ export default function HomePage() {
                 </select>
               </label>
               <label className="block">
-                <span className="mb-2 block text-[15px] font-semibold text-ink">On what?</span>
+                <span className="mb-2 block text-[15px] font-semibold text-paper">On what?</span>
                 <select
                   name="surface"
                   defaultValue="fabric-sofa"
-                  className="h-12 w-full rounded-lg border border-ink-muted bg-paper-card px-3 text-base text-ink focus:border-ink"
+                  className="h-12 w-full rounded-xl border-0 bg-paper-card px-3 text-base text-ink focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-peach"
                 >
                   {SURFACE_OPTIONS.map(([value, label]) => (
                     <option key={value} value={value}>
@@ -319,7 +324,7 @@ export default function HomePage() {
                   ))}
                 </select>
               </label>
-              <button type="submit" className={`${buttonClasses('honey')} h-12 self-end`}>
+              <button type="submit" className={`${buttonClasses('peach')} h-12 self-end`}>
                 Show me how <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </button>
             </form>
@@ -356,7 +361,7 @@ export default function HomePage() {
                   className="group flex flex-col rounded-2xl border border-rule bg-paper-card p-5 transition-colors hover:border-rule-strong sm:p-6"
                 >
                   <Kicker>Buying guide · {g.recommendedProductIds.length} picks</Kicker>
-                  <h3 className="mt-2 font-serif text-2xl font-semibold leading-tight text-ink">
+                  <h3 className="mt-2 font-display text-2xl font-bold leading-tight text-ink">
                     <span className="hover-title">{g.title}</span>
                   </h3>
                   {pick && (
@@ -365,7 +370,7 @@ export default function HomePage() {
                         <img src={pick.image} alt="" loading="lazy" decoding="async" className="h-full w-full object-contain" />
                       </div>
                       <div className="min-w-0">
-                        <p className="kicker text-terracotta-deep">Our top pick</p>
+                        <p className="kicker text-coral-deep">Our top pick</p>
                         <p className="mt-0.5 text-[15px] font-semibold leading-snug text-ink">{pick.shortName}</p>
                         <div className="mt-1.5">
                           <EditorScore score={pick.scores.overall} size="xs" />
@@ -380,7 +385,7 @@ export default function HomePage() {
 
           {store.comparisons.length > 0 && (
             <div className="mt-10">
-              <h3 className="mb-3 font-serif text-xl font-semibold text-ink">Deciding between two?</h3>
+              <h3 className="mb-3 font-display text-xl font-bold text-ink">Deciding between two?</h3>
               <ul className="grid gap-4 md:grid-cols-2">
                 {store.comparisons.map((c) => {
                   const a = product(c.productAId);
@@ -392,10 +397,10 @@ export default function HomePage() {
                         href={`/compare/${c.slug}`}
                         className="group grid grid-cols-[1fr_auto_1fr] items-center gap-3 rounded-2xl border border-rule bg-paper-card p-4 transition-colors hover:border-rule-strong"
                       >
-                        <span className="text-right font-serif text-lg font-semibold leading-tight text-ink">{a.shortName}</span>
-                        <span className="rounded-full bg-honey px-2.5 py-1 text-[13px] font-semibold text-ink">vs</span>
-                        <span className="font-serif text-lg font-semibold leading-tight text-ink">{b.shortName}</span>
-                        <span className="col-span-3 mt-1 text-center text-[14px] text-ink-muted group-hover:text-terracotta-deep">
+                        <span className="text-right font-display text-lg font-bold leading-tight text-ink">{a.shortName}</span>
+                        <span className="rounded-full bg-peach px-2.5 py-1 text-[13px] font-semibold text-ink">vs</span>
+                        <span className="font-display text-lg font-bold leading-tight text-ink">{b.shortName}</span>
+                        <span className="col-span-3 mt-1 text-center text-[14px] text-ink-muted group-hover:text-coral-deep">
                           {c.category} · which one fits your home
                         </span>
                       </Link>
@@ -418,10 +423,10 @@ export default function HomePage() {
                 <li key={t.href}>
                   <Link href={t.href} className="group grid grid-cols-[1fr_auto] items-center gap-3 py-3.5">
                     <span>
-                      <span className="text-[17px] font-semibold text-ink group-hover:text-terracotta-deep">{t.label}</span>
+                      <span className="text-[17px] font-semibold text-ink group-hover:text-coral-deep">{t.label}</span>
                       <span className="block text-[15px] text-ink-muted">{t.note}</span>
                     </span>
-                    <ArrowRight className="h-4 w-4 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-terracotta-deep" aria-hidden="true" />
+                    <ArrowRight className="h-4 w-4 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-coral-deep" aria-hidden="true" />
                   </Link>
                 </li>
               ))}
@@ -431,7 +436,7 @@ export default function HomePage() {
           <aside className="lg:col-span-5" aria-labelledby="how-heading">
             <div className="rounded-2xl border border-rule bg-paper-card p-6 shadow-card sm:p-8">
               <Kicker tone="accent">How we work</Kicker>
-              <h2 id="how-heading" className="mt-2 font-serif text-[1.75rem] font-semibold leading-tight text-ink">
+              <h2 id="how-heading" className="mt-2 font-display text-[1.75rem] font-bold leading-tight text-ink">
                 We tell you what a recommendation is based on.
               </h2>
               <dl className="mt-6 space-y-5">
@@ -441,7 +446,7 @@ export default function HomePage() {
                   ['Affiliate links, disclosed', 'Amazon pays us a commission on some links. Brands can’t buy placement or a better rating.'],
                 ].map(([term, desc]) => (
                   <div key={term} className="grid grid-cols-[0.75rem_1fr] gap-3">
-                    <span className="mt-2 h-2 w-2 rounded-full bg-terracotta" aria-hidden="true" />
+                    <span className="mt-2 h-2 w-2 rounded-full bg-coral" aria-hidden="true" />
                     <div>
                       <dt className="font-semibold text-ink">{term}</dt>
                       <dd className="mt-0.5 text-[15px] leading-relaxed text-ink-secondary">{desc}</dd>

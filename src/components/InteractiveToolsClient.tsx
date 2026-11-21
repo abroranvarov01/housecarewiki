@@ -49,7 +49,7 @@ function ChoiceGroup<T extends string>({
     <fieldset className="min-w-0" aria-describedby={help ? helpId : undefined}>
       <legend className="mb-3 flex items-center gap-2.5 text-[17px] font-semibold leading-snug text-ink">
         {step !== undefined && (
-          <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-terracotta-soft text-[13px] font-semibold text-terracotta-deep" aria-hidden="true">
+          <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-coral-soft text-[13px] font-semibold text-coral-deep" aria-hidden="true">
             {step}
           </span>
         )}
@@ -66,7 +66,7 @@ function ChoiceGroup<T extends string>({
               onChange={() => onChange(o.value)}
               className="peer sr-only"
             />
-            <span className="inline-flex min-h-[44px] items-center gap-1.5 rounded-full border border-rule-strong bg-paper-card px-4 text-[15px] text-ink-secondary transition-colors duration-150 hover:border-ink hover:text-ink peer-checked:border-ink peer-checked:bg-ink peer-checked:text-paper-light peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-terracotta-deep">
+            <span className="inline-flex min-h-[44px] items-center gap-1.5 rounded-full border border-rule-strong bg-paper-card px-4 text-[15px] text-ink-secondary transition-colors duration-150 hover:border-ink hover:text-ink peer-checked:border-ink peer-checked:bg-ink peer-checked:text-paper-light peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-coral-deep">
               {o.label}
               {o.hint && <span className="text-[13px] opacity-80">{o.hint}</span>}
             </span>
@@ -87,7 +87,7 @@ function QuestionPanel({ children, title = 'Your answers', note }: { children: R
   return (
     <div className="rounded-2xl bg-paper-warm/70 p-5 sm:p-7 print:hidden">
       <div className="mb-6">
-        <h2 className="font-serif text-2xl font-semibold text-ink">{title}</h2>
+        <h2 className="font-display text-2xl font-bold text-ink">{title}</h2>
         {note && <p className="mt-1 text-[15px] text-ink-muted">{note}</p>}
       </div>
       <div className="space-y-7">{children}</div>
@@ -105,12 +105,12 @@ function stripNumber(title: string) {
 
 function SafetyBox({ title = 'Safety check', items }: { title?: string; items: string[] }) {
   return (
-    <aside className="rounded-lg border-l-4 border-terracotta bg-terracotta-soft/70 px-4 py-4 sm:px-5">
-      <p className="kicker mb-2 text-terracotta-deep">{title}</p>
+    <aside className="rounded-2xl ring-1 ring-inset ring-coral/40 bg-coral-soft/70 px-4 py-4 sm:px-5">
+      <p className="kicker mb-2 text-coral-deep">{title}</p>
       <ul className="space-y-1.5 text-[0.9375rem] leading-relaxed text-ink-secondary">
         {items.map((item) => (
           <li key={item} className="grid grid-cols-[0.75rem_1fr] gap-2">
-            <span className="mt-[0.6em] h-1.5 w-1.5 rounded-full bg-terracotta" aria-hidden="true" />
+            <span className="mt-[0.6em] h-1.5 w-1.5 rounded-full bg-coral" aria-hidden="true" />
             <span>{item}</span>
           </li>
         ))}
@@ -133,7 +133,7 @@ function ProductRows({ products, contentSlug, heading }: { products: Product[]; 
               <img src={p.image} alt="" loading="lazy" decoding="async" className="h-full w-full object-contain" />
             </div>
             <div className="min-w-0 flex-1">
-              <Link href={`/products/${p.slug}`} className="text-[15px] font-semibold leading-snug text-ink hover:text-terracotta-deep hover:underline underline-offset-2">
+              <Link href={`/products/${p.slug}`} className="text-[15px] font-semibold leading-snug text-ink hover:text-coral-deep hover:underline underline-offset-2">
                 {p.shortName}
               </Link>
               <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
@@ -321,7 +321,7 @@ export function StainFinderTool({
         <div className="overflow-hidden rounded-2xl border border-rule bg-paper-card shadow-card">
           <div className="border-b border-rule p-5 sm:p-6" aria-live="polite">
             <p className="kicker text-ink-muted">Your answer</p>
-            <h2 id="stain-answer" className="mt-2 font-serif text-[1.75rem] font-semibold leading-tight text-ink sm:text-3xl">
+            <h2 id="stain-answer" className="mt-2 font-display text-[1.75rem] font-bold leading-tight text-ink sm:text-3xl">
               {stainLabel} on {SURFACE_PHRASE[surface]}
             </h2>
             <dl className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-[14px]">
@@ -330,10 +330,10 @@ export function StainFinderTool({
                 <dd className="mt-1">
                   <span
                     className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-semibold ${
-                      diy ? 'bg-leaf-soft text-leaf-deep' : 'bg-terracotta-soft text-terracotta-deep'
+                      diy ? 'bg-leaf-soft text-leaf-deep' : 'bg-coral-soft text-coral-deep'
                     }`}
                   >
-                    <span className={`h-1.5 w-1.5 rounded-full ${diy ? 'bg-leaf-deep' : 'bg-terracotta'}`} aria-hidden="true" />
+                    <span className={`h-1.5 w-1.5 rounded-full ${diy ? 'bg-leaf-deep' : 'bg-coral'}`} aria-hidden="true" />
                     {diy ? 'Yes, safe to DIY with care' : result.safeToDIY ? 'Small spots only; consider a pro' : 'Careful: solvent only, or call a pro'}
                   </span>
                 </dd>
@@ -353,7 +353,7 @@ export function StainFinderTool({
               <ul className="space-y-2 text-[0.9375rem] leading-relaxed text-ink-secondary">
                 {why.map((w) => (
                   <li key={w} className="grid grid-cols-[1rem_1fr] gap-2">
-                    <ArrowRight className="mt-1 h-3.5 w-3.5 text-terracotta-deep" aria-hidden="true" />
+                    <ArrowRight className="mt-1 h-3.5 w-3.5 text-coral-deep" aria-hidden="true" />
                     <span>{w}</span>
                   </li>
                 ))}
@@ -379,7 +379,7 @@ export function StainFinderTool({
               <ol className="divide-y divide-rule border-y border-rule">
                 {result.steps.map((s, i) => (
                   <li key={s.title} className="grid grid-cols-[2.25rem_1fr] gap-2 py-4">
-                    <span className="kicker pt-1 text-terracotta-deep">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="kicker pt-1 text-coral-deep">{String(i + 1).padStart(2, '0')}</span>
                     <div>
                       <p className="font-semibold text-ink">{stripNumber(s.title)}</p>
                       <p className="mt-1 text-[0.9375rem] leading-relaxed text-ink-secondary">{s.detail}</p>
@@ -389,7 +389,7 @@ export function StainFinderTool({
               </ol>
             </div>
 
-            <div className="rounded-lg border-l-4 border-leaf bg-leaf-soft/60 px-4 py-4 sm:px-5">
+            <div className="rounded-2xl ring-1 ring-inset ring-leaf/40 bg-leaf-soft/60 px-4 py-4 sm:px-5">
               <p className="kicker mb-1.5 text-leaf-deep">When to call a pro</p>
               <p className="text-[0.9375rem] leading-relaxed text-ink-secondary">{result.whenToCallPro}</p>
             </div>
@@ -456,7 +456,7 @@ export function EquipmentFinderTool() {
       <section className="lg:col-span-8" aria-labelledby="equipment-answer">
         <div className="border-t border-rule-strong pt-4" aria-live="polite">
           <p className="kicker text-ink-muted">Best fit for your answers</p>
-          <h2 id="equipment-answer" className="mt-2 font-serif text-[1.75rem] font-semibold leading-tight text-ink sm:text-3xl">
+          <h2 id="equipment-answer" className="mt-2 font-display text-[1.75rem] font-bold leading-tight text-ink sm:text-3xl">
             {lead ? lead.product.shortName : 'No close match'}
           </h2>
         </div>
@@ -470,11 +470,11 @@ export function EquipmentFinderTool() {
               </div>
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                  <span className="kicker text-terracotta-deep">01 · Closest match</span>
+                  <span className="kicker text-coral-deep">01 · Closest match</span>
                   <EditorScore score={lead.product.scores.overall} size="xs" />
                 </div>
-                <h3 className="mt-2 font-serif text-xl font-semibold leading-snug text-ink">
-                  <Link href={`/products/${lead.product.slug}`} className="hover:text-terracotta-deep hover:underline underline-offset-2">
+                <h3 className="mt-2 font-display text-xl font-bold leading-snug text-ink">
+                  <Link href={`/products/${lead.product.slug}`} className="hover:text-coral-deep hover:underline underline-offset-2">
                     {lead.product.name}
                   </Link>
                 </h3>
@@ -512,9 +512,9 @@ export function EquipmentFinderTool() {
                 <ol className="divide-y divide-rule border-y border-rule">
                   {rest.map(({ product, reasons }, i) => (
                     <li key={product.id} className="grid gap-3 py-4 sm:grid-cols-[2.25rem_1fr_auto] sm:items-start">
-                      <span className="kicker pt-1 text-terracotta-deep">{String(i + 2).padStart(2, '0')}</span>
+                      <span className="kicker pt-1 text-coral-deep">{String(i + 2).padStart(2, '0')}</span>
                       <div className="min-w-0">
-                        <Link href={`/products/${product.slug}`} className="font-semibold text-ink hover:text-terracotta-deep hover:underline underline-offset-2">
+                        <Link href={`/products/${product.slug}`} className="font-semibold text-ink hover:text-coral-deep hover:underline underline-offset-2">
                           {product.shortName}
                         </Link>
                         <div className="mt-1">
@@ -636,7 +636,7 @@ export function RoutinePlannerTool() {
         <div className="flex flex-wrap items-end justify-between gap-4 border-t border-rule-strong pt-4">
           <div aria-live="polite">
             <p className="kicker text-ink-muted">Your plan</p>
-            <h2 id="routine-answer" className="mt-2 font-serif text-[1.75rem] font-semibold leading-tight text-ink sm:text-3xl">
+            <h2 id="routine-answer" className="mt-2 font-display text-[1.75rem] font-bold leading-tight text-ink sm:text-3xl">
               Cleaning checklist: {homeType}
             </h2>
             <p className="mt-2 text-[0.9375rem] text-ink-secondary">
@@ -665,7 +665,7 @@ export function RoutinePlannerTool() {
         <div className="mt-6 grid gap-px overflow-hidden rounded-2xl border border-rule bg-rule md:grid-cols-3 print:grid-cols-3">
           {columns.map((col) => (
             <div key={col.label} className="bg-paper-card p-5">
-              <h3 className="font-serif text-xl font-semibold text-ink">{col.label}</h3>
+              <h3 className="font-display text-xl font-bold text-ink">{col.label}</h3>
               <p className="kicker mt-1 text-ink-muted">{col.note}</p>
               <ul className="mt-4 space-y-1">
                 {col.items.map((item) => (
@@ -759,11 +759,11 @@ export function CostCalculatorTool() {
       <div className="lg:col-span-5">
         <div className="border-t border-rule-strong pt-4">
           <div className="mb-2 flex flex-wrap items-baseline justify-between gap-3">
-            <h2 className="font-serif text-2xl font-semibold text-ink">Your cost assumptions</h2>
+            <h2 className="font-display text-2xl font-bold text-ink">Your cost assumptions</h2>
             <button
               type="button"
               onClick={() => setValues(COST_DEFAULTS)}
-              className="inline-flex min-h-[44px] items-center gap-1.5 rounded px-2 text-sm font-semibold text-terracotta-deep hover:bg-leaf-soft"
+              className="inline-flex min-h-[44px] items-center gap-1.5 rounded px-2 text-sm font-semibold text-coral-deep hover:bg-leaf-soft"
             >
               <RotateCcw className="h-4 w-4" aria-hidden="true" /> Reset examples
             </button>
@@ -777,14 +777,14 @@ export function CostCalculatorTool() {
             {groups.map((g, gi) => (
               <fieldset key={g.id}>
                 <legend className="kicker mb-3 text-ink">
-                  <span className="text-terracotta-deep">{gi + 1} · </span>
+                  <span className="text-coral-deep">{gi + 1} · </span>
                   {g.title}
                 </legend>
                 <div className="grid gap-4 sm:grid-cols-2">
                   {COST_FIELDS.filter((f) => f.group === g.id).map((f) => (
                     <label key={f.key} className="block">
                       <span className="mb-1.5 block text-[14px] font-medium text-ink-secondary">{f.label}</span>
-                      <span className="flex h-12 items-center rounded-lg border border-rule-field bg-paper-card focus-within:border-ink focus-within:outline focus-within:outline-2 focus-within:outline-terracotta-deep">
+                      <span className="flex h-12 items-center rounded-lg border border-rule-field bg-paper-card focus-within:border-ink focus-within:outline focus-within:outline-2 focus-within:outline-coral-deep">
                         {f.unit === 'usd' && <span className="pl-3 font-mono text-ink-muted" aria-hidden="true">$</span>}
                         <input
                           type="number"
@@ -809,7 +809,7 @@ export function CostCalculatorTool() {
       <section className="lg:col-span-7" aria-labelledby="cost-answer">
         <div className="border-t border-rule-strong pt-4" aria-live="polite">
           <p className="kicker text-ink-muted">With your numbers</p>
-          <h2 id="cost-answer" className="mt-2 font-serif text-[1.75rem] font-semibold leading-tight text-ink sm:text-3xl">
+          <h2 id="cost-answer" className="mt-2 font-display text-[1.75rem] font-bold leading-tight text-ink sm:text-3xl">
             <span className="mark">{cheapest.label}</span> works out cheapest per clean.
           </h2>
           <p className="mt-3 max-w-prose text-[0.9375rem] leading-relaxed text-ink-secondary">
@@ -826,9 +826,9 @@ export function CostCalculatorTool() {
           {options.map((o) => {
             const best = o.id === cheapest.id;
             return (
-              <div key={o.id} className={`p-5 ${best ? 'bg-honey-soft' : 'bg-paper-card'}`}>
+              <div key={o.id} className={`p-5 ${best ? 'bg-peach-soft' : 'bg-paper-card'}`}>
                 <p className="kicker text-ink-muted">{o.label}</p>
-                <p className="mt-3 font-serif text-4xl font-semibold tabular-nums text-ink">{usd(Math.round(o.perClean * 100) / 100)}</p>
+                <p className="mt-3 font-display text-4xl font-bold tabular-nums text-ink">{usd(Math.round(o.perClean * 100) / 100)}</p>
                 <p className="mt-1 text-[13px] text-ink-muted">per clean</p>
                 <p className="mt-4 border-t border-rule pt-3 text-[14px] text-ink-secondary">
                   {usd(Math.round(o.total))} over {totalUses} cleans
@@ -859,8 +859,8 @@ export function CostCalculatorTool() {
 
 const STATUS_STYLE: Record<SurfaceCompatibilityEntry['status'], { label: string; chip: string; dot: string; rule: string }> = {
   SAFE: { label: 'Generally safe', chip: 'bg-leaf-soft text-leaf-deep', dot: 'bg-leaf-deep', rule: 'border-leaf-deep' },
-  CAUTION: { label: 'Use caution', chip: 'bg-honey-soft text-ink', dot: 'bg-honey-deep', rule: 'border-honey-deep' },
-  UNSAFE: { label: 'Avoid', chip: 'bg-terracotta-soft text-terracotta-deep', dot: 'bg-terracotta', rule: 'border-terracotta' },
+  CAUTION: { label: 'Use caution', chip: 'bg-peach-soft text-ink', dot: 'bg-peach-deep', rule: 'border-peach-deep' },
+  UNSAFE: { label: 'Avoid', chip: 'bg-coral-soft text-coral-deep', dot: 'bg-coral', rule: 'border-coral' },
 };
 
 const ALL_SURFACES = 'all';
@@ -888,7 +888,7 @@ export function SurfaceCheckerTool() {
           <ChoiceGroup step={1} legend="Which surface?" name="surface" value={surface} options={surfaceOptions} onChange={setSurface} />
           <div>
             <label htmlFor="surface-search" className="kicker mb-3 block text-ink">
-              <span className="text-terracotta-deep">2 · </span>Or search by cleaner
+              <span className="text-coral-deep">2 · </span>Or search by cleaner
             </label>
             <input
               id="surface-search"
@@ -905,7 +905,7 @@ export function SurfaceCheckerTool() {
       <section className="lg:col-span-8" aria-labelledby="surface-answer">
         <div className="border-t border-rule-strong pt-4">
           <p className="kicker text-ink-muted">Safety check</p>
-          <h2 id="surface-answer" className="mt-2 font-serif text-[1.75rem] font-semibold leading-tight text-ink sm:text-3xl">
+          <h2 id="surface-answer" className="mt-2 font-display text-[1.75rem] font-bold leading-tight text-ink sm:text-3xl">
             {surface === ALL_SURFACES ? 'Common surface and cleaner pairings' : surface}
           </h2>
           <p className="mt-2 text-[14px] text-ink-muted" aria-live="polite">
@@ -927,7 +927,7 @@ export function SurfaceCheckerTool() {
             {filtered.map((item) => {
               const st = STATUS_STYLE[item.status];
               return (
-                <li key={`${item.surface}-${item.agent}`} className={`border border-l-4 border-rule bg-paper-card p-5 ${st.rule}`}>
+                <li key={`${item.surface}-${item.agent}`} className={`border rounded-2xl ring-1 ring-inset ring-rule/40 bg-paper-card p-5 ${st.rule}`}>
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <p className="kicker text-ink-muted">
                       {item.agent} <span aria-hidden="true">→</span>
@@ -938,7 +938,7 @@ export function SurfaceCheckerTool() {
                       {st.label}
                     </span>
                   </div>
-                  <h3 className="mt-2 font-serif text-xl font-semibold leading-snug text-ink">{item.headline}</h3>
+                  <h3 className="mt-2 font-display text-xl font-bold leading-snug text-ink">{item.headline}</h3>
                   <p className="mt-2 text-[0.9375rem] leading-relaxed text-ink-secondary">
                     <span className="font-semibold text-ink">Why: </span>
                     {item.explanation}

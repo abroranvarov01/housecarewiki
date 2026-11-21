@@ -70,7 +70,7 @@ export default function MethodologyPage() {
             </div>
           ))}
         </dl>
-        <p className="border-l-4 border-honey-deep bg-honey-soft px-4 py-3 text-[0.9375rem]">
+        <p className="rounded-2xl ring-1 ring-inset ring-peach-deep/40 bg-peach-soft px-4 py-3 text-[0.9375rem]">
           <strong>Right now, every product review on HouseCareWiki is research-based.</strong> We haven&apos;t tested any
           product hands-on yet, and no review is labeled as if we had.
         </p>
@@ -102,7 +102,7 @@ export default function MethodologyPage() {
         <ol className="border-t border-rule">
           {RUBRIC.map((r, i) => (
             <li key={r.name} className="grid grid-cols-[2rem_1fr] gap-2 border-b border-rule py-3">
-              <span className="kicker pt-1 text-terracotta-deep">{String(i + 1).padStart(2, '0')}</span>
+              <span className="kicker pt-1 text-coral-deep">{String(i + 1).padStart(2, '0')}</span>
               <span>
                 <strong>{r.name}.</strong> <span className="text-[0.9375rem]">{r.detail}</span>
               </span>

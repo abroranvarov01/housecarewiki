@@ -70,7 +70,7 @@ function ResultRow({
         )}
         <span className="min-w-0">
           <span className="kicker block text-ink-muted">{kicker}</span>
-          <span className="mt-1 block font-serif text-xl font-semibold leading-snug text-ink">
+          <span className="mt-1 block font-display text-xl font-bold leading-snug text-ink">
             <span className="hover-title">{title}</span>
           </span>
           <span className="mt-1 block max-w-prose text-[15px] leading-snug text-ink-secondary line-clamp-2">{excerpt}</span>
@@ -113,7 +113,7 @@ export default function SearchPage({
       <header className="border-b border-rule">
         <Container className="py-8 sm:py-12">
           <Kicker tone="accent">{q ? 'Search' : 'Browse everything'}</Kicker>
-          <h1 className="mt-3 font-serif text-[2.25rem] font-semibold leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl">
+          <h1 className="mt-3 font-display text-[2.25rem] font-bold leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl">
             {q ? 'Search results' : 'All guides and reviews'}
           </h1>
 
@@ -132,7 +132,7 @@ export default function SearchPage({
                 className="min-w-0 flex-1 bg-transparent px-3 py-2.5 text-lg text-ink placeholder:text-ink-muted focus:outline-none"
               />
               {category !== 'all' && <input type="hidden" name="category" value={category} />}
-              <button type="submit" className="min-h-[44px] rounded-full bg-ink px-5 text-[15px] font-semibold text-paper-light transition-colors hover:bg-ink-deep sm:px-6">
+              <button type="submit" className="min-h-[44px] rounded-full bg-teal px-5 text-[15px] font-semibold text-white transition-colors hover:bg-teal-deep sm:px-6">
                 Search
               </button>
             </div>
@@ -171,7 +171,7 @@ export default function SearchPage({
           /* Zero results: point to the most common fixes and the stain finder. */
           <section aria-labelledby="empty-heading" className="mt-6 grid gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7">
-              <h2 id="empty-heading" className="font-serif text-3xl font-semibold leading-tight text-ink">
+              <h2 id="empty-heading" className="font-display text-3xl font-bold leading-tight text-ink">
                 Nothing matched{q ? ` “${q}”` : ''}{scope}.
               </h2>
               <p className="mt-3 max-w-prose text-[15px] leading-relaxed text-ink-secondary">
@@ -192,7 +192,7 @@ export default function SearchPage({
               <ol className="divide-y divide-rule border-y border-rule">
                 {COMMON_MESSES.map((m, i) => (
                   <li key={m.href}>
-                    <Link href={m.href} className="group flex min-h-[44px] items-baseline gap-3 py-3 text-[15px] text-ink hover:text-terracotta-deep">
+                    <Link href={m.href} className="group flex min-h-[44px] items-baseline gap-3 py-3 text-[15px] text-ink hover:text-coral-deep">
                       <span className="kicker w-5 shrink-0 text-ink-muted">{String(i + 1).padStart(2, '0')}</span>
                       <span className="hover-title">{m.label}</span>
                     </Link>
@@ -216,13 +216,13 @@ export default function SearchPage({
             <aside className="lg:col-span-5">
               <div className="rounded-2xl bg-paper-warm p-6 text-ink sm:p-8">
                 <Kicker tone="accent">Stain Solution Finder</Kicker>
-                <p className="mt-3 font-serif text-2xl font-semibold leading-tight">Know what spilled and on what?</p>
+                <p className="mt-3 font-display text-2xl font-bold leading-tight">Know what spilled and on what?</p>
                 <p className="mt-2 text-base leading-relaxed text-ink-secondary">
                   Answer two questions and get the supplies, steps and warnings for that exact stain and surface.
                 </p>
                 <Link
                   href="/tools/stain-finder"
-                  className="group mt-5 inline-flex min-h-[48px] items-center gap-2 rounded-full bg-honey px-6 text-[15px] font-semibold text-ink hover:bg-honey-deep"
+                  className="group mt-5 inline-flex min-h-[48px] items-center gap-2 rounded-full bg-peach px-6 text-[15px] font-semibold text-ink hover:bg-peach-deep"
                 >
                   Open the finder
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />

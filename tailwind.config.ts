@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-// "Warm Editorial Home Guide" design tokens (see docs/design-system.md).
+// "Warm Editorial Home Guide" design tokens, "Peach & Teal" palette, Nov 2026 (see docs/design-system.md).
 // Warm cream paper, soft charcoal ink, terracotta for small accents, honey yellow for the highlight,
 // leaf green used sparingly for "safe / compatible". Every *-deep shade exists so text passes WCAG 2.2 AA on cream:
 // terracotta (#BC7254) and leaf (#6FAE5C) themselves are decoration only (dots, rules, borders), never text.
@@ -13,54 +13,63 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // "Peach & Teal" palette (Nov 2026): warm cream paper, deep teal (water, clean) as the main colour,
+        // peach for the answer highlight, coral for small accents. Every *-deep shade passes AA as text on cream.
         paper: {
-          DEFAULT: "#F8F4EB",
-          light: "#FCFAF5",
-          warm: "#F1EADC",
-          deep: "#EAE0CD",
-          card: "#FFFDF8",
-          border: "#E4DACA",
+          DEFAULT: "#FBF4EC",
+          light: "#FEFAF5",
+          warm: "#F6EADF",
+          deep: "#EEDDCD",
+          card: "#FFFDF9",
+          border: "#EADDD0",
         },
         rule: {
-          DEFAULT: "#E4DACA",
-          strong: "#C8B99F",
-          // Form-control outline: 3:1 against cream and card (WCAG 1.4.11).
-          field: "#8C8170",
+          DEFAULT: "#EADDD0",
+          strong: "#D2BFAD",
+          // Form-control outline: >= 3:1 against cream and card (WCAG 1.4.11).
+          field: "#8F7E70",
         },
         ink: {
-          DEFAULT: "#29322C",
-          deep: "#1E2520",
-          secondary: "#414A43",
-          muted: "#5B635C",
+          DEFAULT: "#1E2B2B",
+          deep: "#132020",
+          secondary: "#3A4747",
+          muted: "#56605F",
         },
-        terracotta: {
-          DEFAULT: "#BC7254",
-          deep: "#9A4E30",
-          soft: "#F6E4DA",
+        // Coral: small accents (strokes, dots), warnings. Text and links use `coral-deep` (5.5:1 on cream).
+        coral: {
+          DEFAULT: "#D9654B",
+          deep: "#A9432C",
+          soft: "#FBE3DA",
         },
-        honey: {
-          DEFAULT: "#EFCB77",
-          deep: "#E0B456",
-          soft: "#FAEFD2",
+        // Peach: the answer highlight, "short answer" cards, chips. Background for ink text only.
+        peach: {
+          DEFAULT: "#F6B996",
+          deep: "#EE9E74",
+          soft: "#FDE7DA",
         },
-        // Fresh leaf green (replaced the muted sage): "safe / compatible", field notes, success states.
+        // Deep teal: primary buttons, footer and tool bands. Cream text on teal is 7.2:1.
+        teal: {
+          DEFAULT: "#1F5C5B",
+          deep: "#154443",
+          soft: "#DCEDEC",
+        },
+        // Leaf green, used sparingly: "safe to DIY", field notes, success states. Text uses leaf-deep.
         leaf: {
           DEFAULT: "#6FAE5C",
           deep: "#2D7139",
           soft: "#E8F2E1",
         },
-        // Logo colors (docs/brand/logo-sheet.webp). For the logo, icons and brand surfaces only;
-        // UI text and controls keep the AA-checked tokens above.
+        // Logo colours: for the logo, icons and brand surfaces only.
         brand: {
-          forest: "#285E3E",
-          terracotta: "#C75E3D",
-          honey: "#F6C343",
-          cream: "#F8F4EB",
+          teal: "#1F5C5B",
+          coral: "#D9654B",
+          peach: "#F6B996",
+          cream: "#FBF4EC",
           leaf: "#6FAE5C",
         },
       },
       fontFamily: {
-        serif: ["var(--font-serif)", "Georgia", "Cambria", "Times New Roman", "serif"],
+        display: ["var(--font-display)", "system-ui", "-apple-system", "Segoe UI", "sans-serif"],
         sans: ["var(--font-sans)", "system-ui", "-apple-system", "Segoe UI", "sans-serif"],
         mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
         hand: ["var(--font-hand)", "Bradley Hand", "cursive"],

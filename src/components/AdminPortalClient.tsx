@@ -217,18 +217,18 @@ export function AdminPortalClient({
   const input = 'w-full min-h-[44px] rounded-sm border border-rule-strong/70 bg-paper px-3.5 py-2 text-sm text-ink focus:border-ink focus:outline-none';
   const labelCls = 'block text-xs font-semibold text-ink-secondary mb-1';
   const primaryBtn = 'inline-flex min-h-[44px] items-center justify-center gap-1.5 rounded bg-ink px-5 text-sm font-semibold text-white transition-colors hover:bg-ink-deep';
-  const h2 = 'font-serif text-xl font-semibold text-ink';
+  const h2 = 'font-display text-xl font-bold text-ink';
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
       {/* Admin header + tabs */}
       <div className="bg-ink text-paper-light rounded-sm p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <div>
-          <div className="kicker flex items-center gap-2 text-honey">
+          <div className="kicker flex items-center gap-2 text-peach">
             <ShieldCheck className="w-4 h-4" aria-hidden="true" />
             <span>Editorial CMS, SEO and site settings</span>
           </div>
-          <h1 className="font-serif text-2xl sm:text-3xl font-semibold mt-1">HouseCareWiki admin</h1>
+          <h1 className="font-display text-2xl sm:text-3xl font-bold mt-1">HouseCareWiki admin</h1>
           <p className="text-xs text-paper-light/80 mt-0.5">
             Role: <strong>Owner / Managing Editor</strong> · Amazon partner tag:{' '}
             <code className="bg-paper-light/10 px-1.5 py-0.5 rounded-sm">{store.config.amazonPartnerTag}</code>
@@ -254,7 +254,7 @@ export function AdminPortalClient({
                 aria-selected={active}
                 onClick={() => setActiveTab(tab.id as typeof activeTab)}
                 className={`inline-flex min-h-[44px] items-center gap-1.5 px-3.5 rounded-sm text-xs font-semibold transition-colors ${
-                  active ? 'bg-honey text-ink' : 'bg-paper-light/10 text-paper-light hover:bg-paper-light/20'
+                  active ? 'bg-peach text-ink' : 'bg-paper-light/10 text-paper-light hover:bg-paper-light/20'
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" aria-hidden="true" />
@@ -269,7 +269,7 @@ export function AdminPortalClient({
         <div
           role={toast.tone === 'error' ? 'alert' : 'status'}
           className={`px-4 py-3 rounded-sm text-sm font-semibold flex items-center justify-between gap-4 border ${
-            toast.tone === 'error' ? 'bg-terracotta-soft border-terracotta/40 text-terracotta-deep' : 'bg-leaf-soft border-leaf-deep/40 text-leaf-deep'
+            toast.tone === 'error' ? 'bg-coral-soft border-coral/40 text-coral-deep' : 'bg-leaf-soft border-leaf-deep/40 text-leaf-deep'
           }`}
         >
           <span>{toast.msg}</span>
@@ -286,17 +286,17 @@ export function AdminPortalClient({
             <div className="bg-paper-card p-5">
               <div className="kicker flex items-center justify-between text-ink-muted">
                 <span>Affiliate clicks recorded</span>
-                <MousePointerClick className="w-4 h-4 text-terracotta-deep" aria-hidden="true" />
+                <MousePointerClick className="w-4 h-4 text-coral-deep" aria-hidden="true" />
               </div>
-              <p className="font-serif text-3xl font-semibold text-ink mt-2">{totalClicks}</p>
+              <p className="font-display text-3xl font-bold text-ink mt-2">{totalClicks}</p>
               <p className="text-xs text-ink-muted mt-1">Outbound clicks to Amazon. A click is not a sale.</p>
             </div>
             <div className="bg-paper-card p-5">
               <div className="kicker flex items-center justify-between text-ink-muted">
                 <span>Newsletter subscribers</span>
-                <TrendingUp className="w-4 h-4 text-terracotta-deep" aria-hidden="true" />
+                <TrendingUp className="w-4 h-4 text-coral-deep" aria-hidden="true" />
               </div>
-              <p className="font-serif text-3xl font-semibold text-ink mt-2">{activeSubscribers}</p>
+              <p className="font-display text-3xl font-bold text-ink mt-2">{activeSubscribers}</p>
               <p className="text-xs text-ink-muted mt-1">
                 {activeSubscribers === 0 ? 'No sign-ups yet.' : 'Stored sign-ups from the site form.'}
               </p>
@@ -304,9 +304,9 @@ export function AdminPortalClient({
             <div className="bg-paper-card p-5">
               <div className="kicker flex items-center justify-between text-ink-muted">
                 <span>Published pages</span>
-                <FileText className="w-4 h-4 text-terracotta-deep" aria-hidden="true" />
+                <FileText className="w-4 h-4 text-coral-deep" aria-hidden="true" />
               </div>
-              <p className="font-serif text-3xl font-semibold text-ink mt-2">{publishedCount}</p>
+              <p className="font-display text-3xl font-bold text-ink mt-2">{publishedCount}</p>
               <p className="text-xs text-ink-muted mt-1">
                 {draftCount} in other workflow stages · {store.products.length} products
               </p>
@@ -362,7 +362,7 @@ export function AdminPortalClient({
                   {store.auditLogs.map((log) => (
                     <div key={log.id} className="py-3 text-xs space-y-1">
                       <div className="flex items-center justify-between gap-3">
-                        <span className="font-semibold text-terracotta-deep">
+                        <span className="font-semibold text-coral-deep">
                           {log.action} · {log.actor} ({log.role})
                         </span>
                         <span className="text-[11px] text-ink-muted shrink-0">
@@ -384,7 +384,7 @@ export function AdminPortalClient({
         <div className="space-y-8">
           <form onSubmit={handleCreateArticle} className={`${card} space-y-4`}>
             <h2 className={`${h2} flex items-center gap-2`}>
-              <Plus className="w-5 h-5 text-terracotta-deep" aria-hidden="true" />
+              <Plus className="w-5 h-5 text-coral-deep" aria-hidden="true" />
               <span>New guide draft</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -473,7 +473,7 @@ export function AdminPortalClient({
                       </div>
                       <Link
                         href={publicUrl}
-                        className="font-serif font-semibold text-lg text-ink hover:text-terracotta-deep inline-flex items-center gap-1.5"
+                        className="font-display font-bold text-lg text-ink hover:text-coral-deep inline-flex items-center gap-1.5"
                       >
                         <span>{art.title}</span>
                         <ExternalLink className="w-3.5 h-3.5 text-ink-muted" aria-hidden="true" />
@@ -491,7 +491,7 @@ export function AdminPortalClient({
                         id={`status-${art.id}`}
                         value={art.status}
                         onChange={(e) => handleStatusChange(art.id, e.target.value as EditorialStatus)}
-                        className="min-h-[44px] rounded-sm border border-rule-strong/70 bg-paper px-3 text-xs font-semibold text-terracotta-deep"
+                        className="min-h-[44px] rounded-sm border border-rule-strong/70 bg-paper px-3 text-xs font-semibold text-coral-deep"
                       >
                         {WORKFLOW_STAGES.map((st) => (
                           <option key={st} value={st}>
@@ -547,7 +547,7 @@ export function AdminPortalClient({
                   return (
                     <tr key={prod.id}>
                       <th scope="row" className="p-4 font-semibold text-ink">
-                        <Link href={`/products/${prod.slug}`} className="hover:text-terracotta-deep">
+                        <Link href={`/products/${prod.slug}`} className="hover:text-coral-deep">
                           {prod.name}
                         </Link>
                       </th>
@@ -565,7 +565,7 @@ export function AdminPortalClient({
                             Matches {store.config.amazonPartnerTag}
                           </span>
                         ) : (
-                          <span className="inline-flex items-center gap-1 text-xs font-semibold text-terracotta-deep">
+                          <span className="inline-flex items-center gap-1 text-xs font-semibold text-coral-deep">
                             <AlertTriangle className="w-3.5 h-3.5" aria-hidden="true" />
                             Missing or different tag
                           </span>
@@ -655,7 +655,7 @@ export function AdminPortalClient({
                   <div key={r.id} className="py-2.5 flex flex-wrap items-center justify-between gap-2">
                     <div>
                       <code className="font-semibold text-ink">{r.fromPath}</code> →{' '}
-                      <code className="text-terracotta-deep font-semibold">{r.toPath}</code>
+                      <code className="text-coral-deep font-semibold">{r.toPath}</code>
                     </div>
                     <span className="text-ink-muted">
                       HTTP {r.statusCode} · added {r.createdAt}
@@ -672,8 +672,8 @@ export function AdminPortalClient({
       {activeTab === 'ai' && (
         <div className={`${card} space-y-6`}>
           <div>
-            <span className="kicker text-terracotta-deep">Before an editor reviews it</span>
-            <h2 className="font-serif text-2xl font-semibold text-ink mt-1">Draft safety and claims check</h2>
+            <span className="kicker text-coral-deep">Before an editor reviews it</span>
+            <h2 className="font-display text-2xl font-bold text-ink mt-1">Draft safety and claims check</h2>
             <p className="text-xs sm:text-sm text-ink-secondary mt-1">
               Flags dangerous chemical combinations and testing claims we can&apos;t support, and gives a starter outline. It runs
               simple keyword rules in your browser; no AI service is connected, and it doesn&apos;t replace fact-checking.
@@ -704,14 +704,14 @@ export function AdminPortalClient({
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-rule">
               <div
                 className={`rounded-sm p-5 border ${
-                  aiSafetyReport.passed ? 'bg-leaf-soft border-leaf-deep/30' : 'bg-terracotta-soft border-terracotta/40'
+                  aiSafetyReport.passed ? 'bg-leaf-soft border-leaf-deep/30' : 'bg-coral-soft border-coral/40'
                 }`}
               >
                 <h3 className="font-semibold text-sm text-ink flex items-center gap-2 mb-3">
                   {aiSafetyReport.passed ? (
                     <CheckCircle2 className="w-4 h-4 text-leaf-deep" aria-hidden="true" />
                   ) : (
-                    <AlertTriangle className="w-4 h-4 text-terracotta-deep" aria-hidden="true" />
+                    <AlertTriangle className="w-4 h-4 text-coral-deep" aria-hidden="true" />
                   )}
                   <span>{aiSafetyReport.passed ? 'Nothing flagged' : 'Needs changes'}</span>
                 </h3>
@@ -826,8 +826,8 @@ function JobStatusBadge({ status }: { status: string }) {
     status === 'SUCCESS'
       ? 'border-leaf-deep/40 bg-leaf-soft text-leaf-deep'
       : status === 'WARNING'
-      ? 'border-terracotta/40 bg-terracotta-soft text-terracotta-deep'
-      : 'border-terracotta/40 bg-leaf-soft text-terracotta-deep';
+      ? 'border-coral/40 bg-coral-soft text-coral-deep'
+      : 'border-coral/40 bg-leaf-soft text-coral-deep';
   const label = status === 'SUCCESS' ? 'Last run OK' : status === 'WARNING' ? 'Warning' : 'Running';
   return <span className={`kicker inline-flex rounded-full border px-2.5 py-1 shrink-0 ${tone}`}>{label}</span>;
 }

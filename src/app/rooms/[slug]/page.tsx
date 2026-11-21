@@ -134,7 +134,7 @@ export default function RoomCategoryPage({
           <div className="mt-6 grid gap-6 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-7">
               <Kicker tone="accent">Room guide</Kicker>
-              <h1 className="mt-3 font-serif text-[2.5rem] font-medium leading-[1.04] tracking-[-0.025em] text-ink sm:text-[3.5rem]">
+              <h1 className="mt-3 font-display text-[2.5rem] font-bold leading-[1.04] tracking-[-0.025em] text-ink sm:text-[3.5rem]">
                 {room.name}
               </h1>
             </div>
@@ -170,13 +170,13 @@ export default function RoomCategoryPage({
               </Link>
               <div className="lg:col-span-7">
                 <Kicker>{articleMeta(startHere)}</Kicker>
-                <h3 className="mt-2 font-serif text-[1.75rem] font-semibold leading-tight tracking-[-0.01em] text-ink sm:text-[2rem]">
+                <h3 className="mt-2 font-display text-[1.75rem] font-bold leading-tight tracking-[-0.01em] text-ink sm:text-[2rem]">
                   <Link href={articleHref(startHere)} className="group">
                     <span className="hover-title">{startHere.title}</span>
                   </Link>
                 </h3>
                 {startHere.quickAnswer && (
-                  <div className="mt-4 border-l-4 border-honey-deep bg-honey-soft px-4 py-3">
+                  <div className="mt-4 rounded-2xl ring-1 ring-inset ring-peach-deep/40 bg-peach-soft px-4 py-3">
                     <p className="kicker mb-1 text-ink">The short answer</p>
                     <p className="text-[0.9375rem] leading-relaxed text-ink-secondary">{startHere.quickAnswer}</p>
                   </div>
@@ -210,8 +210,8 @@ export default function RoomCategoryPage({
               )}
             </div>
           ) : (
-            <div className="mt-6 max-w-prose border-l-4 border-leaf bg-leaf-soft/60 px-5 py-5">
-              <p className="font-serif text-xl font-semibold text-ink">We&apos;re still writing guides for this room.</p>
+            <div className="mt-6 max-w-prose rounded-2xl ring-1 ring-inset ring-leaf/40 bg-leaf-soft/60 px-5 py-5">
+              <p className="font-display text-xl font-bold text-ink">We&apos;re still writing guides for this room.</p>
               <p className="mt-2 text-[0.9375rem] leading-relaxed text-ink-secondary">
                 Planned topics: {allTopics.map((t) => t.label).join(', ')}. Until they&apos;re published, search the guides we
                 have or use the free tools below.
@@ -252,7 +252,7 @@ export default function RoomCategoryPage({
                   </Link>
                   <div className="min-w-0">
                     <Link href={`/products/${p.slug}`} className="group">
-                      <span className="font-serif text-lg font-semibold leading-snug text-ink">
+                      <span className="font-display text-lg font-bold leading-snug text-ink">
                         <span className="hover-title">{p.shortName}</span>
                       </span>
                     </Link>
@@ -291,10 +291,10 @@ export default function RoomCategoryPage({
                   <li key={s.slug}>
                     <Link href={`/surfaces/${s.slug}`} className="group grid grid-cols-[1fr_auto] items-center gap-4 py-3.5">
                       <span className="min-w-0">
-                        <span className="text-[16px] font-semibold text-ink group-hover:text-terracotta-deep">{s.name}</span>
+                        <span className="text-[16px] font-semibold text-ink group-hover:text-coral-deep">{s.name}</span>
                         <span className="block text-[14px] leading-snug text-ink-muted line-clamp-2">{s.summary}</span>
                       </span>
-                      <ArrowRight className="h-4 w-4 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-terracotta-deep" aria-hidden="true" />
+                      <ArrowRight className="h-4 w-4 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-coral-deep" aria-hidden="true" />
                     </Link>
                   </li>
                 ))}
@@ -309,10 +309,10 @@ export default function RoomCategoryPage({
                   <Link href={t.href} className="group grid grid-cols-[2rem_1fr_auto] items-baseline gap-3 py-3.5">
                     <span className="kicker text-ink-muted">{String(i + 1).padStart(2, '0')}</span>
                     <span>
-                      <span className="text-[16px] font-semibold text-ink group-hover:text-terracotta-deep">{t.label}</span>
+                      <span className="text-[16px] font-semibold text-ink group-hover:text-coral-deep">{t.label}</span>
                       <span className="block text-[14px] text-ink-muted">{t.note}</span>
                     </span>
-                    <ArrowRight className="h-4 w-4 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-terracotta-deep" aria-hidden="true" />
+                    <ArrowRight className="h-4 w-4 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-coral-deep" aria-hidden="true" />
                   </Link>
                 </li>
               ))}

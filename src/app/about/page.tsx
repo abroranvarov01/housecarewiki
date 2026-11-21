@@ -52,8 +52,8 @@ export default function AboutPage() {
           <div className="mt-8 grid gap-8 lg:grid-cols-12">
             <div className="lg:col-span-9">
               <Kicker tone="accent">About HouseCareWiki</Kicker>
-              <h1 className="mt-4 font-serif text-[2.5rem] font-medium leading-[1.04] tracking-[-0.025em] text-ink sm:text-6xl">
-                A home-care guide that tells you <span className="mark italic">what its advice is based on</span>.
+              <h1 className="mt-4 font-display text-[2.5rem] font-bold leading-[1.04] tracking-[-0.025em] text-ink sm:text-6xl">
+                A home-care guide that tells you <span className="mark">what its advice is based on</span>.
               </h1>
             </div>
             <p className="max-w-prose text-lg leading-relaxed text-ink-secondary lg:col-span-8">
@@ -73,10 +73,10 @@ export default function AboutPage() {
           <div className="grid gap-10 md:grid-cols-2 md:gap-12">
             {[
               { label: 'What we do', items: WE_DO, dot: 'bg-leaf-deep' },
-              { label: 'What we don’t do', items: WE_DONT, dot: 'bg-terracotta' },
+              { label: 'What we don’t do', items: WE_DONT, dot: 'bg-coral' },
             ].map((col) => (
               <div key={col.label} className="border-t border-rule-strong pt-3">
-                <h3 className="font-serif text-2xl font-semibold text-ink">{col.label}</h3>
+                <h3 className="font-display text-2xl font-bold text-ink">{col.label}</h3>
                 <ul className="mt-4 border-t border-rule-strong/50">
                   {col.items.map((item, i) => (
                     <li key={item} className="grid grid-cols-[2rem_1fr] gap-2 border-b border-rule-strong/50 py-3 text-[15px] leading-relaxed text-ink-secondary">
@@ -177,7 +177,7 @@ export default function AboutPage() {
               ['/affiliate-disclosure', 'Affiliate disclosure'],
             ].map(([href, label]) => (
               <li key={href}>
-                <Link href={href} className="group flex min-h-[44px] items-center border-b border-rule py-2 font-semibold text-ink hover:text-terracotta-deep">
+                <Link href={href} className="group flex min-h-[44px] items-center border-b border-rule py-2 font-semibold text-ink hover:text-coral-deep">
                   <span className="hover-title">{label}</span>
                 </Link>
               </li>

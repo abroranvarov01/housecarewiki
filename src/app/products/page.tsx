@@ -66,7 +66,7 @@ export default function ProductsCatalogPage() {
             <Kicker tone="accent" className="mt-6">
               Product reviews · {store.products.length} products
             </Kicker>
-            <h1 className="mt-3 font-serif text-[2.25rem] font-medium leading-[1.05] tracking-[-0.02em] text-ink sm:text-5xl">
+            <h1 className="mt-3 font-display text-[2.25rem] font-bold leading-[1.05] tracking-[-0.02em] text-ink sm:text-5xl">
               Cleaning tools and equipment
             </h1>
             <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-secondary">

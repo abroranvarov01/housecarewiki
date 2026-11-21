@@ -23,12 +23,12 @@ export function Kicker({
   field = false,
   as: Tag = 'p',
 }: WithChildren & { tone?: 'muted' | 'accent' | 'ink'; field?: boolean; as?: 'p' | 'span' | 'div' }) {
-  const color = tone === 'accent' ? 'text-terracotta-deep' : tone === 'ink' ? 'text-ink' : 'text-ink-muted';
+  const color = tone === 'accent' ? 'text-coral-deep' : tone === 'ink' ? 'text-ink' : 'text-ink-muted';
   return <Tag className={`${field ? 'kicker-field' : 'kicker'} ${color} ${className}`}>{children}</Tag>;
 }
 
 /**
- * Section header: serif title with a short terracotta stroke above it, optional kicker and an optional link.
+ * Section header: display title with a short coral stroke above it, optional kicker and an optional link.
  * Used instead of centered "section title + subtitle" blocks. `index` is kept for older call sites but no
  * longer rendered: numbered sections read as a manual, not a home guide.
  */
@@ -55,18 +55,18 @@ export function SectionHead({
 }) {
   return (
     <div className={className} data-index={index}>
-      <span className="mb-3 block h-[3px] w-10 rounded-full bg-terracotta" aria-hidden="true" />
+      <span className="mb-3 block h-[3px] w-10 rounded-full bg-coral" aria-hidden="true" />
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
         <div className="flex items-baseline gap-3 min-w-0">
           <div className="min-w-0">
             {kicker && <Kicker className="mb-1">{kicker}</Kicker>}
-            <Tag id={id} className="font-serif text-[1.625rem] sm:text-3xl font-semibold leading-tight tracking-[-0.01em] text-ink">
+            <Tag id={id} className="font-display text-[1.625rem] sm:text-3xl font-bold leading-tight tracking-[-0.01em] text-ink">
               {title}
             </Tag>
           </div>
         </div>
         {href && linkLabel && (
-          <Link href={href} className="group inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-terracotta-deep">
+          <Link href={href} className="group inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-coral-deep">
             <span className="hover-title">{linkLabel}</span>
             <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
           </Link>
@@ -77,17 +77,17 @@ export function SectionHead({
   );
 }
 
-type ButtonVariant = 'primary' | 'secondary' | 'honey' | 'ghost';
+type ButtonVariant = 'primary' | 'secondary' | 'peach' | 'ghost';
 
 export function buttonClasses(variant: ButtonVariant = 'primary', size: 'sm' | 'md' = 'md') {
   const base =
     'inline-flex items-center justify-center gap-2 font-semibold transition-colors duration-150 ease-out active:translate-y-px disabled:opacity-50 disabled:pointer-events-none';
   const sizes = size === 'sm' ? 'min-h-[44px] px-4 text-[14px] rounded-full' : 'min-h-[48px] px-6 text-[15px] rounded-full';
   const variants: Record<ButtonVariant, string> = {
-    primary: 'bg-ink text-paper-light hover:bg-ink-deep',
+    primary: 'bg-teal text-white hover:bg-teal-deep',
     secondary: 'border border-ink/70 text-ink bg-paper-card hover:border-ink hover:bg-paper-warm',
-    honey: 'bg-honey text-ink hover:bg-honey-deep',
-    ghost: 'text-terracotta-deep hover:bg-terracotta-soft',
+    peach: 'bg-peach text-ink hover:bg-peach-deep',
+    ghost: 'text-coral-deep hover:bg-coral-soft',
   };
   return `${base} ${sizes} ${variants[variant]}`;
 }
@@ -115,10 +115,14 @@ export function Breadcrumbs({ items, className = '' }: { items: { name: string; 
     <nav aria-label="Breadcrumb" className={`text-[14px] text-ink-muted ${className}`}>
       <ol className="-my-3 flex flex-wrap items-center gap-x-1.5">
         {items.map((item, i) => (
-          <li key={`${item.name}-${i}`} className="flex items-center gap-1.5 min-w-0">
+          // On phones the current page is dropped from the trail: the H1 right below names it.
+          <li
+            key={`${item.name}-${i}`}
+            className={`flex min-w-0 items-center gap-1.5 ${i === items.length - 1 && items.length > 2 ? 'max-sm:hidden' : ''}`}
+          >
             {i > 0 && <ChevronRight className="h-3.5 w-3.5 shrink-0 text-rule-strong" aria-hidden="true" />}
             {item.href && i < items.length - 1 ? (
-              <Link href={item.href} className="inline-flex min-h-[44px] items-center hover:text-terracotta-deep hover:underline underline-offset-2">
+              <Link href={item.href} className="inline-flex min-h-[44px] items-center hover:text-coral-deep hover:underline underline-offset-2">
                 {item.name}
               </Link>
             ) : (
@@ -161,11 +165,11 @@ export function EvidenceLabel({ status, className = '', withDetail = false }: { 
       <Link
         href="/methodology#evidence"
         className={`inline-flex min-h-[44px] items-center gap-1.5 rounded-full border px-3.5 py-1 text-[13px] sm:min-h-[36px] font-semibold transition-colors ${
-          tested ? 'border-leaf-deep/40 bg-leaf-soft text-leaf-deep' : 'border-rule-strong/60 bg-paper-card text-ink-secondary hover:border-terracotta-deep hover:text-terracotta-deep'
+          tested ? 'border-leaf-deep/40 bg-leaf-soft text-leaf-deep' : 'border-rule-strong/60 bg-paper-card text-ink-secondary hover:border-coral-deep hover:text-coral-deep'
         }`}
         title={copy.detail}
       >
-        <span className={`h-1.5 w-1.5 rounded-full ${tested ? 'bg-leaf-deep' : 'bg-honey-deep'}`} aria-hidden="true" />
+        <span className={`h-1.5 w-1.5 rounded-full ${tested ? 'bg-leaf-deep' : 'bg-peach-deep'}`} aria-hidden="true" />
         {copy.label}
         {!tested && <span className="font-normal text-ink-muted">· {copy.short}</span>}
       </Link>
@@ -194,7 +198,7 @@ export function Byline({
   return (
     <p className={`text-[13px] leading-relaxed text-ink-muted ${className}`}>
       By{' '}
-      <Link href={`/authors/${author.slug}`} className="font-semibold text-ink hover:text-terracotta-deep hover:underline underline-offset-2">
+      <Link href={`/authors/${author.slug}`} className="font-semibold text-ink hover:text-coral-deep hover:underline underline-offset-2">
         {author.name}
       </Link>
       <span aria-hidden="true"> · </span>
@@ -216,7 +220,7 @@ export function Byline({
           Reviewed by{' '}
           <Link
             href={`/authors/${reviewer.author.slug}`}
-            className="font-semibold text-ink hover:text-terracotta-deep hover:underline underline-offset-2"
+            className="font-semibold text-ink hover:text-coral-deep hover:underline underline-offset-2"
           >
             {reviewer.author.name}
           </Link>
@@ -239,7 +243,7 @@ export function formatDate(value: string): string {
 
 type CalloutTone = 'safety' | 'note' | 'answer' | 'info';
 
-/** Callouts: safety (terracotta), field note (sage), answer (honey), info (neutral). */
+/** Callouts: safety (coral), field note (leaf), answer (peach), info (neutral). Soft tinted cards, no side bars. */
 export function Callout({
   tone = 'note',
   title,
@@ -248,20 +252,23 @@ export function Callout({
   id,
 }: WithChildren & { tone?: CalloutTone; title?: React.ReactNode; id?: string }) {
   const styles: Record<CalloutTone, string> = {
-    safety: 'border-l-4 border-terracotta bg-terracotta-soft/70',
-    note: 'border-l-4 border-leaf bg-leaf-soft/70',
-    answer: 'border-l-4 border-honey-deep bg-honey-soft',
+    safety: 'bg-paper-card ring-1 ring-inset ring-coral/60',
+    note: 'bg-leaf-soft/80 ring-1 ring-inset ring-leaf/40',
+    answer: 'bg-peach-soft ring-1 ring-inset ring-peach-deep/45 shadow-card',
     info: 'border border-rule bg-paper-card',
   };
   const titleColor: Record<CalloutTone, string> = {
-    safety: 'text-terracotta-deep',
+    safety: 'text-coral-deep',
     note: 'text-leaf-deep',
     answer: 'text-ink',
     info: 'text-ink-muted',
   };
   return (
-    <aside id={id} className={`rounded-lg px-5 py-5 sm:px-6 ${styles[tone]} ${className}`}>
-      {title && (
+    <aside id={id} className={`rounded-2xl px-5 py-5 sm:px-6 ${styles[tone]} ${className}`}>
+      {title && tone === 'answer' && (
+        <p className="mb-3 inline-flex rounded-full bg-peach px-3 py-1 text-[13px] font-bold text-ink">{title}</p>
+      )}
+      {title && tone !== 'answer' && (
         <p className={`${tone === 'note' ? 'kicker-field' : 'kicker'} mb-2 flex items-center gap-1.5 ${titleColor[tone]}`}>
           {tone === 'safety' && <AlertTriangle className="h-3.5 w-3.5" aria-hidden="true" />}
           {tone === 'info' && <Info className="h-3.5 w-3.5" aria-hidden="true" />}
@@ -281,7 +288,7 @@ export function FaqList({ faqs, className = '' }: { faqs: ArticleFAQ[]; classNam
       {faqs.map((faq) => (
         <details key={faq.question} className="group py-1">
           <summary className="flex items-start justify-between gap-4 py-3.5 text-left">
-            <h3 className="font-serif text-lg font-semibold leading-snug text-ink group-hover:text-terracotta-deep">{faq.question}</h3>
+            <h3 className="font-display text-lg font-bold leading-snug text-ink group-hover:text-coral-deep">{faq.question}</h3>
             <Plus className="details-icon mt-1 h-5 w-5 shrink-0 text-ink-muted transition-transform duration-200" aria-hidden="true" />
           </summary>
           <p className="pb-4 pr-8 text-[0.9375rem] leading-relaxed text-ink-secondary">{faq.answer}</p>

@@ -27,13 +27,13 @@ function PanelList({ title, links, columns = 1, onNavigate }: { title: string; l
             <Link
               href={l.href}
               onClick={onNavigate}
-              className="group flex items-baseline justify-between gap-3 border-b border-rule py-2.5 text-[15px] text-ink hover:text-terracotta-deep"
+              className="group flex items-baseline justify-between gap-3 border-b border-rule py-2.5 text-[15px] text-ink hover:text-coral-deep"
             >
               <span>
                 <span className="hover-title">{l.label}</span>
                 {l.note && <span className="mt-0.5 block text-[13px] text-ink-muted">{l.note}</span>}
               </span>
-              <ArrowRight className="h-3.5 w-3.5 shrink-0 text-rule-strong transition-transform group-hover:translate-x-0.5 group-hover:text-terracotta-deep" aria-hidden="true" />
+              <ArrowRight className="h-3.5 w-3.5 shrink-0 text-rule-strong transition-transform group-hover:translate-x-0.5 group-hover:text-coral-deep" aria-hidden="true" />
             </Link>
           </li>
         ))}
@@ -47,10 +47,10 @@ function PanelBody({ panel, nav, onNavigate }: { panel: PanelKey; nav: NavModel;
     return (
       <div className="grid gap-8 lg:grid-cols-[2fr_1fr]">
         <PanelList title="Step-by-step guides" links={nav.fix} columns={2} onNavigate={onNavigate} />
-        <div className="bg-honey-soft p-5">
-          <p className="font-serif text-xl font-semibold leading-snug text-ink">Not sure what will work on your surface?</p>
+        <div className="bg-peach-soft p-5">
+          <p className="font-display text-xl font-bold leading-snug text-ink">Not sure what will work on your surface?</p>
           <p className="mt-2 text-sm text-ink-secondary">Pick the stain, the material and how old it is. You get the steps and the warnings for that case.</p>
-          <Link href="/tools/stain-finder" onClick={onNavigate} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-terracotta-deep underline underline-offset-4">
+          <Link href="/tools/stain-finder" onClick={onNavigate} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-coral-deep underline underline-offset-4">
             Open the Stain Solution Finder <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
@@ -73,7 +73,7 @@ function PanelBody({ panel, nav, onNavigate }: { panel: PanelKey; nav: NavModel;
           />
           <p className="text-[13px] leading-relaxed text-ink-muted">
             Our reviews are research-based: specs, manuals and published standards, not hands-on tests.{' '}
-            <Link href="/methodology" onClick={onNavigate} className="underline underline-offset-2 hover:text-terracotta-deep">
+            <Link href="/methodology" onClick={onNavigate} className="underline underline-offset-2 hover:text-coral-deep">
               How we evaluate
             </Link>
           </p>
@@ -170,7 +170,7 @@ export function Header({ nav }: { nav: NavModel }) {
               >
                 {p.label}
                 <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} aria-hidden="true" />
-                <span className={`absolute inset-x-3.5 bottom-0 h-[3px] bg-honey transition-opacity ${open ? 'opacity-100' : 'opacity-0'}`} aria-hidden="true" />
+                <span className={`absolute inset-x-3.5 bottom-0 h-[3px] bg-peach transition-opacity ${open ? 'opacity-100' : 'opacity-0'}`} aria-hidden="true" />
               </button>
             );
           })}
@@ -246,7 +246,7 @@ export function Header({ nav }: { nav: NavModel }) {
             </form>
             {PANELS.map((p, i) => (
               <details key={p.key} className="group border-b border-rule" open={i === 0}>
-                <summary className="flex items-center justify-between py-4 font-serif text-xl font-semibold text-ink">
+                <summary className="flex items-center justify-between py-4 font-display text-xl font-bold text-ink">
                   {p.label}
                   <ChevronDown className="h-5 w-5 text-ink-muted transition-transform group-open:rotate-180" aria-hidden="true" />
                 </summary>

@@ -30,7 +30,7 @@ export default function ComparePage() {
           <Kicker tone="accent" className="mt-6">
             Comparison builder
           </Kicker>
-          <h1 className="mt-3 max-w-3xl font-serif text-[2.25rem] font-semibold leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl">
+          <h1 className="mt-3 max-w-3xl font-display text-[2.25rem] font-bold leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl">
             Line up the models you&apos;re choosing between.
           </h1>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-secondary">
@@ -58,7 +58,7 @@ export default function ComparePage() {
                   <Link href={`/compare/${comp.slug}`} className="group grid gap-2 py-5 md:grid-cols-[minmax(0,22rem)_1fr_auto] md:gap-8">
                     <span>
                       <span className="kicker block text-ink-muted">{comp.category}</span>
-                      <span className="mt-1 block font-serif text-xl font-semibold leading-snug text-ink">
+                      <span className="mt-1 block font-display text-xl font-bold leading-snug text-ink">
                         <span className="hover-title">
                           {name(comp.productAId)} vs {name(comp.productBId)}
                         </span>
@@ -66,7 +66,7 @@ export default function ComparePage() {
                     </span>
                     <span className="max-w-prose text-[15px] leading-relaxed text-ink-secondary line-clamp-3">{comp.verdict}</span>
                     <ArrowRight
-                      className="hidden h-4 w-4 self-center text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-terracotta-deep md:block"
+                      className="hidden h-4 w-4 self-center text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-coral-deep md:block"
                       aria-hidden="true"
                     />
                   </Link>
