@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand blotting a muddy footprint stain on a beige looped carpet with a white towel, next to a glass bowl of soapy water and a pair of muddy boots',
+  heroImage: '/images/g-how-to-clean-a-jute-rug.webp',
+  heroImageAlt: 'A hand blots a small spot on a jute rug with a white cloth, with a dull knife and vacuum resting nearby.',
   safetyWarnings: [
     'Do not steam clean a jute rug. Rug makers warn that the heat and moisture can shrink and damage natural fibers.',
     'Never soak, hose down, wet-shampoo or machine-wash jute. Use water only in small amounts and never let the rug become saturated.',

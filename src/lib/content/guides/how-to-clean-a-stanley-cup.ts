@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand wiping a crumb-covered stainless steel gas stovetop with a yellow and green sponge, beside black cast-iron burner grates and dark burner caps',
+  heroImage: '/images/g-how-to-clean-a-stanley-cup.webp',
+  heroImageAlt: 'A hand cleans an insulated tumbler with a bottle brush in a sink, with its lid, straw, small brush and baking soda laid on a towel.',
   safetyWarnings: [
     'Do not use bleach or chlorine on a Stanley cup. Stanley says they can degrade the sealing parts, which affects leak resistance and heat retention.',
     'Do not scrub with steel wool or abrasive scrubbers. Stanley says to use a dishrag, soft sponge or small brush with gentle dish soap instead.',

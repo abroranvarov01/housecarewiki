@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-shower-mold.webp',
-  heroImageAlt: 'Tiled shower floor with a round dark drain grate behind a wet glass panel, black mildew along the shower sill, a toothbrush and a clear spray bottle on the ledge',
+  heroImage: '/images/g-how-to-clean-a-shower-drain.webp',
+  heroImageAlt: 'A gloved hand feeds a plastic drain strip into an open shower drain, with the cover, screwdriver and a paper towel of hair beside it.',
   safetyWarnings: [
     'Wear rubber gloves and eye protection when pulling hair out with a plastic drain snake; Mr. Rooter notes splatter is likely.',
     'Avoid caustic chemical drain cleaners. Poison Control warns that non-enzymatic drain cleaners contain strong acids or alkalis that can cause serious burns, and that they can splash back when poured into a completely blocked drain.',

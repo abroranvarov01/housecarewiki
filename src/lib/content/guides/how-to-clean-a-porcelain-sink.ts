@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Round white vessel sink with a brushed steel faucet on a wooden vanity, next to a spray bottle, a folded grey cloth and a eucalyptus sprig, with a glass shower and towel ladder behind',
+  heroImage: '/images/g-how-to-clean-a-porcelain-sink.webp',
+  heroImageAlt: 'A hand wipes a white porcelain bathroom sink basin with a soft cloth and mild soapy water, with a sponge and dry towel nearby.',
   safetyWarnings: [
     'Do not use steel wool, wire brushes, abrasive sponge pads, abrasive cleansers or solvents on enameled cast iron. Kohler warns that improper care and cleaning voids its cast iron warranty.',
     'Never use strong abrasive cleaners on vitreous china; they scratch and dull the surface. A soft abrasive cleanser is acceptable only when needed.',

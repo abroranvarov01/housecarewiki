@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'Cordless stick vacuum cleaning a thick beige patterned rug in a sunlit living room, beside a linen sofa with a knit throw and a round wooden coffee table',
+  heroImage: '/images/g-how-to-clean-a-shag-rug.webp',
+  heroImageAlt: 'A hand rakes the long pile of a cream shag rug in a living room, with a vacuum resting nearby.',
   safetyWarnings: [
     'Never vacuum a shag rug with the beater bar or rotating brush engaged. It can snag, tangle and pull out the long strands.',
     'Do not power wash a shag rug; the pressure can damage both the fibers and the backing.',

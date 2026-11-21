@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-kitchenaid-stand-mixer.webp',
+  heroImageAlt: 'A hand wipes an unplugged stand mixer with a damp cloth, with its beater and dough hook soaking in a sudsy bowl nearby.',
   safetyWarnings: [
     'Turn the stand mixer off and unplug it before cleaning.',
     'Do not immerse the stand mixer body in water or other liquids; wipe it with a soft, damp cloth only.',

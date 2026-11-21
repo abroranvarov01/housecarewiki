@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry nook with a front-loading washer under a wooden counter, folded green and cream towels, a stained white shirt, a detergent bottle and wicker baskets',
+  heroImage: '/images/g-how-to-clean-a-mop-head.webp',
+  heroImageAlt: 'A hand rinses a grey microfiber mop head under a utility sink tap in a laundry room, with a bucket, detergent and spare mop head nearby.',
   safetyWarnings: [
     'Never use fabric softener on microfiber mop heads. O-Cedar, Libman and Bona all say to avoid it; O-Cedar says it reduces the effectiveness of microfiber.',
     'Do not use bleach on microfiber or sponge mop heads. Bona warns it damages microfiber, and Libman says it degrades synthetic sponge material.',

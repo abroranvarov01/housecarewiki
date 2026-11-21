@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  heroImage: '/images/g-how-to-clean-a-slow-cooker.webp',
+  heroImageAlt: 'A hand scrubs a stoneware slow cooker crock with a sponge in soapy water, with baking soda, vinegar, a spatula and oven mitts on the counter.',
   safetyWarnings: [
     'Always turn the slow cooker off, unplug it and let it cool before cleaning.',
     'Never immerse the heating base, cord or plug in water or any other liquid. Crockpot and Hamilton Beach both warn of electrical shock.',

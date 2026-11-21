@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand wiping a stainless steel stovetop panel with a yellow and green sponge beside gas burners and food crumbs, with a dish rack and a potted herb on the counter behind',
+  heroImage: '/images/g-how-to-clean-a-kitchen-sponge.webp',
+  heroImageAlt: 'A hand places a damp sponge in a bowl of water on a microwave turntable, with a dish rack and sink in the background.',
   safetyWarnings: [
     'Never microwave a dry sponge. Soak it completely in water first; University of Illinois Extension warns that the water is what creates steam and prevents a fire.',
     'Do not microwave any sponge or scrubber that contains metal, such as a steel-fiber or metallic scrub pad. Clean those in the dishwasher instead.',

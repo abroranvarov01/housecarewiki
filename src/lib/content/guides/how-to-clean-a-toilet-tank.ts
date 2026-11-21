@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/bathroom-hero.webp',
-  heroImageAlt: 'Bathroom vanity with a white undermount sink, brushed nickel faucet, clear spray bottle, blue towel, potted plant, toothbrush holder and a wood-framed mirror',
+  heroImage: '/images/g-how-to-clean-a-toilet-tank.webp',
+  heroImageAlt: 'A gloved hand scrubs the inside wall of an open toilet tank with a soft brush, with the lid set aside and a bucket and cloth on the floor.',
   safetyWarnings: [
     'Do not put bleach, descaling agents or harsh chemical cleaners inside the tank. TOTO says these damage the internal rubber seals, flappers, valves and mechanical components.',
     'Do not use drop-in tank tablets containing bleach or chlorine. Fluidmaster warns they can damage tank components, cause flooding and property damage, warp flappers and void its warranty, and Kohler does not recommend any cleaning product left submerged in the tank.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-stainless-steel-sink.webp',
+  heroImageAlt: 'A hand wipes a brushed stainless steel sink along the grain with a soft sponge, with a microfiber cloth and dish soap nearby.',
   safetyWarnings: [
     'Do not use steel wool, wire brushes or abrasive sponge pads. Kraus and Kohler both say to use non-scratch pads only, and Kohler warns abrasive pads let rust get into the grain of the sink.',
     'Keep bleach and chlorine cleaners out of routine sink cleaning. Kraus says to rinse the sink immediately if they touch it; the separate guide on whether you can use bleach on a stainless steel sink covers this in detail.',

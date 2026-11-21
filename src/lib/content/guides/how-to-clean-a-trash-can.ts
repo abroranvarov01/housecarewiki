@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-trash-can.webp',
+  heroImageAlt: 'A gloved hand scrubs an empty plastic trash can with a long-handled brush, with a hose, soapy bucket and drying cloth on a driveway.',
   safetyWarnings: [
     'Never mix cleaning or disinfecting products with each other. In particular, never combine bleach with ammonia or with acids such as vinegar.',
     'Ventilate when you use disinfectants indoors: open windows and doors or run a fan, or do the job outside.',

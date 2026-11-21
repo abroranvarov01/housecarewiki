@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-keurig.webp',
+  heroImageAlt: 'A hand cleans a pod holder with a straightened paper clip beside a single-serve coffee maker, with its reservoir and drip tray soaking nearby.',
   safetyWarnings: [
     'Always turn off and unplug the brewer before cleaning it, and never immerse the brewer in water or other liquids.',
     'There are sharp needles above the pod holder and in its bottom. Keep your fingers away from them and use a straightened paper clip, not your finger, to clear them.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Sunlit bathroom with a round chrome rain shower head behind a streaked glass shower door, a wooden towel ladder with white towels, and a white vessel sink with a spray bottle and grey cloth on a wooden vanity',
+  heroImage: '/images/g-how-to-clean-a-shower-head.webp',
+  heroImageAlt: 'A fingertip rubs the rubber nozzles of a running chrome shower head to loosen mineral buildup, with a bowl, toothbrush and cloth on a ledge.',
   safetyWarnings: [
     'Never use cleaners containing abrasives, ammonia, chlorine bleach or other harsh chemicals on a shower head; Moen, Delta and Kohler all warn they can damage the finish, and Delta notes this can void the warranty.',
     'Check your care guide before using vinegar. Delta and Moen allow a 50/50 white vinegar solution, but some Kohler care guides for faucets and fittings say never to use cleaners containing acids on the finish.',

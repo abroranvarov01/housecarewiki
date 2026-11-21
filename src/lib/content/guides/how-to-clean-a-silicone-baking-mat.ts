@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-silicone-baking-mat.webp',
+  heroImageAlt: 'A hand washes a teal silicone baking mat with a sponge and suds in a sink, with a halved lemon, baking soda and a towel nearby.',
   safetyWarnings: [
     'Do not cut on a silicone baking mat or use knives and sharp tools on it. Vollrath says never to use a cut or torn mat, and GIR says to discard one because the fiberglass inside can get into food.',
     'Do not clean the mat with scrapers, brushes, abrasive cleaners or scouring pads. Vollrath and GIR both say these can damage the surface.',

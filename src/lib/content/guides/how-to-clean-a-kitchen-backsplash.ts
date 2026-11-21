@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing a greasy stainless steel stovetop surround with a yellow and green sponge beside a gas burner, with white subway tile on the wall behind a potted herb and a dish rack',
+  heroImage: '/images/g-how-to-clean-a-kitchen-backsplash.webp',
+  heroImageAlt: 'A hand scrubs grout lines on a white tile kitchen backsplash with a soft brush, with a cloth and spray bottle on the counter.',
   safetyWarnings: [
     'Avoid acid cleaners, including vinegar and lemon, on glazed tile and grout; Marazzi warns acids can damage grout and the glazed tile surface, and the Natural Stone Institute warns they may dull or etch marble, limestone and travertine.',
     'Do not use scouring pads, steel wool, sandpaper or other abrasives on glass tile, and avoid scouring powders on natural stone, which may scratch.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-meat-thermometer.webp',
+  heroImageAlt: 'A hand washes only the probe stem of a digital meat thermometer with hot soapy water, keeping the display dry, with a towel nearby.',
   safetyWarnings: [
     'Clean the probe after every temperature check, not just at the end of cooking. ThermoWorks says to clean the probe immediately after every spot-check to avoid cross contamination, and North Dakota State University Extension says to wash, rinse and sanitize thermometers before, between and after uses.',
     'Do not submerge a digital thermometer or put it in the dishwasher unless its instructions allow it. ThermoWorks says not to submerge its ThermoPop or put it in the dishwasher, and Penn State Extension says thermometers should be hand-washed unless otherwise indicated and that digital thermometers can be easily broken if they are dropped or become wet.',

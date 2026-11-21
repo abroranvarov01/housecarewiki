@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing food splatter off a stainless steel gas cooktop with a yellow and green sponge, with a potted herb and a dish rack on the counter behind',
+  heroImage: '/images/g-how-to-clean-a-refrigerator-ice-maker.webp',
+  heroImageAlt: 'Hands remove the ice bin from an open freezer drawer, with a cloth in hand and a bowl of old ice on the counter.',
   safetyWarnings: [
     'Pause or turn off the ice maker before you remove the bin, and unplug the refrigerator first only if your owner\'s manual allows it for cleaning.',
     'Do not use bleach, abrasive or harsh cleaners, scouring cleansers, window sprays, flammable fluids or petroleum-based cleansers on the ice bin and other plastic parts; Whirlpool warns they can damage plastic parts, liners and gaskets.',

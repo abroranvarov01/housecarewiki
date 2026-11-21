@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  heroImage: '/images/g-how-to-clean-a-roaster-oven.webp',
+  heroImageAlt: 'A hand scrubs a removable roaster oven pan with a nylon pad in soapy water, with the lid and rack on a towel nearby.',
   safetyWarnings: [
     'Never immerse the roaster base, cord or plug in water or any other liquid. Hamilton Beach and Weston warn that doing so can result in death or electrical shock, and Nesco says never to immerse the roaster oven in water.',
     'Disconnect power and let the roaster cool before you clean it. Hamilton Beach, Proctor Silex and Nesco all say to unplug the roaster before cleaning and to let it cool before putting on or taking off parts, and Hamilton Beach says to turn the control to MIN before removing the plug.',

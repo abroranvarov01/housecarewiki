@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a plush beige patterned area rug in a sunlit living room, beside a cream sofa with a knitted throw and a round wooden coffee table',
+  heroImage: '/images/g-how-to-clean-a-robot-vacuum.webp',
+  heroImageAlt: 'A hand removes tangled hair from the brush of an upside-down round robot vacuum, with a dust bin and dry cloths on a wooden floor.',
   safetyWarnings: [
     'Switch the robot off and take it off the dock before you start, and unplug the dock before you clean its charging contacts. iRobot says to unplug the base and wait 60 seconds first.',
     'Do not wash a filter unless your manual says it is washable. iRobot warns that exposing its filters to water can damage the robot and void the warranty.',

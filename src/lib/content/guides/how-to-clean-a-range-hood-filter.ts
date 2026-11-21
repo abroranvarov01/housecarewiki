@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand cleaning grease and crumbs off a stainless steel gas cooktop with a yellow and green sponge beside black burner grates, with a dish rack and potted basil in the background',
+  heroImage: '/images/g-how-to-clean-a-range-hood-filter.webp',
+  heroImageAlt: 'A hand lifts a metal range hood filter from a sink of warm soapy water, with a second filter soaking and a soft brush on the counter.',
   safetyWarnings: [
     'Turn the hood and cooktop off and let them cool completely before removing or cleaning the filters.',
     'Never wash a charcoal (carbon) filter. Whirlpool states the charcoal filter is not washable, so replace it instead.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-clean-a-space-heater.webp',
+  heroImageAlt: 'A hand vacuums dust from the grille of an unplugged, cooled space heater on a bedroom floor, with a dry cloth beside it.',
   safetyWarnings: [
     'Always turn the heater off, unplug it and let it cool before cleaning. Every manual reviewed here requires it.',
     'Never immerse a space heater in water or let water run into the interior. Dr. Infrared warns this could create a fire or electric shock hazard.',

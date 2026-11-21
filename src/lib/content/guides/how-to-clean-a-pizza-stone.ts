@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-kitchen-org.webp',
-  heroImageAlt: 'Crumb-covered wooden cutting board with a torn bread roll on a grey marble countertop, next to a coffee mug, utensils and an open drawer with a cutlery organizer',
+  heroImage: '/images/g-how-to-clean-a-pizza-stone.webp',
+  heroImageAlt: 'A hand scrapes baked-on bits off a cool pizza stone with a plastic scraper, with a nylon brush and dry cloth nearby.',
   safetyWarnings: [
     'Never pour water on a hot pizza stone or plunge it into water. America\'s Test Kitchen says a hot stone can crack if it touches water, and Pampered Chef says never to immerse hot stoneware in water or pour liquid onto it.',
     'Avoid sudden temperature changes in general. Yoder Smokers says not to subject its stone to thermal shock, and Pampered Chef says not to move stoneware straight from the freezer to the oven.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-kitchen-org.webp',
-  heroImageAlt: 'Open kitchen drawer with a grey cutlery organizer full of forks, spoons and knives below a marble-look countertop scattered with bread crumbs, a cutting board with torn bread, a coffee mug and cooking utensils',
+  heroImage: '/images/g-how-to-clean-a-toaster.webp',
+  heroImageAlt: 'A hand empties the crumb tray of an unplugged toaster over a trash can, with a wooden tong and damp cloth on the counter.',
   safetyWarnings: [
     'Always unplug the toaster and let it cool before cleaning it or trying to remove food. Never try to dislodge food while it is plugged in.',
     'Never put a fork, knife or other metal utensil into the slots. Hamilton Beach warns utensils can damage the heating element and create a risk of fire or electric shock.',

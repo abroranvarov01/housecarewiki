@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/ba-sofa-coffee.webp',
-  heroImageAlt: 'Hand holding a folded white cloth beside a small brown liquid stain on beige linen-weave sofa fabric',
+  heroImage: '/images/g-how-to-clean-a-leather-couch.webp',
+  heroImageAlt: 'A hand wipes a tan leather sofa arm with a damp white cloth, with a soft brush vacuum attachment and distilled water on the seat.',
   safetyWarnings: [
     'Do not use household cleaners, abrasives, harsh chemicals, saddle soap or oil-based or detergent leather cleaners. Ashley lists all of these as products to avoid on its leather.',
     'Test any cleaning or conditioning product in a hidden area before using it on the whole couch. Ashley and Klaussner both say to test first.',

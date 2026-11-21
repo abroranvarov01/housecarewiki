@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-kitchen-org.webp',
-  heroImageAlt: 'Open kitchen drawer with a grey cutlery tray of forks, spoons and knives beside a wooden spatula, tongs, a whisk and a peeler on a marble-look countertop',
+  heroImage: '/images/g-how-to-clean-a-nonstick-pan.webp',
+  heroImageAlt: 'A hand washes a cooled nonstick frying pan with a soft sponge and soapy water in a kitchen sink, with a dish towel and wooden spoon nearby.',
   safetyWarnings: [
     'Never put cold water into a hot nonstick pan or set a hot pan on a cold surface. Tefal, Circulon and GreenPan all warn that the sudden temperature change can warp the pan, and GreenPan notes it can shatter glass lids.',
     'Do not use steel wool, iron sponges, scouring pads or scouring powders on the nonstick interior. They damage the coating.',
