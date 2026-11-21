@@ -110,6 +110,19 @@ export interface ArticleFAQ {
   answer: string;
 }
 
+/** A headed block of prose. Links are never written into the text: products and guides are referenced by id/slug
+ *  and rendered as cards and links, so they stay valid when titles change. */
+export interface ArticleSection {
+  id: string;
+  heading: string;
+  paragraphs: string[];
+  checklist?: string[];
+  /** Products discussed in this section, shown with the standard product row and Amazon button. */
+  productIds?: string[];
+  /** Guides (or buying guides) the advice in this section comes from. */
+  guideSlugs?: string[];
+}
+
 export interface Article {
   id: string;
   slug: string;
@@ -150,6 +163,16 @@ export interface Article {
     heading: string;
     body: string;
   }[];
+  /** Optional plain-text table shown after the short answer. Cells take no markup or links. */
+  summaryTable?: {
+    caption: string;
+    columns: string[];
+    rows: string[][];
+  };
+  /** Optional topic sections, for guides that are not a single step-by-step method (e.g. a gift guide). */
+  sections?: ArticleSection[];
+  /** Guides to link in this page's related reading, whatever room they belong to. */
+  relatedGuideSlugs?: string[];
   faqs: ArticleFAQ[];
   sources: SourceCitation[];
   seo: {

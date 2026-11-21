@@ -95,6 +95,33 @@ for (const a of data.ARTICLES) {
   const sentences = (a.quickAnswer || '').split(/[.!?](\s|$)/).filter((s) => s && s.trim()).length;
   if (sentences > 5) warn(where, `quickAnswer has ~${sentences} sentences (2–5)`);
 }
+// Optional structured blocks (summary table, topic sections, cross-room related guides).
+const allArticleSlugs = new Set(data.ARTICLES.map((a) => a.slug));
+for (const a of data.ARTICLES) {
+  const where = `article ${a.slug}`;
+  if (a.summaryTable) {
+    const { columns, rows } = a.summaryTable;
+    for (const row of rows) {
+      if (row.length !== columns.length) err(where, `summaryTable row has ${row.length} cells, expected ${columns.length}`);
+      for (const cell of row) checkText(where, 'summaryTable cell', cell);
+    }
+  }
+  const sectionIds = new Set();
+  for (const sec of a.sections || []) {
+    if (!sec.id || !sec.heading || !sec.paragraphs || sec.paragraphs.length === 0) err(where, `section "${sec.id}" needs id, heading and paragraphs`);
+    if (sectionIds.has(sec.id)) err(where, `duplicate section id "${sec.id}"`);
+    sectionIds.add(sec.id);
+    for (const p of sec.paragraphs || []) checkText(where, `section ${sec.id}`, p);
+    for (const c of sec.checklist || []) checkText(where, `section ${sec.id} checklist`, c);
+    for (const id of sec.productIds || []) if (!productIds.has(id)) err(where, `section ${sec.id}: unknown product "${id}"`);
+    for (const slug of sec.guideSlugs || []) if (!allArticleSlugs.has(slug)) err(where, `section ${sec.id}: unknown guide "${slug}"`);
+  }
+  for (const slug of a.relatedGuideSlugs || []) {
+    if (!allArticleSlugs.has(slug)) err(where, `unknown related guide "${slug}"`);
+    if (slug === a.slug) err(where, 'relatedGuideSlugs links to itself');
+  }
+}
+
 checkUnique(data.ARTICLES, (a) => a.slug, 'duplicate slug');
 checkUnique(data.ARTICLES, (a) => a.title, 'duplicate H1/title');
 checkUnique(data.ARTICLES, (a) => a.seo && a.seo.title, 'duplicate seo.title');

@@ -11,7 +11,7 @@ import {
 } from './types';
 import { SITE, amazonProductUrl } from './site';
 // The validator loads TS files by exact path, so the folder index is imported explicitly.
-import { STAIN_GUIDES, SURFACE_CLEANING_GUIDES, ODOR_GUIDES, SAFETY_GUIDES, BATCH5_GUIDES, BATCH6_GUIDES, BATCH7_GUIDES, BATCH8_GUIDES, BATCH9_GUIDES, BATCH10_GUIDES, BATCH11_GUIDES, BATCH12_GUIDES, BATCH13_GUIDES, BATCH14_GUIDES, BATCH15_GUIDES, BATCH16_GUIDES, BATCH17_GUIDES, BATCH18_GUIDES, BATCH19_GUIDES, BATCH20_GUIDES, BATCH21_GUIDES, BATCH22_GUIDES } from './content/guides/index';
+import { STAIN_GUIDES, SURFACE_CLEANING_GUIDES, ODOR_GUIDES, SAFETY_GUIDES, BATCH5_GUIDES, BATCH6_GUIDES, BATCH7_GUIDES, BATCH8_GUIDES, BATCH9_GUIDES, BATCH10_GUIDES, BATCH11_GUIDES, BATCH12_GUIDES, BATCH13_GUIDES, BATCH14_GUIDES, BATCH15_GUIDES, BATCH16_GUIDES, BATCH17_GUIDES, BATCH18_GUIDES, BATCH19_GUIDES, BATCH20_GUIDES, BATCH21_GUIDES, BATCH22_GUIDES, GIFT_GUIDES } from './content/guides/index';
 
 export const AUTHORS: Author[] = [
   {
@@ -1495,6 +1495,7 @@ export const ARTICLES: Article[] = [
       'prod-bissell-little-green',
       'prod-hoover-cleanslate',
     ],
+    relatedGuideSlugs: ['practical-cleaning-gifts-for-new-homeowners'],
     faqs: [
       {
         question: 'What removes pet hair from a couch fastest?',
@@ -1549,6 +1550,7 @@ export const ARTICLES: Article[] = [
   ...BATCH20_GUIDES,
   ...BATCH21_GUIDES,
   ...BATCH22_GUIDES,
+  ...GIFT_GUIDES,
 ];
 
 export const SURFACE_GUIDES: SurfaceGuide[] = [

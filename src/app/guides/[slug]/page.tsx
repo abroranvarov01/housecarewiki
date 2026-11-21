@@ -68,11 +68,15 @@ const pad = (n: number) => String(n).padStart(2, '0');
 /** Step index shared by the sticky desktop rail and the collapsible mobile version. */
 function StepIndex({
   steps,
+  sections = [],
+  hasTable = false,
   hasSupplies,
   hasFixes,
   hasFaq,
 }: {
   steps: { stepNumber: number; title: string }[];
+  sections?: { id: string; heading: string }[];
+  hasTable?: boolean;
   hasSupplies: boolean;
   hasFixes: boolean;
   hasFaq: boolean;
@@ -81,6 +85,22 @@ function StepIndex({
     'group flex min-h-[44px] items-baseline gap-3 border-b border-rule py-2.5 text-[15px] leading-snug text-ink hover:text-coral-deep';
   return (
     <ol className="border-t border-rule">
+      {hasTable && (
+        <li>
+          <a href="#at-a-glance" className={linkClass}>
+            <span className="kicker w-6 shrink-0 text-ink-muted">—</span>
+            <span className="hover-title">At a glance</span>
+          </a>
+        </li>
+      )}
+      {sections.map((sec, i) => (
+        <li key={sec.id}>
+          <a href={`#${sec.id}`} className={linkClass}>
+            <span className="kicker w-6 shrink-0 text-coral-deep">{pad(i + 1)}</span>
+            <span className="hover-title">{sec.heading}</span>
+          </a>
+        </li>
+      ))}
       {hasSupplies && (
         <li>
           <a href="#supplies" className={linkClass}>
@@ -163,7 +183,72 @@ export default function StepByStepGuidePage({
   // Head-to-head pages that list this guide as one of their use cases link back from here.
   const comparisonsHere = store.comparisons.filter((c) => c.relatedGuideSlugs?.includes(article.slug));
   const productName = (id: string) => store.products.find((p) => p.id === id)?.shortName || '';
-  const hasIndex = steps.length > 0;
+  const publishedArticle = (slug: string) =>
+    store.articles.find((a) => a.slug === slug && a.status === 'Published' && a.slug !== article.slug);
+  const sections = (article.sections || []).map((sec) => ({
+    ...sec,
+    products: (sec.productIds || [])
+      .map((id) => store.products.find((p) => p.id === id))
+      .filter((p): p is NonNullable<typeof p> => Boolean(p)),
+    guides: (sec.guideSlugs || []).map(publishedArticle).filter((g): g is NonNullable<typeof g> => Boolean(g)),
+  }));
+  // A product already shown inside a section is not repeated under "Tools that help".
+  const shownInSections = new Set(sections.flatMap((s) => s.products.map((p) => p.id)));
+  const toolProducts = recommendedProducts.filter((p) => !shownInSections.has(p.id));
+  const firstProductSection = sections.find((s) => s.products.length > 0)?.id;
+  const seeAlso = (article.relatedGuideSlugs || [])
+    .map(publishedArticle)
+    .filter((g): g is NonNullable<typeof g> => Boolean(g));
+  const relatedRest = related.filter((g) => !seeAlso.some((s) => s.slug === g.slug));
+  const table = article.summaryTable;
+  const hasIndex = steps.length > 0 || sections.length > 0;
+
+  const productRow = (prod: (typeof recommendedProducts)[number], placement: string) => (
+    <li
+      key={prod.id}
+      className="grid grid-cols-[4.5rem_1fr] items-center gap-x-4 gap-y-3 border-b border-rule py-4 sm:grid-cols-[4.5rem_1fr_auto]"
+    >
+      <Link href={`/products/${prod.slug}`} tabIndex={-1} aria-hidden="true">
+        <Figure src={prod.image} alt="" ratio="1/1" />
+      </Link>
+      <div className="min-w-0">
+        <Link href={`/products/${prod.slug}`} className="group flex min-h-[44px] items-center">
+          <span className="font-display text-lg font-bold leading-snug text-ink">
+            <span className="hover-title">{prod.shortName}</span>
+          </span>
+        </Link>
+        <p className="mt-0.5 text-sm leading-snug text-ink-muted">Best for {prod.bestFor}</p>
+        <div className="mt-1.5">
+          <EditorScore score={prod.scores.overall} size="xs" />
+        </div>
+      </div>
+      <AffiliateButton
+        productId={prod.id}
+        productName={prod.name}
+        asin={prod.asin}
+        amazonUrl={prod.amazonUrl}
+        contentSlug={article.slug}
+        placement={placement}
+        variant="compact"
+        label="Check price on Amazon"
+        className="col-span-2 min-h-[44px] sm:col-span-1"
+      />
+    </li>
+  );
+
+  const guideLinkRow = (g: (typeof store.articles)[number]) => (
+    <li key={g.id}>
+      <Link href={articleHref(g)} className="group grid grid-cols-[4.5rem_1fr] gap-4 border-b border-rule py-4">
+        <Figure src={g.heroImage} alt="" ratio="1/1" />
+        <span className="min-w-0">
+          <span className="kicker text-ink-muted">{articleMeta(g)}</span>
+          <span className="mt-1 block font-display text-lg font-bold leading-snug text-ink">
+            <span className="hover-title">{g.title}</span>
+          </span>
+        </span>
+      </Link>
+    </li>
+  );
 
   return (
     <article className="pb-16">
@@ -245,12 +330,14 @@ export default function StepByStepGuidePage({
         {hasIndex && (
           <details className="group mt-8 border-y border-rule-strong lg:hidden">
             <summary className="flex min-h-[48px] items-center justify-between gap-4 py-3">
-              <span className="kicker text-ink">Jump to a step</span>
+              <span className="kicker text-ink">{steps.length > 0 ? 'Jump to a step' : 'Jump to a section'}</span>
               <ChevronDown className="details-icon h-5 w-5 text-ink-muted transition-transform duration-200" aria-hidden="true" />
             </summary>
-            <nav aria-label="Guide steps" className="pb-3">
+            <nav aria-label={steps.length > 0 ? 'Guide steps' : 'Guide sections'} className="pb-3">
               <StepIndex
                 steps={steps}
+                sections={sections}
+                hasTable={Boolean(table)}
                 hasSupplies={supplies.length > 0}
                 hasFixes={fixes.length > 0}
                 hasFaq={article.faqs.length > 0}
@@ -269,6 +356,8 @@ export default function StepByStepGuidePage({
                 </p>
                 <StepIndex
                   steps={steps}
+                  sections={sections}
+                  hasTable={Boolean(table)}
                   hasSupplies={supplies.length > 0}
                   hasFixes={fixes.length > 0}
                   hasFaq={article.faqs.length > 0}
@@ -279,6 +368,108 @@ export default function StepByStepGuidePage({
 
           <div className={`min-w-0 ${hasIndex ? 'lg:col-span-9' : 'lg:col-span-12'}`}>
             <div className="max-w-3xl space-y-14">
+              {/* Optional summary table */}
+              {table && (
+                <section aria-labelledby="glance-heading" id="at-a-glance" className="scroll-mt-24">
+                  <SectionHead id="glance-heading" title="At a glance" />
+                  <div className="table-scroll mt-5 border border-rule">
+                    <table className="w-full min-w-[36rem] border-collapse text-left text-[14px]">
+                      <caption className="sr-only">{table.caption}</caption>
+                      <thead>
+                        <tr className="border-b border-rule-strong bg-paper-warm">
+                          {table.columns.map((col, i) => (
+                            <th
+                              key={col}
+                              scope="col"
+                              className={`kicker px-4 py-3 text-ink ${i === 0 ? 'sticky left-0 z-10 bg-paper-warm' : ''}`}
+                            >
+                              {col}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-rule">
+                        {table.rows.map((row) => (
+                          <tr key={row.join('|')}>
+                            {row.map((cell, i) =>
+                              i === 0 ? (
+                                <th
+                                  key={i}
+                                  scope="row"
+                                  className="sticky left-0 z-10 min-w-[8rem] border-r border-rule bg-paper-card px-4 py-3 align-top font-semibold text-ink"
+                                >
+                                  {cell}
+                                </th>
+                              ) : (
+                                <td key={i} className="px-4 py-3 align-top leading-relaxed text-ink-secondary">
+                                  {cell}
+                                </td>
+                              ),
+                            )}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              )}
+
+              {/* Optional topic sections: prose, a checklist, the products discussed and the guides behind the advice */}
+              {sections.map((sec) => (
+                <section key={sec.id} aria-labelledby={`${sec.id}-heading`} id={sec.id} className="scroll-mt-24">
+                  <SectionHead id={`${sec.id}-heading`} title={sec.heading} />
+                  <div className="mt-4 max-w-prose space-y-4 text-base leading-relaxed text-ink-secondary sm:text-[17px]">
+                    {sec.paragraphs.map((para) => (
+                      <p key={para}>{para}</p>
+                    ))}
+                  </div>
+                  {sec.checklist && sec.checklist.length > 0 && (
+                    <ul className="mt-5 border-t border-rule">
+                      {sec.checklist.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-3 border-b border-rule py-3 text-base leading-snug text-ink sm:text-[17px]"
+                        >
+                          <span className="mt-0.5 h-[1.125rem] w-[1.125rem] shrink-0 border-2 border-ink" aria-hidden="true" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {sec.products.length > 0 && (
+                    <>
+                      {sec.id === firstProductSection && <AffiliateDisclosureNote className="mt-5" />}
+                      <ul className="mt-4 border-t border-rule">
+                        {sec.products.map((prod) => productRow(prod, `guide_section_${sec.id}`))}
+                      </ul>
+                    </>
+                  )}
+                  {sec.guides.length > 0 && (
+                    <div className="mt-6">
+                      <Kicker as="p" tone="ink">
+                        From our guides
+                      </Kicker>
+                      <ul className="mt-1">
+                        {sec.guides.map((g) => (
+                          <li key={g.id}>
+                            <Link
+                              href={articleHref(g)}
+                              className="group inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-coral-deep"
+                            >
+                              <span className="hover-title">{g.title}</span>
+                              <ArrowRight
+                                className="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5"
+                                aria-hidden="true"
+                              />
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </section>
+              ))}
+
               {/* Supplies checklist */}
               {supplies.length > 0 && (
                 <section aria-labelledby="supplies-heading" id="supplies" className="scroll-mt-24">
@@ -366,7 +557,7 @@ export default function StepByStepGuidePage({
               )}
 
               {/* Tools, only after the method */}
-              {recommendedProducts.length > 0 && (
+              {toolProducts.length > 0 && (
                 <section aria-labelledby="tools-heading">
                   <SectionHead
                     id="tools-heading"
@@ -375,38 +566,7 @@ export default function StepByStepGuidePage({
                   />
                   <AffiliateDisclosureNote className="mt-3" />
                   <ul className="mt-4 border-t border-rule">
-                    {recommendedProducts.map((prod) => (
-                      <li
-                        key={prod.id}
-                        className="grid grid-cols-[4.5rem_1fr] items-center gap-x-4 gap-y-3 border-b border-rule py-4 sm:grid-cols-[4.5rem_1fr_auto]"
-                      >
-                        <Link href={`/products/${prod.slug}`} tabIndex={-1} aria-hidden="true">
-                          <Figure src={prod.image} alt="" ratio="1/1" />
-                        </Link>
-                        <div className="min-w-0">
-                          <Link href={`/products/${prod.slug}`} className="group flex min-h-[44px] items-center">
-                            <span className="font-display text-lg font-bold leading-snug text-ink">
-                              <span className="hover-title">{prod.shortName}</span>
-                            </span>
-                          </Link>
-                          <p className="mt-0.5 text-sm leading-snug text-ink-muted">Best for {prod.bestFor}</p>
-                          <div className="mt-1.5">
-                            <EditorScore score={prod.scores.overall} size="xs" />
-                          </div>
-                        </div>
-                        <AffiliateButton
-                          productId={prod.id}
-                          productName={prod.name}
-                          asin={prod.asin}
-                          amazonUrl={prod.amazonUrl}
-                          contentSlug={article.slug}
-                          placement="guide_recommended_tool"
-                          variant="compact"
-                          label="Check price on Amazon"
-                          className="col-span-2 min-h-[44px] sm:col-span-1"
-                        />
-                      </li>
-                    ))}
+                    {toolProducts.map((prod) => productRow(prod, 'guide_recommended_tool'))}
                   </ul>
                 </section>
               )}
@@ -446,22 +606,16 @@ export default function StepByStepGuidePage({
                     ))}
                   </ul>
                 )}
-                {related.length > 0 ? (
-                  <ul className="mt-4 border-t border-rule">
-                    {related.map((g) => (
-                      <li key={g.id}>
-                        <Link href={articleHref(g)} className="group grid grid-cols-[4.5rem_1fr] gap-4 border-b border-rule py-4">
-                          <Figure src={g.heroImage} alt="" ratio="1/1" />
-                          <span className="min-w-0">
-                            <span className="kicker text-ink-muted">{articleMeta(g)}</span>
-                            <span className="mt-1 block font-display text-lg font-bold leading-snug text-ink">
-                              <span className="hover-title">{g.title}</span>
-                            </span>
-                          </span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                {seeAlso.length > 0 && (
+                  <div className="mt-4">
+                    <Kicker as="p" tone="ink" className="mb-2">
+                      See also
+                    </Kicker>
+                    <ul className="border-t border-rule">{seeAlso.map(guideLinkRow)}</ul>
+                  </div>
+                )}
+                {relatedRest.length > 0 ? (
+                  <ul className="mt-4 border-t border-rule">{relatedRest.map(guideLinkRow)}</ul>
                 ) : (
                   <Link
                     href={`/rooms/${article.roomSlug}`}

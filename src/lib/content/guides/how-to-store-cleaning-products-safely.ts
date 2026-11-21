@@ -82,6 +82,7 @@ const article: Article = {
     'If a container is leaking, cracked or bulging, close it as best you can, ventilate the area, keep children and pets away, and take it to household hazardous waste collection rather than the trash or the drain.',
   ],
   recommendedProductIds: [],
+  relatedGuideSlugs: ['practical-cleaning-gifts-for-new-homeowners'],
   faqs: [
     {
       question: 'Is it safe to keep cleaning products under the kitchen sink?',

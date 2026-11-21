@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/ba-sofa-coffee.webp',
-  heroImageAlt: 'Hand holding a folded white cloth beside a small brown liquid stain on beige linen-weave sofa fabric',
+  heroImage: '/images/g-how-to-clean-a-microfiber-couch.webp',
+  heroImageAlt: 'A hand blots a small spot on a grey microfiber sofa with a white cloth, with a spray bottle and vacuum attachment on the cushion.',
   safetyWarnings: [
     'Never use water or a water-based cleaner on S-coded fabric, and never use a solvent on W-coded fabric. Ashley and La-Z-Boy both say to use only the type of cleaner the code allows.',
     'X-coded fabric should not be cleaned with any water or solvent cleaner. Vacuum or brush it lightly, and call a professional for stains.',
@@ -78,6 +78,7 @@ const article: Article = {
     'If the fibers look flat or stiff after drying, brush them gently in different directions with a soft, nonmetallic brush.',
   ],
   recommendedProductIds: [],
+  relatedGuideSlugs: ['practical-cleaning-gifts-for-new-homeowners'],
   faqs: [
     {
       question: 'What do the cleaning codes on a couch mean?',
