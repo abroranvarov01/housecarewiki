@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-kitchen-org.webp',
-  heroImageAlt: 'Crumb-covered wooden cutting board with a torn bread roll on a grey marble countertop, next to a coffee mug, utensils and an open drawer with a cutlery organizer',
+  heroImage: '/images/g-how-to-clean-butcher-block-countertops.webp',
+  heroImageAlt: 'A hand wipes a butcher block countertop with a damp cloth, with a bench scraper, mineral oil bottle and dry towel beside it.',
   safetyWarnings: [
     'Do not wash butcher block with harsh detergents or chemical cleaners. John Boos warns they can cause permanent damage and discoloration to the wood.',
     'Never let water, brine, meat juices or blood stand on the counter, and never soak the wood. Liquids soak in, swell and soften the wood and can weaken glued joints.',

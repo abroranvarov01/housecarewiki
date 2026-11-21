@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-waffle-maker.webp',
+  heroImageAlt: 'A hand wipes batter from the plate of an open, cooled waffle maker with a soapy cloth, with a pastry brush and oil bottle nearby.',
   safetyWarnings: [
     'Unplug the waffle maker before cleaning. The Presto, Cuisinart and Proctor Silex manuals all say to unplug from the outlet before cleaning, and Breville says to set the power dial to off and pull the plug first.',
     'Let it cool before you touch the plates. Dash and Presto say to allow the appliance to cool completely before cleaning, and the Cuisinart WAF-300 manual says removable plates need at least 30 minutes to cool before handling.',

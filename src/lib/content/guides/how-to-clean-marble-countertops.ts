@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, a bowl of lemons, a wooden cutting board and a basil plant in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-marble-countertops.webp',
+  heroImageAlt: 'A hand blots a small spill on a white marble countertop with a paper towel, with a cloth, soapy water bowl and glass on a coaster nearby.',
   safetyWarnings: [
     'Do not use vinegar, lemon juice or any acidic cleaner on marble. The Natural Stone Institute says products containing lemon, vinegar or other acids may dull or etch calcareous stones like marble.',
     'Skip scouring powders and abrasive creams. They often contain abrasives that can scratch the stone.',

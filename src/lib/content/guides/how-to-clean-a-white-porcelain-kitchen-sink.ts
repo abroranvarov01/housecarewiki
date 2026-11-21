@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-white-porcelain-kitchen-sink.webp',
+  heroImageAlt: 'A hand wipes a white porcelain kitchen sink with a soft sponge, with a cloth and cream cleanser beside a bright window.',
   safetyWarnings: [
     'Do not use steel wool, wire brushes or abrasive sponge pads on an enameled cast iron sink. Kohler\'s kitchen sink care guide rules them out.',
     'Never let a cleaner sit or soak on the sink. Kohler says to rinse surfaces completely with water immediately after applying a cleaner, and to test any new cleaner on a hidden spot first.',

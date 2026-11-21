@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-an-air-fryer.webp',
+  heroImageAlt: 'A hand scrubs an air fryer basket with a sponge in a soapy sink, with the crisper plate soaking and the empty base on the counter.',
   safetyWarnings: [
     'Never immerse the main unit, power cord or plug in water or any other liquid, and do not rinse the unit under the tap. The cooking chamber contains electrical components.',
     'Always unplug the air fryer and let it cool before cleaning. Philips suggests allowing about 30 minutes; Instant says to wait until it reaches room temperature.',

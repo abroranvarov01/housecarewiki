@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand wiping a stainless steel stovetop panel with a yellow and green sponge beside gas burners and food crumbs, with a dish rack and a potted herb on the counter behind',
+  heroImage: '/images/g-how-to-clean-an-enameled-dutch-oven.webp',
+  heroImageAlt: 'A hand scrubs a red enameled Dutch oven with a nylon sponge in warm soapy water, with a plastic scraper, spatula and baking soda nearby.',
   safetyWarnings: [
     'Never plunge a hot Dutch oven into cold water or fill it with cold water. Le Creuset says to let it cool to room temperature first, and Staub says to wait at least 15 minutes; sudden temperature changes can damage the enamel.',
     'Never use metal cleaning pads, steel wool, scouring powders or harsh abrasive cleaners on the enamel. Le Creuset and Staub both forbid them.',

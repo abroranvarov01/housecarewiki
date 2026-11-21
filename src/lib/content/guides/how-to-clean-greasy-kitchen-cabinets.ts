@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-kitchen-org.webp',
-  heroImageAlt: 'Open white kitchen drawer with a brass cup pull and a grey cutlery organizer, below a marble-look countertop holding a wooden cutting board with bread, a coffee mug, utensils and a striped towel',
+  heroImage: '/images/g-how-to-clean-greasy-kitchen-cabinets.webp',
+  heroImageAlt: 'A hand wipes a greasy white kitchen cabinet door near the stove with a soapy cotton cloth, with a bowl of soapy water and dry cloth on the counter.',
   safetyWarnings: [
     'Do not use ammonia, bleach or products containing either. MasterBrand lists them among cleaners to avoid, and American Woodmark warns against cleaners containing bleach. KraftMaid only says ammonia cleaners should be diluted, so the safest choice on any brand is to skip ammonia entirely.',
     'Never use scouring pads, steel wool, scouring powders or other abrasive cleaners on cabinet doors; every cabinet maker cited here warns they damage the finish.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-clean-an-artificial-christmas-tree.webp',
+  heroImageAlt: 'A hand dusts an unlit artificial Christmas tree with a fiber duster, with a storage bag, colored tape and handheld vacuum on the rug.',
   safetyWarnings: [
     'Do not use a pre-lit tree with a damaged cord. The Puleo tree manual says never to operate the product if the power cord or plug is damaged, and King of Christmas says cords that are frayed, have cracked insulation or show exposed wire should be replaced, not used.',
     'Check the lights before you decorate. The U.S. Consumer Product Safety Commission says to check each set of lights, new or old, for broken or cracked sockets, frayed or bare wires, or loose connections, and to throw out damaged sets.',

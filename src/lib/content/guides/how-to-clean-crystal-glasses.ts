@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-crystal-glasses.webp',
+  heroImageAlt: 'A hand washes a crystal wine glass by the bowl in a sink lined with a rubber mat, with microfiber cloths and a second glass beside it.',
   safetyWarnings: [
     'Do not twist the bowl against the stem while washing or drying. Waterford says twisting the bowl in the opposite direction to the stem can cause damage, and Riedel says to support the bowl and the base separately so the stem does not twist and break.',
     'Avoid sudden temperature changes. Waterford says not to pour hot liquids into cold crystal or very cold liquids into warm crystal, and Riedel says to avoid very hot or boiling water when rinsing by hand.',

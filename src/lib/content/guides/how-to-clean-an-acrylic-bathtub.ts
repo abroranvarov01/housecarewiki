@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/bathroom-hero.webp',
-  heroImageAlt: 'Wet white undermount bathroom sink in a speckled stone-look vanity top with a brushed-nickel faucet, a clear spray bottle, a blue-grey cloth, a toothbrush holder and a potted plant in front of a wood-framed mirror',
+  heroImage: '/images/g-how-to-clean-an-acrylic-bathtub.webp',
+  heroImageAlt: 'A hand wipes a white acrylic bathtub with a soft cloth, with baking soda, vinegar and a dry towel on the tub edge.',
   safetyWarnings: [
     'Never use acetone or nail polish remover on acrylic. Bath Concepts warns they can dull the surface, cause chemical cracks and void the warranty. HYTEC also warns that paint removers and strippers contain solvents that can permanently damage the surface.',
     'Do not use abrasive cleansers, scouring pads, scrapers or metal brushes. MAAX warns against anything that could scratch or dull acrylic, and Bath Concepts says abrasives dull the gloss over time.',

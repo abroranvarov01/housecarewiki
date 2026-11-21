@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum with a clear brush head on a plush beige patterned rug in a sunlit living room, beside a cream sofa with a knitted throw and a round wooden coffee table holding a mug and a book',
+  heroImage: '/images/g-how-to-clean-a-vacuum-brush-roll.webp',
+  heroImageAlt: 'A hand cuts a clump of hair from a vacuum brush roll with small scissors, with a coin, screwdriver and trash bag beside it.',
   safetyWarnings: [
     'Cut the power before you touch the brush roll: unplug a corded vacuum, and disconnect a cordless one from its charger. Dyson also warns not to touch the trigger and to be aware of sharp objects while checking for blockages.',
     'Never use the vacuum while you are looking for or clearing a blockage. Dyson warns this could cause injury.',

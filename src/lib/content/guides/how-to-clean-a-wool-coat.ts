@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-clean-a-wool-coat.webp',
+  heroImageAlt: 'A hand brushes the lapel of a camel wool coat on a padded hanger with a soft garment brush, with a paper towel and water nearby.',
   safetyWarnings: [
     'Follow the care label. Pendleton and Woolmark both say to have a dry-clean-only garment dry cleaned.',
     'Do not machine wash a wool coat unless its label allows it. Filson says not to machine wash its wool, even in cold water, because it can shrink unevenly or dramatically.',

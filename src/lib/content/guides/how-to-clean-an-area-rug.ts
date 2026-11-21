@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned shag rug in a sunlit living room, beside a sofa with a fringed knit throw and a round wooden coffee table',
+  heroImage: '/images/g-how-to-clean-an-area-rug.webp',
+  heroImageAlt: 'A hand blots a small spot on an area rug with a white cloth, with a care label, vacuum, spoon and bowl of water nearby.',
   safetyWarnings: [
     'Do not run a spinning beater bar over fringe or over loop and braided rugs. Turn the brush off, remove it or set the vacuum to its highest height, and lift the rug edge to vacuum under the fringe instead.',
     'Pretest every cleaner, even a certified one, on a hidden spot or scrap before using it on the visible face of the rug.',

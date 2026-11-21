@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-clean-fireplace-glass.webp',
+  heroImageAlt: 'A hand wipes a cooled fireplace glass panel lying on a folded towel with a microfiber cloth, with glass cleaner, a second cloth and a manual nearby.',
   safetyWarnings: [
     'Never clean the glass while it is hot. Valor notes the glass is extremely hot during operation and stays hot for a period after the fireplace is turned off, and CPSC says gas fireplace glass fronts can reach 500°F or more.',
     'Do not operate a fireplace without its glass front or with cracked or broken glass, as Regency warns.',

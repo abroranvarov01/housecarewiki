@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand cleaning grease and crumbs off a stainless steel gas cooktop with a yellow and green sponge beside black burner grates, with a dish rack and potted basil in the background',
+  heroImage: '/images/g-how-to-clean-an-instant-pot.webp',
+  heroImageAlt: 'A hand lifts the stainless inner pot from an unplugged electric pressure cooker, with the lid, sealing ring, cloth and vinegar on the counter.',
   safetyWarnings: [
     'Always unplug the Instant Pot and let it cool to room temperature before cleaning.',
     'Never immerse the cooker base, power cord or plug in water, never rinse the base under a tap, and never put it in the dishwasher. Keep the heating element dry at all times.',

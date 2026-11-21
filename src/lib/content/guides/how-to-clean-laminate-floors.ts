@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-clean-laminate-floors.webp',
+  heroImageAlt: 'A hand mops a light-grey laminate floor with a wrung-out microfiber mop, with a hard-floor vacuum and cleaner bottle nearby.',
   safetyWarnings: [
     'Never flood laminate or wet mop it. Mohawk calls wet maintenance entirely forbidden, and Shaw warns that washing or wet mopping with liquids can cause swelling, warping, delamination and joint-line separation and void the warranty.',
     'Do not wax, polish, sand or lacquer laminate, and skip oil soaps and one-step clean-and-shine products. Mohawk and Mannington both list these as products never to use.',

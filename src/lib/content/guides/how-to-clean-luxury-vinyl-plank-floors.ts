@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-clean-luxury-vinyl-plank-floors.webp',
+  heroImageAlt: 'A hand mops a wood-look vinyl plank floor with a damp microfiber mop, with a broom, bucket, floor cleaner and vacuum nearby.',
   safetyWarnings: [
     'Do not use a steam mop on luxury vinyl unless your flooring manufacturer\'s guidelines specifically approve it; COREtec advises against steam mops on its LVP.',
     'Avoid vinegar, ammonia-based products, abrasive cleaners and harsh chemicals. Shaw and COREtec both warn against vinegar on their vinyl floors.',

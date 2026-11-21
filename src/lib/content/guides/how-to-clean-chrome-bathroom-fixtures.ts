@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-bathroom.webp',
-  heroImageAlt: 'Hand wiping the spout of a polished chrome single-lever faucet with a blue microfiber cloth, with water droplets on the faucet body and a marble-look vanity top',
+  heroImage: '/images/g-how-to-clean-chrome-bathroom-fixtures.webp',
+  heroImageAlt: 'A hand dries a chrome bathroom faucet with a soft cloth, with a second cloth, soapy bowl and soft toothbrush on the vanity.',
   safetyWarnings: [
     'Never use abrasive cleansers, scouring powders or scrub pads on chrome fixtures. Kohler and Pfister both warn against abrasive cleaners, and Delta names green heavy-duty scrub sponges as products to avoid.',
     'Do not use bleach-based cleaners, ammonia or strong acid products on faucet finishes. Kohler says never to use cleaners containing ammonia, bleach or acids, and Delta lists bleach-based cleaners and products containing hydrochloric, hydrofluoric or phosphoric acid among products not to use.',

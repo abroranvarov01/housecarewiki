@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-clean-an-air-purifier.webp',
+  heroImageAlt: 'A hand vacuums the pre-filter of an unplugged, open tower air purifier, with dry and damp cloths and cotton swabs on a stool.',
   safetyWarnings: [
     'Always turn the purifier off and unplug it before cleaning. Levoit, Coway, Blueair and Winix all say so, and Winix adds to wait until the unit has cooled down.',
     'Do not wash HEPA or activated carbon filters. Winix says not to wash and reuse them, Blueair says water damages HEPA fibers, and Levoit and Coway say main filters must be replaced, not cleaned.',

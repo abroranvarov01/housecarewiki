@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum with a clear brush head resting on a plush beige patterned rug in a sunlit living room, beside a cream sofa with a knitted throw and a round wooden coffee table',
+  heroImage: '/images/g-how-to-clean-a-vacuum-filter.webp',
+  heroImageAlt: 'A hand rinses a grey foam vacuum filter under a running tap, with a dry filter, soft brush, towel and manual on the counter.',
   safetyWarnings: [
     'Always switch off and unplug the vacuum, or remove a cordless model from its charger, before taking the filters out.',
     'Never put a filter back while it is still wet or damp. Bosch says it must be totally dry before it goes back in the machine.',

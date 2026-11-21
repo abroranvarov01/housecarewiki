@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand pressing a white terry towel onto a muddy footprint on a beige looped carpet, with a glass bowl of soapy water nearby and muddy boots in the background',
+  heroImage: '/images/g-how-to-clean-a-wool-rug.webp',
+  heroImageAlt: 'A hand blots a small spill on a patterned wool rug with a white cloth, with a bowl of water, spot cleaner and a spoon on the floor.',
   safetyWarnings: [
     'Never use chlorine bleach on wool; rug makers warn that bleach, harsh chemicals and alkaline household products can discolor or damage the fiber.',
     'Avoid cleaners with a high pH (STARK advises against anything above pH 8.0) and look for products certified for wool, such as those carrying the WoolSafe mark.',

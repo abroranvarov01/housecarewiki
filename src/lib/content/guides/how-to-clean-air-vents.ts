@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-clean-air-vents.webp',
+  heroImageAlt: 'A hand lifts a metal floor vent cover from a hardwood floor, with a vacuum brush attachment, soapy bucket, rag and screwdriver nearby.',
   safetyWarnings: [
     'Keep water out of the ductwork itself. The EPA says steam cleaning and other methods involving moisture should not be used on any kind of duct work, so wash only the removable covers and use a vacuum on the opening behind them.',
     'Take care on a ladder at ceiling vents. Reggio Register suggests putting plastic under a ceiling vent to catch falling dust and having someone nearby when you use a ladder.',

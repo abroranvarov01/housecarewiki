@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing a stainless steel stovetop surround with a yellow and green sponge beside a gas burner, next to a speckled beige stone countertop with a potted herb and a dish rack',
+  heroImage: '/images/g-how-to-clean-granite-countertops.webp',
+  heroImageAlt: 'A hand wipes a speckled granite countertop with a microfiber cloth, with a bowl of soapy water, stone cleaner and paper towels beside it.',
   safetyWarnings: [
     'Do not use vinegar, lemon juice or other acidic cleaners on granite. The Natural Stone Institute says acids can dull or etch many stones and does not recommend acidic cleaners even for granite and other siliceous stones.',
     'Keep rust removers and some toilet bowl cleaners away from the counter. Many contain hydrofluoric acid, which the Natural Stone Institute says attacks all stone, including granite.',

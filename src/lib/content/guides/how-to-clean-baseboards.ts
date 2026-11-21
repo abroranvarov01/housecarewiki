@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a plush beige patterned rug in a sunlit living room, with a cream sofa, a round wooden coffee table and white trim along the windows behind',
+  heroImage: '/images/g-how-to-clean-baseboards.webp',
+  heroImageAlt: 'A hand wipes a white baseboard with a damp microfiber cloth in a hallway, with two buckets, a vacuum brush attachment and a towel on the floor.',
   safetyWarnings: [
     'Never use glass cleaner or heavy-duty household spray cleaners on painted trim; Benjamin Moore warns against them on painted surfaces.',
     'Avoid harsh chemicals and abrasive scrubbing. Sherwin-Williams says both can scratch painted surfaces or dull the finish.',

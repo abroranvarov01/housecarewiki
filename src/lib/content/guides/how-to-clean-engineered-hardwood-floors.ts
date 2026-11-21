@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-clean-engineered-hardwood-floors.webp',
+  heroImageAlt: 'A hand pushes a flat microfiber mop with a barely damp pad across an engineered hardwood floor, with cleaner and felt furniture pads nearby.',
   safetyWarnings: [
     'Do not use steam mops or wet mops on engineered hardwood. Shaw lists both among things not to do, and Bruce says steam adds too much moisture to engineered floors.',
     'Do not use a mop and bucket. Anderson Tuftex recommends a flat microfiber pad with a neutral pH cleaner instead, and most engineered wood is water-resistant, not waterproof.',

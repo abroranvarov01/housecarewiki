@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a coffee spill off a pale marble-look kitchen countertop with a grey towel, beside a mug, a pastry, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-laminate-countertops.webp',
+  heroImageAlt: 'A hand wipes a cream laminate countertop with a damp cotton cloth, with a baking soda paste, nylon brush and dry cloth nearby.',
   safetyWarnings: [
     'Do not use abrasive pads, scouring powders, steel wool, sandpaper or Scotch-Brite pads. Formica warns they can permanently dull and scratch laminate and make it easier to stain.',
     'Keep cleaners containing acid, alkali or sodium hypochlorite off laminate: oven cleaners, drain cleaners, toilet bowl cleaners, rust removers, lime scale removers and some tub and tile cleaners. If one spills, wipe it up right away and rinse several times with water.',
