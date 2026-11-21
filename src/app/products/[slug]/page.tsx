@@ -211,7 +211,12 @@ export default function ProductProfilePage({
                   variant="coral"
                   label="Check price on Amazon"
                 />
-                <Link href={`/compare?p1=${product.id}`} className={buttonClasses('secondary')}>
+                <Link
+                  href={`/compare?p1=${product.id}`}
+                  rel="nofollow"
+                  prefetch={false}
+                  className={buttonClasses('secondary')}
+                >
                   <Scale className="h-4 w-4" aria-hidden="true" />
                   <span>Compare with another</span>
                 </Link>
