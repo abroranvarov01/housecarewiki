@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-get-candle-wax-off-wood.webp',
+  heroImageAlt: 'A hand lifts a hardened disc of candle wax from a walnut coffee table with a plastic spatula, with an ice bag, cloth and furniture wax nearby.',
   safetyWarnings: [
     'Do not use a metal knife or scraper. Homesick and COIT both use plastic tools, and COIT warns to take care not to scratch the wood.',
     'Keep the hair dryer moving and not too close. Homesick suggests the low setting held at least three inches from the wax.',

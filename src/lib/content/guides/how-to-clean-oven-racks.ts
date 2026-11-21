@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand wiping a stainless steel cooktop panel with a yellow and green sponge next to black cast-iron burner grates and scattered crumbs, with a dish rack behind',
+  heroImage: '/images/g-how-to-clean-oven-racks.webp',
+  heroImageAlt: 'A hand scrubs a metal oven rack with a soft brush in a bathtub of warm soapy water, with a second rack soaking and a scrub pad nearby.',
   safetyWarnings: [
     'Make sure the oven controls are off and the oven and racks are completely cool before you remove or clean the racks.',
     'Do not leave oven racks in during a self-clean cycle unless your owner\'s manual says they are designed for it. Samsung warns the heat can warp and discolor racks and damage the porcelain rack guides, and Whirlpool says to always remove racks before self-cleaning.',

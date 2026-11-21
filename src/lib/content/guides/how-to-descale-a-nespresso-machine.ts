@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-descale-a-nespresso-machine.webp',
+  heroImageAlt: 'A hand pours descaling solution into the water tank of a compact capsule espresso machine, with the drip tray and capsule container removed beside it.',
   safetyWarnings: [
     'Do not descale with vinegar. Nespresso\'s descaling guides say vinegar or store-bought descalers may damage the machine, and its UK site also lists citric acid and baking powder as home remedies it does not recommend.',
     'The descaling solution may irritate eyes and skin. Nespresso says to rinse eyes immediately with plenty of water for 15 minutes and seek medical advice if it gets in them.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Close-up of a white cotton shirt laid on a speckled countertop, its collar band discolored yellow-brown and being brushed with a small wooden-handled bristle brush, with a plant and mixed laundry in the background',
+  heroImage: '/images/g-how-to-clean-ugg-boots.webp',
+  heroImageAlt: 'A hand gently scrubs a chestnut sheepskin boot with a wet sponge at a sink, with a soft brush, paper and towel laid out on the counter.',
   safetyWarnings: [
     'Do not put sheepskin boots in the washing machine. UGG says hand wash only, and EMU Australia says it does not advise machine washing boots or slippers.',
     'Do not dry boots with heat or in direct sunlight. UGG says to let them dry naturally and slowly, and EMU warns that warm water or heat makes sheepskin shrink and change shape.',

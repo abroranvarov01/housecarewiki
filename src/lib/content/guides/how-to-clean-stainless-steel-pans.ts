@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand wiping a stainless steel gas stovetop with a yellow and green sponge, food crumbs and grease spots around black cast-iron burner grates',
+  heroImage: '/images/g-how-to-clean-stainless-steel-pans.webp',
+  heroImageAlt: 'A hand wipes a stainless steel skillet with a sponge in a soapy sink, with white vinegar, a nylon pad and a dry towel on the counter.',
   safetyWarnings: [
     'Never put a hot stainless pan under cold water. All-Clad warns the sudden temperature change can warp it.',
     'Do not use chlorine bleach, bleach-based cleaners or detergents with bleach or peroxide on stainless cookware. Made In explains that chlorine and chloride attack the protective layer and cause pitting.',

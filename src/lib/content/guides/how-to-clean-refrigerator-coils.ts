@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-refrigerator-coils.webp',
+  heroImageAlt: 'A hand brushes dusty condenser coils under a pulled-out refrigerator with a long coil brush, with a vacuum, screwdriver and safety glasses on the floor.',
   safetyWarnings: [
     'Unplug the refrigerator or switch off its circuit breaker before you remove the grille or touch the coils.',
     'Do not bend the condenser fins or tubing, and do not disturb the water lines that feed the ice maker or water dispenser.',

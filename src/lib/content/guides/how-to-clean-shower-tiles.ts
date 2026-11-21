@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-spin-scrubber.webp',
-  heroImageAlt: 'Hand holding a white electric spin scrubber with a round bristle brush against soapy white wall tiles inside a shower, with a glass door and chrome shower hose at the side',
+  heroImage: '/images/g-how-to-clean-shower-tiles.webp',
+  heroImageAlt: 'A gloved hand scrubs a white shower wall tile with a sponge, with a handheld sprayer, bucket, squeegee and cleaner bottle on the ledge.',
   safetyWarnings: [
     'Do not use cleaners that contain acids or ammonia on glazed ceramic or porcelain shower tile; Marazzi and American Olean warn that acids can damage the glaze and grout and ammonia can discolor grout.',
     'Never mix bleach with ammonia, vinegar or any acidic cleaner. Use one product at a time, rinse completely between products, and ventilate the bathroom by running the fan or opening a window.',

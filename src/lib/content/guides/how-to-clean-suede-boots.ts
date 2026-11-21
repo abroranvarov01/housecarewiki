@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-clean-suede-boots.webp',
+  heroImageAlt: 'A hand blots a salt mark on tan suede boots with a barely damp cloth, with a suede brush and eraser beside them on an entryway bench.',
   safetyWarnings: [
     'Do not dry suede boots by a fire or other artificial heat source. Blundstone says this causes the leather to harden, shrink and crack, and tells owners to dry boots at room temperature, away from direct sunlight and heaters.',
     'Do not soak the suede. Dr. Martens says to be careful not to get suede too wet when cleaning it, and Ariat says to avoid excess water, especially on oil stains.',

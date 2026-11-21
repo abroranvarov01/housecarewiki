@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Close-up of a white cotton shirt laid on a speckled countertop, its collar band discolored yellow-brown and being brushed with a small wooden-handled bristle brush, with a plant and mixed laundry in the background',
+  heroImage: '/images/g-how-to-get-blood-out-of-clothes.webp',
+  heroImageAlt: 'A hand rubs bar soap into a small spot on a white t-shirt under cold running water at a laundry sink, with a bowl and stain remover nearby.',
   safetyWarnings: [
     'Use cold water until the stain is completely gone. Hot water and dryer heat set blood in the fibers and can make the stain permanent.',
     'Hydrogen peroxide and chlorine bleach can lighten or discolor colored fabrics. Use them only on white or colorfast, bleach-safe fabric, and test a hidden spot first.',

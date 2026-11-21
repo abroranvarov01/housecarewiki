@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Folded white button-down shirt with a brown splash stain on the front, resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  heroImage: '/images/g-how-to-get-candle-wax-out-of-clothes.webp',
+  heroImageAlt: 'A hand presses a low-heat iron over paper towels covering wax on a blue shirt on an ironing board, with a dull knife and detergent nearby.',
   safetyWarnings: [
     'Use the iron\'s lowest setting, usually the synthetic setting, with no steam. Clorox warns that high heat can melt synthetics such as nylon, polyester and rayon; follow the care label\'s ironing symbol and do not iron fabrics it says not to iron.',
     'Use plain white paper towels or an uncoated brown paper bag with no printing or writing, as Tide and Clorox specify.',

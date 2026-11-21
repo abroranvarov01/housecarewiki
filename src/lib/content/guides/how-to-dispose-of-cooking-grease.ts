@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '4 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-dispose-of-cooking-grease.webp',
+  heroImageAlt: 'A hand pours cooled cooking grease from a skillet into an empty metal can on a kitchen counter, with a lidded jar and paper towel nearby.',
   safetyWarnings: [
     'Let hot oil cool before you pour it into a container. The Town of Smithfield, Virginia, says to wait until fryer oil has completely cooled, and Washington State Ecology says to use a heat-proof container such as a tin can.',
     'Do not pour grease down the sink, toilet or storm drain. The EPA says never to pour cooking oil or grease down the drain, and city utilities warn it can back sewage up into homes and streets.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-quartz-countertops.webp',
+  heroImageAlt: 'A hand wipes a grey quartz countertop with a soft damp cloth, with a soapy water bowl, sponge and trivet nearby.',
   safetyWarnings: [
     'Do not use bleach, oven or grill cleaners, dishwasher detergent, floor strippers, paint removers or furniture strippers on quartz. Caesarstone and Cambria both warn against strong alkaline, acidic or oxidizing chemicals.',
     'Skip abrasive cleaners and pads: Cambria lists Comet, Soft Scrub, S.O.S. pads and pumice products among the things to avoid, and Caesarstone says not to use an abrasive scourer.',

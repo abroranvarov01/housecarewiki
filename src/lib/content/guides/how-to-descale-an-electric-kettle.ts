@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-kitchen-org.webp',
-  heroImageAlt: 'Open kitchen drawer with a grey cutlery organizer and utensils below a marble-look countertop holding a used coffee mug, a cutting board with bread, a spatula, a whisk and a striped towel',
+  heroImage: '/images/g-how-to-descale-an-electric-kettle.webp',
+  heroImageAlt: 'A hand pours white vinegar into an unplugged open stainless electric kettle showing limescale inside, with a water jug and sponge on the counter.',
   safetyWarnings: [
     'Never immerse the kettle, power base, cord or plug in water or any other liquid. All three manufacturers warn of electric shock; clean the outside with a damp cloth only.',
     'Unplug the kettle and let it cool before cleaning it or removing the filter. Boiling water and steam scald.',

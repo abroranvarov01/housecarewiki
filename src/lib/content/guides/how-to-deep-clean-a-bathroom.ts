@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Sunlit bathroom with a white vessel sink on a wooden vanity, a white spray bottle and grey cloth beside it, a round wood-framed mirror, a ladder towel rack with white towels and a glass shower door with water streaks',
+  heroImage: '/images/g-how-to-deep-clean-a-bathroom.webp',
+  heroImageAlt: 'A gloved hand wipes a white bathroom sink while a caddy of spray bottle, cloths and brush sits on the cleared counter beside an open window.',
   safetyWarnings: [
     'Never mix bleach with ammonia, vinegar or other acids, rubbing alcohol, toilet bowl cleaner or any other cleaner or disinfectant. The combinations can release vapors that are very dangerous to breathe.',
     'Ventilate: open windows and doors or run a fan while you clean, and wear gloves, especially for a long session.',

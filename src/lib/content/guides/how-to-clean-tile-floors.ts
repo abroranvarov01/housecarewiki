@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-shower-mold.webp',
-  heroImageAlt: 'Beige tiled shower floor with a round drain seen through a wet glass panel, with dark mold along the frame, a toothbrush and a clear spray bottle on the tiled ledge',
+  heroImage: '/images/g-how-to-clean-tile-floors.webp',
+  heroImageAlt: 'A hand pushes a flat microfiber mop across beige ceramic kitchen tile, with a bucket of clean water and a folded towel nearby.',
   safetyWarnings: [
     'Do not use no-rinse cleaners on tile floors; Daltile does not recommend them because leftover residue can reduce slip resistance.',
     'Avoid oil-based and wax-based cleaners, including oil soaps. TCNA warns they leave a waxy or oily film in the grout.',

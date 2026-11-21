@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/bathroom-hero.webp',
-  heroImageAlt: 'Bathroom vanity with a wood-framed mirror above an undermount sink, a clear spray bottle, a blue-grey cloth, a toothbrush holder and a potted plant on a speckled countertop',
+  heroImage: '/images/g-how-to-clean-mirrors-without-streaks.webp',
+  heroImageAlt: 'A hand wipes a bathroom mirror with a barely damp microfiber cloth while holding a dry cloth ready, with a glass of water on the sink.',
   safetyWarnings: [
     'Never spray water or cleaner directly onto a mirror. Mirror manufacturers say liquid that reaches the edges can damage them, a problem known as black edge, and Bobrick notes it can void the warranty.',
     'Do not use cleaners that contain ammonia or vinegar, or any acid or alkali cleaner. The Glass Association of North America and mirror makers Bobrick and Electric Mirror warn these attack the mirror\'s surface, edges and backing. Check the label of any glass cleaner before using it on a mirror.',

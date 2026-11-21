@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a plush beige patterned rug in a sunlit living room, next to a round wooden coffee table on four legs and a cream sofa with a knitted throw',
+  heroImage: '/images/g-how-to-get-dents-out-of-carpet.webp',
+  heroImageAlt: 'Fingertips brush up the flattened pile in dents left by sofa legs on plush grey carpet, with a coin and a vacuum nearby.',
   safetyWarnings: [
     'Check your carpet\'s care and warranty guide before using steam or hot water extraction. Manufacturers such as Beaulieu Canada state that non-approved cleaning products or treatments void the warranty, and Mohawk recommends products and equipment carrying the Carpet and Rug Institute Seal of Approval.',
     'Test a vacuum\'s beater bar or brush roll on an inconspicuous spot first. Some thick loop-pile carpets fuzz under a rotating brush, and Mohawk recommends suction only for those.',

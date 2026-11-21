@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige looped carpet, with a glass bowl of soapy water beside it and a pair of muddy hiking boots on the floor in the background',
+  heroImage: '/images/g-how-to-get-blood-out-of-carpet.webp',
+  heroImageAlt: 'A gloved hand blots a small faint stain on beige bedroom carpet with a white cloth, with a spray bottle and glass of cold water beside it.',
   safetyWarnings: [
     'Treat blood as potentially infectious. Wear gloves, eye protection and long sleeves, and avoid touching the blood. Small drops are a home job; larger spills may need a technician certified in biohazard cleanup.',
     'Use only cold or cool water. Heat sets blood stains and makes them much harder to remove.',

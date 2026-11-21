@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-tarnished-silverware.webp',
+  heroImageAlt: 'A hand polishes a tarnished silver spoon in small circles with a soft cloth, beside other forks, a polish jar and a bowl of soapy water.',
   safetyWarnings: [
     'Polish as rarely as possible. The Canadian Conservation Institute and Winterthur Museum both say every polish or chemical tarnish removal takes some silver off along with the tarnish.',
     'Be especially gentle with silver plate. CCI warns that any tarnish removal method can be very damaging to plated silver, and Winterthur says over-polishing removes the plating.',

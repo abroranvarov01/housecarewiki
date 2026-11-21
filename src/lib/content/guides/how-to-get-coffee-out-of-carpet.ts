@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/hero-dog-coffee.webp',
-  heroImageAlt: 'Golden retriever lying on a cream textured carpet next to a tipped-over white mug and a puddle of spilled coffee, with a beige sofa, a fiddle-leaf fig and a sunny window behind',
+  heroImage: '/images/g-how-to-get-coffee-out-of-carpet.webp',
+  heroImageAlt: 'A hand blots a small coffee spill on grey living room carpet with a folded white cloth, beside a tipped mug, bowl of soapy water and spray bottle.',
   safetyWarnings: [
     'Hydrogen peroxide can lighten carpet dye. Test fresh 3% hydrogen peroxide on a hidden spot and let it dry before using it on the stain. The IICRC does not recommend it on wool or other natural fibers without extensive testing for color loss.',
     'Never mix cleaners. Do not combine vinegar or hydrogen peroxide with chlorine bleach, and do not use bleach on carpet. Ventilate the room while you work with any cleaning solution.',

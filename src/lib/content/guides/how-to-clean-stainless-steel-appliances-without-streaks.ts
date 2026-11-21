@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-stainless-steel-appliances-without-streaks.webp',
+  heroImageAlt: 'A hand wipes a stainless steel refrigerator door downward along the grain with a microfiber cloth, with a dry cloth and soapy water bowl on the counter.',
   safetyWarnings: [
     'Do not use cleaners containing chlorine bleach or ammonia on stainless steel appliances; manufacturers warn they can damage the finish.',
     'Never use steel wool, soap-filled scouring pads, abrasive powders, gritty cloths or paper towels. They scratch brushed stainless and can dull the clear coat on fingerprint-resistant finishes.',

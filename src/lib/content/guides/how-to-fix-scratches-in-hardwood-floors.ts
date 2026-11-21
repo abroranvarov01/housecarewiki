@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug over a honey-toned wood floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-fix-scratches-in-hardwood-floors.webp',
+  heroImageAlt: 'A hand colors a thin scratch on an oak hardwood floor with a touch-up marker, with a filler stick, cloth and putty knife beside it.',
   safetyWarnings: [
     'Touch-up kit markers and fillers can contain flammable alcohols and give off harmful vapor. Ventilate the room, keep them away from flames, avoid skin and eye contact, and store them out of reach of children and pets.',
     'Never sand laminate or vinyl flooring. Bruce\'s touch-up kit instructions limit sanding to real hardwood, so check what your floor is before you reach for sandpaper.',

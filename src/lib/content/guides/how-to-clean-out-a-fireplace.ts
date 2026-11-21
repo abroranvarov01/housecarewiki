@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-clean-out-a-fireplace.webp',
+  heroImageAlt: 'A gloved hand shovels cooled ashes from a brick fireplace into a lidded metal bucket, with a drop cloth, small brush and water on the hearth.',
   safetyWarnings: [
     'Never empty ashes into a trash can, paper bag, cardboard box or plastic bin. NFPA says to put them in a tightly covered metal container and douse them with water first.',
     'Keep the ash container outside, at least 10 feet from your home and any other buildings, as NFPA and the U.S. Fire Administration advise.',

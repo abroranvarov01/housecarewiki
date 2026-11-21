@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige looped carpet, with a glass bowl of soapy water beside it and a pair of muddy hiking boots on the floor in the background',
+  heroImage: '/images/g-how-to-get-candle-wax-out-of-carpet.webp',
+  heroImageAlt: 'A hand scrapes hardened wax from cream carpet with a blunt spoon, with an ice bag, paper towels and an iron on a tile resting nearby.',
   safetyWarnings: [
     'Keep the iron on a warm (not hot) setting and keep it moving on top of the paper towels. Never set a hot iron directly on carpet pile.',
     'Never pour solvent onto the carpet. Apply a small amount to a white cloth and blot; solvent that soaks into the backing can damage the latex that holds the carpet layers together.',

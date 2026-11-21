@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Black cast-iron burner grates on a stainless steel gas stovetop as a hand wipes crumbs and grease off the cooktop with a yellow and green sponge',
+  heroImage: '/images/g-how-to-clean-stove-grates.webp',
+  heroImageAlt: 'A hand scrubs a black cast iron stove grate with a plastic pad in a sink of warm soapy water, with a sponge and dish soap nearby.',
   safetyWarnings: [
     'Make sure all burners are off and the grates are completely cool before you lift them off or wash them.',
     'Do not put grates in the oven during a self-clean cycle unless your owner\'s manual specifically allows it; Whirlpool and Samsung both say not to.',
