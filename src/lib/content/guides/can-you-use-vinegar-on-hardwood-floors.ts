@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-can-you-use-vinegar-on-hardwood-floors.webp',
+  heroImageAlt: 'A hand pushes a dry dust mop along the grain of a hardwood floor, with a floor cleaner bottle and microfiber pad nearby.',
   safetyWarnings: [
     'Do not clean wood floor finishes with vinegar. NWFA guidance states that vinegar is acidic and will degrade the finish.',
     'Avoid bleach and ammonia-based cleaners, which NWFA says can strip the finish and cause permanent damage.',

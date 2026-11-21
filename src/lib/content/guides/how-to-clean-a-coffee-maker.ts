@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a mug of coffee, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-coffee-maker.webp',
+  heroImageAlt: 'A hand pours diluted vinegar from a measuring cup into the reservoir of a drip coffee maker, with the carafe and basket beside it.',
   safetyWarnings: [
     'Turn the coffee maker off and unplug it before cleaning, and let it cool. Cuisinart warns that the reservoir cover can be hot during and right after brewing.',
     'Never immerse the base, cord or plug in water or any other liquid. Wipe the base with a clean, damp cloth instead; Mr. Coffee says this even for its dishwashable model.',

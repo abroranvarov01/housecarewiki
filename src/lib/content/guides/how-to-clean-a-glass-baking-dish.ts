@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '4 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-glass-baking-dish.webp',
+  heroImageAlt: 'A hand gently scrubs a cooled glass baking dish with a nylon pad and soapy water at a sink, with a trivet nearby.',
   safetyWarnings: [
     'Avoid sudden temperature changes. Pyrex and Anchor Hocking both say this to reduce the risk of breakage.',
     'Do not pour water or other liquid into a hot glass dish, and do not set a hot dish on a wet or cold surface such as a wet towel, a cold countertop or the sink. Place it on a dry cloth, potholder or trivet, as Anchor Hocking advises.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand wiping a stainless steel gas hob with a yellow and green sponge next to a speckled beige stone-look countertop, with a dish rack and a basil plant in the background',
+  heroImage: '/images/g-how-to-clean-a-granite-composite-sink.webp',
+  heroImageAlt: 'A hand wipes a dark granite composite sink with a soft sponge and mild soap, with a microfiber cloth and soap bottle nearby.',
   safetyWarnings: [
     'Keep bleach and bleach-based cleaners out of the sink. Blanco and Kraus warn against bleach and chlorine cleaners on their composite sinks, and Moen says never to use straight or undiluted bleach.',
     'Do not use drain cleaners, oven cleaners, paint removers, lyes or other caustic or solvent products in the bowl. If one splashes in, flush the surface with plenty of water right away, as Moen advises.',

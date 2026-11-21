@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  heroImage: '/images/g-how-to-clean-a-burnt-pot.webp',
+  heroImageAlt: 'A hand stirs baking soda and water with a wooden spoon in a stainless steel pot with a scorched bottom on a stovetop.',
   safetyWarnings: [
     'Let a burnt pot cool before cleaning it, and never put a hot pot under cold water or fill it with cold water. All-Clad warns this can warp the pan or cause thermal shock.',
     'Do not use steel wool, steel scouring pads or oven cleaners on stainless, nonstick, hard-anodized or enameled cookware. All-Clad lists them among products that can damage the pan.',

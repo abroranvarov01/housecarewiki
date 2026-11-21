@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, with a wooden cutting board standing against the backsplash beside lemons, wooden spoons and a coffee mug',
+  heroImage: '/images/g-how-to-clean-a-cutting-board.webp',
+  heroImageAlt: 'A hand scrubs a wooden cutting board with a brush and hot soapy water at a sink, with a plastic board drying behind.',
   safetyWarnings: [
     'Use a separate board for raw meat, poultry and seafood, and another for produce, bread and ready-to-eat foods, so bacteria from raw meat cannot spread to food that will not be cooked.',
     'Use only unscented, regular liquid chlorine bleach for sanitizing, diluted as directed. Never mix bleach with ammonia, vinegar or other cleaners, and ventilate the kitchen while you work.',

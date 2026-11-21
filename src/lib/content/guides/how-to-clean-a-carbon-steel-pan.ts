@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing grease and crumbs off a stainless steel gas stovetop with a yellow and green sponge, with a dish rack of plates and a potted basil plant in the background',
+  heroImage: '/images/g-how-to-clean-a-carbon-steel-pan.webp',
+  heroImageAlt: 'A hand scrubs a carbon steel frying pan with a brush under hot water, with a pan scraper and oiled dry pan nearby.',
   safetyWarnings: [
     'Never put a carbon steel pan in the dishwasher. Lodge says carbon steel is hand wash only because a dishwasher will remove the seasoning and likely cause rust, and Made In, de Buyer, Mauviel and GreenPan all say the same.',
     'Do not soak carbon steel in water. Lodge says soaking will likely cause rust, and GreenPan says no long soaks.',

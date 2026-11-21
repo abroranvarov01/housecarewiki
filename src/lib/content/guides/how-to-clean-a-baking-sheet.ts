@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  heroImage: '/images/g-how-to-clean-a-baking-sheet.webp',
+  heroImageAlt: 'A hand scrubs a stained aluminum baking sheet with a nylon pad and soapy water at a sink, with a clean sheet drying nearby.',
   safetyWarnings: [
     'Let the pan cool before you clean it, as Made In advises, and handle hot pans with oven mitts.',
     'Do not put aluminum baking sheets in the dishwasher. Nordic Ware says dishwasher heat and detergent discolor them, and Made In says harsh detergents can damage and dull the metal.',

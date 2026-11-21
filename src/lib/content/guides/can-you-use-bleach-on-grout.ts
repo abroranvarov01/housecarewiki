@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-spin-scrubber.webp',
-  heroImageAlt: 'Hand holding a white electric spin scrubber with a round brush head, scrubbing foamy cleaner across light grey shower wall tiles next to a chrome shower hose',
+  heroImage: '/images/g-can-you-use-bleach-on-grout.webp',
+  heroImageAlt: 'A hand scrubs grout lines between white bathroom floor tiles with a small brush and tile cleaner, with a bucket and measuring cup nearby.',
   safetyWarnings: [
     'Never mix bleach with vinegar, ammonia or any other cleaner. Clorox warns the combination can create dangerous fumes, so rinse away any other product before you use bleach.',
     'Ventilate: open a window or door while you work, and wear gloves and clothes you do not mind getting splashed.',

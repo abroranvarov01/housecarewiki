@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing a greasy, crumb-covered stainless steel gas stovetop with a yellow and green sponge, next to black cast-iron burner grates',
+  heroImage: '/images/g-how-to-clean-a-glass-stovetop.webp',
+  heroImageAlt: 'A hand holds a razor scraper at a shallow angle on a cool glass cooktop, lifting a small spot, with cleaner cream and a pad nearby.',
   safetyWarnings: [
     'Make sure every control is off before you clean, and wear an oven mitt whenever you scrape a warm cooktop.',
     'Do not use steel wool, abrasive powder cleansers, chlorine bleach, rust remover or ammonia on ceramic glass; Whirlpool warns they can damage the cooktop.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Sunlit bathroom with a white vessel sink, a spray bottle and folded grey cloth on a wooden vanity, white towels on a ladder rack and a glass shower enclosure with water streaks',
+  heroImage: '/images/g-how-to-clean-a-fiberglass-shower.webp',
+  heroImageAlt: 'A hand wipes a fiberglass shower wall with a soft sponge and non-abrasive cleaner, with a cloth and baking soda paste on the ledge.',
   safetyWarnings: [
     'Do not use scouring pads, steel wool, wire brushes or harsh abrasive powders on a fiberglass shower. Aquatic warns harsh abrasives harm and dull the finish, and Swan says not to use abrasive cleaners or scouring pads on its Veritek fiberglass products.',
     'Never use paint remover or paint stripper. HYTEC warns they contain solvents that can permanently damage the surface. Also skip any cleaner whose label cautions against use on acrylic, polyester or plastics.',

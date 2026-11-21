@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Sunlit bathroom with a white vessel sink, a spray bottle and folded grey cloth on a wooden vanity, white towels on a ladder rack and a glass shower enclosure with water streaks',
+  heroImage: '/images/g-how-to-clean-a-jetted-tub.webp',
+  heroImageAlt: 'A hand adds a measured spoonful of cleaner powder to the warm water of a filled jetted tub, with a measuring cup and booklet beside it.',
   safetyWarnings: [
     'Never mix bleach with ammonia, vinegar or any acid-based cleaner. If your manual calls for bleach, add it only to the tub water with the detergent it names, and do not use any other cleaner in the same fill.',
     'Ventilate the bathroom while a bleach or chemical cleaning solution is circulating: open a window or run the exhaust fan.',

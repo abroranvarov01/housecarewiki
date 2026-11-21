@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand cleaning grease and crumbs off a stainless steel gas cooktop with a yellow and green sponge beside black burner grates, with a dish rack and potted basil in the background',
+  heroImage: '/images/g-how-to-clean-a-french-press.webp',
+  heroImageAlt: 'A hand scoops coffee grounds from a glass French press into a compost bin, with the plunger, filter and brush on a towel.',
   safetyWarnings: [
     'Do not use a glass carafe that is cracked or damaged. The U.S. Consumer Product Safety Commission says a damaged or cracked carafe can unexpectedly break during use, posing a risk of serious burns.',
     'Do not stir coffee in a glass carafe with a metal spoon or utensil. The CPSC says metal spoons can damage the glass, and the Bodum product guide says to stir gently with a plastic or wooden spoon.',

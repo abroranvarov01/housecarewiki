@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-blender.webp',
+  heroImageAlt: 'A hand holds a blender jar half full of soapy water on its base, with a dish brush and soap bottle on the kitchen counter.',
   safetyWarnings: [
     'Unplug the blender before you clean the motor base or cord, and never immerse the base or cord in water or any other liquid.',
     'Keep your hand out of the jar near the blade assembly. Use a dish brush with a long handle to scrub around the blades instead of your fingers or a sponge.',

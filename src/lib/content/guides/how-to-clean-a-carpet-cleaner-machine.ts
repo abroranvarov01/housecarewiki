@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige looped carpet, with a glass bowl of soapy water beside it and a pair of muddy hiking boots on the floor in the background',
+  heroImage: '/images/g-how-to-clean-a-carpet-cleaner-machine.webp',
+  heroImageAlt: 'A hand rinses the dirty-water tank of a carpet cleaner under clean running water, with the unplugged machine and brush on a towel.',
   safetyWarnings: [
     'Turn the machine off and unplug it before emptying tanks or doing any maintenance, and never handle the plug or machine with wet hands. Bissell\'s Little Green manual says to unplug from the outlet before maintenance and troubleshooting.',
     'Use only the cleaning formulas your manufacturer approves. Bissell warns that formulas containing lemon or pine oil, chemical spot cleaners and solvent-based soil removers can damage the machine and crack or pit its plastic parts.',

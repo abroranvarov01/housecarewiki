@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing grease and crumbs off a stainless steel gas stovetop with a yellow and green sponge, with a dish rack of plates and a potted basil plant in the background',
+  heroImage: '/images/g-how-to-clean-a-dishwasher.webp',
+  heroImageAlt: 'A hand brushes a removed dishwasher filter with a toothbrush under running water, with a cloth and soapy bowl on the open door.',
   safetyWarnings: [
     'Never run the dishwasher without the filters properly installed and locked in place; Whirlpool warns this can damage the appliance.',
     'Do not scrub filters with a wire brush, scouring pad or similar tool. Whirlpool says these can damage the filters; use a soft brush such as an old toothbrush.',

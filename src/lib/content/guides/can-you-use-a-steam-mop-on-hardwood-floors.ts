@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'Cordless stick vacuum with a clear brush head on a plush beige patterned area rug in a sunlit living room, beside a cream sofa with a knitted throw and a round wooden coffee table holding a mug and a book',
+  heroImage: '/images/g-can-you-use-a-steam-mop-on-hardwood-floors.webp',
+  heroImageAlt: 'A hand wipes hardwood floorboards with a slightly damp flat microfiber mop in a hallway, with a broom and floor cleaner nearby.',
   safetyWarnings: [
     'Do not use a steam mop or steam cleaner on hardwood. The National Wood Flooring Association, Bona, Shaw and Mannington all advise against it.',
     'Using a steam mop can void your floor warranty. Bruce says damage caused by a steam mop is not covered under its warranty; check your own floor\'s warranty before using any heat or moisture.',

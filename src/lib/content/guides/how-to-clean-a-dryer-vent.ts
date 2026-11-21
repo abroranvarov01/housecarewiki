@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-clean-a-dryer-vent.webp',
+  heroImageAlt: 'A hand feeds a flexible brush into a disconnected dryer duct behind a pulled-out dryer, with lint falling onto a cloth and a vacuum nearby.',
   safetyWarnings: [
     'Unplug the dryer before cleaning the vent, and on a gas dryer turn off the gas supply first. Samsung\'s instructions start with both steps.',
     'Never run a dryer without the lint filter in place, and replace a damaged filter.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand wiping a crumb-covered stainless steel gas stovetop with a yellow and green sponge, beside black cast-iron burner grates and dark burner caps',
+  heroImage: '/images/g-how-to-clean-a-gas-stovetop.webp',
+  heroImageAlt: 'A hand clears a burner port with a pin while grates and caps soak in soapy water, on a cool gas stovetop with a scrub pad.',
   safetyWarnings: [
     'Make sure every control is off and the cooktop, grates and caps are cool before you start. GE also advises disconnecting power to the range or cooktop before cleaning the burners.',
     'Do not use oven cleaner, bleach, rust remover, steel wool or abrasive cleaners on the cooktop or burners; Whirlpool and Samsung warn they can damage the finish and parts.',

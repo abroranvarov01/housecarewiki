@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-freezer.webp',
+  heroImageAlt: 'A hand wipes the inside wall of an unplugged, empty freezer with a damp cloth, with frozen food in a cooler beside it.',
   safetyWarnings: [
     'Unplug the freezer or disconnect its power before you defrost or clean it.',
     'Never chip at ice with an ice pick, knife or other sharp tool; Whirlpool warns these can damage the freezer. Use a plastic or wooden spatula on ice that has already softened.',

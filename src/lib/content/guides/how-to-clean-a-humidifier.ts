@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-clean-a-humidifier.webp',
+  heroImageAlt: 'A hand scrubs a humidifier water tank with a soft brush in vinegar water at a sink, with the base and a toothbrush on a towel.',
   safetyWarnings: [
     'Always unplug the humidifier before emptying, filling or cleaning it.',
     'Never immerse the motor base in water, and keep water away from the fan vent. Pour water out of the base on the side away from the mist outlet and fan.',

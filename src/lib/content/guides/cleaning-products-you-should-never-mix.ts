@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/bathroom-hero.webp',
-  heroImageAlt: 'Bathroom vanity with a white undermount sink on a speckled countertop, a clear spray bottle, a blue-grey towel, a toothbrush holder, a potted plant and a brushed-nickel faucet in front of a wood-framed mirror',
+  heroImage: '/images/g-cleaning-products-you-should-never-mix.webp',
+  heroImageAlt: 'Capped cleaner bottles stand in separate spaced groups on a utility shelf, with gloves, goggles and folded cloths beside them.',
   safetyWarnings: [
     'Never mix bleach with ammonia, acids or other cleaners. Bleach also reacts with hydrogen peroxide, some oven cleaners and some insecticides, according to the Washington State Department of Health.',
     'Ammonia is hidden in some glass and window cleaners and in urine, including pet urine, so take care when using bleach on toilets, diaper pails and litter boxes.',

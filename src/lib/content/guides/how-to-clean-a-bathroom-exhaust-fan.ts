@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Sunlit bathroom with a round wood-framed mirror, white vessel sink and spray bottle on a wooden vanity, towels on a ladder rack, and a glass shower with water streaks',
+  heroImage: '/images/g-how-to-clean-a-bathroom-exhaust-fan.webp',
+  heroImageAlt: 'A hand lowers a bathroom ceiling fan grille from a step stool while a brush-attachment vacuum sits beside the dusty housing.',
   safetyWarnings: [
     'Switch the power off at the service panel before cleaning. Broan-NuTone says to lock the panel or tag it with a warning so no one turns the fan back on while you work.',
     'Never immerse the motor, fan or any metal or electrical parts in water, and do not spray cleaner into the housing.',

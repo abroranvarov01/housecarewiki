@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-shower-mold.webp',
-  heroImageAlt: 'Black mold growing along the caulk line at the base of a glass shower panel on beige tile, with a toothbrush and a clear spray bottle on the ledge',
+  heroImage: '/images/g-does-bleach-kill-mold.webp',
+  heroImageAlt: 'A gloved hand scrubs small mold spots from tile grout with a brush and soapy water, with a respirator and bucket on the tub edge.',
   safetyWarnings: [
     'Never mix bleach with ammonia, vinegar or any other cleaner. The CDC warns mixing bleach with ammonia or other cleaners produces a poisonous gas, and the EPA warns toxic fumes could be produced.',
     'Ventilate: open windows and doors, and if you use bleach or another biocide, the EPA says to exhaust the air to the outdoors.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-clean-a-coffee-grinder.webp',
+  heroImageAlt: 'A hand brushes coffee grounds from the burrs of an open, unplugged grinder on a kitchen counter, with a cloth and beans nearby.',
   safetyWarnings: [
     'Unplug the grinder first. Breville says to unplug an electric grinder before any internal cleaning, and Baratza says to unplug the grinder before clearing a clog.',
     'Never put the grinder itself in water. Breville says never to submerge an electrical appliance.',

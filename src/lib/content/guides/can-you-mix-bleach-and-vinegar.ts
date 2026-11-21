@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Sunlit bathroom with a white vessel sink on a wooden vanity, a white spray bottle and a folded grey cloth, a round wood-framed mirror, a towel ladder with white towels and a glass shower door with water marks',
+  heroImage: '/images/g-can-you-mix-bleach-and-vinegar.webp',
+  heroImageAlt: 'A bleach bottle and a vinegar bottle stand separately on a bathroom shelf with rubber gloves between them, caps closed, beside a bright open window.',
   safetyWarnings: [
     'Never mix bleach with vinegar or any other acid. Washington State Department of Health lists vinegar, toilet bowl cleaners, some glass and window cleaners, drain cleaners, rust removers and automatic dishwasher detergents and rinses among the acidic products that release chlorine gas with bleach.',
     'Do not mix bleach with ammonia either. Ammonia is in some glass cleaners and in urine, so take care when using bleach in toilets, diaper pails and litter boxes; bleach and ammonia form chloramine gases.',
