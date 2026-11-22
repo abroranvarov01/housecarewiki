@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with folded towels and a white shirt on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of white liquid and trailing green plants',
+  heroImage: '/images/g-how-to-store-cleaning-products-safely.webp',
+  heroImageAlt: 'A hand installs a child-safety latch on an under-sink cabinet holding separated cleaning products in their original bottles.',
   safetyWarnings: [
     'Never move a cleaner into a food or beverage container such as a soda bottle or jar. The National Capital Poison Center and Indiana\'s environmental agency both warn against it, because children and adults can mistake it for something to drink.',
     'Never mix household chemicals. Mixing chlorine bleach with ammonia or vinegar can create toxic fumes. Ventilate the room whenever you use strong cleaners.',

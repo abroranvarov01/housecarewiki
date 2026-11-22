@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug over a honey-toned wood floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-remove-scuff-marks-from-floors.webp',
+  heroImageAlt: 'A hand buffs a dark heel scuff on a hardwood hallway floor with a soft white cloth, with a dust mop and cleaner beside it.',
   safetyWarnings: [
     'Isopropyl alcohol, lighter fluid and painter\'s naphtha are flammable. Use only a small amount on a cloth, ventilate the room, keep them away from flames and follow the container\'s precautions.',
     'Do not use abrasive cleaners, steel wool or scouring powder on luxury vinyl; Mannington warns they can scratch the floor. Its rigid vinyl care guide also says never to wax, polish or sand the floor.',

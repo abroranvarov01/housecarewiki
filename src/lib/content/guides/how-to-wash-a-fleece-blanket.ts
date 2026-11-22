@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-wash-a-fleece-blanket.webp',
+  heroImageAlt: 'A hand lifts a soft grey fleece blanket from a washer drum, with a drying rack and mild detergent bottle nearby.',
   safetyWarnings: [
     'Follow the care label over any general advice. Polartec, Tide and Stio all say to check the garment or blanket care instructions first, and Tide says an item labeled dry clean only should be dry-cleaned.',
     'Do not use fabric softener on fleece. Polartec says to avoid fabric softeners, Stio says to avoid bleach and fabric softener, and Jack Wolfskin says fabric softener coats the fibers and reduces breathability over time.',

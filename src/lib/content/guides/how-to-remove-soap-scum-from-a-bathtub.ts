@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/bathroom-hero.webp',
-  heroImageAlt: 'Wet white undermount sink in a speckled stone-look vanity top with a brushed-nickel faucet, a clear spray bottle, a blue-grey terry cloth and a toothbrush holder in front of a wood-framed mirror',
+  heroImage: '/images/g-how-to-remove-soap-scum-from-a-bathtub.webp',
+  heroImageAlt: 'A hand wipes faint soap film from a white acrylic bathtub with a soft sponge and dish soap suds, with a cloth over the edge.',
   safetyWarnings: [
     'Do not use scouring pads, steel wool or abrasive cleansers on a bathtub. American Standard names 3M scouring pads, Comet and Brillo as products not to use, and Kohler says never to use a brush or scouring pad on acrylic.',
     'On acrylic, avoid cleaners containing abrasives, alcohol, solvents, bleach, citrus, ammonia, peroxides, or acid or alkaline ingredients, which Kohler lists as products to avoid. That rules out vinegar on acrylic unless your own tub\'s guide says otherwise.',

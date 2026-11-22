@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-bathroom.webp',
-  heroImageAlt: 'Hand wiping a shiny chrome bathroom faucet covered in water droplets with a blue microfiber cloth, on a grey granite vanity',
+  heroImage: '/images/g-where-not-to-use-a-magic-eraser.webp',
+  heroImageAlt: 'A hand holds a melamine foam sponge away from a glossy stovetop and steel pot, with a scuffed white wall and water bowl beside it.',
   safetyWarnings: [
     'Do not use a Magic Eraser on skin or any part of the body. The Mr. Clean package warns that using it on skin will likely cause abrasions.',
     'Do not use it together with chlorine bleach or other household cleaners, as the package directs.',

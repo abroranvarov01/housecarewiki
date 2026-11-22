@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug over a honey-toned wood floor, next to a linen sofa and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-remove-water-stains-from-hardwood-floors.webp',
+  heroImageAlt: 'A hand gently rubs a faint white water ring on oak hardwood with a soft cloth, with a plant saucer and cleaner bottle nearby.',
   safetyWarnings: [
     'Do not use a steam mop, a wet mop or standing water on the spot. The National Wood Flooring Association says wet and steam mops damage the finish and the wood over time, and Bruce warns that water may dull the finish and permanently damage the floor.',
     'Skip vinegar and other acids, ammonia-based cleaners, bleach, detergents, oil soaps, polishes and abrasive cleaning soaps; Bruce lists all of them as products not to use on its hardwood floors.',

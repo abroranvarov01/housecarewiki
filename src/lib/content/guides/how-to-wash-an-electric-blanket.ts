@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-wash-an-electric-blanket.webp',
+  heroImageAlt: 'A hand unplugs the cord of an electric blanket from the bedside wall outlet, with the controller aside and a laundry basket nearby.',
   safetyWarnings: [
     'Always unplug the power cord from the wall before detaching the control cord, as Sunbeam\'s manual instructs, and never wash a blanket that is still connected.',
     'Never submerge the controller or wash any of the cords. Sunbeam says not to put the control in water or other liquids.',

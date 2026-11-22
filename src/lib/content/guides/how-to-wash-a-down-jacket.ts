@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  heroImage: '/images/g-how-to-wash-a-down-jacket.webp',
+  heroImageAlt: 'A hand pulls a puffy navy down jacket from a front-loading washer drum, with down wash and tennis balls on the shelf above.',
   safetyWarnings: [
     'Follow the care label sewn into your jacket for water temperature and dryer settings. Nikwax tells owners to follow the garment label.',
     'Do not use bleach, fabric softener or an iron on a down jacket. Outdoor Research lists all three as things to avoid, and says regular detergent strips the natural oils from down.',

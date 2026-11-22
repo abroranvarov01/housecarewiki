@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-wash-a-weighted-blanket.webp',
+  heroImageAlt: 'A hand lifts a weighted blanket cover from a large front-load washer, with the inner blanket folded on a table nearby.',
   safetyWarnings: [
     'Make sure your washer and dryer can handle the blanket\'s full weight, and remember it is heavier when wet. Bearaby warns about this, and YnM says frequent machine washing can damage a heavy blanket or the machine.',
     'Avoid top-loading washers with agitators, which Bearaby says can tear the fabric.',

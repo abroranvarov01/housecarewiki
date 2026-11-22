@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing food spills off a stainless steel gas cooktop with a yellow and green sponge, with a potted herb and a dish rack of plates in the background',
+  heroImage: '/images/g-how-to-unclog-a-kitchen-sink-without-chemicals.webp',
+  heroImageAlt: 'A hand presses a cup plunger over a kitchen sink drain, with a washcloth plugging the other bowl and a bucket on the floor.',
   safetyWarnings: [
     'If chemical drain cleaner is already in the sink, do not plunge, do not open the trap, and do not pour a second product on top. The University of Florida Extension warns that combining drain cleaners can produce deadly fumes; ventilate the room and call a plumber instead.',
     'Non-enzymatic drain cleaners contain strong acids or alkalis such as sulfuric acid, hydrochloric acid or sodium hydroxide. Poison Control reports they can burn skin and splash back out of the drain, especially into a fully blocked one.',

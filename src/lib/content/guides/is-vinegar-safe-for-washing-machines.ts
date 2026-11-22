@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a front-load washer under a wooden countertop holding folded towels, a white shirt with a stain, a wicker basket and a bottle of liquid detergent',
+  heroImage: '/images/g-is-vinegar-safe-for-washing-machines.webp',
+  heroImageAlt: 'A hand points to a page of the washer manual on a front-loader, with vinegar and bleach bottles kept apart on a shelf.',
   safetyWarnings: [
     'Never use vinegar and chlorine bleach together, in the drum, the dispenser or on the door seal. The CDC says never to mix household bleach with any other cleaner or disinfectant because it can release vapors that are dangerous to breathe.',
     'Do not use vinegar in an LG front-load washer\'s Tub Clean cycle. LG says to avoid chlorine-based or acidic washing machine cleaners, which may cause discoloration or corrosion inside the machine.',

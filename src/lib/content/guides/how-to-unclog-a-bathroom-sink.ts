@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/bathroom-hero.webp',
-  heroImageAlt: 'White undermount bathroom sink with a chrome pop-up drain, a brushed nickel faucet, a blue towel, a spray bottle and toothbrushes on a speckled stone vanity',
+  heroImage: '/images/g-how-to-unclog-a-bathroom-sink.webp',
+  heroImageAlt: 'A hand loosens a pop-up stopper nut under a bathroom sink with a wrench, with a bucket, plunger and washcloth nearby.',
   safetyWarnings: [
     'If anyone has already poured a chemical drain cleaner into the sink, do not plunge it and do not open the trap. Caustic cleaner still sitting in the water can splash onto skin and eyes.',
     'Chemical drain openers are caustic and can burn skin and damage pipes or fixture finishes. If you do use one, open windows, wear rubber gloves and goggles, pour carefully close to the drain, and never lean over the opening.',

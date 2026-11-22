@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Close-up of a white cotton shirt laid on a speckled countertop, its collar band discolored yellow-brown and being brushed with a small bristle brush, a plant and mixed laundry in the background',
+  heroImage: '/images/g-how-to-remove-yellow-armpit-stains-from-white-shirts.webp',
+  heroImageAlt: 'A hand rubs dish soap into a yellowed underarm patch on a white shirt over a bucket, with oxygen bleach powder and a brush nearby.',
   safetyWarnings: [
     'Never iron, tumble-dry or otherwise heat a shirt that still shows underarm staining. Heat combined with antiperspirant residue sets the stain and can damage the fabric.',
     'Never mix chlorine bleach with ammonia, vinegar or other cleaners; the combinations release toxic gas. Do not combine chlorine bleach with oxygen bleach either, because chlorine stops the oxygen bleach from working.',

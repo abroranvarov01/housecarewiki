@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  heroImage: '/images/g-how-to-wash-a-wool-sweater.webp',
+  heroImageAlt: 'Hands gently press a cream cable-knit sweater in a sink of lukewarm water, with wool detergent and white towels nearby.',
   safetyWarnings: [
     'Follow the care label. Woolmark says to machine wash wool only when the label says it is machine washable, and the FTC requires labels to warn against any washing or drying method that would harm the item.',
     'Avoid heat plus agitation. Woolmark explains that heat, moisture and mechanical action make wool fibers lock together, causing felting and shrinkage that is permanent.',

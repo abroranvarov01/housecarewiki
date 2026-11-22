@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-wash-flannel-sheets.webp',
+  heroImageAlt: 'A hand loads plaid flannel sheets alone into a washing machine, with gentle detergent beside it and sheets drying in the background.',
   safetyWarnings: [
     'Avoid hot water and high dryer heat unless your care tag allows them. The Company Store says hot water can cause shrinkage, weaken fibers and fade colors, and that high heat in washing or drying can damage cotton fibers and flatten the brushed nap of flannel.',
     'Do not wash flannel sheets with towels, denim or items with zippers. The Company Store says these snag the fibers and speed up pilling, and its sheet-care guide says to wash each set separately, without towels or other laundry.',

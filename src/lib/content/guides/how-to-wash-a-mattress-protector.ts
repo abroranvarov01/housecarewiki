@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and green towels on a wooden counter above a front-loading washer, beside a wicker basket and a bottle of liquid detergent',
+  heroImage: '/images/g-how-to-wash-a-mattress-protector.webp',
+  heroImageAlt: 'A hand pulls a white quilted mattress protector off a mattress, with a laundry basket and mild detergent bottle on the floor.',
   safetyWarnings: [
     'Do not use bleach on a waterproof protector. Protect-A-Bed says bleach, bleach alternatives and non-chlorine bleach destroy the polyurethane lining, and Saatva, Tempur-Pedic and Avocado also say no bleach.',
     'Avoid high dryer heat. The Sleep Foundation says high heat can shrink the material and damage waterproof layers, and Protect-A-Bed says overheating in the dryer can cause the lining to blister.',

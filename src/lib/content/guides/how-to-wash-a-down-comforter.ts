@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-wash-a-down-comforter.webp',
+  heroImageAlt: 'A hand lifts the edge of a white down comforter in a big front-loading washer, with dryer balls and down wash on top.',
   safetyWarnings: [
     'Follow the care label on your comforter. The Company Store says a dry clean only comforter should go to a reputable dry cleaner, and Pacific Coast tells owners of its comforters to spot clean or dry clean and avoid machine washing and high heat.',
     'Dry the comforter completely before you put it back on the bed or store it. The Company Store warns that down left damp can develop mold and mildew.',

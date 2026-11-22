@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Folded cream and sage green towels on a wooden counter above a front-loading washer, with a white shirt on top, a bottle of detergent and woven baskets in a sunlit laundry room',
+  heroImage: '/images/g-how-to-wash-a-bath-mat.webp',
+  heroImageAlt: 'A hand shakes a grey cotton bath mat over a laundry basket, with a rubber-backed mat drying on a rack nearby.',
   safetyWarnings: [
     'Never put a rubber or suction-cup shower mat in the dryer; the heat can warp and damage the rubber.',
     'Check the care label before using bleach. Some bath rugs, including Gorilla Grip memory foam rugs, are labeled do not bleach and no fabric softener.',

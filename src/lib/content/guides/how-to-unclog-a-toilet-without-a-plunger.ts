@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Sunlit bathroom with a round wood-framed mirror over a white vessel sink, a spray bottle and grey cloth on a wooden vanity, white towels on a ladder rack and a glass shower door with water spots',
+  heroImage: '/images/g-how-to-unclog-a-toilet-without-a-plunger.webp',
+  heroImageAlt: 'A gloved hand squeezes dish soap into a toilet bowl, with a pot of hot water on a towel and the shut-off valve behind.',
   safetyWarnings: [
     'Do not pour chemical drain cleaner into a clogged toilet. Poison Control warns that drain cleaners contain strong acids or alkalis and can splash back and burn skin and eyes, especially when poured into a completely blocked drain, and Oatey\'s technical team does not recommend drain cleaners for toilets.',
     'Never use boiling water. Use hot water that is not boiling; Oatey warns that some household remedies can melt the toilet\'s wax seal or damage the porcelain.',

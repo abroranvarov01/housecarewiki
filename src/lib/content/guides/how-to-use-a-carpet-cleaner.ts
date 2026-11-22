@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned carpet in a sunlit living room, with a cream sofa, knit throw and a round wooden coffee table',
+  heroImage: '/images/g-how-to-use-a-carpet-cleaner.webp',
+  heroImageAlt: 'A hand pulls an upright carpet cleaning machine backward over beige carpet, leaving clean stripes, with furniture moved aside.',
   safetyWarnings: [
     'Do not over-wet the carpet. Carpet maker Shaw warns that water left in carpet can cause problems, including breakdown of the carpet backing, so always follow wet passes with dry passes.',
     'Use only the cleaning formula made for your machine, at the dose its instructions give. More is not better: extra soap leaves residue that makes carpet get dirty again faster.',

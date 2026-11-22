@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-shower-mold.webp',
-  heroImageAlt: 'Beige tiled shower ledge and floor with grout lines seen through a wet glass panel, black mildew along the bottom of the frame, a toothbrush and a clear spray bottle on the ledge',
+  heroImage: '/images/g-how-to-seal-grout.webp',
+  heroImageAlt: 'A gloved hand applies grout sealer with a roller-tip bottle along a clean grout line on grey bathroom tile, with a cloth and safety glasses nearby.',
   safetyWarnings: [
     'Wear chemical-resistant gloves, such as nitrile, and safety glasses when applying grout sealer, as sealer manufacturers direct. Keep the bathroom well ventilated.',
     'Do not seal new grout before it has cured. Mapei calls for at least 48 hours, Custom Building Products 48 to 72 hours, and LATICRETE at least 72 hours at 70 degrees F for its cement grouts; when they differ, follow the longer of your grout and sealer labels.',

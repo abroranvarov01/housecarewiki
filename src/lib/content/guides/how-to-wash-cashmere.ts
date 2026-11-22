@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-wash-cashmere.webp',
+  heroImageAlt: 'A hand gently presses an oatmeal cashmere sweater in a basin of cool water, with wash and a dry towel beside the sink.',
   safetyWarnings: [
     'Do not use hot water. N.Peal says hot water could cause a cashmere garment to shrink, and The Laundress says cashmere is very sensitive to water temperature and agitation.',
     'Do not put cashmere in the dryer. N.Peal says not to tumble dry, Quince says never to tumble dry, and The Laundress says cashmere should not be placed in the dryer.',
