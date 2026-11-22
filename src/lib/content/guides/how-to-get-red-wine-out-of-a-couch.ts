@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/ba-sofa-coffee.webp',
-  heroImageAlt: 'Hand holding a folded white cloth beside a small brown liquid stain on beige linen-weave sofa fabric',
+  heroImage: '/images/g-how-to-get-red-wine-out-of-a-couch.webp',
+  heroImageAlt: 'A hand blots a small red wine spot on a light fabric sofa cushion with a white cloth, with a tipped glass on the side table nearby.',
   safetyWarnings: [
     'Read the cleaning code before using any liquid. Ashley says code W fabric should not get solvents, code S fabric should not get water, WS fabric should not be saturated, and code X fabric should not be cleaned with water-based or solvent-based cleaners at all, only vacuumed or lightly brushed.',
     'Pretest each cleaning agent on a hidden area first. The University of Georgia Extension says to always pretest each cleaning agent on an inconspicuous area to check colorfastness, and La-Z-Boy says to test an inconspicuous area before cleaning.',

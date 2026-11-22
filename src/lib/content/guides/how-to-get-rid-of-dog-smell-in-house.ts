@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum cleaning a beige patterned rug in a sunny living room, next to a cream sofa with a knit throw and a round wooden coffee table',
+  heroImage: '/images/g-how-to-get-rid-of-dog-smell-in-house.webp',
+  heroImageAlt: 'A hand places a dog collar and harness in a laundry basket beside a dog bed, blankets, vacuum and replacement air filter in a bright living room.',
   safetyWarnings: [
     'Do not use an ozone generator in an occupied home. The EPA says no federal agency has approved them for occupied spaces, ozone is a lung irritant, and at safe levels ozone does not effectively remove many odor-causing chemicals.',
     'Never mix bleach with vinegar or ammonia, including when you add vinegar to a wash cycle; the fumes are dangerous. Ventilate the room whenever you use cleaning products.',

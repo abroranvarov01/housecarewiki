@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Folded cream and sage green towels stacked on a wooden counter above a white front-load washer, with a white shirt on top, a bottle of liquid detergent, wicker baskets and trailing green plants in a sunlit laundry corner',
+  heroImage: '/images/g-how-to-get-musty-smell-out-of-towels.webp',
+  heroImageAlt: 'A hand pulls fluffy white towels from an open washing machine drum, with a detergent cap and a drying rack of towels nearby.',
   safetyWarnings: [
     'Never mix chlorine bleach with vinegar, ammonia or any other cleaning product. Mixing chlorine bleach with other cleaning products can produce noxious fumes, so run a vinegar soak and any bleach wash as completely separate steps, and ventilate the room.',
     'Check the care label before choosing a water temperature or bleach. Labels must give a temperature when regular hot water would harm the item, and must say "Only non-chlorine bleach, when needed" or "Do not bleach" when chlorine bleach is unsafe.',

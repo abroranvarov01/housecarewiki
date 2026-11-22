@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand pressing a white terry towel onto a muddy footprint stain on a beige loop carpet, with a glass bowl of soapy water beside it and muddy hiking boots by the door',
+  heroImage: '/images/g-how-to-get-mud-out-of-carpet.webp',
+  heroImageAlt: 'A hand breaks up dried mud on cream hallway carpet with a knife handle, with a vacuum, muddy boots on a tray and a bowl of soapy water.',
   safetyWarnings: [
     'Do not scrub wet mud. Rubbing pushes it deeper into the pile and can fray the carpet fibers; blot instead.',
     'Use only clear liquid dish soap, never laundry detergent (its optical brighteners can dye the fiber) or automatic dishwasher detergent (it can contain bleach that destroys carpet dyes). Never use chlorine bleach on carpet.',

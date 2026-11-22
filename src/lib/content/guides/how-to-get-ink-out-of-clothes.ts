@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Hand scrubbing a yellowed stain on the collar of a white button-down shirt with a wooden-handled brush, with a pile of laundry and a white basket behind it',
+  heroImage: '/images/g-how-to-get-ink-out-of-clothes.webp',
+  heroImageAlt: 'A hand dabs rubbing alcohol onto the back of a pale blue shirt cuff laid face down on paper towels to lift a small ink mark.',
   safetyWarnings: [
     'Always test rubbing alcohol, hand sanitizer or any stain remover on a hidden area first. Tide warns that these solvents can attack fabric dyes, and the University of Georgia Extension says to pretest every cleaning agent for colorfastness.',
     'Alcohol damages acetate, triacetate, modacrylic and acrylic fibers, and acetone should not be used on acetate, triacetate or modacrylics. Check the fiber content on the care label before you start.',

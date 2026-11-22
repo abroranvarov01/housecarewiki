@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige loop-pile carpet, beside a glass bowl of soapy water, with muddy boots by the door in the background',
+  heroImage: '/images/g-how-to-get-oil-out-of-carpet.webp',
+  heroImageAlt: 'A hand blots a small oil spot on tan carpet with a white cloth near a kitchen doorway, with paper towels, a spoon and soapy water beside it.',
   safetyWarnings: [
     'Dry-cleaning solvents can be flammable and give off strong vapors. Open windows for ventilation, keep open flames and sparks away, and wear rubber gloves.',
     'Never pour solvent directly onto the carpet or let it soak through. Apply it to a white cloth instead; solvent that reaches the backing can dissolve the latex that holds the carpet backings together.',

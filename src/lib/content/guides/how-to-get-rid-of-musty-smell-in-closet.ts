@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-organization.webp',
-  heroImageAlt: 'Open hallway closet with a white wire shelf holding fabric bins and a wicker basket, and a plastic tub, a cardboard box of folded sweaters and a pair of white sneakers on the wood floor below',
+  heroImage: '/images/g-how-to-get-rid-of-musty-smell-in-closet.webp',
+  heroImageAlt: 'A gloved hand scrubs a small mildew patch on the back wall of an emptied closet, with laundry baskets of clothes waiting outside.',
   safetyWarnings: [
     'If the moldy area is larger than about 10 square feet, or the closet had significant water damage, the EPA advises getting professional help rather than cleaning it yourself.',
     'Wear long gloves, goggles without vent holes and an N-95 respirator while scrubbing mildew; the EPA recommends this to limit contact with mold and airborne spores.',

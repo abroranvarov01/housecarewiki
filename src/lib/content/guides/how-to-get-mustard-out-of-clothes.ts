@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Folded white button-up shirt with a yellow-brown splash stain on the chest, resting on folded cream and sage green towels on a wooden counter above a front-loading washer, next to a wicker basket, a bottle of milky liquid and a potted plant',
+  heroImage: '/images/g-how-to-get-mustard-out-of-clothes.webp',
+  heroImageAlt: 'A hand scrapes a small mustard smear from a white shirt with a dull knife on a counter, with stain remover and cold water nearby.',
   safetyWarnings: [
     'Read the care label first and skip any product or step it rules out. Silk, wool, acetate, rayon, leather and dry-clean-only items should not get the wash-and-soak method; blot gently and take them to a dry cleaner.',
     'Test every product, including hydrogen peroxide and oxygen bleach, on a hidden spot such as an inside hem before using it on the stain.',

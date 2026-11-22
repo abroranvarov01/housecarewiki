@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Sunlit bathroom with a white vessel sink on a wooden vanity, a white spray bottle and a folded grey cloth, a round wood-framed mirror, a towel ladder with white towels and a glass shower door with water marks',
+  heroImage: '/images/g-how-to-get-rid-of-condensation-on-windows.webp',
+  heroImageAlt: 'A hand holds a small digital humidity meter beside a fogged bedroom window, with a towel on the sill and a bathroom fan running behind.',
   safetyWarnings: [
     'Do not ignore repeated condensation. NDSU Extension notes the moisture can damage windows and surrounding walls and becomes a breeding ground for mold.',
     'Make sure bathroom and kitchen exhaust fans vent directly outdoors, never into the attic, where the moisture can cause hidden mold.',

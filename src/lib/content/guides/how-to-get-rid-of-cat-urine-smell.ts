@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-pet-hair.webp',
-  heroImageAlt: 'Hand in a yellow rubber glove wiping loose pet fur off the seat cushion of a dark grey fabric armchair, with a checked throw pillow and knit blanket',
+  heroImage: '/images/g-how-to-get-rid-of-cat-urine-smell.webp',
+  heroImageAlt: 'A hand holds a black light over a small damp spot on bedroom carpet, with an enzymatic cleaner bottle and paper towels beside it.',
   safetyWarnings: [
     'Do not clean cat urine with ammonia-based products. Urine contains ammonia, and the ASPCA warns an ammonia cleaner can attract your cat back to the same spot.',
     'Skip vinegar-based cleaners too. Cornell\'s Feline Health Center says products with ammonia or vinegar smell like urine to cats and can be irritating.',

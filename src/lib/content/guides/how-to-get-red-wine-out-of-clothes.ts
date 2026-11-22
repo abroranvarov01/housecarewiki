@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Folded white shirt with a tan splash stain on a stack of cream and sage towels, on a wooden counter above a front-loading washer, beside a bottle of liquid detergent, a wicker basket and trailing houseplants in a sunlit laundry room',
+  heroImage: '/images/g-how-to-get-red-wine-out-of-clothes.webp',
+  heroImageAlt: 'A hand blots a small red wine stain on a white shirt under a cold tap, with detergent, club soda and a tipped wineglass beside the sink.',
   safetyWarnings: [
     'Do not tumble dry the garment until the stain is completely gone. Tide and Clorox both warn that drying will set a wine stain.',
     'Oxygen bleach products such as OxiClean are not for silk, silk blends, wool, wool blends, leather or fabrics labeled dry clean only. Take those to a professional cleaner.',

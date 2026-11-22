@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Folded white button-down shirt with a beige splash stain on the front, resting on stacked cream and sage towels above a front-loading washer in a sunlit laundry room',
+  heroImage: '/images/g-how-to-get-makeup-out-of-clothes.webp',
+  heroImageAlt: 'A hand rolls a lint roller over a small foundation smudge on a white blouse collar, with a spoon, detergent and brush on the counter.',
   safetyWarnings: [
     'Read the care label and test any detergent, stain remover or solvent on a hidden spot such as an inside hem before treating the stain, to check that the color does not run or fade.',
     'Do not put the garment in the dryer until the stain is completely gone; heat can set any makeup that remains.',

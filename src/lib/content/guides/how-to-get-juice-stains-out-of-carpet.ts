@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/hero-dog-coffee.webp',
-  heroImageAlt: 'Golden retriever lying on a cream carpet beside a tipped-over mug and a small brown spill, with a beige sofa, a fiddle-leaf fig and a sunlit window behind',
+  heroImage: '/images/g-how-to-get-juice-stains-out-of-carpet.webp',
+  heroImageAlt: 'A hand blots a small orange juice stain on light carpet from the edges inward with a white cloth, beside a tipped plastic cup and spray bottle.',
   safetyWarnings: [
     'Never use laundry detergent on carpet; the Carpet and Rug Institute warns its optical brighteners can dye the fiber. Avoid automatic dishwasher detergent too, because many contain bleaching agents that destroy dyes and some fibers.',
     'Never make the detergent, vinegar or ammonia solutions stronger than the stated ratios. Stronger mixes leave residue that attracts soil, and ammonia used improperly can change the carpet color.',

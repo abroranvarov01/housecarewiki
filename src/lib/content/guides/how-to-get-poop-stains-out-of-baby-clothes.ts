@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  heroImage: '/images/g-how-to-get-poop-stains-out-of-baby-clothes.webp',
+  heroImageAlt: 'A hand rubs dish soap into a small faint stain on a yellow baby onesie under a cold tap, with stain remover and a basin nearby.',
   safetyWarnings: [
     'Wear disposable gloves while removing solids and throw them away straight after, as OxiClean advises, and wash your hands when you are done.',
     'Do not dry the garment until the stain is completely gone; Dreft warns that stains become more bonded to fabric as they dry, and heat makes it worse.',

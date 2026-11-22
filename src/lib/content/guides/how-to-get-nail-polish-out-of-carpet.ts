@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'Cordless stick vacuum with a clear brush head on a plush beige patterned area rug in a sunlit living room, beside a cream sofa with a knitted throw and a round wooden coffee table holding a mug and a book',
+  heroImage: '/images/g-how-to-get-nail-polish-out-of-carpet.webp',
+  heroImageAlt: 'A hand dabs a small red nail polish drop on cream bedroom carpet from the edge with a white cloth, with remover bottle and cotton pads on the table.',
   safetyWarnings: [
     'Never use acetone or lacquer thinner on acetate or triacetate carpet or fabric. The University of Georgia Extension warns these fibers turn to froth immediately. Nail polish remover should also be kept off modacrylic fabrics.',
     'Never pour nail polish remover or any solvent directly onto the carpet, and keep it away from the backing. Solvents can damage the latex that holds the carpet backings together.',

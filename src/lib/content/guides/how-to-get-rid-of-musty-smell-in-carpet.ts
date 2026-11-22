@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'Cordless stick vacuum with a clear brush head on a plush beige patterned area rug in a sunlit living room, beside a cream sofa with a knitted throw and a round wooden coffee table holding a mug and a book',
+  heroImage: '/images/g-how-to-get-rid-of-musty-smell-in-carpet.webp',
+  heroImageAlt: 'A hand sprinkles baking soda on basement carpet beside a floor fan, dehumidifier and wet-dry vacuum.',
   safetyWarnings: [
     'If sewage or other contaminated water reached the carpet, do not try to clean it yourself. Assume it carries infectious organisms, discard it, and call a professional experienced in cleaning buildings damaged by contaminated water.',
     'Do not use chlorine bleach on carpet. Most modern carpet is nylon, and bleach is not recommended for it. Never mix bleach with ammonia or acids, and ventilate whenever you use any cleaner.',

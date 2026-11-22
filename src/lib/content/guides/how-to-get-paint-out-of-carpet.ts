@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige looped carpet, with a glass bowl of soapy water beside it and a pair of muddy hiking boots on the floor in the background',
+  heroImage: '/images/g-how-to-get-paint-out-of-carpet.webp',
+  heroImageAlt: 'A hand scoops a small spot of wet white paint from beige carpet with a spoon, with towels, soapy water and a paintbrush nearby.',
   safetyWarnings: [
     'Never pour or spray a solvent or paint, oil and grease remover directly onto the carpet. Apply it to a white cloth and blot; solvent that reaches the backing can damage the latex that holds the carpet backings together.',
     'Choose a non-flammable spot remover or dry-cleaning solvent where you can. Ventilate the room, wear protective gloves, and keep solvents and solvent-soaked cloths away from flames, pilot lights and sparks.',

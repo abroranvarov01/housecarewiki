@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Hand scrubbing a yellowed stain on the collar of a white button-down shirt with a wooden-handled brush, with a pile of laundry and a white basket behind it',
+  heroImage: '/images/g-how-to-get-lipstick-out-of-clothes.webp',
+  heroImageAlt: 'A hand dabs dish detergent on the back of a small lipstick mark on a white shirt hem laid face down on a cloth, with a knife and bowl nearby.',
   safetyWarnings: [
     'Always read the care label and pretest every cleaning agent, including rubbing alcohol, on a hidden area first to check for colorfastness. Persil cautions that rubbing alcohol and bleach can damage some fabrics.',
     'Use chlorine bleach only on bleach-safe whites; use a color-safe bleach for colors and for whites that contain spandex. Never mix bleach with ammonia, vinegar or other cleaners.',

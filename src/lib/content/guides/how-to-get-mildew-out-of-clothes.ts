@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Hand scrubbing a yellowed stain along the collar of a white button-down shirt with a wooden-handled bristle brush on a speckled countertop, with a pile of mixed laundry, a plant and a white laundry basket behind',
+  heroImage: '/images/g-how-to-get-mildew-out-of-clothes.webp',
+  heroImageAlt: 'A hand brushes small mildew spots from a cotton shirt draped on a sunny porch railing, with a laundry basket and detergent nearby.',
   safetyWarnings: [
     'Never mix chlorine bleach with vinegar, ammonia or any other cleaner; the combination can release dangerous fumes. Wear gloves and work with good ventilation.',
     'Brush mildew off outdoors. Touching or breathing mold spores can cause allergic reactions such as sneezing, runny nose, red eyes and skin rashes, and can trigger asthma attacks in people who are allergic to mold.',

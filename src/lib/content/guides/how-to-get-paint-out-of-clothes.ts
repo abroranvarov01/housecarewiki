@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'A folded white button-up shirt with a tan splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  heroImage: '/images/g-how-to-get-paint-out-of-clothes.webp',
+  heroImageAlt: 'A hand rubs liquid detergent into a blue paint splatter on jeans on a workbench, with a brush in a jar and a bowl of water beside.',
   safetyWarnings: [
     'Paint thinners and cleanup solvents can be flammable. Read the solvent label, and use it away from ignition sources such as water heaters, furnaces, electric motors and fans. Never use gasoline.',
     'Ventilate well when using solvents: open doors and windows to the outside, or work outdoors. Wear gloves to keep solvent off your skin.',

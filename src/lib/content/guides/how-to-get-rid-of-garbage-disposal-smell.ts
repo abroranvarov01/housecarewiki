@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand wiping food splatter off a stainless steel gas cooktop with a yellow and green sponge, with a dish rack, a potted basil plant and a utensil crock on the speckled granite counter behind',
+  heroImage: '/images/g-how-to-get-rid-of-garbage-disposal-smell.webp',
+  heroImageAlt: 'A hand scrubs the underside of a removed rubber sink splash guard with a brush and baking soda, with the empty drain visible.',
   safetyWarnings: [
     'Cut the power before you remove the splash guard or work near the grind chamber: unplug the disposal, or switch it off at the circuit breaker if it is hardwired. Moen warns never to pull out the splash guard without the power off first.',
     'Never put your hands inside the disposal, even with the power off. Use tongs or needle-nose pliers to remove anything that has fallen in.',

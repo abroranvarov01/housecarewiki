@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand pressing a white terry towel onto a brown dirt stain on a beige loop-pile carpet, next to a glass bowl of soapy water, with muddy boots by the door behind',
+  heroImage: '/images/g-how-to-get-makeup-out-of-carpet.webp',
+  heroImageAlt: 'A hand scrapes a small smear of foundation from pale carpet with a rounded spoon, with a vacuum hose, white cloth and solvent bottle on a tray.',
   safetyWarnings: [
     'Never pour solvent directly onto the carpet or let it reach the backing. The Carpet and Rug Institute warns it can damage the latex that holds the primary and secondary backings together. Always apply it with a dampened white cloth.',
     'Ventilate the room when using dry-cleaning solvents, keep them away from open flames, and wear rubber gloves. Choose a non-flammable spot remover where possible.',

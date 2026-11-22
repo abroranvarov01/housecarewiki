@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-spin-scrubber.webp',
-  heroImageAlt: 'Hand holding a white electric spin scrubber against a white tiled shower wall covered in foamy cleaner, next to a chrome shower hose and a shelf of toiletries',
+  heroImage: '/images/g-how-to-get-rid-of-pink-mold-in-shower.webp',
+  heroImageAlt: 'A gloved hand scrubs a faint pink film on shower tile grout with a stiff brush, with a squeegee on the wall and two separate bottles on a shelf.',
   safetyWarnings: [
     'Never mix bleach with vinegar, ammonia or any other cleaner; Clorox warns this can create dangerous fumes. If you try vinegar first, rinse it away completely before using a bleach product.',
     'Ventilate while you clean: open a window or run the exhaust fan, and wear gloves if you have sensitive skin or will be working for a while.',
