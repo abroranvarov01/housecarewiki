@@ -78,6 +78,7 @@ export function personSchema(author: Author): Json {
     url: absoluteUrl(`/authors/${author.slug}`),
     image: author.avatar,
     worksFor: { '@id': ORG_ID },
+    ...(author.sameAs?.length ? { sameAs: author.sameAs } : {}),
   };
 }
 

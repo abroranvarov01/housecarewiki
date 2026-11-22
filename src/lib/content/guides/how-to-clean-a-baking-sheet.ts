@@ -153,7 +153,7 @@ const article: Article = {
     title: 'How to Clean a Baking Sheet (Burnt-On Grease)',
     description: 'How to clean a baking sheet: hand wash, soak stuck-on food, then use baking soda and vinegar or Bar Keepers Friend on burnt aluminum. Nonstick tips.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-baking-sheet',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a baking sheet',
   },
 };

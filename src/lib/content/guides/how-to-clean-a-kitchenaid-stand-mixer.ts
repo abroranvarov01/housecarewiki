@@ -140,7 +140,7 @@ const article: Article = {
     title: 'How to Clean a KitchenAid Stand Mixer (and Beaters)',
     description: 'How to clean a KitchenAid stand mixer: wipe the body and beater shaft, dishwash coated or stainless tools, hand-wash burnished beaters to stop gray residue.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-kitchenaid-stand-mixer',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a kitchenaid stand mixer',
   },
 };

@@ -149,7 +149,7 @@ const article: Article = {
     title: 'How to Use a Carpet Cleaner (Without Over-Wetting)',
     description: 'How to use a carpet cleaner: vacuum, pretest, measure the right formula, make two slow wet passes and two dry passes, and let carpet dry fully. Wool tips too.',
     canonical: 'https://housecarewiki.com/guides/how-to-use-a-carpet-cleaner',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to use a carpet cleaner',
   },
 };

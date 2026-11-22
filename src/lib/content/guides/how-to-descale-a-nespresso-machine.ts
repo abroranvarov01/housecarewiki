@@ -143,7 +143,7 @@ const article: Article = {
     title: 'How to Descale a Nespresso Machine (Vertuo and Original)',
     description: 'How to descale a Nespresso machine: use one packet of Nespresso descaler, follow the Vertuo or Original button steps, rinse with fresh water, and skip vinegar.',
     canonical: 'https://housecarewiki.com/guides/how-to-descale-a-nespresso-machine',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to descale a nespresso machine',
   },
 };

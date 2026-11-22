@@ -164,7 +164,7 @@ const article: Article = {
     title: 'Can You Put Knives in the Dishwasher? (What Makers Say)',
     description: 'Can you put knives in the dishwasher? Wüsthof, Global and Shun say hand wash, and wooden handles never go in. How to wash, dry and store knives safely instead.',
     canonical: 'https://housecarewiki.com/guides/can-you-put-knives-in-the-dishwasher',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'can you put knives in the dishwasher',
   },
 };

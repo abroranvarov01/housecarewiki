@@ -156,7 +156,7 @@ const article: Article = {
     title: 'How to Clean a Space Heater Safely (Grilles, Filter, Case)',
     description: 'How to clean a space heater: unplug and cool it, vacuum the grilles, clean the filter, wipe the case without letting water in, and plug it into a wall outlet.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-space-heater',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a space heater',
   },
 };

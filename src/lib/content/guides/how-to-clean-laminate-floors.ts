@@ -143,7 +143,7 @@ const article: Article = {
     title: 'How to Clean Laminate Floors (Without Damage)',
     description: 'How to clean laminate floors: vacuum without a beater bar, damp-wipe with a wrung-out mop and maker-approved cleaner, dry right away, and skip wax and polish.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-laminate-floors',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean laminate floors',
   },
 };

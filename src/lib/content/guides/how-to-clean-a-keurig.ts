@@ -143,7 +143,7 @@ const article: Article = {
     title: 'How to Clean a Keurig (Needles, Parts and Descaling)',
     description: 'How to clean a Keurig: hand-wash the reservoir and drip tray, clear the needles with a paper clip, and descale every 3 months or when the light comes on.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-keurig',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a keurig',
   },
 };

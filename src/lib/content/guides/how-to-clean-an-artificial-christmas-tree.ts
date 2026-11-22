@@ -168,7 +168,7 @@ const article: Article = {
     title: 'How to Clean an Artificial Christmas Tree (Dry Dusting)',
     description: 'How to clean an artificial Christmas tree: dry dusting from the top down, no water or sprays, care around lights and flocking, and cool, dry bagged storage.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-an-artificial-christmas-tree',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean an artificial christmas tree',
   },
 };

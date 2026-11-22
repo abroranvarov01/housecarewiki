@@ -152,7 +152,7 @@ const article: Article = {
     title: 'How to Clean a Silicone Baking Mat (Sticky, Greasy)',
     description: 'How to clean a silicone baking mat: soft sponge and mild soap, dishwasher if the maker allows, lemon, a hot soak or a bake-off for sticky grease, no cutting.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-silicone-baking-mat',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a silicone baking mat',
   },
 };

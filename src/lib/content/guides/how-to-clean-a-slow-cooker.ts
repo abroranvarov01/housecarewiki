@@ -144,7 +144,7 @@ const article: Article = {
     title: 'How to Clean a Slow Cooker (Baked-On Food, Base, Crock)',
     description: 'How to clean a slow cooker: wash the crock and lid once cool, lift baked-on food with Crockpot\'s vinegar and baking soda soak, and only wipe the heating base.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-slow-cooker',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a slow cooker',
   },
 };

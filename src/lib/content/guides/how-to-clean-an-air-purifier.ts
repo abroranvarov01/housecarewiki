@@ -158,7 +158,7 @@ const article: Article = {
     title: 'How to Clean an Air Purifier (Pre-Filter, HEPA, Sensor)',
     description: 'How to clean an air purifier: unplug it, wipe the case, vacuum or rinse the pre-filter and dry it fully, swab the sensor, and replace HEPA and carbon filters.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-an-air-purifier',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean an air purifier',
   },
 };

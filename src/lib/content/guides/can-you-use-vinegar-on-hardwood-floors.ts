@@ -169,7 +169,7 @@ const article: Article = {
     title: 'Can You Use Vinegar on Hardwood Floors? (No, Here\'s Why)',
     description: 'Can you use vinegar on hardwood floors? No: it is acidic and breaks down the finish. What NWFA, Bona and floor makers say to use instead, and how to damp-mop.',
     canonical: 'https://housecarewiki.com/guides/can-you-use-vinegar-on-hardwood-floors',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'can you use vinegar on hardwood floors',
   },
 };

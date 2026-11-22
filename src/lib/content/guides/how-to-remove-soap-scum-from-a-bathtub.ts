@@ -132,7 +132,7 @@ const article: Article = {
     title: 'How to Remove Soap Scum From a Bathtub Safely',
     description: 'How to remove soap scum from a bathtub: hot soapy water, a soft sponge, an instant rinse and a daily wipe-dry. What Kohler and American Standard say to avoid.',
     canonical: 'https://housecarewiki.com/guides/how-to-remove-soap-scum-from-a-bathtub',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to remove soap scum from a bathtub',
   },
 };

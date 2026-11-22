@@ -151,7 +151,7 @@ const article: Article = {
     title: 'How to Wash a Fleece Blanket (Cold, Gentle, No Softener)',
     description: 'How to wash a fleece blanket: check the label, wash cold on gentle with mild detergent, skip fabric softener and bleach, then tumble dry low or air-dry flat.',
     canonical: 'https://housecarewiki.com/guides/how-to-wash-a-fleece-blanket',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to wash a fleece blanket',
   },
 };

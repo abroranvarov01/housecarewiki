@@ -134,7 +134,7 @@ const article: Article = {
     title: 'How to Clean Tarnished Silverware Safely',
     description: 'How to clean tarnished silverware: wash, polish gently with a silver polish or calcium carbonate paste, rinse and dry, and store it so it tarnishes less.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-tarnished-silverware',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean tarnished silverware',
   },
 };

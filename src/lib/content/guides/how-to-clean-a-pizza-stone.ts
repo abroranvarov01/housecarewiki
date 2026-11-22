@@ -169,7 +169,7 @@ const article: Article = {
     title: 'How to Clean a Pizza Stone (No Soap, No Soaking)',
     description: 'How to clean a pizza stone: let it cool fully, scrape and brush it, use water only and no soap, never soak it, ignore the stains and dry it before reuse.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-pizza-stone',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a pizza stone',
   },
 };

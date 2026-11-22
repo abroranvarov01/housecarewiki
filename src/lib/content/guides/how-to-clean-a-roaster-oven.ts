@@ -148,7 +148,7 @@ const article: Article = {
     title: 'How to Clean a Roaster Oven (Pan, Lid, Rack and Base)',
     description: 'How to clean a roaster oven after the turkey: unplug and cool it, wash the pan, rack and lid, soak off burned-on drippings, and never immerse the base.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-roaster-oven',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a roaster oven',
   },
 };

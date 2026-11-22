@@ -139,7 +139,7 @@ const article: Article = {
     title: 'How to Get Dog Hair Out of a Car (8 Steps)',
     description: 'How to get dog hair out of a car: loosen it with a damp rubber glove, vacuum seams and floorboards, lint-roll fabric, care for leather, and add a seat cover.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-dog-hair-out-of-a-car',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to get dog hair out of a car',
   },
 };

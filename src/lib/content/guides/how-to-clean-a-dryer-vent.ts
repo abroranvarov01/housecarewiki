@@ -170,7 +170,7 @@ const article: Article = {
     title: 'How to Clean a Dryer Vent (and Prevent Dryer Fires)',
     description: 'How to clean a dryer vent: clear the lint screen every load, unplug and brush the duct at least yearly, check the outside flap, and swap foil duct for metal.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-dryer-vent',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a dryer vent',
   },
 };

@@ -156,7 +156,7 @@ const article: Article = {
     title: 'How to Clean Crystal Glasses (Hand Wash, Cloudy Film)',
     description: 'How to clean crystal glasses: warm water, mild detergent, microfiber cloths, no twisting the bowl on the stem, vinegar for cloudy film, and upright storage.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-crystal-glasses',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean crystal glasses',
   },
 };

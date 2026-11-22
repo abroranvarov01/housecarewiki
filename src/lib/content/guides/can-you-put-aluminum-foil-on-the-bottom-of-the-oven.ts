@@ -140,7 +140,7 @@ const article: Article = {
     title: 'Can You Put Foil on the Bottom of the Oven? (No)',
     description: 'Can you put aluminum foil on the bottom of the oven? No: GE, LG and Reynolds say it traps heat, can fuse to the floor and block gas vents. Where to put it.',
     canonical: 'https://housecarewiki.com/guides/can-you-put-aluminum-foil-on-the-bottom-of-the-oven',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'can you put aluminum foil on the bottom of the oven',
   },
 };

@@ -123,7 +123,7 @@ const article: Article = {
     title: 'How to Get Tree Sap Out of Clothes (Pine Pitch)',
     description: 'How to get tree sap out of clothes: scrape, dissolve with rubbing alcohol or Goo Gone after a spot test, pretreat, wash hot and air dry. Pine pitch tips.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-tree-sap-out-of-clothes',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to get tree sap out of clothes',
   },
 };

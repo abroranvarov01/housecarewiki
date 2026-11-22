@@ -142,7 +142,7 @@ const article: Article = {
     title: 'How to Clean a Fiberglass Shower Without Scratching',
     description: 'How to clean a fiberglass shower the way manufacturers advise: non-abrasive cleanser, baking soda for scum, vinegar for scale, and wax for shine.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-fiberglass-shower',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a fiberglass shower',
   },
 };

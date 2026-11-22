@@ -206,7 +206,7 @@ const article: Article = {
     title: 'How to Wash a Wool Sweater Without Shrinking It',
     description: 'How to wash a wool sweater: hand wash in lukewarm water with wool detergent or use the wool cycle if the label allows, then dry it flat to avoid shrinking.',
     canonical: 'https://housecarewiki.com/guides/how-to-wash-a-wool-sweater',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to wash a wool sweater',
   },
 };

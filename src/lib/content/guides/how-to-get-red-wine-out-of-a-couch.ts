@@ -156,7 +156,7 @@ const article: Article = {
     title: 'How to Get Red Wine Out of a Couch (W, S, WS, X Codes)',
     description: 'Get red wine out of a couch: blot, read the W, S, WS or X code, spot-test, then use mild detergent and diluted vinegar on W fabric without soaking it.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-red-wine-out-of-a-couch',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to get red wine out of a couch',
   },
 };

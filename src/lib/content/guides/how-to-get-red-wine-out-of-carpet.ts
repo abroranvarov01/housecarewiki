@@ -123,7 +123,7 @@ const article: Article = {
     title: 'How to Get Red Wine Out of Carpet (Fresh or Dried)',
     description: 'Get red wine out of carpet with the IICRC method: blot, water, a weak dish-soap mist, and 3% peroxide for leftover pink on synthetic fibers, not on wool.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-red-wine-out-of-carpet',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to get red wine out of carpet',
   },
 };

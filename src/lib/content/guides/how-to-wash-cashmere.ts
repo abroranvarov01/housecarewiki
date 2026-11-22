@@ -150,7 +150,7 @@ const article: Article = {
     title: 'How to Wash Cashmere (Hand Wash, Machine, Drying)',
     description: 'How to wash cashmere: cool or lukewarm hand wash with wool-safe detergent, no wringing, towel roll, dry flat away from heat, and never tumble dry it.',
     canonical: 'https://housecarewiki.com/guides/how-to-wash-cashmere',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to wash cashmere',
   },
 };

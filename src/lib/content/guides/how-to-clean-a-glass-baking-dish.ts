@@ -129,7 +129,7 @@ const article: Article = {
     title: 'How to Clean a Glass Baking Dish (Baked-On Food)',
     description: 'How to clean a glass baking dish: let it cool, soak baked-on food, scrub with a nylon pad and non-abrasive cleanser. Pyrex rules and what makes glass break.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-glass-baking-dish',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a glass baking dish',
   },
 };

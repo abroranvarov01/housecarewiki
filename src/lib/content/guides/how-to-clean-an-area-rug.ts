@@ -142,7 +142,7 @@ const article: Article = {
     title: 'How to Clean an Area Rug Without Damaging It',
     description: 'How to clean an area rug: read the label, vacuum with the beater bar off and away from fringe, blot spots with a white cloth, and know when to call a pro.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-an-area-rug',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean an area rug',
   },
 };

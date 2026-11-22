@@ -141,7 +141,7 @@ const article: Article = {
     title: 'How to Wash Pillows (Down, Fiberfill and Foam)',
     description: 'How to wash pillows: two at a time on gentle and cold, dry on low until the center is dry. Which pillows can\'t be machine washed, and when to replace one.',
     canonical: 'https://housecarewiki.com/guides/how-to-wash-pillows',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to wash pillows',
   },
 };

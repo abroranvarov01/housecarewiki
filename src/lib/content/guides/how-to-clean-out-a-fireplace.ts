@@ -169,7 +169,7 @@ const article: Article = {
     title: 'How to Clean Out a Fireplace and Dispose of Ashes',
     description: 'How to clean out a fireplace: let ashes cool, leave an inch, scoop the rest into a lidded metal can, soak them, and keep the can 10 feet from the house.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-out-a-fireplace',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean out a fireplace',
   },
 };

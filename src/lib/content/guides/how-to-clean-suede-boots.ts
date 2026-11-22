@@ -161,7 +161,7 @@ const article: Article = {
     title: 'How to Clean Suede Boots (Salt, Water Marks, Scuffs)',
     description: 'How to clean suede boots: dry them first, brush, erase scuffs, blot salt and water marks with little liquid, air dry away from heat, then re-protect.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-suede-boots',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean suede boots',
   },
 };

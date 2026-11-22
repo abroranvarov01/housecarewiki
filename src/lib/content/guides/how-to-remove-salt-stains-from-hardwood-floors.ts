@@ -155,7 +155,7 @@ const article: Article = {
     title: 'How to Remove Salt Stains from Hardwood Floors',
     description: 'How to remove salt stains from hardwood floors: sweep the abrasive grit, clean with a damp microfiber mop and pH-neutral wood cleaner, dry, and skip vinegar.',
     canonical: 'https://housecarewiki.com/guides/how-to-remove-salt-stains-from-hardwood-floors',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to remove salt stains from hardwood floors',
   },
 };

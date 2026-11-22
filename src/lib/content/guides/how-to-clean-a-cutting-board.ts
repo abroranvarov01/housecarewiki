@@ -145,7 +145,7 @@ const article: Article = {
     title: 'How to Clean a Cutting Board (Wood and Plastic)',
     description: 'How to clean a cutting board: hot soapy water, a weak bleach sanitizer after raw meat, why wood stays out of the dishwasher, and how to oil a wooden board.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-cutting-board',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a cutting board',
   },
 };

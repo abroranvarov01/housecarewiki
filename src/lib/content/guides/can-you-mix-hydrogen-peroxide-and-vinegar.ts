@@ -162,7 +162,7 @@ const article: Article = {
     title: 'Can You Mix Hydrogen Peroxide and Vinegar? Not Together',
     description: 'Can you mix hydrogen peroxide and vinegar? Not in one bottle: they can form irritating peracetic acid. How to use them one after the other and stay safe.',
     canonical: 'https://housecarewiki.com/guides/can-you-mix-hydrogen-peroxide-and-vinegar',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'can you mix hydrogen peroxide and vinegar',
   },
 };

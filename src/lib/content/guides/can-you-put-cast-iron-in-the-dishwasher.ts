@@ -164,7 +164,7 @@ const article: Article = {
     title: 'Can You Put Cast Iron in the Dishwasher? (And the Fix)',
     description: 'Can you put cast iron in the dishwasher? Not bare cast iron: it strips seasoning and causes rust. Enameled differs. How to fix a pan that went through.',
     canonical: 'https://housecarewiki.com/guides/can-you-put-cast-iron-in-the-dishwasher',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'can you put cast iron in the dishwasher',
   },
 };

@@ -171,7 +171,7 @@ const article: Article = {
     title: 'How to Clean a Wool Coat: Brush, Spot Clean, Steam',
     description: 'How to clean a wool coat: brush it after wearing, blot stains from the edge in, steam out wrinkles, dry clean once a season, and store it sealed from moths.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-wool-coat',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a wool coat',
   },
 };

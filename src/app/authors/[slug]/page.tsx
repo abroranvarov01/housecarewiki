@@ -71,12 +71,32 @@ export default function AuthorProfilePage({
           <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: author.name }]} />
           <div className="mt-8 grid gap-8 lg:grid-cols-12">
             <div className="lg:col-span-7">
+              {author.kind !== 'team' && (
+                <img
+                  src={author.avatar}
+                  alt={`Photo of ${author.name}`}
+                  width={96}
+                  height={96}
+                  className="mb-5 h-24 w-24 rounded-full object-cover"
+                />
+              )}
               <Kicker tone="accent">{author.kind === 'team' ? 'The byline' : 'Author'}</Kicker>
               <h1 className="mt-3 font-display text-[2.5rem] font-bold leading-[1.04] tracking-[-0.025em] text-ink sm:text-[3.5rem]">
                 {author.name}
               </h1>
               <p className="kicker mt-3 text-ink-muted">{author.role}</p>
               <p className="mt-5 max-w-prose text-[1.0625rem] leading-relaxed text-ink-secondary">{author.bio}</p>
+              {author.sameAs && author.sameAs.length > 0 && (
+                <ul className="mt-4 flex flex-wrap gap-x-6 text-sm font-semibold">
+                  {author.sameAs.map((url) => (
+                    <li key={url}>
+                      <a href={url} rel="me noopener" target="_blank" className="link inline-flex min-h-[44px] items-center">
+                        {new URL(url).hostname.replace(/^www\./, '')}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
 
             {author.credentials.length > 0 && (

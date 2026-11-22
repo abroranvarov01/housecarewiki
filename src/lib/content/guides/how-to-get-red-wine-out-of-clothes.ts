@@ -144,7 +144,7 @@ const article: Article = {
     title: 'How to Get Red Wine Out of Clothes (Even Old Stains)',
     description: 'How to get red wine out of clothes: blot, flush with cold water from the back, pretreat with liquid detergent, soak in oxygen bleach and skip the dryer.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-red-wine-out-of-clothes',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to get red wine out of clothes',
   },
 };

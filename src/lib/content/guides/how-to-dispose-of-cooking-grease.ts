@@ -171,7 +171,7 @@ const article: Article = {
     title: 'How to Dispose of Cooking Grease (and Fryer Oil)',
     description: 'How to dispose of cooking grease: cool it, seal it in a can or jar and trash it, or recycle fryer oil. Why hot water, soap and the disposal still clog drains.',
     canonical: 'https://housecarewiki.com/guides/how-to-dispose-of-cooking-grease',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to dispose of cooking grease',
   },
 };

@@ -133,7 +133,7 @@ const article: Article = {
     title: 'Clean Stainless Steel Appliances Without Streaks',
     description: 'Clean stainless steel appliances without streaks: mild soap, wipe with the grain, rinse and buff dry. Plus what to avoid on fingerprint-resistant finishes.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-stainless-steel-appliances-without-streaks',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean stainless steel appliances without streaks',
   },
 };

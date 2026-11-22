@@ -176,7 +176,7 @@ const article: Article = {
     title: 'How to Clean Air Vents (Registers, Returns and Ducts)',
     description: 'How to clean air vents: vacuum registers and return grilles, wash the covers, dry them, check the filter, and when duct cleaning is or is not needed.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-air-vents',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean air vents',
   },
 };

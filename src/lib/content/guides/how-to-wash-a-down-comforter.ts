@@ -156,7 +156,7 @@ const article: Article = {
     title: 'How to Wash a Down Comforter (Without Ruining It)',
     description: 'How to wash a down comforter: check the label, use a big front-loader on gentle, rinse twice and tumble dry with dryer balls until it is completely dry.',
     canonical: 'https://housecarewiki.com/guides/how-to-wash-a-down-comforter',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to wash a down comforter',
   },
 };

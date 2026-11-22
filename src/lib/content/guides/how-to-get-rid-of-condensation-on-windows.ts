@@ -161,7 +161,7 @@ const article: Article = {
     title: 'How to Get Rid of Condensation on Windows (Inside)',
     description: 'How to get rid of condensation on windows in winter: lower indoor humidity as it gets colder, vent fans outside, warm the glass and dry wet sills fast.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-rid-of-condensation-on-windows',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to get rid of condensation on windows',
   },
 };

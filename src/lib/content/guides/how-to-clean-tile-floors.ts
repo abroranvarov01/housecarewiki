@@ -144,7 +144,7 @@ const article: Article = {
     title: 'How to Clean Tile Floors Without Residue',
     description: 'How to clean tile floors: sweep, damp mop with a mild tile-safe cleaner, rinse and dry. Why oil soaps, wax and no-rinse cleaners leave residue on ceramic tile.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-tile-floors',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean tile floors',
   },
 };

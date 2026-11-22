@@ -64,7 +64,8 @@ const SURFACE_OPTIONS = [
 export default function HomePage() {
   const store = readStore();
   const published = store.articles.filter((a) => a.status === 'Published');
-  const guides = published.filter((a) => a.routeType === 'guides');
+  // Only indexable guides are promoted here, so the homepage's links and ItemList point at pages Google may rank.
+  const guides = published.filter((a) => a.routeType === 'guides' && a.seo.indexable);
   const buyingGuides = published.filter((a) => a.routeType === 'best');
   const lead = guides.find((g) => g.slug === store.config.featuredGuideSlug) || guides[0];
   const moreGuides = guides.filter((g) => g.slug !== lead?.slug);

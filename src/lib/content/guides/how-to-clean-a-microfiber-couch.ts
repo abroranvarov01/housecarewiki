@@ -161,7 +161,7 @@ const article: Article = {
     title: 'How to Clean a Microfiber Couch (W, S and X Codes)',
     description: 'How to clean a microfiber couch: read the W, S or X code, vacuum, pretest, use water-based cleaner or rubbing alcohol as the code allows, blot, then brush.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-microfiber-couch',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a microfiber couch',
   },
 };

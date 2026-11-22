@@ -153,7 +153,7 @@ const article: Article = {
     title: 'How to Clean a French Press (Plunger, Screen, Glass)',
     description: 'How to clean a French press: grounds in the trash or compost, plunger taken apart, warm soapy water, top-rack dishwasher only if allowed, no cracked glass.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-french-press',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a french press',
   },
 };

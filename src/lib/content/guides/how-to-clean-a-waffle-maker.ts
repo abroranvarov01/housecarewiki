@@ -153,7 +153,7 @@ const article: Article = {
     title: 'How to Clean a Waffle Maker (Plates, Baked-On Batter)',
     description: 'How to clean a waffle maker: unplug and cool, brush out crumbs, wipe plates with a damp soapy cloth, loosen baked-on batter with oil, and never immerse it.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-waffle-maker',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a waffle maker',
   },
 };

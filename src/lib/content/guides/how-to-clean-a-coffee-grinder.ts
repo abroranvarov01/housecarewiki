@@ -164,7 +164,7 @@ const article: Article = {
     title: 'How to Clean a Coffee Grinder (Burr or Blade, No Rice)',
     description: 'How to clean a coffee grinder: unplug it, brush the burrs and chute, keep water off the burrs, wash only the hopper, and use cleaning tablets, not rice.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-coffee-grinder',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a coffee grinder',
   },
 };

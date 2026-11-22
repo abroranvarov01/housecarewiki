@@ -141,7 +141,7 @@ const article: Article = {
     title: 'How to Get Gravy Out of Clothes (Before It Sets)',
     description: 'How to get gravy out of clothes: scrape, rub in liquid detergent, wash in the hottest safe water and check before drying. Steps for set-in stains.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-gravy-out-of-clothes',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to get gravy out of clothes',
   },
 };

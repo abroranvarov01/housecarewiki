@@ -145,7 +145,7 @@ const article: Article = {
     title: 'How to Unclog a Bathroom Sink (No Chemicals)',
     description: 'How to unclog a bathroom sink: pull the pop-up stopper and clear the hair, plug the overflow and plunge, then clean the trap. Why to skip chemical cleaners.',
     canonical: 'https://housecarewiki.com/guides/how-to-unclog-a-bathroom-sink',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to unclog a bathroom sink',
   },
 };

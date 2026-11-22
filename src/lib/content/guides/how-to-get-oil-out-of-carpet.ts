@@ -141,7 +141,7 @@ const article: Article = {
     title: 'How to Get Oil Out of Carpet: Cooking and Motor Oil',
     description: 'How to get oil out of carpet: blot, lift it with a dry-cleaning solvent on a white cloth, then a weak dish-detergent rinse. Works on cooking oil and motor oil.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-oil-out-of-carpet',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to get oil out of carpet',
   },
 };

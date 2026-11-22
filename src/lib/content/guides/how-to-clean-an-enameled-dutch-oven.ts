@@ -139,7 +139,7 @@ const article: Article = {
     title: 'How to Clean an Enameled Dutch Oven (Stains, Burns)',
     description: 'How to clean an enameled Dutch oven: cool it, wash with warm soapy water, boil baking soda for burnt food, use an enamel cleaner on stains, and dry the rim.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-an-enameled-dutch-oven',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean an enameled dutch oven',
   },
 };

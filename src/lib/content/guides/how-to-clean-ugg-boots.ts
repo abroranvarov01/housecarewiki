@@ -148,7 +148,7 @@ const article: Article = {
     title: 'How to Clean UGG Boots (Sheepskin and Salt Stains)',
     description: 'How to clean UGG boots by hand: wet with cold water, scrub gently with diluted cleaner, rinse and air dry stuffed with paper. Salt stain and waterproofing tips.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-ugg-boots',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean ugg boots',
   },
 };

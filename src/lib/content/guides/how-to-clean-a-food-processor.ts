@@ -147,7 +147,7 @@ const article: Article = {
     title: 'How to Clean a Food Processor (Blades, Bowl, Base)',
     description: 'How to clean a food processor: unplug, take it apart, top rack or hand wash per your maker, handle blades by the hub, wipe the base and never submerge it.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-food-processor',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a food processor',
   },
 };

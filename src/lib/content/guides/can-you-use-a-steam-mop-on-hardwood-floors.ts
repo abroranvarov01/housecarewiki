@@ -154,7 +154,7 @@ const article: Article = {
     title: 'Can You Use a Steam Mop on Hardwood Floors?',
     description: 'Can you use a steam mop on hardwood floors? No: the NWFA, Bona, Shaw and Bruce say steam damages wood and can void the warranty. How to mop hardwood safely.',
     canonical: 'https://housecarewiki.com/guides/can-you-use-a-steam-mop-on-hardwood-floors',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'can you use a steam mop on hardwood floors',
   },
 };

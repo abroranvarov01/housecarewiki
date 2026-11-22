@@ -143,7 +143,7 @@ const article: Article = {
     title: 'How to Unclog a Toilet Without a Plunger',
     description: 'How to unclog a toilet without a plunger: stop the overflow, use dish soap and hot (not boiling) water or a toilet auger, and skip chemical drain cleaners.',
     canonical: 'https://housecarewiki.com/guides/how-to-unclog-a-toilet-without-a-plunger',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to unclog a toilet without a plunger',
   },
 };

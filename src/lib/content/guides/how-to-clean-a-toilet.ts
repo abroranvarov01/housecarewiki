@@ -149,7 +149,7 @@ const article: Article = {
     title: 'How to Clean a Toilet: Bowl, Rim, Seat and Base',
     description: 'How to clean a toilet step by step: coat under the rim, scrub, wait, flush, wipe the seat and base, and shift hard-water rings without mixing bleach and acids.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-toilet',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a toilet',
   },
 };

@@ -171,7 +171,7 @@ const article: Article = {
     title: 'How to Wash an Electric Blanket Safely (Sunbeam Steps)',
     description: 'How to wash an electric blanket: unplug and detach the controller, wash briefly in cold water on gentle, skip bleach and dry cleaning, and dry fully before use.',
     canonical: 'https://housecarewiki.com/guides/how-to-wash-an-electric-blanket',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to wash an electric blanket',
   },
 };

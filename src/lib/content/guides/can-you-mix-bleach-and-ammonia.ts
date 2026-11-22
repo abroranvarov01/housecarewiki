@@ -152,7 +152,7 @@ const article: Article = {
     title: 'Can You Mix Bleach and Ammonia? No, Here Is Why',
     description: 'Can you mix bleach and ammonia? No. Together they release chloramine gas. Symptoms, what to do if you mixed them, hidden ammonia and how to clean safely.',
     canonical: 'https://housecarewiki.com/guides/can-you-mix-bleach-and-ammonia',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'can you mix bleach and ammonia',
   },
 };

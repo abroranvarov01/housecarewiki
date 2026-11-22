@@ -156,7 +156,7 @@ const article: Article = {
     title: 'Can You Mix Bleach and Rubbing Alcohol? No, Here Is Why',
     description: 'Can you mix bleach and rubbing alcohol? No. Together they can create chloroform. Symptoms, what to do if you mixed them and how to use each one safely.',
     canonical: 'https://housecarewiki.com/guides/can-you-mix-bleach-and-rubbing-alcohol',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'can you mix bleach and rubbing alcohol',
   },
 };

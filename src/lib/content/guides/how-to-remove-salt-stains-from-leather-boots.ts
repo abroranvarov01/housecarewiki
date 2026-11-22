@@ -145,7 +145,7 @@ const article: Article = {
     title: 'How to Remove Salt Stains from Leather Boots (Vinegar)',
     description: 'How to remove salt stains from leather boots: brush off the salt, wipe with 1 part vinegar to 2 parts water, air-dry away from heat, then condition and protect.',
     canonical: 'https://housecarewiki.com/guides/how-to-remove-salt-stains-from-leather-boots',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to remove salt stains from leather boots',
   },
 };

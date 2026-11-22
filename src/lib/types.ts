@@ -34,6 +34,8 @@ export interface Author {
   bio: string;
   credentials: string[];
   avatar: string;
+  // Public profiles that prove a person byline is a real, findable human (LinkedIn, Instagram, business site).
+  sameAs?: string[];
   articlesCount: number;
   testedProductsCount: number;
 }

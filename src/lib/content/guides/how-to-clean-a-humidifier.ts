@@ -164,7 +164,7 @@ const article: Article = {
     title: 'How to Clean a Humidifier (Vinegar, Daily Care, White Dust)',
     description: 'How to clean a humidifier: empty and dry it daily, descale with white vinegar, disinfect per the manual, and refill with distilled water to stop white dust.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-humidifier',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a humidifier',
   },
 };

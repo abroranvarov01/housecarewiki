@@ -156,7 +156,7 @@ const article: Article = {
     title: 'How to Clean a Meat Thermometer (Probe, Sanitize, Test)',
     description: 'How to clean a meat thermometer: hot soapy water on the probe stem after every check, no soaking digital units, sanitize, dry, then test it in ice water.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-meat-thermometer',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a meat thermometer',
   },
 };

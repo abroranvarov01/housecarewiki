@@ -168,7 +168,7 @@ const article: Article = {
     title: 'How to Wash a Mattress Protector (Waterproof Too)',
     description: 'How to wash a mattress protector: cold or warm water, mild detergent, no bleach or fabric softener, low dryer heat, no ironing and fully dry before reuse.',
     canonical: 'https://housecarewiki.com/guides/how-to-wash-a-mattress-protector',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to wash a mattress protector',
   },
 };

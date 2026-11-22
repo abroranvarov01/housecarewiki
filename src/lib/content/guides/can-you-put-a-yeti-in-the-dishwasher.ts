@@ -145,7 +145,7 @@ const article: Article = {
     title: 'Can You Put a YETI in the Dishwasher? (Lids, Gaskets)',
     description: 'Yes, YETI says Rambler tumblers, bottles, lids and caps are dishwasher safe. Where to load each part, what not to use, and why coolers are different.',
     canonical: 'https://housecarewiki.com/guides/can-you-put-a-yeti-in-the-dishwasher',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'can you put a yeti in the dishwasher',
   },
 };

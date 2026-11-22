@@ -158,7 +158,7 @@ const article: Article = {
     title: 'How to Clean a Stanley Cup (Lid, Straw and Stains)',
     description: 'How to clean a Stanley cup: take apart the lid and straw, check if it is dishwasher safe, brush the straw, lift coffee stains with baking soda, no bleach.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-stanley-cup',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a stanley cup',
   },
 };

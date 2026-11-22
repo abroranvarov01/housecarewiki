@@ -156,7 +156,7 @@ const article: Article = {
     title: 'How to Clean a Leather Couch (By Leather Type)',
     description: 'How to clean a leather couch: know the leather type, dust and vacuum, wipe with distilled water, blot spills, test any cleaner, and keep it from sun and heat.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-leather-couch',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a leather couch',
   },
 };

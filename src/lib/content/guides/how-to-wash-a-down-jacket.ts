@@ -152,7 +152,7 @@ const article: Article = {
     title: 'How to Wash a Down Jacket (Washer and Dryer Guide)',
     description: 'How to wash a down jacket: zip it, use a front-loader and a down cleaner, rinse twice, then tumble dry on low with dryer balls until no clumps remain.',
     canonical: 'https://housecarewiki.com/guides/how-to-wash-a-down-jacket',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to wash a down jacket',
   },
 };

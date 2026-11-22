@@ -165,7 +165,7 @@ const article: Article = {
     title: 'How to Clean a Carbon Steel Pan (Rust, Stuck Food)',
     description: 'How to clean a carbon steel pan: hot water and little or no soap, simmer off stuck food, dry it on the burner, oil it thinly, and scrub off rust to re-season.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-carbon-steel-pan',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a carbon steel pan',
   },
 };

@@ -144,7 +144,7 @@ const article: Article = {
     title: 'How to Clean a Roasting Pan (Burnt-On Drippings)',
     description: 'How to clean a roasting pan: cool it, pour off the fat, soak, then boil water and vinegar or use Bar Keepers Friend on burnt drippings. Nonstick and rack tips.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-roasting-pan',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean a roasting pan',
   },
 };

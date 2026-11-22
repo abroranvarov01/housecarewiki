@@ -129,7 +129,7 @@ const article: Article = {
     title: 'How to Get Salt Stains Out of Carpet (Ice Melt Too)',
     description: 'How to get salt stains out of carpet: vacuum the dry salt, blot with a vinegar or dish detergent solution, rinse well so it does not come back, and blot dry.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-salt-stains-out-of-carpet',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to get salt stains out of carpet',
   },
 };

@@ -153,7 +153,7 @@ const article: Article = {
     title: 'How to Clean Fireplace Glass (Gas and Wood Stove)',
     description: 'How to clean fireplace glass: let it cool, use non-ammonia cleaner on gas units or damp newspaper and ash on wood stoves. White film and safety tips.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-fireplace-glass',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean fireplace glass',
   },
 };

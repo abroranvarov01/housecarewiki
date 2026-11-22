@@ -160,7 +160,7 @@ const article: Article = {
     title: 'How to Get Wax Out of a Candle Jar (Freezer, Hot Water)',
     description: 'How to get wax out of a candle jar: freeze it overnight, pry the wax out with a butter knife, melt the rest with hot water in a pre-warmed jar, then wash.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-wax-out-of-a-candle-jar',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to get wax out of a candle jar',
   },
 };

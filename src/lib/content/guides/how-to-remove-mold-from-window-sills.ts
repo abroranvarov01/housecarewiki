@@ -172,7 +172,7 @@ const article: Article = {
     title: 'How to Remove Mold from Window Sills and Keep It Away',
     description: 'How to remove mold from window sills: wear an N95, gloves and goggles, scrub with detergent and water, dry it fully, and cut condensation so it stays gone.',
     canonical: 'https://housecarewiki.com/guides/how-to-remove-mold-from-window-sills',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to remove mold from window sills',
   },
 };

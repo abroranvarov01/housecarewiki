@@ -162,7 +162,7 @@ const article: Article = {
     title: 'How to Wash Flannel Sheets (Cold, Gentle, Low Heat)',
     description: 'How to wash flannel sheets: cold water, gentle cycle, light detergent, no softener or chlorine bleach, no towels in the load, then dry low or on the line.',
     canonical: 'https://housecarewiki.com/guides/how-to-wash-flannel-sheets',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to wash flannel sheets',
   },
 };

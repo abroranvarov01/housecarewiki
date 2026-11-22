@@ -152,7 +152,7 @@ const article: Article = {
     title: 'How to Get Candle Wax Off Wood (Ice, Hair Dryer)',
     description: 'How to get candle wax off wood: harden it with ice, lift it with a plastic scraper along the grain, soften the rest with a hair dryer, and buff off the haze.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-candle-wax-off-wood',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to get candle wax off wood',
   },
 };

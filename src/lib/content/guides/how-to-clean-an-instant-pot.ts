@@ -144,7 +144,7 @@ const article: Article = {
     title: 'How to Clean an Instant Pot (Sealing Ring, Lid, Base)',
     description: 'How to clean an Instant Pot: wash the inner pot and lid parts, remove the sealing ring and anti-block shield, wipe the base dry, and clear odors with vinegar.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-an-instant-pot',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to clean an instant pot',
   },
 };

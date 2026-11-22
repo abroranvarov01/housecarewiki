@@ -170,7 +170,7 @@ const article: Article = {
     title: 'How to Wash a Weighted Blanket (Weight Limits, Drying)',
     description: 'How to wash a weighted blanket: check the label and weight, wash alone in cold water on gentle, use a commercial washer for heavy ones, and dry on low or flat.',
     canonical: 'https://housecarewiki.com/guides/how-to-wash-a-weighted-blanket',
-    indexable: true,
+    indexable: false,
     focusKeyword: 'how to wash a weighted blanket',
   },
 };
