@@ -53,6 +53,8 @@ export const metadata: Metadata = {
   },
   formatDetection: { telephone: false, email: false, address: false },
   category: 'home & garden',
+  // Pinterest website claim (pinterest.com/housecarewiki).
+  verification: { other: { 'p:domain_verify': 'eb58abe0bfa9ead2b11f61daaeccd36d' } },
   openGraph: {
     type: 'website',
     locale: SITE.ogLocale,
