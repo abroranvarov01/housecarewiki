@@ -95,7 +95,8 @@ export default function HomePage() {
           <img
             src="/images/hero-dog-coffee.webp"
             srcSet={imageSrcSet('/images/hero-dog-coffee.webp')}
-            sizes="(min-width: 1024px) 68vw, 1px"
+            // Same candidate as the mobile photo below on small screens, so phones make one high-priority request.
+            sizes="(min-width: 1024px) 68vw, 100vw"
             alt=""
             loading="eager"
             decoding="async"
@@ -181,6 +182,7 @@ export default function HomePage() {
               alt="A golden retriever lying on a cream carpet next to a tipped-over coffee mug and a fresh spill"
               loading="eager"
               decoding="async"
+              fetchPriority="high"
               className="absolute inset-0 h-full w-full object-cover object-[80%_center]"
             />
           </div>
