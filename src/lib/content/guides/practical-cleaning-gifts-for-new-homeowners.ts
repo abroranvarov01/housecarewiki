@@ -20,8 +20,8 @@ const article: Article = {
   readingTime: '8 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-organization.webp',
-  heroImageAlt: 'Sunlit pantry with glass storage jars and woven baskets on wooden shelves, a paper shopping bag, a small leaf-print box and a striped towel on the counter',
+  heroImage: '/images/g-practical-cleaning-gifts-for-new-homeowners.webp',
+  heroImageAlt: 'A hand packs a woven gift basket with rolled microfiber cloths, a scrub brush, a lint roller, a handheld vacuum and a tea towel, a dog asleep in its bed behind',
   safetyWarnings: [
     'Never mix bleach with ammonia or with acids such as vinegar. Bleach and ammonia form chloramine gas, and bleach and acids release chlorine gas. Leave any homemade "mix this" cleaner recipe out of a gift.',
     'Do not put hydrogen peroxide and vinegar in the same bottle. Mixed in one container they form peracetic acid, which is corrosive.',
