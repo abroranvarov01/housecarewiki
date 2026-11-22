@@ -9,7 +9,7 @@ function FooterColumn({ title, links }: { title: string; links: NavLink[] }) {
   return (
     <div>
       <span className="mb-3 block h-[3px] w-8 rounded-full bg-peach" aria-hidden="true" />
-      <h2 className="kicker mb-2 text-peach">{title}</h2>
+      <h2 className="kicker mb-2 text-peach-light">{title}</h2>
       <ul className="text-[15px]">
         {links.map((l) => (
           <li key={l.href}>
@@ -58,7 +58,7 @@ export function Footer({ nav }: { nav: NavModel }) {
           />
         </div>
 
-        <div className="mt-12 grid gap-4 border-t border-paper/20 pt-6 text-[13px] leading-relaxed text-paper/70 md:grid-cols-[1fr_auto] md:items-end">
+        <div className="mt-12 grid gap-4 border-t border-paper/20 pt-6 text-[13px] leading-relaxed text-paper/80 md:grid-cols-[1fr_auto] md:items-end">
           <div className="max-w-3xl space-y-1.5">
             <p className="font-medium text-paper/90">As an Amazon Associate, HouseCareWiki earns from qualifying purchases.</p>
             <p>

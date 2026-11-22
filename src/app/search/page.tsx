@@ -62,7 +62,7 @@ function ResultRow({
     <li>
       <Link href={href} className="group grid grid-cols-[4.5rem_1fr] gap-4 py-4 sm:grid-cols-[6rem_1fr] sm:gap-5">
         {imageFit === 'cover' ? (
-          <Figure src={image} alt="" ratio="1/1" />
+          <Figure src={image} alt="" ratio="1/1" sizes="6rem" />
         ) : (
           <div className="aspect-square bg-paper-card p-1.5">
             <img src={image} alt="" loading="lazy" decoding="async" className="h-full w-full object-contain" />

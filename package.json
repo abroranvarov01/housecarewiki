@@ -5,13 +5,14 @@
   "description": "HouseCareWiki.com — Practical Home Care Encyclopedia, Independent Product Reviews & Smart Tools (US Edition)",
   "scripts": {
     "dev": "next dev -p 3000",
+    "predev": "node scripts/make-image-variants.cjs",
     "build": "next build",
     "start": "next start -p 3000",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "optimize:images": "node scripts/optimize-images.cjs",
     "validate:content": "node scripts/validate-content.cjs",
-    "prebuild": "npm run validate:content",
+    "prebuild": "npm run validate:content && node scripts/make-image-variants.cjs",
     "indexnow": "node scripts/indexnow.cjs"
   },
   "dependencies": {

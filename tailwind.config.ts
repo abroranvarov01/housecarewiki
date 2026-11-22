@@ -46,6 +46,8 @@ const config: Config = {
           DEFAULT: "#F6B996",
           deep: "#EE9E74",
           soft: "#FDE7DA",
+          // Peach as small text on teal bands (5:1); plain peach is 4.5:1 there and fails AA for small caps.
+          light: "#F8C6A8",
         },
         // Deep teal: primary buttons, footer and tool bands. Cream text on teal is 7.2:1.
         teal: {

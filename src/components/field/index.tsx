@@ -1,5 +1,6 @@
 // Shared editorial building blocks for the "Warm Editorial Home Guide" design system.
 // Server components only (no client JS). Page-specific layouts compose these instead of re-styling cards.
+import { imageSrcSet } from '@/lib/responsive-image';
 import React from 'react';
 import Link from 'next/link';
 import { AlertTriangle, ArrowRight, ArrowUpRight, ChevronRight, Info, Plus } from 'lucide-react';
@@ -368,6 +369,7 @@ export function Figure({
       <div className="relative overflow-hidden rounded-xl bg-paper-deep" style={{ aspectRatio: ratio }}>
         <img
           src={src}
+          srcSet={imageSrcSet(src)}
           alt={alt}
           sizes={sizes}
           loading={priority ? 'eager' : 'lazy'}

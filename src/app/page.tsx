@@ -8,6 +8,7 @@ import { TOOL_LINKS } from '@/lib/navigation';
 import { EditorScore } from '@/components/ui/Badges';
 import { JsonLd } from '@/components/JsonLd';
 import { graph, itemListSchema, webPageSchema } from '@/lib/schema';
+import { imageSrcSet } from '@/lib/responsive-image';
 import {
   ButtonLink,
   Container,
@@ -93,6 +94,8 @@ export default function HomePage() {
         <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[68%] lg:block" aria-hidden="true">
           <img
             src="/images/hero-dog-coffee.webp"
+            srcSet={imageSrcSet('/images/hero-dog-coffee.webp')}
+            sizes="(min-width: 1024px) 68vw, 1px"
             alt=""
             loading="eager"
             decoding="async"
@@ -173,6 +176,8 @@ export default function HomePage() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-paper-deep sm:aspect-[16/9]">
             <img
               src="/images/hero-dog-coffee.webp"
+              srcSet={imageSrcSet('/images/hero-dog-coffee.webp')}
+              sizes="100vw"
               alt="A golden retriever lying on a cream carpet next to a tipped-over coffee mug and a fresh spill"
               loading="eager"
               decoding="async"
@@ -197,6 +202,8 @@ export default function HomePage() {
                 >
                   <img
                     src={room.cardImage}
+                    srcSet={imageSrcSet(room.cardImage)}
+                    sizes="(min-width: 640px) 33vw, 64vw"
                     alt=""
                     loading="lazy"
                     decoding="async"
@@ -248,6 +255,8 @@ export default function HomePage() {
               <div className="relative min-h-[16rem] lg:col-span-6 lg:min-h-full">
                 <img
                   src="/images/featured-coffee-sofa.webp"
+                  srcSet={imageSrcSet('/images/featured-coffee-sofa.webp')}
+                  sizes="(min-width: 1024px) 50vw, 100vw"
                   alt="Hand blotting a coffee stain on a beige fabric sofa cushion with a folded white cloth, a bowl of water beside it"
                   loading="lazy"
                   decoding="async"
@@ -262,7 +271,7 @@ export default function HomePage() {
               {moreGuides.slice(0, 8).map((g) => (
                 <li key={g.id} className="w-[78%] shrink-0 snap-start sm:w-auto">
                   <Link href={articleHref(g)} className="group block">
-                    <Figure src={g.heroImage} alt="" ratio="4/3" className="[&>div]:rounded-2xl" />
+                    <Figure src={g.heroImage} alt="" ratio="4/3" className="[&>div]:rounded-2xl" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 78vw" />
                     <span className="mt-3 block kicker text-ink-muted">{articleMeta(g)}</span>
                     <span className="mt-1 block font-display text-[1.25rem] font-bold leading-snug tracking-[-0.01em] text-ink">
                       <span className="hover-title">{g.title}</span>
@@ -286,7 +295,7 @@ export default function HomePage() {
         <Container>
           <div className="grid gap-8 rounded-3xl bg-teal px-5 py-9 text-paper sm:px-10 sm:py-14 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-5">
-              <p className="kicker text-peach">Stain Solution Finder</p>
+              <p className="kicker text-peach-light">Stain Solution Finder</p>
               <h2 id="finder-heading" className="mt-2 font-display text-[2rem] font-bold leading-[1.05] tracking-[-0.025em] text-paper sm:text-[2.75rem]">
                 Spilled something? Let&apos;s sort it out.
               </h2>
@@ -445,12 +454,11 @@ export default function HomePage() {
                   ['Sources on the page', 'Guides cite the care standards and manufacturer instructions behind each method.'],
                   ['Affiliate links, disclosed', 'Amazon pays us a commission on some links. Brands can’t buy placement or a better rating.'],
                 ].map(([term, desc]) => (
-                  <div key={term} className="grid grid-cols-[0.75rem_1fr] gap-3">
-                    <span className="mt-2 h-2 w-2 rounded-full bg-coral" aria-hidden="true" />
-                    <div>
-                      <dt className="font-semibold text-ink">{term}</dt>
-                      <dd className="mt-0.5 text-[15px] leading-relaxed text-ink-secondary">{desc}</dd>
-                    </div>
+                  <div key={term} className="relative pl-6">
+                    <dt className="font-semibold text-ink before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-coral">
+                      {term}
+                    </dt>
+                    <dd className="mt-0.5 text-[15px] leading-relaxed text-ink-secondary">{desc}</dd>
                   </div>
                 ))}
               </dl>
