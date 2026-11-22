@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing a stainless steel stovetop surround with a yellow and green sponge beside a gas burner, next to a speckled beige stone countertop with a potted herb and a dish rack',
+  heroImage: '/images/g-can-you-put-a-yeti-in-the-dishwasher.webp',
+  heroImageAlt: 'A hand rinses an insulated tumbler at a sink, with its lid, straw and gasket laid out on a dish rack.',
   safetyWarnings: [
     'Do not use bleach or abrasive cleaners on Rambler drinkware. YETI\'s drinkware care pages rule both out.',
     'Do not microwave YETI stainless steel products. YETI warns that fire or personal injury can occur.',

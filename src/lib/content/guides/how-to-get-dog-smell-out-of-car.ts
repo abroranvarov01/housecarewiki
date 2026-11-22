@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-pet-roller.webp',
-  heroImageAlt: 'Hand pulling a lint roller across a grey woven fabric seat covered in light pet hair, leaving a clean stripe behind it',
+  heroImage: '/images/g-how-to-get-dog-smell-out-of-car.webp',
+  heroImageAlt: 'A hand vacuums dog hair from the seam of a fabric back seat in a car with the door open, with mats and a cleaning bucket on the driveway.',
   safetyWarnings: [
     'Use only cleaners and procedures your owner\'s manual recommends for your seats. Kia warns that other products can change the fabric\'s appearance and reduce its fire-resistant properties.',
     'Do not steam clean urine spots. Humane World for Animals warns the heat can permanently set the stain and odor by bonding the protein into man-made fibers.',

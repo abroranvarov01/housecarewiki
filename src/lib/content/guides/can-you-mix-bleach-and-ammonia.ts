@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Round white vessel sink with a brushed steel faucet on a wooden vanity, next to a spray bottle, a folded grey cloth and a eucalyptus sprig, with a glass shower and towel ladder behind',
+  heroImage: '/images/g-can-you-mix-bleach-and-ammonia.webp',
+  heroImageAlt: 'Two capped cleaner bottles sit on separate shelves of a caddy while a gloved hand wipes tile beside an open window.',
   safetyWarnings: [
     'Never mix bleach with ammonia or any product that contains it. Washington State Department of Health says the mixture produces toxic gases called chloramines.',
     'Watch for hidden ammonia. Washington State Department of Health says ammonia is found in some glass and window cleaners, some paints and in urine, and Poison Control names glass cleaners as the most common household cleaner with ammonia.',

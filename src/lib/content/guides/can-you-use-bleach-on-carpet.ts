@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige looped carpet, with a glass bowl of soapy water beside it and a pair of muddy hiking boots on the floor in the background',
+  heroImage: '/images/g-can-you-use-bleach-on-carpet.webp',
+  heroImageAlt: 'A hand blots a small spill on beige carpet with a white cloth, beside a bowl of cold water and stacked white towels.',
   safetyWarnings: [
     'Do not use chlorine bleach on carpet, diluted or not. The University of Kentucky Cooperative Extension lists all household bleaches among the chemicals that change or destroy carpet dye, and says the color usually cannot be restored.',
     'Never use bleach on wool carpet. Clorox says you absolutely cannot, and a carpet-cleaning supplier warns that chlorine bleach dissolves wool and damages cotton.',

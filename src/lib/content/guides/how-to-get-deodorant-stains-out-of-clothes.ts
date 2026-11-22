@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Hand scrubbing a discolored collar on a white button-down shirt with a wooden-handled bristle brush on a speckled countertop, with a pile of mixed laundry and a white basket behind it',
+  heroImage: '/images/g-how-to-get-deodorant-stains-out-of-clothes.webp',
+  heroImageAlt: 'A hand rubs white deodorant marks off a black t-shirt with a clean sock, with a deodorant stick, nylon stocking and detergent beside it.',
   safetyWarnings: [
     'Never iron or tumble-dry a garment with a deodorant stain still on it. Heat sets the stain, and the University of Georgia Extension warns the combination of antiperspirant chemicals and heat can ruin many fabrics.',
     'Do not use chlorine bleach on dark or colored clothes unless the care label allows it, and never mix bleach with ammonia, vinegar or other cleaners.',

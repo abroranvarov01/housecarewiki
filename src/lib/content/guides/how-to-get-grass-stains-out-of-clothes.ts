@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  heroImage: '/images/g-how-to-get-grass-stains-out-of-clothes.webp',
+  heroImageAlt: 'A hand brushes enzyme detergent into green grass stains on white soccer shorts at a laundry sink, with muddy cleats and a stain remover nearby.',
   safetyWarnings: [
     'Do not put the garment in the dryer until the grass stain is completely gone. Dryer heat sets the stain and makes it much harder or impossible to remove.',
     'Rubbing alcohol is flammable and can affect dyes. Test it on a hidden seam first, use it in a well-ventilated room away from flames or heat, and keep it out of reach of children.',

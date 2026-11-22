@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-can-you-put-cast-iron-in-the-dishwasher.webp',
+  heroImageAlt: 'A hand scrubs a seasoned cast iron skillet with a soft brush under running water at a sink, with a towel and oil bottle nearby.',
   safetyWarnings: [
     'Do not put bare cast iron in the dishwasher. Lodge says a dishwasher strips the seasoning and can cause rust, and University of Maine Cooperative Extension says a dishwasher ruins the seasoning and rusts the pan.',
     'Do not leave cast iron soaking in the sink. Lodge calls soaking cast iron in water a recipe for rust, and Field Company says no soaking and no drip-drying.',

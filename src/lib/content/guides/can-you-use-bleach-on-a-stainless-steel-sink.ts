@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand wiping a stainless steel stovetop panel with a yellow and green sponge beside gas burners and food crumbs, with a dish rack and a potted herb on the counter behind',
+  heroImage: '/images/g-can-you-use-bleach-on-a-stainless-steel-sink.webp',
+  heroImageAlt: 'A hand wipes a stainless steel sink with a soft sponge and soapy water along the grain, with dish soap and a cloth nearby.',
   safetyWarnings: [
     'Do not clean a stainless steel sink with bleach or chlorine-based cleaners. Kraus says not to use cleaners containing bleach, ammonia, alcohol or chlorine, and Blanco says not to use bleach containing hypochlorite.',
     'Never mix bleach with vinegar, ammonia or any other cleaner. The CDC warns that mixing bleach with other cleaners can release vapors that are dangerous to breathe.',

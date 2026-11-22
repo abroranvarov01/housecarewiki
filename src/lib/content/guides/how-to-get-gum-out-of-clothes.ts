@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Hand scrubbing a yellowed stain on the collar of a white button-down shirt with a wooden-handled brush, with a pile of laundry and a white basket behind it',
+  heroImage: '/images/g-how-to-get-gum-out-of-clothes.webp',
+  heroImageAlt: 'A hand lifts hardened gum from denim jeans with a plastic spoon while an ice bag cools it, with laundry detergent on the table.',
   safetyWarnings: [
     'Read the care label before you start and do not use any product or method it prohibits. Take dry-clean-only items, such as dry-clean suede, to a professional cleaner and show them where the gum is.',
     'Pretest every stain remover or cleaner on an inside seam or hem first to make sure it does not pull color out of the fabric.',

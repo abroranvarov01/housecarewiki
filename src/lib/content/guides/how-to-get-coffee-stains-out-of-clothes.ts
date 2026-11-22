@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  heroImage: '/images/g-how-to-get-coffee-stains-out-of-clothes.webp',
+  heroImageAlt: 'A hand holds a white shirt inside out under a cold tap so water pushes through a small coffee stain, with detergent on the sink edge.',
   safetyWarnings: [
     'Do not put the garment in the dryer until the coffee stain is completely gone. Dryer heat sets the stain and makes it much harder to remove.',
     'If the coffee contained milk or cream, use only cold water until the wash. Warm or hot water can set protein-based dairy stains.',

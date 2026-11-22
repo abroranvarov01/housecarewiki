@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Round white vessel sink with a brushed steel faucet on a wooden vanity, next to a spray bottle, a folded grey cloth and a eucalyptus sprig, with a glass shower and towel ladder behind',
+  heroImage: '/images/g-can-you-mix-hydrogen-peroxide-and-vinegar.webp',
+  heroImageAlt: 'A hand sprays vinegar onto a cutting board while a separate capped bottle of hydrogen peroxide stays apart on a kitchen counter tray.',
   safetyWarnings: [
     'Never combine hydrogen peroxide and vinegar in one bottle, bucket or mixture. Houston Methodist says doing so can create peracetic acid, which may be toxic and can irritate the throat, lungs, eyes and skin.',
     'Peracetic acid is a serious chemical in concentrated form. The New Jersey Department of Health describes it as highly corrosive, says contact can severely irritate and burn the skin and eyes, and says breathing it can irritate the nose, throat and lungs and cause coughing and shortness of breath.',

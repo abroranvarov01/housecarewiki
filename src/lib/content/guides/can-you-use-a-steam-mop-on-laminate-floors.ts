@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-can-you-use-a-steam-mop-on-laminate-floors.webp',
+  heroImageAlt: 'A hand pushes a barely damp microfiber mop along laminate planks in a living room, with a dry dust mop leaning nearby.',
   safetyWarnings: [
     'Do not use a steam mop or steam cleaner unless the care guide for your exact laminate collection says it is allowed. Mohawk\'s laminate instructions say never to use steam cleaners, and Shaw warns that excess water can cause warping and irreparable damage.',
     'Never pour liquid directly on laminate or use a wet mop that leaves puddles. Apply water or cleaner to the cloth, wring it well, and wipe the floor dry immediately instead of letting it air-dry.',

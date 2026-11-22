@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  heroImage: '/images/g-how-to-clean-a-roasting-pan.webp',
+  heroImageAlt: 'A hand loosens drippings in a roasting pan of hot soapy water with a wooden spatula at a sink, with a scrubber and soap nearby.',
   safetyWarnings: [
     'Let the pan cool before washing. Tramontina warns that putting a hot roasting pan in cold water can warp it.',
     'Do not use steel wool or overly abrasive scrubbers. Made In says they leave permanent scratches on stainless steel, and Le Creuset says no metal or abrasive pads on its nonstick pans.',

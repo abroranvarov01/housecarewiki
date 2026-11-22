@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand cleaning grease and crumbs off a stainless steel gas cooktop with a yellow and green sponge beside black burner grates, with a dish rack and potted basil in the background',
+  heroImage: '/images/g-how-to-clean-a-food-processor.webp',
+  heroImageAlt: 'A hand scrubs a food processor bowl with a small brush and soapy water, with the blade, lid and pusher laid on a towel.',
   safetyWarnings: [
     'Always unplug the food processor before taking parts off, removing food or cleaning. Cuisinart, Breville and KitchenAid all say to unplug it first.',
     'Never put the motor base, power cord or plug in water or any other liquid. Cuisinart warns this protects against the risk of electric shock, and Breville and KitchenAid say never to immerse the base.',

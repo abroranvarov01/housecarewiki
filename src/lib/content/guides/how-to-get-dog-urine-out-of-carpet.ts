@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-pet-hair.webp',
-  heroImageAlt: 'Golden retriever asleep on a beige fabric sofa next to a lint roller and loose tufts of shed fur, with a potted plant on the sunny windowsill behind',
+  heroImage: '/images/g-how-to-get-dog-urine-out-of-carpet.webp',
+  heroImageAlt: 'A hand presses white paper towels onto a small damp spot on beige carpet, with an enzyme cleaner bottle and a cloth beside it.',
   safetyWarnings: [
     'Do not use a steam cleaner or hot water on urine spots: heat can permanently set the stain and odor by bonding the urine proteins into synthetic carpet fibers.',
     'Avoid ammonia-based cleaners and other strong-smelling products. Strong chemical odors can encourage your pet to reinforce the urine scent mark in the same spot.',

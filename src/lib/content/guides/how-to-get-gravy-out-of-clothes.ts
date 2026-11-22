@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '4 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  heroImage: '/images/g-how-to-get-gravy-out-of-clothes.webp',
+  heroImageAlt: 'A hand scrapes excess gravy from a small stain on a cream linen shirt with a spoon, with liquid detergent and a brush beside it.',
   safetyWarnings: [
     'Read the care label first. These steps are for washable fabrics; the University of Kentucky and Texas A&M say Dry Clean Only items belong with a dry cleaner.',
     'Do not put the garment in the dryer or iron it until the stain is completely gone. Texas A&M, New Mexico State and the University of Kentucky all warn that heat sets stains.',

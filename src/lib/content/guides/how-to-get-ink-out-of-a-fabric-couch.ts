@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/ba-sofa-coffee.webp',
-  heroImageAlt: 'Hand holding a folded white cloth beside a small brown liquid stain on beige linen-weave sofa fabric',
+  heroImage: '/images/g-how-to-get-ink-out-of-a-fabric-couch.webp',
+  heroImageAlt: 'A hand blots a small blue ink mark on a beige fabric sofa cushion with a white cloth, while the cleaning tag is shown beneath the cushion.',
   safetyWarnings: [
     'Check the cleaning code before applying anything. Code W fabric should not get solvents, code S fabric should not get water, and code X fabric should only be vacuumed or lightly brushed.',
     'Solvent-based upholstery cleaners are often flammable. Keep open flames away, open windows for ventilation, and follow the product label.',

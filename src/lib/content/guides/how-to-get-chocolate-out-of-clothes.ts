@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and sage green towels on a wooden counter above a front-loading washer, beside a wicker basket, a bottle of liquid detergent and trailing plants',
+  heroImage: '/images/g-how-to-get-chocolate-out-of-clothes.webp',
+  heroImageAlt: 'A hand scrapes a small chocolate smear from a grey t-shirt with a dull knife, with a bowl of cold water and detergent on the table.',
   safetyWarnings: [
     'Do not use hot water for the first rinse. Tide warns hot water can set a chocolate stain; save warm or hot water for the wash itself, and only as the care label allows.',
     'Do not machine dry the garment until the stain is completely gone. Dryer heat makes a leftover stain much harder to remove.',

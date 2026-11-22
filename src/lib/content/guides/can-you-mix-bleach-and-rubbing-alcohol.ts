@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Round white vessel sink with a brushed steel faucet on a wooden vanity, next to a spray bottle, a folded grey cloth and a eucalyptus sprig, with a glass shower and towel ladder behind',
+  heroImage: '/images/g-can-you-mix-bleach-and-rubbing-alcohol.webp',
+  heroImageAlt: 'A bleach bottle and a rubbing alcohol bottle sit at opposite ends of a laundry room shelf, capped, with towels and a bucket between them.',
   safetyWarnings: [
     'Never mix bleach with rubbing alcohol. Clorox says the combination can create chloroform, and Wayne State University says mixing bleach and ethanol forms chloroform, hydrochloric acid and other compounds.',
     'Chloroform fumes affect the brain and body. Clorox links them to dizziness, nausea and unconsciousness, and ATSDR says breathing low to moderate levels for a short time can make you dizzy, tired or give you a headache, while high levels can cause trouble breathing and passing out.',

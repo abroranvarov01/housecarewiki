@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-can-you-put-knives-in-the-dishwasher.webp',
+  heroImageAlt: 'A hand carefully washes a chef\'s knife with a soft sponge and soapy water at a kitchen sink, with a towel and knife block nearby.',
   safetyWarnings: [
     'Do not leave knives in a sink full of soapy water. Shun warns that it is a danger when you reach in, and Wüsthof says not to leave knives soaking in the sink.',
     'Keep your fingers away from the edge while washing. Victorinox suggests holding the blade parallel to the sink so you can see the whole surface, without touching the sharp edge.',

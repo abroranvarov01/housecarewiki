@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand blotting a muddy footprint stain on beige loop carpet with a white towel, next to a glass bowl of soapy water and a pair of muddy boots',
+  heroImage: '/images/g-how-to-get-gum-out-of-carpet.webp',
+  heroImageAlt: 'A hand holds an ice bag against a small wad of gum on grey carpet, with a rounded spoon, white cloth and spot remover bottle beside it.',
   safetyWarnings: [
     'Never pour solvent directly onto the carpet or let it soak into the backing; the Carpet and Rug Institute warns it can damage the latex that holds carpet backings together.',
     'Pretest every spot remover on a hidden area first and check the cloth for color transfer or the carpet for damage. If anything changes, stop and use a different product.',

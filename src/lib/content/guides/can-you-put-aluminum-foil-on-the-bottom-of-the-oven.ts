@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '4 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-kitchen.webp',
-  heroImageAlt: 'Hand scrubbing burnt food residue off a stainless steel gas cooktop with a yellow and green sponge, beside black cast iron burner grates',
+  heroImage: '/images/g-can-you-put-aluminum-foil-on-the-bottom-of-the-oven.webp',
+  heroImageAlt: 'A mitted hand slides a rimmed baking sheet onto the lower oven rack, with the oven floor bare and foil left unused on the counter.',
   safetyWarnings: [
     'Do not line the bottom of an electric oven with foil. GE says it can trap heat or melt and create a shock or fire hazard.',
     'In a gas oven, never cover any slots, holes or passages in the oven bottom. GE warns that blocking airflow may cause carbon monoxide poisoning.',
