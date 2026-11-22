@@ -94,9 +94,6 @@ export default function HomePage() {
         <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[68%] lg:block" aria-hidden="true">
           <img
             src="/images/hero-dog-coffee.webp"
-            srcSet={imageSrcSet('/images/hero-dog-coffee.webp')}
-            // Same candidate as the mobile photo below on small screens, so phones make one high-priority request.
-            sizes="(min-width: 1024px) 68vw, 100vw"
             alt=""
             loading="eager"
             decoding="async"
@@ -172,13 +169,12 @@ export default function HomePage() {
           </p>
         </Container>
 
-        {/* Mobile and tablet: the same scene as a rounded photo under the search. */}
+        {/* Mobile and tablet: the same scene as a rounded photo under the search. It is the mobile LCP image, so no
+            srcset (the original is only ~50 KB; with srcset PageSpeed saw a 2 s render delay and LCP went 2.1 s -> 5.5 s). */}
         <Container className="pb-4 lg:hidden">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-paper-deep sm:aspect-[16/9]">
             <img
               src="/images/hero-dog-coffee.webp"
-              srcSet={imageSrcSet('/images/hero-dog-coffee.webp')}
-              sizes="100vw"
               alt="A golden retriever lying on a cream carpet next to a tipped-over coffee mug and a fresh spill"
               loading="eager"
               decoding="async"
