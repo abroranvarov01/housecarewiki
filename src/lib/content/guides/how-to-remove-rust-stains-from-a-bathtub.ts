@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/bathroom-hero.webp',
-  heroImageAlt: 'Wet white undermount bathroom sink in a speckled stone-look vanity top with a brushed-nickel faucet, a clear spray bottle, a blue-grey cloth, a toothbrush holder and a potted plant in front of a wood-framed mirror',
+  heroImage: '/images/g-how-to-remove-rust-stains-from-a-bathtub.webp',
+  heroImageAlt: 'A hand gently works rust remover paste onto a small orange spot near a bathtub drain with a sponge, with a manual on the rim.',
   safetyWarnings: [
     'Do not use chlorine bleach on rust stains. The University of Georgia Extension warns that chlorine bleach can set rust stains instead of removing them.',
     'Never mix a rust remover with bleach or any other cleaner. Many rust removers are acid-based (oxalic acid is a common ingredient), and bleach mixed with acids or ammonia releases toxic gas. Rinse the tub fully before switching products, and ventilate the bathroom while you work.',

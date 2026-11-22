@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-kitchen.webp',
-  heroImageAlt: 'Hand wiping a spill off a pale marble-look kitchen countertop with a grey towel, beside a coffee mug, lemons and wooden utensils in a sunlit kitchen',
+  heroImage: '/images/g-how-to-get-rid-of-refrigerator-smell.webp',
+  heroImageAlt: 'A hand wipes the inside of an emptied refrigerator with a damp cloth, with an open baking soda box on the shelf and a food cooler on the floor.',
   safetyWarnings: [
     'Unplug the refrigerator or disconnect the power before you clean the interior or check the drain and drain pan, to reduce the risk of electric shock.',
     'Do not use chlorine bleach, scouring cleansers, window sprays, concentrated detergents, flammable fluids or petroleum-based cleaners on the plastic liner, door liner, gaskets or plastic parts. Whirlpool and GE both warn against them, and GE notes that harsh bleach and heavily scented detergents can soak into plastic liners and leave their own smell.',

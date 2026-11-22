@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/ba-shower-glass.webp',
-  heroImageAlt: 'Split view of a frameless glass shower panel with brass rain shower fixtures and beige stone-look wall tile, cloudy and hazy on the left half and clear on the right',
+  heroImage: '/images/g-how-to-remove-hard-water-stains-from-glass-shower-doors.webp',
+  heroImageAlt: 'A hand sprays vinegar solution on a spotty glass shower door while holding a microfiber cloth, with a squeegee hanging on the wall.',
   safetyWarnings: [
     'Keep vinegar and other acidic cleaners off marble, limestone and travertine. Acids etch calcitic stone, so protect a natural stone surround or shower floor and rinse any drips immediately.',
     'Do not spray vinegar onto metal frames, hinges or handles, and do not leave any cleaner soaking on them. Acids can damage metal finishes; apply the solution to a cloth and keep it on the glass.',

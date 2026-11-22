@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Hand scrubbing the yellowed collar band of a white cotton shirt with a wooden bristle brush on a speckled countertop, with a pile of mixed laundry, a plant and a white laundry basket behind',
+  heroImage: '/images/g-how-to-get-sweat-smell-out-of-clothes.webp',
+  heroImageAlt: 'A hand turns a grey athletic shirt inside out beside an open front-loading washer, with a soaking tub and detergent on the table.',
   safetyWarnings: [
     'Never use an oxygen bleach presoak together with chlorine bleach, and do not combine laundry products other than as their labels direct. Work in a ventilated room when soaking or treating clothes with any cleaning product.',
     'Oxygen bleach soak products such as OxiClean are labeled for colorfast fabrics only and not for wool, wool blends, silk, silk blends, leather or anything labeled dry clean only. Read both the product label and the garment care label first.',

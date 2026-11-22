@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-bathroom.webp',
-  heroImageAlt: 'Sunlit bathroom with a round white vessel sink on a wooden vanity, a white spray bottle and grey cloth, a wooden ladder rack with white towels and a glass shower door with water streaks',
+  heroImage: '/images/g-how-to-get-rid-of-sewer-smell-in-bathroom.webp',
+  heroImageAlt: 'A hand pours water from a pitcher into a bathroom floor drain, with a sink, toilet base and small cleaning brush nearby.',
   safetyWarnings: [
     'Sewer gas can contain hydrogen sulfide and methane, which are flammable. If the smell is strong in an enclosed space, leave the building, avoid anything that makes a spark or flame, and call the fire department.',
     'Low levels of hydrogen sulfide can irritate the eyes and airways and cause headaches, dizziness or nausea. Air the room out, and get help promptly if several people in the house feel unwell.',

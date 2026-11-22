@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'A folded white button-up shirt with a brown splash stain resting on folded cream and green towels on a wooden counter above a front-loading washer, beside a wicker basket and a bottle of liquid detergent',
+  heroImage: '/images/g-how-to-remove-grease-stains-from-clothes.webp',
+  heroImageAlt: 'A hand brushes cornstarch off a small grease spot on a light blue shirt, with dish soap, paper towels and a knife on the table.',
   safetyWarnings: [
     'Never put a grease-stained item in the dryer until the stain is completely gone. Dryer heat bakes the oil into the fibers and the stain becomes very hard to remove.',
     'Solvent spot removers (petroleum distillates, naphtha) are toxic and often flammable. Use them in a well-ventilated room away from pilot lights, open flames or sparks, wear gloves, and let the garment air out before washing. Never put a solvent-soaked item in the dryer.',

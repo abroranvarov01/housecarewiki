@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-spin-scrubber.webp',
-  heroImageAlt: 'Hand holding a white electric spin scrubber with a round bristle brush against soapy, spotted light grey shower wall tiles, with a glass door and chrome shower hose at the side',
+  heroImage: '/images/g-how-to-remove-hard-water-stains-from-tile.webp',
+  heroImageAlt: 'A hand scrubs mineral spots on white glazed wall tile with a nylon brush, with two buckets of cleaner and rinse water on the tub edge.',
   safetyWarnings: [
     'Never use acidic cleaners, vinegar or lemon on marble, limestone, travertine or other calcium-based natural stone. The Natural Stone Institute warns that products containing lemon, vinegar or other acids may dull or etch these stones.',
     'Keep acidic lime removers off unsealed or colored cement grout. The Tile Council of North America notes that grout contains cement, which reacts with acids, and CLR lists colored grout (any color other than white) among surfaces to avoid.',

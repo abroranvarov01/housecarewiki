@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-remove-salt-stains-from-hardwood-floors.webp',
+  heroImageAlt: 'A hand pushes a barely damp microfiber mop across hardwood near the entry to lift white salt haze, with a dust mop and cleaner nearby.',
   safetyWarnings: [
     'Remove dry salt grit before you mop. The National Wood Flooring Association warns that salt leaves an abrasive residue that can scratch hardwood, so wiping over loose grit can scratch the finish.',
     'Do not wet mop or flood the floor. Bruce says the mop should be damp, not saturated, and Hartco says never to mop hardwood with plain water; standing water can damage wood.',

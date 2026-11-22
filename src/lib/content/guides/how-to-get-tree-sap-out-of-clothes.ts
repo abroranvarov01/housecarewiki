@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '4 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Hand scrubbing a yellowed stain on the collar of a white button-down shirt with a wooden-handled brush, with a pile of laundry and a white basket behind it',
+  heroImage: '/images/g-how-to-get-tree-sap-out-of-clothes.webp',
+  heroImageAlt: 'A hand dabs a small tree sap spot on a denim jacket sleeve with an alcohol-dampened cotton ball, with a spoon and pine branch nearby.',
   safetyWarnings: [
     'Test rubbing alcohol, hand sanitizer or any solvent on a hidden spot first. Tide warns isopropyl alcohol can damage some fabrics, and Clorox says to check for color change before treating.',
     'Do not put the garment in the dryer until all the sap is gone. Tide says dryer heat will set the stain, and Clorox says to keep it out of a hot dryer.',

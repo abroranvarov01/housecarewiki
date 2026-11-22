@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Hand scrubbing a yellowed stain along the collar of a white button-down shirt with a wooden-handled brush, with a pile of clothes and a white laundry basket in the background',
+  heroImage: '/images/g-how-to-get-rust-stains-out-of-clothes.webp',
+  heroImageAlt: 'A gloved hand applies rust remover to an orange spot on a white shirt hem at a utility sink, with clean water and an open window.',
   safetyWarnings: [
     'Do not use chlorine bleach on rust stains. University of Georgia Extension says chlorine bleach sets rust, and Clorox says bleach can make a rust stain worse.',
     'Fabric rust removers are strong acids. Wear heavy-duty rubber gloves, ventilate the room, follow the label exactly, and rinse the fabric thoroughly as soon as the stain is gone.',

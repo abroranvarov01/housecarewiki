@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-floor-carpet.webp',
-  heroImageAlt: 'White cordless stick vacuum on a beige patterned area rug laid over a honey-toned wood-look floor, beside a linen sofa with a knit throw and a round wooden coffee table in a sunlit living room',
+  heroImage: '/images/g-how-to-get-wax-out-of-a-candle-jar.webp',
+  heroImageAlt: 'A hand pries a frozen disc of wax from a glass candle jar with a butter knife, the jar resting on a folded towel.',
   safetyWarnings: [
     'Do not burn the candle all the way down to empty the jar faster. The National Candle Association says to stop burning when about half an inch of wax remains.',
     'Do not move or handle the jar while the wax is still liquid. The National Candle Association says not to move a candle while its wax is liquid and not to touch or move it until the wax has completely cooled.',

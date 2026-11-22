@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-shower-mold.webp',
-  heroImageAlt: 'Beige tiled shower floor with a round drain seen through a wet glass panel, with dark mold along the frame, a toothbrush and a clear spray bottle on the tiled ledge',
+  heroImage: '/images/g-how-to-remove-mold-from-window-sills.webp',
+  heroImageAlt: 'A gloved hand scrubs a thin line of mold on a white window sill with a brush, with a mask, goggles and towel beside it.',
   safetyWarnings: [
     'Wear protective gear. The EPA recommends gloves, goggles and an N-95 respirator for mold cleanup, and the Minnesota Department of Health adds outer clothing and says to consider hiring a professional if you cannot wear a respirator or are sensitive to mold.',
     'Never mix bleach with ammonia or other cleaners. The CDC warns that this produces a poisonous gas, and the EPA says the mix can produce toxic fumes.',

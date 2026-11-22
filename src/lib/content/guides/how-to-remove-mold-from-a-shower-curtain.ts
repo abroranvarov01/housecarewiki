@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/room-laundry.webp',
-  heroImageAlt: 'Sunlit laundry corner with a white front-load washer under a wooden counter, folded towels and a white shirt with a brown stain, a wicker basket, a bottle of liquid detergent and trailing green plants',
+  heroImage: '/images/g-how-to-remove-mold-from-a-shower-curtain.webp',
+  heroImageAlt: 'A gloved hand rinses a shower curtain liner with small mildew spots in a laundry sink, with a bucket, respirator and goggles nearby.',
   safetyWarnings: [
     'Never mix chlorine bleach with ammonia or with cleaners that contain ammonia; the EPA warns this produces toxic fumes. Do not combine bleach with vinegar or other acids either, and do not add a second stain remover to a bleach wash.',
     'Wear gloves when handling moldy items and bleach solutions. The EPA also recommends an N-95 respirator and goggles without ventilation holes when cleaning mold.',

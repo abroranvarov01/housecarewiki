@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige looped carpet, with a glass bowl of soapy water beside it and a pair of muddy hiking boots on the floor in the background',
+  heroImage: '/images/g-how-to-get-salt-stains-out-of-carpet.webp',
+  heroImageAlt: 'A gloved hand blots a white salt line on beige entryway carpet with a white cloth, with a bowl of solution and a vacuum nearby.',
   safetyWarnings: [
     'Pretest any solution in a hidden area of the carpet first, as the Carpet and Rug Institute advises, to check for color change or damage.',
     'Blot, do not rub. Rubbing can distort the carpet pile; work from the edges toward the center so the stain does not spread.',

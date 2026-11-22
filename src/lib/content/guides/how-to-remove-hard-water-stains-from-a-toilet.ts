@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-bathroom.webp',
-  heroImageAlt: 'Hand wiping a chrome bathroom faucet covered in water droplets and mineral spots with a blue microfiber cloth, above a grey granite-look countertop',
+  heroImage: '/images/g-how-to-remove-hard-water-stains-from-a-toilet.webp',
+  heroImageAlt: 'A gloved hand scrubs a faint mineral ring in a white toilet bowl with an angled brush, with safety glasses and a cleaner bottle on the tank.',
   safetyWarnings: [
     'Never mix an acidic toilet cleaner with bleach. Poison Control warns that an acid toilet bowl cleaner mixed with bleach forms irritating chlorine fumes that can cause serious breathing problems, and Clorox and CLR both say not to combine their acidic products with bleach. Flush the bowl clear of any bleach product before you start.',
     'Wear protective gloves and safety glasses, as Clorox directs for its acidic stain removers, and ventilate the bathroom by opening a window or running the fan.',

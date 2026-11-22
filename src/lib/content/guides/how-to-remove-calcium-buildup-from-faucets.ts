@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/bathroom-hero.webp',
-  heroImageAlt: 'Wet silver-tone widespread faucet with water spots on a speckled stone vanity, next to a clear spray bottle, a folded blue towel, a toothbrush holder and a potted plant',
+  heroImage: '/images/g-how-to-remove-calcium-buildup-from-faucets.webp',
+  heroImageAlt: 'A hand scrubs white mineral crust off a faucet aerator screen with a toothbrush, with parts soaking in vinegar in a small bowl.',
   safetyWarnings: [
     'Never mix vinegar or CLR with bleach or other household cleaners. CLR\'s directions say not to mix it with bleach or other cleaners, and acids combined with bleach release toxic gas. Ventilate the bathroom while you work.',
     'Do not use CLR on brass, copper, aluminum, galvanized metal, natural stone such as marble and granite, or painted, coated or sealed surfaces, and do not leave it on any surface longer than 2 minutes before rinsing. Those limits come from the CLR product page.',

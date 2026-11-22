@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Close-up of a white cotton shirt laid on a speckled countertop, its collar band discolored yellow-brown and being brushed with a small wooden-handled bristle brush, with a plant and mixed laundry in the background',
+  heroImage: '/images/g-how-to-get-sunscreen-stains-out-of-clothes.webp',
+  heroImageAlt: 'A hand scrubs a faint yellow sunscreen smear on a white t-shirt collar with dish soap and a toothbrush, with bottles lined up nearby.',
   safetyWarnings: [
     'Do not use chlorine bleach on orange or rust-colored sunscreen stains. University of Georgia Extension warns that chlorine bleach sets rust stains instead of removing them.',
     'Do not put the garment in the dryer until the stain is completely gone; Tide notes that drying sets sunscreen stains.',

@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-floor-carpet.webp',
-  heroImageAlt: 'Hand pressing a white terry towel onto a dark muddy stain on a beige looped carpet, with a glass bowl of soapy water beside it and a pair of muddy hiking boots on the floor in the background',
+  heroImage: '/images/g-how-to-get-slime-out-of-carpet.webp',
+  heroImageAlt: 'A hand lifts green slime from light grey playroom carpet with a rounded spoon, with a white cloth, soapy water and toys nearby.',
   safetyWarnings: [
     'Pretest every cleaning solution in a hidden spot, such as inside a closet, and check for color transfer or carpet damage before treating the slime.',
     'Use only clear liquid dish detergent, never stronger than 1/4 teaspoon per cup of water. Laundry detergent can contain optical brighteners and automatic dishwasher detergent can contain bleaching agents, and both can change carpet color.',

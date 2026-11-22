@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/hero-carpet-cleaner.webp',
-  heroImageAlt: 'Person kneeling on a beige patterned area rug using the clear upholstery tool of a portable carpet spot cleaner on a brown spill next to a tipped-over white mug, with the machine\'s dirty-water tank visible behind',
+  heroImage: '/images/g-how-to-get-vomit-out-of-carpet.webp',
+  heroImageAlt: 'A gloved hand blots a small damp patch on cream carpet with a paper towel, with a trash bag, wet vacuum and soapy water nearby.',
   safetyWarnings: [
     'Vomit can carry germs. Wear disposable or rubber gloves, bag used paper towels in a plastic trash bag, keep children and pets away, and wash your hands with soap and water when you finish.',
     'Chlorine bleach is for hard surfaces, not carpet: it can permanently lighten carpet. For tile, wood or vinyl around the spot, use an EPA-registered disinfectant labeled for norovirus or the bleach dilution on the product label, and leave it on for at least 5 minutes.',

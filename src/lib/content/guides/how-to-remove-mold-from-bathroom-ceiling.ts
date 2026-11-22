@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-shower-mold.webp',
-  heroImageAlt: 'Black mold spots along the caulk line at the base of a glass shower panel on a beige tile ledge, next to a clear spray bottle and a toothbrush',
+  heroImage: '/images/g-how-to-remove-mold-from-bathroom-ceiling.webp',
+  heroImageAlt: 'A gloved hand scrubs small mold spots from a white bathroom ceiling corner with a sponge, with the window open and the fan on.',
   safetyWarnings: [
     'Overhead cleaning drips onto your face. Wear goggles without ventilation holes, gloves and a properly fitted N-95 respirator, as the EPA recommends for mold cleanup.',
     'Never mix bleach with ammonia or any other cleaner; the CDC warns the combination creates a toxic gas. Open windows and doors or run the exhaust fan while you work.',

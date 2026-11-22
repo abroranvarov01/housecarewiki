@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/guide-shower-mold.webp',
-  heroImageAlt: 'Black mold growing along the caulk line at the base of a glass shower panel on beige tile, with a toothbrush and a clear spray bottle on the ledge',
+  heroImage: '/images/g-how-to-remove-mold-from-shower-caulk.webp',
+  heroImageAlt: 'A gloved hand tests a dark mold spot on white tub caulk with a cotton ball, with a toothbrush, soapy bowl and open window nearby.',
   safetyWarnings: [
     'Never mix bleach with ammonia or any other cleaner; the CDC warns this produces a poisonous gas. Rinse away one product completely before using another.',
     'Open windows and doors or run the exhaust fan while you clean, and wear rubber gloves and goggles.',

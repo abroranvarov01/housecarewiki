@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '6 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Close-up of a white cotton shirt laid on a speckled countertop, its collar band discolored yellow-brown and being brushed with a small wooden-handled bristle brush, with a plant and mixed laundry in the background',
+  heroImage: '/images/g-how-to-get-tomato-sauce-out-of-clothes.webp',
+  heroImageAlt: 'A hand rinses a small tomato sauce stain on a white shirt under cold tap water, with dish soap and a spoon beside the sink.',
   safetyWarnings: [
     'Do not put the garment in the dryer while any stain is visible. Dryer heat sets tomato sauce stains, and damp fabric can hide leftover oil, so air-dry and check first.',
     'Do not use chlorine bleach on wool, silk, leather, mohair or spandex, and use it on whites only when the care label allows.',

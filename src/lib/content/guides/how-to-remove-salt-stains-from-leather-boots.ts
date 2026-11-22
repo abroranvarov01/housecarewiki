@@ -18,8 +18,8 @@ const article: Article = {
   readingTime: '5 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
-  heroImage: '/images/cat-laundry.webp',
-  heroImageAlt: 'Close-up of a white cotton shirt laid on a speckled countertop, its collar band discolored yellow-brown and being brushed with a small wooden-handled bristle brush, with a plant and mixed laundry in the background',
+  heroImage: '/images/g-how-to-remove-salt-stains-from-leather-boots.webp',
+  heroImageAlt: 'A hand wipes white salt lines off a brown leather boot with a damp cloth, with a brush and bowl beside it on newspaper.',
   safetyWarnings: [
     'Never dry leather or suede boots with direct heat. Clarks, Wolverine and Red Wing all warn against radiators, heaters, hair dryers and direct sunlight.',
     'Do not put leather or suede boots in the washing machine. Clarks says never to machine-wash them.',
