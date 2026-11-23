@@ -54,6 +54,28 @@ export function AffiliateDisclosureNote({ className = '' }: { className?: string
   );
 }
 
+// Extra disclosure for products whose brand pays a higher commission for a limited time (Amazon Creator Connections).
+export function BrandPromotionNote({
+  promotion,
+  productName,
+  className = '',
+}: {
+  promotion?: { brand: string; endsOn: string };
+  productName?: string;
+  className?: string;
+}) {
+  if (!promotion) return null;
+  const end = new Date(`${promotion.endsOn}T23:59:59-08:00`);
+  if (Number.isNaN(end.getTime()) || end.getTime() < Date.now()) return null;
+  const until = end.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'America/Los_Angeles' });
+  return (
+    <p className={`text-[12px] leading-snug text-ink-muted ${className}`}>
+      Paid promotion: {promotion.brand} pays HouseCareWiki a higher commission on {productName ? `the ${productName}` : 'this model'} through Amazon until {until}.
+      Our notes and scores don&rsquo;t change because of it.
+    </p>
+  );
+}
+
 // Retired: the handwritten "notes" read as decoration rather than information. Kept as a no-op so stray
 // imports render nothing; remove remaining usages when touching those pages.
 export function HandwrittenNote(_props: { text: string; className?: string; arrowDirection?: string }) {

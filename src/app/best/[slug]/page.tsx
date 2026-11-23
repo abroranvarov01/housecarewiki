@@ -16,7 +16,7 @@ import {
   isoDate,
   itemListSchema,
 } from '@/lib/schema';
-import { EditorScore, AffiliateDisclosureNote, AffiliateButton } from '@/components/ui/Badges';
+import { EditorScore, AffiliateDisclosureNote, AffiliateButton, BrandPromotionNote } from '@/components/ui/Badges';
 import {
   Breadcrumbs,
   Byline,
@@ -288,6 +288,9 @@ export default function BestProductsPage({
                 <p className="text-[1.0625rem] leading-relaxed text-ink">{article.quickAnswer}</p>
               </Callout>
               <AffiliateDisclosureNote className="mt-4" />
+              {recommendedProducts.map((p) => (
+                <BrandPromotionNote key={p.id} promotion={p.brandPromotion} productName={p.shortName} className="mt-1" />
+              ))}
             </div>
 
             {topPick && (

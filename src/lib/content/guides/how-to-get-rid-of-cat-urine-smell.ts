@@ -80,7 +80,7 @@ const article: Article = {
     'If the spot still glows under a black light after drying, repeat the enzymatic treatment over a wider area and leave it to work for the full time on the label.',
     'If your cat keeps returning to the same spot after a clean bill of health, make that area unavailable for a while (close the door or cover it) and make the litter box more appealing. Retraining can take a week or more.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-shark-stainstriker'],
   faqs: [
     {
       question: 'What kills the smell of cat urine?',

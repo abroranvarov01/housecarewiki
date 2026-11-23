@@ -76,7 +76,7 @@ const article: Article = {
     'If a pink stain will not shift, or the carpet is wool, silk or another natural fiber, call an IICRC-certified cleaning technician. Stubborn red wine residue is most common on natural fibers and older synthetic carpet, and professionals have stronger spotters and extraction equipment.',
   ],
   topPickProductId: 'prod-bissell-little-green',
-  recommendedProductIds: ['prod-bissell-little-green', 'prod-bissell-spotclean-pro', 'prod-hoover-cleanslate'],
+  recommendedProductIds: ['prod-bissell-little-green', 'prod-bissell-spotclean-pro', 'prod-hoover-cleanslate', 'prod-shark-stainstriker'],
   faqs: [
     {
       question: 'Does salt or club soda get red wine out of carpet?',

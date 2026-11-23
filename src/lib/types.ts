@@ -96,6 +96,9 @@ export interface Product {
   /** Overrides the default "<shortName> Review: Specs, Pros & Cons" title, e.g. to match how people spell the model. */
   seoTitle?: string;
   seoDescription?: string;
+  /** A brand pays an extra commission on this model through Amazon Creator Connections. Shown as a disclosure
+   *  next to every link to it until `endsOn` (YYYY-MM-DD, inclusive). It never changes scores or picks. */
+  brandPromotion?: { brand: string; endsOn: string };
   updatedAt: string;
 }
 

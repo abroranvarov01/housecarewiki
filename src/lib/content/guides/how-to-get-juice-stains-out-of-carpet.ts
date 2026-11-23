@@ -79,7 +79,7 @@ const article: Article = {
     'The Carpet and Rug Institute also lists an ammonia solution, 1 tablespoon of household ammonia per cup of water, for this kind of spill. Test it on a hidden area first because it can change carpet color, ventilate the room, never combine it with bleach, and rinse thoroughly afterward.',
     'Red or purple artificially dyed drinks often leave a tint even after careful home treatment; University of Georgia Extension testing did not fully remove Kool-Aid from carpet. Call a professional carpet cleaner, who has stronger solutions and equipment for stubborn dye stains.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-shark-stainstriker'],
   faqs: [
     {
       question: 'Does vinegar get juice out of carpet?',

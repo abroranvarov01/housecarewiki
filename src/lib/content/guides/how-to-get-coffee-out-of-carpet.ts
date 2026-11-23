@@ -82,7 +82,7 @@ const article: Article = {
     'If a coffee with cream or sugar stain stays dull or sticky, try a commercial carpet spot cleaner, following its label exactly and testing it in a hidden spot first, then rinse with clear water. Some kits contain a stain-resist product that can lock in a stain if it is applied before the spill is fully removed, so read the directions.',
     'If the carpet is wool or another natural fiber, or the stain will not shift after several rounds, call an IICRC-certified cleaner. Coffee is used to dye wool, so full removal from natural fibers may not be possible at home.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-shark-stainstriker'],
   faqs: [
     {
       question: 'Can you get a dried coffee stain out of carpet?',

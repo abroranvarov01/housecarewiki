@@ -80,7 +80,7 @@ const article: Article = {
     'If the carpet is wool or a wool blend and cold water plus the weak dish-soap solution did not work, do not reach for ammonia or peroxide. A professional cleaner has wool-safe spotters and extraction equipment.',
     'If the spot turns gray or dull after drying, detergent residue was left behind. Mist with clean cold water and blot again until the towel stays clean.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-shark-stainstriker'],
   faqs: [
     {
       question: 'Does cold water get blood out of carpet?',

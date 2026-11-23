@@ -7,7 +7,7 @@ import { readStore } from '@/lib/store';
 import { buildMetadata, fitDescription } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, faqSchema, graph, itemListSchema, webPageSchema } from '@/lib/schema';
-import { AffiliateDisclosureNote, EditorScore, AffiliateButton } from '@/components/ui/Badges';
+import { AffiliateDisclosureNote, BrandPromotionNote, EditorScore, AffiliateButton } from '@/components/ui/Badges';
 import { Breadcrumbs, Byline, Callout, Container, EvidenceLabel, FaqList, Kicker, SectionHead, articleHref } from '@/components/field';
 import type { Product } from '@/lib/types';
 
@@ -157,6 +157,7 @@ export default function EditorialComparisonPage({
                   <div className="mt-3">
                     <EditorScore score={prod.scores.overall} size="md" />
                   </div>
+                  <BrandPromotionNote promotion={prod.brandPromotion} className="mt-2" />
                   <p className="mt-4 text-[15px] leading-relaxed text-ink-secondary">{prod.summary}</p>
                   <div className="mt-auto flex flex-wrap items-center gap-3 pt-6">
                     <AffiliateButton

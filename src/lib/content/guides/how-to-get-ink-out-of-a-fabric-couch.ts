@@ -79,7 +79,7 @@ const article: Article = {
     'For final traces on W or WS fabric, the same extension procedure uses a Wet Spotter: 1 part glycerin, 1 part white dishwashing detergent and 8 parts water, with a few drops of clear ammonia added, left on for 30 minutes and blotted every 5 minutes, then sponged with clear water and blotted dry. Never use ammonia alongside bleach.',
     'Permanent marker and set-in ink on light or natural-fiber fabric, and any ink on X-coded or dry-clean-only upholstery, should go to a professional upholstery cleaner.',
   ],
-  recommendedProductIds: ['prod-hoover-cleanslate', 'prod-bissell-little-green'],
+  recommendedProductIds: ['prod-hoover-cleanslate', 'prod-bissell-little-green', 'prod-shark-stainstriker'],
   faqs: [
     {
       question: 'Does rubbing alcohol get ink out of a couch?',

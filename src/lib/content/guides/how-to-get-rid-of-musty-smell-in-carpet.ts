@@ -81,7 +81,7 @@ const article: Article = {
     'If the carpet sits on a basement slab that stays damp, run a dehumidifier full time and confirm humidity stays below 60 percent. A carpet that keeps smelling in that spot may not be a good fit for the room.',
     'If mold is visible over a large area, or the water was contaminated, call a professional water damage or mold remediation company rather than cleaning it yourself.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-shark-stainstriker'],
   faqs: [
     {
       question: 'Why does my carpet smell musty?',

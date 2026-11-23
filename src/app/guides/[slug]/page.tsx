@@ -8,7 +8,7 @@ import { buildMetadata } from '@/lib/seo';
 import { absoluteUrl } from '@/lib/site';
 import { JsonLd } from '@/components/JsonLd';
 import { articleSchema, breadcrumbSchema, faqSchema, graph, howToSchema, isoDate } from '@/lib/schema';
-import { AffiliateButton, AffiliateDisclosureNote, EditorScore, SaveItemButton } from '@/components/ui/Badges';
+import { AffiliateButton, AffiliateDisclosureNote, BrandPromotionNote, EditorScore, SaveItemButton } from '@/components/ui/Badges';
 import {
   Breadcrumbs,
   Byline,
@@ -221,6 +221,7 @@ export default function StepByStepGuidePage({
         <div className="mt-1.5">
           <EditorScore score={prod.scores.overall} size="xs" />
         </div>
+        <BrandPromotionNote promotion={prod.brandPromotion} className="mt-1.5" />
       </div>
       <AffiliateButton
         productId={prod.id}

@@ -10,6 +10,7 @@ import type { Product, SurfaceGuide } from '@/lib/types';
 import { breadcrumbSchema, faqSchema, graph, productReviewSchema } from '@/lib/schema';
 import {
   AffiliateDisclosureNote,
+  BrandPromotionNote,
   EditorScore,
   AffiliateButton,
   SaveItemButton,
@@ -222,6 +223,7 @@ export default function ProductProfilePage({
                 </Link>
               </div>
               <AffiliateDisclosureNote className="mt-3" />
+              <BrandPromotionNote promotion={product.brandPromotion} className="mt-1" />
             </div>
           </div>
         </Container>

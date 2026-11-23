@@ -209,6 +209,7 @@ export const PRODUCTS: Product[] = [
     whoShouldSkip: [
       'Users who prefer simple single-bottle or plain-water rinsing',
     ],
+    brandPromotion: { brand: 'Shark', endsOn: '2026-12-19' },
     updatedAt: '2026-10-20',
   },
   {

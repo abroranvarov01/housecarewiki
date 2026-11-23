@@ -80,7 +80,7 @@ const article: Article = {
     'If a stain remains on synthetic carpet after cleaning, test fresh 3% hydrogen peroxide in a hidden spot, then moisten the stained tufts with it, let it stand for about an hour and blot. Repeat if needed and dry under weighted paper towels. Skip this on wool and other natural fibers.',
     'If regular spot cleaning cannot remove the mark, or a large area was tracked through, call a professional carpet cleaner. They have stronger solutions and extraction equipment.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-shark-stainstriker'],
   faqs: [
     {
       question: 'Should you let mud dry before cleaning it out of carpet?',
