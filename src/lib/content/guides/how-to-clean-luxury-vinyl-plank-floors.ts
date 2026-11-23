@@ -81,7 +81,7 @@ const article: Article = {
     'If a spot will not lift with water, a neutral cleaner or a small amount of rubbing alcohol on a cloth, stop. Do not escalate to abrasive pads or harsh chemicals; contact your flooring manufacturer for the product they recommend for that stain.',
     'Yellow or brown patches that match where a rug or mat sat are usually discoloration from a rubber or latex backing, not dirt. Replace the mat with a non-staining, non-rubber-backed one and ask the manufacturer whether the mark can be treated.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-shark-hydrovac-reveal'],
   faqs: [
     {
       question: 'What is the best thing to clean luxury vinyl plank floors with?',

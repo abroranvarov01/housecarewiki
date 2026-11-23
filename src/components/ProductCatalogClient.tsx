@@ -8,10 +8,13 @@ import { EditorScore, AffiliateButton, SaveItemButton } from '@/components/ui/Ba
 
 const CATEGORIES: { id: string; label: string }[] = [
   { id: 'all', label: 'All products' },
-  { id: 'carpet-cleaners', label: 'Portable carpet cleaners' },
+  { id: 'carpet-cleaners', label: 'Carpet cleaners' },
   { id: 'Bathroom-scrubbers', label: 'Electric spin scrubbers' },
-  { id: 'steam-cleaners', label: 'Steam cleaners' },
-  { id: 'brushes-tools', label: 'Brushes and hair rollers' },
+  { id: 'steam-cleaners', label: 'Steam cleaners and mops' },
+  { id: 'vacuums', label: 'Vacuums' },
+  { id: 'air-purifiers', label: 'Air purifiers' },
+  { id: 'brushes-tools', label: 'Brushes, rollers and care oils' },
+  { id: 'stain-removers', label: 'Stain removers and care kits' },
   { id: 'organizers', label: 'Home organizers' },
 ];
 

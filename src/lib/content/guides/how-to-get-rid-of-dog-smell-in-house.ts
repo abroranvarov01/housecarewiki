@@ -80,7 +80,7 @@ const article: Article = {
     'If the house smells like urine rather than dog, follow our guide to getting dog urine out of carpet: urine needs an enzyme cleaner, not fragrance, and soaked padding may need replacing.',
     'If odor lingers in a room after cleaning, look for damp items: a wet dog towel, a bed that never fully dried or a rug by the door. Moisture keeps odors and mildew going, so wash and fully dry them.',
   ],
-  recommendedProductIds: ['prod-shark-stainforce'],
+  recommendedProductIds: ['prod-shark-stainforce', 'prod-shark-rocket-pet-plus', 'prod-shark-neverchange-compact', 'prod-shark-neverchange-hp152', 'prod-shark-neverchange-max'],
   faqs: [
     {
       question: 'Why does my house smell like dog?',

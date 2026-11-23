@@ -78,7 +78,7 @@ const article: Article = {
     'If the brush roll will not turn even though it is clear of hair, the drive belt may be broken or slipped off on a belt-driven upright. Replace it using the part number and steps in your manual.',
     'If the bristles are worn flat or the roll is damaged, order a replacement brush roll from the manufacturer for your model number rather than trying to repair it.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-shark-cordless-pet'],
   faqs: [
     {
       question: 'How often should you clean your vacuum brush roll?',

@@ -86,7 +86,7 @@ const article: Article = {
     'If a stain will not lift after a few careful rounds of blotting, stop before you damage the pile and take the rug to a professional rug cleaner.',
     'If your vacuum cannot turn off or raise its beater bar, use a suction-only floor tool or hand attachment on the rug instead.',
   ],
-  recommendedProductIds: ['prod-shark-stainstriker'],
+  recommendedProductIds: ['prod-shark-stainstriker', 'prod-shark-carpetforce'],
   faqs: [
     {
       question: 'Can you put an area rug in the washing machine?',

@@ -79,7 +79,7 @@ const article: Article = {
     'If a waxy film builds up from past wax or oil-soap use, manufacturers recommend a tile sealer and adhesive remover for ceramic tile; test a small area first and never use it on natural stone.',
     'If the tile looks clean but grout lines stay dark, the grout needs its own periodic cleaning. Treat the joints with a grout-specific routine rather than a harsher cleaner on the whole floor.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-shark-steam-scrub', 'prod-shark-hydrovac-reveal'],
   faqs: [
     {
       question: 'What is the best way to clean tile floors?',

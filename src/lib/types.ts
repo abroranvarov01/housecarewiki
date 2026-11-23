@@ -66,7 +66,7 @@ export interface Product {
   shortName: string;
   model: string;
   asin: string;
-  category: 'carpet-cleaners' | 'Bathroom-scrubbers' | 'steam-cleaners' | 'brushes-tools' | 'vacuums' | 'organizers' | 'stain-removers';
+  category: 'carpet-cleaners' | 'Bathroom-scrubbers' | 'steam-cleaners' | 'brushes-tools' | 'vacuums' | 'organizers' | 'stain-removers' | 'air-purifiers';
   roomSlugs: string[];
   badge?: string;
   bestFor: string;

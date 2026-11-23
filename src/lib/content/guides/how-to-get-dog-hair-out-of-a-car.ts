@@ -83,7 +83,7 @@ const article: Article = {
     'If hair keeps reappearing in carpet seams, loosen it with a rubber broom or rubber-bristle brush and vacuum again; the AKC recommends this loosen-then-vacuum approach for embedded hair in carpet.',
     'If your dog sheds heavily, hair removal alone will not keep up. Brush at least weekly, consider a professional groomer during shedding season, and keep the dog on a seat cover or in a crate in the car.',
   ],
-  recommendedProductIds: ['prod-chomchom-pet-hair-roller'],
+  recommendedProductIds: ['prod-chomchom-pet-hair-roller', 'prod-shark-cordless-pet'],
   faqs: [
     {
       question: 'What is the fastest way to get dog hair out of car seats?',

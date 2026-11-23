@@ -84,7 +84,7 @@ const article: Article = {
     'If the filter light stays on after a new filter, repeat the reset step in your manual with the unit switched on.',
     'If water got into the unit or the cord or plug is damaged, do not use it, and contact the manufacturer\'s customer service.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-shark-neverchange-hp152'],
   faqs: [
     {
       question: 'Can you wash a HEPA filter in an air purifier?',

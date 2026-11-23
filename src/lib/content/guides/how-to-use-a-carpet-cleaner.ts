@@ -84,7 +84,7 @@ const article: Article = {
     'If the carpet gets dirty again quickly after cleaning, soap residue is the likely cause. Clean again using the formula at the stated dose, never more, and make extra dry passes.',
     'If stains are still visible or the carpet is wool or a valuable rug, book a professional hot water extraction cleaning. Carpet makers recommend professional cleaning every 12 to 18 months, and Shaw notes professional equipment has more extraction power than rental units.',
   ],
-  recommendedProductIds: ['prod-shark-stainstriker'],
+  recommendedProductIds: ['prod-shark-stainstriker', 'prod-shark-carpetforce'],
   faqs: [
     {
       question: 'How many passes should you do with a carpet cleaner?',
