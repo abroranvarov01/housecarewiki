@@ -62,7 +62,7 @@ export function GET() {
   }
 
   for (const p of store.products) {
-    entries.push({ path: `/products/${p.slug}`, lastmod: isoDate(p.updatedAt), images: [{ loc: p.image, title: p.name }] });
+    entries.push({ path: `/products/${p.slug}`, lastmod: isoDate(p.updatedAt), images: p.image.startsWith('/') ? [{ loc: p.image, title: p.name }] : undefined });
   }
 
   for (const s of store.surfaces) {

@@ -77,7 +77,7 @@ const article: Article = {
     'If the same dog keeps going in the same place, ask your vet to rule out a urinary problem, and block access to the spot until the odor is completely gone.',
   ],
   topPickProductId: 'prod-bissell-spotclean-pro',
-  recommendedProductIds: ['prod-bissell-spotclean-pro', 'prod-shark-stainstriker'],
+  recommendedProductIds: ['prod-bissell-spotclean-pro', 'prod-shark-stainstriker', 'prod-shark-stainforce'],
   faqs: [
     {
       question: 'Does vinegar get dog urine out of carpet?',

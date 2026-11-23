@@ -79,7 +79,7 @@ const article: Article = {
     'Repeat the enzyme presoak and cold wash two or three times before drying; dried blood often lightens in stages.',
     'For dry-clean-only, silk or wool garments, or a stain that has already been through the dryer, take the item to a professional dry cleaner and tell them the stain is blood.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-little-monsters-mess-remover'],
   faqs: [
     {
       question: 'Does hot water set blood stains?',

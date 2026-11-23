@@ -79,7 +79,7 @@ const article: Article = {
     'For non-washable fabrics such as silk, wool, acetate or rayon, blot the spot with a damp white cloth and take the garment to a dry cleaner, pointing out the stain.',
     'If the stain has already been through the dryer, it may be permanent. Try the oxygen bleach soak, but expect only partial results.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-little-monsters-mess-remover'],
   faqs: [
     {
       question: 'Why is mustard so hard to get out of clothes?',

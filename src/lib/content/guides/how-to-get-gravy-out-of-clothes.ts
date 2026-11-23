@@ -71,7 +71,7 @@ const article: Article = {
     'If the stain has already been through the dryer, it may be set; Texas A&M notes that old stains can be impossible to remove, but a repeat pretreat and oxygen bleach soak is still worth a try.',
     'For Dry Clean Only fabrics, take the garment to a dry cleaner and tell them it is a gravy stain.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-little-monsters-mess-remover'],
   faqs: [
     {
       question: 'Does gravy stain clothes permanently?',

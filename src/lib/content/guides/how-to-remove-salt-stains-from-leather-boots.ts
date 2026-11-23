@@ -80,7 +80,7 @@ const article: Article = {
     'If suede looks flat or patchy, brush it with the grain and use a suede eraser on remaining marks.',
     'If the stain still will not shift, take the boots to a shoe repair or leather care professional rather than scrubbing harder.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-furniture-clinic-leather-kit'],
   faqs: [
     {
       question: 'Does vinegar remove salt stains from leather boots?',

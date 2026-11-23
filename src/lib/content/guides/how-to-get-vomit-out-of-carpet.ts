@@ -74,7 +74,7 @@ const article: Article = {
     'If someone in the home has a stomach bug, the spill was large, or the carpet is wool, call an IICRC-certified professional. Vomit is treated as potentially infectious, and professionals use protective procedures and equipment beyond regular cleaning.',
   ],
   topPickProductId: 'prod-bissell-spotclean-pro',
-  recommendedProductIds: ['prod-bissell-spotclean-pro', 'prod-bissell-little-green', 'prod-shark-stainstriker'],
+  recommendedProductIds: ['prod-bissell-spotclean-pro', 'prod-bissell-little-green', 'prod-shark-stainstriker', 'prod-shark-stainforce'],
   faqs: [
     {
       question: 'What is the first thing to do when someone throws up on the carpet?',

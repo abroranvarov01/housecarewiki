@@ -80,7 +80,7 @@ const article: Article = {
     'If the odor seems to come from the vents rather than the seats, replace the cabin air filter and ask a dealer about cleaning the air-conditioning system; Toyota recommends having it sanitized when a musty smell appears.',
     'If seats or headliner stay smelly after repeated cleaning, have a professional auto detailer or the dealer clean the upholstery with products approved for your interior.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-shark-stainforce'],
   faqs: [
     {
       question: 'Why does my car still smell like dog after vacuuming?',

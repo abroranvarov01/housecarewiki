@@ -79,7 +79,7 @@ const article: Article = {
     'If an old stain will not budge, try a longer pretreatment: saturate it with an oxygen laundry stain spray and let it stand before washing, following the product label, or repeat the oxygen soak.',
     'For dry-clean-only, silk or wool garments, or a stain that survives two full rounds, take the item to a dry cleaner and point out the chocolate stain.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-little-monsters-mess-remover'],
   faqs: [
     {
       question: 'Does hot water set chocolate stains?',

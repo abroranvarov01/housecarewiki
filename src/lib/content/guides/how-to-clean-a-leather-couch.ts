@@ -82,7 +82,7 @@ const article: Article = {
     'For scratches on finished leather or a major spill, Flexsteel suggests professional help depending on the leather type.',
     'If ink from a newspaper or magazine transfers onto the couch, contact the manufacturer or a leather specialist; Ashley warns that printed materials can transfer ink to leather.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-furniture-clinic-leather-kit'],
   faqs: [
     {
       question: 'What is the best thing to clean a leather couch with?',

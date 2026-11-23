@@ -78,7 +78,7 @@ const article: Article = {
     'If a greasy ring shows once the fabric dries, the oil was not fully removed. Repeat the dish detergent pretreatment on the dry stain, rinse, and wash again.',
     'For dry-clean-only, silk or wool garments, or a stain that survives two rounds, take it to a dry cleaner and tell them it is tomato sauce.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-little-monsters-mess-remover'],
   faqs: [
     {
       question: 'Does dish soap get tomato sauce out of clothes?',

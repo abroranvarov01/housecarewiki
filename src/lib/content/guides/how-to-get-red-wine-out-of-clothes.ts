@@ -79,7 +79,7 @@ const article: Article = {
     'If the stain survived a trip through the dryer, treat it as set: try the peroxide and stain-release mix or a long oxygen bleach soak, following each product label, and expect to repeat.',
     'For silk, wool, leather, dry-clean-only or valuable garments, stop after blotting and take the item to a professional cleaner, telling them it is red wine.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-little-monsters-mess-remover'],
   faqs: [
     {
       question: 'Does red wine come out of clothes after washing?',

@@ -81,7 +81,7 @@ const article: Article = {
     'If the stain persists on colored clothing, try a longer soak in an oxygen-based stain remover, up to the maximum time on its label, followed by another enzyme-detergent wash.',
     'For delicate fabrics such as silk or wool, or anything labeled dry clean only, skip sprays and soaks and take the item to a professional cleaner.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-little-monsters-mess-remover'],
   faqs: [
     {
       question: 'Should you use hot or cold water on baby poop stains?',

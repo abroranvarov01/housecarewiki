@@ -75,7 +75,7 @@ const article: Article = {
     'If only synthetic workout gear keeps smelling, it is likely holding oily body soils deep in the fibers. Wash it after every wear, inside out, on the warmest setting its label allows, rather than letting it build up over several sessions.',
     'If a garment has visible yellowing in the underarms as well as odor, treat it as a stain problem too; see our guide to removing yellow armpit stains from white shirts.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-kair-activewear-detergent'],
   faqs: [
     {
       question: 'Why do my clothes still smell like sweat after washing?',

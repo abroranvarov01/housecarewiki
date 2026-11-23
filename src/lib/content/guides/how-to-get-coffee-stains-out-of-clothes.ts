@@ -80,7 +80,7 @@ const article: Article = {
     'If the stain is old or was dried in, soak it in an oxygen bleach solution for the full 6 hours, then wash again in the warmest water the label allows. On white, bleach-safe cotton, chlorine bleach used as the label directs is the next step.',
     'If the garment is wool, silk, leather or dry-clean-only, or the stain has already been through the dryer, take it to a professional dry cleaner and tell them it is coffee, and whether it had milk in it.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-little-monsters-mess-remover'],
   faqs: [
     {
       question: 'Do you use hot or cold water to get coffee out of clothes?',

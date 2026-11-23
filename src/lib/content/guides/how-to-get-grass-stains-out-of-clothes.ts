@@ -78,7 +78,7 @@ const article: Article = {
     'For white, bleach-safe cotton, a few drops of hydrogen peroxide on the remaining stain followed by a wash is an option the University of Georgia extension lists; test a hidden area first because peroxide can lighten colors.',
     'For dry-clean-only, silk, wool or delicate fabrics, or if the stain has already been through the dryer, take the garment to a professional dry cleaner and point out the stain.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-little-monsters-mess-remover'],
   faqs: [
     {
       question: 'Why are grass stains so hard to get out?',

@@ -80,7 +80,7 @@ const article: Article = {
     'If a wood board still smells after washing, repeat the salt-and-lemon scrub, rinse, dry it standing on end, and re-oil it.',
     'If a wood board has warped or split along the glue lines, it has likely been soaked, put through the dishwasher or left dry too long. Contact the maker about repair, and if it has cracks that trap food, replace it.',
   ],
-  recommendedProductIds: [],
+  recommendedProductIds: ['prod-furniture-clinic-cutting-board-oil'],
   faqs: [
     {
       question: 'How do you sanitize a cutting board after raw chicken?',
