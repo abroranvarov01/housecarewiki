@@ -91,9 +91,10 @@ const article: Article = {
       paragraphs: [
         'The Rocket Pet Plus is the plug-in workhorse: a corded stick vacuum of 8.6 lbs with a 25 ft cord that turns into a handheld for the sofa and stairs. It has tens of thousands of Amazon reviews, about 4.4 out of 5. Its trade-offs are a small dust cup and a foam filter rather than HEPA.',
         'The Cordless Pet costs more but fixes two things. Its brush roll clears long hair off itself as it spins, so you cut tangles off the roller far less often, and it has a sealed HEPA system. Being cordless, it also does the car. Shark rates it for up to 40 minutes, on the low setting.',
+        'For a small apartment, the Vertex DuoClean is the lighter corded option: about 9 lbs as a stick and under 3 lbs as a handheld, with a soft front roller for bare floors and a brush roll that also clears hair off itself. The catch is a very small dust cup, about a third of a quart, and no HEPA filter.',
         'On vinyl plank, check the maker\'s rules on spinning brush rolls before you vacuum, and on fabric furniture a rubber glove or a pet-hair roller still gets the last of the hair a vacuum leaves.',
       ],
-      productIds: ['prod-shark-rocket-pet-plus', 'prod-shark-cordless-pet'],
+      productIds: ['prod-shark-rocket-pet-plus', 'prod-shark-cordless-pet', 'prod-shark-vertex-duoclean'],
       guideSlugs: ['how-to-remove-pet-hair-from-furniture', 'how-to-get-dog-hair-out-of-a-car', 'how-to-clean-a-vacuum-brush-roll'],
     },
     {
@@ -102,9 +103,10 @@ const article: Article = {
       paragraphs: [
         'Start with the source. The EPA says removing the source of an indoor pollutant works better than filtering the air, so wash the dog bed, collars and throws and treat old accidents first. A purifier then deals with the dander and odor that keep floating around.',
         'Size it to the room. Shark rates the NeverChange Compact Pro for up to 250 sq ft, the NeverChange HP152 for up to 650 sq ft and the NeverChange Max for up to 1,300 sq ft, each at one full air change an hour. For allergies, use a model rated for a bigger room than yours so the air is cleaned more often. All three use a long-life main filter that Shark says lasts about five years, plus washable pre-filter screens that catch hair.',
-        'One note: these models include a scented odor cartridge. If you or your pet dislike fragrance, keep that in mind.',
+        'For a bedroom or nursery, the NeverChange Detect iQ (HP062) is the smart small-room option, rated for about 300 sq ft. Its sensors watch particles and VOCs and turn the fan up on their own when the dog runs in or someone cooks, and it has an activated carbon layer for odors. It is new, with few owner reviews so far.',
+        'One note: the other three NeverChange models include a scented odor cartridge. If you or your pet dislike fragrance, keep that in mind.',
       ],
-      productIds: ['prod-shark-neverchange-compact', 'prod-shark-neverchange-hp152', 'prod-shark-neverchange-max'],
+      productIds: ['prod-shark-neverchange-detect-iq-hp062', 'prod-shark-neverchange-compact', 'prod-shark-neverchange-hp152', 'prod-shark-neverchange-max'],
       guideSlugs: ['how-to-get-rid-of-dog-smell-in-house', 'how-to-clean-an-air-purifier'],
     },
     {
@@ -129,6 +131,8 @@ const article: Article = {
     'prod-shark-steam-scrub',
     'prod-shark-rocket-pet-plus',
     'prod-shark-cordless-pet',
+    'prod-shark-vertex-duoclean',
+    'prod-shark-neverchange-detect-iq-hp062',
     'prod-shark-neverchange-compact',
     'prod-shark-neverchange-hp152',
     'prod-shark-neverchange-max',
