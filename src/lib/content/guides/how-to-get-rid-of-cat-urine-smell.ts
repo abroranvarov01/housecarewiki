@@ -81,6 +81,7 @@ const article: Article = {
     'If your cat keeps returning to the same spot after a clean bill of health, make that area unavailable for a while (close the door or cover it) and make the litter box more appealing. Retraining can take a week or more.',
   ],
   recommendedProductIds: ['prod-shark-stainstriker', 'prod-shark-stainforce'],
+  relatedGuideSlugs: ['which-shark-cleaner-for-pet-owners'],
   faqs: [
     {
       question: 'What kills the smell of cat urine?',

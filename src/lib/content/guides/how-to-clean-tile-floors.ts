@@ -80,6 +80,7 @@ const article: Article = {
     'If the tile looks clean but grout lines stay dark, the grout needs its own periodic cleaning. Treat the joints with a grout-specific routine rather than a harsher cleaner on the whole floor.',
   ],
   recommendedProductIds: ['prod-shark-steam-scrub', 'prod-shark-hydrovac-reveal'],
+  relatedGuideSlugs: ['which-shark-cleaner-for-pet-owners'],
   faqs: [
     {
       question: 'What is the best way to clean tile floors?',

@@ -81,6 +81,7 @@ const article: Article = {
     'If odor lingers in a room after cleaning, look for damp items: a wet dog towel, a bed that never fully dried or a rug by the door. Moisture keeps odors and mildew going, so wash and fully dry them.',
   ],
   recommendedProductIds: ['prod-shark-stainforce', 'prod-shark-rocket-pet-plus', 'prod-shark-neverchange-compact', 'prod-shark-neverchange-hp152', 'prod-shark-neverchange-max'],
+  relatedGuideSlugs: ['which-shark-cleaner-for-pet-owners'],
   faqs: [
     {
       question: 'Why does my house smell like dog?',

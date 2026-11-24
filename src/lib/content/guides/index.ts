@@ -204,6 +204,7 @@ import gHowToWashFlannelSheets from './how-to-wash-flannel-sheets';
 import gHowToCleanAirVents from './how-to-clean-air-vents';
 import gHowToGetWaxOutOfACandleJar from './how-to-get-wax-out-of-a-candle-jar';
 import gPracticalCleaningGifts from './practical-cleaning-gifts-for-new-homeowners';
+import gWhichSharkForPetOwners from './which-shark-cleaner-for-pet-owners';
 
 // One file per guide: each is a self-contained, source-backed page. Order here is the order on hub pages.
 export const STAIN_GUIDES: Article[] = [
@@ -498,4 +499,4 @@ export const BATCH22_GUIDES: Article[] = [
 ];
 
 // Seasonal: one researched gift guide built from the advice in existing guides (not a templated batch).
-export const GIFT_GUIDES: Article[] = [gPracticalCleaningGifts];
+export const GIFT_GUIDES: Article[] = [gPracticalCleaningGifts, gWhichSharkForPetOwners];

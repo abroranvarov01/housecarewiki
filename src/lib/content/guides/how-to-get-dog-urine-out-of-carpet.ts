@@ -78,6 +78,7 @@ const article: Article = {
   ],
   topPickProductId: 'prod-bissell-spotclean-pro',
   recommendedProductIds: ['prod-bissell-spotclean-pro', 'prod-shark-stainstriker', 'prod-shark-stainforce'],
+  relatedGuideSlugs: ['which-shark-cleaner-for-pet-owners'],
   faqs: [
     {
       question: 'Does vinegar get dog urine out of carpet?',

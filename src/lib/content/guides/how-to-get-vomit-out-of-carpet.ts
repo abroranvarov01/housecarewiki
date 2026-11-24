@@ -75,6 +75,7 @@ const article: Article = {
   ],
   topPickProductId: 'prod-bissell-spotclean-pro',
   recommendedProductIds: ['prod-bissell-spotclean-pro', 'prod-bissell-little-green', 'prod-shark-stainstriker', 'prod-shark-stainforce'],
+  relatedGuideSlugs: ['which-shark-cleaner-for-pet-owners'],
   faqs: [
     {
       question: 'What is the first thing to do when someone throws up on the carpet?',

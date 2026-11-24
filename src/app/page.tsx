@@ -69,6 +69,9 @@ export default function HomePage() {
   const buyingGuides = published.filter((a) => a.routeType === 'best');
   const lead = guides.find((g) => g.slug === store.config.featuredGuideSlug) || guides[0];
   const moreGuides = guides.filter((g) => g.slug !== lead?.slug);
+  const seasonal = ['which-shark-cleaner-for-pet-owners', 'practical-cleaning-gifts-for-new-homeowners']
+    .map((slug) => guides.find((g) => g.slug === slug))
+    .filter((g): g is (typeof guides)[number] => Boolean(g));
   const product = (id?: string) => store.products.find((p) => p.id === id);
 
   const rooms = store.rooms.map((room) => ({
@@ -228,6 +231,35 @@ export default function HomePage() {
           </ul>
         </Container>
       </section>
+
+      {/* 2b. Seasonal: the two holiday buying guides, shown while they exist. */}
+      {seasonal.length > 0 && (
+        <section className="pt-8 sm:pt-10" aria-labelledby="seasonal-heading">
+          <Container>
+            <div className="rounded-3xl bg-peach-soft px-5 py-6 ring-1 ring-inset ring-peach-deep/40 sm:px-8 sm:py-8">
+              <p className="kicker text-ink-muted">Holiday shopping</p>
+              <h2 id="seasonal-heading" className="mt-1 font-display text-[1.5rem] font-bold tracking-[-0.015em] text-ink sm:text-[1.75rem]">
+                Buying a cleaning tool this season? Start with the mess.
+              </h2>
+              <ul className="mt-5 grid gap-4 sm:grid-cols-2">
+                {seasonal.map((g) => (
+                  <li key={g.id}>
+                    <Link href={articleHref(g)} className="group flex items-center gap-4 rounded-2xl bg-paper-card p-3 shadow-card transition-shadow hover:shadow-elevated">
+                      <img src={g.heroImage} alt="" loading="lazy" decoding="async" className="h-20 w-24 shrink-0 rounded-xl object-cover" />
+                      <span className="min-w-0">
+                        <span className="block font-display text-[1.125rem] font-bold leading-snug text-ink">
+                          <span className="hover-title">{g.title}</span>
+                        </span>
+                        <span className="mt-1 block text-[14px] leading-snug text-ink-muted line-clamp-2">{g.excerpt}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Container>
+        </section>
+      )}
 
       {/* 3. Popular fixes: the lead guide as a warm photo card with its answer, then the other guides with photos. */}
       {lead && (

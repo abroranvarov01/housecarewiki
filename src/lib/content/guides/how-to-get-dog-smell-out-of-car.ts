@@ -81,6 +81,7 @@ const article: Article = {
     'If seats or headliner stay smelly after repeated cleaning, have a professional auto detailer or the dealer clean the upholstery with products approved for your interior.',
   ],
   recommendedProductIds: ['prod-shark-stainforce', 'prod-shark-cordless-pet'],
+  relatedGuideSlugs: ['which-shark-cleaner-for-pet-owners'],
   faqs: [
     {
       question: 'Why does my car still smell like dog after vacuuming?',

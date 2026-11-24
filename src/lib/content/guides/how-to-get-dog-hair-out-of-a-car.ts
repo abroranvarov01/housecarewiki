@@ -84,6 +84,7 @@ const article: Article = {
     'If your dog sheds heavily, hair removal alone will not keep up. Brush at least weekly, consider a professional groomer during shedding season, and keep the dog on a seat cover or in a crate in the car.',
   ],
   recommendedProductIds: ['prod-chomchom-pet-hair-roller', 'prod-shark-cordless-pet'],
+  relatedGuideSlugs: ['which-shark-cleaner-for-pet-owners'],
   faqs: [
     {
       question: 'What is the fastest way to get dog hair out of car seats?',
