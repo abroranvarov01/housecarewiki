@@ -145,7 +145,7 @@ const article: Article = {
         'If the household has young children, leave laundry pods out, or give them only sealed in their original packaging.',
         'Check that every lid is closed tightly before you wrap it.',
       ],
-      guideSlugs: ['how-to-store-cleaning-products-safely', 'can-you-mix-bleach-and-ammonia', 'can-you-mix-bleach-and-vinegar'],
+      guideSlugs: ['how-to-store-cleaning-products-safely', 'cleaning-products-you-should-never-mix', 'can-you-mix-bleach-and-vinegar'],
     },
   ],
   recommendedProductIds: [

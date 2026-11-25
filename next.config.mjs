@@ -1,4 +1,22 @@
-/** @type {import('next').NextConfig} */
+// Guides merged into a stronger guide during the Nov 2026 SEO consolidation (docs/seo-recovery-2026-11.md).
+// Each old URL 301s to the guide that now holds its content. Kept inline: the runtime image only ships this file.
+const mergedGuides = {
+  'can-you-mix-bleach-and-ammonia': 'cleaning-products-you-should-never-mix',
+  'can-you-mix-bleach-and-rubbing-alcohol': 'cleaning-products-you-should-never-mix',
+  'can-you-mix-hydrogen-peroxide-and-vinegar': 'cleaning-products-you-should-never-mix',
+  'can-you-put-cast-iron-in-the-dishwasher': 'how-to-clean-a-cast-iron-skillet',
+  'can-you-use-vinegar-on-hardwood-floors': 'how-to-clean-hardwood-floors',
+  'can-you-use-a-steam-mop-on-hardwood-floors': 'how-to-clean-hardwood-floors',
+  'how-to-clean-a-white-porcelain-kitchen-sink': 'how-to-clean-a-porcelain-sink',
+  'how-to-clean-a-keurig': 'how-to-clean-a-coffee-maker',
+  'how-to-descale-a-nespresso-machine': 'how-to-clean-a-coffee-maker',
+  'how-to-clean-ugg-boots': 'how-to-clean-suede-boots',
+  'can-you-put-a-yeti-in-the-dishwasher': 'how-to-clean-a-stanley-cup',
+  'how-to-clean-fireplace-glass': 'how-to-clean-out-a-fireplace',
+  'how-to-get-red-wine-out-of-a-couch': 'how-to-get-red-wine-out-of-carpet',
+  'how-to-get-red-wine-out-of-clothes': 'how-to-get-red-wine-out-of-carpet',
+};
+
 const securityHeaders = [
   { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains' },
   { key: 'X-Content-Type-Options', value: 'nosniff' },
@@ -7,6 +25,7 @@ const securityHeaders = [
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()' },
 ];
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
@@ -39,6 +58,11 @@ const nextConfig = {
       // Legacy URLs listed in the CMS redirect manager.
       { source: '/reviews/best-portable-carpet-cleaners', destination: '/best/best-portable-carpet-cleaners-home-use-2026', statusCode: 301 },
       { source: '/guides/coffee-stain-couch', destination: '/guides/how-to-remove-coffee-stains-from-fabric-sofa', statusCode: 301 },
+      ...Object.entries(mergedGuides).map(([from, to]) => ({
+        source: `/guides/${from}`,
+        destination: `/guides/${to}`,
+        statusCode: 301,
+      })),
     ];
   },
   async headers() {

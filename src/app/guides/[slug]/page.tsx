@@ -75,7 +75,7 @@ function StepIndex({
   hasFaq,
 }: {
   steps: { stepNumber: number; title: string }[];
-  sections?: { id: string; heading: string }[];
+  sections?: { id: string; heading: string; placement?: 'afterSteps' }[];
   hasTable?: boolean;
   hasSupplies: boolean;
   hasFixes: boolean;
@@ -83,6 +83,8 @@ function StepIndex({
 }) {
   const linkClass =
     'group flex min-h-[44px] items-baseline gap-3 border-b border-rule py-2.5 text-[15px] leading-snug text-ink hover:text-coral-deep';
+  const leadSections = sections.filter((sec) => sec.placement !== 'afterSteps');
+  const laterSections = sections.filter((sec) => sec.placement === 'afterSteps');
   return (
     <ol className="border-t border-rule">
       {hasTable && (
@@ -93,7 +95,7 @@ function StepIndex({
           </a>
         </li>
       )}
-      {sections.map((sec, i) => (
+      {leadSections.map((sec, i) => (
         <li key={sec.id}>
           <a href={`#${sec.id}`} className={linkClass}>
             <span className="kicker w-6 shrink-0 text-coral-deep">{pad(i + 1)}</span>
@@ -125,6 +127,14 @@ function StepIndex({
           </a>
         </li>
       )}
+      {laterSections.map((sec) => (
+        <li key={sec.id}>
+          <a href={`#${sec.id}`} className={linkClass}>
+            <span className="kicker w-6 shrink-0 text-ink-muted">—</span>
+            <span className="hover-title">{sec.heading}</span>
+          </a>
+        </li>
+      ))}
       {hasFaq && (
         <li>
           <a href="#faq" className={linkClass}>
@@ -202,6 +212,62 @@ export default function StepByStepGuidePage({
   const relatedRest = related.filter((g) => !seeAlso.some((s) => s.slug === g.slug));
   const table = article.summaryTable;
   const hasIndex = steps.length > 0 || sections.length > 0;
+
+  // Topic sections: prose, a checklist, the products discussed and the guides behind the advice.
+  const renderSection = (sec: (typeof sections)[number]) => (
+                <section key={sec.id} aria-labelledby={`${sec.id}-heading`} id={sec.id} className="scroll-mt-24">
+                  <SectionHead id={`${sec.id}-heading`} title={sec.heading} />
+                  <div className="mt-4 max-w-prose space-y-4 text-base leading-relaxed text-ink-secondary sm:text-[17px]">
+                    {sec.paragraphs.map((para) => (
+                      <p key={para}>{para}</p>
+                    ))}
+                  </div>
+                  {sec.checklist && sec.checklist.length > 0 && (
+                    <ul className="mt-5 border-t border-rule">
+                      {sec.checklist.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-3 border-b border-rule py-3 text-base leading-snug text-ink sm:text-[17px]"
+                        >
+                          <span className="mt-0.5 h-[1.125rem] w-[1.125rem] shrink-0 border-2 border-ink" aria-hidden="true" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {sec.products.length > 0 && (
+                    <>
+                      {sec.id === firstProductSection && <AffiliateDisclosureNote className="mt-5" />}
+                      <ul className="mt-4 border-t border-rule">
+                        {sec.products.map((prod) => productRow(prod, `guide_section_${sec.id}`))}
+                      </ul>
+                    </>
+                  )}
+                  {sec.guides.length > 0 && (
+                    <div className="mt-6">
+                      <Kicker as="p" tone="ink">
+                        From our guides
+                      </Kicker>
+                      <ul className="mt-1">
+                        {sec.guides.map((g) => (
+                          <li key={g.id}>
+                            <Link
+                              href={articleHref(g)}
+                              className="group inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-coral-deep"
+                            >
+                              <span className="hover-title">{g.title}</span>
+                              <ArrowRight
+                                className="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5"
+                                aria-hidden="true"
+                              />
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </section>
+  );
 
   const productRow = (prod: (typeof recommendedProducts)[number], placement: string) => (
     <li
@@ -415,61 +481,8 @@ export default function StepByStepGuidePage({
                 </section>
               )}
 
-              {/* Optional topic sections: prose, a checklist, the products discussed and the guides behind the advice */}
-              {sections.map((sec) => (
-                <section key={sec.id} aria-labelledby={`${sec.id}-heading`} id={sec.id} className="scroll-mt-24">
-                  <SectionHead id={`${sec.id}-heading`} title={sec.heading} />
-                  <div className="mt-4 max-w-prose space-y-4 text-base leading-relaxed text-ink-secondary sm:text-[17px]">
-                    {sec.paragraphs.map((para) => (
-                      <p key={para}>{para}</p>
-                    ))}
-                  </div>
-                  {sec.checklist && sec.checklist.length > 0 && (
-                    <ul className="mt-5 border-t border-rule">
-                      {sec.checklist.map((item) => (
-                        <li
-                          key={item}
-                          className="flex items-start gap-3 border-b border-rule py-3 text-base leading-snug text-ink sm:text-[17px]"
-                        >
-                          <span className="mt-0.5 h-[1.125rem] w-[1.125rem] shrink-0 border-2 border-ink" aria-hidden="true" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                  {sec.products.length > 0 && (
-                    <>
-                      {sec.id === firstProductSection && <AffiliateDisclosureNote className="mt-5" />}
-                      <ul className="mt-4 border-t border-rule">
-                        {sec.products.map((prod) => productRow(prod, `guide_section_${sec.id}`))}
-                      </ul>
-                    </>
-                  )}
-                  {sec.guides.length > 0 && (
-                    <div className="mt-6">
-                      <Kicker as="p" tone="ink">
-                        From our guides
-                      </Kicker>
-                      <ul className="mt-1">
-                        {sec.guides.map((g) => (
-                          <li key={g.id}>
-                            <Link
-                              href={articleHref(g)}
-                              className="group inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-coral-deep"
-                            >
-                              <span className="hover-title">{g.title}</span>
-                              <ArrowRight
-                                className="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5"
-                                aria-hidden="true"
-                              />
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </section>
-              ))}
+              {/* Optional topic sections that lead into the method */}
+              {sections.filter((sec) => sec.placement !== 'afterSteps').map(renderSection)}
 
               {/* Supplies checklist */}
               {supplies.length > 0 && (
@@ -556,6 +569,9 @@ export default function StepByStepGuidePage({
                   </ol>
                 </section>
               )}
+
+              {/* Sections that follow the method, e.g. related questions merged in from retired guides */}
+              {sections.filter((sec) => sec.placement === 'afterSteps').map(renderSection)}
 
               {/* Tools, only after the method */}
               {toolProducts.length > 0 && (

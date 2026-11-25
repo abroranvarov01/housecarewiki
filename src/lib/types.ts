@@ -126,6 +126,9 @@ export interface ArticleSection {
   productIds?: string[];
   /** Guides (or buying guides) the advice in this section comes from. */
   guideSlugs?: string[];
+  /** 'afterSteps' puts the section after the step-by-step method (e.g. a related question merged in from a retired
+   *  guide); by default sections come before the steps. */
+  placement?: 'afterSteps';
 }
 
 export interface Article {

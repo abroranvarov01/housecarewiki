@@ -24,6 +24,29 @@ Do not flip these back in bulk; a bulk release is how the site got here. Re-enab
 
 Do not add new guides in bulk either.
 
+## Step 2: merging overlapping guides (2026-11-25)
+
+The drop started on 10 Nov, the first day of Google's November 2026 core update (10 to 24 Nov). It is a site-wide quality demotion, not a technical fault. Search Console shows no manual actions and no security issues. John Mueller said in Nov 2026 that a site-wide "crawled – currently not indexed" status means Google's quality systems are "unconvinced" about the site. He also said that making a site smaller does not, by itself, raise its quality. Holding guides out of the index was therefore not enough.
+
+So overlapping guides are now merged. The useful facts, FAQs and sources of each retired guide go into a stronger guide on the same topic, as sections placed after the steps (`placement: 'afterSteps'`). The retired URL 301-redirects to that guide. The redirect map is `mergedGuides` in `next.config.mjs`.
+
+| Retired guide | Merged into |
+|---|---|
+| can-you-mix-bleach-and-ammonia, can-you-mix-bleach-and-rubbing-alcohol, can-you-mix-hydrogen-peroxide-and-vinegar | cleaning-products-you-should-never-mix |
+| can-you-put-cast-iron-in-the-dishwasher | how-to-clean-a-cast-iron-skillet |
+| can-you-use-vinegar-on-hardwood-floors, can-you-use-a-steam-mop-on-hardwood-floors | how-to-clean-hardwood-floors |
+| how-to-clean-a-white-porcelain-kitchen-sink | how-to-clean-a-porcelain-sink |
+| how-to-clean-a-keurig, how-to-descale-a-nespresso-machine | how-to-clean-a-coffee-maker |
+| how-to-clean-ugg-boots | how-to-clean-suede-boots |
+| can-you-put-a-yeti-in-the-dishwasher | how-to-clean-a-stanley-cup |
+| how-to-clean-fireplace-glass | how-to-clean-out-a-fireplace |
+| how-to-get-red-wine-out-of-a-couch, how-to-get-red-wine-out-of-clothes | how-to-get-red-wine-out-of-carpet |
+
+Rules for the next rounds:
+- Merge only when the pages answer the same need. Keep the URL with the most impressions, or the broader topic, as the target.
+- Do not paste a whole guide in. Keep only what the target does not already say.
+- Measure from about 1 Dec 2026, one week after the core update finished. Google has announced a December 2026 core update; that is the next big chance for the site to be re-evaluated.
+
 ## Held out of the index (79)
 
 - can-you-mix-bleach-and-ammonia

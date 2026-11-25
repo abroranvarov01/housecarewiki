@@ -98,7 +98,6 @@ import gHowToCleanAKitchenBacksplash from './how-to-clean-a-kitchen-backsplash';
 import gHowToCleanAKitchenSponge from './how-to-clean-a-kitchen-sponge';
 import gHowToCleanAStainlessSteelSink from './how-to-clean-a-stainless-steel-sink';
 import gHowToCleanAGraniteCompositeSink from './how-to-clean-a-granite-composite-sink';
-import gHowToCleanAWhitePorcelainKitchenSink from './how-to-clean-a-white-porcelain-kitchen-sink';
 import gHowToCleanATrashCan from './how-to-clean-a-trash-can';
 import gHowToGetGumOutOfCarpet from './how-to-get-gum-out-of-carpet';
 import gHowToGetSlimeOutOfCarpet from './how-to-get-slime-out-of-carpet';
@@ -124,7 +123,6 @@ import gHowToCleanACarpetCleanerMachine from './how-to-clean-a-carpet-cleaner-ma
 import gHowToUseACarpetCleaner from './how-to-use-a-carpet-cleaner';
 import gHowToCleanAMopHead from './how-to-clean-a-mop-head';
 import gHowToCleanARobotVacuum from './how-to-clean-a-robot-vacuum';
-import gHowToGetRedWineOutOfClothes from './how-to-get-red-wine-out-of-clothes';
 import gHowToGetCoffeeStainsOutOfClothes from './how-to-get-coffee-stains-out-of-clothes';
 import gHowToGetDeodorantStainsOutOfClothes from './how-to-get-deodorant-stains-out-of-clothes';
 import gHowToGetMakeupOutOfClothes from './how-to-get-makeup-out-of-clothes';
@@ -146,26 +144,20 @@ import gHowToWashADownComforter from './how-to-wash-a-down-comforter';
 import gHowToWashADownJacket from './how-to-wash-a-down-jacket';
 import gHowToRemoveSaltStainsFromHardwoodFloors from './how-to-remove-salt-stains-from-hardwood-floors';
 import gHowToGetSaltStainsOutOfCarpet from './how-to-get-salt-stains-out-of-carpet';
-import gCanYouUseASteamMopOnHardwoodFloors from './can-you-use-a-steam-mop-on-hardwood-floors';
 import gHowToGetGravyOutOfClothes from './how-to-get-gravy-out-of-clothes';
 import gHowToDisposeOfCookingGrease from './how-to-dispose-of-cooking-grease';
 import gHowToCleanABakingSheet from './how-to-clean-a-baking-sheet';
 import gHowToCleanAGlassBakingDish from './how-to-clean-a-glass-baking-dish';
 import gCanYouPutAluminumFoilOnTheBottomOfTheOven from './can-you-put-aluminum-foil-on-the-bottom-of-the-oven';
 import gHowToWashAWoolSweater from './how-to-wash-a-wool-sweater';
-import gHowToCleanUggBoots from './how-to-clean-ugg-boots';
 import gHowToGetTreeSapOutOfClothes from './how-to-get-tree-sap-out-of-clothes';
-import gCanYouUseVinegarOnHardwoodFloors from './can-you-use-vinegar-on-hardwood-floors';
 import gHowToWashPillows from './how-to-wash-pillows';
 import gHowToCleanAHumidifier from './how-to-clean-a-humidifier';
 import gHowToCleanADryerVent from './how-to-clean-a-dryer-vent';
-import gHowToCleanFireplaceGlass from './how-to-clean-fireplace-glass';
 import gHowToGetRidOfCondensationOnWindows from './how-to-get-rid-of-condensation-on-windows';
-import gHowToCleanAKeurig from './how-to-clean-a-keurig';
 import gHowToCleanAKitchenaidStandMixer from './how-to-clean-a-kitchenaid-stand-mixer';
 import gHowToCleanAnInstantPot from './how-to-clean-an-instant-pot';
 import gHowToCleanASlowCooker from './how-to-clean-a-slow-cooker';
-import gCanYouPutAYetiInTheDishwasher from './can-you-put-a-yeti-in-the-dishwasher';
 import gHowToCleanASpaceHeater from './how-to-clean-a-space-heater';
 import gHowToCleanOutAFireplace from './how-to-clean-out-a-fireplace';
 import gHowToRemoveSaltStainsFromLeatherBoots from './how-to-remove-salt-stains-from-leather-boots';
@@ -175,11 +167,9 @@ import gHowToWashAnElectricBlanket from './how-to-wash-an-electric-blanket';
 import gHowToCleanAWoolCoat from './how-to-clean-a-wool-coat';
 import gHowToCleanALeatherCouch from './how-to-clean-a-leather-couch';
 import gHowToGetCandleWaxOffWood from './how-to-get-candle-wax-off-wood';
-import gHowToDescaleANespressoMachine from './how-to-descale-a-nespresso-machine';
 import gHowToCleanAnAirPurifier from './how-to-clean-an-air-purifier';
 import gHowToCleanASiliconeBakingMat from './how-to-clean-a-silicone-baking-mat';
 import gCanYouPutKnivesInTheDishwasher from './can-you-put-knives-in-the-dishwasher';
-import gCanYouMixBleachAndAmmonia from './can-you-mix-bleach-and-ammonia';
 import gHowToCleanACarbonSteelPan from './how-to-clean-a-carbon-steel-pan';
 import gHowToCleanAFoodProcessor from './how-to-clean-a-food-processor';
 import gHowToCleanAPizzaStone from './how-to-clean-a-pizza-stone';
@@ -187,7 +177,6 @@ import gHowToRemoveMoldFromWindowSills from './how-to-remove-mold-from-window-si
 import gHowToWashAMattressProtector from './how-to-wash-a-mattress-protector';
 import gHowToCleanAFrenchPress from './how-to-clean-a-french-press';
 import gHowToCleanAStanleyCup from './how-to-clean-a-stanley-cup';
-import gCanYouPutCastIronInTheDishwasher from './can-you-put-cast-iron-in-the-dishwasher';
 import gHowToCleanAWaffleMaker from './how-to-clean-a-waffle-maker';
 import gHowToCleanACoffeeGrinder from './how-to-clean-a-coffee-grinder';
 import gHowToCleanAMeatThermometer from './how-to-clean-a-meat-thermometer';
@@ -195,10 +184,7 @@ import gHowToCleanCrystalGlasses from './how-to-clean-crystal-glasses';
 import gHowToCleanAnArtificialChristmasTree from './how-to-clean-an-artificial-christmas-tree';
 import gHowToCleanSuedeBoots from './how-to-clean-suede-boots';
 import gHowToWashCashmere from './how-to-wash-cashmere';
-import gCanYouMixBleachAndRubbingAlcohol from './can-you-mix-bleach-and-rubbing-alcohol';
-import gCanYouMixHydrogenPeroxideAndVinegar from './can-you-mix-hydrogen-peroxide-and-vinegar';
 import gHowToCleanARoasterOven from './how-to-clean-a-roaster-oven';
-import gHowToGetRedWineOutOfACouch from './how-to-get-red-wine-out-of-a-couch';
 import gHowToWashAFleeceBlanket from './how-to-wash-a-fleece-blanket';
 import gHowToWashFlannelSheets from './how-to-wash-flannel-sheets';
 import gHowToCleanAirVents from './how-to-clean-air-vents';
@@ -343,7 +329,6 @@ export const BATCH10_GUIDES: Article[] = [
   gHowToCleanAKitchenSponge,
   gHowToCleanAStainlessSteelSink,
   gHowToCleanAGraniteCompositeSink,
-  gHowToCleanAWhitePorcelainKitchenSink,
 ];
 
 // Batch 11: carpet spots and a kitchen trash can.
@@ -381,7 +366,6 @@ export const BATCH13_GUIDES: Article[] = [
   gHowToUseACarpetCleaner,
   gHowToCleanAMopHead,
   gHowToCleanARobotVacuum,
-  gHowToGetRedWineOutOfClothes,
   gHowToGetCoffeeStainsOutOfClothes,
   gHowToGetDeodorantStainsOutOfClothes,
   gHowToGetMakeupOutOfClothes,
@@ -411,7 +395,6 @@ export const BATCH15_GUIDES: Article[] = [
   gHowToWashADownJacket,
   gHowToRemoveSaltStainsFromHardwoodFloors,
   gHowToGetSaltStainsOutOfCarpet,
-  gCanYouUseASteamMopOnHardwoodFloors,
 ];
 
 // Batch 16: Thanksgiving cleanup, holiday bakeware, oven foil, wool and sheepskin, tree sap.
@@ -422,19 +405,15 @@ export const BATCH16_GUIDES: Article[] = [
   gHowToCleanAGlassBakingDish,
   gCanYouPutAluminumFoilOnTheBottomOfTheOven,
   gHowToWashAWoolSweater,
-  gHowToCleanUggBoots,
   gHowToGetTreeSapOutOfClothes,
 ];
 
 // Batch 17: winter humidity and heating (humidifier, dryer vent, fireplace glass, window condensation), holiday kitchen appliances, wood floors, pillows.
 export const BATCH17_GUIDES: Article[] = [
-  gCanYouUseVinegarOnHardwoodFloors,
   gHowToWashPillows,
   gHowToCleanAHumidifier,
   gHowToCleanADryerVent,
-  gHowToCleanFireplaceGlass,
   gHowToGetRidOfCondensationOnWindows,
-  gHowToCleanAKeurig,
   gHowToCleanAKitchenaidStandMixer,
 ];
 
@@ -442,7 +421,6 @@ export const BATCH17_GUIDES: Article[] = [
 export const BATCH18_GUIDES: Article[] = [
   gHowToCleanAnInstantPot,
   gHowToCleanASlowCooker,
-  gCanYouPutAYetiInTheDishwasher,
   gHowToCleanASpaceHeater,
   gHowToCleanOutAFireplace,
   gHowToRemoveSaltStainsFromLeatherBoots,
@@ -456,7 +434,6 @@ export const BATCH19_GUIDES: Article[] = [
   gHowToCleanAWoolCoat,
   gHowToCleanALeatherCouch,
   gHowToGetCandleWaxOffWood,
-  gHowToDescaleANespressoMachine,
   gHowToCleanAnAirPurifier,
   gHowToCleanASiliconeBakingMat,
   gCanYouPutKnivesInTheDishwasher,
@@ -464,7 +441,6 @@ export const BATCH19_GUIDES: Article[] = [
 
 // Batch 20: holiday kitchen tools (carbon steel pan, food processor, pizza stone, French press, Stanley cup), winter window-sill mold, guest-bed mattress protectors, bleach and ammonia safety.
 export const BATCH20_GUIDES: Article[] = [
-  gCanYouMixBleachAndAmmonia,
   gHowToCleanACarbonSteelPan,
   gHowToCleanAFoodProcessor,
   gHowToCleanAPizzaStone,
@@ -476,7 +452,6 @@ export const BATCH20_GUIDES: Article[] = [
 
 // Batch 21: Thanksgiving and holiday hosting (meat thermometer, waffle maker, coffee grinder, crystal glasses, cast iron in the dishwasher), artificial Christmas tree, winter suede boots and cashmere.
 export const BATCH21_GUIDES: Article[] = [
-  gCanYouPutCastIronInTheDishwasher,
   gHowToCleanAWaffleMaker,
   gHowToCleanACoffeeGrinder,
   gHowToCleanAMeatThermometer,
@@ -488,10 +463,7 @@ export const BATCH21_GUIDES: Article[] = [
 
 // Batch 22: Thanksgiving and holiday hosting (roaster oven, red wine on the couch, candle jars), winter bedding (fleece blankets, flannel sheets), heating-season air vents, and two mixing-safety questions (bleach and rubbing alcohol, hydrogen peroxide and vinegar).
 export const BATCH22_GUIDES: Article[] = [
-  gCanYouMixBleachAndRubbingAlcohol,
-  gCanYouMixHydrogenPeroxideAndVinegar,
   gHowToCleanARoasterOven,
-  gHowToGetRedWineOutOfACouch,
   gHowToWashAFleeceBlanket,
   gHowToWashFlannelSheets,
   gHowToCleanAirVents,

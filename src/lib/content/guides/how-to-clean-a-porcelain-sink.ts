@@ -6,16 +6,16 @@ const article: Article = {
   routeType: 'guides',
   categoryLabel: 'CLEANING GUIDE',
   title: 'How to clean a porcelain sink',
-  subtitle: 'A "porcelain" sink is usually either vitreous china or enameled cast iron, and the two take different rules. Mild soap for daily care, which cleaners each one tolerates, how to lift gray metal marks and rust, and the scrubbers that scratch the glaze.',
+  subtitle: 'A "porcelain" sink is usually vitreous china or enameled cast iron, and white kitchen sinks are often fireclay. Mild soap for daily care, which cleaners each material tolerates, how to lift coffee stains, gray metal marks and rust, and the scrubbers that scratch the glaze.',
   excerpt: 'Know whether it is vitreous china or enameled cast iron, wash with mild soap, dry it, and keep strong abrasives away.',
   quickAnswer: 'First work out whether your sink is vitreous china or enameled cast iron, because the rules differ. For both, rinse after use, wash with mild soap and warm water, and wipe completely dry with a soft cloth. Vitreous china tolerates a soft abrasive cleanser when needed, but strong abrasives scratch and dull it. Enameled cast iron should never see steel wool, wire brushes, abrasive pads, abrasive cleansers or solvents; lift gray metal marks with a cast iron cleaner and a soft cloth or cork instead.',
   roomSlug: 'bathroom-cleaning',
   subCategory: 'tools',
   surfaceSlugs: [],
   authorSlug: 'housecarewiki-editors',
-  updatedAt: 'Nov 02, 2026',
+  updatedAt: 'Nov 25, 2026',
   publishedAt: 'Nov 02, 2026',
-  readingTime: '5 min read',
+  readingTime: '7 min read',
   status: 'Published',
   evidenceStatus: 'Research-Based Review',
   heroImage: '/images/g-how-to-clean-a-porcelain-sink.webp',
@@ -39,7 +39,7 @@ const article: Article = {
     {
       stepNumber: 1,
       title: 'Find Out What Your Sink Is Made Of',
-      instruction: 'A sink called porcelain is usually one of two materials: vitreous china, a glazed ceramic, or enameled cast iron, an iron sink with an enamel coat. Check the model number in the homeowner\'s guide or on the manufacturer\'s site, because cast iron has stricter rules on abrasives than vitreous china.',
+      instruction: 'A sink called porcelain is usually one of two materials: vitreous china, a glazed ceramic, or enameled cast iron, an iron sink with an enamel coat. Check the model number in the homeowner\'s guide or on the manufacturer\'s site, because cast iron has stricter rules on abrasives than vitreous china. White kitchen sinks, especially farmhouse styles, may instead be fireclay, a solid glazed ceramic; the sections after these steps cover kitchen and fireclay sinks.',
     },
     {
       stepNumber: 2,
@@ -78,6 +78,32 @@ const article: Article = {
     'Tiny black specks embedded in the glaze that never wash out are usually not dirt. Kohler explains they are dust particles burned into the finish during firing, so no cleaner will remove them.',
     'Dullness, scratching, staining or etching that cleaning does not improve is wear to the finish itself. Contact the manufacturer with your model number before trying stronger products.',
   ],
+  sections: [
+    {
+      id: 'white-kitchen-sinks',
+      placement: 'afterSteps',
+      heading: 'White porcelain kitchen sinks: coffee, tea and food stains',
+      paragraphs: [
+        'A white porcelain kitchen sink is usually enameled cast iron or fireclay rather than vitreous china, and what stains it is mostly what sits in it. Kohler warns not to leave dirty dishes, coffee grounds, tea bags or other staining materials in contact with the enamel for long periods, which is how brown and beige stains set into a white bowl. Kohler\'s kitchen sink guide also says to test any new cleaner on a hidden spot, never let a cleaner sit or soak, and rinse the surface completely with water right after applying it.',
+        'For stains that stay after washing, Kohler\'s kitchen sink guide allows abrasive cleaners on enameled cast iron sparingly, for rare stubborn stains. That is looser than its lavatory guide, which rules out abrasive cleansers on cast iron, so follow the guide for your own model and keep any abrasive occasional. Both guides rule out steel wool, wire brushes and abrasive sponge pads. For rust spots, the kitchen guide lists Bon Ami or Super Iron Out on enameled cast iron. Kohler also recommends a bottom bowl rack or rinse basket to protect the base from scratches, rather than a rubber mat.',
+      ],
+      checklist: [
+        'Clear coffee grounds, tea bags and dirty dishes out of the bowl promptly, then rinse and wipe it dry.',
+        'Lift a bottom grid or rinse basket out when you clean so the bowl underneath gets washed and dried.',
+        'Wear gloves and ventilate when using a rust remover, keep it moving rather than letting it soak, rinse completely, and never mix it with bleach, ammonia, vinegar or other acids.',
+        'Set heavy cookware down gently instead of dropping it into the sink.',
+      ],
+    },
+    {
+      id: 'fireclay-sinks',
+      placement: 'afterSteps',
+      heading: 'Fireclay farmhouse sinks: what is different',
+      paragraphs: [
+        'Fireclay tolerates abrasives better than enameled cast iron. Shaws and ROHL say everyday use of abrasives or abrasive pads will not harm their fireclay surfaces, and Kohler\'s kitchen sink guide says to use a soft abrasive cleaner on fireclay when necessary. For black marks from pots and pans, Shaws and ROHL recommend Astonish, and for rust, Kohler lists Bar Keepers Friend or Super Iron Out on fireclay.',
+        'Shaws and ROHL describe fireclay as chip resistant but not chip proof, so never drop heavy pans or utensils into the sink. If it does chip, the fireclay underneath will not rust, and they say a color-matched repair kit is available through House of Rohl dealers. For a chip in enameled cast iron, contact the sink maker.',
+      ],
+    },
+  ],
   recommendedProductIds: [],
   faqs: [
     {
@@ -86,7 +112,7 @@ const article: Article = {
     },
     {
       question: 'Can you use Bar Keepers Friend on a porcelain sink?',
-      answer: 'On vitreous china, yes: Kohler and Sterling list Bar Keepers Friend and Bon Ami among recommended products, used gently when necessary. On enameled cast iron, Kohler says not to use abrasive cleansers, so use a non-abrasive cast iron cleaner instead.',
+      answer: 'On vitreous china, yes: Kohler and Sterling list Bar Keepers Friend and Bon Ami among recommended products, used gently when necessary, and Kohler\'s kitchen sink guide lists Bar Keepers Friend for rust on fireclay. On enameled cast iron, Kohler says not to use abrasive cleansers, so use a non-abrasive cast iron cleaner instead.',
     },
     {
       question: 'How do I get gray marks out of my porcelain sink?',
@@ -99,6 +125,14 @@ const article: Article = {
     {
       question: 'Is it OK to leave a rubber mat in a porcelain sink?',
       answer: 'Kohler does not recommend rubber dish mats in its enameled sinks, because bacteria can grow under them and permanently discolor the enamel. Lift any mat out after use and let the sink dry.',
+    },
+    {
+      question: 'How do I get coffee stains out of my white porcelain sink?',
+      answer: 'Wash the sink with a soft sponge and a cleaner your sink maker lists, then use a soft abrasive cleanser sparingly on any stain that remains, rinsing and drying afterward. To stop new stains, do not leave coffee grounds, tea bags or dirty dishes in the bowl for long periods, which Kohler names as a cause of staining.',
+    },
+    {
+      question: 'Is a fireclay sink the same as a porcelain sink?',
+      answer: 'Both have a white glazed finish, but fireclay is a solid glazed ceramic, while many porcelain kitchen sinks are enameled cast iron, an iron body with an enamel coat. Shaws and ROHL say abrasives will not harm their fireclay glaze, while Kohler warns against steel wool, wire brushes and abrasive pads on enameled cast iron.',
     },
   ],
   sources: [
@@ -129,10 +163,37 @@ const article: Article = {
       accessedDate: '2026-11-02',
       verifiedClaim: 'Rinse thoroughly and wipe vitreous china dry with a soft cloth after each use; soft abrasive cleaners may be used when necessary but strong abrasives scratch and dull the surface; wipe cleaner splashes from plastic or plated surfaces immediately; recommended products include Soft Scrub, Bar Keepers Friend and Bon Ami.',
     },
+    {
+      id: 'src-porcelain-4',
+      title: 'KOHLER Care and Cleaning Guide: Kitchen Sinks',
+      publisher: 'Kohler',
+      url: 'https://images.thdstatic.com/catalog/pdfImages/6f/6f5798e0-86c1-42ef-8a4d-f6c86e5cbec7.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Test cleaners on an inconspicuous area, rinse completely right after applying, do not let cleaner soak, and use a soft dampened sponge or cloth. For enameled cast iron kitchen sinks: rinse and wipe dry after each use, use abrasive cleaners sparingly for rare stubborn stains, no steel wool, wire brushes or abrasive sponge pads, do not leave dirty dishes, coffee grounds or tea bags on the enamel, use bottom bowl racks and rinse baskets; Bon Ami or Super Iron Out for rust. For fireclay: soft abrasive cleaner when necessary, Bar Keepers Friend or Super Iron Out for rust.',
+    },
+    {
+      id: 'src-porcelain-5',
+      title: 'Installation Guide: Self-Rimming Cast Iron Sinks (Cleaning Your Cast Iron Sink)',
+      publisher: 'Kohler',
+      url: 'https://resources.kohler.com/onlinecatalog/pdf/1053525_2.pdf',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Test cleaning solutions on an inconspicuous area, do not let cleaners soak, never use a brush or scouring pad, rinse completely right after cleaning, do not leave dirty dishes, coffee grounds or tea bags on the enamel for extended periods, and consider bottom basin racks and rinse baskets to protect the surface from scratches.',
+    },
+    {
+      id: 'src-porcelain-6',
+      title: 'Shaws: Allia Sinks Care and Maintenance',
+      publisher: 'House of Rohl',
+      url: 'https://solutions.houseofrohl.com/Content_Library/Repair_Guides/Shaws/Shaws%3A_Allia_Sinks_Care_and_Maintenance',
+      type: 'Manufacturer Manual',
+      accessedDate: '2026-11-02',
+      verifiedClaim: 'Wipe the sink after use; everyday use of abrasives or abrasive pads will not harm Shaws or Allia fireclay surfaces; Astonish removes black marks from pots and pans; fireclay is chip resistant but not chip proof, so never drop heavy pans or utensils into the sink; chips do not rust and a repair kit is available.',
+    },
   ],
   seo: {
     title: 'How to Clean a Porcelain Sink Without Scratching',
-    description: 'How to clean a porcelain sink: mild soap and a dry wipe, soft abrasives only on vitreous china, and how to lift metal marks and rust from enameled cast iron.',
+    description: 'How to clean a porcelain bathroom or white kitchen sink: mild soap, a dry wipe, what each material tolerates, and how to lift stains, metal marks and rust.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-porcelain-sink',
     indexable: true,
     focusKeyword: 'how to clean a porcelain sink',
