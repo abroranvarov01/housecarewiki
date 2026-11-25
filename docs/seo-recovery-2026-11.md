@@ -42,6 +42,23 @@ So overlapping guides are now merged. The useful facts, FAQs and sources of each
 | how-to-clean-fireplace-glass | how-to-clean-out-a-fireplace |
 | how-to-get-red-wine-out-of-a-couch, how-to-get-red-wine-out-of-clothes | how-to-get-red-wine-out-of-carpet |
 
+Round 2 (same day):
+
+| Retired guide | Merged into |
+|---|---|
+| how-to-get-candle-wax-off-wood, how-to-get-candle-wax-out-of-clothes | how-to-get-candle-wax-out-of-carpet |
+| how-to-get-gum-out-of-clothes | how-to-get-gum-out-of-carpet |
+| how-to-get-gravy-out-of-clothes | how-to-remove-grease-stains-from-clothes |
+| how-to-get-deodorant-stains-out-of-clothes | how-to-remove-yellow-armpit-stains-from-white-shirts |
+| how-to-get-lipstick-out-of-clothes | how-to-get-makeup-out-of-clothes |
+| how-to-remove-hard-water-stains-from-tile | how-to-clean-shower-tiles |
+| how-to-wash-a-down-jacket | how-to-wash-a-down-comforter |
+| how-to-wash-cashmere | how-to-wash-a-wool-sweater |
+| how-to-clean-a-roasting-pan, how-to-clean-a-glass-baking-dish | how-to-clean-a-baking-sheet |
+| how-to-clean-a-roaster-oven | how-to-clean-a-slow-cooker |
+
+Left for later on purpose: the salt-stain guides (the leather-boots page carries a Creator Connections campaign) and the mold guides (each covers a different surface).
+
 Rules for the next rounds:
 - Merge only when the pages answer the same need. Keep the URL with the most impressions, or the broader topic, as the target.
 - Do not paste a whole guide in. Keep only what the target does not already say.

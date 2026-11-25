@@ -15,6 +15,19 @@ const mergedGuides = {
   'how-to-clean-fireplace-glass': 'how-to-clean-out-a-fireplace',
   'how-to-get-red-wine-out-of-a-couch': 'how-to-get-red-wine-out-of-carpet',
   'how-to-get-red-wine-out-of-clothes': 'how-to-get-red-wine-out-of-carpet',
+  // Round 2 (2026-11-25)
+  'how-to-get-candle-wax-off-wood': 'how-to-get-candle-wax-out-of-carpet',
+  'how-to-get-candle-wax-out-of-clothes': 'how-to-get-candle-wax-out-of-carpet',
+  'how-to-get-gum-out-of-clothes': 'how-to-get-gum-out-of-carpet',
+  'how-to-get-gravy-out-of-clothes': 'how-to-remove-grease-stains-from-clothes',
+  'how-to-get-deodorant-stains-out-of-clothes': 'how-to-remove-yellow-armpit-stains-from-white-shirts',
+  'how-to-get-lipstick-out-of-clothes': 'how-to-get-makeup-out-of-clothes',
+  'how-to-remove-hard-water-stains-from-tile': 'how-to-clean-shower-tiles',
+  'how-to-wash-a-down-jacket': 'how-to-wash-a-down-comforter',
+  'how-to-wash-cashmere': 'how-to-wash-a-wool-sweater',
+  'how-to-clean-a-roasting-pan': 'how-to-clean-a-baking-sheet',
+  'how-to-clean-a-glass-baking-dish': 'how-to-clean-a-baking-sheet',
+  'how-to-clean-a-roaster-oven': 'how-to-clean-a-slow-cooker',
 };
 
 const securityHeaders = [
