@@ -110,7 +110,37 @@ export default function PrivacyPage() {
         </p>
       </DocSection>
 
-      <DocSection id="contact" index={n(5)} title="Requests and questions">
+      <DocSection id="youtube" index={n(5)} title="Our YouTube channel and the YouTube API">
+        <p>
+          We publish short videos to our own YouTube channel through a scheduling tool that uses YouTube API Services. By
+          watching or interacting with our videos on YouTube you are using YouTube, which is governed by the{' '}
+          <a href="https://www.youtube.com/t/terms" className="link" rel="noopener noreferrer" target="_blank">
+            YouTube Terms of Service
+          </a>{' '}
+          and the{' '}
+          <a href="https://policies.google.com/privacy" className="link" rel="noopener noreferrer" target="_blank">
+            Google Privacy Policy
+          </a>
+          .
+        </p>
+        <p>
+          The tool signs in only to our own channel. It uploads our videos with their titles and descriptions and reads our
+          channel&apos;s name, video list and view statistics. It does not access, store or share any data about viewers or
+          other YouTube users. Access tokens are kept on our own server and are used only for our channel. The
+          channel owner can revoke the tool&apos;s access at any time in{' '}
+          <a
+            href="https://security.google.com/settings/security/permissions"
+            className="link"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Google security settings
+          </a>
+          , after which the stored tokens are deleted within 30 days.
+        </p>
+      </DocSection>
+
+      <DocSection id="contact" index={n(6)} title="Requests and questions">
         <p>
           To ask about your data or have an email address removed, write to{' '}
           <a href={`mailto:${SITE.email}`} className="link">
