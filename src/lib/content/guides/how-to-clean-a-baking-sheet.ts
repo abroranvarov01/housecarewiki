@@ -260,7 +260,7 @@ const article: Article = {
     title: 'How to Clean a Baking Sheet, Roasting Pan or Glass Dish',
     description: 'How to clean a baking sheet, roasting pan or glass baking dish: cool it, soak stuck-on food, then lift burnt residue with the right method for each material.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-baking-sheet',
-    indexable: false,
+    indexable: true,
     focusKeyword: 'how to clean a baking sheet',
   },
 };

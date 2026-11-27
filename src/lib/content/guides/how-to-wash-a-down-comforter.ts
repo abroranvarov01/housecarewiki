@@ -220,7 +220,7 @@ const article: Article = {
     title: 'How to Wash a Down Comforter or Down Jacket',
     description: 'How to wash a down comforter or down jacket: check the label, use a front-loader on gentle with down wash, rinse twice and tumble dry low with dryer balls.',
     canonical: 'https://housecarewiki.com/guides/how-to-wash-a-down-comforter',
-    indexable: false,
+    indexable: true,
     focusKeyword: 'how to wash a down comforter',
   },
 };

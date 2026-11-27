@@ -64,7 +64,9 @@ Rules for the next rounds:
 - Do not paste a whole guide in. Keep only what the target does not already say.
 - Measure from about 1 Dec 2026, one week after the core update finished. Google has announced a December 2026 core update; that is the next big chance for the site to be re-evaluated.
 
-## Held out of the index (79)
+## Held out of the index (79, now 71)
+
+On 27 Nov 2026 eight guides were taken off this list and made indexable again, because they became merge targets on 25 Nov and the retired URLs 301 into them: how-to-clean-a-baking-sheet, how-to-clean-a-slow-cooker, how-to-clean-a-stanley-cup, how-to-clean-out-a-fireplace, how-to-clean-suede-boots, how-to-get-red-wine-out-of-carpet, how-to-wash-a-down-comforter, how-to-wash-a-wool-sweater. Rule: a merge target must be indexable; check `seo.indexable` before folding guides into it.
 
 - can-you-mix-bleach-and-ammonia
 - can-you-mix-bleach-and-rubbing-alcohol
@@ -75,7 +77,6 @@ Rules for the next rounds:
 - can-you-put-knives-in-the-dishwasher
 - can-you-use-a-steam-mop-on-hardwood-floors
 - can-you-use-vinegar-on-hardwood-floors
-- how-to-clean-a-baking-sheet
 - how-to-clean-a-carbon-steel-pan
 - how-to-clean-a-coffee-grinder
 - how-to-clean-a-cutting-board
@@ -94,9 +95,7 @@ Rules for the next rounds:
 - how-to-clean-a-roaster-oven
 - how-to-clean-a-roasting-pan
 - how-to-clean-a-silicone-baking-mat
-- how-to-clean-a-slow-cooker
 - how-to-clean-a-space-heater
-- how-to-clean-a-stanley-cup
 - how-to-clean-a-toilet
 - how-to-clean-a-waffle-maker
 - how-to-clean-a-wool-coat
@@ -109,9 +108,7 @@ Rules for the next rounds:
 - how-to-clean-crystal-glasses
 - how-to-clean-fireplace-glass
 - how-to-clean-laminate-floors
-- how-to-clean-out-a-fireplace
 - how-to-clean-stainless-steel-appliances-without-streaks
-- how-to-clean-suede-boots
 - how-to-clean-tarnished-silverware
 - how-to-clean-tile-floors
 - how-to-clean-ugg-boots
@@ -122,7 +119,6 @@ Rules for the next rounds:
 - how-to-get-gravy-out-of-clothes
 - how-to-get-oil-out-of-carpet
 - how-to-get-red-wine-out-of-a-couch
-- how-to-get-red-wine-out-of-carpet
 - how-to-get-red-wine-out-of-clothes
 - how-to-get-rid-of-condensation-on-windows
 - how-to-get-salt-stains-out-of-carpet
@@ -135,12 +131,10 @@ Rules for the next rounds:
 - how-to-unclog-a-bathroom-sink
 - how-to-unclog-a-toilet-without-a-plunger
 - how-to-use-a-carpet-cleaner
-- how-to-wash-a-down-comforter
 - how-to-wash-a-down-jacket
 - how-to-wash-a-fleece-blanket
 - how-to-wash-a-mattress-protector
 - how-to-wash-a-weighted-blanket
-- how-to-wash-a-wool-sweater
 - how-to-wash-an-electric-blanket
 - how-to-wash-cashmere
 - how-to-wash-flannel-sheets

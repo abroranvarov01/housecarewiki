@@ -234,7 +234,7 @@ const article: Article = {
     title: 'How to Get Red Wine Out of Carpet, Couches and Clothes',
     description: 'Get red wine out of carpet with the IICRC blot, water and dish-soap method, plus how to treat couch fabric by cleaning code and clothes before the dryer.',
     canonical: 'https://housecarewiki.com/guides/how-to-get-red-wine-out-of-carpet',
-    indexable: false,
+    indexable: true,
     focusKeyword: 'how to get red wine out of carpet',
   },
 };

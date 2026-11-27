@@ -244,7 +244,7 @@ const article: Article = {
     title: 'How to Clean Out a Fireplace (Ashes and Glass Doors)',
     description: 'How to clean out a fireplace: cool ashes into a lidded metal can, soak them, keep it 10 feet from the house, then clean the glass doors safely.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-out-a-fireplace',
-    indexable: false,
+    indexable: true,
     focusKeyword: 'how to clean out a fireplace',
   },
 };

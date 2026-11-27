@@ -231,7 +231,7 @@ const article: Article = {
     title: 'How to Clean a Stanley Cup or YETI (Lid, Straw, Stains)',
     description: 'How to clean a Stanley cup or YETI tumbler: take the lid and straw apart, check what is dishwasher safe, lift coffee stains with baking soda, skip bleach.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-stanley-cup',
-    indexable: false,
+    indexable: true,
     focusKeyword: 'how to clean a stanley cup',
   },
 };

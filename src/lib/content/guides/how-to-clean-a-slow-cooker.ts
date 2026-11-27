@@ -208,7 +208,7 @@ const article: Article = {
     title: 'How to Clean a Slow Cooker or Roaster Oven (Crock and Base)',
     description: 'How to clean a slow cooker or roaster oven: wash the crock or pan and lid once cool, soak off baked-on food, and only wipe the heating base, never immerse it.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-a-slow-cooker',
-    indexable: false,
+    indexable: true,
     focusKeyword: 'how to clean a slow cooker',
   },
 };

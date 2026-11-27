@@ -226,7 +226,7 @@ const article: Article = {
     title: 'How to Clean Suede and UGG Boots (Salt, Water Marks)',
     description: 'How to clean suede and UGG boots: brush, erase scuffs, blot salt and water marks sparingly, hand wash sheepskin in cold water, air dry and re-protect.',
     canonical: 'https://housecarewiki.com/guides/how-to-clean-suede-boots',
-    indexable: false,
+    indexable: true,
     focusKeyword: 'how to clean suede boots',
   },
 };
